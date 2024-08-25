@@ -9,24 +9,24 @@ cavalry_ideas = {
 		cavalry_cost = -0.125
 		movement_speed = 0.2
 	}
-	empiricism = {
+	cav2 = {
 		cavarly_power = 0.125
 	}
-	scientific_revolution = {
+	cav3 = {
 		cav_to_inf_ratio = 0.1
 		cavalry_flanking = 0.25
 	}
-	dynamic_court = {
+	cav4 = {
 		leader_land_shock = 1
 	}
-	print_culture = {
+	cav5 = {
 		shock_damage = 0.125
 	}
-	optimism = {
+	cav6 = {
 		nobles_loyalty_modifier = 0.1
 		cossacks_loyalty_modifier = 0.1
 	}
-	expanded_policies = {
+	cav7 = {
 		warscore_from_battles_modifier = 0.15
 	}
 }
@@ -38,26 +38,26 @@ infantry_ideas = {
 		max_general_fire = 1
 	}
 
-	patron_of_art  = {
+	inf1  = {
 		infantry_power = 0.125
 	}
-	empiricism = {
+	inf2 = {
 		leader_land_fire = 1
 	}
-	scientific_revolution = {
+	inf3 = {
 		infantry_cost = -0.15
 	}
-	dynamic_court = {
+	inf4 = {
 		land_fire_damage = 0.1
 	}
-	print_culture = {
+	inf5 = {
 		recover_army_morale_speed = 0.15
 	}
-	optimism = {
+	inf6 = {
 		leader_cost = -0.2
 		regiment_recruit_speed = -0.2
 	}
-	expanded_policies = {
+	inf7 = {
 		infantry_shock = 0.25
 	}
 }
@@ -69,29 +69,29 @@ artillery_ideas = {
 		max_general_siege = 1
 	}
 
-	patron_of_art  = {
+	arty1  = {
 		artillery_cost = -0.2
 	}
-	empiricism = {
+	arty2 = {
 		siege_ability = 0.2
 		may_refill_garrison = yes
 	}
-	scientific_revolution = {
+	arty3 = {
 		artillery_power = 0.15
 		leader_land_siege = 1
 	}
-	dynamic_court = {
+	arty4 = {
 		artillery_levels_available_vs_fort = 1
 		artillery_level_modifier = 0.2
 	}
-	print_culture = {
+	arty5 = {
 		assault_fort_ability = 0.3
 		assault_fort_cost_modifier = -1.0
 	}
-	optimism = {
+	arty6 = {
 		backrow_artillery_damage = 0.15
 	}
-	expanded_policies = {
+	arty7 = {
 		land_fire_damage = 0.075
 		free_land_leader_pool = 1
 	}
@@ -106,29 +106,29 @@ quality_ideas = {
 		artillery_power = 0.05
 	}
 
-	patron_of_art  = {
+	qual1  = {
 		army_tradition_from_battle = 0.20
 		prestige_from_land = 0.20
 	}
-	empiricism = {
+	qual2 = {
 		army_tradition = 0.5
 		prestige = 1.0
 	}
-	scientific_revolution = {
+	qual3 = {
 		discipline = 0.05
 	}
-	dynamic_court = {
+	qual4 = {
 		drill_gain_modifier = 0.15
 		drill_decay_modifier = -0.15
 	}
-	print_culture = {
+	qual5 = {
 		morale_damage_received = -0.10
 		reserves_organisation = 0.10
 	}
-	optimism = {
+	qual6 = {
 		army_tradition_decay = -0.01
 	}
-	expanded_policies = {
+	qual7 = {
 		yearly_army_professionalism = 0.07
 	}
 }
@@ -141,29 +141,29 @@ defensive_ideas = {
 		core_decay_on_your_own = -1.0
 	}
 
-	patron_of_art  = {
+	def1  = {
 		shock_damage_received = -0.15
 	}
-	empiricism = {
+	def2 = {
 		fort_maintenance_modifier = -0.25
 		rival_border_fort_maintenance = -0.50
 	}
-	scientific_revolution = {
+	def3 = {
 		local_defensiveness = 0.25
 		local_garrison_size = 0.25
 	}
-	dynamic_court = {
+	def4 = {
 		fire_damage_received = -0.125
 	}
-	print_culture = {
+	def5 = {
 		max_hostile_attrition = 1
 		hostile_attrition = 1
 	}
-	optimism = {
+	def6 = {
 		land_morale = 0.10
 		garrison_damage = 0.2
 	}
-	expanded_policies = {
+	def7 = {
 		war_exhaustion = -0.08
 		enemy_core_creation = 0.15
 	}
@@ -177,31 +177,31 @@ quantity_ideas = {
 		reinforce_cost_modifier = -0.25
 	}
 
-	patron_of_art  = {
+	quan1  = {
 		global_manpower_modifier = 0.30
 		global_sailors_modifier = 0.30
 	}
-	empiricism = {
+	quan2 = {
 		manpower_recovery_speed = 0.20
 		may_build_supply_depot = yes
 	}
-	scientific_revolution = {
+	quan3 = {
 		local_regiment_cost = -0.15
 		may_return_manpower_on_disband = yes
 	}
-	dynamic_court = {
+	quan4 = {
 		regiment_manpower_usage = -0.05
 		global_regiment_recruit_speed = -0.25
 	}
-	print_culture = {
+	quan5 = {
 		war_taxes_cost_modifier = -1.0
 		reinforce_speed = 0.25
 	}
-	optimism = {
+	quan6 = {
 		land_morale = 0.05
 		land_forcelimit = 15
 	}
-	expanded_policies = {
+	quan7 = {
 		land_attrition = -0.20
 		global_supply_limit_modifier = 0.75
 	}
@@ -215,32 +215,32 @@ divine_ideas = {
 		tolerance_own = 3
 	}
 
-	patron_of_art  = {
+	div1  = {
 		land_morale = 0.1
 		cb_on_religious_enemies = yes
 	}
-	empiricism = {
+	div2 = {
 		missionaries = 1
 		global_missionary_strength = 0.01
 		prestige_per_development_from_conversion = 0.3
 	}
-	scientific_revolution = {
+	div3 = {
 		manpower_in_true_faith_provinces= 0.15
 	}
-	dynamic_court = {
+	div4 = {
 		morale_damage = 0.15
 		morale_damage_received = -0.10
 	}
-	print_culture = {
+	div5 = {
 		culture_conversion_cost = -0.15
 		culture_conversion_time = -0.15
 		warscore_cost_vs_other_religion = -0.05
 	}
-	optimism = {
+	div6 = {
 		manpower_in_own_culture_provinces = 0.15
 		development_cost_in_primary_culture = -0.075
 	}
-	expanded_policies = {
+	div7 = {
 		church_loyalty_modifier = 0.1
 		same_culture_advisor_cost = -0.15
 	}
