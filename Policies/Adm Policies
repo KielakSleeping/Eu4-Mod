@@ -1,0 +1,714 @@
+POLICY_NAME_HERE = { 
+       monarch_power = ADM
+
+       potential = { 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       allow = { 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       bonus_here 
+       bonus_here 
+
+       ai_will_do = { 
+               factor = FACTOR_HERE 
+       }
+} 
+
+POLICY_NAME_HERE = { 
+       monarch_power = ADM
+
+       potential = { 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       allow = { 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       bonus_here 
+       bonus_here 
+
+       ai_will_do = { 
+               factor = FACTOR_HERE 
+       }
+} 
+
+POLICY_NAME_HERE = { 
+       monarch_power = ADM
+
+       potential = { 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       allow = { 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       bonus_here 
+       bonus_here 
+
+       ai_will_do = { 
+               factor = FACTOR_HERE 
+       }
+} 
+
+POLICY_NAME_HERE = { 
+       monarch_power = ADM
+
+       potential = { 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       allow = { 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       bonus_here 
+       bonus_here 
+
+       ai_will_do = { 
+               factor = FACTOR_HERE 
+       }
+} 
+
+POLICY_NAME_HERE = { 
+       monarch_power = ADM
+
+       potential = { 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       allow = { 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       bonus_here 
+       bonus_here 
+
+       ai_will_do = { 
+               factor = FACTOR_HERE 
+       }
+} 
+
+POLICY_NAME_HERE = { 
+       monarch_power = ADM
+
+       potential = { 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       allow = { 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       bonus_here 
+       bonus_here 
+
+       ai_will_do = { 
+               factor = FACTOR_HERE 
+       }
+} 
+
+POLICY_NAME_HERE = { 
+       monarch_power = ADM
+
+       potential = { 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       allow = { 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       bonus_here 
+       bonus_here 
+
+       ai_will_do = { 
+               factor = FACTOR_HERE 
+       }
+} 
+
+POLICY_NAME_HERE = { 
+       monarch_power = ADM
+
+       potential = { 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       allow = { 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       bonus_here 
+       bonus_here 
+
+       ai_will_do = { 
+               factor = FACTOR_HERE 
+       }
+} 
+
+POLICY_NAME_HERE = { 
+       monarch_power = ADM
+
+       potential = { 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       allow = { 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       bonus_here 
+       bonus_here 
+
+       ai_will_do = { 
+               factor = FACTOR_HERE 
+       }
+} 
+
+POLICY_NAME_HERE = { 
+       monarch_power = ADM
+
+       potential = { 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       allow = { 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       bonus_here 
+       bonus_here 
+
+       ai_will_do = { 
+               factor = FACTOR_HERE 
+       }
+} 
+
+POLICY_NAME_HERE = { 
+       monarch_power = ADM
+
+       potential = { 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       allow = { 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       bonus_here 
+       bonus_here 
+
+       ai_will_do = { 
+               factor = FACTOR_HERE 
+       }
+} 
+
+POLICY_NAME_HERE = { 
+       monarch_power = ADM
+
+       potential = { 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       allow = { 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       bonus_here 
+       bonus_here 
+
+       ai_will_do = { 
+               factor = FACTOR_HERE 
+       }
+} 
+
+POLICY_NAME_HERE = { 
+       monarch_power = ADM
+
+       potential = { 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       allow = { 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       bonus_here 
+       bonus_here 
+
+       ai_will_do = { 
+               factor = FACTOR_HERE 
+       }
+} 
+
+POLICY_NAME_HERE = { 
+       monarch_power = ADM
+
+       potential = { 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       allow = { 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       bonus_here 
+       bonus_here 
+
+       ai_will_do = { 
+               factor = FACTOR_HERE 
+       }
+} 
+
+POLICY_NAME_HERE = { 
+       monarch_power = ADM
+
+       potential = { 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       allow = { 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       bonus_here 
+       bonus_here 
+
+       ai_will_do = { 
+               factor = FACTOR_HERE 
+       }
+} 
+
+POLICY_NAME_HERE = { 
+       monarch_power = ADM
+
+       potential = { 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       allow = { 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       bonus_here 
+       bonus_here 
+
+       ai_will_do = { 
+               factor = FACTOR_HERE 
+       }
+} 
+
+POLICY_NAME_HERE = { 
+       monarch_power = ADM
+
+       potential = { 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       allow = { 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       bonus_here 
+       bonus_here 
+
+       ai_will_do = { 
+               factor = FACTOR_HERE 
+       }
+} 
+
+POLICY_NAME_HERE = { 
+       monarch_power = ADM
+
+       potential = { 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       allow = { 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       bonus_here 
+       bonus_here 
+
+       ai_will_do = { 
+               factor = FACTOR_HERE 
+       }
+} 
+
+POLICY_NAME_HERE = { 
+       monarch_power = ADM
+
+       potential = { 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       allow = { 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       bonus_here 
+       bonus_here 
+
+       ai_will_do = { 
+               factor = FACTOR_HERE 
+       }
+} 
+
+POLICY_NAME_HERE = { 
+       monarch_power = ADM
+
+       potential = { 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       allow = { 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       bonus_here 
+       bonus_here 
+
+       ai_will_do = { 
+               factor = FACTOR_HERE 
+       }
+} 
+
+POLICY_NAME_HERE = { 
+       monarch_power = ADM
+
+       potential = { 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       allow = { 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       bonus_here 
+       bonus_here 
+
+       ai_will_do = { 
+               factor = FACTOR_HERE 
+       }
+} 
+
+POLICY_NAME_HERE = { 
+       monarch_power = ADM
+
+       potential = { 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       allow = { 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       bonus_here 
+       bonus_here 
+
+       ai_will_do = { 
+               factor = FACTOR_HERE 
+       }
+} 
+
+POLICY_NAME_HERE = { 
+       monarch_power = ADM
+
+       potential = { 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       allow = { 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       bonus_here 
+       bonus_here 
+
+       ai_will_do = { 
+               factor = FACTOR_HERE 
+       }
+} 
+
+POLICY_NAME_HERE = { 
+       monarch_power = ADM
+
+       potential = { 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       allow = { 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       bonus_here 
+       bonus_here 
+
+       ai_will_do = { 
+               factor = FACTOR_HERE 
+       }
+} 
+
+POLICY_NAME_HERE = { 
+       monarch_power = ADM
+
+       potential = { 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       allow = { 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       bonus_here 
+       bonus_here 
+
+       ai_will_do = { 
+               factor = FACTOR_HERE 
+       }
+} 
+
+POLICY_NAME_HERE = { 
+       monarch_power = ADM
+
+       potential = { 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       allow = { 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       bonus_here 
+       bonus_here 
+
+       ai_will_do = { 
+               factor = FACTOR_HERE 
+       }
+} 
+
+POLICY_NAME_HERE = { 
+       monarch_power = ADM
+
+       potential = { 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       allow = { 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       bonus_here 
+       bonus_here 
+
+       ai_will_do = { 
+               factor = FACTOR_HERE 
+       }
+} 
+
+POLICY_NAME_HERE = { 
+       monarch_power = ADM
+
+       potential = { 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       allow = { 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       bonus_here 
+       bonus_here 
+
+       ai_will_do = { 
+               factor = FACTOR_HERE 
+       }
+} 
+
+POLICY_NAME_HERE = { 
+       monarch_power = ADM
+
+       potential = { 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       allow = { 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       bonus_here 
+       bonus_here 
+
+       ai_will_do = { 
+               factor = FACTOR_HERE 
+       }
+} 
+
+POLICY_NAME_HERE = { 
+       monarch_power = ADM
+
+       potential = { 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       allow = { 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       bonus_here 
+       bonus_here 
+
+       ai_will_do = { 
+               factor = FACTOR_HERE 
+       }
+} 
+
+POLICY_NAME_HERE = { 
+       monarch_power = ADM
+
+       potential = { 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       allow = { 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       bonus_here 
+       bonus_here 
+
+       ai_will_do = { 
+               factor = FACTOR_HERE 
+       }
+} 
+
+POLICY_NAME_HERE = { 
+       monarch_power = ADM
+
+       potential = { 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       allow = { 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       bonus_here 
+       bonus_here 
+
+       ai_will_do = { 
+               factor = FACTOR_HERE 
+       }
+} 
+
+POLICY_NAME_HERE = { 
+       monarch_power = ADM
+
+       potential = { 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       allow = { 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       bonus_here 
+       bonus_here 
+
+       ai_will_do = { 
+               factor = FACTOR_HERE 
+       }
+} 
+
+POLICY_NAME_HERE = { 
+       monarch_power = ADM
+
+       potential = { 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       allow = { 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+       }
+
+       bonus_here 
+       bonus_here 
+
+       ai_will_do = { 
+               factor = FACTOR_HERE 
+       }
+} 
+
