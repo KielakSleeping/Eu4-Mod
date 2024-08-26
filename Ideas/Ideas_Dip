@@ -3,7 +3,7 @@ tyranny_ideas = {
 
 	bonus = {
 		nobles_loyalty_modifier = 0.15
-    nobles_privilege_slots = 1
+    		nobles_privilege_slots = 1
 	}
 
 	tyr1 = {
@@ -12,7 +12,7 @@ tyranny_ideas = {
 	}
 	tyr2 = {
 		liberty_desire = -30
-    vassal_income = 0.25
+    		vassal_income = 0.25
 	}
 	tyr3 = {
 		diplomatic_upkeep = 1
@@ -23,23 +23,23 @@ tyranny_ideas = {
 	}
 	tyr5 = {
 		leader_cost = -0.15
-    siege_ability = 0.15
+    		siege_ability = 0.15
 		monarch_military_power = 1
   
 	}
 	tyr6 = {
 		vassal_forcelimit_bonus = 0.25
 		vassal_naval_forcelimit_bonus = 0.25
-    vassal_manpower_bonus = 0.25
-    vassal_sailors_bonus = 0.5
+    		vassal_manpower_bonus = 0.25
+    		vassal_sailors_bonus = 0.5
 
 	}
 	tyr7 = {
 		spy_offence = 0.5
-    can_chain_claim = yes
-    no_claim_cost_increasement = yes
-    can_claim_states = yes
-    can_fabricate_for_vassals = yes
+    		can_chain_claim = yes
+    		no_claim_cost_increasement = yes
+    		can_claim_states = yes
+    		can_fabricate_for_vassals = yes
 	}
 }
 
@@ -48,8 +48,8 @@ politics_ideas = {
 
 	bonus = {
 		all_estate_loyalty_equilibrium = 0.1
-    all_estate_possible_privileges = 1
-    loyalty_change_on_revoked = 0.05
+    		all_estate_possible_privileges = 1
+    		loyalty_change_on_revoked = 0.05
 	}
 
 	pol1 = {
@@ -58,33 +58,33 @@ politics_ideas = {
 	}
 	pol2 = {
 		national_focus_years = -10
-    ae_impact = -0.3
-    global_manpower_modifier = 0.15
+    		ae_impact = -0.3
+    		global_manpower_modifier = 0.15
 	}
 	pol3 = {
 		dip_advisor_cost = -0.25
-  	reform_progress_growth = 0.20
+  		reform_progress_growth = 0.20
 	}
 	pol4 = {
 		possible_policy = 1
-   	free_dip_policy = 1
+   		free_dip_policy = 1
     
 	}
 	pol5 = {
 		province_warscore_cost = -0.10
-    land_morale = 0.05
+    		land_morale = 0.05
 	}
 	pol6 = {
 		num_of_parliament_issues = 1
 		parliament_backing_chance = 0.30
-    parliament_effect_duration = 1
-    power_projection_from_insults = 0.5
-    prestige = 1
-    prestige_decay = -0.01
+    		parliament_effect_duration = 1
+    		power_projection_from_insults = 0.5
+    		prestige = 1
+    		prestige_decay = -0.01
 	}
 	pol7 = {
 		reduced_stab_impacts = yes
-    monarch_diplomatic_power = 2
+    		monarch_diplomatic_power = 2
 	}
 }
 
@@ -93,12 +93,12 @@ inland_trade_ideas = {
 
 	bonus = {
 		merchants = 1
-    global_own_trade_power = 0.15
+    		global_own_trade_power = 0.15
 	}
 
 	inland1 = {
 		merchants = 1
-    caravan_power = 0.25
+    		caravan_power = 0.25
 	}
 	inland2 = {
 		global_prov_trade_power_modifier = 0.25
@@ -109,22 +109,22 @@ inland_trade_ideas = {
 	}
 	inland4 = {
 		trade_efficiency = 0.1
-    placed_merchant_power = 15
+   		placed_merchant_power = 15
 		
 	}
 	inland5 = {
 		embargo_efficiency = 0.30
-    burghers_loyalty_modifier = 0.1 #--TODO check if correct estate name and add equivalent estates for indians etc.
+    		burghers_loyalty_modifier = 0.1 #--TODO check if correct estate name and add equivalent estates for indians etc.
 		
 	}
 	inland6 = {
 		build_cost = -0.1
-    #--TODO marketplaces give +1 building slot	
+    		#--TODO marketplaces give +1 building slot	
     	
 	}
 	inland7 = {
 		land_forcelimit_modifier = 0.10
-    mercantilism_cost = -0.25
+    		mercantilism_cost = -0.25
 		
 	}
 }
@@ -143,8 +143,8 @@ maritime_ideas = {
 	}
 	mari2 = {
 		trade_range_modifier = 0.30
-    global_sailors_modifier = 0.1
-    sailors_recovery_speed = 0.2
+   		global_sailors_modifier = 0.1
+    		sailors_recovery_speed = 0.2
 		
 	}
 	mari3 = {
@@ -161,11 +161,11 @@ maritime_ideas = {
 	}
 	mari6 = {
 		global_trade_power = 0.1
-    trade_efficiency = 0.1
+    		trade_efficiency = 0.1
 	}
 	mari7 = {
 		center_of_trade_upgrade_cost = -0.15
-    admiral_cost = -0.2
+    		admiral_cost = -0.2
 	}
 }
 
