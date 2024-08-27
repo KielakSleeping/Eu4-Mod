@@ -166,7 +166,7 @@ breakthrough_in_shipbuilding = {
        }
 } 
 
-i_own_you = { 
+you_own_nothing_and_will_be_happy = { 
        monarch_power = DIP
 
        potential = { 
