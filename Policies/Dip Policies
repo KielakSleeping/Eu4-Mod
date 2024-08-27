@@ -1,588 +1,585 @@
-POLICY_NAME_HERE = { 
+new_state_law = { 
        monarch_power = DIP
 
        potential = { 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = admin_ideas 
+               has_idea_group = politics_ideas 
        }
 
        allow = { 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = admin_ideas  
+               full_idea_group = politics_ideas 
        }
 
-       bonus_here 
-       bonus_here 
+       advisor_cost = -0.15
+       global_manpower_modifier = 0.10
 
        ai_will_do = { 
                factor = FACTOR_HERE 
        }
 } 
 
-POLICY_NAME_HERE = { 
+trade_regulations = { 
        monarch_power = DIP
 
        potential = { 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = admin_ideas 
+               has_idea_group = inland_ideas 
        }
 
        allow = { 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = admin_ideas 
+               full_idea_group = inland_ideas 
        }
 
-       bonus_here 
-       bonus_here 
+       center_of_trade_upgrade_cost = -0.2
+       trade_efficiency = 0.1
 
        ai_will_do = { 
                factor = FACTOR_HERE 
        }
 } 
 
-POLICY_NAME_HERE = { 
+experienced_merchants = { 
        monarch_power = DIP
 
        potential = { 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = admin_ideas 
+               has_idea_group = maritime_ideas 
        }
 
        allow = { 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = admin_ideas
+               full_idea_group = maritime_ideas 
        }
 
-       bonus_here 
-       bonus_here 
+       reduced_trade_penalty_on_non_main_tradenode = 1
+       
 
        ai_will_do = { 
                factor = FACTOR_HERE 
        }
 } 
 
-POLICY_NAME_HERE = { 
+tolerant_state = { 
        monarch_power = DIP
 
        potential = { 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = humanist_ideas 
+               has_idea_group = politics_ideas 
        }
 
        allow = { 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = humanist_ideas 
+               full_idea_group = politics_ideas 
        }
 
-       bonus_here 
-       bonus_here 
+       advisor_cost = -0.10 
+       stability_cost_modifier = -0.20 
 
        ai_will_do = { 
                factor = FACTOR_HERE 
        }
 } 
 
-POLICY_NAME_HERE = { 
+living_off_the_land = { 
        monarch_power = DIP
 
        potential = { 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = humanist_ideas 
+               has_idea_group = inland_ideas 
        }
 
        allow = { 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = humanist_ideas 
+               full_idea_group = inland_ideas 
        }
 
-       bonus_here 
-       bonus_here 
+       merchants = 1 
+      	global_prov_trade_power_modifier = 0.20 
 
        ai_will_do = { 
                factor = FACTOR_HERE 
        }
 } 
 
-POLICY_NAME_HERE = { 
+scientific_revolution = { 
        monarch_power = DIP
 
        potential = { 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = innovative_ideas 
+               has_idea_group = politics_ideas 
        }
 
        allow = { 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = innovative_ideas 
+               full_idea_group = politics_ideas 
        }
 
-       bonus_here 
-       bonus_here 
+       technology_cost = -0.075
+       idea_cost = -0.075
 
        ai_will_do = { 
                factor = FACTOR_HERE 
        }
 } 
 
-POLICY_NAME_HERE = { 
+consolidating_trade = { 
        monarch_power = DIP
 
        potential = { 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = innovative_ideas 
+               has_idea_group = inland_ideas 
        }
 
        allow = { 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = innovative_ideas 
+               full_idea_group = inland_ideas 
        }
 
-       bonus_here 
-       bonus_here 
+       global_trade_goods_size_modifier = 0.1
+       global_own_trade_power = 0.1
 
        ai_will_do = { 
                factor = FACTOR_HERE 
        }
 } 
 
-POLICY_NAME_HERE = { 
+breakthrough_in_shipbuilding = { 
        monarch_power = DIP
 
        potential = { 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = innovative_ideas 
+               has_idea_group = maritime_ideas 
        }
 
        allow = { 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = innovative_ideas 
+               full_idea_group = maritime_ideas 
        }
 
-       bonus_here 
-       bonus_here 
+       max_flagships = 1
+       trade_steering = 0.1
 
        ai_will_do = { 
                factor = FACTOR_HERE 
        }
 } 
 
-POLICY_NAME_HERE = { 
+i_own_you = { 
        monarch_power = DIP
 
        potential = { 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = economic_ideas 
+               has_idea_group = tyranny_ideas 
        }
 
        allow = { 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = economic_ideas 
+               full_idea_group = tyranny_ideas 
        }
 
-       bonus_here 
-       bonus_here 
+       vassal_income = 0.25 
+       global_tax_modifier = 0.1
 
        ai_will_do = { 
                factor = FACTOR_HERE 
        }
 } 
 
-POLICY_NAME_HERE = { 
+hello_i_like_money = { 
        monarch_power = DIP
 
        potential = { 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = economic_ideas 
+               has_idea_group = inland_ideas 
        }
 
        allow = { 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = economic_ideas 
+               full_idea_group = inland_ideas 
        }
 
-       bonus_here 
-       bonus_here 
+     	trade_efficiency = 0.2
 
        ai_will_do = { 
                factor = FACTOR_HERE 
        }
 } 
 
-POLICY_NAME_HERE = { 
+hello_i_like_money_too = { 
        monarch_power = DIP
 
        potential = { 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = economic_ideas 
+               has_idea_group = maritime_ideas 
        }
 
        allow = { 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = economic_ideas 
+               full_idea_group = maritime_ideas 
        }
 
-       bonus_here 
-       bonus_here 
+       trade_efficiency = 0.2
 
        ai_will_do = { 
                factor = FACTOR_HERE 
        }
 } 
 
-POLICY_NAME_HERE = { 
+build_a_statue_of_me = { 
        monarch_power = DIP
 
        potential = { 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = infrastructure_ideas 
+               has_idea_group = tyranny_ideas 
        }
 
        allow = { 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = infrastructure_ideas 
+               full_idea_group = tyranny_ideas 
        }
 
-       bonus_here 
-       bonus_here 
+       great_project_upgrade_cost = -0.20 
+       global_spy_defence = 0.5
 
        ai_will_do = { 
                factor = FACTOR_HERE 
        }
 } 
 
-POLICY_NAME_HERE = { 
+better_infrastructure = { 
        monarch_power = DIP
 
        potential = { 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = infrastructure_ideas 
+               has_idea_group = politics_ideas 
        }
 
        allow = { 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = infrastructure_ideas 
+               full_idea_group = politics_ideas 
        }
 
-       bonus_here 
-       bonus_here 
+      	build_cost = -0.1 
+       build_time = -0.1
 
        ai_will_do = { 
                factor = FACTOR_HERE 
        }
 } 
 
-POLICY_NAME_HERE = { 
+whats_yours_is_mine = { 
        monarch_power = DIP
 
        potential = { 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = expansion_ideas 
+               has_idea_group = tyranny_ideas 
        }
 
        allow = { 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = expansion_ideas 
+               full_idea_group = tyranny_ideas 
        }
 
-       bonus_here 
-       bonus_here 
+       diplomatic_upkeep = 2
+       unjustified_demands = -0.2
 
        ai_will_do = { 
                factor = FACTOR_HERE 
        }
 } 
 
-POLICY_NAME_HERE = { 
+prophet = { 
        monarch_power = DIP
 
        potential = { 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = religious_ideas 
+               has_idea_group = tyranny_ideas 
        }
 
        allow = { 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = religious_ideas 
+               full_idea_group = tyranny_ideas 
        }
 
-       bonus_here 
-       bonus_here 
+       liberty_desire = -30
+       vassal_income = 0.25
 
        ai_will_do = { 
                factor = FACTOR_HERE 
        }
 } 
 
-POLICY_NAME_HERE = { 
+return_of_the_seapeople = { 
        monarch_power = DIP
 
        potential = { 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = religious_ideas 
+               has_idea_group = maritime_ideas 
        }
 
        allow = { 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = religious_ideas 
+               full_idea_group = maritime_ideas 
        }
 
-       bonus_here 
-       bonus_here 
+       may_perform_slave_raid = yes
+
+       ai_will_do = { 
+               factor = FACTOR_HERE 
+       }
+}
+
+advocate_for_cheaper_horses = { 
+       monarch_power = DIP
+
+       potential = { 
+               has_idea_group = cavalry_ideas 
+               has_idea_group = politics_ideas 
+       }
+
+       allow = { 
+               full_idea_group = cavalry_ideas 
+               full_idea_group = politics_ideas 
+       }
+
+       cavalry_cost = -0.15
 
        ai_will_do = { 
                factor = FACTOR_HERE 
        }
 } 
 
-POLICY_NAME_HERE = { 
+improved_trade_routes = { 
        monarch_power = DIP
 
        potential = { 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = cavalry_ideas 
+               has_idea_group = inland_ideas 
        }
 
        allow = { 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = cavalry_ideas 
+               full_idea_group = inland_ideas 
        }
 
-       bonus_here 
-       bonus_here 
+      	movement_speed = 0.10
+       caravan_power = 0.15
 
        ai_will_do = { 
                factor = FACTOR_HERE 
        }
 } 
 
-POLICY_NAME_HERE = { 
+gotta_go_fast = { 
        monarch_power = DIP
 
        potential = { 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = cavalry_ideas 
+               has_idea_group = maritime_ideas 
        }
 
        allow = { 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = cavalry_ideas 
+               full_idea_group = maritime_ideas 
        }
 
-       bonus_here 
-       bonus_here 
+       max_admiral_maneuver = 1
+       max_general_maneuver = 1
 
        ai_will_do = { 
                factor = FACTOR_HERE 
        }
 } 
 
-POLICY_NAME_HERE = { 
+local_conscripts = { 
        monarch_power = DIP
 
        potential = { 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = infantry_ideas 
+               has_idea_group = inland_ideas 
        }
 
        allow = { 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = infantry_ideas 
+               full_idea_group = inland_ideas 
        }
 
-       bonus_here 
-       bonus_here 
+       infantry_cost = -0.10 
+       global_regiment_recruit_speed = -0.10
 
        ai_will_do = { 
                factor = FACTOR_HERE 
        }
 } 
 
-POLICY_NAME_HERE = { 
+navy_seals = { 
        monarch_power = DIP
 
        potential = { 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = infantry_ideas 
+               has_idea_group = maritime_ideas 
        }
 
        allow = { 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = infantry_ideas 
+               full_idea_group = maritime_ideas 
        }
 
-       bonus_here 
-       bonus_here 
+      	has_marines = yes
+       allowed_marine_fraction = 0.3
 
        ai_will_do = { 
                factor = FACTOR_HERE 
        }
 } 
 
-POLICY_NAME_HERE = { 
+improved_siege_logistics = { 
        monarch_power = DIP
 
        potential = { 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = artillery_ideas 
+               has_idea_group = inland_ideas 
        }
 
        allow = { 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = artillery_ideas 
+               full_idea_group = inland_ideas 
        }
 
-       bonus_here 
-       bonus_here 
+       siege_ability = 0.20
+       artillery_cost = -0.15
 
        ai_will_do = { 
                factor = FACTOR_HERE 
        }
 } 
 
-POLICY_NAME_HERE = { 
+highest_quality_goods = { 
        monarch_power = DIP
 
        potential = { 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = quality_ideas 
+               has_idea_group = inland_ideas 
        }
 
        allow = { 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = quality_ideas 
+               full_idea_group = inland_ideas 
        }
 
-       bonus_here 
-       bonus_here 
+       global_trade_goods_size_modifier = 0.15
+     
 
        ai_will_do = { 
                factor = FACTOR_HERE 
        }
 } 
 
-POLICY_NAME_HERE = { 
+up_to_standard_navy = { 
        monarch_power = DIP
 
        potential = { 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = quality_ideas 
+               has_idea_group = maritime_ideas 
        }
 
        allow = { 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = quality_ideas 
+               full_idea_group = maritime_ideas 
        }
 
-       bonus_here 
-       bonus_here 
+       heavy_ship_power = 0.1
+      	movement_speed_in_fleet_modifier = 1 #--TODO check if this works
 
        ai_will_do = { 
                factor = FACTOR_HERE 
        }
 } 
 
-POLICY_NAME_HERE = { 
+establish_ministry_of_defense = { 
        monarch_power = DIP
 
        potential = { 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = defensive_ideas 
+               has_idea_group = politics_ideas 
        }
 
        allow = { 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = defensive_ideas 
+               full_idea_group = politics_ideas 
        }
 
-       bonus_here 
-       bonus_here 
+       fort_maintenance_modifier = -0.25
+       garrison_size = 0.20
 
        ai_will_do = { 
                factor = FACTOR_HERE 
        }
 } 
 
-POLICY_NAME_HERE = { 
+expensive_to_take = { 
        monarch_power = DIP
 
        potential = { 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = defensive_ideas 
+               has_idea_group = inland_ideas 
        }
 
        allow = { 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = defensive_ideas 
+               full_idea_group = inland_ideas 
        }
 
-       bonus_here 
-       bonus_here 
+       enemy_core_creation = 0.05
+       global_prov_trade_power_modifier = 0.15
 
        ai_will_do = { 
                factor = FACTOR_HERE 
        }
 } 
 
-POLICY_NAME_HERE = { 
+the_chosen_one = { 
        monarch_power = DIP
 
        potential = { 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = divine_ideas 
+               has_idea_group = tyranny_ideas 
        }
 
        allow = { 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = divine_ideas 
+               full_idea_group = tyranny_ideas 
        }
 
-       bonus_here 
-       bonus_here 
+       liberty_desire = -100 
+       vassal_income = 0.3 
 
        ai_will_do = { 
                factor = FACTOR_HERE 
        }
 } 
 
-POLICY_NAME_HERE = { 
+designated_ship_priests = { 
        monarch_power = DIP
 
        potential = { 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               has_idea_group = divine_ideas 
+               has_idea_group = maritime_ideas 
        }
 
        allow = { 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
+               full_idea_group = divine_ideas 
+               full_idea_group = maritime_ideas 
        }
 
-       bonus_here 
-       bonus_here 
+       culture_conversion_cost = -0.10
+       global_trade_power = 0.1 
 
        ai_will_do = { 
                factor = FACTOR_HERE 
        }
 } 
 
-POLICY_NAME_HERE = { 
-       monarch_power = DIP
-
-       potential = { 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               has_idea_group = IDEA_GRP_NAME_HERE_ideas 
-       }
-
-       allow = { 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
-               full_idea_group = IDEA_GRP_NAME_HERE_ideas 
-       }
-
-       bonus_here 
-       bonus_here 
-
-       ai_will_do = { 
-               factor = FACTOR_HERE 
-       }
-} 
 
