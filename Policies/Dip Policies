@@ -491,7 +491,7 @@ up_to_standard_navy = {
        }
 
        heavy_ship_power = 0.1
-      	movement_speed_in_fleet_modifier = 1 #--TODO check if this works
+      	movement_speed_in_fleet_modifier = 1
 
        ai_will_do = { 
                factor = FACTOR_HERE 
