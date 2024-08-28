@@ -421,20 +421,77 @@ it_cant_be_theirs_if_theyre_dead = {
 
        potential = { 
                has_idea_group = expansion_ideas 
-               has_idea_group = infantry_ideas 
+               has_idea_group = infantry_ideas
+               NOT = { has_active_policy=it_cant_be_theirs_if_theyre_dead_1 }
+               NOT = { has_active_policy=it_cant_be_theirs_if_theyre_dead_2 }
+               NOT = { mil_tech = 15 }
        }
 
        allow = { 
                full_idea_group = expansion_ideas 
-               full_idea_group = infantry_ideas 
+               full_idea_group = infantry_ideas
+               NOT = { mil_tech = 15 }
+               
        }
 
-       infantry_fire = 0.15 #--TODO make it scaling with tech: 0.3 and 0.5
+       infantry_fire = 0.15
 
        ai_will_do = { 
                factor = FACTOR_HERE 
        }
-} 
+}
+
+it_cant_be_theirs_if_theyre_dead_1 = { 
+       monarch_power = MIL
+
+       potential = { 
+               has_idea_group = expansion_ideas 
+               has_idea_group = infantry_ideas
+               mil_tech = 15
+               NOT = { mil_tech = 22 }
+               
+       }
+
+       allow = { 
+               full_idea_group = expansion_ideas 
+               full_idea_group = infantry_ideas
+               NOT = { mil_tech = 22 }
+               NOT = { has_active_policy = it_cant_be_theirs_if_theyre_dead }
+               
+       }
+
+       infantry_fire = 0.3
+
+       ai_will_do = { 
+               factor = FACTOR_HERE 
+       }
+}
+
+it_cant_be_theirs_if_theyre_dead_2 = { 
+       monarch_power = MIL
+
+       potential = { 
+               has_idea_group = expansion_ideas 
+               has_idea_group = infantry_ideas
+               mil_tech = 22
+              
+               
+       }
+
+       allow = { 
+               full_idea_group = expansion_ideas 
+               full_idea_group = infantry_ideas
+               NOT = { mil_tech = 32 }
+               NOT = { has_active_policy = it_cant_be_theirs_if_theyre_dead_1 }
+               
+       }
+
+       infantry_fire = 0.55
+
+       ai_will_do = { 
+               factor = FACTOR_HERE 
+       }
+}
 
 breach_and_strom_tactics = { 
        monarch_power = MIL
@@ -669,14 +726,68 @@ naval_artillery = {
        potential = { 
                has_idea_group = artillery_ideas 
                has_idea_group = maritime_ideas 
+               NOT = { has_active_policy = naval_artillery_1 }
+		 NOT = { has_active_policy = naval_artillery_2 }
+		 NOT = {mil_tech = 15}
        }
 
        allow = { 
                full_idea_group = artillery_ideas 
                full_idea_group = maritime_ideas 
+               NOT = {mil_tech = 15}
        }
 
-       artillery_fire = 0.25 #--TODO scaling 0.5 and 0.75 at techs 
+       artillery_fire = 0.25
+       leader_naval_manuever = 1 
+
+       ai_will_do = { 
+               factor = FACTOR_HERE 
+       }
+} 
+
+naval_artillery_1 = { 
+       monarch_power = MIL
+
+       potential = { 
+               has_idea_group = artillery_ideas 
+               has_idea_group = maritime_ideas 
+               mil_tech = 15
+		 NOT = {mil_tech = 22}
+       }
+
+       allow = { 
+               full_idea_group = artillery_ideas 
+               full_idea_group = maritime_ideas 
+               NOT = {mil_tech = 22}
+               NOT = { has_active_policy = naval_artillery}
+       }
+
+       artillery_fire = 0.5
+       leader_naval_manuever = 1 
+
+       ai_will_do = { 
+               factor = FACTOR_HERE 
+       }
+} 
+
+naval_artillery_2 = { 
+       monarch_power = MIL
+
+       potential = { 
+               has_idea_group = artillery_ideas 
+               has_idea_group = maritime_ideas 
+               mil_tech = 22
+		 
+       }
+
+       allow = { 
+               full_idea_group = artillery_ideas 
+               full_idea_group = maritime_ideas 
+               NOT = {mil_tech = 32}
+               NOT = { has_active_policy = naval_artillery_1}
+       }
+
+       artillery_fire = 0.75
        leader_naval_manuever = 1 
 
        ai_will_do = { 
