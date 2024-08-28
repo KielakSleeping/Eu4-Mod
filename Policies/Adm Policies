@@ -285,7 +285,7 @@ capitalism = {
                full_idea_group = politics_ideas 
        }
 
-       #--TODO +1 dev from manus 
+       #Mechanic: +1/-1 Dev from Manufactories 
        reform_progress_growth = 0.20 
 
        ai_will_do = { 
