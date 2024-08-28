@@ -122,7 +122,7 @@ economic_ideas = {
 
 	bonus = {
 		global_allowed_num_of_manufactories = 1
-	 	 #--TODO Find code for adding +1 dev from manufactories--
+		+1/-1 Dev from Manufactories
 	}
 
 	eco1 = {
@@ -214,7 +214,7 @@ expansion_ideas = {
 		trade_company_investment_cost = -0.25
 	}
 	exp5 = {
-		stability_cost_to_declare_war = 1 #--TODO check if this works like it shoud
+		reduced_stab_impacts = yes
 		diplomatic_annexation_cost = -0.25
 	}
 	exp6 = {
