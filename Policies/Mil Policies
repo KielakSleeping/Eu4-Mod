@@ -61,7 +61,7 @@ coscription_service = {
        }
 } 
 
-POLICY_NAME_HERE = { 
+horse_armor = { 
        monarch_power = MIL
 
        potential = { 
@@ -103,7 +103,7 @@ combat_medics = {
        }
 } 
 
-defense_is_the_best_offense = { 
+protect_whats_ours = { 
        monarch_power = MIL
 
        potential = { 
@@ -207,7 +207,7 @@ heat_seeking_missles = {
        }
 } 
 
-POLICY_NAME_HERE = { 
+wave_tactics = { 
        monarch_power = MIL
 
        potential = { 
@@ -228,7 +228,7 @@ POLICY_NAME_HERE = {
        }
 } 
 
-POLICY_NAME_HERE = { 
+relentless_believe = { 
        monarch_power = MIL
 
        potential = { 
@@ -241,7 +241,7 @@ POLICY_NAME_HERE = {
                full_idea_group = divine_ideas 
        }
 
-       manpower_recovery_speed = 0.15 
+       land_morale = 0.05 
        recover_army_morale_speed = 0.15
 
        ai_will_do = { 
@@ -249,7 +249,7 @@ POLICY_NAME_HERE = {
        }
 } 
 
-POLICY_NAME_HERE = { 
+mass_production_of_cannons = { 
        monarch_power = MIL
 
        potential = { 
@@ -270,7 +270,7 @@ POLICY_NAME_HERE = {
        }
 } 
 
-POLICY_NAME_HERE = { 
+invest_in_better_equipment = { 
        monarch_power = MIL
 
        potential = { 
@@ -291,7 +291,7 @@ POLICY_NAME_HERE = {
        }
 } 
 
-POLICY_NAME_HERE = { 
+bullet_proof_vests = { 
        monarch_power = MIL
 
        potential = { 
@@ -311,7 +311,7 @@ POLICY_NAME_HERE = {
        }
 } 
 
-POLICY_NAME_HERE = { 
+church_pays_you_fight = { 
        monarch_power = MIL
 
        potential = { 
@@ -332,7 +332,7 @@ POLICY_NAME_HERE = {
        }
 } 
 
-POLICY_NAME_HERE = { 
+city_spanning_stables = { 
        monarch_power = MIL
 
        potential = { 
@@ -353,7 +353,7 @@ POLICY_NAME_HERE = {
        }
 } 
 
-POLICY_NAME_HERE = { 
+structural_weakness_analysis = { 
        monarch_power = MIL
 
        potential = { 
@@ -374,7 +374,7 @@ POLICY_NAME_HERE = {
        }
 } 
 
-POLICY_NAME_HERE = { 
+trench_warfare = { 
        monarch_power = MIL
 
        potential = { 
@@ -395,7 +395,7 @@ POLICY_NAME_HERE = {
        }
 } 
 
-POLICY_NAME_HERE = { 
+five_star_barracks = { 
        monarch_power = MIL
 
        potential = { 
@@ -416,7 +416,7 @@ POLICY_NAME_HERE = {
        }
 } 
 
-POLICY_NAME_HERE = { 
+it_cant_be_theirs_if_theyre_dead = { 
        monarch_power = MIL
 
        potential = { 
@@ -436,7 +436,7 @@ POLICY_NAME_HERE = {
        }
 } 
 
-POLICY_NAME_HERE = { 
+breach_and_strom_tactics = { 
        monarch_power = MIL
 
        potential = { 
@@ -457,7 +457,7 @@ POLICY_NAME_HERE = {
        }
 } 
 
-POLICY_NAME_HERE = { 
+defense_is_the_best_offense = { 
        monarch_power = MIL
 
        potential = { 
@@ -497,7 +497,7 @@ POLICY_NAME_HERE = {
        }
 } 
 
-POLICY_NAME_HERE = { 
+blessed_bullets = { 
        monarch_power = MIL
 
        potential = { 
@@ -517,7 +517,7 @@ POLICY_NAME_HERE = {
        }
 } 
 
-POLICY_NAME_HERE = { 
+blessed_cannonballs = { 
        monarch_power = MIL
 
        potential = { 
@@ -537,7 +537,7 @@ POLICY_NAME_HERE = {
        }
 } 
 
-POLICY_NAME_HERE = { 
+god_at_our_side = { 
        monarch_power = MIL
 
        potential = { 
@@ -558,7 +558,7 @@ POLICY_NAME_HERE = {
        }
 } 
 
-POLICY_NAME_HERE = { 
+whips = { 
        monarch_power = MIL
 
        potential = { 
@@ -579,7 +579,7 @@ POLICY_NAME_HERE = {
        }
 } 
 
-POLICY_NAME_HERE = { 
+deserters_will_be_shot = { 
        monarch_power = MIL
 
        potential = { 
@@ -600,7 +600,7 @@ POLICY_NAME_HERE = {
        }
 } 
 
-POLICY_NAME_HERE = { 
+we_fight_for_democracy = { 
        monarch_power = MIL
 
        potential = { 
@@ -621,7 +621,7 @@ POLICY_NAME_HERE = {
        }
 } 
 
-POLICY_NAME_HERE = { 
+reckless_assault = { 
        monarch_power = MIL
 
        potential = { 
@@ -642,7 +642,7 @@ POLICY_NAME_HERE = {
        }
 } 
 
-POLICY_NAME_HERE = { 
+legalize_chain_shot = { 
        monarch_power = MIL
 
        potential = { 
@@ -663,7 +663,7 @@ POLICY_NAME_HERE = {
        }
 } 
 
-POLICY_NAME_HERE = { 
+naval_artillery = { 
        monarch_power = MIL
 
        potential = { 
@@ -684,7 +684,7 @@ POLICY_NAME_HERE = {
        }
 } 
 
-POLICY_NAME_HERE = { 
+loyal_out_of_fear = { 
        monarch_power = MIL
 
        potential = { 
@@ -704,7 +704,7 @@ POLICY_NAME_HERE = {
        }
 } 
 
-POLICY_NAME_HERE = { 
+militarisation_of_the_state = { 
        monarch_power = MIL
 
        potential = { 
@@ -726,7 +726,7 @@ POLICY_NAME_HERE = {
        }
 } 
 
-POLICY_NAME_HERE = { 
+guerrilla_tactics = { 
        monarch_power = MIL
 
        potential = { 
@@ -747,7 +747,7 @@ POLICY_NAME_HERE = {
        }
 } 
 
-POLICY_NAME_HERE = { 
+turtle_ships = { 
        monarch_power = MIL
 
        potential = { 
@@ -768,7 +768,7 @@ POLICY_NAME_HERE = {
        }
 } 
 
-POLICY_NAME_HERE = { 
+send_in_the_cannonfodder = { 
        monarch_power = MIL
 
        potential = { 
@@ -791,7 +791,7 @@ POLICY_NAME_HERE = {
        }
 } 
 
-POLICY_NAME_HERE = { 
+mass_conscription = { 
        monarch_power = MIL
 
        potential = { 
@@ -812,7 +812,7 @@ POLICY_NAME_HERE = {
        }
 } 
 
-POLICY_NAME_HERE = { 
+supply_logistics = { 
        monarch_power = MIL
 
        potential = { 
@@ -833,7 +833,7 @@ POLICY_NAME_HERE = {
        }
 } 
 
-POLICY_NAME_HERE = { 
+mass_production_of_ships = { 
        monarch_power = MIL
 
        potential = { 
@@ -855,7 +855,7 @@ POLICY_NAME_HERE = {
        }
 } 
 
-POLICY_NAME_HERE = { 
+campaign_against_nonbelievers = { 
        monarch_power = MIL
 
        potential = { 
@@ -877,7 +877,7 @@ POLICY_NAME_HERE = {
        }
 } 
 
-POLICY_NAME_HERE = { 
+isolationist_society = { 
        monarch_power = MIL
 
        potential = { 
