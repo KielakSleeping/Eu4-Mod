@@ -114,7 +114,7 @@ inland_trade_ideas = {
 	}
 	inland5 = {
 		embargo_efficiency = 0.30
-    		burghers_loyalty_modifier = 0.1 #--TODO check if correct estate name and add equivalent estates for indians etc.
+    		burghers_loyalty_modifier = 0.1
 		
 	}
 	inland6 = {
