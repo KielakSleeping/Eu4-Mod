@@ -235,14 +235,14 @@ religious_ideas = {
 
 	bonus = {
 		development_cost_in_primary_culture = -0.05
-		church_privilege_slots = 1 #--TODO check if its correct and add equivalent for india and china nations
+		church_privilege_slots = 1 
 	}
 
 	rel1 = {
 		cb_on_religious_enemies = yes
 	}
 	rel2 = {
-    		#--TODO here add code for increased morale when at war with other religions
+		 land_morale = 0.05
    		 monthly_church_power = 0.01
    		 monthly_fervor_increase = 1
     		 papal_influence = 1
