@@ -473,7 +473,8 @@ its_free_real_estate = {
        }
 
        province_warscore_cost = -0.10 
-       core_creation = -0.2 
+       core_creation = -0.2
+       cb_on_government_enemies = yes
 
        ai_will_do = { 
                factor = FACTOR_HERE 
