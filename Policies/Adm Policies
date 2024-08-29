@@ -264,7 +264,7 @@ unsiegable = {
                full_idea_group = defensive_ideas 
        }
 
-       fort_level = 1 #--TODO this might need to be coded so its only on capital, like via event or smthing
+       ##########################################################################################
        defensiveness = 0.20 
 
        ai_will_do = { 
@@ -642,7 +642,7 @@ blessing_the_land = {
                full_idea_group = inland_ideas 
        }
 
-       burghers_privilege_slots = 1 #--TODO check if correct estate and add equivalents for indians etc
+       burghers_privilege_slots = 1
        development_cost_in_primary_culture = -0.05 
 
        ai_will_do = { 
