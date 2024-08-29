@@ -19,7 +19,26 @@ tyranny_ideas = {
 		advisor_cost = -0.1
 	}
 	tyr4 = {
-		#--TODO: Vassal Discipline and Morale (ask putlying for modinfo if neccesarry)
+		 effect = {
+        		every_subject_country = {
+            			limit = {
+               				 is_colonial_nation = no
+            				}
+            	add_country_modifier = {
+                	name = trained_subject_officers
+                	duration = -1
+                	hidden = yes
+            				}
+        					}
+    			}
+
+		removed_effect = {
+        		every_subject_country = {
+            			remove_country_modifier = trained_subject_officers
+        					}
+    				}
+
+	
 	}
 	tyr5 = {
 		leader_cost = -0.15
