@@ -10,7 +10,7 @@ cavalry_ideas = {
 		movement_speed = 0.2
 	}
 	cav2 = {
-		cavarly_power = 0.125
+		cavalry_power = 0.125
 	}
 	cav3 = {
 		cav_to_inf_ratio = 0.1
@@ -48,7 +48,7 @@ infantry_ideas = {
 		infantry_cost = -0.15
 	}
 	inf4 = {
-		land_fire_damage = 0.1
+		fire_damage = 0.1
 	}
 	inf5 = {
 		recover_army_morale_speed = 0.15
