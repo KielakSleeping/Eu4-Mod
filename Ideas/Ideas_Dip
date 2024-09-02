@@ -171,7 +171,7 @@ maritime_ideas = {
     trade_steering = 0.2
 	}
 	mari4 = {
-		min_autonomy_in_territories = 0.1
+		min_autonomy_in_territories = -0.1
 		trade_company_investment_cost = -0.2
 	}
 	mari5 = {
