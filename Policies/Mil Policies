@@ -928,12 +928,12 @@ supply_logistics = {
 
        potential = { 
                has_idea_group = quantity_ideas 
-               has_idea_group = inland_ideas 
+               has_idea_group = inland_trade_ideas 
        }
 
        allow = { 
                full_idea_group = quantity_ideas 
-               full_idea_group = inland_ideas 
+               full_idea_group = inland_trade_ideas 
        }
 
        land_attrition = -0.20 
@@ -993,12 +993,12 @@ isolationist_society = {
 
        potential = { 
                has_idea_group = divine_ideas 
-               has_idea_group = inland_ideas 
+               has_idea_group = inland_trade_ideas 
        }
 
        allow = { 
                full_idea_group = divine_ideas 
-               full_idea_group = inland_ideas 
+               full_idea_group = inland_trade_ideas 
        }
 
        manpower_in_true_faith_provinces= 0.25 
