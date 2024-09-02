@@ -361,12 +361,12 @@ futuristic_building_materials = {
 
        potential = { 
                has_idea_group = infrastructure_ideas 
-               has_idea_group = inland_ideas 
+               has_idea_group = inland_trade_ideas 
        }
 
        allow = { 
                full_idea_group = infrastructure_ideas 
-               full_idea_group = inland_ideas 
+               full_idea_group = inland_trade_ideas 
        }
 
        build_cost = -0.1 
@@ -486,12 +486,12 @@ stay_out_of_my_node = {
 
        potential = { 
                has_idea_group = expansion_ideas 
-               has_idea_group = inland_ideas 
+               has_idea_group = inland_trade_ideas 
        }
 
        allow = { 
                full_idea_group = expansion_ideas 
-               full_idea_group = inland_ideas 
+               full_idea_group = inland_trade_ideas 
        }
 
        embargo_efficiency = 0.30
@@ -635,12 +635,12 @@ blessing_the_land = {
 
        potential = { 
                has_idea_group = religious_ideas 
-               has_idea_group = inland_ideas 
+               has_idea_group = inland_trade_ideas 
        }
 
        allow = { 
                full_idea_group = religious_ideas 
-               full_idea_group = inland_ideas 
+               full_idea_group = inland_trade_ideas 
        }
 
        burghers_privilege_slots = 1
