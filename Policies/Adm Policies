@@ -41,20 +41,20 @@ organized_stables = {
        }
 } 
 
-strict_administration = { 
+strict_admistration = { 
        monarch_power = ADM
 
        potential = { 
-               has_idea_group = admin_ideas 
+               has_idea_group = _ideas 
                has_idea_group = quality_ideas 
        }
 
        allow = { 
-               full_idea_group = admin_ideas 
+               full_idea_group = _ideas 
                full_idea_group = quality_ideas 
        }
 
-       yearly_army_professionalism = 0.5 
+       yearly_army_professionalism = 0.005 
        discipline = 0.025 
 
        ai_will_do = { 
@@ -66,7 +66,7 @@ hold_the_line = {
        monarch_power = ADM
 
        potential = { 
-               has_idea_group = admin_ideas 
+               has_idea_group = _ideas 
                has_idea_group = defensive_ideas 
        }
 
@@ -82,26 +82,6 @@ hold_the_line = {
        }
 } 
 
-church_and_state = { 
-       monarch_power = ADM
-
-       potential = { 
-               has_idea_group = admin_ideas 
-               has_idea_group = divine_ideas 
-       }
-
-       allow = { 
-               full_idea_group = admin_ideas 
-               full_idea_group = divine_ideas 
-       }
-
-       culture_conversion_cost = -0.15 
-       same_culture_advisor_cost = -0.15 
-
-       ai_will_do = { 
-               factor = 1 
-       }
-} 
 
 merciful_tyrant = { 
        monarch_power = ADM
@@ -188,26 +168,7 @@ health_care = {
        }
 } 
 
-spread_the_word_of_god = { 
-       monarch_power = ADM
-
-       potential = { 
-               has_idea_group = humanist_ideas 
-               has_idea_group = divine_ideas 
-       }
-
-       allow = { 
-               full_idea_group = humanist_ideas 
-               full_idea_group = divine_ideas 
-       }
-
-       warscore_cost_vs_other_religion = -0.10 
-       monarch_lifespan = 0.15 
-
-       ai_will_do = { 
-               factor = 1 
-       }
-} 
+ 
 
 mad_scientist = { 
        monarch_power = ADM
@@ -588,26 +549,6 @@ send_in_the_next_batch = {
        }
 } 
 
-do_you_have_time_to_talk_about_our_lord_and_saviour = { 
-       monarch_power = ADM
-
-       potential = { 
-               has_idea_group = expansion_ideas 
-               has_idea_group = divine_ideas 
-       }
-
-       allow = { 
-               full_idea_group = expansion_ideas 
-               full_idea_group = divine_ideas 
-       }
-
-       manpower_in_own_culture_provinces = 0.15 
-       morale_damage_received = -0.05 
-
-       ai_will_do = { 
-               factor = 1 
-       }
-} 
 
 religious_lawgivers = { 
        monarch_power = ADM
