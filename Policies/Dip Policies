@@ -53,7 +53,7 @@ experienced_merchants = {
                full_idea_group = maritime_ideas 
        }
 
-       reduced_trade_penalty_on_non_main_tradenode = 1
+       reduced_trade_penalty_on_non_main_tradenode = 0.5
        
 
        ai_will_do = { 
@@ -331,25 +331,7 @@ return_of_the_seapeople = {
        }
 }
 
-advocate_for_cheaper_horses = { 
-       monarch_power = DIP
 
-       potential = { 
-               has_idea_group = cavalry_ideas 
-               has_idea_group = politics_ideas 
-       }
-
-       allow = { 
-               full_idea_group = cavalry_ideas 
-               full_idea_group = politics_ideas 
-       }
-
-       cavalry_cost = -0.15
-
-       ai_will_do = { 
-               factor = 1 
-       }
-} 
 
 improved_trade_routes = { 
        monarch_power = DIP
@@ -372,26 +354,7 @@ improved_trade_routes = {
        }
 } 
 
-gotta_go_fast = { 
-       monarch_power = DIP
 
-       potential = { 
-               has_idea_group = cavalry_ideas 
-               has_idea_group = maritime_ideas 
-       }
-
-       allow = { 
-               full_idea_group = cavalry_ideas 
-               full_idea_group = maritime_ideas 
-       }
-
-       max_admiral_maneuver = 1
-       max_general_maneuver = 1
-
-       ai_will_do = { 
-               factor = 1 
-       }
-} 
 
 local_conscripts = { 
        monarch_power = DIP
@@ -414,26 +377,7 @@ local_conscripts = {
        }
 } 
 
-navy_seals = { 
-       monarch_power = DIP
 
-       potential = { 
-               has_idea_group = infantry_ideas 
-               has_idea_group = maritime_ideas 
-       }
-
-       allow = { 
-               full_idea_group = infantry_ideas 
-               full_idea_group = maritime_ideas 
-       }
-
-      	has_marines = yes
-       allowed_marine_fraction = 0.3
-
-       ai_will_do = { 
-               factor = 1 
-       }
-} 
 
 improved_siege_logistics = { 
        monarch_power = DIP
@@ -477,47 +421,9 @@ highest_quality_goods = {
        }
 } 
 
-up_to_standard_navy = { 
-       monarch_power = DIP
 
-       potential = { 
-               has_idea_group = quality_ideas 
-               has_idea_group = maritime_ideas 
-       }
 
-       allow = { 
-               full_idea_group = quality_ideas 
-               full_idea_group = maritime_ideas 
-       }
 
-       heavy_ship_power = 0.1
-      	movement_speed_in_fleet_modifier = 1
-
-       ai_will_do = { 
-               factor = 1 
-       }
-} 
-
-establish_ministry_of_defense = { 
-       monarch_power = DIP
-
-       potential = { 
-               has_idea_group = defensive_ideas 
-               has_idea_group = politics_ideas 
-       }
-
-       allow = { 
-               full_idea_group = defensive_ideas 
-               full_idea_group = politics_ideas 
-       }
-
-       fort_maintenance_modifier = -0.25
-       garrison_size = 0.20
-
-       ai_will_do = { 
-               factor = 1 
-       }
-} 
 
 expensive_to_take = { 
        monarch_power = DIP
