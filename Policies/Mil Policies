@@ -607,8 +607,9 @@ god_at_our_side = {
                full_idea_group = divine_ideas 
        }
 
-       land_morale = 0.05 
+       
        morale_damage = 0.1 
+       morale_damage_received = -0.05
 
        ai_will_do = { 
                factor = 1 
@@ -1009,3 +1010,172 @@ isolationist_society = {
        }
 } 
 
+church_and_state = { 
+       monarch_power = MIL
+
+       potential = { 
+               has_idea_group = admin_ideas 
+               has_idea_group = divine_ideas 
+       }
+
+       allow = { 
+               full_idea_group = admin_ideas 
+               full_idea_group = divine_ideas 
+       }
+
+       land_morale = 0.05
+       morale_damage_received = -0.05
+
+       ai_will_do = { 
+               factor = 1 
+       }
+} 
+
+spread_the_word_of_god = { 
+       monarch_power = MIL
+
+       potential = { 
+               has_idea_group = humanist_ideas 
+               has_idea_group = divine_ideas 
+       }
+
+       allow = { 
+               full_idea_group = humanist_ideas 
+               full_idea_group = divine_ideas 
+       }
+
+       warscore_cost_vs_other_religion = -0.10 
+       land_morale = 0.05 
+
+       ai_will_do = { 
+               factor = 1 
+       }
+}
+
+do_you_have_time_to_talk_about_our_lord_and_saviour = { 
+       monarch_power = MIL
+
+       potential = { 
+               has_idea_group = expansion_ideas 
+               has_idea_group = divine_ideas 
+       }
+
+       allow = { 
+               full_idea_group = expansion_ideas 
+               full_idea_group = divine_ideas 
+       }
+
+       manpower_in_own_culture_provinces = 0.15 
+       morale_damage_received = -0.05 
+
+       ai_will_do = { 
+               factor = 1 
+       }
+} 
+
+advocate_for_cheaper_horses = { 
+       monarch_power = MIL
+
+       potential = { 
+               has_idea_group = cavalry_ideas 
+               has_idea_group = politics_ideas 
+       }
+
+       allow = { 
+               full_idea_group = cavalry_ideas 
+               full_idea_group = politics_ideas 
+       }
+
+       cavalry_cost = -0.15
+       cavalry_power = 0.05
+
+       ai_will_do = { 
+               factor = 1 
+       }
+} 
+
+establish_ministry_of_defense = { 
+       monarch_power = MIL
+
+       potential = { 
+               has_idea_group = defensive_ideas 
+               has_idea_group = politics_ideas 
+       }
+
+       allow = { 
+               full_idea_group = defensive_ideas 
+               full_idea_group = politics_ideas 
+       }
+
+       fort_maintenance_modifier = -0.25
+       garrison_size = 0.20
+       fire_damage_received = -0.10
+
+       ai_will_do = { 
+               factor = 1 
+       }
+} 
+
+gotta_go_fast = { 
+       monarch_power = MIL
+
+       potential = { 
+               has_idea_group = cavalry_ideas 
+               has_idea_group = maritime_ideas 
+       }
+
+       allow = { 
+               full_idea_group = cavalry_ideas 
+               full_idea_group = maritime_ideas 
+       }
+
+       max_admiral_maneuver = 1
+       max_general_maneuver = 1
+
+       ai_will_do = { 
+               factor = 1 
+       }
+} 
+
+navy_seals = { 
+       monarch_power = MIL
+
+       potential = { 
+               has_idea_group = infantry_ideas 
+               has_idea_group = maritime_ideas 
+       }
+
+       allow = { 
+               full_idea_group = infantry_ideas 
+               full_idea_group = maritime_ideas 
+       }
+
+      	has_marines = yes
+       allowed_marine_fraction = 0.3
+
+       ai_will_do = { 
+               factor = 1 
+       }
+} 
+up_to_standard_navy = { 
+       monarch_power = MIL
+
+       potential = { 
+               has_idea_group = quality_ideas 
+               has_idea_group = maritime_ideas 
+       }
+
+       allow = { 
+               full_idea_group = quality_ideas 
+               full_idea_group = maritime_ideas 
+       }
+
+       heavy_ship_power = 0.1
+       naval_morale = 0.05
+       artillery_power = 0.1
+	
+
+       ai_will_do = { 
+               factor = 1 
+       }
+} 
