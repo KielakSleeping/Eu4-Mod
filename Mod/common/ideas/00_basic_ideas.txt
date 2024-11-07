@@ -570,10 +570,10 @@ influence_ideas = {
 	bonus = {
 		nobles_loyalty_modifier = 0.15
     	nobles_privilege_slots = 1
-		marathas_loyalty_modifier = 0.15
-    	marathas_privilege_slots = 1
-		rajputs_loyalty_modifier = 0.15
-    	rajputs_privilege_slots = 1
+		maratha_loyalty_modifier = 0.15
+    	maratha_privilege_slots = 1
+		rajput_loyalty_modifier = 0.15
+    	rajput_privilege_slots = 1
 		qizilbash_loyalty_modifier = 0.15
     	qizilbash_privilege_slots = 1
 	}
@@ -896,7 +896,7 @@ trade_ideas = {
 		embargo_efficiency = 0.30
     	burghers_loyalty_modifier = 0.1
 		jains_loyalty_modifier = 0.1
-		vaishyas_loyalty_modifier = 0.1
+		vaisyas_loyalty_modifier = 0.1
 	}
 	trade_manipulation = {
 		build_cost = -0.05	
@@ -955,8 +955,8 @@ aristocracy_ideas = {
 	rightful_conquest = {
 		nobles_loyalty_modifier = 0.1
 		cossacks_loyalty_modifier = 0.1
-		marathas_loyalty_modifier = 0.1
-		rajputs_loyalty_modifier = 0.1
+		maratha_loyalty_modifier = 0.1
+		rajput_loyalty_modifier = 0.1
 		qizilbash_loyalty_modifier = 0.1
 	}
 	local_nobility = {
@@ -1114,7 +1114,7 @@ defensive_ideas = {
 	category = MIL
 
 	bonus = {
-		military_tactics = 0.10
+		military_tactics = 0.13
 		core_decay_on_your_own = -0.5
 	}
 
@@ -1130,7 +1130,7 @@ defensive_ideas = {
 		garrison_size = 0.25
 	}
 	regimental_system = {
-		fire_damage_received = -0.075
+		fire_damage_received = -0.05
 	}
 	defensive_mentality = {
 		max_hostile_attrition = 1
