@@ -2213,7 +2213,7 @@ prussian_monarchy = {
 		max_absolutism = 10
 		monarch_military_power = 1
 		nobles_loyalty_modifier = 0.1
-		governing_capacity_modifier = -0.5
+		governing_capacity_modifier = -0.3
 		expand_administration_cost = 0.1
 	}
 
@@ -2317,7 +2317,7 @@ prussian_monarchy_base = {
 		max_absolutism = 10
 		monarch_military_power = 1
 		nobles_loyalty_modifier = 0.1
-		governing_capacity_modifier = -0.5
+		governing_capacity_modifier = -0.3
 	}
 
 	conditional = {

@@ -273,7 +273,7 @@ prussian_republic_reform = {
 		global_autonomy = -0.075
 		republican_tradition = -0.5
 		max_absolutism = 30
-		governing_capacity_modifier = -0.5
+		governing_capacity_modifier = -0.3
 		max_terms = 5
 		expand_administration_cost = 0.1
 	}
