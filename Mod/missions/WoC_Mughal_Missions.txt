@@ -2677,7 +2677,7 @@ WoC_mughals_5 = {
 				effect = "
 					add_country_modifier = {
 						name = MUG_victory_over_the_peacock
-						duration = 14600
+						duration = 7300
 					}
 					
 					add_prestige_or_monarch_power = { amount = 20 }
