@@ -80,7 +80,7 @@ innovativeness_ideas = {
 		modifier = {
 			factor = 1.25
 			OR = {
-				has_idea_group = economic_ideas 
+				has_idea_group = eas 
 				has_idea_group = offensive_ideas 
 				has_idea_group = naval_ideas
 			}
@@ -188,7 +188,29 @@ economic_ideas = {
 
 	bureaucracy = {
 		global_tax_income = 60
-		#--TODO Find code to give churches +1 building slot
+		effect = {
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						has_tax_building_trigger = yes
+						}
+					add_province_modifier = {
+						name = churches_cost_no_slot
+						duration = -1
+						}
+					}
+				}
+			}
+		removed_effect = {
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						has_province_modifier = churches_cost_no_slot
+					}
+					remove_province_modifier = churches_cost_no_slot
+				}
+			}
+		}
 	}
 	national_bank = {
 		production_efficiency = 0.1
@@ -719,6 +741,32 @@ maritime_ideas = {
 	sea_hawks = {
 		global_trade_power = 0.1
     	trade_efficiency = 0.1
+	effect = {
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						OR = {
+							has_building = dock 
+							has_building = drydock
+							}
+						}
+					add_province_modifier = {
+						name = docks_cost_no_slot
+						duration = -1
+						}
+					}
+				}
+			}
+		removed_effect = {
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						has_province_modifier = docks_cost_no_slot
+					}
+					remove_province_modifier = docks_cost_no_slot
+				}
+			}
+		}
 	}
 	naval_fighting_instruction = {
 		center_of_trade_upgrade_cost = -0.15
@@ -801,6 +849,29 @@ trade_ideas = {
 	}
 	free_trade = {
 		global_prov_trade_power_modifier = 0.25
+		effect = {
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						has_trade_building_trigger = yes
+						}
+					add_province_modifier = {
+						name = market_places_cost_no_slot
+						duration = -1
+						}
+					}
+				}
+			}
+		removed_effect = {
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						has_province_modifier = market_places_cost_no_slot
+					}
+					remove_province_modifier = market_places_cost_no_slot
+				}
+			}
+		}
 	}
 	merchant_adventures = {
 		center_of_trade_upgrade_cost = -0.20
