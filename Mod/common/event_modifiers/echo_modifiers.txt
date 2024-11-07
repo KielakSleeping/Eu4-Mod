@@ -65,7 +65,8 @@ echo_armyreform_cooldown = {
 
 echo_militaryreform_cooldown = {
 }
-
+gecko_armyreform_cooldown={
+}
 hired_explorer = {
 	may_explore = yes
 }
