@@ -480,7 +480,7 @@ estate_nobles_right_of_counsel = {
 		cavalry_power = 0.05
 	}
 	penalties = {
-		cavalry_cost = 0.1
+		 = 0.1
 	}
 	on_granted = {
 		enable_estate_action = {
@@ -2246,14 +2246,14 @@ estate_nobles_mansabdari_cav_maintenance = {
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	benefits = {
-		cav_to_inf_ratio = 0.25
+		cav_to_inf_ratio = 0.1
 	}
 	loyalty_scaled_conditional_modifier = {
 		trigger = {
 			always = yes
 		}
 		modifier = {
-			cavalry_cost = -0.5
+			cavalry_cost = -0.1
 		}
 	}
 	ai_will_do = {
