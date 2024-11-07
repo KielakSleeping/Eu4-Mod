@@ -12,7 +12,7 @@ drill_sergeant = {
        }
 
        leader_land_fire = 1 
-       land_morale = 0.05 
+       land_morale = 0.075 
 
        ai_will_do = { 
                factor = 1 
@@ -74,7 +74,7 @@ horse_armor = {
                full_idea_group = aristocracy_ideas 
        }
 
-       fire_damage_received = -0.10 
+       fire_damage_received = -0.075 
        cavalry_power = 0.05
 
        ai_will_do = { 
@@ -140,6 +140,7 @@ volunteers = {
 
        land_forcelimit_modifier = 0.15 
        reinforce_cost_modifier = -0.10
+       reinforce_speed = 0.10
 
        ai_will_do = { 
                factor = 1 
@@ -221,7 +222,7 @@ wave_tactics = {
                full_idea_group = quantity_ideas 
        }
 
-       manpower_recovery_speed = 0.15 
+       manpower_recovery_speed = 0.2
        recover_army_morale_speed = 0.15 
 
        ai_will_do = { 
@@ -284,8 +285,9 @@ invest_in_better_equipment = {
                full_idea_group = quality_ideas 
        }
 
-       infantry_power = 0.05
-       artillery_power = 0.05
+       infantry_power = 0.075
+       artillery_power = 0.075
+       cavalry_power = 0.025
 
        ai_will_do = { 
                factor = 1 
@@ -326,8 +328,9 @@ church_pays_you_fight = {
                full_idea_group = theocracy_gov_ideas
        }
 
-       manpower_in_own_culture_provinces = 0.20 
-       manpower_in_true_faith_provinces= 0.10 
+       manpower_in_own_culture_provinces = 0.10 
+       manpower_in_true_faith_provinces= 0.10
+       land_morale = 0.05 
 
        ai_will_do = { 
                factor = 1 
@@ -390,7 +393,8 @@ trench_warfare = {
        }
 
        morale_damage_received = -0.1 
-       reserves_organisation = 0.10 
+        reserves_organisation = 0.125
+	discipline = 0.025 
 
        ai_will_do = { 
                factor = 1 
@@ -412,6 +416,7 @@ five_star_barracks = {
 
        global_manpower_modifier = 0.15 
        land_forcelimit_modifier = 0.15
+       land_attrition = -0.10
 
        ai_will_do = { 
                factor = 1 
@@ -694,7 +699,7 @@ reckless_assault = {
                full_idea_group = influence_ideas 
        }
 
-       artillery_power = 0.05
+       artillery_power = 0.025
        backrow_artillery_damage = 0.10 
 
        ai_will_do = { 
@@ -715,8 +720,8 @@ legalize_chain_shot = {
                full_idea_group = diplomatic_ideas 
        }
 
-       max_general_fire = 1 
-       fire_damage_received = -0.075 
+       leader_siege = 2 
+	siege_ability = 0.15 
 
        ai_will_do = { 
                factor = 1 
@@ -852,9 +857,9 @@ militarisation_of_the_state = {
                full_idea_group = diplomatic_ideas 
        }
 
-       infantry_power = 0.05 
-       cavalry_power = 0.05
-       artillery_power = 0.05
+       infantry_power = 0.075 
+       cavalry_power = 0.075
+       artillery_power = 0.075
 
        ai_will_do = { 
                factor = 1 
@@ -875,7 +880,8 @@ guerrilla_tactics = {
        }
 
        morale_damage_received = -0.15 
-       max_hostile_attrition = 1 
+       max_hostile_attrition = 1
+       hostile_attrition = 1
 
        ai_will_do = { 
                factor = 1 
@@ -917,10 +923,10 @@ send_in_the_cannonfodder = {
                full_idea_group = influence_ideas 
        }
 
-       vassal_forcelimit_bonus = 0.25 
-       vassal_manpower_bonus = 0.25 
-       vassal_naval_forcelimit_bonus = 0.25
-       vassal_sailors_bonus = 0.25
+       vassal_forcelimit_bonus = 0.3 
+       vassal_manpower_bonus = 0.3 
+       vassal_naval_forcelimit_bonus = 0.3
+       vassal_sailors_bonus = 0.3
 
        ai_will_do = { 
                factor = 1 
@@ -941,7 +947,8 @@ mass_conscription = {
        }
 
        global_manpower_modifier = 0.20 
-       land_forcelimit_modifier = 0.10 
+       land_forcelimit_modifier = 0.10
+       manpower_recovery_speed = 0.05 
 
        ai_will_do = { 
                factor = 1 
@@ -962,7 +969,8 @@ supply_logistics = {
        }
 
        land_attrition = -0.20 
-       recover_army_morale_speed = 0.15 
+       recover_army_morale_speed = 0.15
+       manpower_recovery_speed = 0.15 
 
        ai_will_do = { 
                factor = 1 
@@ -983,7 +991,7 @@ mass_production_of_ships = {
        }
 
        naval_forcelimit_modifier = 0.2
-       #global_sailors_modifier = 0.1
+       global_sailors_modifier = 0.1
        allowed_marine_fraction = 0.15
        land_forcelimit_modifier = 0.15
 
@@ -1049,7 +1057,8 @@ church_and_state = {
        }
 
        land_morale = 0.05
-       morale_damage_received = -0.05
+       morale_damage_received = -0.1
+       morale_damage = 0.05
 
        ai_will_do = { 
                factor = 1 
@@ -1070,7 +1079,7 @@ spread_the_word_of_god = {
        }
 
        warscore_cost_vs_other_religion = -0.10 
-       land_morale = 0.05 
+       land_morale = 0.075 
 
        ai_will_do = { 
                factor = 1 
@@ -1156,8 +1165,8 @@ gotta_go_fast = {
 
        max_admiral_maneuver = 1
        max_general_maneuver = 1
-	shock_damage = 0.025
-	cavalry_power = 0.025
+	shock_damage = 0.05
+	cavalry_power = 0.05
 
        ai_will_do = { 
                factor = 1 

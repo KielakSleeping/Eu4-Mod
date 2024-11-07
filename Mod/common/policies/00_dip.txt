@@ -76,7 +76,8 @@ tolerant_state = {
        }
 
        advisor_cost = -0.10 
-       stability_cost_modifier = -0.20 
+       stability_cost_modifier = -0.20
+       global_autonomy = -0.15 
 
        ai_will_do = { 
                factor = 1 
@@ -117,8 +118,8 @@ scientific_revolution = {
                full_idea_group = diplomatic_ideas 
        }
 
-       technology_cost = -0.075
-       idea_cost = -0.075
+       technology_cost = -0.05
+       idea_cost = -0.05
 
        ai_will_do = { 
                factor = 1 
@@ -180,8 +181,8 @@ you_own_nothing_and_will_be_happy = {
                full_idea_group = influence_ideas 
        }
 
-       vassal_income = 0.25 
-       global_tax_modifier = 0.1
+       vassal_income = 0.3 
+       global_tax_modifier = 0.25
 
        ai_will_do = { 
                factor = 1 
@@ -284,7 +285,8 @@ whats_yours_is_mine = {
        }
 
        diplomatic_upkeep = 2
-       unjustified_demands = -0.2
+       unjustified_demands = -0.25
+       core_creation = -0.15
 
        ai_will_do = { 
                factor = 1 
@@ -305,8 +307,8 @@ prophet = {
        }
 	
        diplomatic_upkeep = 2	
-       vassal_income = 0.25
-       vassal_forcelimit_bonus = 0.12	
+       vassal_income = 0.35
+       vassal_forcelimit_bonus = 0.15	
 	
        ai_will_do = { 
                factor = 1 
@@ -327,6 +329,8 @@ return_of_the_seapeople = {
        }
 
        may_perform_slave_raid = yes
+       available_province_loot = 0.5
+        coast_raid_range = 1
 
        ai_will_do = { 
                factor = 1 
@@ -373,6 +377,7 @@ local_conscripts = {
 
        infantry_cost = -0.10 
        global_regiment_recruit_speed = -0.10
+       land_forcelimit_modifier = 0.075
 
        ai_will_do = { 
                factor = 1 
@@ -394,7 +399,7 @@ improved_siege_logistics = {
                full_idea_group = trade_ideas 
        }
 
-       siege_ability = 0.20
+       siege_ability = 0.15
        artillery_cost = -0.15
 
        ai_will_do = { 
@@ -416,6 +421,7 @@ highest_quality_goods = {
        }
 
        global_trade_goods_size_modifier = 0.15
+       discipline = 0.03
      
 
        ai_will_do = { 
@@ -442,6 +448,7 @@ expensive_to_take = {
 
        enemy_core_creation = 0.05
        global_prov_trade_power_modifier = 0.15
+       shock_damage_received = -0.05
 
        ai_will_do = { 
                factor = 1 

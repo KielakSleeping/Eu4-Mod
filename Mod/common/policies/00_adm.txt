@@ -35,6 +35,7 @@ organized_stables = {
 
        leader_land_shock = 1 
        cav_to_inf_ratio = 0.10
+        cavalry_power = 0.05
 
        ai_will_do = { 
                factor = 1 
@@ -228,7 +229,7 @@ unsiegable = {
                full_idea_group = defensive_ideas 
        }
 
-       defensiveness = 0.20 
+       defensiveness = 0.25 
        fs = 1
 
        ai_will_do = { 
@@ -250,7 +251,8 @@ capitalism = {
        }
 
        #Mechanic: +1/-1 Dev from Manufactories 
-       reform_progress_growth = 0.20 
+       reform_progress_growth = 0.20
+       production_efficiency = 0.15 
 
        ai_will_do = { 
                factor = 1 
@@ -334,7 +336,7 @@ futuristic_building_materials = {
        }
 
        build_cost = -0.1 
-       global_trade_goods_size_modifier = 0.1 
+       global_trade_goods_size_modifier = 0.15 
 
        ai_will_do = { 
                factor = 1 
@@ -479,7 +481,7 @@ global_fleet = {
                full_idea_group = maritime_ideas 
        }
 
-       naval_forcelimit_modifier = 0.1 
+       naval_forcelimit_modifier = 0.2 
        leader_naval_manuever = 1
 
        ai_will_do = { 
@@ -501,7 +503,7 @@ we_got_raizing_at_home = {
        }
 
        available_province_loot = 1 
-       loot_amount = 1
+       loot_amount = 2
        cavalry_cost = -0.10 
 
        ai_will_do = { 
@@ -568,6 +570,7 @@ religious_lawgivers = {
 
        reform_progress_growth = 0.2
        same_religion_advisor_cost = -0.10
+       manpower_in_true_faith_provinces= 0.05
 
        ai_will_do = { 
                factor = 1 
@@ -587,8 +590,9 @@ blessing_the_land = {
                full_idea_group = trade_ideas 
        }
 
-       burghers_privilege_slots = 1
-       development_cost_in_primary_culture = -0.05 
+       
+       development_cost_in_primary_culture = -0.075
+       center_of_trade_upgrade_cost = -0.1 
 
        ai_will_do = { 
                factor = 1 
@@ -631,7 +635,7 @@ armor_of_saints = {
        }
 
        land_morale = 0.05 
-       fire_damage_received = -0.075 
+       fire_damage_received = -0.05 
 
        ai_will_do = { 
                factor = 1 
