@@ -1854,7 +1854,7 @@ counting_house = {
 
 
 town_hall = {
-	cost = 250
+	cost = 300
 	time = 12
 
 	make_obsolete = courthouse
