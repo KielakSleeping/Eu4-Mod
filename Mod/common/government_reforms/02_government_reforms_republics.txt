@@ -1999,7 +1999,7 @@ calvinist_republic_government = {
 
 dutch_republic = {
 	icon = "dutch_republic"
-	allow_normal_conversion = yes
+	allow_normal_conversion = no
 	potential = {
 		OR = {
 			AND = {
