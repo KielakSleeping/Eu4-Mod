@@ -384,10 +384,7 @@ country_decisions = {
 			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
 			was_never_german_regional_tag_trigger = yes
-			NOT = { tag = HES }
-			NOT = { tag = HSA }
-			NOT = { tag = BRA }
-			NOT = { tag = HAB } 
+			tag = ROT
 			NOT = { has_country_flag = formed_franconia_flag }
 			OR = {
 				ai = no
@@ -832,10 +829,7 @@ country_decisions = {
 			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
 			was_never_german_regional_tag_trigger = yes
-			NOT = { tag = HES }
-			NOT = { tag = ROT }
-			NOT = { tag = BRA }
-			NOT = { tag = HAB } 
+			tag = HSA
 			NOT = { has_country_flag = formed_hannover_flag }
 			OR = {
 				ai = no
@@ -845,10 +839,6 @@ country_decisions = {
 				is_free_or_tributary_trigger = yes
 				ai = no
 			}
-			NOT = { tag = HLR }
-			NOT = { tag = PAP }
-			NOT = { tag = GER }
-			NOT = { tag = PRU }
 			NOT = { tag = SAX } #Saxe-Lauenburg should form either Saxony or Hannover, not both
 			NOT = { exists = HAN }
 			OR = {
@@ -968,10 +958,7 @@ country_decisions = {
 			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
 			was_never_german_regional_tag_trigger = yes
-			NOT = { tag = HSA }
-			NOT = { tag = ROT }
-			NOT = { tag = BRA }
-			NOT = { tag = HAB } 
+			tag = HES
 			NOT = { has_country_flag = formed_westphalia_flag }
 			OR = {
 				ai = no
@@ -981,12 +968,6 @@ country_decisions = {
 				is_free_or_tributary_trigger = yes
 				ai = no
 			}
-			NOT = { tag = HLR }
-			NOT = { tag = HAN }
-			NOT = { tag = PAP }
-			NOT = { tag = GER }
-			NOT = { tag = PRU }
-			NOT = { tag = SWI }
 			NOT = { exists = WES }
 			NOT = { has_reform = celestial_empire }
 			OR = {
