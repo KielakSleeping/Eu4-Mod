@@ -1365,8 +1365,8 @@ low_army_professionalism = {
 }
 
 high_army_professionalism = {
-	fire_damage = 0.125
-	shock_damage = 0.125
+	fire_damage = 0.10
+	shock_damage = 0.10
 	discipline = 0.05
 	#drill_decay_modifier = -0.5
 	allowed_samurai_fraction = 0.1
