@@ -285,8 +285,8 @@ invest_in_better_equipment = {
                full_idea_group = quality_ideas 
        }
 
-       infantry_power = 0.075
-       artillery_power = 0.075
+       infantry_power = 0.05
+       artillery_power = 0.05
 	cavalry_power = 0.025
 
        ai_will_do = { 
