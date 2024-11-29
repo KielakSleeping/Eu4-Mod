@@ -2154,7 +2154,7 @@ ADU_ideas = {
 MAM2_ideas = { #Mission reward to double mam_monopoly_ports // see mam_establish_merchant_escorts
 	start = {
 		trade_steering = 0.25
-		discipline = 0.0025
+		discipline = 0.025
 	}
 	
 	bonus = {
@@ -2178,7 +2178,7 @@ MAM2_ideas = { #Mission reward to double mam_monopoly_ports // see mam_establish
 	}
 	mam_army_reform = {
 		global_tax_modifier = 0.10
-		discipline = 0.0025
+		discipline = 0.025
 	}
 	reform_fellah_system = {
 		production_efficiency = 0.1
@@ -2195,7 +2195,7 @@ MAM_ideas = {
 	start = {
 		trade_steering = 0.25
 		
-		discipline = 0.0025
+		discipline = 0.025
 		
 	}
 	
@@ -2229,7 +2229,7 @@ MAM_ideas = {
 	}
 	mam_army_reform = {
 		global_tax_modifier = 0.10
-		discipline = 0.0025
+		discipline = 0.025
 	}
 }
 
