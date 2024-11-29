@@ -10,13 +10,12 @@ country_event = {
     picture = COURT_eventPicture
 
     trigger = {
-            has_country_modifier = We_stand_alone
-			NOT = {is_great_power = yes}
-			adm_tech = 5
-			
-			NOT = {
-				has_country_modifier = echo_development
-			}	
+		great_power_rank = 5
+		adm_tech = 5
+		
+		NOT = {
+			has_country_modifier = echo_development
+		}	
     }
     mean_time_to_happen = {
         months = 1
