@@ -10,6 +10,7 @@ tatar_missions_1 = {
 				tag = SIB
 				tag = TRS
 				tag = KHI
+				tag = SHY
 			}
 		has_dlc = "Winds of Change"
 	}
@@ -323,6 +324,7 @@ tatar_missions_slot_2 = {
 				tag = SIB
 				tag = TRS
 				tag = KHI
+				tag = SHY
 			}
 		has_dlc = "Winds of Change"
 	}
@@ -611,6 +613,7 @@ tatar_missions_2 = {
 				tag = SIB
 				tag = TRS
 				tag = KHI
+				tag = SHY
 			}
 		has_dlc = "Winds of Change"
 	}
