@@ -420,8 +420,9 @@ highest_quality_goods = {
                full_idea_group = trade_ideas 
        }
 
-       global_trade_goods_size_modifier = 0.15
-	discipline = 0.03
+       global_trade_goods_size_modifier = 0.10
+	production_efficiency = 0.10
+	#discipline = 0.03
      
 
        ai_will_do = { 
