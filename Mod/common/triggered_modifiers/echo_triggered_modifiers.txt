@@ -248,6 +248,7 @@ Ahead_of_time = {
 	monthly_reform_progress_modifier = 0.25
 	yearly_innovativeness = 0.3
 	army_tradition = 1
+	expand_infrastructure_cost_modifier = -0.15
 }
 TUR = {
 	potential = {
