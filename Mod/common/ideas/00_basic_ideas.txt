@@ -630,6 +630,7 @@ influence_ideas = {
 		leader_cost = -0.125
     	siege_ability = 0.125
 		monarch_military_power = 1
+	candidate_random_bonus = 1
   
 	}
 	postal_service = {
