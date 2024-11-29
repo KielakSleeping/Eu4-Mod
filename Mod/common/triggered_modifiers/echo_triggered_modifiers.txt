@@ -71,12 +71,14 @@ Minor = {
 		OR = {
             is_part_of_hre = yes
             NOT = {is_great_power = yes}
+	    current_age = age_of_discovery
 		}
 	}	
 			ROOT = {
 				ai = no
 			}	
 			NOT = { is_emperor = yes }
+			current_age = age_of_discovery
 	}
 	
 	trigger = {

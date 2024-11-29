@@ -192,6 +192,7 @@ technology = { #National Sovereignty
 	year = 1635
 	
 	allowed_idea_groups	= 5
+	town_hall = yes
 }
 
 technology = { #Cathedral
@@ -232,7 +233,6 @@ technology = { #The Constitution
 	constitutional_republic = yes  
 	administrative_efficiency = 0.025
 	development_cost_modifier = -0.025
-	town_hall = yes
 }
 
 technology = { #Measuring the World

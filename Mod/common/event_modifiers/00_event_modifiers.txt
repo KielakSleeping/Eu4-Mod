@@ -10821,8 +10821,8 @@ marathi_poet_saint_suppressed = {
 }
 
 bargi_giri = {
-	cavalry_power = 0.15
-	movement_speed = 0.15
+	cavalry_power = 0.5
+	movement_speed = 0.5
 }
 
 marathi_expensive_horses = {
@@ -12104,7 +12104,7 @@ estate_cossacks_prime_herding_rights_mod = {
 }
 
 estate_cossacks_exploration_expedition_mod = {
-	local_development_cost = -0.15
+	local_development_cost = -0.1
 }
 
 shortage_of_officers = {
