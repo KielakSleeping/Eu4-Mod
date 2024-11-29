@@ -3031,6 +3031,7 @@ armory = {
 				has_forcelimit_building_trigger = yes
 				development = 30
 				is_prosperous = yes
+				base_manpower = 10
 			}
 	}
 	
