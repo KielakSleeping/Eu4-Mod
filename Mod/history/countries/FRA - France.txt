@@ -86,7 +86,7 @@ change_estate_land_share = {
 		dynasty = "de Valois"
 		birth_date = 1403.2.22
 		adm = 4
-		dip = 2
+		dip = 4
 		mil = 4
 	}
 	clear_scripted_personalities = yes
