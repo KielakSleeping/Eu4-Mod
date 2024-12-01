@@ -1120,7 +1120,7 @@ muslim = {
 	
 	sunni = {
 		allow_female_defenders_of_the_faith = yes
-		can_have_secondary_religion = yes
+		#can_have_secondary_religion = yes
 		declare_war_in_regency = yes
 		color = { 0 153 0 }
 		icon = 5
@@ -1143,7 +1143,7 @@ muslim = {
 
 	shiite = {
 		allow_female_defenders_of_the_faith = yes
-		can_have_secondary_religion = yes
+		#can_have_secondary_religion = yes
 		declare_war_in_regency = yes
 		color = { 0 204 0 }
 		icon = 6	
@@ -1166,7 +1166,7 @@ muslim = {
 	
 	ibadi = {
 		allow_female_defenders_of_the_faith = yes
-		can_have_secondary_religion = yes
+		#can_have_secondary_religion = yes
 		declare_war_in_regency = yes
 		color = { 0 102 0 }
 		icon = 16	
@@ -2099,7 +2099,7 @@ pagan = {
 			cav_to_inf_ratio = 0.25
 			global_regiment_cost = -0.2
 		}
-		can_have_secondary_religion = yes
+		#can_have_secondary_religion = yes
 		heretic = { OLD_TENGRI }
 	}
 	
