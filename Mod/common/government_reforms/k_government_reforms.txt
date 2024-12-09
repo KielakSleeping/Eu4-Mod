@@ -1,0 +1,16 @@
+golden_horde_kuzarite = {
+    icon = "constitution"
+	lock_level_when_selected = yes
+	allow_normal_conversion = yes
+    potential = {
+        tag = GLH
+		religion = kuzarite
+    }
+    modifiers = {
+        max_absolutism = 20
+        governing_capacity_modifier = 0.15
+        warscore_cost_vs_other_religion = -0.1
+        global_missionary_strength = 0.03
+        manpower_in_true_faith_provinces = 0.1
+    }
+}
