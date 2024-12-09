@@ -2,7 +2,8 @@ country_decisions = {
 	change_gecko_mercs_unit_type_decision = {
 		color = { 0  166  0 }
 		potential = {
-			ai = no
+			ai = no 
+			total_development = 15000
 			NOT = { is_bankrupt = yes }
 			NOT = { is_colonial_nation = yes }
 		}
@@ -26,7 +27,8 @@ country_decisions = {
 	recruit_one_gecko_mercs_decision = {
 		color = { 0  166  0 }
 		potential = {
-			ai = no
+			ai = no 
+			total_development = 15000
 			NOT = { is_bankrupt = yes }
 			NOT = { is_colonial_nation = yes }
 		}
@@ -49,7 +51,7 @@ country_decisions = {
 	recruit_tier_1_gecko_mercs_decision = {
 		color = { 0  166  0 }
 		potential = {
-			ai = no
+			ai = no total_development = 15000
 			NOT = { is_bankrupt = yes }
 			NOT = { is_colonial_nation = yes }
 			check_variable = {
@@ -77,7 +79,8 @@ country_decisions = {
 	recruit_tier_2_gecko_mercs_decision = {
 		color = { 0  166  0 }
 		potential = {
-			ai = no
+			ai = no 
+			total_development = 15000
 			NOT = { is_bankrupt = yes }
 			NOT = { is_colonial_nation = yes }
 			check_variable = {
@@ -105,7 +108,8 @@ country_decisions = {
 	recruit_tier_3_gecko_mercs_decision = {
 		color = { 0  166  0 }
 		potential = {
-			ai = no
+			ai = no 
+			total_development = 15000
 			NOT = { is_bankrupt = yes }
 			NOT = { is_colonial_nation = yes }
 			check_variable = {
@@ -133,7 +137,8 @@ country_decisions = {
 	recruit_tier_4_gecko_mercs_decision = {
 		color = { 0  166  0 }
 		potential = {
-			ai = no
+			ai = no 
+			total_development = 15000
 			NOT = { is_bankrupt = yes }
 			NOT = { is_colonial_nation = yes }
 			check_variable = {
@@ -161,7 +166,8 @@ country_decisions = {
 	recruit_tier_5_gecko_mercs_decision = {
 		color = { 0  166  0 }
 		potential = {
-			ai = no
+			ai = no 
+			total_development = 15000
 			NOT = { is_bankrupt = yes }
 			NOT = { is_colonial_nation = yes }
 			check_variable = {
@@ -189,7 +195,8 @@ country_decisions = {
 	recruit_tier_6_gecko_mercs_decision = {
 		color = { 0  166  0 }
 		potential = {
-			ai = no
+			ai = no 
+			total_development = 15000
 			NOT = { is_bankrupt = yes }
 			NOT = { is_colonial_nation = yes }
 			check_variable = {
@@ -217,7 +224,8 @@ country_decisions = {
 	recruit_tier_7_gecko_mercs_decision = {
 		color = { 0  166  0 }
 		potential = {
-			ai = no
+			ai = no 
+			total_development = 15000
 			NOT = { is_bankrupt = yes }
 			NOT = { is_colonial_nation = yes }
 			check_variable = {
@@ -245,7 +253,8 @@ country_decisions = {
 	recruit_tier_8_gecko_mercs_decision = {
 		color = { 0  166  0 }
 		potential = {
-			ai = no
+			ai = no 
+			total_development = 15000
 			NOT = { is_bankrupt = yes }
 			NOT = { is_colonial_nation = yes }
 			check_variable = {
@@ -273,7 +282,8 @@ country_decisions = {
 	recruit_tier_9_gecko_mercs_decision = {
 		color = { 0  166  0 }
 		potential = {
-			ai = no
+			ai = no 
+			total_development = 15000
 			NOT = { is_bankrupt = yes }
 			NOT = { is_colonial_nation = yes }
 			check_variable = {
@@ -301,7 +311,8 @@ country_decisions = {
 	recruit_tier_10_gecko_mercs_decision = {
 		color = { 0  166  0 }
 		potential = {
-			ai = no
+			ai = no 
+			total_development = 15000
 			NOT = { is_bankrupt = yes }
 			NOT = { is_colonial_nation = yes }
 			check_variable = {
@@ -330,7 +341,8 @@ country_decisions = {
 	gecko_mercs_auto_update_decision = {
 		color = { 0  166  0 }
 		potential = {
-			ai = no
+			ai = no 
+			total_development = 15000
 			NOT = { is_bankrupt = yes }
 			NOT = { is_colonial_nation = yes }
 			capital_scope = {
@@ -352,7 +364,8 @@ country_decisions = {
 		color = { 0  166  0 }
 		potential = {
 			NOT = { is_colonial_nation = yes }
-			ai = no
+			ai = no 
+			total_development = 15000
 			NOT = { is_bankrupt = yes }
 			always = yes 
 		}
