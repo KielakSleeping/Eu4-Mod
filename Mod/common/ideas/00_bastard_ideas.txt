@@ -3732,7 +3732,7 @@ ROT_ideas = {
 
 FKN_ideas = {
 	start = {
-		morale_damage_received = -0.15
+		morale_damage_received = -0.25
 		defensiveness = 0.25
 	}
 	
