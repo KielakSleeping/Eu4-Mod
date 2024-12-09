@@ -1,17 +1,1175 @@
 country_decisions = {
 
-	kielak_mercs_small = {
+	kielak_mercs_tier_1 = {
 		color = { 166  166  0 }
 		potential = {
 			is_at_war = yes
-			#any_war_enemy_country = { ai = no }
+			any_war_enemy_country = { ai = no }
 
-			NOT = {total_development = 450}
-			NOT = { has_country_modifier = kielak_mercs1_modifier }
-			NOT = { has_country_modifier = kielak_mercs2_modifier }
-			NOT = { has_country_modifier = kielak_mercs3_modifier }
-			NOT = { has_country_modifier = kielak_mercs4_modifier }
-			NOT = { has_country_modifier = hired_mercs_recently }
+
+            NOT = { is_emperor = yes } 
+			NOT = { total_development = 300}
+			NOT = { has_country_modifier = kielak_mercs_tier_1_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_2_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_3_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_4_modifier }
+            NOT = { has_country_modifier = kielak_mercs_tier_5_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_6_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_7_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_8_modifier }
+            NOT = { has_country_modifier = kielak_mercs_tier_9_modifier }
+            NOT = { has_country_modifier = hired_mercs_recently}
+           
+			
+		}
+		allow = {
+			is_at_war = yes
+
+			# if = {
+			# 	limit = { has_dlc = "Cradle of Civilization" }
+			# 	add_army_professionalism  = 0.8
+			# }
+		}
+
+		effect = {
+            
+			
+            add_owned_provinces_development_manpower = {
+                multiplier = 0.063 # multiplier * total dev  = manpower in 1k steps, so 15 total dev equals 15000 manpower 
+                age_multiplier = 0
+                trigger = { base_manpower = 1 }
+               
+            }
+            add_army_professionalism =-0.05
+
+			add_country_modifier = {
+				name = "kielak_mercs_tier_1_modifier"
+				duration = -1
+			}
+			add_country_modifier = {
+				name = "kielak_mercs_tier_1_modifier_country"
+				duration = -1
+			}
+
+			add_country_modifier = {
+				name = "hired_mercs_recently"
+				duration = 1800
+			}
+		}
+
+
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+    kielak_mercs_tier_1_again = {
+		color = { 166  166  0 }
+		potential = {
+			is_at_war = yes
+            has_country_modifier = hired_mercs_recently
+			any_war_enemy_country = { ai = no }
+
+
+            NOT = { is_emperor = yes } 
+			NOT = {total_development = 300}
+			NOT = { has_country_modifier = kielak_mercs_tier_1_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_2_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_3_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_4_modifier }
+            NOT = { has_country_modifier = kielak_mercs_tier_5_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_6_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_7_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_8_modifier }
+            NOT = { has_country_modifier = kielak_mercs_tier_9_modifier }
+			
+            
+			
+		
+		}
+		allow = {
+			is_at_war = yes
+
+			# if = {
+			# 	limit = { has_dlc = "Cradle of Civilization" }
+			# 	add_army_professionalism  = 0.8
+			# }
+		}
+
+		effect = {
+
+            add_army_professionalism =-0.05
+	
+			add_country_modifier = {
+				name = "kielak_mercs_tier_1_modifier"
+				duration = -1
+			}
+			add_country_modifier = {
+				name = "kielak_mercs_tier_1_modifier_country"
+				duration = -1
+			}
+
+			add_country_modifier = {
+				name = "hired_mercs_recently"
+				duration = 1800
+			}
+		}
+
+
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+    kielak_mercs_tier_2 = {
+		color = { 166  166  0 }
+		potential = {
+			is_at_war = yes
+			any_war_enemy_country = { ai = no }
+
+
+            NOT = { is_emperor = yes } 
+			AND = {
+				total_development = 301
+				NOT = {total_development = 400}
+			}
+			NOT = { has_country_modifier = kielak_mercs_tier_1_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_2_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_3_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_4_modifier }
+            NOT = { has_country_modifier = kielak_mercs_tier_5_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_6_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_7_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_8_modifier }
+            NOT = { has_country_modifier = kielak_mercs_tier_9_modifier }
+            NOT = { has_country_modifier = hired_mercs_recently}
+			
+			
+		}
+		allow = {
+			is_at_war = yes
+
+			# if = {
+			# 	limit = { has_dlc = "Cradle of Civilization" }
+			# 	add_army_professionalism  = 0.8
+			# }
+		}
+
+		effect = {
+            
+			
+            add_owned_provinces_development_manpower = {
+                multiplier = 0.061 # multiplier * total dev  = manpower in 1k steps, so 15 total dev equals 15000 manpower 
+                age_multiplier = 0
+                trigger = { base_manpower = 1 }
+               
+            }
+            add_army_professionalism =-0.05
+
+			add_country_modifier = {
+				name = "kielak_mercs_tier_2_modifier"
+				duration = -1
+			}
+			add_country_modifier = {
+				name = "kielak_mercs_tier_2_modifier_country"
+				duration = -1
+			}
+
+			add_country_modifier = {
+				name = "hired_mercs_recently"
+				duration = 1800
+			}
+		}
+
+
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+    kielak_mercs_tier_2_again = {
+		color = { 166  166  0 }
+		potential = {
+			is_at_war = yes
+            has_country_modifier = hired_mercs_recently
+			any_war_enemy_country = { ai = no }
+
+
+            NOT = { is_emperor = yes } 
+			AND = {
+				total_development = 301
+				NOT = {total_development = 400}
+			}
+			NOT = { has_country_modifier = kielak_mercs_tier_1_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_2_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_3_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_4_modifier }
+            NOT = { has_country_modifier = kielak_mercs_tier_5_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_6_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_7_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_8_modifier }
+            NOT = { has_country_modifier = kielak_mercs_tier_9_modifier }
+			
+            
+			
+		
+		}
+		allow = {
+			is_at_war = yes
+
+			# if = {
+			# 	limit = { has_dlc = "Cradle of Civilization" }
+			# 	add_army_professionalism  = 0.8
+			# }
+		}
+
+		effect = {
+
+            add_army_professionalism =-0.05
+	
+			add_country_modifier = {
+				name = "kielak_mercs_tier_2_modifier"
+				duration = -1
+			}
+			add_country_modifier = {
+				name = "kielak_mercs_tier_2_modifier_country"
+				duration = -1
+			}
+
+			add_country_modifier = {
+				name = "hired_mercs_recently"
+				duration = 1800
+			}
+		}
+
+
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+    kielak_mercs_tier_3 = {
+		color = { 166  166  0 }
+		potential = {
+			is_at_war = yes
+			any_war_enemy_country = { ai = no }
+
+
+            NOT = { is_emperor = yes } 
+			AND = {
+				total_development = 401
+				NOT = {total_development = 500}
+			}
+			NOT = { has_country_modifier = kielak_mercs_tier_1_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_2_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_3_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_4_modifier }
+            NOT = { has_country_modifier = kielak_mercs_tier_5_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_6_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_7_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_8_modifier }
+            NOT = { has_country_modifier = kielak_mercs_tier_9_modifier }
+            NOT = { has_country_modifier = hired_mercs_recently}
+			
+			
+		}
+		allow = {
+			is_at_war = yes
+
+			# if = {
+			# 	limit = { has_dlc = "Cradle of Civilization" }
+			# 	add_army_professionalism  = 0.8
+			# }
+		}
+
+		effect = {
+            
+			
+            add_owned_provinces_development_manpower = {
+                multiplier = 0.058 # multiplier * total dev  = manpower in 1k steps, so 15 total dev equals 15000 manpower 
+                age_multiplier = 0
+                trigger = { base_manpower = 1 }
+               
+            }
+            add_army_professionalism =-0.075
+
+			add_country_modifier = {
+				name = "kielak_mercs_tier_3_modifier"
+				duration = -1
+			}
+			add_country_modifier = {
+				name = "kielak_mercs_tier_3_modifier_country"
+				duration = -1
+			}
+
+			add_country_modifier = {
+				name = "hired_mercs_recently"
+				duration = 1800
+			}
+		}
+
+
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+    kielak_mercs_tier_3_again = {
+		color = { 166  166  0 }
+		potential = {
+			is_at_war = yes
+            has_country_modifier = hired_mercs_recently
+			any_war_enemy_country = { ai = no }
+
+
+            NOT = { is_emperor = yes } 
+			AND = {
+				total_development = 401
+				NOT = {total_development = 500}
+			}
+			NOT = { has_country_modifier = kielak_mercs_tier_1_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_2_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_3_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_4_modifier }
+            NOT = { has_country_modifier = kielak_mercs_tier_5_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_6_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_7_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_8_modifier }
+            NOT = { has_country_modifier = kielak_mercs_tier_9_modifier }
+			
+            
+			
+		
+		}
+		allow = {
+			is_at_war = yes
+
+			# if = {
+			# 	limit = { has_dlc = "Cradle of Civilization" }
+			# 	add_army_professionalism  = 0.8
+			# }
+		}
+
+		effect = {
+
+            add_army_professionalism =-0.075
+	
+			add_country_modifier = {
+				name = "kielak_mercs_tier_3_modifier"
+				duration = -1
+			}
+			add_country_modifier = {
+				name = "kielak_mercs_tier_3_modifier_country"
+				duration = -1
+			}
+
+			add_country_modifier = {
+				name = "hired_mercs_recently"
+				duration = 1800
+			}
+		}
+
+
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+    kielak_mercs_tier_4 = {
+		color = { 166  166  0 }
+		potential = {
+			is_at_war = yes
+			any_war_enemy_country = { ai = no }
+
+
+            NOT = { is_emperor = yes } 
+			AND = {
+				total_development = 501
+				NOT = {total_development = 700}
+			}
+			NOT = { has_country_modifier = kielak_mercs_tier_1_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_2_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_3_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_4_modifier }
+            NOT = { has_country_modifier = kielak_mercs_tier_5_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_6_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_7_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_8_modifier }
+            NOT = { has_country_modifier = kielak_mercs_tier_9_modifier }
+            NOT = { has_country_modifier = hired_mercs_recently}
+			
+			
+		}
+		allow = {
+			is_at_war = yes
+
+			# if = {
+			# 	limit = { has_dlc = "Cradle of Civilization" }
+			# 	add_army_professionalism  = 0.8
+			# }
+		}
+
+		effect = {
+            
+			
+            add_owned_provinces_development_manpower = {
+                multiplier = 0.054 # multiplier * total dev  = manpower in 1k steps, so 15 total dev equals 15000 manpower 
+                age_multiplier = 0
+                trigger = { base_manpower = 1 }
+               
+            }
+            add_army_professionalism =-0.075
+
+			add_country_modifier = {
+				name = "kielak_mercs_tier_4_modifier"
+				duration = -1
+			}
+			add_country_modifier = {
+				name = "kielak_mercs_tier_4_modifier_country"
+				duration = -1
+			}
+
+			add_country_modifier = {
+				name = "hired_mercs_recently"
+				duration = 2100
+			}
+		}
+
+
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+    kielak_mercs_tier_4_again = {
+		color = { 166  166  0 }
+		potential = {
+			is_at_war = yes
+            has_country_modifier = hired_mercs_recently
+			any_war_enemy_country = { ai = no }
+
+
+            NOT = { is_emperor = yes } 
+			AND = {
+				total_development = 501
+				NOT = {total_development = 700}
+			}
+			NOT = { has_country_modifier = kielak_mercs_tier_1_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_2_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_3_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_4_modifier }
+            NOT = { has_country_modifier = kielak_mercs_tier_5_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_6_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_7_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_8_modifier }
+            NOT = { has_country_modifier = kielak_mercs_tier_9_modifier }
+			
+            
+			
+		
+		}
+		allow = {
+			is_at_war = yes
+
+			# if = {
+			# 	limit = { has_dlc = "Cradle of Civilization" }
+			# 	add_army_professionalism  = 0.8
+			# }
+		}
+
+		effect = {
+
+            add_army_professionalism =-0.075
+	
+			add_country_modifier = {
+				name = "kielak_mercs_tier_4_modifier"
+				duration = -1
+			}
+			add_country_modifier = {
+				name = "kielak_mercs_tier_4_modifier_country"
+				duration = -1
+			}
+
+			add_country_modifier = {
+				name = "hired_mercs_recently"
+				duration = 2100
+			}
+		}
+
+
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+     kielak_mercs_tier_5 = {
+		color = { 166  166  0 }
+		potential = {
+			is_at_war = yes
+			any_war_enemy_country = { ai = no }
+
+
+            NOT = { is_emperor = yes } 
+			AND = {
+				total_development = 701
+				NOT = {total_development = 1000}
+			}
+			NOT = { has_country_modifier = kielak_mercs_tier_1_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_2_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_3_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_4_modifier }
+            NOT = { has_country_modifier = kielak_mercs_tier_5_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_6_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_7_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_8_modifier }
+            NOT = { has_country_modifier = kielak_mercs_tier_9_modifier }
+            NOT = { has_country_modifier = hired_mercs_recently}
+			
+			
+		}
+		allow = {
+			is_at_war = yes
+
+			# if = {
+			# 	limit = { has_dlc = "Cradle of Civilization" }
+			# 	add_army_professionalism  = 0.8
+			# }
+		}
+
+		effect = {
+            
+			
+            add_owned_provinces_development_manpower = {
+                multiplier = 0.052 # multiplier * total dev  = manpower in 1k steps, so 15 total dev equals 15000 manpower 
+                age_multiplier = 0
+                trigger = { base_manpower = 1 }
+               
+            }
+            add_army_professionalism =-0.075
+
+			add_country_modifier = {
+				name = "kielak_mercs_tier_5_modifier"
+				duration = -1
+			}
+			add_country_modifier = {
+				name = "kielak_mercs_tier_5_modifier_country"
+				duration = -1
+			}
+
+			add_country_modifier = {
+				name = "hired_mercs_recently"
+				duration = 2100
+			}
+		}
+
+
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+    kielak_mercs_tier_5_again = {
+		color = { 166  166  0 }
+		potential = {
+			is_at_war = yes
+            has_country_modifier = hired_mercs_recently
+			any_war_enemy_country = { ai = no }
+
+
+            NOT = { is_emperor = yes } 
+			AND = {
+				total_development = 701
+				NOT = {total_development = 1000}
+			}
+			NOT = { has_country_modifier = kielak_mercs_tier_1_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_2_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_3_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_4_modifier }
+            NOT = { has_country_modifier = kielak_mercs_tier_5_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_6_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_7_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_8_modifier }
+            NOT = { has_country_modifier = kielak_mercs_tier_9_modifier }
+			
+            
+			
+		
+		}
+		allow = {
+			is_at_war = yes
+
+			# if = {
+			# 	limit = { has_dlc = "Cradle of Civilization" }
+			# 	add_army_professionalism  = 0.8
+			# }
+		}
+
+		effect = {
+
+            add_army_professionalism =-0.075
+	
+			add_country_modifier = {
+				name = "kielak_mercs_tier_5_modifier"
+				duration = -1
+			}
+			add_country_modifier = {
+				name = "kielak_mercs_tier_5_modifier_country"
+				duration = -1
+			}
+
+			add_country_modifier = {
+				name = "hired_mercs_recently"
+				duration = 2100
+			}
+		}
+
+
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+    kielak_mercs_tier_6 = {
+		color = { 166  166  0 }
+		potential = {
+			is_at_war = yes
+			any_war_enemy_country = { ai = no }
+
+
+
+			AND = {
+				total_development = 1001
+				NOT = {total_development = 1300}
+			}
+			NOT = { has_country_modifier = kielak_mercs_tier_1_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_2_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_3_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_4_modifier }
+            NOT = { has_country_modifier = kielak_mercs_tier_5_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_6_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_7_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_8_modifier }
+            NOT = { has_country_modifier = kielak_mercs_tier_9_modifier }
+            NOT = { has_country_modifier = hired_mercs_recently}
+			
+			
+		}
+		allow = {
+			is_at_war = yes
+
+			# if = {
+			# 	limit = { has_dlc = "Cradle of Civilization" }
+			# 	add_army_professionalism  = 0.8
+			# }
+		}
+
+		effect = {
+            
+			
+            add_owned_provinces_development_manpower = {
+                multiplier = 0.050 # multiplier * total dev  = manpower in 1k steps, so 15 total dev equals 15000 manpower 
+                age_multiplier = 0
+                trigger = { base_manpower = 1 }
+               
+            }
+            add_army_professionalism =-0.1
+
+			add_country_modifier = {
+				name = "kielak_mercs_tier_6_modifier"
+				duration = -1
+			}
+			add_country_modifier = {
+				name = "kielak_mercs_tier_6_modifier_country"
+				duration = -1
+			}
+
+			add_country_modifier = {
+				name = "hired_mercs_recently"
+				duration = 2400
+			}
+		}
+
+
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+    kielak_mercs_tier_6_again = {
+		color = { 166  166  0 }
+		potential = {
+			is_at_war = yes
+            has_country_modifier = hired_mercs_recently
+			any_war_enemy_country = { ai = no }
+
+
+
+			AND = {
+				total_development = 1001
+				NOT = {total_development = 1300}
+			}
+			NOT = { has_country_modifier = kielak_mercs_tier_1_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_2_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_3_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_4_modifier }
+            NOT = { has_country_modifier = kielak_mercs_tier_5_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_6_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_7_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_8_modifier }
+            NOT = { has_country_modifier = kielak_mercs_tier_9_modifier }
+			
+            
+			
+		
+		}
+		allow = {
+			is_at_war = yes
+
+			# if = {
+			# 	limit = { has_dlc = "Cradle of Civilization" }
+			# 	add_army_professionalism  = 0.8
+			# }
+		}
+
+		effect = {
+
+            add_army_professionalism =-0.1
+	
+			add_country_modifier = {
+				name = "kielak_mercs_tier_6_modifier"
+				duration = -1
+			}
+			add_country_modifier = {
+				name = "kielak_mercs_tier_6_modifier_country"
+				duration = -1
+			}
+
+			add_country_modifier = {
+				name = "hired_mercs_recently"
+				duration = 2400
+			}
+		}
+
+
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+    kielak_mercs_tier_7 = {
+		color = { 166  166  0 }
+		potential = {
+			is_at_war = yes
+			any_war_enemy_country = { ai = no }
+
+
+
+			AND = {
+				total_development = 1301
+				NOT = {total_development = 1600}
+			}
+			NOT = { has_country_modifier = kielak_mercs_tier_1_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_2_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_3_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_4_modifier }
+            NOT = { has_country_modifier = kielak_mercs_tier_5_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_6_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_7_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_8_modifier }
+            NOT = { has_country_modifier = kielak_mercs_tier_9_modifier }
+            NOT = { has_country_modifier = hired_mercs_recently}
+			
+			
+		}
+		allow = {
+			is_at_war = yes
+
+			# if = {
+			# 	limit = { has_dlc = "Cradle of Civilization" }
+			# 	add_army_professionalism  = 0.8
+			# }
+		}
+
+		effect = {
+            
+			
+            add_owned_provinces_development_manpower = {
+                multiplier = 0.048 # multiplier * total dev  = manpower in 1k steps, so 15 total dev equals 15000 manpower 
+                age_multiplier = 0
+                trigger = { base_manpower = 1 }
+               
+            }
+            add_army_professionalism =-0.125
+
+			add_country_modifier = {
+				name = "kielak_mercs_tier_7_modifier"
+				duration = -1
+			}
+			add_country_modifier = {
+				name = "kielak_mercs_tier_7_modifier_country"
+				duration = -1
+			}
+
+			add_country_modifier = {
+				name = "hired_mercs_recently"
+				duration = 2400
+			}
+		}
+
+
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+    kielak_mercs_tier_7_again = {
+		color = { 166  166  0 }
+		potential = {
+			is_at_war = yes
+            has_country_modifier = hired_mercs_recently
+			any_war_enemy_country = { ai = no }
+
+
+
+			AND = {
+				total_development = 1301
+				NOT = {total_development = 1600}
+			}
+			NOT = { has_country_modifier = kielak_mercs_tier_1_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_2_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_3_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_4_modifier }
+            NOT = { has_country_modifier = kielak_mercs_tier_5_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_6_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_7_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_8_modifier }
+            NOT = { has_country_modifier = kielak_mercs_tier_9_modifier }
+			
+            
+			
+		
+		}
+		allow = {
+			is_at_war = yes
+
+			# if = {
+			# 	limit = { has_dlc = "Cradle of Civilization" }
+			# 	add_army_professionalism  = 0.8
+			# }
+		}
+
+		effect = {
+
+            add_army_professionalism =-0.125
+	
+			add_country_modifier = {
+				name = "kielak_mercs_tier_7_modifier"
+				duration = -1
+			}
+			add_country_modifier = {
+				name = "kielak_mercs_tier_7_modifier_country"
+				duration = -1
+			}
+
+			add_country_modifier = {
+				name = "hired_mercs_recently"
+				duration = 2400
+			}
+		}
+
+
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+    kielak_mercs_tier_8 = {
+		color = { 166  166  0 }
+		potential = {
+			is_at_war = yes
+			any_war_enemy_country = { ai = no }
+
+
+
+			AND = {
+				total_development = 1601
+				NOT = {total_development = 2000}
+			}
+			NOT = { has_country_modifier = kielak_mercs_tier_1_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_2_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_3_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_4_modifier }
+            NOT = { has_country_modifier = kielak_mercs_tier_5_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_6_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_7_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_8_modifier }
+            NOT = { has_country_modifier = kielak_mercs_tier_9_modifier }
+            NOT = { has_country_modifier = hired_mercs_recently}
+			
+			
+		}
+		allow = {
+			is_at_war = yes
+
+			# if = {
+			# 	limit = { has_dlc = "Cradle of Civilization" }
+			# 	add_army_professionalism  = 0.8
+			# }
+		}
+
+		effect = {
+            
+			
+            add_owned_provinces_development_manpower = {
+                multiplier = 0.046 # multiplier * total dev  = manpower in 1k steps, so 15 total dev equals 15000 manpower 
+                age_multiplier = 0
+                trigger = { base_manpower = 1 }
+               
+            }
+            add_army_professionalism =-0.125
+
+			add_country_modifier = {
+				name = "kielak_mercs_tier_8_modifier"
+				duration = -1
+			}
+			add_country_modifier = {
+				name = "kielak_mercs_tier_8_modifier_country"
+				duration = -1
+			}
+
+			add_country_modifier = {
+				name = "hired_mercs_recently"
+				duration = 2800
+			}
+		}
+
+
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+    kielak_mercs_tier_8_again = {
+		color = { 166  166  0 }
+		potential = {
+			is_at_war = yes
+            has_country_modifier = hired_mercs_recently
+			any_war_enemy_country = { ai = no }
+
+
+
+			AND = {
+				total_development = 1601
+				NOT = {total_development = 2000}
+			}
+			NOT = { has_country_modifier = kielak_mercs_tier_1_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_2_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_3_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_4_modifier }
+            NOT = { has_country_modifier = kielak_mercs_tier_5_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_6_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_7_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_8_modifier }
+            NOT = { has_country_modifier = kielak_mercs_tier_9_modifier }
+			
+            
+			
+		
+		}
+		allow = {
+			is_at_war = yes
+
+			# if = {
+			# 	limit = { has_dlc = "Cradle of Civilization" }
+			# 	add_army_professionalism  = 0.8
+			# }
+		}
+
+		effect = {
+
+            add_army_professionalism =-0.125
+	
+			add_country_modifier = {
+				name = "kielak_mercs_tier_8_modifier"
+				duration = -1
+			}
+			add_country_modifier = {
+				name = "kielak_mercs_tier_8_modifier_country"
+				duration = -1
+			}
+
+			add_country_modifier = {
+				name = "hired_mercs_recently"
+				duration = 2800
+			}
+		}
+
+
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+    kielak_mercs_tier_9 = {
+		color = { 166  166  0 }
+		potential = {
+			is_at_war = yes
+			any_war_enemy_country = { ai = no }
+
+
+
+			total_development = 2001
+			NOT = { has_country_modifier = kielak_mercs_tier_1_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_2_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_3_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_4_modifier }
+            NOT = { has_country_modifier = kielak_mercs_tier_5_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_6_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_7_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_8_modifier }
+            NOT = { has_country_modifier = kielak_mercs_tier_9_modifier }
+            NOT = { has_country_modifier = hired_mercs_recently}
+			
+			
+		}
+		allow = {
+			is_at_war = yes
+
+			# if = {
+			# 	limit = { has_dlc = "Cradle of Civilization" }
+			# 	add_army_professionalism  = 0.8
+			# }
+		}
+
+		effect = {
+            
+			
+            add_owned_provinces_development_manpower = {
+                multiplier = 0.044 # multiplier * total dev  = manpower in 1k steps, so 15 total dev equals 15000 manpower 
+                age_multiplier = 0
+                trigger = { base_manpower = 1 }
+               
+            }
+            add_army_professionalism =-0.125
+
+			add_country_modifier = {
+				name = "kielak_mercs_tier_9_modifier"
+				duration = -1
+			}
+			add_country_modifier = {
+				name = "kielak_mercs_tier_9_modifier_country"
+				duration = -1
+			}
+
+			add_country_modifier = {
+				name = "hired_mercs_recently"
+				duration = 2800
+			}
+		}
+
+
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+    kielak_mercs_tier_9_again = {
+		color = { 166  166  0 }
+		potential = {
+			is_at_war = yes
+            has_country_modifier = hired_mercs_recently
+			any_war_enemy_country = { ai = no }
+
+
+
+			total_development = 2001
+			NOT = { has_country_modifier = kielak_mercs_tier_1_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_2_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_3_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_4_modifier }
+            NOT = { has_country_modifier = kielak_mercs_tier_5_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_6_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_7_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_8_modifier }
+            NOT = { has_country_modifier = kielak_mercs_tier_9_modifier }
+			
+            
+			
+		
+		}
+		allow = {
+			is_at_war = yes
+
+			# if = {
+			# 	limit = { has_dlc = "Cradle of Civilization" }
+			# 	add_army_professionalism  = 0.8
+			# }
+		}
+
+		effect = {
+
+            add_army_professionalism =-0.15
+	
+			add_country_modifier = {
+				name = "kielak_mercs_tier_9_modifier"
+				duration = -1
+			}
+			add_country_modifier = {
+				name = "kielak_mercs_tier_9_modifier_country"
+				duration = -1
+			}
+
+			add_country_modifier = {
+				name = "hired_mercs_recently"
+				duration = 2800
+			}
+		}
+
+
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+    kielak_mercs_emperor = {
+		color = { 166  166  0 }
+		potential = {
+			is_at_war = yes
+			any_war_enemy_country = { ai = no }
+
+
+            is_emperor = yes
+			NOT = {total_development = 1001}
+			NOT = { has_country_modifier = kielak_mercs_tier_1_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_2_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_3_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_4_modifier }
+            NOT = { has_country_modifier = kielak_mercs_tier_5_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_6_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_7_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_8_modifier }
+            NOT = { has_country_modifier = kielak_mercs_tier_9_modifier }
+            NOT = { has_country_modifier = hired_mercs_recently}
+		
 			
 		}
 		allow = {
@@ -27,25 +1185,25 @@ country_decisions = {
 	
 			
             add_owned_provinces_development_manpower = {
-                multiplier = 0.063 # multiplier * total dev  = manpower in 1k steps, so 15 total dev equals 15000 manpower 
+                multiplier = 0.050 # multiplier * total dev  = manpower in 1k steps, so 15 total dev equals 15000 manpower 
                 age_multiplier = 0
                 trigger = { base_manpower = 1 }
                
             }
-            add_army_professionalism =-0.05
+            add_army_professionalism =-0.1
 
 			add_country_modifier = {
-				name = "kielak_mercs1_modifier"
+				name = "kielak_mercs_tier_5_modifier"
 				duration = -1
 			}
 			add_country_modifier = {
-				name = "kielak_mercs1_modifier_country"
+				name = "kielak_mercs_tier_5_modifier_country"
 				duration = -1
 			}
 
 			add_country_modifier = {
 				name = "hired_mercs_recently"
-				duration = 1800
+				duration = 2200
 			}
 		}
 
@@ -56,18 +1214,27 @@ country_decisions = {
 		}
 	}
 
-    kielak_mercs_small_again = {
+    kielak_mercs_emperor_again = {
 		color = { 166  166  0 }
 		potential = {
 			is_at_war = yes
             has_country_modifier = hired_mercs_recently
 			any_war_enemy_country = { ai = no }
 
-			NOT = {total_development = 450}
-			NOT = { has_country_modifier = kielak_mercs1_modifier }
-			NOT = { has_country_modifier = kielak_mercs2_modifier }
-			NOT = { has_country_modifier = kielak_mercs3_modifier }
-			NOT = { has_country_modifier = kielak_mercs4_modifier }
+
+
+            is_emperor = yes
+			NOT = {total_development = 1001}
+			NOT = { has_country_modifier = kielak_mercs_tier_1_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_2_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_3_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_4_modifier }
+            NOT = { has_country_modifier = kielak_mercs_tier_5_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_6_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_7_modifier }
+			NOT = { has_country_modifier = kielak_mercs_tier_8_modifier }
+            NOT = { has_country_modifier = kielak_mercs_tier_9_modifier }
+			
             
 			
 		
@@ -83,20 +1250,20 @@ country_decisions = {
 
 		effect = {
 
-            add_army_professionalism =-0.05
-	
+          add_army_professionalism =-0.1
+
 			add_country_modifier = {
-				name = "kielak_mercs1_modifier"
+				name = "kielak_mercs_tier_5_modifier"
 				duration = -1
 			}
 			add_country_modifier = {
-				name = "kielak_mercs1_modifier_country"
+				name = "kielak_mercs_tier_5_modifier_country"
 				duration = -1
 			}
 
 			add_country_modifier = {
 				name = "hired_mercs_recently"
-				duration = 1800
+				duration = 2200
 			}
 		}
 
@@ -107,270 +1274,4 @@ country_decisions = {
 		}
 	}
 
-    kielak_mercs_middle = {
-		color = { 166  166  0 }
-		potential = {
-			is_at_war = yes
-			any_war_enemy_country = { ai = no }
-
-			AND = {
-				total_development = 451
-				NOT = {total_development = 800}
-			}
-			NOT = { has_country_modifier = kielak_mercs1_modifier }
-			NOT = { has_country_modifier = kielak_mercs2_modifier }
-			NOT = { has_country_modifier = kielak_mercs3_modifier }
-			NOT = { has_country_modifier = kielak_mercs4_modifier }
-            NOT = { has_country_modifier = hired_mercs_recently }
-		}
-		allow = {
-			is_at_war = yes
-		}
-	    effect = {
-			add_owned_provinces_development_manpower = {
-                multiplier = 0.0585 # multiplier * total dev  = manpower in 1k steps, so 15 total dev equals 15000 manpower 
-                age_multiplier = 0
-                trigger = { base_manpower = 1 }
-               
-            }
-            add_army_professionalism =-0.10
-
-			add_country_modifier = {
-				name = "kielak_mercs2_modifier"
-				duration = -1
-			}
-			add_country_modifier = {
-				name = "kielak_mercs2_modifier_country"
-				duration = -1
-			}
-
-            add_country_modifier = {
-				name = "hired_mercs_recently"
-				duration = 2100
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-
-    kielak_mercs_middle_again = {
-		color = { 166  166  0 }
-		potential = {
-			is_at_war = yes
-            has_country_modifier = hired_mercs_recently
-			any_war_enemy_country = { ai = no }
-
-			AND = {
-				total_development = 451
-				NOT = {total_development = 800}
-			}
-			NOT = { has_country_modifier = kielak_mercs1_modifier }
-			NOT = { has_country_modifier = kielak_mercs2_modifier }
-			NOT = { has_country_modifier = kielak_mercs3_modifier }
-			NOT = { has_country_modifier = kielak_mercs4_modifier }
-		}
-		allow = {
-			is_at_war = yes
-		}
-	    effect = {
-			
-            add_army_professionalism =-0.10
-			add_country_modifier = {
-				name = "kielak_mercs2_modifier"
-				duration = -1
-			}
-			add_country_modifier = {
-				name = "kielak_mercs2_modifier_country"
-				duration = -1
-			}
-
-             add_country_modifier = {
-				name = "hired_mercs_recently"
-				duration = 2100
-			}
-		}
-
-		ai_will_do = {
-			factor = 0
-		}
-	}
-
-     kielak_mercs_big = {
-		color = { 166  166  0 }
-		potential = {
-			is_at_war = yes
-			any_war_enemy_country = { ai = no }
-
-			AND = {
-				total_development = 801
-				NOT = {total_development = 1600}
-
-			}
-			NOT = { has_country_modifier = kielak_mercs1_modifier }
-			NOT = { has_country_modifier = kielak_mercs2_modifier }
-			NOT = { has_country_modifier = kielak_mercs3_modifier }
-			NOT = { has_country_modifier = kielak_mercs4_modifier }
-            NOT = { has_country_modifier = hired_mercs_recently }
-		}
-		allow = {
-			is_at_war = yes
-		}
-	    effect = {
-			add_owned_provinces_development_manpower = {
-                multiplier = 0.05 # multiplier * total dev  = manpower in 1k steps, so 15 total dev equals 15000 manpower 
-                age_multiplier = 0
-                trigger = { base_manpower = 1 }
-               
-            }
-            add_army_professionalism =-0.15
-
-			add_country_modifier = {
-				name = "kielak_mercs2_modifier"
-				duration = -1
-			}
-			add_country_modifier = {
-				name = "kielak_mercs2_modifier_country"
-				duration = -1
-			}
-
-            add_country_modifier = {
-				name = "hired_mercs_recently"
-				duration = 2400
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-
-    kielak_mercs_big_again = {
-		color = { 166  166  0 }
-		potential = {
-			is_at_war = yes
-            has_country_modifier = hired_mercs_recently
-			any_war_enemy_country = { ai = no }
-
-			AND = {
-				total_development = 801
-				NOT = {total_development = 1600}
-			}
-			NOT = { has_country_modifier = kielak_mercs1_modifier }
-			NOT = { has_country_modifier = kielak_mercs2_modifier }
-			NOT = { has_country_modifier = kielak_mercs3_modifier }
-			NOT = { has_country_modifier = kielak_mercs4_modifier }
-		}
-
-		allow = {
-
-			is_at_war = yes
-		}
-
-	    effect = {	
-            add_army_professionalism =-0.15
-			add_country_modifier = {
-				name = "kielak_mercs2_modifier"
-				duration = -1
-			}
-			add_country_modifier = {
-				name = "kielak_mercs2_modifier_country"
-				duration = -1
-			}
-            
-            add_country_modifier = {
-				name = "hired_mercs_recently"
-				duration = 2400
-			}
-		}
-
-		ai_will_do = {
-			factor = 0
-		}
-	}
-
-    	kielak_mercs_huge = {
-		color = { 166  166  0 }
-		potential = {
-			is_at_war = yes
-			any_war_enemy_country = { ai = no }
-			total_development = 1601
-			NOT = { has_country_modifier = kielak_mercs1_modifier }
-			NOT = { has_country_modifier = kielak_mercs2_modifier }
-			NOT = { has_country_modifier = kielak_mercs3_modifier }
-			NOT = { has_country_modifier = kielak_mercs4_modifier }
-            NOT = { has_country_modifier = hired_mercs_recently }
-	
-		}
-		allow = {
-			is_at_war = yes
-
-
-		}
-		effect = {
-
-			add_owned_provinces_development_manpower = {
-                multiplier = 0.045 # multiplier * total dev  = manpower in 1k steps, so 15 total dev equals 15000 manpower 
-                age_multiplier = 0
-                trigger = { base_manpower = 1 }
-               
-            }
-			add_army_professionalism =-0.20
-			add_country_modifier = {
-				name = "kielak_mercs4_modifier"
-				duration = -1
-			}
-			add_country_modifier = {
-				name = "kielak_mercs4_modifier_country"
-				duration = -1
-			}
-            add_country_modifier = {
-				name = "hired_mercs_recently"
-				duration = 3000
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-
-    kielak_mercs_huge_again = {
-		color = { 166  166  0 }
-		potential = {
-			is_at_war = yes
-            has_country_modifier = hired_mercs_recently
-			any_war_enemy_country = { ai = no }
-			total_development = 1601
-			NOT = { has_country_modifier = kielak_mercs1_modifier }
-			NOT = { has_country_modifier = kielak_mercs2_modifier }
-			NOT = { has_country_modifier = kielak_mercs3_modifier }
-			NOT = { has_country_modifier = kielak_mercs4_modifier }
-        
-	
-		}
-		allow = {
-			is_at_war = yes
-
-
-		}
-		effect = {
-
-			add_army_professionalism =-0.20
-			add_country_modifier = {
-				name = "kielak_mercs4_modifier"
-				duration = -1
-			}
-			add_country_modifier = {
-				name = "kielak_mercs4_modifier_country"
-				duration = -1
-			}
-
-            add_country_modifier = {
-				name = "hired_mercs_recently"
-				duration = 3000
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
 }
