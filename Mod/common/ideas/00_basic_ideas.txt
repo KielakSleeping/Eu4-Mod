@@ -938,7 +938,7 @@ quantity_ideas = {
 	}
 	the_old_and_infirm = {
 		land_forcelimit = 15
-		may_return_manpower_on_disband = yes
+		#may_return_manpower_on_disband = yes
 	}
 	expanded_supply_trains = {
 		land_attrition = -0.20
