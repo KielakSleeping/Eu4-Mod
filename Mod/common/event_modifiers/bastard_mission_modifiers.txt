@@ -28,8 +28,8 @@ charles_court_reorganisation = {
 	advisor_pool = 1
 }
 bs_bur_realm_united_mod = {
-	local_production_efficiency = 0.25
-	trade_goods_size_modifier = 0.15
+	local_production_efficiency = 0.15
+	trade_goods_size_modifier = 0.10
 }
 
 norman_resurgence = {
