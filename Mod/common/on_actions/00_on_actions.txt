@@ -342,6 +342,88 @@ on_war_won = {
 			id = flavor_swe.121
 		}
 	}
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_country_modifier = kielak_mercs_tier_1_modifier
+					has_country_modifier = kielak_mercs_tier_2_modifier
+					has_country_modifier = kielak_mercs_tier_3_modifier
+					has_country_modifier = kielak_mercs_tier_4_modifier
+					has_country_modifier = kielak_mercs_tier_5_modifier
+					has_country_modifier = kielak_mercs_tier_6_modifier
+					has_country_modifier = kielak_mercs_tier_7_modifier
+					has_country_modifier = kielak_mercs_tier_8_modifier
+					has_country_modifier = kielak_mercs_tier_9_modifier
+				}
+			}
+		}
+
+		ROOT = {
+			remove_country_modifier = kielak_mercs_tier_1_modifier
+			remove_country_modifier = kielak_mercs_tier_2_modifier
+			remove_country_modifier = kielak_mercs_tier_3_modifier
+			remove_country_modifier = kielak_mercs_tier_4_modifier
+			remove_country_modifier = kielak_mercs_tier_5_modifier
+			remove_country_modifier = kielak_mercs_tier_6_modifier
+			remove_country_modifier = kielak_mercs_tier_7_modifier
+			remove_country_modifier = kielak_mercs_tier_8_modifier
+			remove_country_modifier = kielak_mercs_tier_9_modifier
+
+			remove_country_modifier = kielak_mercs_tier_1_modifier_country
+			remove_country_modifier = kielak_mercs_tier_2_modifier_country
+			remove_country_modifier = kielak_mercs_tier_3_modifier_country
+			remove_country_modifier = kielak_mercs_tier_4_modifier_country
+			remove_country_modifier = kielak_mercs_tier_5_modifier_country
+			remove_country_modifier = kielak_mercs_tier_6_modifier_country
+			remove_country_modifier = kielak_mercs_tier_7_modifier_country
+			remove_country_modifier = kielak_mercs_tier_8_modifier_country
+			remove_country_modifier = kielak_mercs_tier_9_modifier_country
+		}
+
+	}
+
+	if = {
+		limit = {
+			FROM = {
+				OR = {
+					has_country_modifier = kielak_mercs_tier_1_modifier
+					has_country_modifier = kielak_mercs_tier_2_modifier
+					has_country_modifier = kielak_mercs_tier_3_modifier
+					has_country_modifier = kielak_mercs_tier_4_modifier
+					has_country_modifier = kielak_mercs_tier_5_modifier
+					has_country_modifier = kielak_mercs_tier_6_modifier
+					has_country_modifier = kielak_mercs_tier_7_modifier
+					has_country_modifier = kielak_mercs_tier_8_modifier
+					has_country_modifier = kielak_mercs_tier_9_modifier
+				}
+			}
+		}
+
+		FROM = {
+			remove_country_modifier = kielak_mercs_tier_1_modifier
+			remove_country_modifier = kielak_mercs_tier_2_modifier
+			remove_country_modifier = kielak_mercs_tier_3_modifier
+			remove_country_modifier = kielak_mercs_tier_4_modifier
+			remove_country_modifier = kielak_mercs_tier_5_modifier
+			remove_country_modifier = kielak_mercs_tier_6_modifier
+			remove_country_modifier = kielak_mercs_tier_7_modifier
+			remove_country_modifier = kielak_mercs_tier_8_modifier
+			remove_country_modifier = kielak_mercs_tier_9_modifier
+			
+			remove_country_modifier = kielak_mercs_tier_1_modifier_country
+			remove_country_modifier = kielak_mercs_tier_2_modifier_country
+			remove_country_modifier = kielak_mercs_tier_3_modifier_country
+			remove_country_modifier = kielak_mercs_tier_4_modifier_country
+			remove_country_modifier = kielak_mercs_tier_5_modifier_country
+			remove_country_modifier = kielak_mercs_tier_6_modifier_country
+			remove_country_modifier = kielak_mercs_tier_7_modifier_country
+			remove_country_modifier = kielak_mercs_tier_8_modifier_country
+			remove_country_modifier = kielak_mercs_tier_9_modifier_country
+		}
+
+	}
+
 }
 
 # country
