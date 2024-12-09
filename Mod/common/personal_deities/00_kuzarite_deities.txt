@@ -64,7 +64,7 @@ deity5 = {
 	removed_effect = {}
 }
 
-deity1 = {
+deity6 = {
     sprite = 6
     potential = {
         religion = kuzarite
