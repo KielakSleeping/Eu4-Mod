@@ -16,7 +16,7 @@ golden_horde_kuzarite = {
 }
 
 hesse_court = {
-    icon = "constitution"
+    icon = "english_monarchy"
     lock_level_when_selected = yes
     allow_normal_conversion = yes
     potential = {
@@ -27,5 +27,9 @@ hesse_court = {
     }
     modifiers = {
         diplomatic_reputation = 1
+	diplomatic_upkeep = 1
+	local_heir_dip = 1
+	monthly_splendor = 2
+	advisor_cost = -0.15
     }
 }
