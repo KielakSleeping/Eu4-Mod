@@ -14,3 +14,18 @@ golden_horde_kuzarite = {
         manpower_in_true_faith_provinces = 0.1
     }
 }
+
+hesse_court = {
+    icon = "constitution"
+    lock_level_when_selected = yes
+    allow_normal_conversion = yes
+    potential = {
+        OR = {
+            tag = HES
+            was_tag = HES
+        }
+    }
+    modifiers = {
+        diplomatic_reputation = 1
+    }
+}
