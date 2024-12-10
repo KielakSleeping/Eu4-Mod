@@ -25,6 +25,12 @@ hesse_court = {
             was_tag = HES
         }
     }
+    trigger = {
+    	OR = {
+	    religion = protestant
+	    religion = reformed
+	}
+	}
     modifiers = {
         diplomatic_reputation = 1
 	diplomatic_upkeep = 1
