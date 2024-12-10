@@ -129,7 +129,9 @@ monarchy = {
 				austrian_absolute_monarchy
 				merchant_aristocracy_reform
 				gothic_monarchy_reform
+				#kielak gov reforms
 				golden_horde_kuzarite
+				hesse_court
 			}
 		}
 		hereditary_vs_nobility = {
