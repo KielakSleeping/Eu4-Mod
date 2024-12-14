@@ -1,0 +1,94 @@
+namespace = kielak_mercs
+
+#When at Peace and you have the merc modifiers active this event removes them
+
+country_event = {
+	id = kielak_mercs.1
+    title = "kielak_mercs_event_1_title"
+    desc = "kielak_mercs_event_1_desc"
+    picture = CIVIL_WAR_eventPicture
+
+    
+
+    trigger = {
+
+        AND = {
+
+            is_at_war = no
+
+             OR = {
+                    has_country_modifier = kielak_mercs_tier_1_modifier
+                    has_country_modifier = kielak_mercs_tier_2_modifier
+                    has_country_modifier = kielak_mercs_tier_3_modifier
+                    has_country_modifier = kielak_mercs_tier_4_modifier
+                    has_country_modifier = kielak_mercs_tier_5_modifier
+                    has_country_modifier = kielak_mercs_tier_6_modifier
+                    has_country_modifier = kielak_mercs_tier_7_modifier
+                    has_country_modifier = kielak_mercs_tier_8_modifier
+                    has_country_modifier = kielak_mercs_tier_9_modifier
+			    }
+
+
+        }
+
+        
+           
+        
+    }
+   
+    mean_time_to_happen = {
+        days = 1
+
+    }
+
+    immediate = {
+        hidden_effect = {
+            remove_country_modifier = kielak_mercs_tier_1_modifier
+			remove_country_modifier = kielak_mercs_tier_2_modifier
+			remove_country_modifier = kielak_mercs_tier_3_modifier
+			remove_country_modifier = kielak_mercs_tier_4_modifier
+			remove_country_modifier = kielak_mercs_tier_5_modifier
+			remove_country_modifier = kielak_mercs_tier_6_modifier
+			remove_country_modifier = kielak_mercs_tier_7_modifier
+			remove_country_modifier = kielak_mercs_tier_8_modifier
+			remove_country_modifier = kielak_mercs_tier_9_modifier
+
+			remove_country_modifier = kielak_mercs_tier_1_modifier_country
+			remove_country_modifier = kielak_mercs_tier_2_modifier_country
+			remove_country_modifier = kielak_mercs_tier_3_modifier_country
+			remove_country_modifier = kielak_mercs_tier_4_modifier_country
+			remove_country_modifier = kielak_mercs_tier_5_modifier_country
+			remove_country_modifier = kielak_mercs_tier_6_modifier_country
+			remove_country_modifier = kielak_mercs_tier_7_modifier_country
+			remove_country_modifier = kielak_mercs_tier_8_modifier_country
+			remove_country_modifier = kielak_mercs_tier_9_modifier_country
+        }
+
+    }
+
+    option = {
+		name = kielak_mercs.1.a
+		#add_prestige = 50
+	}
+
+   
+
+}
+
+country_event = {
+	id = kielak_mercs.2
+    title = "kielak_mercs_event_2_title"
+    desc = "kielak_mercs_event_2_desc"
+    picture = ADVISOR_eventPicture
+
+    is_triggered_only = yes
+
+    
+
+    option = {
+		name = kielak_mercs.2.a
+		
+	}
+   
+
+}
