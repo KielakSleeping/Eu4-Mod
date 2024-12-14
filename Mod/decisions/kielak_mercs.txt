@@ -34,12 +34,12 @@ country_decisions = {
 		effect = {
             
 			
-            add_owned_provinces_development_manpower = {
-                multiplier = 0.063 # multiplier * total dev  = manpower in 1k steps, so 15 total dev equals 15000 manpower 
-                age_multiplier = 0
-                trigger = { base_manpower = 1 }
+            # add_owned_provinces_development_manpower = {
+            #     multiplier = 0.063 # multiplier * total dev  = manpower in 1k steps, so 15 total dev equals 15000 manpower 
+            #     age_multiplier = 0
+            #     trigger = { base_manpower = 1 }
                
-            }
+            #}
             add_army_professionalism =-0.05
 
 			add_country_modifier = {
@@ -53,7 +53,7 @@ country_decisions = {
 
 			add_country_modifier = {
 				name = "hired_mercs_recently"
-				duration = 1800
+				duration = 3650
 			}
 		}
 
@@ -99,7 +99,7 @@ country_decisions = {
 
 		effect = {
 
-            add_army_professionalism =-0.05
+            #add_army_professionalism =-0.05
 	
 			add_country_modifier = {
 				name = "kielak_mercs_tier_1_modifier"
@@ -112,7 +112,7 @@ country_decisions = {
 
 			add_country_modifier = {
 				name = "hired_mercs_recently"
-				duration = 1800
+				duration = 3650
 			}
 		}
 
@@ -160,12 +160,12 @@ country_decisions = {
 		effect = {
             
 			
-            add_owned_provinces_development_manpower = {
-                multiplier = 0.061 # multiplier * total dev  = manpower in 1k steps, so 15 total dev equals 15000 manpower 
-                age_multiplier = 0
-                trigger = { base_manpower = 1 }
+            # add_owned_provinces_development_manpower = {
+            #     multiplier = 0.061 # multiplier * total dev  = manpower in 1k steps, so 15 total dev equals 15000 manpower 
+            #     age_multiplier = 0
+            #     trigger = { base_manpower = 1 }
                
-            }
+            # }
             add_army_professionalism =-0.05
 
 			add_country_modifier = {
@@ -179,7 +179,7 @@ country_decisions = {
 
 			add_country_modifier = {
 				name = "hired_mercs_recently"
-				duration = 1800
+				duration = 3650
 			}
 		}
 
@@ -241,7 +241,7 @@ country_decisions = {
 
 			add_country_modifier = {
 				name = "hired_mercs_recently"
-				duration = 1800
+				duration = 3650
 			}
 		}
 
@@ -289,12 +289,12 @@ country_decisions = {
 		effect = {
             
 			
-            add_owned_provinces_development_manpower = {
-                multiplier = 0.058 # multiplier * total dev  = manpower in 1k steps, so 15 total dev equals 15000 manpower 
-                age_multiplier = 0
-                trigger = { base_manpower = 1 }
+            # add_owned_provinces_development_manpower = {
+            #     multiplier = 0.058 # multiplier * total dev  = manpower in 1k steps, so 15 total dev equals 15000 manpower 
+            #     age_multiplier = 0
+            #     trigger = { base_manpower = 1 }
                
-            }
+            # }
             add_army_professionalism =-0.075
 
 			add_country_modifier = {
@@ -308,7 +308,7 @@ country_decisions = {
 
 			add_country_modifier = {
 				name = "hired_mercs_recently"
-				duration = 1800
+				duration = 3650
 			}
 		}
 
@@ -357,7 +357,7 @@ country_decisions = {
 
 		effect = {
 
-            add_army_professionalism =-0.075
+            #add_army_professionalism =-0.075
 	
 			add_country_modifier = {
 				name = "kielak_mercs_tier_3_modifier"
@@ -370,7 +370,7 @@ country_decisions = {
 
 			add_country_modifier = {
 				name = "hired_mercs_recently"
-				duration = 1800
+				duration = 3650
 			}
 		}
 
@@ -418,12 +418,12 @@ country_decisions = {
 		effect = {
             
 			
-            add_owned_provinces_development_manpower = {
-                multiplier = 0.054 # multiplier * total dev  = manpower in 1k steps, so 15 total dev equals 15000 manpower 
-                age_multiplier = 0
-                trigger = { base_manpower = 1 }
+            # add_owned_provinces_development_manpower = {
+            #     multiplier = 0.054 # multiplier * total dev  = manpower in 1k steps, so 15 total dev equals 15000 manpower 
+            #     age_multiplier = 0
+            #     trigger = { base_manpower = 1 }
                
-            }
+            # }
             add_army_professionalism =-0.075
 
 			add_country_modifier = {
@@ -437,7 +437,7 @@ country_decisions = {
 
 			add_country_modifier = {
 				name = "hired_mercs_recently"
-				duration = 2100
+				duration = 3650
 			}
 		}
 
@@ -486,7 +486,7 @@ country_decisions = {
 
 		effect = {
 
-            add_army_professionalism =-0.075
+            #add_army_professionalism =-0.075
 	
 			add_country_modifier = {
 				name = "kielak_mercs_tier_4_modifier"
@@ -499,7 +499,7 @@ country_decisions = {
 
 			add_country_modifier = {
 				name = "hired_mercs_recently"
-				duration = 2100
+				duration = 3650
 			}
 		}
 
@@ -547,12 +547,12 @@ country_decisions = {
 		effect = {
             
 			
-            add_owned_provinces_development_manpower = {
-                multiplier = 0.052 # multiplier * total dev  = manpower in 1k steps, so 15 total dev equals 15000 manpower 
-                age_multiplier = 0
-                trigger = { base_manpower = 1 }
+            # add_owned_provinces_development_manpower = {
+            #     multiplier = 0.052 # multiplier * total dev  = manpower in 1k steps, so 15 total dev equals 15000 manpower 
+            #     age_multiplier = 0
+            #     trigger = { base_manpower = 1 }
                
-            }
+            # }
             add_army_professionalism =-0.075
 
 			add_country_modifier = {
@@ -566,7 +566,7 @@ country_decisions = {
 
 			add_country_modifier = {
 				name = "hired_mercs_recently"
-				duration = 2100
+				duration = 3650
 			}
 		}
 
@@ -615,7 +615,7 @@ country_decisions = {
 
 		effect = {
 
-            add_army_professionalism =-0.075
+            #add_army_professionalism =-0.075
 	
 			add_country_modifier = {
 				name = "kielak_mercs_tier_5_modifier"
@@ -628,7 +628,7 @@ country_decisions = {
 
 			add_country_modifier = {
 				name = "hired_mercs_recently"
-				duration = 2100
+				duration = 3650
 			}
 		}
 
@@ -676,12 +676,12 @@ country_decisions = {
 		effect = {
             
 			
-            add_owned_provinces_development_manpower = {
-                multiplier = 0.050 # multiplier * total dev  = manpower in 1k steps, so 15 total dev equals 15000 manpower 
-                age_multiplier = 0
-                trigger = { base_manpower = 1 }
+            # add_owned_provinces_development_manpower = {
+            #     multiplier = 0.050 # multiplier * total dev  = manpower in 1k steps, so 15 total dev equals 15000 manpower 
+            #     age_multiplier = 0
+            #     trigger = { base_manpower = 1 }
                
-            }
+            # }
             add_army_professionalism =-0.1
 
 			add_country_modifier = {
@@ -695,7 +695,7 @@ country_decisions = {
 
 			add_country_modifier = {
 				name = "hired_mercs_recently"
-				duration = 2400
+				duration = 3650
 			}
 		}
 
@@ -744,7 +744,7 @@ country_decisions = {
 
 		effect = {
 
-            add_army_professionalism =-0.1
+            #add_army_professionalism =-0.1
 	
 			add_country_modifier = {
 				name = "kielak_mercs_tier_6_modifier"
@@ -757,7 +757,7 @@ country_decisions = {
 
 			add_country_modifier = {
 				name = "hired_mercs_recently"
-				duration = 2400
+				duration = 3650
 			}
 		}
 
@@ -805,12 +805,12 @@ country_decisions = {
 		effect = {
             
 			
-            add_owned_provinces_development_manpower = {
-                multiplier = 0.048 # multiplier * total dev  = manpower in 1k steps, so 15 total dev equals 15000 manpower 
-                age_multiplier = 0
-                trigger = { base_manpower = 1 }
+            # add_owned_provinces_development_manpower = {
+            #     multiplier = 0.048 # multiplier * total dev  = manpower in 1k steps, so 15 total dev equals 15000 manpower 
+            #     age_multiplier = 0
+            #     trigger = { base_manpower = 1 }
                
-            }
+            # }
             add_army_professionalism =-0.125
 
 			add_country_modifier = {
@@ -824,7 +824,7 @@ country_decisions = {
 
 			add_country_modifier = {
 				name = "hired_mercs_recently"
-				duration = 2400
+				duration = 3650
 			}
 		}
 
@@ -873,7 +873,7 @@ country_decisions = {
 
 		effect = {
 
-            add_army_professionalism =-0.125
+            #add_army_professionalism =-0.125
 	
 			add_country_modifier = {
 				name = "kielak_mercs_tier_7_modifier"
@@ -886,7 +886,7 @@ country_decisions = {
 
 			add_country_modifier = {
 				name = "hired_mercs_recently"
-				duration = 2400
+				duration = 3650
 			}
 		}
 
@@ -934,12 +934,12 @@ country_decisions = {
 		effect = {
             
 			
-            add_owned_provinces_development_manpower = {
-                multiplier = 0.046 # multiplier * total dev  = manpower in 1k steps, so 15 total dev equals 15000 manpower 
-                age_multiplier = 0
-                trigger = { base_manpower = 1 }
+            # add_owned_provinces_development_manpower = {
+            #     multiplier = 0.046 # multiplier * total dev  = manpower in 1k steps, so 15 total dev equals 15000 manpower 
+            #     age_multiplier = 0
+            #     trigger = { base_manpower = 1 }
                
-            }
+            # }
             add_army_professionalism =-0.125
 
 			add_country_modifier = {
@@ -953,7 +953,7 @@ country_decisions = {
 
 			add_country_modifier = {
 				name = "hired_mercs_recently"
-				duration = 2800
+				duration = 3650
 			}
 		}
 
@@ -1002,7 +1002,7 @@ country_decisions = {
 
 		effect = {
 
-            add_army_professionalism =-0.125
+            #add_army_professionalism =-0.125
 	
 			add_country_modifier = {
 				name = "kielak_mercs_tier_8_modifier"
@@ -1015,7 +1015,7 @@ country_decisions = {
 
 			add_country_modifier = {
 				name = "hired_mercs_recently"
-				duration = 2800
+				duration = 3650
 			}
 		}
 
@@ -1060,12 +1060,12 @@ country_decisions = {
 		effect = {
             
 			
-            add_owned_provinces_development_manpower = {
-                multiplier = 0.044 # multiplier * total dev  = manpower in 1k steps, so 15 total dev equals 15000 manpower 
-                age_multiplier = 0
-                trigger = { base_manpower = 1 }
+            # add_owned_provinces_development_manpower = {
+            #     multiplier = 0.044 # multiplier * total dev  = manpower in 1k steps, so 15 total dev equals 15000 manpower 
+            #     age_multiplier = 0
+            #     trigger = { base_manpower = 1 }
                
-            }
+            # }
             add_army_professionalism =-0.125
 
 			add_country_modifier = {
@@ -1079,7 +1079,7 @@ country_decisions = {
 
 			add_country_modifier = {
 				name = "hired_mercs_recently"
-				duration = 2800
+				duration = 3650
 			}
 		}
 
@@ -1125,7 +1125,7 @@ country_decisions = {
 
 		effect = {
 
-            add_army_professionalism =-0.15
+            #add_army_professionalism =-0.15
 	
 			add_country_modifier = {
 				name = "kielak_mercs_tier_9_modifier"
@@ -1138,7 +1138,7 @@ country_decisions = {
 
 			add_country_modifier = {
 				name = "hired_mercs_recently"
-				duration = 2800
+				duration = 3650
 			}
 		}
 
@@ -1184,12 +1184,12 @@ country_decisions = {
 		effect = {
 	
 			
-            add_owned_provinces_development_manpower = {
-                multiplier = 0.050 # multiplier * total dev  = manpower in 1k steps, so 15 total dev equals 15000 manpower 
-                age_multiplier = 0
-                trigger = { base_manpower = 1 }
+            # add_owned_provinces_development_manpower = {
+            #     multiplier = 0.050 # multiplier * total dev  = manpower in 1k steps, so 15 total dev equals 15000 manpower 
+            #     age_multiplier = 0
+            #     trigger = { base_manpower = 1 }
                
-            }
+            # }
             add_army_professionalism =-0.1
 
 			add_country_modifier = {
@@ -1203,7 +1203,7 @@ country_decisions = {
 
 			add_country_modifier = {
 				name = "hired_mercs_recently"
-				duration = 2200
+				duration = 3650
 			}
 		}
 
@@ -1250,7 +1250,7 @@ country_decisions = {
 
 		effect = {
 
-          add_army_professionalism =-0.1
+          #add_army_professionalism =-0.1
 
 			add_country_modifier = {
 				name = "kielak_mercs_tier_5_modifier"
@@ -1263,7 +1263,7 @@ country_decisions = {
 
 			add_country_modifier = {
 				name = "hired_mercs_recently"
-				duration = 2200
+				duration = 3650
 			}
 		}
 
@@ -1274,4 +1274,20 @@ country_decisions = {
 		}
 	}
 
+	kielak_merc_readme = {
+		color = { 41  233  249 }
+		potential = {
+			ai = no
+			NOT = { has_country_flag = hide_extra_decisions }
+		}
+		
+		allow = {
+		}
+		effect = {
+			country_event = {
+				id = kielak_mercs.2
+			}
+		}
+	}
+	
 }
