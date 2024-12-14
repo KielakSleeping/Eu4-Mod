@@ -697,7 +697,7 @@ cancelled_loan = {
 
 bank_loan = {
 	build_cost = 0.005
-	mercenary_manpower = -0.006
+	#mercenary_manpower = -0.006
 }
 
 inflation = {
@@ -723,8 +723,9 @@ inflation = {
 	trade_company_investment_cost = 0.01				#1% for each inflation step
 	state_maintenance_modifier = 0.01					#1% for each inflation step
 	monthly_russian_modernization = -0.01
-	mercenary_manpower = -0.02
-	mercenary_discipline = -0.01
+	#mercenary_manpower = -0.02
+	#mercenary_discipline = -0.01
+	allowed_rev_guard_fraction = -0.008
 }
 
 bankruptcy = {
@@ -2145,7 +2146,7 @@ carolean_regiment = {
 revolutionary_guard_regiment = {
 	fire_damage_received = 2
 	shock_damage_received = 2
-	land_maintenance_modifier = 1
+	land_maintenance_modifier = 0.5
 }
 
 innovativeness = {
