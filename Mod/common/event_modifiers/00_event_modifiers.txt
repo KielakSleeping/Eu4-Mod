@@ -9998,7 +9998,7 @@ kielak_mercs_tier_1_modifier = {
 
 kielak_mercs_tier_1_modifier_country = {
 	allowed_rev_guard_fraction = 0.6
-	global_regiment_recruit_speed = -0.80
+	
 	
 	
 
@@ -10015,140 +10015,115 @@ kielak_mercs_tier_2_modifier = {
 
 kielak_mercs_tier_2_modifier_country = {
 	allowed_rev_guard_fraction = 0.55
-	global_regiment_recruit_speed = -0.80
+	
 	
 
 }
 
 kielak_mercs_tier_3_modifier = {
 	is_revolutionary_guard_modifier = yes
-	regiment_manpower_usage = -0.75
+	regiment_manpower_usage = -0.80
 	reinforce_speed = -0.25
 	reinforce_cost_modifier = 0.45
-	infantry_cost = 0.10
-	cavalry_cost = 0.10
-	artillery_cost = 0.10
 	fire_damage_received = -2
 	shock_damage_received = -2
 }
 
 kielak_mercs_tier_3_modifier_country = {
 	allowed_rev_guard_fraction = 0.5
-	global_regiment_recruit_speed = -0.80
+	
 	
 
 }
 
 kielak_mercs_tier_4_modifier = {
 	is_revolutionary_guard_modifier = yes
-	regiment_manpower_usage = -0.70
+	regiment_manpower_usage = -0.80
 	reinforce_speed = -0.35
 	reinforce_cost_modifier = 0.50
-	infantry_cost = 0.20
-	cavalry_cost = 0.20
-	artillery_cost = 0.20
 	fire_damage_received = -2
 	shock_damage_received = -2
 }
 
 kielak_mercs_tier_4_modifier_country = {
 	allowed_rev_guard_fraction = 0.45
-	global_regiment_recruit_speed = -0.80
+	
 	
 
 }
 
 kielak_mercs_tier_5_modifier = {
 	is_revolutionary_guard_modifier = yes
-	regiment_manpower_usage = -0.65
+	regiment_manpower_usage = -0.80
 	reinforce_speed = -0.4
 	reinforce_cost_modifier = 0.55
-	infantry_cost = 0.40
-	cavalry_cost = 0.40
-	artillery_cost = 0.40
 	fire_damage_received = -2
 	shock_damage_received = -2
 }
 
 kielak_mercs_tier_5_modifier_country = {
 	allowed_rev_guard_fraction = 0.4
-	global_regiment_recruit_speed = -0.80
-	
+		
 
 }
 
 kielak_mercs_tier_6_modifier = {
 	is_revolutionary_guard_modifier = yes
-	regiment_manpower_usage = -0.60
+	regiment_manpower_usage = -0.80
 	reinforce_speed = -0.45
 	reinforce_cost_modifier = 0.6
-	infantry_cost = 0.60
-	cavalry_cost = 0.60
-	artillery_cost = 0.60
 	fire_damage_received = -2
 	shock_damage_received = -2
 }
 
 kielak_mercs_tier_6_modifier_country = {
 	allowed_rev_guard_fraction = 0.35
-	global_regiment_recruit_speed = -0.80
+	
 	
 
 }
 
 kielak_mercs_tier_7_modifier = {
 	is_revolutionary_guard_modifier = yes
-	regiment_manpower_usage = -0.55
+	regiment_manpower_usage = -0.80
 	reinforce_speed = -0.50
 	reinforce_cost_modifier = 0.65
-	infantry_cost = 0.75
-	cavalry_cost = 0.75
-	artillery_cost = 0.75
 	fire_damage_received = -2
 	shock_damage_received = -2
 }
 
 kielak_mercs_tier_7_modifier_country = {
 	allowed_rev_guard_fraction = 0.3
-	global_regiment_recruit_speed = -0.80
 	
 
 }
 
 kielak_mercs_tier_8_modifier = {
 	is_revolutionary_guard_modifier = yes
-	regiment_manpower_usage = -0.50
+	regiment_manpower_usage = -0.80
 	reinforce_speed = -0.55
 	reinforce_cost_modifier = 0.7
-	infantry_cost = 0.9
-	cavalry_cost = 0.9
-	artillery_cost = 0.9
 	fire_damage_received = -2
 	shock_damage_received = -2
 }
 
 kielak_mercs_tier_8_modifier_country = {
 	allowed_rev_guard_fraction = 0.25
-	global_regiment_recruit_speed = -0.80
 	
 
 }
 
 kielak_mercs_tier_9_modifier = {
 	is_revolutionary_guard_modifier = yes
-	regiment_manpower_usage = -0.30
+	regiment_manpower_usage = -0.80
 	reinforce_speed = -0.70
 	reinforce_cost_modifier = 1
-	infantry_cost = 1
-	cavalry_cost = 1
-	artillery_cost = 1
 	fire_damage_received = -2
 	shock_damage_received = -2
 }
 
 kielak_mercs_tier_9_modifier_country = {
 	allowed_rev_guard_fraction = 0.2
-	global_regiment_recruit_speed = -0.80
 	
 
 }
