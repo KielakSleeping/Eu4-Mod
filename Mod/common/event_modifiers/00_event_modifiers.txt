@@ -10025,6 +10025,7 @@ kielak_mercs_tier_3_modifier = {
 	regiment_manpower_usage = -0.80
 	reinforce_speed = -0.25
 	reinforce_cost_modifier = 0.45
+	land_maintenance_modifier = 0.10
 	fire_damage_received = -2
 	shock_damage_received = -2
 }
@@ -10041,6 +10042,7 @@ kielak_mercs_tier_4_modifier = {
 	regiment_manpower_usage = -0.80
 	reinforce_speed = -0.35
 	reinforce_cost_modifier = 0.50
+	land_maintenance_modifier = 0.20
 	fire_damage_received = -2
 	shock_damage_received = -2
 }
@@ -10057,6 +10059,7 @@ kielak_mercs_tier_5_modifier = {
 	regiment_manpower_usage = -0.80
 	reinforce_speed = -0.4
 	reinforce_cost_modifier = 0.55
+	land_maintenance_modifier = 0.40
 	fire_damage_received = -2
 	shock_damage_received = -2
 }
@@ -10072,6 +10075,7 @@ kielak_mercs_tier_6_modifier = {
 	regiment_manpower_usage = -0.80
 	reinforce_speed = -0.45
 	reinforce_cost_modifier = 0.6
+	land_maintenance_modifier = 0.60
 	fire_damage_received = -2
 	shock_damage_received = -2
 }
@@ -10088,6 +10092,7 @@ kielak_mercs_tier_7_modifier = {
 	regiment_manpower_usage = -0.80
 	reinforce_speed = -0.50
 	reinforce_cost_modifier = 0.65
+	land_maintenance_modifier = 0.75
 	fire_damage_received = -2
 	shock_damage_received = -2
 }
@@ -10103,6 +10108,7 @@ kielak_mercs_tier_8_modifier = {
 	regiment_manpower_usage = -0.80
 	reinforce_speed = -0.55
 	reinforce_cost_modifier = 0.7
+	land_maintenance_modifier = 0.9
 	fire_damage_received = -2
 	shock_damage_received = -2
 }
@@ -10118,6 +10124,7 @@ kielak_mercs_tier_9_modifier = {
 	regiment_manpower_usage = -0.80
 	reinforce_speed = -0.70
 	reinforce_cost_modifier = 1
+	land_maintenance_modifier = 1
 	fire_damage_received = -2
 	shock_damage_received = -2
 }
