@@ -138,8 +138,8 @@ Great_power_dominance = {
 				NOT = { is_colonial_nation = yes }	
 				NOT = { is_lacking_institutions = yes }
 	}
-	army_tradition_decay = -0.005
-	navy_tradition_decay = -0.005
+	army_tradition_decay = -0.003
+	navy_tradition_decay = -0.003
 }
 HRE_backup = {	
 	potential = {
