@@ -1362,7 +1362,7 @@ absolutism = {
 }
 
 low_army_professionalism = {
-	mercenary_cost = -0.15
+	#mercenary_cost = -0.15
 }
 
 high_army_professionalism = {
@@ -1372,7 +1372,7 @@ high_army_professionalism = {
 	#drill_decay_modifier = -0.5
 	allowed_samurai_fraction = 0.1
 	reinforce_speed = 0.33
-	land_morale = 0.05
+	#land_morale = 0.05
 	
 }
 
