@@ -183,7 +183,7 @@ country_event = {
 		}
 
 		define_general = {
-			name = "Egidio Timpone"
+			name = "Azza Timpone"
 			fire = 4
 			shock = 2
 			manuever = 1
@@ -199,7 +199,7 @@ country_event = {
 		}
 
 		define_advisor = {
-			name = "Egidio Timpone"
+			name = "Azza Timpone"
 			type = commandant
 			skill = 3
 			cost_multiplier = 0.75
@@ -215,7 +215,7 @@ country_event = {
 		}
 
 		define_advisor = {
-			name = "Egidio Timpone"
+			name = "Azza Timpone"
 			type = artist
 			skill = 3
 			cost_multiplier = 0.75
