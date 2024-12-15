@@ -25,7 +25,7 @@ country_event = {
                     has_country_modifier = kielak_mercs_tier_6_modifier
                     has_country_modifier = kielak_mercs_tier_7_modifier
                     has_country_modifier = kielak_mercs_tier_8_modifier
-                    has_country_modifier = kielak_mercs_tier_9_modifier
+                    
 			    }
 
 
@@ -37,7 +37,7 @@ country_event = {
     }
    
     mean_time_to_happen = {
-        days = 1
+        months = 0
 
     }
 
@@ -51,7 +51,7 @@ country_event = {
 			remove_country_modifier = kielak_mercs_tier_6_modifier
 			remove_country_modifier = kielak_mercs_tier_7_modifier
 			remove_country_modifier = kielak_mercs_tier_8_modifier
-			remove_country_modifier = kielak_mercs_tier_9_modifier
+			
 
 			remove_country_modifier = kielak_mercs_tier_1_modifier_country
 			remove_country_modifier = kielak_mercs_tier_2_modifier_country
@@ -61,14 +61,14 @@ country_event = {
 			remove_country_modifier = kielak_mercs_tier_6_modifier_country
 			remove_country_modifier = kielak_mercs_tier_7_modifier_country
 			remove_country_modifier = kielak_mercs_tier_8_modifier_country
-			remove_country_modifier = kielak_mercs_tier_9_modifier_country
+			
         }
 
     }
 
     option = {
 		name = kielak_mercs.1.a
-		#add_prestige = 50
+		
 	}
 
    
