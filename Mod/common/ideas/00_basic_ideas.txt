@@ -713,7 +713,7 @@ aristocracy_ideas = {
 		cavalry_power = 0.125
 	}
 	noble_resilience = {
-		cav_to_inf_ratio = 0.1
+		cav_to_inf_ratio = 0.15
 		cavalry_flanking = 0.3
 	}
 	noble_officers = {
