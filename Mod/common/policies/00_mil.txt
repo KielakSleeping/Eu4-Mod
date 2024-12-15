@@ -1211,9 +1211,11 @@ up_to_standard_navy = {
                full_idea_group = maritime_ideas 
        }
 
-       heavy_ship_power = 0.1
-       naval_morale = 0.05
+       #heavy_ship_power = 0.1
+       #naval_morale = 0.05
+       naval_tradition_from_battle = 0.50
        artillery_power = 0.1
+       fire_damage = 0.05
 	
 
        ai_will_do = { 
