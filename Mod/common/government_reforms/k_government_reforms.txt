@@ -36,6 +36,6 @@ hesse_court = {
 	diplomatic_upkeep = 1
 	local_heir_dip = 1
 	monthly_splendor = 2
-	advisor_cost = -0.15
+	advisor_cost = -0.10
     }
 }
