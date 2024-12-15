@@ -1368,8 +1368,9 @@ BUR_Ideas = {
 	free = yes
 	
 	golden_fleece = {
-		merc_maintenance_modifier = -0.25
+		#merc_maintenance_modifier = -0.25
 		#mercenary_discipline = 0.025
+		land_maintenance_modifier = -0.10
 	}
 	compagnies_ordonnance = {
 		global_trade_goods_size_modifier = 0.10
@@ -1411,8 +1412,10 @@ LOT_ideas = {
 		num_accepted_cultures = 2
 	}
 	golden_fleece = {
-		merc_maintenance_modifier = -0.2
-		mercenary_discipline = 0.025
+		#merc_maintenance_modifier = -0.2
+		#mercenary_discipline = 0.025
+		land_maintenance_modifier = -0.10
+		global_regiment_cost = -0.10
 	}
 	lot_glory_of_charlemagne = {
 		land_morale = 0.10
@@ -2370,7 +2373,7 @@ EOH_ideas = {
 	}
 	gc_found_the_black_army = {
 		discipline = 0.05
-		mercenary_discipline = 0.025
+		#mercenary_discipline = 0.025
 	}
 	bulwark_of_christianity = {
 		global_manpower_modifier = 0.20
@@ -2763,8 +2766,9 @@ TUN_ideas = {
 	}
 	free = yes
 	tun_catalan_guard = {
-		mercenary_discipline = 0.05
-		mercenary_manpower = 0.15
+		#mercenary_discipline = 0.05
+		#mercenary_manpower = 0.15
+		infantry_power = 0.05
 	}
 	dual_diplomacy = {
 		diplomatic_upkeep = 1
@@ -2804,8 +2808,8 @@ TUN_improved_ideas = {
 	}
 	free = yes
 	tun_catalan_guard_improved = {
-		mercenary_discipline = 0.05
-		mercenary_manpower = 0.25
+		#mercenary_discipline = 0.05
+		#mercenary_manpower = 0.25
 		infantry_power = 0.1
 	}
 	dual_diplomacy = {
