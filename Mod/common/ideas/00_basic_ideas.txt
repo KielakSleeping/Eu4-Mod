@@ -794,7 +794,7 @@ offensive_ideas = {
 		may_refill_garrison = yes
 	}
 	superior_firepower = {
-		artillery_power = 0.125
+		artillery_power = 0.15
 		leader_siege = 1
 	}
 	glorious_arms = {
@@ -806,7 +806,7 @@ offensive_ideas = {
 		assault_fort_cost_modifier = -1.0
 	}
 	grand_army = {
-		backrow_artillery_damage = 0.10
+		backrow_artillery_damage = 0.15
 	}
 	napoleonic_warfare = {
 		fire_damage = 0.075
