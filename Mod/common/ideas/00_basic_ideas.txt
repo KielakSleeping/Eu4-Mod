@@ -864,7 +864,7 @@ quality_ideas = {
 	bonus = {
 		#infantry_power = 0.05
 		#cavalry_power = 0.05
-		artillery_power = 0.075
+		artillery_power = 0.05
 		free_land_leader_pool = 2
 		general_cost = -0.125
 	}
