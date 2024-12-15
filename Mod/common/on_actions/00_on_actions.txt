@@ -4971,6 +4971,49 @@ on_hussars_raised = {
 }
 
 on_revolutionary_guard_raised = {
+	owner = {
+		if = {
+			limit= {
+				OR = {
+					has_country_modifier = kielak_mercs_tier_1_modifier_country
+					has_country_modifier = kielak_mercs_tier_2_modifier_country
+				}
+			}
+			add_army_professionalism =  -0.0012
+		}
+
+		if = {
+			limit= {
+				OR = {
+					has_country_modifier = kielak_mercs_tier_3_modifier_country
+					has_country_modifier = kielak_mercs_tier_4_modifier_country
+				}
+			}
+			add_army_professionalism =  -0.0013
+		}
+
+		if = {
+			limit= {
+				OR = {
+					has_country_modifier = kielak_mercs_tier_5_modifier_country
+					has_country_modifier = kielak_mercs_tier_6_modifier_country
+				}
+			}
+			add_army_professionalism =  -0.0014
+		}
+
+		if = {
+			limit= {
+				OR = {
+					has_country_modifier = kielak_mercs_tier_7_modifier_country
+					has_country_modifier = kielak_mercs_tier_8_modifier_country
+				}
+			}
+			add_army_professionalism =  -0.0015
+		}
+
+		
+	}
 }
 
 on_banner_raised = {
