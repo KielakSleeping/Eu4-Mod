@@ -34,7 +34,7 @@ organized_stables = {
        }
 
        leader_land_shock = 1 
-       cav_to_inf_ratio = 0.10
+       cav_to_inf_ratio = 0.15
 	cavalry_power = 0.05
 
        ai_will_do = { 
