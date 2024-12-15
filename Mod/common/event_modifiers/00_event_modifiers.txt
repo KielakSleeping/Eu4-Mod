@@ -9976,7 +9976,18 @@ vanguard_revolutionary_guard_modifier = {
 	fire_damage_received = -0.1
 	land_maintenance_modifier = 0.5
 }
+
 kielak_mercs1_modifier = {
+	is_revolutionary_guard_modifier = yes
+	regiment_manpower_usage = -0.80
+	reinforce_speed = -0.20
+	reinforce_cost_modifier = 0.40
+	fire_damage_received = -2
+	shock_damage_received = -2
+	
+}
+
+kielak_mercs_tier_1_modifier = {
 	is_revolutionary_guard_modifier = yes
 	regiment_manpower_usage = -0.80
 	reinforce_speed = -0.20
@@ -9998,7 +10009,7 @@ kielak_mercs_tier_1_modifier = {
 
 kielak_mercs_tier_1_modifier_country = {
 	allowed_rev_guard_fraction = 0.6
-	
+	#global_regiment_recruit_speed = -0.80
 	
 	
 
@@ -10007,15 +10018,15 @@ kielak_mercs_tier_1_modifier_country = {
 kielak_mercs_tier_2_modifier = {
 	is_revolutionary_guard_modifier = yes
 	regiment_manpower_usage = -0.80
-	reinforce_speed = -0.20
-	reinforce_cost_modifier = 0.40
+	reinforce_speed = -0.225
+	reinforce_cost_modifier = 0.425
 	fire_damage_received = -2
 	shock_damage_received = -2
 }
 
 kielak_mercs_tier_2_modifier_country = {
-	allowed_rev_guard_fraction = 0.55
-	
+	allowed_rev_guard_fraction = 0.525
+	#global_regiment_recruit_speed = -0.80
 	
 
 }
@@ -10025,14 +10036,14 @@ kielak_mercs_tier_3_modifier = {
 	regiment_manpower_usage = -0.80
 	reinforce_speed = -0.25
 	reinforce_cost_modifier = 0.45
-	land_maintenance_modifier = 0.10
+	land_maintenance_modifier = 0.125
 	fire_damage_received = -2
 	shock_damage_received = -2
 }
 
 kielak_mercs_tier_3_modifier_country = {
 	allowed_rev_guard_fraction = 0.5
-	
+	#global_regiment_recruit_speed = -0.80
 	
 
 }
@@ -10049,7 +10060,7 @@ kielak_mercs_tier_4_modifier = {
 
 kielak_mercs_tier_4_modifier_country = {
 	allowed_rev_guard_fraction = 0.45
-	
+	#global_regiment_recruit_speed = -0.80
 	
 
 }
@@ -10066,7 +10077,8 @@ kielak_mercs_tier_5_modifier = {
 
 kielak_mercs_tier_5_modifier_country = {
 	allowed_rev_guard_fraction = 0.4
-		
+	#global_regiment_recruit_speed = -0.80
+	
 
 }
 
@@ -10081,8 +10093,8 @@ kielak_mercs_tier_6_modifier = {
 }
 
 kielak_mercs_tier_6_modifier_country = {
-	allowed_rev_guard_fraction = 0.35
-	
+	allowed_rev_guard_fraction = 0.325
+	#global_regiment_recruit_speed = -0.80
 	
 
 }
@@ -10098,7 +10110,8 @@ kielak_mercs_tier_7_modifier = {
 }
 
 kielak_mercs_tier_7_modifier_country = {
-	allowed_rev_guard_fraction = 0.3
+	allowed_rev_guard_fraction = 0.275
+	#global_regiment_recruit_speed = -0.80
 	
 
 }
@@ -10114,31 +10127,10 @@ kielak_mercs_tier_8_modifier = {
 }
 
 kielak_mercs_tier_8_modifier_country = {
-	allowed_rev_guard_fraction = 0.25
+	allowed_rev_guard_fraction = 0.225
+	#global_regiment_recruit_speed = -0.80
 	
 
-}
-
-kielak_mercs_tier_9_modifier = {
-	is_revolutionary_guard_modifier = yes
-	regiment_manpower_usage = -0.80
-	reinforce_speed = -0.70
-	reinforce_cost_modifier = 1
-	land_maintenance_modifier = 1
-	fire_damage_received = -2
-	shock_damage_received = -2
-}
-
-kielak_mercs_tier_9_modifier_country = {
-	allowed_rev_guard_fraction = 0.2
-	
-
-}
-
-hired_mercs_recently = {
-	global_unrest = 1
-	stability_cost_modifier = 0.1
-	#global_spy_defence = -0.1
 }
 
 #Muslim Schools
