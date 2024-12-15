@@ -904,8 +904,9 @@ turtle_ships = {
        }
 
        ship_durability = 0.1 
-       hull_size_modifier = 0.1
-       shock_damage_received = -0.10 
+       #hull_size_modifier = 0.1
+       shock_damage_received = -0.10
+       fire_damage_received = -0.05
 
        ai_will_do = { 
                factor = 1 
