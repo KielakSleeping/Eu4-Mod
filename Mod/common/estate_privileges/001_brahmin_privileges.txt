@@ -327,17 +327,16 @@ estate_brahmins_flexible_deities = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	influence = 0.05
 	is_valid = {
+	OR = {
 		NOT = { religion_group = muslim }
 		has_dlc = "Wealth of Nations"
+		religion = kuzarite
+		}
 	}
 	can_select = {
 		if = {
 			limit = {
 				NOT = { has_government_attribute = reduce_new_deity_decision_cd }
-			}
-			estate_influence = {
-				estate = estate_brahmins
-				influence = 40
 			}
 		}
 	}
