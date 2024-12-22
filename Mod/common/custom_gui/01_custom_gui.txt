@@ -66,27 +66,27 @@ custom_button = {
 	}	
 }
 #bastard mercs
-custom_button = {
-    name = bastard_build_merc_button
-	tooltip = echo_provincial_investment_title
-    potential = {
-		always = no
-        owned_by = FROM				#You want this so that you can only see this button on your own provinces!
-			ai = no
-			NOT = { is_bankrupt = yes }
-    }
-    trigger = { 
-		NOT = {
-				check_variable = {
-					which = number_of_owned_mercenaries
-					which = mercenary_forcelimit
-				}
-			}
-	}
-   effect = {
+# custom_button = {
+#     name = bastard_build_merc_button
+# 	tooltip = echo_provincial_investment_title
+#     potential = {
+# 		always = no
+#         owned_by = FROM				#You want this so that you can only see this button on your own provinces!
+# 			ai = no
+# 			NOT = { is_bankrupt = yes }
+#     }
+#     trigger = { 
+# 		NOT = {
+# 				check_variable = {
+# 					which = number_of_owned_mercenaries
+# 					which = mercenary_forcelimit
+# 				}
+# 			}
+# 	}
+#    effect = {
 		
-		}	
-}
+# 		}	
+# }
 
 
 #Wool to Cloth button
