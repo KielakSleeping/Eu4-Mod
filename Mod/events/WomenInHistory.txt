@@ -1,7 +1,7 @@
 ########################################
 # Events for Women in History
 #
-# written by Sara Wendel-Örtqvist
+# written by Sara Wendel-ï¿½rtqvist
 ########################################
 
 namespace = women_history_events
@@ -84,124 +84,9 @@ country_event = {
 	}
 }
 
-# Queen Catherine II (the Great) (1729-1796)
-country_event = {
-	id = women_history_events.2
-	title = women_history_events.2.t
-	desc = women_history_events.2.d
-	picture = wihgfx_FEMALE_RULER_eventPicture
 
-	trigger = {
-		NOT = { has_dlc = "Domination" }	#Domination version of this event
-		tag = RUS
-		is_year = 1729
-		NOT = {
-			is_year = 1800
-		}
-		is_female = no
-		has_regency = no
-		is_lesser_in_union = no
-		government = monarchy
-		NOT = {
-			OR = {
-				ADM = 3
-				DIP = 3
-				MIL = 3
-			}
-		}
-		OR = {
-			has_heir = no
-			has_female_heir = no
-		}
-		NOT = {
-			has_global_flag = wih_catherine_rus_flag
-		}
-		NOT = {	has_dlc = "Domination"	}
-	} 
-	
-	mean_time_to_happen = {
-		months = 200
-	}
-	
-	immediate = {
-		hidden_effect = {
-			set_global_flag = wih_catherine_rus_flag
-		}
-	}
-	
-	option = {
-		name = women_history_events.2.a
-		if = {
-			limit = {
-				has_updated_culture = { culture = slavic }
-			}
-			define_ruler = {
-				name = "Yekaterina"
-				dynasty = "Romanov"
-				adm = 6
-				dip = 6
-				mil = 5
-				culture = russian_new
-				female = yes
-			}
-		}
-		else = {
-			define_ruler = {
-				name = "Yekaterina"
-				dynasty = "Romanov"
-				adm = 6
-				dip = 6
-				mil = 5
-				culture = russian
-				female = yes
-			}
-		}
-		if = {
-			limit = {
-				has_states_general_mechanic = yes
-			}
-			change_statists_vs_orangists = 1
-		}
-		if = {
-			limit = {
-				has_dlc = "Rights of Man" 
-			}
-			hidden_effect = { add_ruler_personality_ancestor = { key = expansionist } }
-		}
-	}
-	option = {
-		name = women_history_events.2.b
-		add_adm_power = 100
-		add_dip_power = 100
-		add_mil_power = 100
-		add_meritocracy_effect = yes
-		if = {
-			limit = {
-				has_updated_culture = { culture = slavic }
-			}
-			define_advisor = {
-				female = yes
-				culture = russian_new
-				type = statesman #spymaster
-				discount = yes
-				skill = 2
-				name = "Yekaterina Romanov"
-			}
-		}
-		else = {
-			define_advisor = {
-				female = yes
-				culture = russian
-				type = statesman #spymaster
-				discount = yes
-				skill = 2
-				name = "Yekaterina Romanov"
-			}
-		}
-	}
-}
 
-# Kösem Sultan (1590-1651)
+# Kï¿½sem Sultan (1590-1651)
 country_event = {
 	id = women_history_events.3
 	title = women_history_events.3.t
@@ -244,7 +129,7 @@ country_event = {
 				NOT = { has_dlc = "Rights of Man" }
 			}
 			define_ruler = {
-				name = "Kösem Sultan"
+				name = "Kï¿½sem Sultan"
 				dynasty = "Osmanoglu"
 				culture = ruthenian
 				adm = 5
@@ -266,7 +151,7 @@ country_event = {
 				has_government_attribute = queen
 			}
 			define_consort = {
-				name = "Kösem Sultan"
+				name = "Kï¿½sem Sultan"
 				culture = ruthenian
 				adm = 5
 				dip = 4
@@ -279,7 +164,7 @@ country_event = {
 		}
 		else = {
 			define_ruler = {
-				name = "Kösem Sultan"
+				name = "Kï¿½sem Sultan"
 				dynasty = "Osmanoglu"
 				culture = ruthenian
 				adm = 5
@@ -308,86 +193,6 @@ country_event = {
 			discount = yes
 			skill = 2
 			name = "Kosem Sultan"
-		}
-	}
-}
-
-# Maria Theresa (1717-1780)
-country_event = {
-	id = women_history_events.4
-	title = women_history_events.4.t
-	desc = women_history_events.4.d
-	picture = wihgfx_FEMALE_RULER_eventPicture
-
-	trigger = {
-		tag = HAB
-		is_year = 1700
-		NOT = {
-			is_year = 1800
-		}
-		is_female = no
-		has_regency = no
-		is_lesser_in_union = no
-		government = monarchy
-		NOT = {
-			OR = {
-				ADM = 3
-				DIP = 3
-				MIL = 3
-			}
-		}
-		NOT = {
-			has_global_flag = wih_maria_theresa_hab_flag
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 200
-	}
-	
-	immediate = {
-		hidden_effect = {
-			set_global_flag = wih_maria_theresa_hab_flag
-		}
-	}
-	
-	option = {
-		name = women_history_events.4.a
-		define_ruler = {
-			name = "Maria Theresia"
-			dynasty = "von Habsburg"
-			culture = austrian
-			adm = 5
-			dip = 5
-			mil = 4
-			female = yes
-		}
-		if = {
-			limit = {
-				has_states_general_mechanic = yes
-			}
-			change_statists_vs_orangists = 1
-		}
-		if = {
-			limit = {
-				has_dlc = "Rights of Man" 
-			}
-			hidden_effect = { add_ruler_personality = well_advised_personality }
-		}
-	}
-	option = {
-		name = women_history_events.4.b
-		add_adm_power = 100
-		add_dip_power = 100
-		add_mil_power = 100
-		add_meritocracy_effect = yes
-		define_advisor = {
-			female = yes
-			type = statesman #spymaster
-			culture = austrian
-			discount = yes
-			skill = 2
-			name = "Maria Theresia von Habsburg"
 		}
 	}
 }
@@ -523,112 +328,6 @@ country_event = {
 	}
 }
 
-# Germaine de Staël (1766-1817)
-country_event = {
-	id = women_history_events.7
-	title = women_history_events.7.t
-	desc = women_history_events.7.d
-	picture = wihgfx_FEMALE_SCHOLAR_eventPicture
-
-	trigger = {
-		tag = SWE
-		exists = FRA
-		is_year = 1766
-		NOT = {
-			has_global_flag = wih_germainedestael_flag
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 200
-	}
-	
-	immediate = {
-		hidden_effect = {
-			set_global_flag = wih_germainedestael_flag
-		}
-	}
-	
-	option = {
-		name = women_history_events.7.a
-		define_advisor = {
-			female = yes
-			type = spymaster
-			culture = swiss
-			discount = yes
-			skill = 2
-			name = "Germaine de Staël"
-		}
-
-	}
-	option = {
-		name = women_history_events.7.b
-		add_meritocracy_effect = yes
-		define_advisor = {
-			female = yes
-			type = statesman
-			culture = swiss
-			discount = yes
-			skill = 2
-			name = "Germaine de Staël"
-		}
-	}
-}
-
-# Mary Wollstonecraft (1759-1797)
-country_event = {
-	id = women_history_events.8
-	title = women_history_events.8.t
-	desc = women_history_events.8.d
-	picture = wihgfx_FEMALE_SCHOLAR_eventPicture
-
-	trigger = {
-		OR = {
-			tag = SWE
-			tag = NOR
-			tag = ENG
-			tag = GBR
-		}
-		is_year = 1750
-		NOT = {
-			is_year = 1800
-		}
-		NOT = {
-			has_global_flag = wih_marywollstonecraft_flag
-		}
-		NOT = {
-			advisor_exists = 1626
-			is_advisor_employed = 1625
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 200
-	}
-	
-	immediate = {
-		hidden_effect = {
-			set_global_flag = wih_marywollstonecraft_flag
-		}
-	}
-	
-	option = {
-		name = women_history_events.8.a
-		add_meritocracy_effect = yes
-		define_advisor = {
-			female = yes
-			culture = english
-			type = statesman
-			skill = 2
-			discount = yes
-			name = "Mary Wollstonecraft"
-		}
-	}
-	option = {
-		name = women_history_events.8.b
-		add_adm_power = 50
-	}
-}
 
 # Aphra Behn (1640-1689)
 country_event = {
@@ -682,66 +381,6 @@ country_event = {
 	}
 }
 
-# Eliza Lucas 1722-1793
-country_event = {
-	id = women_history_events.10
-	title = women_history_events.10.t
-	desc = women_history_events.10.d
-	picture = wihgfx_FEMALE_SCHOLAR_eventPicture
-
-	trigger = {
-		is_year = 1722
-		NOT = {
-			is_year = 1800
-		}
-		OR = {
-			tag = USA
-			AND = {
-				culture_group = british
-				any_owned_province = {
-					continent = north_america
-				}
-				NOT = {
-					technology_group = north_american
-				}
-			}
-		}
-		NOT = {
-			has_global_flag = wih_elizalucas_flag
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 200
-	}
-	
-	immediate = {
-		hidden_effect = {
-			set_global_flag = wih_elizalucas_flag
-		}
-	}
-	
-	option = {
-		name = women_history_events.10.a
-		add_meritocracy_effect = yes
-		define_advisor = {
-			female = yes
-			culture = american
-			type = natural_scientist
-			discount = yes
-			skill = 2
-			name = "Eliza Lucas"
-		}
-	}
-	option = {
-		name = women_history_events.10.b
-		add_prestige = 10
-		add_country_modifier = {
-			name = wih_eliza_lucas
-			duration = 7300
-		}
-	}
-}
 
 # Isabella of Castile (1451-1504)
 country_event = {
@@ -788,7 +427,7 @@ country_event = {
 		add_meritocracy_effect = yes
 		define_heir = {
 			name = "Isabel"
-			dynasty = "de Trastámara"
+			dynasty = "de Trastï¿½mara"
 			culture = castillian
 			claim = 95
 			adm = 5
@@ -817,53 +456,11 @@ country_event = {
 			discount = yes
 			skill = 2
 			culture = castillian
-			name = "Isabel de Trastámara"
+			name = "Isabel de Trastï¿½mara"
 		}
 	}
 }
 
-# Sophie Germain (1776 - 1831)
-country_event = {
-	id = women_history_events.12
-	title = women_history_events.12.t
-	desc = women_history_events.12.d
-	picture = wihgfx_FEMALE_SCHOLAR_eventPicture
-
-	trigger = {
-		tag = FRA
-		is_year = 1770
-		NOT = {
-			has_global_flag = wih_sophiegermain_flag
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 200
-	}
-	
-	immediate = {
-		hidden_effect = {
-			set_global_flag = wih_sophiegermain_flag
-		}
-	}
-	
-	option = {
-		name = women_history_events.12.a
-		add_meritocracy_effect = yes
-		define_advisor = {
-			female = yes
-			type = philosopher
-			culture = cosmopolitan_french
-			skill = 2
-			discount = yes
-			name = "Sophie Germain"
-		}
-	}
-	option = {
-		name = women_history_events.12.b
-		add_prestige = 10
-	}
-}
 
 # Caterina Sforza
 country_event = {
@@ -1397,136 +994,8 @@ country_event = {
 	}
 }
 
-# Tarabai
-country_event = {
-	id = women_history_events.20
-	title = women_history_events.20.t
-	desc = women_history_events.20.d
-	picture = wihgfx_FEMALE_RULER_eventPicture
 
-	trigger = {
-		tag = MAR
-		is_year = 1675
-		NOT = {
-			is_year = 1762
-		}
-		is_female = no
-		has_female_heir = no
-		is_lesser_in_union = no
-		has_consort = no
-		government = monarchy
-		NOT = {
-			OR = {
-				ADM = 2
-				DIP = 2
-				MIL = 2
-			}
-		}
-		NOT = {
-			has_global_flag = wih_tarabai_flag
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 200
-	}
-	
-	immediate = {
-		hidden_effect = {
-			set_global_flag = wih_tarabai_flag
-		}
-	}
-	
-	option = {
-		name = women_history_events.20.a
-		define_ruler = {
-			name = "Tarabai"
-			culture = marathi
-			dynasty = "Mohite"
-			DIP = 4
-			ADM = 3
-			MIL = 3
-		}
-		if = {
-			limit = {
-				has_states_general_mechanic = yes
-			}
-			change_statists_vs_orangists = 1
-		}
-		if = {
-			limit = {
-				has_dlc = "Rights of Man" 
-			}
-			hidden_effect = { add_ruler_personality_ancestor = { key = inspiring_leader } }
-		}
-	}
-	option = {
-		name = women_history_events.20.b
-		add_adm_power = 100
-		add_dip_power = 100
-		add_mil_power = 100
-		add_meritocracy_effect = yes
-		define_advisor = {
-			discount = yes
-			female = yes
-			culture = marathi
-			type = statesman
-			skill = 2
-			name = "Tarabai Mohite"
-		}
-	}
-}
-
-# Jane Austen
-country_event = {
-	id = women_history_events.21
-	title = women_history_events.21.t
-	desc = women_history_events.21.d
-	picture = wihgfx_FEMALE_SCHOLAR_eventPicture
-
-	trigger = {
-		OR = {
-			tag = ENG
-			tag = GBR
-		}
-		is_year = 1775
-		NOT = {
-			has_global_flag = wih_jane_austen_flag
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 200
-	}
-	
-	immediate = {
-		hidden_effect = {
-			set_global_flag = wih_jane_austen_flag
-		}
-	}
-	
-	option = {
-		name = women_history_events.21.a
-		add_country_modifier = {
-			name = wih_jane_austen
-			duration = 7300
-		}
-	}
-	option = {
-		name = women_history_events.21.b
-		add_meritocracy_effect = yes
-		define_advisor = {
-			female = yes
-			type = philosopher
-			culture = english
-			discount = yes
-			skill = 2
-			name = "Jane Austen"
-		}
-	}
-}
-
-# Gráinne Ní Mháille
+# Grï¿½inne Nï¿½ Mhï¿½ille
 country_event = {
 	id = women_history_events.22
 	title = women_history_events.22.t
@@ -1965,54 +1434,6 @@ country_event = {
 	}
 }
 
-# Louise of Mecklenburg-Strelitz (1776 – 1810)
-country_event = {
-	id = women_history_events.28
-	title = women_history_events.28.t
-	desc = women_history_events.28.d
-	picture = wihgfx_FEMALE_RULER_eventPicture
-
-	trigger = {
-		tag = PRU
-		is_year = 1770
-		is_female = no
-		has_regency = no
-		legitimacy = 50
-		NOT = {
-			has_global_flag = wih_louise_pru_flag
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 200
-	}
-	
-	immediate = {
-		hidden_effect = {
-			set_global_flag = wih_louise_pru_flag
-		}
-	}
-	
-	option = {
-		name = women_history_events.28.a
-		add_meritocracy_effect = yes
-		define_advisor = {
-			female = yes
-			type = statesman
-			culture = pommeranian
-			skill = 2
-			discount = yes
-			name = "Louise of Mecklenburg-Strelitz"
-		}
-	}
-	option = {
-		name = women_history_events.28.b
-		add_country_modifier = {
-			name = wih_louise_pru
-			duration = 7300
-		}
-	}
-}
 
 # Ayse Hafsa Sultan
 country_event = {
@@ -2178,51 +1599,6 @@ country_event = {
 	}
 }
 
-# Abigail Adams (1744 – 1818)
-country_event = {
-	id = women_history_events.31
-	title = women_history_events.31.t
-	desc = women_history_events.31.d
-	picture = wihgfx_FEMALE_SCHOLAR_eventPicture
-
-	trigger = {
-		tag = USA
-		is_year = 1744
-		NOT = {
-			has_global_flag = wih_abigailadams_flag
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 200
-	}
-	
-	immediate = {
-		hidden_effect = {
-			set_global_flag = wih_abigailadams_flag
-		}
-	}
-	
-	option = {
-		name = women_history_events.31.a
-		add_meritocracy_effect = yes
-		define_advisor = {
-			female = yes
-			type = statesman
-			skill = 2
-			discount = yes
-			name = "Abigail Adams"
-			culture = american
-		}
-	}
-	option = {
-		name = women_history_events.31.b
-		add_country_modifier = {
-			name = wih_abigail_adams
-			duration = 7300
-		}
-	}
-}
 
 # Rani Abbakka Chowta
 country_event = {
@@ -2327,62 +1703,6 @@ country_event = {
 	}
 }
 
-# Sacagawea (1787? – 1812)
-country_event = {
-	id = women_history_events.33
-	title = women_history_events.33.t
-	desc = women_history_events.33.d
-	picture = wihgfx_FEMALES_eventPicture
-
-	trigger = {
-		OR = {
-			tag = USA
-			AND = {
-				technology_group = western
-				any_owned_province = {
-					continent = north_america
-				}
-			}
-		}
-		is_year = 1780
-		NOT = {
-			has_global_flag = wih_sacagawea_flag
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 200
-	}
-	
-	immediate = {
-		hidden_effect = {
-			set_global_flag = wih_sacagawea_flag
-		}
-	}
-	
-	option = {
-		name = women_history_events.33.a
-		define_conquistador = {
-			name = "Sacagawea"
-			fire = 1
-			shock = 2
-			manuever = 3
-			siege = 1
-		}
-	}
-	option = {
-		name = women_history_events.33.b
-		add_meritocracy_effect = yes
-		define_advisor = {
-			female = yes
-			type = diplomat
-			skill = 2
-			culture = shoshone
-			discount = yes
-			name = "Sacagawea"
-		}
-	}
-}
 
 # Pari Khan Khanum (d. 1578)
 country_event = {
@@ -2698,69 +2018,6 @@ country_event = {
 	}
 }
 
-# Ho Xuan Huong
-country_event = {
-	id = women_history_events.38
-	title = women_history_events.38.t
-	desc = women_history_events.38.d
-	picture = wihgfx_FEMALE_SCHOLAR_eventPicture
-
-	trigger = {
-		OR = {
-			tag = DAI
-			owns = 613
-		}
-		is_year = 1770
-		NOT = {
-			has_global_flag = wih_hoxuanhuong_flag
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 200
-	}
-	
-	immediate = {
-		hidden_effect = {
-			set_global_flag = wih_hoxuanhuong_flag
-		}
-	}
-	
-	option = {
-		name = women_history_events.38.a
-		add_meritocracy_effect = yes
-		if = {
-			limit = {
-				has_updated_culture = { culture = vietnamese }
-			}
-			define_advisor = {
-				female = yes
-				type = philosopher
-				discount = yes
-				culture = vietnamese_new
-				skill = 2
-				name = "Ho Xuan Huong"
-			}
-		}
-		else = {
-			define_advisor = {
-				female = yes
-				type = philosopher
-				discount = yes
-				culture = vietnamese
-				skill = 2
-				name = "Ho Xuan Huong"
-			}
-		}
-	}
-	option = {
-		name = women_history_events.38.b
-		add_country_modifier = {
-			name = wih_hoxuanhuong
-			duration = 7300
-		}
-	}
-}
 
 # Inion Dubh
 country_event = {
@@ -3123,71 +2380,6 @@ country_event = {
 	}
 }
 
-# Yekaterina Romanovna Vorontsova-Dashkova
-country_event = {
-	id = women_history_events.45
-	title = women_history_events.45.t
-	desc = women_history_events.45.d
-	picture = wihgfx_FEMALE_SCHOLAR_eventPicture
-
-	trigger = {
-		tag = RUS
-		is_year = 1743
-		has_global_flag = wih_catherine_rus_flag
-		NOT = {
-			has_global_flag = wih_yekaterinaromanovnavorontsovadashkova_flag
-		}
-		NOT = {
-			advisor_exists = 1609
-			is_advisor_employed = 1609
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 200
-	}
-	
-	immediate = {
-		hidden_effect = {
-			set_global_flag = wih_yekaterinaromanovnavorontsovadashkova_flag
-		}
-	}
-	
-	option = {
-		name = women_history_events.45.a
-		add_meritocracy_effect = yes
-		if = {
-			limit = {
-				has_updated_culture = { culture = slavic }
-			}
-			define_advisor = {
-				female = yes
-				discount = yes
-				type = diplomat
-				culture = russian_new
-				skill = 2
-				name = "Yekaterina Romanovna Vorontsova-Dashkova"
-			}
-		}
-		else = {
-			define_advisor = {
-				female = yes
-				discount = yes
-				type = diplomat
-				culture = russian
-				skill = 2
-				name = "Yekaterina Romanovna Vorontsova-Dashkova"
-			}
-		}
-	}
-	option = {
-		name = women_history_events.45.b
-		add_country_modifier = {
-			name = wih_yekaterinaromanovnavorontsovadashkova
-			duration = 7300
-		}
-	}
-}
 
 # Marie Crous
 country_event = {
@@ -3290,7 +2482,7 @@ country_event = {
 	}
 }
 
-# Empress Dowager Xiaozhuang (1613 – 1688)
+# Empress Dowager Xiaozhuang (1613 ï¿½ 1688)
 country_event = {
 	id = women_history_events.48
 	title = women_history_events.48.t
@@ -3366,7 +2558,7 @@ country_event = {
 	}
 }
 
-# Inés de Suárez
+# Inï¿½s de Suï¿½rez
 country_event = {
 	id = women_history_events.49
 	title = women_history_events.49.t
@@ -3711,55 +2903,6 @@ country_event = {
 	}
 }
 
-# Wang Zhenyi
-country_event = {
-	id = women_history_events.54
-	title = women_history_events.54.t
-	desc = women_history_events.54.d
-	picture = wihgfx_FEMALE_SCHOLAR_eventPicture
-
-	trigger = {
-		OR = {
-			tag = QNG
-			tag = MNG
-			has_reform = celestial_empire
-		}
-		is_year = 1768
-		NOT = {
-			has_global_flag = wih_wangzhenyi_flag
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 200
-	}
-	
-	immediate = {
-		hidden_effect = {
-			set_global_flag = wih_wangzhenyi_flag
-		}
-	}
-	
-	option = {
-		name = women_history_events.54.a
-		add_country_modifier = {
-			name = wih_wangzhenyi
-			duration = 7300
-		}
-	}
-	option = {
-		name = women_history_events.54.b
-		add_meritocracy_effect = yes
-		define_advisor = {
-			name = "Wang Zhenyi"
-			culture = chihan
-			discount = yes
-			type = philosopher
-			skill = 2
-			female = yes
-		}
-	}
-}
 
 # Suriyothai
 country_event = {
@@ -3857,52 +3000,6 @@ country_event = {
 			fire = 4
 			manuever = 4
 			female = yes
-		}
-	}
-}
-
-# Olympe de Gouges
-country_event = {
-	id = women_history_events.57
-	title = women_history_events.57.t
-	desc = women_history_events.57.d
-	picture = wihgfx_FEMALE_SCHOLAR_eventPicture
-
-	trigger = {
-		tag = FRA
-		is_year = 1748
-		NOT = {
-			has_global_flag = wih_olympedegouges_flag
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 200
-	}
-	
-	immediate = {
-		hidden_effect = {
-			set_global_flag = wih_olympedegouges_flag
-		}
-	}
-	
-	option = {
-		name = women_history_events.57.a
-		add_meritocracy_effect = yes
-		define_advisor = {
-			name = "Olympe de Gouges"
-			discount = yes
-			culture = gascon
-			type = diplomat
-			skill = 2
-			female = yes
-		}
-	}
-	option = {
-		name = women_history_events.57.b
-		add_country_modifier = {
-			name = wih_olympedegouges
-			duration = 7300
 		}
 	}
 }
@@ -4019,51 +3116,7 @@ country_event = {
 	}
 }
 
-# Martha Washington
-country_event = {
-	id = women_history_events.60
-	title = women_history_events.60.t
-	desc = women_history_events.60.d
-	picture = wihgfx_FEMALES_eventPicture
 
-	trigger = {
-		tag = USA
-		is_year = 1730
-		NOT = {
-			has_global_flag = wih_marthawashington_flag
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 200
-	}
-	
-	immediate = {
-		hidden_effect = {
-			set_global_flag = wih_marthawashington_flag
-		}
-	}
-	
-	option = {
-		name = women_history_events.60.a
-		add_country_modifier = {
-			name = wih_marthawashington
-			duration = 7300
-		}
-	}
-	option = {
-		name = women_history_events.60.b
-		add_meritocracy_effect = yes
-		define_advisor = {
-			name = "Martha Washington"
-			type = diplomat
-			culture = american
-			discount = yes
-			skill = 2
-			female = yes
-		}
-	}
-}
 
 # Elizabeth Wilbraham
 country_event = {
@@ -4117,51 +3170,6 @@ country_event = {
 	}
 }
 
-# Anna Bunina
-country_event = {
-	id = women_history_events.62
-	title = women_history_events.62.t
-	desc = women_history_events.62.d
-	picture = wihgfx_FEMALE_SCHOLAR_eventPicture
-
-	trigger = {
-		tag = RUS
-		is_year = 1774
-		NOT = {
-			has_global_flag = wih_annabunina_flag
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 200
-	}
-	
-	immediate = {
-		hidden_effect = {
-			set_global_flag = wih_annabunina_flag
-		}
-	}
-	
-	option = {
-		name = women_history_events.62.a
-		add_country_modifier = {
-			name = wih_annabunina
-			duration = 7300
-		}
-	}
-	option = {
-		name = women_history_events.62.b
-		add_meritocracy_effect = yes
-		define_advisor = {
-			name = "Anna Bunina"
-			culture = ryazanian
-			type = artist
-			discount = yes
-			skill = 2
-			female = yes
-		}
-	}
-}
 
 # Dorothea of Saxe-Lauenburg
 country_event = {
@@ -4695,133 +3703,6 @@ country_event = {
 	}
 }
 
-# Maria Carolina of Austria
-country_event = {
-	id = women_history_events.70
-	title = women_history_events.70.t
-	desc = women_history_events.70.d
-	picture = wihgfx_FEMALE_RULER_eventPicture
-
-	trigger = {
-		OR = {
-			tag = SIC
-			tag = NAP
-		}
-		is_year = 1752
-		has_regency = no
-		is_lesser_in_union = no
-		government = monarchy
-		NOT = {
-			OR = {
-				ADM = 3
-				DIP = 3
-				MIL = 3
-			}
-		}
-		NOT = {
-			has_global_flag = wih_mariacarolinaaustria_flag
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 200
-	}
-	
-	immediate = {
-		hidden_effect = {
-			set_global_flag = wih_mariacarolinaaustria_flag
-		}
-	}
-	
-	option = {
-		name = women_history_events.70.a
-		add_adm_power = 100
-		add_dip_power = 100
-		add_mil_power = 100
-		add_meritocracy_effect = yes
-		define_advisor = {
-			name = "Maria Carolina von Habsburg"
-			culture = austrian
-			type = statesman
-			discount = yes
-			skill = 2
-			female = yes
-		}
-	}
-	option = {
-		name = women_history_events.70.b
-		define_ruler = {
-			name = "Maria Carolina"
-			dynasty = "von Habsburg"
-			culture = austrian
-			adm = 3
-			dip = 4
-			mil = 3
-			female = yes
-		}
-		if = {
-			limit = {
-				has_states_general_mechanic = yes
-			}
-			change_statists_vs_orangists = 1
-		}
-		if = {
-			limit = {
-				has_dlc = "Rights of Man" 
-			}
-			hidden_effect = { add_ruler_personality_ancestor = { key = expansionist } }
-		}
-	}
-}
-
-# Marie Antoinette
-country_event = {
-	id = women_history_events.71
-	title = women_history_events.71.t
-	desc = women_history_events.71.d
-	picture = wihgfx_FEMALE_RULER_eventPicture
-
-	trigger = {
-		tag = FRA
-		is_year = 1755
-		NOT = {
-			is_year = 1793
-		}
-		NOT = {
-			has_global_flag = wih_marieantoinette_flag
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 200
-	}
-	
-	immediate = {
-		hidden_effect = {
-			set_global_flag = wih_marieantoinette_flag
-		}
-	}
-	
-	option = {
-		name = women_history_events.71.a
-		add_meritocracy_effect = yes
-		define_advisor = {
-			name = "Marie Antoinette"
-			culture = austrian
-			type = statesman
-			skill = 2
-			discount = yes
-			female = yes
-		}
-	}
-	option = {
-		name = women_history_events.71.b
-		add_adm_power = 50
-		add_dip_power = 50
-		add_mil_power = 50
-	}
-}
-
 # Anacaona
 country_event = {
 	id = women_history_events.72
@@ -5308,107 +4189,6 @@ country_event = {
 	}
 }
 
-# Madame Tussaud
-country_event = {
-	id = women_history_events.78
-	title = women_history_events.78.t
-	desc = women_history_events.78.d
-	picture = wihgfx_FEMALE_SCHOLAR_eventPicture
-
-	trigger = {
-		OR = {
-			tag = ENG
-			tag = GBR
-			tag = FRA
-		}
-		is_year = 1761
-		NOT = {
-			has_global_flag = wih_marietussaud_flag
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 200
-	}
-	
-	immediate = {
-		hidden_effect = {
-			set_global_flag = wih_marietussaud_flag
-		}
-	}
-	
-	option = {
-		name = women_history_events.78.a
-		add_meritocracy_effect = yes
-		define_advisor = {
-			name = "Madame Tussaud"
-			culture = burgundian
-			type = artist
-			discount = yes
-			skill = 2
-			female = yes
-		}
-	}
-	option = {
-		name = women_history_events.78.b
-		add_adm_power = 50
-	}
-}
-
-# Queen Pokou
-country_event = {
-	id = women_history_events.79
-	title = women_history_events.79.t
-	desc = women_history_events.79.d
-	picture = wihgfx_FEMALE_RULER_eventPicture
-
-	trigger = {
-		tag = ASH
-		is_year = 1730
-		NOT = {
-			is_year = 1800
-		}
-		NOT = {
-			has_global_flag = wih_pokou_flag
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 200
-		
-		modifier = {
-			factor = 0.5
-			owns = 1126
-		}
-	}
-	
-	immediate = {
-		hidden_effect = {
-			set_global_flag = wih_pokou_flag
-		}
-	}
-	
-	option = {
-		name = women_history_events.79.a
-		add_meritocracy_effect = yes
-		define_advisor = {
-			name = "Pokou"
-			type = statesman
-			discount = yes
-			culture = aka
-			skill = 2
-			female = yes
-		}
-	}
-	option = {
-		name = women_history_events.79.b
-		add_country_modifier = {
-			name = wih_pokou
-			duration = 7300
-		}
-	}
-}
-
 # Ratu Hijau
 country_event = {
 	id = women_history_events.80
@@ -5660,72 +4440,6 @@ country_event = {
 	}
 }
 
-# Anne Bonny
-country_event = {
-	id = women_history_events.82
-	title = women_history_events.82.t
-	desc = women_history_events.82.d
-	picture = wihgfx_FEMALE_GENERAL_eventPicture
-
-	trigger = {
-		any_owned_province = {
-			region = carribeans_region
-		}
-		capital_scope = {
-			continent = europe
-		}
-		is_year = 1700 
-		NOT = {
-			is_year = 1783
-		}
-		NOT = {
-			has_global_flag = wih_annebonny_flag
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 200
-		
-		modifier = {
-			factor = 0.5
-			tag = IRE
-		}
-		modifier = {
-			factor = 2
-			has_global_flag = wih_maryread_flag
-		}
-	}
-	
-	immediate = {
-		hidden_effect = {
-			set_global_flag = wih_annebonny_flag
-		}
-	}
-	
-	option = {
-		name = women_history_events.82.a
-		add_meritocracy_effect = yes
-		define_advisor = {
-			name = "Anne Bonny"
-			type = naval_reformer
-			culture = irish
-			discount = yes
-			skill = 3
-			female = yes
-		}
-
-	}
-	option = {
-		name = women_history_events.82.b
-		define_admiral = {
-			name = "Anne Bonny"
-			shock = 2
-			fire = 5
-			manuever = 3
-			female = yes
-		}
-	}
-}
 
 # Lucrezia Borgia
 country_event = {
@@ -5983,66 +4697,6 @@ country_event = {
 	}
 }
 
-# Nanyehi
-country_event = {
-	id = women_history_events.87
-	title = women_history_events.87.t
-	desc = women_history_events.87.d
-	picture = wihgfx_FEMALE_SCHOLAR_eventPicture
-
-	trigger = {
-		is_year = 1738
-		OR = {
-			AND = {
-				tag = USA
-				exists = CHE
-			}
-			AND = {
-				tag = CHE
-				any_neighbor_country = {
-					capital_scope = {
-						continent = europe
-					}
-				}
-			}
-		}
-		NOT = {
-			has_global_flag = wih_nanyehi_flag
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 200
-	}
-	
-	immediate = {
-		hidden_effect = {
-			set_global_flag = wih_nanyehi_flag
-		}
-	}
-	
-	option = {
-		name = women_history_events.87.a
-		add_meritocracy_effect = yes
-		define_advisor = {
-			name = "Nanyehi"
-			type = diplomat
-			culture = cherokee
-			discount = yes
-			skill = 2
-			female = yes
-		}
-
-	}
-	option = {
-		name = women_history_events.87.b
-		add_country_modifier = {
-			name = wih_nanyehi
-			duration = 7300
-		}
-	}
-}
-
 # Vendela Skytte
 country_event = {
 	id = women_history_events.88
@@ -6096,101 +4750,6 @@ country_event = {
 	}
 }
 
-# Ahilyabai Holkar
-country_event = {
-	id = women_history_events.89
-	title = women_history_events.89.t
-	desc = women_history_events.89.d
-	picture = wihgfx_FEMALES_eventPicture
-
-	trigger = {
-		OR = {
-			tag = MLW
-			tag = MAR
-		}
-		is_year = 1725
-		NOT = {
-			is_year = 1800
-		}
-		OR = {
-			has_regency = yes
-			legitimacy = 70
-		}
-		NOT = {
-			has_global_flag = wih_ahilyabaiholkar_flag
-		}
-		is_lesser_in_union = no
-		government = monarchy
-		NOT = { has_reform = steppe_horde }
-	}
-	
-	mean_time_to_happen = {
-		months = 200
-	}
-	
-	immediate = {
-		hidden_effect = {
-			set_global_flag = wih_ahilyabaiholkar_flag
-		}
-	}
-	
-	option = {
-		name = women_history_events.89.a
-		add_adm_power = 100
-		add_dip_power = 100
-		add_mil_power = 100
-		add_meritocracy_effect = yes
-		define_advisor = {
-			name = "Ahilyabai Holkar"
-			culture = marathi
-			discount = yes
-			type = commandant
-			skill = 2
-			female = yes
-		}
-	}
-	option = {
-		name = women_history_events.89.b
-		add_adm_power = 100
-		add_dip_power = 100
-		add_mil_power = 100
-		define_general = {
-			name = "Ahilyabai Holkar"
-			shock = 3
-			fire = 4
-			manuever = 1
-			siege = 3
-			female = yes
-		}
-	}
-	option = {
-		name = women_history_events.89.c
-		define_ruler = {
-			name = "Ahilyabai"
-			dynasty = "Holkar"
-			culture = marathi
-			ADM = 6
-			DIP = 4
-			MIL = 2
-			female = yes
-		}
-		if = {
-			limit = {
-				has_states_general_mechanic = yes
-			}
-			change_statists_vs_orangists = 1
-		}
-		if = {
-			limit = {
-				has_dlc = "Rights of Man" 
-			}
-			hidden_effect = { 
-				add_ruler_personality_ancestor = { key = tactical_genius }
-				add_ruler_personality = entrepreneur_personality 
-			}
-		}
-	}
-}
 
 # Jahanzeb Banu Begum
 country_event = {
@@ -6245,142 +4804,6 @@ country_event = {
 	}
 }
 
-# Ching Shih
-country_event = {
-	id = women_history_events.91
-	title = women_history_events.91.t
-	desc = women_history_events.91.d
-	picture = wihgfx_FEMALE_GENERAL_eventPicture
-
-	trigger = {
-		OR = {
-			tag = QNG
-			any_owned_province = {
-				has_port = yes
-				any_neighbor_province = {
-					OR = {
-						region = south_china_region
-						region = north_china_region
-					}
-					has_port = yes
-				}
-			}
-		}
-		is_year = 1775
-		NOT = {
-			has_global_flag = wih_chingshih_flag
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 200
-	}
-	
-	immediate = {
-		hidden_effect = {
-			set_global_flag = wih_chingshih_flag
-		}
-	}
-	
-	option = {
-		name = women_history_events.91.a
-		add_meritocracy_effect = yes
-		define_advisor = {
-			name = "Ching Shih"
-			culture = chihan
-			type = naval_reformer
-			discount = yes
-			skill = 2
-			female = yes
-		}
-	}
-	option = {
-		name = women_history_events.91.b
-		define_admiral = {
-			name = "Ching Shih"
-			shock = 3
-			fire = 4
-			manuever = 3
-			female = yes
-		}
-	}
-}
-
-# Mentewab
-country_event = {
-	id = women_history_events.92
-	title = women_history_events.92.t
-	desc = women_history_events.92.d
-	picture = wihgfx_FEMALE_RULER_eventPicture
-
-	trigger = {
-		tag = ETH
-		is_year = 1706
-		religion_group = christian
-		NOT = {
-			is_year = 1773
-		}
-		has_regency = yes
-		NOT = {
-			has_global_flag = wih_mentewab_flag
-		}
-		is_lesser_in_union = no
-		government = monarchy
-	}
-	
-	mean_time_to_happen = {
-		months = 200
-	}
-	
-	immediate = {
-		hidden_effect = {
-			set_global_flag = wih_mentewab_flag
-		}
-	}
-	
-	option = {
-		name = women_history_events.92.a
-		add_meritocracy_effect = yes
-		add_adm_power = 100
-		add_dip_power = 100
-		add_mil_power = 100
-		define_advisor = {
-			name = "Mentewab"
-			type = statesman
-			culture = amhara
-			discount = yes
-			skill = 2
-			female = yes
-		}
-	}
-	option = {
-		name = women_history_events.92.b
-		define_ruler = {
-			name = "Mentewab"
-			dynasty = "Solomonid"
-			culture = amhara
-			adm = 3
-			dip = 4
-			mil = 3
-			female = yes
-		}
-		if = {
-			limit = {
-				has_states_general_mechanic = yes
-			}
-			change_statists_vs_orangists = 1
-		}
-		if = {
-			limit = {
-				has_dlc = "Rights of Man" 
-			}
-			hidden_effect = { 
-				add_ruler_personality_ancestor = { key = inspiring_leader }
-				add_ruler_personality = architectural_visionary_personality
-			}
-		}
-	}
-}
 
 # Safiye Sultan
 country_event = {
@@ -6443,165 +4866,6 @@ country_event = {
 	}
 }
 
-# Angelica Kauffman
-country_event = {
-	id = women_history_events.94
-	title = women_history_events.94.t
-	desc = women_history_events.94.d
-	picture = wihgfx_FEMALE_SCHOLAR_eventPicture
-
-	trigger = {
-		OR = {
-			tag = SWI
-			tag = ITA
-			tag = MLO
-			tag = PAP
-			tag = VEN
-			tag = ENG
-			tag = GBR
-		}
-		is_year = 1741
-		NOT = {
-			has_global_flag = wih_angelicakauffman_flag
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 200
-	}
-	
-	immediate = {
-		hidden_effect = {
-			set_global_flag = wih_angelicakauffman_flag
-		}
-	}
-	
-	option = {
-		name = women_history_events.94.a
-		add_meritocracy_effect = yes
-		define_advisor = {
-			name = "Angelica Kauffman"
-			culture = swiss
-			type = artist
-			skill = 2
-			discount = yes
-			female = yes
-		}
-
-	}
-	option = {
-		name = women_history_events.94.b
-		add_dip_power = 50
-		add_adm_power = 50
-	}
-}
-
-# Elizabeth of Russia
-country_event = {
-	id = women_history_events.95
-	title = women_history_events.95.t
-	desc = women_history_events.95.d
-	picture = wihgfx_FEMALE_RULER_eventPicture
-
-	trigger = {
-		tag = RUS
-		is_year = 1709
-		NOT = {
-			is_year = 1762
-		}
-		has_regency = yes
-		NOT = {
-			has_global_flag = wih_elizabethrussia_flag
-		}
-		is_lesser_in_union = no
-		government = monarchy
-	}
-	
-	mean_time_to_happen = {
-		months = 200
-	}
-	
-	immediate = {
-		hidden_effect = {
-			set_global_flag = wih_elizabethrussia_flag
-		}
-	}
-	
-	option = {
-		name = women_history_events.95.a
-		add_adm_power = 100
-		add_dip_power = 100
-		add_mil_power = 100
-		add_meritocracy_effect = yes
-		if = {
-			limit = {
-				has_updated_culture = { culture = slavic }
-			}
-			define_advisor = {
-				name = "Elizaveta Romanov"
-				type = statesman
-				discount = yes
-				culture = russian_new
-				skill = 2
-				female = yes
-			}
-		}
-		else = {
-			define_advisor = {
-				name = "Elizaveta Romanov"
-				type = statesman
-				discount = yes
-				culture = russian
-				skill = 2
-				female = yes
-			}
-		}
-
-	}
-	option = {
-		name = women_history_events.95.b
-		if = {
-			limit = {
-				has_updated_culture = { culture = slavic }
-			}
-			define_ruler = {
-				name = "Elizaveta"
-				dynasty = "Romanov"
-				culture = russian_new
-				adm = 3
-				dip = 4
-				mil = 3
-				female = yes
-			}
-		}
-		else = {
-			define_ruler = {
-				name = "Elizaveta"
-				dynasty = "Romanov"
-				culture = russian
-				adm = 3
-				dip = 4
-				mil = 3
-				female = yes
-			}
-		}
-		if = {
-			limit = {
-				has_states_general_mechanic = yes
-			}
-			change_statists_vs_orangists = 1
-		}
-		if = {
-			limit = {
-				has_dlc = "Rights of Man" 
-			}
-			hidden_effect = { 
-				add_ruler_personality_ancestor = { key = silver_tongue }
-				add_ruler_personality = scholar_personality 
-			}
-		}
-	}
-}
 
 # Anna of Russia
 country_event = {
@@ -6935,56 +5199,5 @@ country_event = {
 			name = wih_mariamuzzamani
 			duration = 7300
 		}
-	}
-}
-
-# Franciszka Urszula Radziwillowa
-country_event = {
-	id = women_history_events.100
-	title = women_history_events.100.t
-	desc = women_history_events.100.d
-	picture = wihgfx_FEMALES_eventPicture
-
-	trigger = {
-		OR = {
-			tag = POL
-			tag = LIT
-			tag = PLC
-		}
-		is_year = 1705  
-		NOT = {
-			is_year = 1753
-		}
-		NOT = {
-			has_global_flag = wih_franciszkaurszularadziwillowa_flag
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 200
-	}
-	
-	immediate = {
-		hidden_effect = {
-			set_global_flag = wih_franciszkaurszularadziwillowa_flag
-		}
-	}
-	
-	option = {
-		name = women_history_events.100.a
-		add_meritocracy_effect = yes
-		define_advisor = {
-			name = "Franciszka Urszula Radziwillowa"
-			culture = polish
-			discount = yes
-			type = artist
-			skill = 2
-			female = yes
-		}
-	}
-	option = {
-		name = women_history_events.100.b
-		add_dip_power = 50
-		add_adm_power = 50
 	}
 }
