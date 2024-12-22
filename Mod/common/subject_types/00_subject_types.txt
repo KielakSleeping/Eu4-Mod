@@ -48,6 +48,13 @@ trade_protectorate = {}
 hereditary_pronoia_subject_type = {}
 pronoia_subject_type = {}
 cultural_sphere_of_influence_subject = {}
+theodoro_personal_union = {}
+incorporated_vassal = {}
+nahuatl_tributary = {}
+european_colony = {}
+mongol_brother_realm = {}
+integrated_personal_union = {}
+soyurghal_subject_type = {}
 
 default = {
 	# Graphics:
@@ -1471,10 +1478,10 @@ cultural_sphere_of_influence_subject = {
 	}
 }
 
-# Completely scripted subject type (no code used). Add any number of these. Check common/new_diplomatic_actions for how to make visible in game.
-dummy =
-{
-	copy_from = default
+theodoro_personal_union = {
+	copy_from = personal_union
+
+	annex_cost_per_development = 6.0
 }
 
 incorporated_vassal = {
