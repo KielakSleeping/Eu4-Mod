@@ -10,6 +10,8 @@ woc_moghulistan_1 = {
 			OR = {
 				tag = CHG
 				tag = KAS
+				tag = BUK
+				tag = SHY
 			}
 		has_dlc = "Winds of Change"
 	}
@@ -314,6 +316,8 @@ woc_moghulistan_2 = {
 			OR = {
 				tag = CHG
 				tag = KAS
+				tag = BUK
+				tag = SHY
 			}
 		has_dlc = "Winds of Change"
 	}
@@ -582,6 +586,8 @@ woc_moghulistan_3 = {
 			OR = {
 				tag = CHG
 				tag = KAS
+				tag = BUK
+				tag = SHY
 			}
 		has_dlc = "Winds of Change"
 	}
@@ -898,6 +904,8 @@ woc_moghulistan_4 = {
 			OR = {
 				tag = CHG
 				tag = KAS
+				tag = BUK
+				tag = SHY
 			}
 		has_dlc = "Winds of Change"
 	}
@@ -1159,6 +1167,8 @@ woc_moghulistan_5 = {
 			OR = {
 				tag = CHG
 				tag = KAS
+				tag = BUK
+				tag = SHY
 			}
 		has_dlc = "Winds of Change"
 	}

@@ -1416,6 +1416,7 @@ LOT_ideas = {
 		#mercenary_discipline = 0.025
 		land_maintenance_modifier = -0.10
 		global_regiment_cost = -0.10
+
 	}
 	lot_glory_of_charlemagne = {
 		land_morale = 0.10
@@ -2769,6 +2770,7 @@ TUN_ideas = {
 		#mercenary_discipline = 0.05
 		#mercenary_manpower = 0.15
 		infantry_power = 0.05
+
 	}
 	dual_diplomacy = {
 		diplomatic_upkeep = 1
@@ -2974,7 +2976,7 @@ BAH_ideas = {
 DEC_ideas = {
 	start = {
 		administrative_efficiency = 0.05
-		land_morale = 0.1
+		land_morale = 0.05
 	}
 
 	bonus = {

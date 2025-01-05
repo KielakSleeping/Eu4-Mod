@@ -2123,15 +2123,16 @@ MAY_obsidian_source = {
 
 MAY_restoration = {
 	potential = {
-		owner = {
-			mission_completed = MAY_restore_lowland_ruins
-		}
+		always = no
+		# owner = {
+		# 	mission_completed = MAY_restore_lowland_ruins
+		# }
 	}
 
 	trigger = {
-		owner = {
-			mission_completed = MAY_restore_lowland_ruins
-		}
+		# owner = {
+		# 	mission_completed = MAY_restore_lowland_ruins
+		# }
 	}
 
 	local_great_project_upgrade_cost = -0.1

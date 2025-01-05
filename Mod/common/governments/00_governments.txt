@@ -129,9 +129,6 @@ monarchy = {
 				austrian_absolute_monarchy
 				merchant_aristocracy_reform
 				gothic_monarchy_reform
-				#kielak gov reforms
-				golden_horde_kuzarite
-				hesse_court
 			}
 		}
 		hereditary_vs_nobility = {
@@ -169,6 +166,7 @@ monarchy = {
 				reform_the_pronoiars_reform
 				diwan_al_khass_reform
 				legacy_of_timur_reform
+				
 				#1.37 German Reforms
 				german_cultural_disunity_reform
 				german_franconian_reform
@@ -198,6 +196,7 @@ monarchy = {
 				expand_imperial_court_reform
 				limit_imperial_court_reform
 				regional_council_reform
+				
 				liberte_reform
 				egalite_reform
 				fraternite_reform
@@ -215,6 +214,8 @@ monarchy = {
 				restore_the_master_of_offices_reform
 				court_of_art_and_culture_reform
 				integrated_ottoman_officials
+				#1.37
+				seven_provinces_reform
 				#1.37 Hungary
 				continue_the_renaissance_reform
 				timurid_diwan_reform
@@ -622,6 +623,7 @@ republic = {
 		protectorate_parliament_legacy
 		prussian_republic
 		united_cantons_legacy
+		turkoman_ottoman_institutions
 		#Mamluks
 		egyptian_government_reform
 		h_reform_dominion
@@ -669,6 +671,10 @@ republic = {
 				parliamentary_republic_reform
 				absolute_shogunate_reform
 				japanese_divine_empire
+				#Mamluks
+				egyptian_government_reform
+				city_alliance_reform
+				turkoman_ottoman_institutions
 			}
 		}
 		republican_virtues = {
@@ -693,6 +699,7 @@ republic = {
 				#1.36
 				diwan_al_khass_reform
 				integrated_ottoman_officials
+				
 				#1.37 German Reforms
 				german_cultural_disunity_reform
 				german_franconian_reform
@@ -1266,6 +1273,7 @@ theocracy = {
 				#Egypt
 				egyptian_government_reform
 				blood_theocracy_reform
+				turkoman_ottoman_institutions
 			}
 		}
 		internal_vs_external_mission = {

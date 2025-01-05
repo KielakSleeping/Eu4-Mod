@@ -20,6 +20,12 @@ edict_religious_unity = {
 	modifier = {
 		local_missionary_strength = 0.01
 	}
+
+	notify_trigger = {
+		FROM = {
+			has_owner_religion = yes
+		}
+	}
 	
 	color = { 117 38 143 }
 	
@@ -33,7 +39,7 @@ edict_religious_unity = {
 		}
 		modifier = {
 			factor = 3
-			area_for_scope_province = {
+			any_province_in_state = {
 				has_missionary = yes
 			}
 		}

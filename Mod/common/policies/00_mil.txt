@@ -908,6 +908,7 @@ turtle_ships = {
        shock_damage_received = -0.10
        fire_damage_received = -0.05
 
+
        ai_will_do = { 
                factor = 1 
        }

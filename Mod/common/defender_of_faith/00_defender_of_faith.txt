@@ -10,7 +10,6 @@ defender_of_faith_1 = {
 		naval_morale = 0.05
 		prestige = 1
 		war_exhaustion = -0.03
-		 
 		papal_influence = 1
 		church_power_modifier = 0.1
 		monthly_fervor_increase = 1
@@ -63,7 +62,6 @@ defender_of_faith_2 = {
 		naval_morale = 0.05
 		prestige = 1
 		war_exhaustion = -0.03
-		 
 		papal_influence = 1
 		church_power_modifier = 0.1
 		monthly_fervor_increase = 1
@@ -116,7 +114,6 @@ defender_of_faith_3 = {
 		naval_morale = 0.05
 		prestige = 1
 		war_exhaustion = -0.03
-		 
 		papal_influence = 1
 		church_power_modifier = 0.1
 		monthly_fervor_increase = 1
@@ -169,10 +166,10 @@ defender_of_faith_4 = {
 		naval_morale = 0.05
 		prestige = 1
 		war_exhaustion = -0.03
-		 
 		papal_influence = 1
 		church_power_modifier = 0.1
 		monthly_fervor_increase = 1
+		
     }
 	ai_will_do = {
 		factor = 1
@@ -221,7 +218,6 @@ defender_of_faith_5 = {
 		naval_morale = 0.05
 		prestige = 1
 		war_exhaustion = -0.03
-		 
 		papal_influence = 1
 		church_power_modifier = 0.1
 		monthly_fervor_increase = 1

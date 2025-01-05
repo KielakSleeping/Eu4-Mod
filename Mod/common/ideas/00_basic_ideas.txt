@@ -94,7 +94,9 @@ religious_ideas = {
 	religious_tradition = {
     	manpower_in_true_faith_provinces= 0.15
     	church_loyalty_modifier = 0.1
-	brahmins_hindu_loyalty_modifier = 0.1
+	    brahmins_hindu_loyalty_modifier = 0.1
+		
+
 	}
 	deus_vult = {
 		prestige = 1
@@ -1321,13 +1323,13 @@ spy_ideas ={
 				}
 			}
 		}
-		modifier = {
-			factor = 1.25
-			OR = {
-				has_idea_group = infrastructure_ideas
-				has_idea_group = economic_ideas
-			}
-		}
+		# modifier = {
+		# 	factor = 1.25
+		# 	OR = {
+		# 		has_idea_group = infrastructure_ideas
+		# 		has_idea_group = economic_ideas
+		# 	}
+		# }
 	}
 }
 
@@ -1417,6 +1419,7 @@ court_ideas = {
 		}
 	}
 }
+
 
 horde_gov_ideas = {
 	category = MIL
@@ -1745,6 +1748,9 @@ extra_ideas = {
 		possible_dip_policy = 1 
 		monarch_diplomatic_power = 1 
 	}
+	
+
+	
 
 
 }

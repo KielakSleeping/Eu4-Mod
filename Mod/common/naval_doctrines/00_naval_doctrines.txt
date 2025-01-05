@@ -289,8 +289,9 @@ japanese_atakebune = {
 
 	cost = 0.1
 	country_modifier = {
-		sailor_maintenance_modifer = -0.2
-	}	
+		sailor_maintenance_modifer = -0.2	
+	}
+	effect = {}	
 	removed_effect = {}
 	
 	button_gfx = 16

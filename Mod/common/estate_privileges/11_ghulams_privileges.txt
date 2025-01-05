@@ -2,7 +2,7 @@ estate_ghulams_land_rights = {
 	icon = privilege_grant_autonomy
 	land_share = 5
 	max_absolutism = -5
-	
+	#loyalty = 0.05
 	influence = 0.05
 	is_valid = {always = no}
 	can_select = {
@@ -13,8 +13,15 @@ estate_ghulams_land_rights = {
 	}
 	penalties = {
 	}
+
 	benefits = {
 		governing_capacity = 100
+	}
+	conditional_modifier = {
+		trigger = { has_country_flag = ned_land_rights_buff_flag }
+		modifier = {
+			governing_capacity = 20
+		}
 	}
 	ai_will_do = {
 		factor = 5
@@ -258,8 +265,9 @@ estate_ghulams_advisor = {
 	influence = 0.1
 	is_valid = {
 		always = no
+		NOT = { religion_group = muslim }
 	}
-	
+	#loyalty = 0.05
 	penalties = {
 		stability_cost_modifier = 0.1
 	}
@@ -286,8 +294,8 @@ estate_ghulams_advisor = {
 
 estate_ghulams_loyalty_privilege = {
 	icon = privilege_royal_authority
-	max_absolutism = -10
-	
+	max_absolutism = -5
+	#loyalty = 0.15
 	influence = 0.1
 	penalties = {
 	}
@@ -306,7 +314,7 @@ estate_ghulams_levies = {
 	icon = privilege_recruit_from_marathi
 	max_absolutism = -5
 	influence = 0.1
-	
+	#loyalty = 0.05
 	is_valid = {
 		religion_group = muslim
 	}
@@ -369,7 +377,7 @@ estate_ghulams_levies_non_muslims = {
 	icon = privilege_recruit_from_marathi
 	max_absolutism = -5
 	influence = 0.1
-	
+	#loyalty = 0.05
 	is_valid = {
 		NOT = { religion_group = muslim }
 	}
@@ -389,11 +397,12 @@ estate_ghulams_levies_non_muslims = {
 estate_ghulams_special_privilege = {
 	icon = privilege_promote_maratha_nobility
 	max_absolutism = -5
-	is_valid = {
-		always = no
-	}	
+	#loyalty = 0.1
 	influence = 0.05
 	land_share = 5
+	is_valid = {
+		always = no
+	}
 	modifier_by_land_ownership = {
 		infantry_power = 0.2
 		qizilbash_loyalty_modifier = -0.5
@@ -417,9 +426,9 @@ estate_ghulams_special_privilege = {
 
 estate_ghulams_government = {
 	icon = privilege_promote_maratha_nobility
-	max_absolutism = -10
+	max_absolutism = -5
 	cooldown_years = 20
-	
+	#loyalty = 0.05
 	influence = 0.1
 	modifier_by_land_ownership = {
 	}
@@ -493,7 +502,7 @@ estate_ghulams_government = {
 estate_ghulams_ensure_caucasian_sovereignty = {
 	icon = privilege_promote_maratha_nobility
 	max_absolutism = -5
-	
+	#loyalty = 0.1
 	influence = 0.05
 	is_valid = {
 		any_owned_province = {
@@ -558,7 +567,7 @@ estate_ghulams_ensure_caucasian_sovereignty = {
 #Unlockable
 estate_ghulams_defensive_policy = {
 	icon = privilege_fort
-	
+	#loyalty = 0.05
 	influence = 0.1
 	max_absolutism = 0
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
@@ -588,7 +597,7 @@ estate_ghulams_defensive_policy = {
 
 estate_ghulams_tofangchi_regiment = {
 	icon = privilege_infantry
-	
+	#loyalty = 0.05
 	influence = 0.1
 	max_absolutism = 0
 	#conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
@@ -617,7 +626,7 @@ estate_ghulams_tofangchi_regiment = {
 
 estate_ghulams_tupchi_artillery_corps = {
 	icon = privilege_artillery
-	
+	#loyalty = 0.05
 	influence = 0.05
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
@@ -656,7 +665,7 @@ estate_ghulams_tupchi_artillery_corps = {
 			}
 		}
 		modifier = {
-			artillery_cost = -0.15
+			artillery_cost = -0.33
 		}
 	}
 	benefits = {
@@ -669,7 +678,7 @@ estate_ghulams_tupchi_artillery_corps = {
 
 estate_ghulams_qurchi_service = {
 	icon = privilege_legitimacy
-	
+	#loyalty = 0.10
 	max_absolutism = 0
 	#conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	is_valid = {
@@ -711,7 +720,7 @@ estate_ghulams_qurchi_service = {
 
 estate_ghulams_mamlukian_administration = {
 	icon = privilege_land_rights
-	
+	#loyalty = 0.05
 	influence = 0.10
 	max_absolutism = 0
 	#conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }

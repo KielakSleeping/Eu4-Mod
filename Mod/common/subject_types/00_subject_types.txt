@@ -609,6 +609,7 @@ colony = {
 	diplomacy_subject_sprite = GFX_diplomacy_subjectcolony
 
 	# Properties:
+	can_fight_independence_war = yes
 	can_release_and_play = no
 	uses_tariffs = yes
 	eats_overlords_colonies = yes
@@ -625,7 +626,7 @@ colony = {
 	can_concentrate_development = no
 	extend_trading_range = yes
 
-	liberty_desire_development_ratio = 0.1
+	liberty_desire_development_ratio = 0.075
 	opinion_on_subject_integration = 0
 	max_government_rank = 1
 	cities_required_for_bonuses = 10
@@ -1478,11 +1479,13 @@ cultural_sphere_of_influence_subject = {
 	}
 }
 
+
 theodoro_personal_union = {
 	copy_from = personal_union
 
 	annex_cost_per_development = 6.0
 }
+
 
 incorporated_vassal = {
 	copy_from = vassal
@@ -1584,7 +1587,7 @@ nahuatl_tributary = {
 			}
 
 		}
-		modifier = may_dynastic_influence_modifier
+		#modifier = may_dynastic_influence_modifier
 	}
 }
 
@@ -1736,10 +1739,10 @@ soyurghal_subject_type = {
 	send_additional_troops = yes
 	
 	modifier_subject = {
-		modifier = soyurghal_base_modifiers
+		#modifier = soyurghal_base_modifiers
 	}
 	modifier_overlord = {
-		modifier = soyurghal_base_overlord_modifiers
+		#modifier = soyurghal_base_overlord_modifiers
 	}
 }
 

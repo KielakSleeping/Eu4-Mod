@@ -3,7 +3,7 @@ estate_brahmins_land_rights = {
 	land_share = 5
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
-	
+	#loyalty = 0.05
 	influence = 0.05
 	can_select = {
 	}
@@ -11,8 +11,15 @@ estate_brahmins_land_rights = {
 	}
 	penalties = {
 	}
+
 	benefits = {
 		governing_capacity = 100
+	}
+	conditional_modifier = {
+		trigger = { has_country_flag = ned_land_rights_buff_flag }
+		modifier = {
+			governing_capacity = 20
+		}
 	}
 	ai_will_do = {
 		factor = 5
@@ -193,6 +200,7 @@ estate_brahmins_brahmin_governance = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = -0.05
 	is_valid = {
+		#NOT = { religion_group = muslim }
 		always = no
 	}
 	can_select = {
@@ -301,7 +309,7 @@ estate_brahmins_brahmin_leadership = {
 		NOT = { religion_group = muslim }
 		always = no
 	}
-	
+	#loyalty = 0.05
 	penalties = {
 		stability_cost_modifier = 0.1
 	}
@@ -327,16 +335,17 @@ estate_brahmins_flexible_deities = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	influence = 0.05
 	is_valid = {
-	OR = {
 		NOT = { religion_group = muslim }
 		has_dlc = "Wealth of Nations"
-		religion = kuzarite
-		}
 	}
 	can_select = {
 		if = {
 			limit = {
 				NOT = { has_government_attribute = reduce_new_deity_decision_cd }
+			}
+			estate_influence = {
+				estate = estate_brahmins
+				influence = 40
 			}
 		}
 	}
@@ -359,7 +368,7 @@ estate_brahmins_loyalty_privilege = {
 	icon = privilege_seek_support_of_clergy
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
-	
+	#loyalty = 0.1
 	influence = 0.1
 	penalties = {
 	}
@@ -378,7 +387,7 @@ estate_brahmins_guaranteed_autonomy = {
 	icon = privilege_grant_autonomy
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
-	
+	#loyalty = 0.05
 	is_valid = {
 		religion_group = muslim
 		any_owned_province = {
@@ -457,7 +466,7 @@ estate_brahmins_administrative_privileges = {
 	land_share = 5
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
-	
+	#loyalty = 0.1
 	influence = 0.1
 	is_valid = {
 	}
@@ -490,7 +499,7 @@ estate_brahmins_supremacy_over_crown = {
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	influence = 0.1
-	
+	#loyalty = 0.0
 	is_valid = {
 		always = no
 		OR = {
@@ -503,26 +512,8 @@ estate_brahmins_supremacy_over_crown = {
 	penalties = {
 	}
 	benefits = {
-		burghers_loyalty_modifier = 0.1
-		church_loyalty_modifier = 0.1
-		dhimmi_loyalty_modifier = 0.1
-		cossacks_loyalty_modifier = 0.1
-		rajput_loyalty_modifier = 0.1
-		nobles_loyalty_modifier = 0.1
-		maratha_loyalty_modifier = 0.1
-		jains_loyalty_modifier = 0.1
-		vaisyas_loyalty_modifier = 0.1
-		nomadic_tribes_loyalty_modifier = 0.1
-		burghers_influence_modifier = 0.1
-		church_influence_modifier = 0.1
-		dhimmi_influence_modifier = 0.1
-		cossacks_influence_modifier = 0.1
-		rajput_influence_modifier = 0.1
-		nobles_influence_modifier = 0.1
-		maratha_influence_modifier = 0.1
-		jains_influence_modifier = 0.1
-		vaisyas_influence_modifier = 0.1
-		nomadic_tribes_influence_modifier = 0.1
+		all_estate_loyalty_equilibrium = 0.1
+		all_estate_influence_modifier = 0.1
 	}
 	mechanics = {
 		can_give_agendas_without_interaction
@@ -536,7 +527,7 @@ estate_brahmins_monopoly_of_incense = {
 	icon = privilege_monopoly_of_goods_incence
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
-	
+	#loyalty = 0.05
 	is_valid = {
 		OR = {
 			has_dlc = "Emperor"
@@ -647,7 +638,7 @@ estate_brahmins_monopoly_of_wool = {
 	icon = privilege_monopoly_of_goods_wool
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
-	
+	#loyalty = 0.05
 	is_valid = {
 		OR = {
 			has_dlc = "Emperor"
@@ -906,7 +897,7 @@ estate_brahmins_one_faith_one_culture = {
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	influence = 0.1
-	
+	#loyalty = 0.05
 	#land_share = 5
 	is_valid = {
 		NOT = { has_estate = estate_church }
@@ -1052,7 +1043,7 @@ estate_brahmins_one_faith_one_culture = {
 #Domination generic Estate Privileges
 estate_brahmins_development_of_temples = {
 	icon = privilege_religious
-	
+	#loyalty = 0.1
 	influence = 0.05
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
@@ -1149,7 +1140,7 @@ estate_brahmins_expand_the_theology = {
 }
 estate_brahmins_clerical_education = {
 	icon = privilege_ideas
-	
+	#loyalty = 0.05
 	influence = 0.05
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
