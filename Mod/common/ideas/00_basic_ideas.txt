@@ -894,7 +894,7 @@ quality_ideas = {
 	naval_drill = {
 		morale_damage_received = -0.10
 		reserves_organisation = 0.10
-		#special_unit_forcelimit = 0.10
+		special_unit_forcelimit = 0.10
 	}
 	copper_bottoms = {
 		army_tradition_decay = -0.005
