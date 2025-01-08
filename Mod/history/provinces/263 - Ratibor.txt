@@ -16,6 +16,7 @@ is_city = yes
 trade_goods = cloth
 base_manpower = 3
 add_core = OPL
+add_claim = POL
 discovered_by = KAZ
 discovered_by = CRI
 discovered_by = GOL

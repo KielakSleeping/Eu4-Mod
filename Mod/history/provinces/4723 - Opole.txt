@@ -10,6 +10,7 @@ is_city = yes
 trade_goods = grain
 base_manpower = 2
 add_core = OPL
+add_claim = POL
 discovered_by = KAZ
 discovered_by = CRI
 discovered_by = GOL
