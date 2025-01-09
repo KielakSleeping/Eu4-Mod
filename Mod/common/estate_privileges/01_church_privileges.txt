@@ -780,6 +780,7 @@ estate_church_inwards_perfection = {
 	#loyalty = 0.05
 	influence = 0.1
 	is_valid = {
+		always = no
 		religion_group = eastern
 		NOT = { has_country_flag = mng_outward_perfection_flag } 
 		NOT = { has_government_mechanic = perfectionism_mechanic }
@@ -1923,15 +1924,15 @@ estate_church_one_faith_one_culture = {
 	can_select = {
 	}
 	on_granted = {
-		if = {
-			limit = {
-				has_country_flag = hormuz_religious_propagations_buffs_flag
-			}
-			custom_tooltip = estate_church_one_faith_one_culture_buffed_gta
-		}
-		else = {
-			custom_tooltip = estate_church_one_faith_one_culture_gta
-		}
+		# if = {
+		# 	limit = {
+		# 		has_country_flag = hormuz_religious_propagations_buffs_flag
+		# 	}
+		# 	custom_tooltip = estate_church_one_faith_one_culture_buffed_gta
+		# }
+		# else = {
+		# 	custom_tooltip = estate_church_one_faith_one_culture_gta
+		# }
 		custom_tooltip = bs_estate_church_one_faith_one_culture_gta
 		custom_tooltip = bs_estate_church_one_faith_one_culture_gtb
 	}

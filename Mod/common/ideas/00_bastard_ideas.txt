@@ -365,7 +365,7 @@ ARB_ideas = { #Arabian Empire
 		trade_efficiency = 0.1
 	}
 	arb_3 = { #Bedouin Raiders
-		shock_damage_received = -0.15
+		shock_damage_received = -0.125
 	}
 	arb_5 = { #Unite the Tribes
 		manpower_recovery_speed = 0.2
@@ -407,7 +407,7 @@ GZM_ideas = { #Great Zimbabwe Empire
 		discipline = 0.05
 	}
 	GZM_empowering_the_rozwi = {
-		fire_damage_received = -0.15
+		fire_damage_received = -0.125
 	}
 	GZM_4 = {
 		infantry_power = 0.1
@@ -600,7 +600,7 @@ HAN_ideas = {
 		fire_damage = 0.1
 	}
 	han_kings_legion = {
-		fire_damage_received = -0.15
+		fire_damage_received = -0.125
 	}
 }
 
@@ -2127,7 +2127,7 @@ ADU_ideas = {
 	free = yes        #will be added at load.
     
 	adu_stand_against_the_reconquista = {
-		fire_damage_received = -0.15
+		fire_damage_received = -0.125
 	}
 	adu_taifa_adminstration = {
 		development_cost = -0.05
@@ -3695,7 +3695,7 @@ CRI_ideas = {
 
 ROT_ideas = {
 	start = {
-		morale_damage_received = -0.15
+		morale_damage_received = -0.125
 		defensiveness = 0.25
 	}
 	bonus = {
@@ -3738,7 +3738,7 @@ ROT_ideas = {
 
 FKN_ideas = {
 	start = {
-		morale_damage_received = -0.25
+		morale_damage_received = -0.15
 		defensiveness = 0.25
 	}
 	

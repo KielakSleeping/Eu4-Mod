@@ -4558,14 +4558,14 @@ poland_sca_slot_5_branching_hre_west = {
 							value = 160 
 						}
 					}
-					OR = {
-						marriage_with = ROOT 
-						trust = {
-							who = ROOT 
-							value = 60 
-						}
-						owes_favors = { who = ROOT value = 15 }
-					}
+					# OR = {
+					# 	marriage_with = ROOT 
+					# 	trust = {
+					# 		who = ROOT 
+					# 		value = 60 
+					# 	}
+					# 	owes_favors = { who = ROOT value = 15 }
+					# }
 				}
 			}
 			else = {
