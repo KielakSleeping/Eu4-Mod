@@ -684,7 +684,7 @@ woc_moghulistan_3 = {
 				"
 				first_effect = "
 					2121 = {
-						add_base_production = 3
+						add_base_production = 5
 					}
 				"
 			}
@@ -935,7 +935,7 @@ woc_moghulistan_4 = {
 			
 			distribute_development = {
 				type = production
-				amount = 5
+				amount = 25
 			}
 		} 
 	}
