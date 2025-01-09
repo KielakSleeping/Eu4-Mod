@@ -4802,6 +4802,7 @@ estate_burghers_fugger_family = {
 	loyalty = 0
 	influence = 0.05
 	is_valid = {
+		
 		is_or_was_tag = { tag = HAB }
 	}
 	penalties = {

@@ -4822,6 +4822,7 @@ hun_hungary_poland = {
 
 hun_supreme_black_army = {
 	#mercenary_discipline = 0.05
+	province_warscore_cost = -0.125
 	core_creation = -0.15
 }
 
@@ -13059,7 +13060,10 @@ hun_expanding_the_order = {
 }
 
 hun_black_legion = {
-	merc_leader_army_tradition = 0.25
+	infantry_power = 0.025
+	cavalry_power = 0.025
+	land_morale = 0.05
+	#merc_leader_army_tradition = 0.25
 }
 
 estate_burghers_hungarian_royal_city_modifier = {

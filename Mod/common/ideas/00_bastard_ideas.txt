@@ -365,7 +365,7 @@ ARB_ideas = { #Arabian Empire
 		trade_efficiency = 0.1
 	}
 	arb_3 = { #Bedouin Raiders
-		shock_damage_received = -0.125
+		shock_damage_received = -0.15
 	}
 	arb_5 = { #Unite the Tribes
 		manpower_recovery_speed = 0.2
@@ -2675,6 +2675,58 @@ BUK_ideas = {
 		artillery_power = 0.125
 	}
 }
+
+# Ilkhanate
+ILK_ideas = {
+	start = {
+		cavalry_power = 0.2
+		cavalry_cost = -0.15
+	}
+	bonus = {
+		cavalry_flanking = 0.5
+		discipline = 0.05
+	}
+	trigger = {
+		tag = ILK
+	}
+	free = yes
+
+	ilk_restored_ilkhanate = {
+		legitimacy = 1
+		devotion = 1
+		republican_tradition = 0.3
+		meritocracy = 1
+		horde_unity = 1
+		core_creation = -0.2
+	}
+	ilk_favor_sufism = {
+		tolerance_heretic = 2
+		shock_damage = 0.15
+	}
+	ilk_persian_language_at_court = {
+		num_accepted_cultures = 4
+		global_manpower_modifier = 0.2
+	}
+	ilk_yam_networks = {
+		movement_speed = 0.1
+		envoy_travel_time = -0.25
+		technology_cost = -0.05
+	}
+	ilk_mongol_peace = {
+		years_of_nationalism = -5
+		manpower_recovery_speed = 0.2
+		leader_land_shock = 1
+	}
+	ilk_patronize_observatories = {
+		trade_efficiency = 0.15
+		global_trade_goods_size_modifier = 0.1
+	}
+	ilk_recruit_turkoman_gunners = {
+		artillery_shock = 1
+		artillery_power = 0.15
+	}
+}
+
 GLH_ideas = {
 	start = {
 		development_cost = -0.15
@@ -2769,7 +2821,7 @@ TUN_ideas = {
 	tun_catalan_guard = {
 		#mercenary_discipline = 0.05
 		#mercenary_manpower = 0.15
-		infantry_power = 0.05
+		infantry_power = 0.075
 
 	}
 	dual_diplomacy = {
@@ -2812,7 +2864,7 @@ TUN_improved_ideas = {
 	tun_catalan_guard_improved = {
 		#mercenary_discipline = 0.05
 		#mercenary_manpower = 0.25
-		infantry_power = 0.1
+		infantry_power = 0.125
 	}
 	dual_diplomacy = {
 		diplomatic_upkeep = 1
