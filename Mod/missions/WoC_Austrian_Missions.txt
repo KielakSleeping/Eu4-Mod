@@ -2692,7 +2692,7 @@ WoC_austria_3_holy_roman_empire = {
 					}
 					calc_true_if = {
 						desc = emp_hab_no_one_to_threaten_us_trigger2_tooltip
-						amount = 10
+						amount = 6
 						all_country = {
 							has_reform = free_city
 						}
