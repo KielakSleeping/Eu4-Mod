@@ -7985,7 +7985,7 @@ inukshuk = {
 	}
 }
 
-fire_temple_of_gah = {
+fire_temple_of_ateshgah = {
 	# province it starts in
 	start = 421
 	
