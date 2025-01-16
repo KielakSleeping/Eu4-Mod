@@ -151,20 +151,13 @@ emperor_reichstag_collegia = {
 	potential = {
 		has_dlc = "Emperor"
 	}
-	emperor = {
-		build_cost = -0.05
-		global_tax_income = 60
-	}
-	# emperor_per_prince = {
-	# 	global_tax_income = 1.25
-	# }
-	elector = {
-		advisor_cost = -0.135
+	emperor_per_prince = {
+		global_tax_income = 1.25
 	}
 	
-	# elector_per_prince = {
-	# 	advisor_cost = -0.0045
-	# }
+	elector_per_prince = {
+		advisor_cost = -0.0045
+	}
 }
 
 emperor_expand_gemeiner_pfennig = {
@@ -175,22 +168,15 @@ emperor_expand_gemeiner_pfennig = {
 	potential = {
 		has_dlc = "Emperor"
 	}
-	emperor = {
-		global_manpower = 30
+	emperor_per_prince = {
+		global_manpower = 0.7
 	}
-	elector = {
-		global_tax_income = 68
-		global_manpower = 20
+	elector_per_prince = {
+		global_manpower = 0.5
 	}
-	# emperor_per_prince = {
-	# 	global_manpower = 0.7
-	# }
-	# elector_per_prince = {
-	# 	global_manpower = 0.5
-	# }
-	# elector_per_prince = {
-	# 	 global_tax_income = 1.2
-	# }
+	elector_per_prince = {
+		 global_tax_income = 1.2
+	}
 }
 
 emperor_rechenschaft = {
@@ -201,20 +187,11 @@ emperor_rechenschaft = {
 	potential = {
 		has_dlc = "Emperor"
 	}
-	emperor = {
-		land_forcelimit = 25
+	emperor_per_prince = {
+		land_forcelimit	= 0.65
 	}
-	elector = {
-		land_forcelimit = 15
-	}
-	# emperor_per_prince = {
-	# 	land_forcelimit	= 0.65
-	# }
-	# elector_per_prince = {
-	# 	land_forcelimit	= 0.5
-	# }
-	province = {
-		local_production_efficiency = 0.05
+	elector_per_prince = {
+		land_forcelimit	= 0.5
 	}
 	province = {
 		local_production_efficiency = 0.05
@@ -297,19 +274,19 @@ emperor_erbkaisertum = {
 		imperial_authority = 0.25
 		manpower_recovery_speed = 0.20
 	}
-	#on_effect = {
-	#	if = {
-	#		limit = {
-	#			hre_religion_locked = no
-	#			hre_religion_treaty = no
-	#		}
-	#		set_hre_religion_treaty = yes
-	#	}
-	#	hre_inheritable = yes
-	#}
-	#off_effect = {
-	#	hre_inheritable = no
-	#}
+	on_effect = {
+		if = {
+			limit = {
+				hre_religion_locked = no
+				hre_religion_treaty = no
+			}
+			set_hre_religion_treaty = yes
+		}
+		hre_inheritable = yes
+	}
+	off_effect = {
+		hre_inheritable = no
+	}
 	required_reform = emperor_imperial_estates
 	gui_container = right_branch
 }
