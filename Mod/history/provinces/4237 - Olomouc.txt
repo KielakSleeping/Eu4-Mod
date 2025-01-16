@@ -6,11 +6,11 @@ latent_trade_goods = {
 
 owner = MVA
 controller = MVA
-capital = "Olmütz"
+capital = "OlmÃ¼tz"
 culture = czech
 religion = hussite
 trade_goods = grain 
-hre = no
+hre = yes
 base_tax = 3
 base_production = 3
 base_manpower = 2

@@ -5,7 +5,10 @@ estate_maratha = {
 
 	# If true, country will get estate
 	trigger = {
-		has_dlc = "Dharma"
+		OR = {
+			has_dlc = "Dharma"
+			has_dlc = "Winds of Change"
+		}
 		NOT = { has_government_attribute = disables_estate_maratha }
 		NOT = { has_disabled_estate = { estate = estate_maratha } }
 		OR = {
@@ -36,7 +39,7 @@ estate_maratha = {
 
 	# These scale with loyalty & power
 	country_modifier_happy = {
-		cavalry_cost = -0.1
+		cavalry_power = -0.1
 		army_tradition = 0.5
 	}
 	country_modifier_neutral = {

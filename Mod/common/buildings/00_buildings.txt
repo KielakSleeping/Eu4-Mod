@@ -50,7 +50,7 @@ marketplace = {
 			}
 			add_prosperity = 5
 		}
-		
+
 		if = {
 			limit = {
 				NOT = {
@@ -66,9 +66,6 @@ marketplace = {
 				}
 			}
 		}
-
-
-		
 	}
 	on_destroyed = {
 		bastard_dev_cost_remove_from_buildings = yes
@@ -87,17 +84,14 @@ marketplace = {
 			}
 			add_prosperity = -5
 		}
-		
 
 		if = {
-			limit = { has_province_modifier = market_places_cost_no_slot
-				}
-			remove_province_modifier = market_places_cost_no_slot
+			limit = { 
+				has_province_modifier = market_places_cost_no_slot
 			}
+			remove_province_modifier = market_places_cost_no_slot
 		}
-		
-		
-	
+	}
 
 	on_construction_started = { } #Fires when you start the construction,  ROOT - Province FROM - Country that started
 	on_construction_canceled = { } #Fires when you cancel the construction, ROOT - Province FROM - Country that canceled
@@ -151,7 +145,6 @@ temple = {
 		local_culture_conversion_cost = -0.1
 	}
 	on_built = {
-		bastard_dev_cost_add_from_buildings = yes
 		on_built_tax_building_effect = yes
 		on_province_tax_building_built_estate_privileges_effect = yes
 		add_development_from_building = {
@@ -202,8 +195,28 @@ temple = {
 				}
 			}
 		}
-
-
+		if = {
+			limit = {
+				FROM = { has_government_mechanic = blood_gathering_mechanic }
+			}
+			FROM = {
+				add_government_power = {
+					mechanic_type = blood_gathering_mechanic
+					power_type = blood
+					value = 0.5
+				}
+			}
+		}
+		if = {
+			limit = {
+				FROM = { has_country_flag = azt_temples_buffs_flag }
+			}
+			add_province_modifier = {
+				name = azt_religious_classes
+				duration = -1
+				hidden = yes
+			}
+		}
 		if = {
 			limit = {
 				NOT = {
@@ -259,15 +272,32 @@ temple = {
 				}
 			}
 		}
-
-
 		if = {
-			limit = { has_province_modifier = churches_cost_no_slot
+			limit = {
+				FROM = { has_government_mechanic = blood_gathering_mechanic }
+			}
+			FROM = {
+				add_government_power = {
+					mechanic_type = blood_gathering_mechanic
+					power_type = blood
+					value = -1
 				}
-			remove_province_modifier = churches_cost_no_slot
 			}
 		}
-	
+		if = {
+			limit = {
+				has_province_modifier = azt_religious_classes
+			}
+			remove_province_modifier = azt_religious_classes
+		}
+
+		if = {
+			limit = { 
+				has_province_modifier = churches_cost_no_slot
+			}
+			remove_province_modifier = churches_cost_no_slot
+		}
+	}
 	on_obsolete = {
 	}
 	ai_will_do = {
@@ -288,9 +318,6 @@ barracks = {
 	}
 	bonus_modifier = {
 		local_manpower = 0.25
-	}
-	bonus_manufactory = { # Will apply an extra modifier if these goods
-		livestock
 	}
 	on_built = {
 		bastard_dev_cost_add_from_buildings = yes
@@ -323,9 +350,21 @@ barracks = {
 		update_improved_military_buildings_modifier = {
 			building = barracks
 		}
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = azt_calpulli_houses_flag
+				}
+			}
+			add_province_modifier = {
+				name = azt_barracks_households
+				duration = -1
+				hidden = yes
+			}
+		}
 	}
 	on_destroyed = {
-	bastard_dev_cost_remove_from_buildings = yes
+		bastard_dev_cost_remove_from_buildings = yes
 		if = {
 			limit = {
 				FROM = {
@@ -354,6 +393,12 @@ barracks = {
 		}
 		update_improved_military_buildings_modifier = {
 			building = barracks
+		}
+		if = {
+			limit = {
+				has_province_modifier = azt_barracks_households
+			}
+			remove_province_modifier = azt_barracks_households
 		}
 	}
 	on_obsolete = {
@@ -405,7 +450,7 @@ shipyard = {
 		local_ship_repair = 0.25
 		local_ship_cost = -0.1
 		local_has_man_of_war = yes
-		local_has_galleass = yes	
+		local_has_galleass = yes
 	}
 	on_built = {
 		bastard_dev_cost_add_from_buildings = yes
@@ -525,7 +570,7 @@ fort_15th = {
 				}
 			}
 		}
-	}	
+	}
 	modifier = {
 		fort_level = 2
 	}
@@ -548,6 +593,7 @@ fort_15th = {
 				}
 			}
 		}
+
 		if = {
 			limit = {
 				FROM = { NOT = { mil_tech = 14 } has_government_attribute = on_fort_built_nobles_loyalty }
@@ -594,11 +640,79 @@ fort_15th = {
 				duration = -1
 			}
 		}
+		if = {
+			limit = {
+				FROM = {
+					has_country_flag = orm_forts_trade_power_buff_flag
+				}
+			}
+			add_province_modifier = {
+				name = orm_forts_buff
+				duration = -1
+				hidden = yes
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = ned_buffed_forts_flag
+					NOT = {
+						full_idea_group = defensive_ideas
+					}
+				}
+				region = low_countries_region
+			}
+			add_province_modifier = {
+				name = ned_low_countries_fort_buff
+				duration = -1
+				hidden = yes
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = ned_buffed_forts_flag
+					full_idea_group = defensive_ideas
+				}
+				region = low_countries_region
+			}
+			add_province_modifier = {
+				name = ned_low_countries_fort_buff_buffed
+				duration = -1
+				hidden = yes
+			}
+		}
+		if = {
+			limit = { 
+				owner = { has_country_flag = ven_defensive_reward_flag }
+				NOT = { has_province_modifier = ven_defensive_stance_modifier } 
+			}
+			add_province_modifier = {
+				name = ven_defensive_stance_modifier
+				duration = -1
+				hidden = yes
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+					has_estate_privilege = estate_nobles_vegvar_system
+				}
+				any_neighbor_province = {
+					NOT = { owned_by = ROOT }
+				}
+			}
+			add_province_modifier = {
+				name = estate_nobles_vegvar_system_modifier
+				duration = -1
+			}
+		}
 	}
 
 	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
 	on_destroyed = {
 		bastard_dev_cost_remove_from_buildings = yes
+
 		if = {
 			limit = {
 				has_province_modifier = scorched_earth
@@ -607,19 +721,49 @@ fort_15th = {
 				remove_province_modifier = scorched_earth
 			}
 		}
+
+		if = {
+			limit = {
+				has_province_modifier = estate_nobles_vegvar_system_modifier
+			}
+			remove_province_modifier = estate_nobles_vegvar_system_modifier
+		}
 		if = {
 			limit = {
 				has_province_modifier = estate_nobles_development_of_castles_mod
 			}
 			remove_province_modifier = estate_nobles_development_of_castles_mod
 		}
+		if = {
+			limit = {
+				has_province_modifier = ven_defensive_stance_modifier
+			}
+			remove_province_modifier = ven_defensive_stance_modifier
+		}
+		if = {
+			limit = {
+				has_province_modifier = orm_forts_buff
+			}
+			remove_province_modifier = orm_forts_buff
+		}
+		if = {
+			limit = {
+				has_province_modifier = ned_low_countries_fort_buff
+			}
+			remove_province_modifier = ned_low_countries_fort_buff
+		}
+		if = {
+			limit = {
+				has_province_modifier = ned_low_countries_fort_buff_buffed
+			}
+			remove_province_modifier = ned_low_countries_fort_buff_buffed
+		}
 	}
 
 	# THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
 	on_obsolete = {
 	}
-	
-	
+
 	onmap = yes
 	influencing_fort = yes
 
@@ -627,7 +771,6 @@ fort_15th = {
 		factor = 1 #Lots of logic in code instead, that multiplies with this value
 	}
 }
-
 
 coastal_defence = {
 
@@ -641,12 +784,15 @@ coastal_defence = {
 		hostile_disembark_speed = 1.0
 		block_slave_raid = yes
 	}
+
 	on_built = {
 		bastard_dev_cost_add_from_buildings = yes
 	}
+
 	on_destroyed = {
 		bastard_dev_cost_remove_from_buildings = yes
 	}
+
 	ai_will_do = {
 		factor = 0
 	}
@@ -666,7 +812,6 @@ courthouse = {
 		local_governing_cost_increase = -5
 		local_friendly_movement_speed = 0.1
 		allowed_num_of_buildings = 1
-		#local_development_cost = -0.05
 	}
 	on_built = {
 		bastard_dev_cost_terrain_add_from_buildings = yes
@@ -701,6 +846,7 @@ courthouse = {
 
 	ai_will_do = {
 		factor = 250
+		
 	}
 }
 
@@ -771,10 +917,11 @@ dock = {
 		}
 
 		if = {
-			limit = { has_province_modifier = docks_cost_no_slot
-				}
-			remove_province_modifier = docks_cost_no_slot
+			limit = { 
+				has_province_modifier = docks_cost_no_slot
 			}
+			remove_province_modifier = docks_cost_no_slot
+		}
 	}
 	on_obsolete = {
 	}
@@ -786,6 +933,7 @@ dock = {
 			base_manpower = 6	
 			is_state = yes
 		}
+		
 	}
 }
 
@@ -794,7 +942,6 @@ regimental_camp = {
 	time = 12
 	modifier = {
 		land_forcelimit = 0.75
-		
 	}
 	bonus_modifier = {
 		land_forcelimit = 0.25
@@ -802,6 +949,29 @@ regimental_camp = {
 	bonus_manufactory = { # Will apply an extra modifier if these goods
 		grain
 	}
+
+#	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
+#	on_built = {
+#		FROM = {
+#			add_army_professionalism = 0.005
+#		}
+#	}
+#
+#	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
+#	on_destroyed = {
+#		FROM = {
+#			add_army_professionalism = -0.01
+#		}
+#	}
+#
+#	# THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
+#	on_obsolete = {
+#		hidden_effect = {
+#			FROM = {
+#				add_army_professionalism = -0.005
+#			}
+#		}
+#	}
 	on_built = {
 		bastard_dev_cost_add_from_buildings = yes
 		add_development_from_building = {
@@ -823,9 +993,21 @@ regimental_camp = {
 				add_army_professionalism = 0.001
 			}
 		}
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = azt_calpulli_houses_flag
+				}
+			}
+			add_province_modifier = {
+				name = azt_conscription_households
+				duration = -1
+				hidden = yes
+			}
+		}
 	}
 	on_destroyed = {
-	bastard_dev_cost_remove_from_buildings = yes
+		bastard_dev_cost_remove_from_buildings = yes
 		remove_development_from_building = {
 			building = regimental_camp
 			type = manpower
@@ -845,6 +1027,12 @@ regimental_camp = {
 				add_army_professionalism = -0.001
 			}
 		}
+		if = {
+			limit = {
+				has_province_modifier = azt_conscription_households
+			}
+			remove_province_modifier = azt_conscription_households
+		}
 	}
 	on_obsolete = {
 	}
@@ -852,9 +1040,10 @@ regimental_camp = {
 	ai_will_do = {
 		factor = 250
 		modifier = {
-			factor = 1 # Little above build cost
+			factor = 1 # more likely if we have an army close to the force limit
 			FROM = { army_size_percentage = 0.95 }
 		}
+		
 	}
 }
 
@@ -949,6 +1138,7 @@ fort_16th = {
 	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
 	on_built = {
 		bastard_dev_cost_add_from_buildings = yes
+
 		if = {
 			limit = {
 				NOT = {
@@ -963,6 +1153,7 @@ fort_16th = {
 				}
 			}
 		}
+
 		if = {
 			limit = {
 				FROM = { NOT = { mil_tech = 19 } has_government_attribute = on_fort_built_nobles_loyalty }
@@ -1009,11 +1200,56 @@ fort_16th = {
 				duration = -1
 			}
 		}
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = ned_buffed_forts_flag
+					NOT = {
+						full_idea_group = defensive_ideas
+					}
+				}
+				region = low_countries_region
+			}
+			add_province_modifier = {
+				name = ned_low_countries_fort_buff
+				duration = -1
+				hidden = yes
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = ned_buffed_forts_flag
+					full_idea_group = defensive_ideas
+				}
+				region = low_countries_region
+			}
+			add_province_modifier = {
+				name = ned_low_countries_fort_buff_buffed
+				duration = -1
+				hidden = yes
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+					has_estate_privilege = estate_nobles_vegvar_system
+				}
+				any_neighbor_province = {
+					NOT = { owned_by = ROOT }
+				}
+			}
+			add_province_modifier = {
+				name = estate_nobles_vegvar_system_modifier
+				duration = -1
+			}
+		}
 	}
 
 	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
 	on_destroyed = {
 		bastard_dev_cost_remove_from_buildings = yes
+
 		if = {
 			limit = {
 				has_province_modifier = scorched_earth
@@ -1022,11 +1258,30 @@ fort_16th = {
 				remove_province_modifier = scorched_earth
 			}
 		}
+
+		if = {
+			limit = {
+				has_province_modifier = estate_nobles_vegvar_system_modifier
+			}
+			remove_province_modifier = estate_nobles_vegvar_system_modifier
+		}
 		if = {
 			limit = {
 				has_province_modifier = estate_nobles_development_of_castles_mod
 			}
 			remove_province_modifier = estate_nobles_development_of_castles_mod
+		}
+		if = {
+			limit = {
+				has_province_modifier = ned_low_countries_fort_buff
+			}
+			remove_province_modifier = ned_low_countries_fort_buff
+		}
+		if = {
+			limit = {
+				has_province_modifier = ned_low_countries_fort_buff_buffed
+			}
+			remove_province_modifier = ned_low_countries_fort_buff_buffed
 		}
 	}
 
@@ -1135,6 +1390,18 @@ cathedral = {
 				}
 			}
 		}
+		if = {
+			limit = {
+				FROM = { has_government_mechanic = blood_gathering_mechanic }
+			}
+			FROM = {
+				add_government_power = {
+					mechanic_type = blood_gathering_mechanic
+					power_type = blood
+					value = 0.5
+				}
+			}
+		}
 
 		if = {
 			limit = {
@@ -1150,6 +1417,14 @@ cathedral = {
 					duration = -1
 				}
 			}
+		}
+
+
+
+		add_province_modifier = {
+			name = azt_religious_classes
+			duration = -1
+			hidden = yes
 		}
 	}
 	on_destroyed = {
@@ -1191,12 +1466,31 @@ cathedral = {
 				}
 			}
 		}
+		if = {
+			limit = {
+				FROM = { has_government_mechanic = blood_gathering_mechanic }
+			}
+			FROM = {
+				add_government_power = {
+					mechanic_type = blood_gathering_mechanic
+					power_type = blood
+					value = -1
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_province_modifier = azt_religious_classes
+			}
+			remove_province_modifier = azt_religious_classes
+		}
 
 		if = {
-			limit = { has_province_modifier = churches_cost_no_slot
-				}
-			remove_province_modifier = churches_cost_no_slot
+			limit = { 
+				has_province_modifier = churches_cost_no_slot
 			}
+			remove_province_modifier = churches_cost_no_slot
+		}
 	}
 	on_obsolete = {
 	}
@@ -1216,7 +1510,7 @@ university = {
 	cost = 150
 	time = 12
 	modifier = {
-		local_development_cost = -0.1
+		local_development_cost = -0.10
 		allowed_num_of_buildings = 1
 	}
 
@@ -1326,7 +1620,6 @@ trade_depot = {
 			upgrade_value = 1
 		}
 
-
 		if = {
 			limit = {
 				NOT = {
@@ -1352,10 +1645,11 @@ trade_depot = {
 		}
 
 		if = {
-			limit = { has_province_modifier = market_places_cost_no_slot
-				}
-			remove_province_modifier = market_places_cost_no_slot
+			limit = { 
+				has_province_modifier = market_places_cost_no_slot
 			}
+			remove_province_modifier = market_places_cost_no_slot
+		}
 	}
 	on_obsolete = {
 	}
@@ -1376,9 +1670,9 @@ grand_shipyard = {
 	}
 	modifier = {
 		naval_forcelimit = 4
-		ship_recruit_speed = -0.5
-		local_ship_repair = 0.5
-		local_ship_cost = -0.2
+		ship_recruit_speed = -0.50
+		local_ship_repair = 0.50
+		local_ship_cost = -0.20
 		local_has_man_of_war = yes
 		local_has_galleass = yes
 		local_sailors_modifier = 2
@@ -1460,6 +1754,7 @@ training_fields = {
 	bonus_manufactory = { # Will apply an extra modifier if these goods
 		livestock
 	}
+	
 	on_built = {
 		bastard_dev_cost_add_from_buildings = yes
 		if = {
@@ -1493,6 +1788,18 @@ training_fields = {
 				add_army_professionalism = 0.001
 			}
 		}
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = azt_calpulli_houses_flag
+				}
+			}
+			add_province_modifier = {
+				name = azt_barracks_households
+				duration = -1
+				hidden = yes
+			}
+		}
 	}
 	on_destroyed = {
 		bastard_dev_cost_remove_from_buildings = yes
@@ -1524,6 +1831,12 @@ training_fields = {
 			building = training_fields
 			type = manpower
 			value = 2
+		}
+		if = {
+			limit = {
+				has_province_modifier = azt_barracks_households
+			}
+			remove_province_modifier = azt_barracks_households
 		}
 	}
 	on_obsolete = {
@@ -1623,6 +1936,7 @@ fort_17th = {
 			}
 		}
 	}
+
 	make_obsolete = fort_16th
 
 	modifier = {
@@ -1632,6 +1946,7 @@ fort_17th = {
 	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
 	on_built = {
 		bastard_dev_cost_add_from_buildings = yes
+
 		if = {
 			limit = {
 				NOT = {
@@ -1646,6 +1961,7 @@ fort_17th = {
 				}
 			}
 		}
+
 		if = {
 			limit = {
 				FROM = { NOT = { mil_tech = 19 } has_government_attribute = on_fort_built_nobles_loyalty }
@@ -1692,11 +2008,56 @@ fort_17th = {
 				duration = -1
 			}
 		}
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = ned_buffed_forts_flag
+					NOT = {
+						full_idea_group = defensive_ideas
+					}
+				}
+				region = low_countries_region
+			}
+			add_province_modifier = {
+				name = ned_low_countries_fort_buff
+				duration = -1
+				hidden = yes
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = ned_buffed_forts_flag
+					full_idea_group = defensive_ideas
+				}
+				region = low_countries_region
+			}
+			add_province_modifier = {
+				name = ned_low_countries_fort_buff_buffed
+				duration = -1
+				hidden = yes
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+					has_estate_privilege = estate_nobles_vegvar_system
+				}
+				any_neighbor_province = {
+					NOT = { owned_by = ROOT }
+				}
+			}
+			add_province_modifier = {
+				name = estate_nobles_vegvar_system_modifier
+				duration = -1
+			}
+		}
 	}
 
 	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
 	on_destroyed = {
 		bastard_dev_cost_remove_from_buildings = yes
+
 		if = {
 			limit = {
 				has_province_modifier = scorched_earth
@@ -1705,12 +2066,32 @@ fort_17th = {
 				remove_province_modifier = scorched_earth
 			}
 		}
+
+		if = {
+			limit = {
+				has_province_modifier = estate_nobles_vegvar_system_modifier
+			}
+			remove_province_modifier = estate_nobles_vegvar_system_modifier
+		}
 		if = {
 			limit = {
 				has_province_modifier = estate_nobles_development_of_castles_mod
 			}
 			remove_province_modifier = estate_nobles_development_of_castles_mod
 		}
+		if = {
+			limit = {
+				has_province_modifier = ned_low_countries_fort_buff
+			}
+			remove_province_modifier = ned_low_countries_fort_buff
+		}
+		if = {
+			limit = {
+				has_province_modifier = ned_low_countries_fort_buff_buffed
+			}
+			remove_province_modifier = ned_low_countries_fort_buff_buffed
+		}
+		
 	}
 
 	# THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
@@ -1800,10 +2181,11 @@ stock_exchange = {
 		}
 
 		if = {
-			limit = { has_province_modifier = market_places_cost_no_slot
-				}
-			remove_province_modifier = market_places_cost_no_slot
+			limit = { 
+				has_province_modifier = market_places_cost_no_slot
 			}
+			remove_province_modifier = market_places_cost_no_slot
+		}
 	}
 	on_obsolete = {
 	}
@@ -1866,8 +2248,8 @@ town_hall = {
 		allowed_num_of_buildings = 1
 		local_friendly_movement_speed = 0.2
 		local_governing_cost_increase = -10
-		#local_development_cost = -0.05
-		}
+	}
+
 	on_built = {
 		bastard_dev_cost_add_from_buildings = yes
 		bastard_dev_cost_terrain_add_from_buildings = yes
@@ -2003,7 +2385,6 @@ drydock = {
 			upgrade_value = 1
 		}
 
-
 		if = {
 			limit = {
 				NOT = {
@@ -2019,6 +2400,7 @@ drydock = {
 				}
 			}
 		}
+
 	}
 	
 	on_destroyed = {
@@ -2040,20 +2422,12 @@ drydock = {
 		}
 
 		if = {
-			limit = {
-				NOT = {
-					has_province_modifier = docks_cost_no_slot
-				}
-				owner = { has_idea = free_trade }
-				
+			limit = { 
+				has_province_modifier = docks_cost_no_slot
 			}
-			hidden_effect = {
-				add_province_modifier = {
-					name = "docks_cost_no_slot"
-					duration = -1
-				}
-			}
+			remove_province_modifier = docks_cost_no_slot
 		}
+
 	}
 	on_obsolete = {
 	}
@@ -2103,6 +2477,7 @@ conscription_center = {
 	bonus_manufactory = { # Will apply an extra modifier if these goods
 		grain
 	}
+
 	on_built = {
 		bastard_dev_cost_add_from_buildings = yes
 		add_development_from_upgrading_or_building = {
@@ -2124,6 +2499,18 @@ conscription_center = {
 			}
 			FROM = {
 				add_army_professionalism = 0.001
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = azt_calpulli_houses_flag
+				}
+			}
+			add_province_modifier = {
+				name = azt_conscription_households
+				duration = -1
+				hidden = yes
 			}
 		}
 	}
@@ -2148,6 +2535,12 @@ conscription_center = {
 				add_army_professionalism = -0.001
 			}
 		}
+		if = {
+			limit = {
+				has_province_modifier = azt_conscription_households
+			}
+			remove_province_modifier = azt_conscription_households
+		}
 	}
 	on_obsolete = {
 	}
@@ -2170,6 +2563,7 @@ conscription_center = {
 fort_18th = {
 	cost = 800
 	time = 30
+
 	build_trigger = {
 		OR = {
 			is_capital = yes
@@ -2251,6 +2645,7 @@ fort_18th = {
 		}
 	}
 
+
 	make_obsolete = fort_17th
 
 	modifier = {
@@ -2320,6 +2715,50 @@ fort_18th = {
 				duration = -1
 			}
 		}
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = ned_buffed_forts_flag
+					NOT = {
+						full_idea_group = defensive_ideas
+					}
+				}
+				region = low_countries_region
+			}
+			add_province_modifier = {
+				name = ned_low_countries_fort_buff
+				duration = -1
+				hidden = yes
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = ned_buffed_forts_flag
+					full_idea_group = defensive_ideas
+				}
+				region = low_countries_region
+			}
+			add_province_modifier = {
+				name = ned_low_countries_fort_buff_buffed
+				duration = -1
+				hidden = yes
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+					has_estate_privilege = estate_nobles_vegvar_system
+				}
+				any_neighbor_province = {
+					NOT = { owned_by = ROOT }
+				}
+			}
+			add_province_modifier = {
+				name = estate_nobles_vegvar_system_modifier
+				duration = -1
+			}
+		}
 	}
 
 	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
@@ -2335,9 +2774,27 @@ fort_18th = {
 		}
 		if = {
 			limit = {
+				has_province_modifier = estate_nobles_vegvar_system_modifier
+			}
+			remove_province_modifier = estate_nobles_vegvar_system_modifier
+		}
+		if = {
+			limit = {
 				has_province_modifier = estate_nobles_development_of_castles_mod
 			}
 			remove_province_modifier = estate_nobles_development_of_castles_mod
+		}
+		if = {
+			limit = {
+				has_province_modifier = ned_low_countries_fort_buff
+			}
+			remove_province_modifier = ned_low_countries_fort_buff
+		}
+		if = {
+			limit = {
+				has_province_modifier = ned_low_countries_fort_buff_buffed
+			}
+			remove_province_modifier = ned_low_countries_fort_buff_buffed
 		}
 	}
 
@@ -2363,7 +2820,7 @@ manufactory = {
 	time = 60
 	modifier = {
 		trade_goods_size = 0.8
-	}	
+	}
 }
 
 #If trade good assignment changes, also update scripted trigger "has_manufactory trigger"!
@@ -2672,7 +3129,7 @@ mills = {
 	}
 	onmap = yes
 	on_built = {
-	bastard_dev_cost_add_from_buildings = yes
+		bastard_dev_cost_add_from_buildings = yes
 		add_development_from_building = {
 			building = manufactory
 			type = production
@@ -2751,6 +3208,7 @@ ramparts = {
 		local_defensiveness = 0.15
 		local_defender_dice_roll_bonus = 1
 	}
+
 	build_trigger = {
 		NOT = {
 			region_for_scope_province = {
@@ -2779,8 +3237,12 @@ ramparts = {
 			}
 		}
 		NOT = {has_terrain = mountain }
-	}	
-		on_built = {
+	}
+
+	onmap = no
+	show_separate = yes # Means as a manufactory it will be shown according to the old way
+	
+	on_built = {
 		bastard_dev_cost_add_from_buildings = yes
 		add_dev_from_building = {
 			building = manufactory 
@@ -2800,8 +3262,9 @@ ramparts = {
 			}
 		}
 	}
-		on_destroyed = {
-			bastard_dev_cost_remove_from_buildings = yes
+	
+	on_destroyed = {
+		bastard_dev_cost_remove_from_buildings = yes
 		if = {
 			limit = { has_province_modifier = per_reinforced_defenses }
 			remove_province_modifier = per_reinforced_defenses
@@ -2818,10 +3281,9 @@ ramparts = {
 			remove_province_modifier = estate_nobles_development_of_castles_ramparts_mod
 		}
 	}
-	onmap = no
-	show_separate = yes # Means as a manufactory it will be shown according to the old way
 	ai_will_do = {
 		factor = 0
+		
 	}
 }
 
@@ -2829,6 +3291,7 @@ soldier_households = {
 	manufactory = {
 		all
 	}
+
 	bonus_manufactory = { # Will apply an extra modifier if these goods
 		grain
 		fish
@@ -2952,9 +3415,8 @@ impressment_offices = {
 
 
 state_house = {
-		cost = 500
-		time = 60
-
+	cost = 500
+	time = 60
 
 	build_trigger = {
 		NOT = {
@@ -2988,6 +3450,7 @@ state_house = {
 	modifier = {
 		local_tax_modifier = 1
 	}
+	
 	onmap = no
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
 	on_built = {
@@ -3018,6 +3481,7 @@ state_house = {
 		}
 	}
 }
+
 armory = {
 	cost = 500
 	time = 60
@@ -3031,6 +3495,7 @@ armory = {
 				has_forcelimit_building_trigger = yes
 				development = 30
 				is_prosperous = yes
+				base_manpower = 10
 			}
 	}
 	

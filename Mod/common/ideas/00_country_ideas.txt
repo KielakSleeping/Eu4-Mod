@@ -12728,46 +12728,6 @@ CHR_ideas = {
 	}
 }
 
-# Ilkhanate
-ILK_ideas = {
-	start = {
-		cavalry_power = 0.2
-		cavalry_cost = -0.15
-	}
-	bonus = {
-		cavalry_flanking = 0.5
-	}
-	trigger = {
-		tag = ILK
-	}
-	free = yes
-	ilk_restored_ilkhanate = {
-		legitimacy = 1
-		devotion = 1
-		republican_tradition = 0.3
-		meritocracy = 1
-		horde_unity = 1
-	}
-	ilk_favor_sufism = {
-		tolerance_heretic = 2
-	}
-	ilk_persian_language_at_court = {
-		num_accepted_cultures = 1
-	}
-	ilk_yam_networks = {
-		movement_speed = 0.1
-		envoy_travel_time = -0.25
-	}
-	ilk_mongol_peace = {
-		years_of_nationalism = -5
-	}
-	ilk_patronize_observatories = {
-		technology_cost = -0.05
-	}
-	ilk_recruit_turkoman_gunners = {
-		fire_damage = 0.1
-	}
-}
 
 SYN_ideas = {
 	start = {

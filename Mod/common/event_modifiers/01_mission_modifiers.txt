@@ -174,7 +174,7 @@ convert_the_steppes = {
 }
 
 baltic_ambition_new = {
-	trade_efficiency = 0.1
+	trade_efficiency = 0.10
 	global_ship_recruit_speed = -0.25
 }
 
@@ -932,6 +932,10 @@ dan_colonial_ambitions_mod = {
 	colonists = 1
 }
 
+dan_estonian_culture_accepted = {	#Lasts until Estonian is no longer accepted
+	num_accepted_cultures = 1
+}
+
 dan_new_world_expansion = {
 	global_colonial_growth = 20
 }
@@ -940,10 +944,6 @@ dan_humiliated_the_hanse = {
 	trade_efficiency = 0.2
 	global_trade_power = 0.2
 	trade_steering = 0.1
-}
-
-dan_estonian_culture_accepted = {	#Lasts until Estonian is no longer accepted
-	num_accepted_cultures = 1
 }
 
 dan_control_over_the_english_channel = {	#Permanent
@@ -1966,6 +1966,7 @@ eng_the_man_of_war = {	#Permanent
 
 eng_strict_marines = {	#Permanent
 	discipline = 0.05
+	#shock_damage_received = -0.1
 	is_marine_modifier = yes
 }
 
@@ -2688,7 +2689,7 @@ rus_artist_focus = {
 }
 rus_treasurer_focus = {
 	global_tax_income = 24
-	advisor_cost = -0.1
+	advisor_cost = -0.10
 }
 rus_theologian_focus = {
 	tolerance_own = 2
@@ -4820,7 +4821,8 @@ hun_hungary_poland = {
 }
 
 hun_supreme_black_army = {
-	mercenary_discipline = 0.025
+	#mercenary_discipline = 0.05
+	province_warscore_cost = -0.125
 	core_creation = -0.15
 }
 
@@ -4969,6 +4971,7 @@ hab_ascendancy_in_empire = {
 
 hab_empire_united_in_religion_mod_catholic = {
 	papal_influence = 1
+	tolerance_own = 1
 }
 
 hab_empire_united_in_religion_mod_protestant = {
@@ -4985,6 +4988,7 @@ hab_empire_united_in_religion_mod_generic = {
 
 hab_empire_has_rome = {
 	imperial_authority_value = 0.1
+	global_missionary_strength = 0.02
 }
 
 hab_prosperity_windfall = {
@@ -5418,6 +5422,7 @@ lan_secure_public_funds = {
 
 lan_medici_banking = {
 	state_maintenance_modifier = -0.2
+	#interest = -0.5
 }
 
 lan_arno_flood_controls = {
@@ -7683,7 +7688,7 @@ pol_facing_the_catholics_modifier = {
 }
 pol_reformed_education_system_modifier = {
 	expand_administration_cost = -0.25
-	advisor_cost = -0.10
+	advisor_cost = -0.10 
 }
 pol_incentives_modifier = {
 	innovativeness_gain = 0.25 
@@ -8047,7 +8052,7 @@ hsa_republican_modus_operandi_modifier = {
 	reform_progress_growth = 0.1 
 }
 hsa_holstentor_burgtor_modifier = {
-	local_defensiveness = 1 
+	local_defensiveness = 1
 }
 hsa_theory_of_mercantilism_modifier = {
 	mercantilism_cost = -0.1 
@@ -9034,7 +9039,7 @@ fra_resurgence_of_crusader_fervor_modifier = {
 	manpower_in_true_faith_provinces = 0.1
 }
 fra_italian_wars_modifier = { 
-	siege_ability = 0.1
+	siege_ability = 0.1 
 }
 fra_kingdom_sea_modifier = {
 	trade_efficiency = 0.1
@@ -9362,8 +9367,8 @@ fra_toulon_dockyards_modifier = {
 }
 
 fra_musketeers_modifier = {
+	has_musketeer = yes 
 	allowed_musketeer_fraction = 0.15
-	has_musketeer = yes
 }
 
 fra_catholic_supremacy_modifier = {	
@@ -9816,7 +9821,7 @@ pru_expanded_the_western_domains_modifier = {
 }
 
 pru_thunderous_advance_modifier = {
-	movement_speed = 0.1
+	movement_speed = 0.1 
 }
 
 pru_oblique_order_modifier = {
@@ -10445,6 +10450,7 @@ turkoman_heal_internal_divisions = {
 }
 
 turkoman_sons_of_conquerors = {
+	#cav_to_inf_ratio = 0.25
 	cavalry_shock = 0.25
 }
 
@@ -11354,6 +11360,7 @@ YEM_ashrafiya_mosque = {
 
 YEM_peaceful_investments = {
 	global_prosperity_growth = 1
+	build_cost = -0.05
 }
 
 YEM_city_of_prosperity = {
@@ -12041,10 +12048,10 @@ hsn_suez_canal_dlcless = {
 	global_trade_power = 0.1
 }
 
-hsn_suez_canal = {
-	local_great_project_upgrade_cost = -0.25
-	monthly_splendor = 2
-}
+# hsn_suez_canal = {
+# 	local_great_project_upgrade_cost = -0.25
+# 	monthly_splendor = 2
+# }
 
 hsn_suez_canal_leviathanless = {
 	local_great_project_upgrade_cost = -0.25
@@ -12148,15 +12155,17 @@ orm_far_east_company = {
 	trade_steering = 0.05
 }
 
-orm_arabian_indian_ocean_supremacy = {
-    trade_company_investment_cost = -0.25
-    trade_steering = 0.15
+orm_arabian_indian_ocean_supremacy = {	
+	merchants = 1    
+	trade_company_investment_cost = -0.25   
+	trade_steering = 0.15 
 }
 
-orm_arabian_indian_ocean_supremacy_no_dlc = {
-    trade_efficiency = 0.1
-    trade_steering = 0.15
-}
+orm_arabian_indian_ocean_supremacy_no_dlc = {	
+	merchants = 1    
+	trade_efficiency = 0.1    
+	trade_steering = 0.15 
+} 
 
 orm_wiped_out_ibadi_sect = {
     tolerance_own = 2
@@ -12299,6 +12308,7 @@ ITA_integration_with_southern_france = {
 }
 
 ITA_unity = {
+	#local_development_cost = -0.1
 	local_prosperity_growth = 0.33
 	trade_goods_size_modifier = 0.10
 }
@@ -12361,9 +12371,9 @@ ITA_adapt_the_condotierri = {
 }
 
 ITA_modern_military = {
-	fire_damage = 0.15
+	fire_damage = 0.10
 	shock_damage = 0.10
-	shock_damage_received = -0.10
+	shock_damage_received = -0.5
 }
 
 ITA_diplomatic_revolution_weaker = {
@@ -12806,6 +12816,7 @@ ned_found_dutch_states_army = {
 
 ned_empowered_staatse_leger = {
 	drill_gain_modifier = 0.15
+	#discipline = 0.025
 }
 
 ned_low_countries_fort_buff = {
@@ -12839,13 +12850,14 @@ ned_reclamation_of_coast = {
 }
 
 ned_dutch_urbanization = {
-	trade_goods_size_modifier = 0.05
+	trade_goods_size_modifier = 0.1
+	local_governing_cost = -0.1
 	local_build_cost = -0.1
 }
 
 ned_flemish_urbanization = {
-	trade_goods_size_modifier = 0.15
-	local_governing_cost = -0.2
+	trade_goods_size_modifier = 0.05
+	#local_governing_cost = -0.2
 	local_build_cost = -0.2
 }
 
@@ -13048,7 +13060,10 @@ hun_expanding_the_order = {
 }
 
 hun_black_legion = {
-	merc_leader_army_tradition = 0.25
+	infantry_power = 0.025
+	cavalry_power = 0.025
+	land_morale = 0.05
+	#merc_leader_army_tradition = 0.25
 }
 
 estate_burghers_hungarian_royal_city_modifier = {
@@ -13959,7 +13974,7 @@ hordes_return_of_the_mongols_2 = {
 }
 
 hordes_fall_of_hindustan = {
-	core_creation = -0.1
+	core_creation = -0.20
 	cavalry_power = 0.1
 }
 
@@ -14056,12 +14071,14 @@ hordes_unity_of_faith = {
 }
 
 mongol_brother_realm_modifier = {
-	land_forcelimit_modifier = -0.15
-	global_manpower_modifier = -0.2
+	#land_forcelimit_modifier = -0.15
+	#global_manpower_modifier = -0.2
+
 }
 
 hordes_brother_realm_cavalry_buff = {
 	cavalry_power = 0.1
+	available_province_loot = 1
 }
 
 oir_execution_of_the_emperor = {
@@ -14598,7 +14615,7 @@ MUG_friends_in_high_places = {
 }
 
 MUG_gunpowder_mastery = {
-	fire_damage = 0.1
+	fire_damage = 0.10
 	artillery_power = 0.1
 }
 

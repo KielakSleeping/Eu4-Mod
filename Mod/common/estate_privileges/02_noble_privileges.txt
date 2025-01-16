@@ -3,7 +3,7 @@ estate_nobles_land_rights = {
 	land_share = 5
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
-	
+	#loyalty = 0.05
 	influence = 0.05
 	can_select = {
 		not = { has_estate_privilege = estate_ghulams_land_rights }
@@ -27,17 +27,20 @@ estate_nobles_land_rights = {
 		}
 	}
 
+
 	benefits = {
 		governing_capacity = 100
+	}
+	conditional_modifier = {
+		trigger = { has_country_flag = ned_land_rights_buff_flag }
+		modifier = {
+			governing_capacity = 20
+		}
 	}
 	conditional_modifier = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.05 }
 	}
-	#conditional_modifier = {
-	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
-	#	modifier = { monthly_ottoman_decadence = 0.02 }
-	#}
 	ai_will_do = {
 		factor = 5
 		modifier = {
@@ -236,10 +239,14 @@ estate_nobles_nobility_primacy = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.05 }
 	}
-	#conditional_modifier = {
-	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
-	#	modifier = { monthly_ottoman_decadence = 0.02 }
-	#}
+	conditional_modifier = {
+		trigger = { has_country_flag = GER_upgrade_primacy_of_the_nobility_flag }
+		modifier = { mil_tech_cost_modifier = -0.05 }
+	}
+	conditional_modifier = {
+		trigger = { has_country_flag = azt_imperial_tributes_flag }
+		modifier = { monarch_power_tribute = 1 }
+	}
 	ai_will_do = {
 		factor = 100
 		modifier = {
@@ -289,10 +296,26 @@ estate_nobles_officer_corp = {
 		NOT = { has_estate = estate_qizilbash }
 	}
 	can_select = {
-		army_tradition = 30
+		if = {
+			limit = {
+				NOT = { has_country_flag = azt_free_officer_corp_flag }
+			}
+			army_tradition = 30
+		}
 	}
 	on_granted = {
-		add_army_tradition = -5
+		if = {
+			limit = {
+				NOT = { has_country_flag = azt_free_officer_corp_flag }
+			}
+			add_army_tradition = -5
+		}
+		if = {
+			limit = {
+				has_country_flag = hab_military_reform_flag
+			}
+			custom_tooltip = HAB_WHEN_AT_WAR_GRANT_MORALE
+		}
 	}
 	penalties = {
 	}
@@ -300,14 +323,36 @@ estate_nobles_officer_corp = {
 		general_cost = -0.1
 		army_tradition_decay = -0.005
 	}
+	# conditional_modifier = {
+	# 	trigger = { 
+	# 		NOT = { has_country_flag = TIM_upgrade_amirs_in_officer_corps_mission_flag }
+	# 	}
+	# 	modifier = {
+	# 		general_cost = -0.05
+	# 	}
+	# }
+	# conditional_modifier = {
+	# 	trigger = { has_country_flag = TIM_upgrade_amirs_in_officer_corps_mission_flag }
+	# 	modifier = {
+	# 		general_cost = -0.1
+	# 		movement_speed = 0.05
+	# 	}
+	# }
+	# conditional_modifier = {
+	# 	trigger = { has_government_mechanic = russian_modernization_mechanic }
+	# 	modifier = { monthly_russian_modernization = -0.05 }
+	# }
+	# conditional_modifier = {
+	# 	trigger = { has_country_flag = feo_buff_nobility_officer_corp_flag }
+	# 	modifier = { global_regiment_cost = -0.1 }
+	# }
 	conditional_modifier = {
-		trigger = { has_government_mechanic = russian_modernization_mechanic }
-		modifier = { monthly_russian_modernization = -0.05 }
+		trigger = { 
+			has_country_flag = hab_military_reform_flag
+			is_at_war = yes 
+		}
+		modifier = { land_morale = 0.1 }
 	}
-	#conditional_modifier = {
-	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
-	#	modifier = { monthly_ottoman_decadence = 0.02 }
-	#}
 	ai_will_do = {
 		factor = 0
 	}
@@ -318,7 +363,7 @@ estate_nobles_levies = {
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes NOT = { has_government_attribute = free_noble_levies } } modifier = { max_absolutism = 1 } }
 	influence = 0.1
-	
+	#loyalty = 0.1
 	is_valid = {
 		NOT = { has_estate_privilege = estate_nobles_golden_liberty }
 		NOT = { has_estate = estate_ghulams }
@@ -338,9 +383,31 @@ estate_nobles_levies = {
 			NOT = { has_estate_privilege = estate_maratha_levies_for_muslims }
 		}
 	}
+	on_granted = {
+		if = {
+			limit = { has_country_flag = azt_noble_levies_loyalty_buff_flag }
+			custom_tooltip = azt_estate_nobles_levies_scaled_modifier_tt
+		}
+	} 
 	modifier_by_land_ownership = {
 		global_tax_modifier = -0.10
 		global_manpower_modifier = 0.5
+	}
+	influence_scaled_conditional_modifier = {
+		trigger = {
+			has_country_flag = azt_buff_noble_levies_flag
+		}
+		modifier = {
+			global_regiment_cost = -0.1
+		}
+	}
+	loyalty_scaled_conditional_modifier = {
+		trigger = {
+			has_country_flag = azt_noble_levies_loyalty_buff_flag
+		}
+		modifier = {
+			global_manpower_modifier = 0.15
+		}
 	}
 	penalties = {
 	}
@@ -360,10 +427,6 @@ estate_nobles_levies = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.05 }
 	}
-	#conditional_modifier = {
-	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
-	#	modifier = { monthly_ottoman_decadence = 0.02 }
-	#}
 	ai_will_do = {
 		factor = 5
 		modifier = {
@@ -430,7 +493,7 @@ estate_nobles_advisors = {
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	influence = 0.05
-	
+	#loyalty = 0.05
 	penalties = {
 		stability_cost_modifier = 0.1
 	}
@@ -448,10 +511,6 @@ estate_nobles_advisors = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.05 }
 	}
-	#conditional_modifier = {
-	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
-	#	modifier = { monthly_ottoman_decadence = 0.02 }
-	#}
 	ai_will_do = {
 		factor = 9
 		modifier = {
@@ -469,18 +528,16 @@ estate_nobles_right_of_counsel = {
 	icon = privilege_royal_authority
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
-	is_valid = {
-		has_dlc = "Domination"
+	#loyalty = 0.1
+	influence = 0.1
+	penalties = {
+		cavalry_cost = 0.1
 	}
 	can_select = {
 	}
-	influence = 0.1
 	benefits = {
 		cav_to_inf_ratio = 0.15
 		cavalry_power = 0.05
-	}
-	penalties = {
-		cavalry_cost = 0.1
 	}
 	on_granted = {
 		enable_estate_action = {
@@ -501,10 +558,6 @@ estate_nobles_right_of_counsel = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.05 }
 	}
-	#conditional_modifier = {
-	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
-	#	modifier = { monthly_ottoman_decadence = 0.02 }
-	#}
 	ai_will_do = {
 		factor = 0
 		modifier = {
@@ -518,8 +571,9 @@ estate_nobles_french_strong_duchies = {
 	icon = privilege_french_strong_duchies
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
-	
+	#loyalty = 0.1
 	influence = 0.1
+	check_valid_when_tag_switching = no
 	is_valid = {
 		OR = {
 			has_estate_privilege = estate_nobles_french_strong_duchies
@@ -536,6 +590,8 @@ estate_nobles_french_strong_duchies = {
 				is_subject_of_type = client_march
 				is_subject_of_type = client_vassal
 				is_subject_of_type = personal_union
+				is_subject_of_type = incorporated_vassal
+				is_subject_of_type = integrated_personal_union
 			}
 			capital_scope = { region = france_region }
 			culture_group = french
@@ -554,6 +610,8 @@ estate_nobles_french_strong_duchies = {
 						is_subject_of_type = client_march
 						is_subject_of_type = client_vassal
 						is_subject_of_type = personal_union
+						is_subject_of_type = incorporated_vassal
+						is_subject_of_type = integrated_personal_union
 					}
 				}
 			}
@@ -608,12 +666,12 @@ estate_nobles_supremacy_over_crown = {
 	icon = privilege_empty_throne
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
-	influence = 0.1
-	
+	influence = 0.0
+	loyalty = 0.0
 	is_valid = {
+		always = no
 		has_dlc = "Emperor"
 		NOT = { has_government_attribute = blocked_call_diet }
-		always = no
 	}
 	can_select = { 
 		NOT = { has_estate_privilege = estate_eunuchs_supremacy_over_crown_privilege }
@@ -621,35 +679,20 @@ estate_nobles_supremacy_over_crown = {
 	penalties = {
 	}
 	benefits = {
-		burghers_loyalty_modifier = 0.1
-		church_loyalty_modifier = 0.1
-		dhimmi_loyalty_modifier = 0.1
-		cossacks_loyalty_modifier = 0.1
-		rajput_loyalty_modifier = 0.1
-		brahmins_hindu_loyalty_modifier = 0.1
-		brahmins_muslim_loyalty_modifier = 0.1
-		brahmins_other_loyalty_modifier = 0.1
-		maratha_loyalty_modifier = 0.1
-		jains_loyalty_modifier = 0.1
-		vaisyas_loyalty_modifier = 0.1
-		nomadic_tribes_loyalty_modifier = 0.1
-		janissaries_loyalty_modifier = 0.1
-		eunuchs_loyalty_modifier = 0.1
-		qizilbash_loyalty_modifier = 0.1
-		ghulams_loyalty_modifier = 0.1
-		burghers_influence_modifier = 0.1
-		church_influence_modifier = 0.1
-		dhimmi_influence_modifier = 0.1
-		cossacks_influence_modifier = 0.1
-		rajput_influence_modifier = 0.1
-		brahmins_hindu_influence_modifier = 0.1
-		brahmins_muslim_influence_modifier = 0.1
-		brahmins_other_influence_modifier = 0.1
-		maratha_influence_modifier = 0.1
-		jains_influence_modifier = 0.1
-		vaisyas_influence_modifier = 0.1
-		nomadic_tribes_influence_modifier = 0.1
-		janissaries_influence_modifier = 0.1
+		all_estate_loyalty_equilibrium = 0.1
+		all_estate_influence_modifier = 0.1
+	}
+	loyalty_scaled_conditional_modifier = {
+		trigger = {
+			has_country_flag = hab_second_option_flag
+			estate_influence = {
+				estate = estate_nobles
+				influence = 80
+			}
+		}
+		modifier = {
+			global_manpower_modifier = 0.2
+		}
 	}
 	mechanics = {
 		can_give_agendas_without_interaction
@@ -658,10 +701,7 @@ estate_nobles_supremacy_over_crown = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.05 }
 	}
-	#conditional_modifier = {
-	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
-	#	modifier = { monthly_ottoman_decadence = 0.02 }
-	#}
+
 	ai_will_do = {
 		factor = 10
 	}
@@ -671,7 +711,7 @@ estate_nobles_monopoly_of_metals = {
 	icon = privilege_monopoly_of_goods_iron
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
-	
+	#loyalty = 0.05
 	is_valid = {
 		OR = {
 			has_dlc = "Emperor"
@@ -794,7 +834,7 @@ estate_nobles_monopoly_of_livestock = {
 	icon = privilege_monopoly_of_goods_livestock
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
-	
+	#loyalty = 0.05
 	is_valid = {
 		OR = {
 			has_dlc = "Emperor"
@@ -904,7 +944,7 @@ estate_nobles_monopoly_of_gems = {
 	icon = privilege_monopoly_of_goods_gems
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
-	
+	#loyalty = 0.05
 	is_valid = {
 		OR = {
 			has_dlc = "Emperor"
@@ -1015,7 +1055,7 @@ estate_nobles_junker_primacy = {
 	icon = privilege_royal_authority
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
-	
+	#loyalty = 0.05
 	is_valid = {
 		has_dlc = "Emperor"
 		OR = {
@@ -1033,6 +1073,28 @@ estate_nobles_junker_primacy = {
 		monthly_prussian_militarized_society_2 = 0.05
 		monthly_prussian_militarized_society_3 = 0.075
 	}
+	# conditional_modifier = {
+	# 	trigger = {
+	# 		has_country_flag = GER_upgrade_the_junker_primacy_flag 
+	# 	}
+	# 	modifier = {
+	# 		monthly_militarized_society = 0.035
+	# 		monthly_prussian_militarized_society_1 = 0.025
+	# 		monthly_prussian_militarized_society_2 = 0.055
+	# 		monthly_prussian_militarized_society_3 = 0.08
+	# 	}
+	# }
+	# conditional_modifier = {
+	# 	trigger = {
+	# 		NOT = { has_country_flag = GER_upgrade_the_junker_primacy_flag }
+	# 	}
+	# 	modifier = {
+	# 		monthly_militarized_society = 0.03
+	# 		monthly_prussian_militarized_society_1 = 0.02
+	# 		monthly_prussian_militarized_society_2 = 0.05
+	# 		monthly_prussian_militarized_society_3 = 0.075
+	# 	}
+	# }
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -1051,7 +1113,8 @@ estate_nobles_strong_duchies = {
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	influence = 0.1
-	
+	#loyalty = 0.05
+	check_valid_when_tag_switching = no
 	is_valid = {
 		any_subject_country = {
 			OR = {
@@ -1060,6 +1123,8 @@ estate_nobles_strong_duchies = {
 				is_subject_of_type = march
 				is_subject_of_type = client_march
 				is_subject_of_type = personal_union
+				is_subject_of_type = incorporated_vassal
+				is_subject_of_type = integrated_personal_union
 			}
 		}
 		NOT = { has_estate_privilege = estate_nobles_french_strong_duchies }
@@ -1076,6 +1141,8 @@ estate_nobles_strong_duchies = {
 						is_subject_of_type = march
 						is_subject_of_type = client_march
 						is_subject_of_type = personal_union
+						is_subject_of_type = incorporated_vassal
+						is_subject_of_type = integrated_personal_union
 					}
 				}
 			}
@@ -1097,10 +1164,17 @@ estate_nobles_strong_duchies = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.05 }
 	}
-	#conditional_modifier = {
-	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
-	#	modifier = { monthly_ottoman_decadence = 0.02 }
-	#}
+	conditional_modifier = {
+		trigger = { has_country_flag = hun_upgrade_strong_duchies }
+		modifier = { 	vassal_forcelimit_bonus = 0.5 }
+	}
+	# conditional_modifier = {
+	# 	trigger = { has_country_flag = hab_upgraded_strong_duchies }
+	# 	modifier = { 
+	# 		vassal_forcelimit_bonus = 0.25
+	# 		vassal_income = 0.1
+	# 	}
+	# }
 	ai_will_do = {
 		factor = 2
 		modifier = {
@@ -1135,7 +1209,7 @@ estate_nobles_golden_liberty = {
 	max_absolutism = -15
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 3 } }
 	influence = 0.1
-	
+	#loyalty = 0.05
 	is_valid = {
 		OR = {
 			has_estate_privilege = estate_nobles_golden_liberty #Poland starts with it
@@ -1236,7 +1310,7 @@ estate_nobles_nieszawa_privileges = {
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	influence = 0.05
-	
+	#loyalty = 0.05
 	is_valid = {
 		has_estate_privilege = estate_nobles_nieszawa_privileges #event privilege for Poland
 	}
@@ -1257,7 +1331,7 @@ estate_nobles_pacta_conventa = {
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	influence = 0.05
-	
+	#loyalty = 0.05
 	is_valid = {
 		has_estate_privilege = estate_nobles_pacta_conventa #event privilege for Poland
 	}
@@ -1318,10 +1392,6 @@ estate_nobles_statutory_rights = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.05 }
 	}
-	#conditional_modifier = {
-	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
-	#	modifier = { monthly_ottoman_decadence = 0.02 }
-	#}
 	ai_will_do = {
 		factor = 0
 	}
@@ -1363,6 +1433,7 @@ estate_nobles_better_integration = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	influence = 0.05
 	loyalty = 0
+	check_valid_when_tag_switching = no
 	is_valid = {
 		any_subject_country = {
 			OR = {
@@ -1371,6 +1442,8 @@ estate_nobles_better_integration = {
 				is_subject_of_type = daimyo_vassal
 				is_subject_of_type = personal_union
 				is_subject_of_type = appanage
+				is_subject_of_type = incorporated_vassal
+				is_subject_of_type = integrated_personal_union
 			}
 		}
 	}
@@ -1396,10 +1469,6 @@ estate_nobles_better_integration = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.05 }
 	}
-	#conditional_modifier = {
-	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
-	#	modifier = { monthly_ottoman_decadence = 0.02 }
-	#}
 	ai_will_do = {
 		factor = 10
 	}
@@ -1449,7 +1518,7 @@ estate_nobles_cawa_peace_keepers = {
 	icon = privilege_cawa_peacekeeper
 	max_absolutism = 0
 	influence = 0
-	
+	#loyalty = 0.05
 	is_valid = {
 		has_unlocked_estate_privilege = { estate_privilege = estate_nobles_cawa_peace_keepers }
 	}
@@ -1525,7 +1594,7 @@ estate_nobles_cawa_offensive_fighters = {
 	icon = privilege_cawa_offensive_fighters
 	max_absolutism = 0
 	influence = 0
-	
+	#loyalty = 0.05
 	is_valid = {
 		has_unlocked_estate_privilege = { estate_privilege = estate_nobles_cawa_offensive_fighters }
 	}
@@ -1590,7 +1659,7 @@ estate_nobles_grant_power_to_the_bashorun = {
 	max_absolutism = -15
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 3 } }
 	influence = 0.05
-	
+	#loyalty = 0.1
 	is_valid = {
 		has_unlocked_estate_privilege = { estate_privilege = estate_nobles_grant_power_to_the_bashorun }
 	}
@@ -1633,7 +1702,7 @@ estate_nobles_carolean_march = {
 	icon = privilege_carolean_march
 	max_absolutism = 0
 	influence = 0
-	
+	#loyalty = 0.05
 	is_valid = {
 		has_unlocked_estate_privilege = { estate_privilege = estate_nobles_carolean_march }
 	}
@@ -1694,7 +1763,7 @@ estate_nobles_carolean_charge = {
 	icon = privilege_carolean_charge
 	max_absolutism = 0
 	influence = 0
-	
+	#loyalty = 0.05
 	is_valid = {
 		has_unlocked_estate_privilege = { estate_privilege = estate_nobles_carolean_charge }
 	}
@@ -1756,7 +1825,7 @@ estate_nobles_leidang_conscription = {
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	influence = 0.05
-	
+	#loyalty = 0.05
 	is_valid = {
 		has_unlocked_estate_privilege = { estate_privilege = estate_nobles_leidang_conscription }
 	}
@@ -1786,7 +1855,7 @@ estate_nobles_leidang_mass_conscription = {
 	icon = privilege_marines
 	max_absolutism = 0
 	influence = 0
-	
+	#loyalty = 0.05
 	cooldown_years = 5
 	is_valid = {
 		has_unlocked_estate_privilege = { estate_privilege = estate_nobles_leidang_mass_conscription }
@@ -1836,7 +1905,7 @@ estate_nobles_leidang_elite_conscription = {
 	icon = privilege_marines
 	max_absolutism = 0
 	influence = 0
-	
+	#loyalty = 0.05
 	cooldown_years = 5
 	is_valid = {
 		has_unlocked_estate_privilege = { estate_privilege = estate_nobles_leidang_elite_conscription }
@@ -1883,7 +1952,7 @@ estate_nobles_religious_conscription = {
 	icon = privilege_manpower_of_true_faith
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
-	
+	#loyalty = 0.05
 	influence = 0.1
 	is_valid = {
 		has_unlocked_estate_privilege = { estate_privilege = estate_nobles_religious_conscription }
@@ -1993,7 +2062,7 @@ estate_nobles_decentralized_tribe = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 4 } }
 	influence = 0.1
 	land_share = 5
-	
+	#loyalty = 0.05
 	is_valid = {
 		has_government_attribute = has_internal_tribes
 		NOT = { has_country_flag = centralized_tribes_level_2 }
@@ -2142,7 +2211,7 @@ estate_nobles_danish_nobility = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 5 } }
 	influence = 0.1
 	land_share = 5
-	
+	#loyalty = 0.05
 	is_valid = {
 		has_dlc = "Lions of the North"
 		has_estate_privilege = estate_nobles_danish_nobility
@@ -2304,7 +2373,7 @@ estate_nobles_mansabdari_royal_rule = {
 estate_nobles_rynda = {
 	icon = privilege_infantry
 	is_valid = { has_government_attribute = unlock_boyars_military_privileges }
-	
+	#loyalty = 0.05
 	influence = 0.05
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
@@ -2329,7 +2398,7 @@ estate_nobles_rynda = {
 estate_nobles_landed_army = {
 	icon = privilege_raise_host
 	is_valid = { has_government_attribute = unlock_boyars_military_privileges }
-	
+	#loyalty = 0.05
 	influence = 0.05
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
@@ -2361,7 +2430,7 @@ estate_nobles_mestnichestvo = {
 			NOT = { is_year = 1500 }
 		}
 	}
-	
+	#loyalty = 0.05
 	influence = 0.1
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
@@ -2406,7 +2475,7 @@ estate_nobles_mestnichestvo = {
 
 estate_nobles_early_serfdom = {
 	icon = privilege_serf
-	
+	#loyalty = 0.15
 	influence = 0.05
 	max_absolutism = 0
 	is_valid = {
@@ -2488,6 +2557,7 @@ estate_nobles_early_serfdom = {
 
 estate_nobles_legalized_serfdom = {
 	icon = privilege_serf
+	#loyalty = 0.15
 	influence = 0.1
 	max_absolutism = 0
 	is_valid = {
@@ -2566,6 +2636,7 @@ estate_nobles_legalized_serfdom = {
 
 estate_nobles_total_serfdom = {
 	icon = privilege_serf
+	#loyalty = 0.15
 	influence = 0.1
 	max_absolutism = 0
 	is_valid = {
@@ -2643,7 +2714,7 @@ estate_nobles_total_serfdom = {
 
 estate_nobles_restricted_serfdom = {
 	icon = privilege_serf
-	
+	#loyalty = 0.05
 	influence = 0.1
 	max_absolutism = 0
 	is_valid = {
@@ -2717,7 +2788,7 @@ estate_nobles_restricted_serfdom = {
 
 estate_nobles_devastating_serfdom = {
 	icon = privilege_serf
-	
+	#loyalty = 0.05
 	influence = 0.15
 	max_absolutism = 0
 	is_valid = {
@@ -2990,11 +3061,11 @@ estate_nobles_factionalist_nobility = {
 	}
 	ai_will_do = {
 		factor = 1
-	}#TODO
+	}
 }
 estate_nobles_consolidated_noble_contracts = {
 	icon = privilege_centralized
-	
+	#loyalty = 0.05
 	influence = 0.1
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
@@ -3070,7 +3141,7 @@ estate_nobles_english_villeinage = {
 
 estate_nobles_english_copyhold_tenure = {
 	icon = privilege_land_rights
-	
+	#loyalty = 0.1
 	influence = 0.1
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
@@ -3104,10 +3175,28 @@ estate_nobles_english_copyhold_tenure = {
 #Domination generic Estate Privileges
 estate_nobles_development_of_castles = {
 	icon = privilege_fort
-	
+	#loyalty = 0.1
 	influence = 0.05
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = ITA_upgrade_the_expand_the_fortifications_privilege_flag
+		}
+		modifier = {
+			garrison_size = 0.1
+			max_absolutism = 5
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = TIM_upgrade_expand_the_fortifications_flag
+		}
+		modifier = {
+			defensiveness = 0.05 
+			fort_maintenance_modifier = -0.05
+		}
+	}
 	is_valid = {
 		has_dlc = "Domination"
 	}
@@ -3178,10 +3267,6 @@ estate_nobles_development_of_castles = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.05 }
 	}
-	#conditional_modifier = {
-	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
-	#	modifier = { monthly_ottoman_decadence = 0.02 }
-	#}
 	ai_will_do = {
 		factor = 0
 	}
@@ -3192,6 +3277,14 @@ estate_nobles_statesman_servitude = {
 	influence = 0.05
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = GER_upgrade_the_statesman_privilege_flag 
+		}
+		modifier = {
+			max_absolutism = 5
+		}
+	}
 	is_valid = {
 		has_dlc = "Domination"
 	}
@@ -3216,10 +3309,6 @@ estate_nobles_statesman_servitude = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.05 }
 	}
-	#conditional_modifier = {
-	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
-	#	modifier = { monthly_ottoman_decadence = 0.02 }
-	#}
 	ai_will_do = {
 		factor = 0
 	}
@@ -3298,10 +3387,6 @@ estate_nobles_royal_court_tasks = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.05 }
 	}
-	#conditional_modifier = {
-	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
-	#	modifier = { monthly_ottoman_decadence = 0.02 }
-	#}
 	ai_will_do = {
 		factor = 0
 	}
@@ -3336,10 +3421,6 @@ estate_nobles_diet_right = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.05 }
 	}
-	#conditional_modifier = {
-	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
-	#	modifier = { monthly_ottoman_decadence = 0.02 }
-	#}
 	ai_will_do = {
 		factor = 10
 		modifier = {
@@ -3376,10 +3457,6 @@ estate_nobles_force_conscription = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.05 }
 	}
-	#conditional_modifier = {
-	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
-	#	modifier = { monthly_ottoman_decadence = 0.02 }
-	#}
 	ai_will_do = {
 		factor = 0
 	}
@@ -3422,10 +3499,6 @@ estate_nobles_noble_officer_right = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.05 }
 	}
-	#conditional_modifier = {
-	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
-	#	modifier = { monthly_ottoman_decadence = 0.02 }
-	#}
 	ai_will_do = {
 		factor = 0
 	}
@@ -3438,6 +3511,7 @@ estate_nobles_expedition_rights = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	is_valid = {
 		has_dlc = "Domination"
+		#has_any_exploration_idea = yes
 		num_of_colonists = 1
 	}
 	loyalty_scaled_conditional_modifier = {
@@ -3477,10 +3551,6 @@ estate_nobles_expedition_rights = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.05 }
 	}
-	#conditional_modifier = {
-	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
-	#	modifier = { monthly_ottoman_decadence = 0.02 }
-	#}
 	ai_will_do = {
 		factor = 0
 	}
@@ -3491,7 +3561,7 @@ estate_nobles_expedition_rights = {
 estate_nobles_highland_fortifications = {
 	icon = privilege_fort
 	max_absolutism = -5
-	
+	#loyalty = 0.05
 	influence = 0.05
 	is_valid = {
 		OR = {
@@ -3560,7 +3630,7 @@ estate_nobles_emirs_of_baghdad = {
 	icon = privilege_build_jain_temple
 	land_share = 0
 	max_absolutism = -15
-	
+	#loyalty = 0.1
 	influence = 0.1
 	is_valid = {
 		OR = {
@@ -3669,7 +3739,7 @@ estate_nobles_deteriorating_army = {
 #Persia
 estate_nobles_defensive_policy = {
 	icon = privilege_fort
-	
+	#loyalty = 0.05
 	influence = 0.1
 	max_absolutism = 0
 	#conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
@@ -3699,7 +3769,7 @@ estate_nobles_defensive_policy = {
 
 estate_nobles_tofangchi_regiment = {
 	icon = privilege_infantry
-	
+	#loyalty = 0.05
 	influence = 0.1
 	max_absolutism = 0
 	#conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
@@ -3728,7 +3798,7 @@ estate_nobles_tofangchi_regiment = {
 
 estate_nobles_tupchi_artillery_corps = {
 	icon = privilege_artillery
-	
+	#loyalty = 0.05
 	influence = 0.05
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
@@ -3780,7 +3850,7 @@ estate_nobles_tupchi_artillery_corps = {
 
 estate_nobles_qurchi_service = {
 	icon = privilege_legitimacy
-	
+	#loyalty = 0.10
 	max_absolutism = 0
 	#conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	is_valid = {
@@ -3822,7 +3892,7 @@ estate_nobles_qurchi_service = {
 
 estate_nobles_mamlukian_administration = {
 	icon = privilege_land_rights
-	
+	#loyalty = 0.05
 	influence = 0.10
 	max_absolutism = 0
 	#conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
@@ -3876,7 +3946,7 @@ estate_nobles_mamlukian_administration = {
 
 estate_nobles_enlist_the_mamluks = {
 	icon = privilege_infantry
-	
+	#loyalty = 0.1
 	influence = 0.1
 	max_absolutism = 0
 	#conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
@@ -3895,6 +3965,7 @@ estate_nobles_enlist_the_mamluks = {
 		factor = 100
 	}
 }
+
 estate_nobles_ITA_military_governors = {
 	icon = estate_nobles_ITA_military_governors
 	loyalty = 0
@@ -3962,7 +4033,7 @@ estate_nobles_ITA_military_governors = {
 
 estate_nobles_GER_diploma_andreanum = {
 	icon = estate_nobles_GER_diploma_andreanum
-	loyalty = 0.1
+	#loyalty = 0.1
 	influence = 0.05
 	max_absolutism = -5
 	is_valid = {
@@ -4015,7 +4086,7 @@ estate_nobles_orangist_privileges = {
 estate_nobles_vegvar_system = {
 	icon = estate_nobles_vegvar_system
 	max_absolutism = -5
-	loyalty = 0.1
+	#loyalty = 0.1
 	influence = 0.05
 	is_valid = {
 		has_unlocked_estate_privilege = {
@@ -4092,9 +4163,21 @@ estate_nobles_MAY_arm_nobles_with_obsidian_blades = {
 		modifier = { max_absolutism = 5 }
 	}
 	influence = 0.05
-	loyalty = 0.1
+	#loyalty = 0.1
 	is_valid = {
-		technology_group = mesoamerican
+		OR = {
+			technology_group = mesoamerican
+			AND = {
+				technology_group = high_american
+				OR = {
+					was_tag = MAY
+					tag = MAY
+					has_country_flag = unlock_aztec_missions_flag
+					was_tag = AZT
+					tag = AZT
+				}
+			}
+		}
 	}
 	benefits = {
 		infantry_cost = -0.05
@@ -4159,7 +4242,7 @@ estate_nobles_MAY_spread_dynastic_influence = {
 	icon = privilege_mayan_crown
 	loyalty = 0
 	influence = 0.1
-	max_absolutism = -10
+	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	is_valid = {
 		has_country_flag = MAY_unlock_privilege_for_tributaries_flag
@@ -4180,7 +4263,7 @@ estate_nobles_MAY_spread_dynastic_influence = {
 
 estate_nobles_AZT_triple_alliance = {
 	icon = estate_burghers_monopoly_of_coffee
-	loyalty = 0.05
+	#loyalty = 0.05
 	influence = 0.1
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
@@ -4225,7 +4308,7 @@ estate_nobles_AZT_triple_alliance = {
 
 estate_nobles_AZT_warrior_culture = {
 	icon = privilege_demand_more_troops
-	loyalty = 0.05
+	#loyalty = 0.05
 	influence = 0.1
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
@@ -4307,9 +4390,9 @@ estate_nobles_AZT_warrior_culture = {
 
 estate_nobles_reformatio_sigismundi = {
 	icon = privilege_coup_detat
-	max_absolutism = -10
+	max_absolutism = -5
 	influence = 0.15
-	loyalty = 0.10
+	#loyalty = 0.10
 	is_valid = {
 		has_unlocked_estate_privilege = {
 			estate_privilege = estate_nobles_reformatio_sigismundi
@@ -4392,9 +4475,9 @@ estate_nobles_reformatio_sigismundi = {
 
 estate_nobles_basqaq_autonomy = {
 	icon = privilege_basqaqs
-	max_absolutism = -10
+	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
-	loyalty = 0.05
+	#loyalty = 0.05
 	influence = 0.1
 	is_valid = {
 		has_country_flag = hordes_basqaqs_unlocked_flag
@@ -4444,7 +4527,7 @@ estate_nobles_hab_habsburg_connections = {
 	icon = privilege_grant_autonomy
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
-	loyalty = 0.05
+	#loyalty = 0.05
 	influence = 0.1
 	is_valid = {
 		has_country_flag = hab_unlocked_habsburg_connections
@@ -4621,7 +4704,7 @@ estate_nobles_TIM_soyurghal_grants = {
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	influence = 0.1
-	loyalty = 0.05
+	#loyalty = 0.05
 	is_valid = {
 		OR = {
 			tag = TIM
@@ -4649,10 +4732,10 @@ estate_nobles_TIM_soyurghal_grants = {
 
 estate_nobles_TIM_chagatai_warriors = {
 	icon = privilege_timurid_helmet
-	max_absolutism = -10
+	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	influence = 0.15
-	loyalty = 0.05
+	#loyalty = 0.05
 	is_valid = {
 		has_country_flag = TIM_unlock_privilege_about_chagatai_flag
 	}
@@ -4675,10 +4758,10 @@ estate_nobles_TIM_chagatai_warriors = {
 
 estate_nobles_TIM_appease_the_elites = {
 	icon = privilege_army_tradition
-	max_absolutism = -10
+	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	influence = 0.15
-	loyalty = 0.05
+	#loyalty = 0.05
 	is_valid = {
 		has_country_flag = TIM_unlock_appease_the_elites_privilege_flag
 	}
@@ -4792,9 +4875,9 @@ estate_nobles_MUG_development_of_the_subah = {
 
 estate_nobles_four_class_system = {
 	icon = estate_eunuchs_establish_favor_system_privilege
-	max_absolutism = -10
+	max_absolutism = -5
 	influence = 0.05
-	loyalty = 0.05
+	#loyalty = 0.05
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	is_valid = {
 		has_country_flag = yua_four_class_system_flag
@@ -4829,7 +4912,7 @@ estate_nobles_hungarian_nobility_privileges = {
 	icon = privilege_grant_autonomy
 	max_absolutism = -15
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 3 } }
-	loyalty = 0.05
+	#loyalty = 0.05
 	influence = 0.1
 	is_valid = {
 		has_dlc = "Winds of Change"
@@ -4900,7 +4983,7 @@ estate_nobles_austrian_nobility_privileges = {
 	icon = privilege_grant_autonomy
 	max_absolutism = -15
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 3 } }
-	loyalty = 0.05
+	#loyalty = 0.05
 	influence = 0.1
 	is_valid = {
 		has_dlc = "Winds of Change"

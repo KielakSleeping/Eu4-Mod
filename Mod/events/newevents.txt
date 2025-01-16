@@ -1,3 +1,5 @@
+namespace = sealand_events
+
 country_event = { # state edicts
 	id = sealand_events.28
 	title = sealand_events.28.t

@@ -3,7 +3,7 @@ estate_rajput_land_rights = {
 	land_share = 5
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
-	
+	#loyalty = 0.05
 	influence = 0.05
 	can_select = {
 	}
@@ -11,8 +11,15 @@ estate_rajput_land_rights = {
 	}
 	penalties = {
 	}
+
 	benefits = {
 		governing_capacity = 100
+	}
+	conditional_modifier = {
+		trigger = { has_country_flag = ned_land_rights_buff_flag }
+		modifier = {
+			governing_capacity = 20
+		}
 	}
 	ai_will_do = {
 		factor = 5
@@ -287,7 +294,7 @@ estate_rajput_advisor = {
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	influence = 0.05
-	
+	#loyalty = 0.05
 	is_valid = {
 		NOT = { religion_group = muslim }
 		always = no
@@ -319,7 +326,7 @@ estate_rajput_loyalty_privilege = {
 	icon = privilege_promote_rajput_nobility
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
-	
+	#loyalty = 0.1
 	influence = 0.1
 	penalties = {
 	}
@@ -439,7 +446,7 @@ estate_rajput_monopoly_of_metals = {
 	icon = privilege_monopoly_of_goods_iron
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
-	
+	#loyalty = 0.05
 	is_valid = {
 		OR = {
 			has_dlc = "Emperor"
@@ -563,7 +570,7 @@ estate_rajput_monopoly_of_livestock = {
 	icon = privilege_monopoly_of_goods_livestock
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
-	
+	#loyalty = 0.05
 	is_valid = {
 		OR = {
 			has_dlc = "Emperor"
@@ -675,7 +682,7 @@ estate_rajput_monopoly_of_gems = {
 	icon = privilege_monopoly_of_goods_gems
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
-	
+	#loyalty = 0.05
 	is_valid = {
 		OR = {
 			has_dlc = "Emperor"
@@ -788,7 +795,7 @@ estate_rajput_subject_rights = {
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	influence = 0.1
-	
+	#loyalty = 0.05
 	is_valid = {
 		any_subject_country = {
 			OR = {
@@ -797,6 +804,8 @@ estate_rajput_subject_rights = {
 				is_subject_of_type = march
 				is_subject_of_type = client_march
 				is_subject_of_type = personal_union
+				is_subject_of_type = incorporated_vassal
+				is_subject_of_type = integrated_personal_union
 			}
 		}
 		NOT = { has_estate = estate_nobles }
@@ -813,6 +822,8 @@ estate_rajput_subject_rights = {
 						is_subject_of_type = march
 						is_subject_of_type = client_march
 						is_subject_of_type = personal_union
+						is_subject_of_type = incorporated_vassal
+						is_subject_of_type = integrated_personal_union
 					}
 				}
 			}
@@ -873,6 +884,8 @@ estate_rajput_better_integration = {
 				is_subject_of_type = daimyo_vassal
 				is_subject_of_type = personal_union
 				is_subject_of_type = appanage
+				is_subject_of_type = incorporated_vassal
+				is_subject_of_type = integrated_personal_union
 			}
 		}
 		NOT = { has_estate = estate_nobles }
@@ -903,7 +916,7 @@ estate_rajput_better_integration = {
 #Domination generic Estate Privileges
 estate_rajput_development_of_rajput_lands = {
 	icon = privilege_development_efficiency
-	
+	#loyalty = 0.1
 	influence = 0.05
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
@@ -984,8 +997,8 @@ estate_rajput_military_ministerium = {
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	is_valid = {
-		has_dlc = "Domination"
 		always = no
+		has_dlc = "Domination"
 	}
 	can_select = {
 	}
@@ -1116,13 +1129,12 @@ estate_rajput_force_conscription = {
 	influence = 0.05
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
-	can_select = {
-		NOT = { has_country_modifier = slackening_modifier }
-	}
 	is_valid = {
 		has_dlc = "Domination"
 	}
 	can_select = {
+		NOT = { has_country_modifier = slackening_modifier }
+
 		if = {
 			limit = { has_estate = estate_nobles }
 			NOT = { has_estate_privilege = estate_nobles_force_conscription }
@@ -1151,10 +1163,11 @@ estate_rajput_force_conscription = {
 		factor = 0
 	}
 }
+
 estate_rajputs_MUG_rajput_mansabdars = {
 	icon = privilege_promote_rajput_nobility
 	influence = 0.05
-	loyalty = 0.1
+	#loyalty = 0.1
 	is_valid = {
 		has_country_flag = MUG_unlock_rajput_mansabdar_privilege_flag
 	}
@@ -1169,7 +1182,7 @@ estate_rajputs_MUG_rajput_mansabdars = {
 	loyalty_scaled_conditional_modifier = {
 		trigger = { always = yes }
 		modifier = {
-			manpower_recovery_speed = 0.10 
+			manpower_recovery_speed = 0.10
 		}
 	}
 	
