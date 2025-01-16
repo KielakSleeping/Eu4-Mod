@@ -13974,7 +13974,7 @@ hordes_return_of_the_mongols_2 = {
 }
 
 hordes_fall_of_hindustan = {
-	core_creation = -0.1
+	core_creation = -0.20
 	cavalry_power = 0.1
 }
 
@@ -14071,12 +14071,13 @@ hordes_unity_of_faith = {
 }
 
 mongol_brother_realm_modifier = {
-	land_forcelimit_modifier = -0.15
-	global_manpower_modifier = -0.2
+	#land_forcelimit_modifier = -0.15
+	#global_manpower_modifier = -0.2
 }
 
 hordes_brother_realm_cavalry_buff = {
 	cavalry_power = 0.1
+	available_province_loot = 1
 }
 
 oir_execution_of_the_emperor = {
