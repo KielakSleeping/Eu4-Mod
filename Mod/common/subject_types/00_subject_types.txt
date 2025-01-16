@@ -1579,16 +1579,16 @@ nahuatl_tributary = {
 		}
 		modifier = azt_nahuatl_tributary_buff
 	}
-	modifier_overlord = {
-		trigger = {
-			overlord = {
-				has_estate_privilege = estate_nobles_MAY_spread_dynastic_influence
-				dynasty = ROOT
-			}
+	# modifier_overlord = {
+	# 	trigger = {
+	# 		overlord = {
+	# 			has_estate_privilege = estate_nobles_MAY_spread_dynastic_influence
+	# 			dynasty = ROOT
+	# 		}
 
-		}
-		#modifier = may_dynastic_influence_modifier
-	}
+	# 	}
+	# 	#modifier = may_dynastic_influence_modifier
+	# }
 }
 
 european_colony = {
@@ -1738,12 +1738,12 @@ soyurghal_subject_type = {
 	send_officers = yes
 	send_additional_troops = yes
 	
-	modifier_subject = {
-		#modifier = soyurghal_base_modifiers
-	}
-	modifier_overlord = {
-		#modifier = soyurghal_base_overlord_modifiers
-	}
+	# modifier_subject = {
+	# 	#modifier = soyurghal_base_modifiers
+	# }
+	# modifier_overlord = {
+	# 	#modifier = soyurghal_base_overlord_modifiers
+	# }
 }
 
 # Completely scripted subject type (no code used). Add any number of these. Check common/new_diplomatic_actions for how to make visible in game.

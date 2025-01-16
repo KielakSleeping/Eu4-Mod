@@ -2381,7 +2381,7 @@ EOH_ideas = {
 	}
 	gc_hun_renaissanse_knowledge = {
 		technology_cost = -0.05
-		development_cost -0.05
+		development_cost = -0.05
 	}
 	curtailed_peasantry = {
 		production_efficiency = 0.1

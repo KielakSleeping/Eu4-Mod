@@ -155,7 +155,7 @@ custom_button = {
 				duration = -1
 			}
 		}
-		else = {
+		else_if = {
 			limit = { trade_goods = wool }
 			change_trade_goods = cloth
 		}

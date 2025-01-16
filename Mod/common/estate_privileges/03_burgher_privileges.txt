@@ -2755,11 +2755,11 @@ estate_burghers_financial_demand = {
 	}
 	can_select = {
 		is_at_war = no
-	}
-	modifier = {all_power_cost = 0.05 production_efficiency = 0.05}
-	
+	}	
 	benefits = {
 		interest = -0.75
+		all_power_cost = 0.05 
+		production_efficiency = 0.05
 	}
 	cooldown_years = 5
 	on_cooldown_expires = {

@@ -343,9 +343,9 @@ estate_jains_conscientious_objection = {
 	penalties = {
 		global_manpower_modifier = -0.1
 	}
-	modifier = {can_not_declare_war = yes}
 	benefits = {
 		interest = -0.75
+		can_not_declare_war = yes
 	}
 	cooldown_years = 10
 	ai_will_do = {

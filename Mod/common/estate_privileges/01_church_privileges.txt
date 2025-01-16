@@ -767,9 +767,7 @@ estate_church_clerical_oversight = {
 			is_absolutism_active = yes
 		}
 	}
-	modifier = {
-		monthly_splendor = 3
-	}
+	
 }
 
 estate_church_inwards_perfection = {
