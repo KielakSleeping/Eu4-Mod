@@ -50,6 +50,21 @@ Steppe_rule_2 = {
 	horde_unity = 5
 }
 
+Tortilla_workaround_POR = {
+	potential = {
+		ai = no
+		OR = {
+			tag = POR
+			overlord = {tag = POR}
+		}	
+	}
+	
+
+	trigger = {	
+		religion = catholic
+	}
+	global_colonial_growth = -20
+}
 Minor = {
 	potential = {
 	OR = {
@@ -74,8 +89,8 @@ Minor = {
 	advisor_cost = -0.25
 	interest = -0.25
 	global_regiment_cost = -0.1
-	#mercenary_cost = -0.25
-	#merc_maintenance_modifier = -0.25
+	mercenary_cost = -0.25
+	merc_maintenance_modifier = -0.25
 	monthly_reform_progress_modifier = 0.025
 	ae_impact = -0.1
 	fort_maintenance_modifier = -0.67
@@ -138,7 +153,7 @@ Great_power_dominance = {
 				NOT = { is_colonial_nation = yes }	
 				NOT = { is_lacking_institutions = yes }
 	}
-	army_tradition_decay = -0.003
+	army_tradition_decay = -0.005
 	navy_tradition_decay = -0.005
 }
 HRE_backup = {	
@@ -232,320 +247,319 @@ Ahead_of_time = {
 	}
 	monthly_reform_progress_modifier = 0.25
 	yearly_innovativeness = 0.3
-	army_tradition = 0.5
-	expand_infrastructure_cost_modifier = -0.15
+	army_tradition = 1
 }
-# TUR = {
-#	potential = {
-#		tag = TUR
-#	}
-#		
-#	trigger = {
-#		NOT = {
-#			is_year = 1465
-#		}
-#		OR = {
-#			AND = {
-#				is_in_war = {
-#					attackers = HUN
-#				}
-#				is_in_war = {
-#					defenders = MAM
-#				}
-#				MAM = {
-#					ai = no
-#				}
-#				HUN = {
-#					ai = no
-#				}
-#			}
-#			AND = {
-#				is_in_war = {
-#						attackers = HUN
-#				}
-#				is_in_war = {
-#						attackers = MAM
-#				}
-#				MAM = {
-#					ai = no
-#				}
-#				HUN = {
-#					ai = no
-#				}
-#			}			
-#		}	
-#	}
-#	mercenary_manpower = 1
-#	land_forcelimit = 15
-# }
+TUR = {
+	potential = {
+		tag = TUR
+	}
+		
+	trigger = {
+		NOT = {
+			is_year = 1465
+		}
+		OR = {
+			AND = {
+				is_in_war = {
+					attackers = HUN
+				}
+				is_in_war = {
+					defenders = MAM
+				}
+				MAM = {
+					ai = no
+				}
+				HUN = {
+					ai = no
+				}
+			}
+			AND = {
+				is_in_war = {
+						attackers = HUN
+				}
+				is_in_war = {
+						attackers = MAM
+				}
+				MAM = {
+					ai = no
+				}
+				HUN = {
+					ai = no
+				}
+			}			
+		}	
+	}
+	mercenary_manpower = 1
+	land_forcelimit = 15
+}
 
-# Peace_of_Italy = {
-# 	potential = {
-# 		always = no
-# 		OR = {
-# 			tag = MLO
-# 			tag = VEN
-# 			tag = SIC
-# 			tag = TTS
-# 			tag = ITA
-# 			tag = ROM
-# 		}
-# 		current_age = age_of_discovery
-# 	}
-# 	trigger = {
-#         custom_trigger_tooltip = {
-#             tooltip = peace_of_italy_tt
-# 				OR = {
-# 					great_power_rank = 5
-# 					 is_great_power = no
-# 					}
-# 			OR = {		
-# 				AND = {
-# 					OR = {
-# 						tag = SIC
-# 						tag = TTS
-# 					}					
-# 					alliance_with = MLO
-# 					alliance_with = VEN
-# 				}
-# 				AND = {		
-# 					tag = MLO		
-# 					OR = {
-# 						alliance_with = SIC
-# 						alliance_with = TTS
-# 					}
-# 					alliance_with = VEN
-# 				}
-# 				AND = {		
-# 					tag = VEN		
-# 					OR = {
-# 						alliance_with = SIC
-# 						alliance_with = TTS
-# 					}
-# 					alliance_with = MLO
-# 				}
-# 			}	
-# 			NOT = { is_lacking_institutions = yes }
-# 			NOT = {	
-# 				venetia_area = {
-# 						owner = {
-# 							OR = {
-# 							  culture_group = germanic
-# 							  culture_group = french
-# 							  culture_group = iberian
-# 							  culture_group = carpathian
-# 							  culture_group = maghrebi
-# 							  culture_group = turko_semitic 
-# 							  }
-# 						}
-# 				}											
-# 			}
-# 			NOT = {	
-# 				lombardy_area = {
-# 						owner = {
-# 							OR = {
-# 							  culture_group = germanic
-# 							  culture_group = french
-# 							  culture_group = iberian
-# 							  culture_group = carpathian
-# 							  culture_group = maghrebi
-# 							  culture_group = turko_semitic 
-# 							  }
-# 						}
-# 				}											
-# 			}
-# 			NOT = {	
-# 				piedmont_area = {
-# 						owner = {
-# 							OR = {
-# 							  culture_group = germanic
-# 							  culture_group = french
-# 							  culture_group = iberian
-# 							  culture_group = carpathian
-# 							  culture_group = maghrebi
-# 							  culture_group = turko_semitic 
-# 							  }
-# 						}
-# 				}											
-# 			}
-# 			NOT = {	
-# 				tuscany_area = {
-# 						owner = {
-# 							OR = {
-# 							  culture_group = germanic
-# 							  culture_group = french
-# 							  culture_group = iberian
-# 							  culture_group = carpathian
-# 							  culture_group = maghrebi
-# 							  culture_group = turko_semitic 
-# 							  }
-# 						}
-# 				}											
-# 			}
-# 			NOT = {	
-# 				liguria_area = {
-# 						owner = {
-# 							OR = {
-# 							  culture_group = germanic
-# 							  culture_group = french
-# 							  culture_group = iberian
-# 							  culture_group = carpathian
-# 							  culture_group = maghrebi
-# 							  culture_group = turko_semitic 
-# 							  }
-# 						}
-# 				}											
-# 			}
-# 			NOT = {	
-# 				lombardy_area = {
-# 						owner = {
-# 							OR = {
-# 							  culture_group = germanic
-# 							  culture_group = french
-# 							  culture_group = iberian
-# 							  culture_group = carpathian
-# 							  culture_group = maghrebi
-# 							  culture_group = turko_semitic 
-# 							  }
-# 						}
-# 				}											
-# 			}
-# 			NOT = {	
-# 				naples_area = {
-# 						owner = {
-# 							OR = {
-# 							  culture_group = germanic
-# 							  culture_group = french
-# 							  culture_group = iberian
-# 							  culture_group = carpathian
-# 							  culture_group = maghrebi
-# 							  culture_group = turko_semitic 
-# 							  }
-# 						}
-# 				}											
-# 			}
-# 			NOT = {	
-# 				calabria_area = {
-# 						owner = {
-# 							OR = {
-# 							  culture_group = germanic
-# 							  culture_group = french
-# 							  culture_group = iberian
-# 							  culture_group = carpathian
-# 							  culture_group = maghrebi
-# 							  culture_group = turko_semitic 
-# 							  }
-# 						}
-# 				}											
-# 			}
-# 			NOT = {	
-# 				apulia_area = {
-# 						owner = {
-# 							OR = {
-# 							  culture_group = germanic
-# 							  culture_group = french
-# 							  culture_group = iberian
-# 							  culture_group = carpathian
-# 							  culture_group = maghrebi
-# 							  culture_group = turko_semitic 
-# 							  }
-# 						}
-# 				}											
-# 			}
-# 			NOT = {	
-# 				emilia_romagna_area = {
-# 						owner = {
-# 							OR = {
-# 							  culture_group = germanic
-# 							  culture_group = french
-# 							  culture_group = iberian
-# 							  culture_group = carpathian
-# 							  culture_group = maghrebi
-# 							  culture_group = turko_semitic 
-# 							  }
-# 						}
-# 				}											
-# 			}
-# 			NOT = {	
-# 				central_italy_area = {
-# 						owner = {
-# 							OR = {
-# 							  culture_group = germanic
-# 							  culture_group = french
-# 							  culture_group = iberian
-# 							  culture_group = carpathian
-# 							  culture_group = maghrebi
-# 							  culture_group = turko_semitic 
-# 							  }
-# 						}
-# 				}											
-# 			}
-# 			NOT = {	
-# 				lazio_area = {
-# 						owner = {
-# 							OR = {
-# 							  culture_group = germanic
-# 							  culture_group = french
-# 							  culture_group = iberian
-# 							  culture_group = carpathian
-# 							  culture_group = maghrebi
-# 							  culture_group = turko_semitic 
-# 							  }
-# 						}
-# 				}											
-# 			}
-# 			NOT = {	
-# 				po_valley_area = {
-# 						owner = {
-# 							OR = {
-# 							  culture_group = germanic
-# 							  culture_group = french
-# 							  culture_group = iberian
-# 							  culture_group = carpathian
-# 							  culture_group = maghrebi
-# 							  culture_group = turko_semitic 
-# 							  }
-# 						}
-# 				}											
-# 			}
-# 			NOT = {	
-# 				sicily_area = {
-# 						owner = {
-# 							OR = {
-# 							  culture_group = germanic
-# 							  culture_group = french
-# 							  culture_group = iberian
-# 							  culture_group = carpathian
-# 							  culture_group = maghrebi
-# 							  culture_group = turko_semitic 
-# 							  }
-# 						}
-# 				}											
-# 			}
-# 			NOT = {	
-# 				western_sicily_area = {
-# 						owner = {
-# 							OR = {
-# 							  culture_group = germanic
-# 							  culture_group = french
-# 							  culture_group = iberian
-# 							  culture_group = carpathian
-# 							  culture_group = maghrebi
-# 							  culture_group = turko_semitic 
-# 							  }
-# 						}
-# 				}											
-# 			}
-# 		}
-# 	}
+Peace_of_Italy = {
+	potential = {
+		always = no
+		OR = {
+			tag = MLO
+			tag = VEN
+			tag = SIC
+			tag = TTS
+			tag = ITA
+			tag = ROM
+		}
+		current_age = age_of_discovery
+	}
+	trigger = {
+        custom_trigger_tooltip = {
+            tooltip = peace_of_italy_tt
+				OR = {
+					great_power_rank = 5
+					 is_great_power = no
+					}
+			OR = {		
+				AND = {
+					OR = {
+						tag = SIC
+						tag = TTS
+					}					
+					alliance_with = MLO
+					alliance_with = VEN
+				}
+				AND = {		
+					tag = MLO		
+					OR = {
+						alliance_with = SIC
+						alliance_with = TTS
+					}
+					alliance_with = VEN
+				}
+				AND = {		
+					tag = VEN		
+					OR = {
+						alliance_with = SIC
+						alliance_with = TTS
+					}
+					alliance_with = MLO
+				}
+			}	
+			NOT = { is_lacking_institutions = yes }
+			NOT = {	
+				venetia_area = {
+						owner = {
+							OR = {
+							  culture_group = germanic
+							  culture_group = french
+							  culture_group = iberian
+							  culture_group = carpathian
+							  culture_group = maghrebi
+							  culture_group = turko_semitic 
+							  }
+						}
+				}											
+			}
+			NOT = {	
+				lombardy_area = {
+						owner = {
+							OR = {
+							  culture_group = germanic
+							  culture_group = french
+							  culture_group = iberian
+							  culture_group = carpathian
+							  culture_group = maghrebi
+							  culture_group = turko_semitic 
+							  }
+						}
+				}											
+			}
+			NOT = {	
+				piedmont_area = {
+						owner = {
+							OR = {
+							  culture_group = germanic
+							  culture_group = french
+							  culture_group = iberian
+							  culture_group = carpathian
+							  culture_group = maghrebi
+							  culture_group = turko_semitic 
+							  }
+						}
+				}											
+			}
+			NOT = {	
+				tuscany_area = {
+						owner = {
+							OR = {
+							  culture_group = germanic
+							  culture_group = french
+							  culture_group = iberian
+							  culture_group = carpathian
+							  culture_group = maghrebi
+							  culture_group = turko_semitic 
+							  }
+						}
+				}											
+			}
+			NOT = {	
+				liguria_area = {
+						owner = {
+							OR = {
+							  culture_group = germanic
+							  culture_group = french
+							  culture_group = iberian
+							  culture_group = carpathian
+							  culture_group = maghrebi
+							  culture_group = turko_semitic 
+							  }
+						}
+				}											
+			}
+			NOT = {	
+				lombardy_area = {
+						owner = {
+							OR = {
+							  culture_group = germanic
+							  culture_group = french
+							  culture_group = iberian
+							  culture_group = carpathian
+							  culture_group = maghrebi
+							  culture_group = turko_semitic 
+							  }
+						}
+				}											
+			}
+			NOT = {	
+				naples_area = {
+						owner = {
+							OR = {
+							  culture_group = germanic
+							  culture_group = french
+							  culture_group = iberian
+							  culture_group = carpathian
+							  culture_group = maghrebi
+							  culture_group = turko_semitic 
+							  }
+						}
+				}											
+			}
+			NOT = {	
+				calabria_area = {
+						owner = {
+							OR = {
+							  culture_group = germanic
+							  culture_group = french
+							  culture_group = iberian
+							  culture_group = carpathian
+							  culture_group = maghrebi
+							  culture_group = turko_semitic 
+							  }
+						}
+				}											
+			}
+			NOT = {	
+				apulia_area = {
+						owner = {
+							OR = {
+							  culture_group = germanic
+							  culture_group = french
+							  culture_group = iberian
+							  culture_group = carpathian
+							  culture_group = maghrebi
+							  culture_group = turko_semitic 
+							  }
+						}
+				}											
+			}
+			NOT = {	
+				emilia_romagna_area = {
+						owner = {
+							OR = {
+							  culture_group = germanic
+							  culture_group = french
+							  culture_group = iberian
+							  culture_group = carpathian
+							  culture_group = maghrebi
+							  culture_group = turko_semitic 
+							  }
+						}
+				}											
+			}
+			NOT = {	
+				central_italy_area = {
+						owner = {
+							OR = {
+							  culture_group = germanic
+							  culture_group = french
+							  culture_group = iberian
+							  culture_group = carpathian
+							  culture_group = maghrebi
+							  culture_group = turko_semitic 
+							  }
+						}
+				}											
+			}
+			NOT = {	
+				lazio_area = {
+						owner = {
+							OR = {
+							  culture_group = germanic
+							  culture_group = french
+							  culture_group = iberian
+							  culture_group = carpathian
+							  culture_group = maghrebi
+							  culture_group = turko_semitic 
+							  }
+						}
+				}											
+			}
+			NOT = {	
+				po_valley_area = {
+						owner = {
+							OR = {
+							  culture_group = germanic
+							  culture_group = french
+							  culture_group = iberian
+							  culture_group = carpathian
+							  culture_group = maghrebi
+							  culture_group = turko_semitic 
+							  }
+						}
+				}											
+			}
+			NOT = {	
+				sicily_area = {
+						owner = {
+							OR = {
+							  culture_group = germanic
+							  culture_group = french
+							  culture_group = iberian
+							  culture_group = carpathian
+							  culture_group = maghrebi
+							  culture_group = turko_semitic 
+							  }
+						}
+				}											
+			}
+			NOT = {	
+				western_sicily_area = {
+						owner = {
+							OR = {
+							  culture_group = germanic
+							  culture_group = french
+							  culture_group = iberian
+							  culture_group = carpathian
+							  culture_group = maghrebi
+							  culture_group = turko_semitic 
+							  }
+						}
+				}											
+			}
+		}
+	}
 
-# 	production_efficiency = 0.05
-# 	global_tax_modifier = 0.05
-# 	global_manpower_modifier = 0.05
-# 	global_autonomy = -0.025
-# 	monthly_reform_progress_modifier = 0.075
-# 	infantry_power = 0.05
-# }
+	production_efficiency = 0.05
+	global_tax_modifier = 0.05
+	global_manpower_modifier = 0.05
+	global_autonomy = -0.025
+	monthly_reform_progress_modifier = 0.075
+	infantry_power = 0.05
+}
 
 Berber_Raids = {
 	potential = {
@@ -592,51 +606,51 @@ Berber_Raids = {
 	coast_raid_range = 1
 }
 
-# spice_bros = {
-#	potential = {
-#		OR = {
-#			tag = SUN
-#			tag = MLC
-#			tag = MSA
-#			tag = BAN
-#			tag = CRB
-#		}
-#		current_age = age_of_discovery
-#	}
-#
-#	trigger = {
-#			OR = {
-#					great_power_rank = 5
-#					 is_great_power = no
-#					}
-#			OR = {		
-#				AND = {
-#					OR = {
-#						was_tag = SUN
-#						tag = SUN	
-#					}
-#					OR = {
-#						alliance_with = MLC
-#						alliance_with = MSA
-#					}
-#				}
-#				AND = {		
-#					OR = {
-#						was_tag = MLC
-#						tag = MLC	
-#					}	
-#					OR = {
-#						alliance_with = SUN
-#						alliance_with = BAN
-#						alliance_with = CRB
-#					}	
-#				}
-#			}	
-#			NOT = { is_lacking_institutions = yes }			
-#	}
-#	global_colonial_growth = 20
-#	colonists = 1
-# }
+spice_bros = {
+	potential = {
+		OR = {
+			tag = SUN
+			tag = MLC
+			tag = MSA
+			tag = BAN
+			tag = CRB
+		}
+		current_age = age_of_discovery
+	}
+
+	trigger = {
+			OR = {
+					great_power_rank = 5
+					 is_great_power = no
+					}
+			OR = {		
+				AND = {
+					OR = {
+						was_tag = SUN
+						tag = SUN	
+					}
+					OR = {
+						alliance_with = MLC
+						alliance_with = MSA
+					}
+				}
+				AND = {		
+					OR = {
+						was_tag = MLC
+						tag = MLC	
+					}	
+					OR = {
+						alliance_with = SUN
+						alliance_with = BAN
+						alliance_with = CRB
+					}	
+				}
+			}	
+			NOT = { is_lacking_institutions = yes }			
+	}
+	global_colonial_growth = 20
+	colonists = 1
+}
 Stop_the_raids = {
 	potential = {
 		OR = {
@@ -695,5 +709,4 @@ qolu_ai_sieges = {
 	defensiveness = -0.5
 	global_autonomy = -0.1
 	yearly_corruption = -0.1
-	diplomatic_upkeep = -2
 }

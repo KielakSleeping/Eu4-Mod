@@ -3,7 +3,7 @@ estate_nomadic_tribes_land_rights = {
 	land_share = 5
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
-	#loyalty = 0.05
+	
 	influence = 0.05
 	can_select = {
 	}
@@ -11,15 +11,8 @@ estate_nomadic_tribes_land_rights = {
 	}
 	penalties = {
 	}
-
 	benefits = {
 		governing_capacity = 100
-	}
-	conditional_modifier = {
-		trigger = { has_country_flag = ned_land_rights_buff_flag }
-		modifier = {
-			governing_capacity = 20
-		}
 	}
 	ai_will_do = {
 		factor = 5
@@ -197,20 +190,10 @@ estate_nomadic_tribes_share_of_the_spoils = {
 	icon = privilege_supply_arms
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
-	#loyalty = 0.05
+	
 	penalties = {
-		available_province_loot = -0.75
+		available_province_loot = 0.75
 	}
-	
-	conditional_modifier = {
-		trigger = {
-			has_country_flag = hordes_share_spoils_buff_flag
-		}
-		modifier = {
-			technology_cost = -0.025
-		}
-	}
-	
 	benefits = {
 		cav_to_inf_ratio = 0.15
 	}
@@ -223,7 +206,7 @@ estate_nomadic_tribes_chieftains_autonomy = {
 	icon = privilege_grant_autonomy
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
-	#loyalty = 0.1
+	
 	influence = 0.1
 	penalties = {
 	}
@@ -244,20 +227,10 @@ estate_nomadic_tribes_guaranteed_leadgership_in_host = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	influence = 0.05
 	can_select = {
-		if = {
-			limit = {
-				NOT = { has_country_flag = hordes_no_at_for_guaranteed_leadership_flag }
-			}
-			army_tradition = 30
-		}
+		army_tradition = 30
 	}
 	on_granted = {
-		if = {
-			limit = {
-				NOT = { has_country_flag = hordes_no_at_for_guaranteed_leadership_flag }
-			}
-			add_army_tradition = -5
-		}
+		add_army_tradition = -5
 	}
 	penalties = {
 	}
@@ -274,7 +247,6 @@ estate_nomadic_tribes_tribal_host = {
 	icon = privilege_raise_host
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
-	loyalty = -0.05
 	influence = 0.1
 	benefits = {
 		global_manpower_modifier = 0.2
@@ -322,7 +294,7 @@ estate_nomadic_tribes_autonomy_of_the_tribes = {
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	influence = 0.1
-	#loyalty = 0.1
+	
 	land_share = 5
 	penalties = {
 	}
@@ -341,7 +313,7 @@ estate_nomadic_tribes_autonomy_of_the_tribes = {
 #Domination generic Estate Privileges
 estate_nomadic_tribes_freedom_of_the_steppes = {
 	icon = privilege_development_efficiency
-	#loyalty = 0.05
+	
 	influence = 0.05
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
@@ -393,7 +365,7 @@ estate_nomadic_tribes_freedom_of_the_steppes = {
 }
 estate_nomadic_tribes_grant_military_leadership = {
 	icon = privilege_army_tradition
-	#loyalty = 0.05
+	
 	influence = 0.05
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
@@ -510,15 +482,7 @@ estate_nomadic_tribes_secured_succession = {
 	can_select = {
 	}
 	on_granted = {
-		if = {
-			limit = {
-				NOT = { has_country_flag = hordes_any_child_can_be_khans_flag }
-			}
-			custom_tooltip = estate_nomadic_tribes_ensure_tribal_loyalty_gt
-		}
-		else = {
-			custom_tooltip = estate_nomadic_tribes_ensure_tribal_loyalty2_gt
-		}
+		custom_tooltip = estate_nomadic_tribes_ensure_tribal_loyalty_gt
 		enable_estate_action = {
 			estate_action = SUPPORT_TRIBES_NOMADIC_TRIBES
 		}
@@ -539,12 +503,11 @@ estate_nomadic_tribes_secured_succession = {
 		factor = 5
 	}
 }
-
 estate_nomadic_tribes_basqaq_autonomy = {
 	icon = privilege_basqaqs
-	max_absolutism = -5
+	max_absolutism = -10
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
-	#loyalty = 0.05
+	loyalty = 0.05
 	influence = 0.1
 	is_valid = {
 		has_country_flag = hordes_basqaqs_unlocked_flag
@@ -567,9 +530,9 @@ estate_nomadic_tribes_basqaq_autonomy = {
 
 estate_nomadic_tribes_religious_tolerance = {
 	icon = privilege_nomadic_tolerance
-	max_absolutism = -5
+	max_absolutism = -10
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
-	#loyalty = 0.05
+	loyalty = 0.05
 	influence = 0.1
 	is_valid = {
 		has_country_flag = hordes_religious_tolerance_tribal_privilege_flag
@@ -593,7 +556,7 @@ estate_nomadic_tribes_nomadic_caravans = {
 	icon = privilege_caravans
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
-	#loyalty = 0.05
+	loyalty = 0.05
 	influence = 0.1
 	
 	is_valid = {

@@ -4,17 +4,11 @@ edict_religion_enforced = {
 	}
 	
 	allow = {
-		always = yes
 		custom_trigger_tooltip = {
-			tooltip = sea_remove_state_edicts_flag_tt
-			OR = {
-				NOT = { has_country_flag = sea_state_edicts_clear_flag }
-				had_country_flag = {
-					flag = sea_state_edicts_clear_flag
-					days = 33
-				}
-			}
+			tooltip =edict_religion_enforced_tooltip
+			has_country_flag = religion_enforced_edict
 		}
+		current_age = age_of_reformation
 	}
 	
 	modifier = {

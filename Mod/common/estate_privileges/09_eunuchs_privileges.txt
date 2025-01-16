@@ -1,6 +1,6 @@
 estate_eunuchs_bookkeepers_privilege = {
 	icon = estate_eunuchs_bookkeepers_privilege
-	max_absolutism = -5
+	max_absolutism = -10
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	is_valid = {
 		OR = {
@@ -9,7 +9,6 @@ estate_eunuchs_bookkeepers_privilege = {
 		}
 	}
 	influence = 0.05
-	#loyalty = 0.05
 	benefits = { 
 		yearly_corruption = -0.05
 		imperial_mandate = 0.03
@@ -40,7 +39,7 @@ estate_eunuchs_bookkeepers_privilege = {
 
 estate_eunuchs_outwards_perfection_privilege = {
 	icon = estate_eunuchs_outwards_perfection_privilege
-	max_absolutism = -5
+	max_absolutism = 5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	is_valid = {
 		OR = { 
@@ -74,12 +73,11 @@ estate_eunuchs_outwards_perfection_privilege = {
 
 estate_eunuchs_palace_bureaucracy_privilege = {
 	icon = estate_eunuchs_palace_bureaucracy_privilege
-	max_absolutism = -5
+	max_absolutism = -10
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	is_valid = { }
 	can_select = { }
 	influence = 0.1
-	#loyalty = 0.05
 	land_share = 5
 	benefits = { advisor_cost = -0.1 }
 	modifier_by_land_ownership = {
@@ -110,7 +108,6 @@ estate_eunuchs_delegate_provincial_administration_privilege = {
 	land_share = 5
 	can_select = { }
 	influence = 0.15
-	#loyalty = 0.05
 	benefits = { 
 		min_autonomy = -5
 	}
@@ -136,22 +133,15 @@ estate_eunuchs_delegate_provincial_administration_privilege = {
 
 estate_eunuchs_imperial_council_privilege = {
 	icon = estate_eunuchs_imperial_council_privilege
-	max_absolutism = -5
+	max_absolutism = -10
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	is_valid = { }
 	can_select = { }
 	influence = 0.1
-	#loyalty = 0.05
 	benefits = { advisor_pool = 2 }
 	penalties = { } 
 	
 	modifier_by_land_ownership = { yearly_corruption = 0.1 } 
-	loyalty_scaled_conditional_modifier = {
-		trigger = { has_country_flag = yua_buff_imperial_council_flag }
-		modifier = {
-			yearly_corruption = -0.1
-		}
-	}
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -163,13 +153,12 @@ estate_eunuchs_imperial_council_privilege = {
 
 estate_eunuchs_land_rights_privilege = {
 	icon = estate_eunuchs_land_rights_privilege
-	max_absolutism = -5
+	max_absolutism = -10
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	land_share = 5
 	is_valid = { }
 	can_select = { }
 	influence = 0.05
-	#loyalty = 0.05
 	benefits = { 
 		governing_capacity = 100 
 		min_autonomy = -5
@@ -204,7 +193,6 @@ estate_eunuchs_western_bureau_privilege = {
 	is_valid = { has_country_flag = mng_make_available_western_bureau_privilege_flag }
 	can_select = { }
 	influence = 0.05
-	#loyalty = 0.05
 	benefits = { 
 		imperial_mandate = 0.05
 		reform_progress_growth = 0.1
@@ -228,7 +216,6 @@ estate_eunuchs_eastern_bureau_privilege = {
 	is_valid = { has_country_flag = mng_make_available_eastern_bureau_privilege_flag }
 	can_select = { }
 	influence = 0.05
-	#loyalty = 0.05
 	benefits = { 
 		imperial_mandate = 0.05
 		meritocracy = 0.1
@@ -247,7 +234,7 @@ estate_eunuchs_eastern_bureau_privilege = {
 
 estate_eunuchs_royal_intrigue_keepers_privilege = {
 	icon = estate_eunuchs_royal_intrigue_keepers_privilege
-	max_absolutism = -5
+	max_absolutism = -10
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	is_valid = {
 		
@@ -256,7 +243,6 @@ estate_eunuchs_royal_intrigue_keepers_privilege = {
 	
 	}
 	influence = 0.1
-	#loyalty = 0.1
 	benefits = { 
 	}
 	penalties = {
@@ -277,7 +263,7 @@ estate_eunuchs_royal_intrigue_keepers_privilege = {
 
 estate_eunuchs_promote_eunuch_rights = {
 	icon = estate_eunuchs_promote_eunuch_rights
-	max_absolutism = -5
+	max_absolutism = -10
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	is_valid = {
 		
@@ -286,7 +272,6 @@ estate_eunuchs_promote_eunuch_rights = {
 	
 	}
 	influence = 0.1
-	#loyalty = 0.1
 	benefits = { 
 		
 	}
@@ -311,10 +296,8 @@ estate_eunuchs_delegate_subject_diplomacy_privilege = {
 		NOT = { has_estate_privilege = estate_nobles_strong_duchies }
 	}
 	influence = 0.1
-	#loyalty = 0.1
 	benefits = { }
-	modifier_by_land_ownership = { 
-		#reduced_liberty_desire = 25
+	modifier_by_land_ownership = {
 		interest = -1
 		improve_relation_modifier = 0.5
 		yearly_corruption = 0.2
@@ -340,7 +323,6 @@ estate_eunuchs_supremacy_over_crown_privilege = {
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	influence = 0.1
-	loyalty = 0.0
 	is_valid = {
 		always = no
 		has_dlc = "Emperor"
@@ -351,8 +333,32 @@ estate_eunuchs_supremacy_over_crown_privilege = {
 	}
 	penalties = { yearly_corruption = 0.1 }
 	benefits = {
-		all_estate_loyalty_equilibrium = 0.1
-		all_estate_influence_modifier = 0.1
+		burghers_loyalty_modifier = 0.1
+		church_loyalty_modifier = 0.1
+		dhimmi_loyalty_modifier = 0.1
+		cossacks_loyalty_modifier = 0.1
+		rajput_loyalty_modifier = 0.1
+		brahmins_hindu_loyalty_modifier = 0.1
+		brahmins_muslim_loyalty_modifier = 0.1
+		brahmins_other_loyalty_modifier = 0.1
+		maratha_loyalty_modifier = 0.1
+		jains_loyalty_modifier = 0.1
+		vaisyas_loyalty_modifier = 0.1
+		nomadic_tribes_loyalty_modifier = 0.1
+		burghers_influence_modifier = 0.1
+		church_influence_modifier = 0.1
+		dhimmi_influence_modifier = 0.1
+		cossacks_influence_modifier = 0.1
+		rajput_influence_modifier = 0.1
+		brahmins_hindu_influence_modifier = 0.1
+		brahmins_muslim_influence_modifier = 0.1
+		brahmins_other_influence_modifier = 0.1
+		maratha_influence_modifier = 0.1
+		jains_influence_modifier = 0.1
+		vaisyas_influence_modifier = 0.1
+		nomadic_tribes_influence_modifier = 0.1
+		nobles_influence_modifier = 0.1
+		nobles_loyalty_modifier = 0.1
 	}
 	mechanics = {
 		can_give_agendas_without_interaction
@@ -377,7 +383,6 @@ estate_eunuchs_establish_favor_system_privilege = {
 	
 	}
 	influence = 0.1
-	#loyalty = 0.1
 	benefits = { 
 		monthly_favor_modifier = 0.5
 		national_focus_years = -5
@@ -402,12 +407,11 @@ estate_eunuchs_allow_personal_fortunes_privilege = {
 	is_valid = { }
 	can_select = { }
 	influence = 0.1
-	#loyalty = 0.1
 	benefits = { 
 		
 	}
 	modifier_by_land_ownership = {
-		trade_efficiency = 0.20
+		trade_efficiency = 0.2
 		yearly_corruption = 0.25
 	}
 	penalties = { }
@@ -431,7 +435,6 @@ estate_eunuchs_single_whip_law_privilege = {
 	}
 	land_share = 5
 	influence = 0.05
-	#loyalty = 0.1
 	benefits = { 
 		
 	}
@@ -450,27 +453,5 @@ estate_eunuchs_single_whip_law_privilege = {
 				NOT = { yearly_corruption_increase = 0.35 } 
 			}
 		}
-	}
-}
-
-estate_eunuchs_ears_and_eyes_of_the_emperor_privilege = {
-	icon = estate_eunuchs_establish_favor_system_privilege
-	max_absolutism = -5
-	influence = 0.1
-	#loyalty = 0.1
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
-	is_valid = {
-		has_country_flag = yua_eyes_and_ears_of_the_emperor_flag
-	}
-	loyalty_scaled_conditional_modifier = {
-		trigger = { always = yes }
-		modifier = {
-			yearly_corruption = -0.1
-			global_unrest = -2
-		}
-	}
-	
-	ai_will_do = {
-		factor = 1
 	}
 }

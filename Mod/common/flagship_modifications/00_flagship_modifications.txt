@@ -47,10 +47,9 @@ trade_route_map = {
         }
     }
 }
-
 command_aftercastle = {
-    trigger = {
-       always = no
+	trigger = {
+        always = no
     }
 	modifier = {
         morale_in_fleet_modifier = 0.05
@@ -65,7 +64,7 @@ command_aftercastle = {
 }
 
 improved_crows_nest = {
-    trigger = {
+	trigger = {
         always = no
     }
 	modifier = {
@@ -185,7 +184,6 @@ portuguese_trade_route_map = {
         normal_or_historical_nations = yes
     }
 	modifier = {
-        #trade_power_in_fleet_modifier = 2
         naval_maintenance_flagship_modifier = 0.25
 	}
     ai_trade_score = {
@@ -233,7 +231,7 @@ spanish_treasure_fleet = {
             tag = SPA
             tag = CAS
         }
-        always = no
+		always = no
         normal_or_historical_nations = yes
     }
 	modifier = {
@@ -280,7 +278,7 @@ spanish_mass_load_cannons = {
 
 dutch_courage = {
     trigger = {
-       always = no
+         always = no
     }
     modifier = {
         morale_in_fleet_modifier = 0.1
@@ -416,7 +414,7 @@ flag_officers = {
 }
 
 spare_jolly_roger = {
-    trigger = {
+	trigger = {
 		 always = no
 	}
     modifier = {

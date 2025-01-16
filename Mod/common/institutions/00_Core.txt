@@ -597,72 +597,9 @@ new_world_i = {
 				is_year = 1500
 				continent = europe		
 				owner = { colony = 1 }
-			}
-			AND = {
-				is_year = 1550
-				owner = {
-					NOT = { technology_group = north_american }
-					NOT = { technology_group = mesoamerican }
-					NOT = { technology_group = south_american }
-					NOT = { technology_group = andean }
 				}
-				superregion = south_america_superregion
 			}
-			AND = {
-				is_year = 1550
-				owner = {
-					NOT = { technology_group = north_american }
-					NOT = { technology_group = mesoamerican }
-					NOT = { technology_group = south_american }
-					NOT = { technology_group = andean }
-				}
-				superregion = north_america_superregion
-			}
-			AND = {
-				is_year = 1550
-				owner = {
-					NOT = { technology_group = north_american }
-					NOT = { technology_group = mesoamerican }
-					NOT = { technology_group = south_american }
-					NOT = { technology_group = andean }
-				}
-				superregion = central_america_superregion
-			}
-			AND = {
-				is_year = 1600
-				superregion = near_east_superregion
-			}
-			AND = {
-				is_year = 1600
-				continent = europe
-			}
-			AND = {
-				is_year = 1625
-				superregion = persia_superregion
-			}
-			AND = {
-				is_year = 1650
-				superregion = india_superregion
-			}
-			
-			
-			AND = {
-				is_year = 1650
-				superregion = china_superregion
-			}
-			
-			AND = {
-				is_year = 1650
-				superregion = east_indies_superregion
-			}
-			AND = {
-				is_year = 1700
-				superregion = africa_superregion
-			}
-			is_year = 1800
 		}
-			
-	}
 	
 	
 	can_start = {

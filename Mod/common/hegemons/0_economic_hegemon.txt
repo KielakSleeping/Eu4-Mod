@@ -28,6 +28,5 @@ economic_hegemon = {
 	max = {
 		all_power_cost = -0.1
 	}
-	#effect = {} # When a country picks the hegemon
-	#removed_effect = {} # When a country loses the hegemon
+	
 }

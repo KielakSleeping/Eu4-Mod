@@ -1,6 +1,5 @@
 military_hegemon = {
 	allow = {
-		
 		if = {
 			limit = {
 				NOT = { has_country_flag = halve_hegemony_requirements }

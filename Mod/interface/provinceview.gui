@@ -459,7 +459,7 @@ guiTypes = {
 				spriteType = "GFX_have_parliament_icon"
 				position = { x = 73 y = 1 }
 			}
-			
+
 
 			guiButtonType =
 			{
@@ -2877,8 +2877,8 @@ guiTypes = {
 			fullScreen = no
 			moveable = 0
 			Orientation = "UPPER_LEFT"
-			#max_slots_horizontal = 6   #seems to not be needed
-				#max_slots_vertical = 3 #seems to not be needed
+			max_slots_horizontal = 6
+				max_slots_vertical = 3
 
 			#### GREAT PROJECTS WINDOW
 			windowType = {

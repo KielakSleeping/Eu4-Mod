@@ -3,7 +3,7 @@ estate_burghers_land_rights = {
 	land_share = 5
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
-	#loyalty = 0.05
+	
 	influence = 0.05
 	can_select = {
 	}
@@ -17,20 +17,17 @@ estate_burghers_land_rights = {
 			stability_cost_modifier = -0.05
 		}
 	}
-
 	benefits = {
 		governing_capacity = 100
-	}
-	conditional_modifier = {
-		trigger = { has_country_flag = ned_land_rights_buff_flag }
-		modifier = {
-			governing_capacity = 20
-		}
 	}
 	conditional_modifier = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.03 }
 	}
+	#conditional_modifier = {
+	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
+	#	modifier = { monthly_ottoman_decadence = 0.02 }
+	#}
 	ai_will_do = {
 		factor = 5
 		modifier = {
@@ -207,13 +204,12 @@ estate_burghers_enforced_interfaith_dialogue = {
 	icon = privilege_promoto_dhimmi_nobles
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
-	#loyalty = 0.05
+	
 	is_valid = {
 		any_owned_province = {
 			NOT = { religion = root }
 		}
 		OR = {
-			has_country_flag = orm_unlock_enforced_interfaith_dialogue
 			has_estate_privilege = estate_burghers_enforced_interfaith_dialogue
 			NOT = { has_estate = estate_dhimmi }
 		}
@@ -226,10 +222,7 @@ estate_burghers_enforced_interfaith_dialogue = {
 		tolerance_heretic = 2
 	}
 	conditional_modifier = {
-		trigger = { 
-			NOT = { has_government_attribute = enforced_interfaith_dialogue_buff } 
-			NOT = { has_country_flag = ned_buff_interfaith_dialog_clergy_loyalty_flag }
-		}
+		trigger = { NOT = { has_government_attribute = enforced_interfaith_dialogue_buff } }
 		modifier = {
 			church_loyalty_modifier = -0.1
 		}
@@ -241,16 +234,13 @@ estate_burghers_enforced_interfaith_dialogue = {
 		}
 	}
 	conditional_modifier = {
-		trigger = { has_country_flag = ned_buff_interfaith_dialog_grant_tolerance_heretics_flag }
-		modifier = {
-			tolerance_heretic = 1
-			tolerance_of_heretics_capacity = 1
-		}
-	}
-	conditional_modifier = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.03 }
 	}
+	#conditional_modifier = {
+	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
+	#	modifier = { monthly_ottoman_decadence = 0.02 }
+	#}
 	ai_will_do = {
 		factor = 0
 	}
@@ -282,6 +272,10 @@ estate_burghers_land_of_commerce = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.03 }
 	}
+	#conditional_modifier = {
+	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
+	#	modifier = { monthly_ottoman_decadence = 0.02 }
+	#}
 	ai_will_do = {
 		factor = 100
 		modifier = {
@@ -323,20 +317,10 @@ estate_burghers_admirals = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	influence = 0.05
 	can_select = {
-		if = {
-			limit = {
-				NOT = { has_country_flag = ned_burghers_in_admirality_buff_flag }
-			}
-			navy_tradition = 30
-		}
+		navy_tradition = 30
 	}
 	on_granted = {
-		if = {
-			limit = {
-				NOT = { has_country_flag = ned_burghers_in_admirality_buff_flag }
-			}
-			add_navy_tradition = -15
-		}
+		add_navy_tradition = -15
 	}
 	penalties = {
 	}
@@ -348,10 +332,10 @@ estate_burghers_admirals = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.03 }
 	}
-	conditional_modifier = {
-		trigger = { has_country_flag = ned_burghers_in_admirality_buff_flag }
-		modifier = { max_admiral_maneuver = 1 }
-	}
+	#conditional_modifier = {
+	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
+	#	modifier = { monthly_ottoman_decadence = 0.02 }
+	#}
 	ai_will_do = {
 		factor = 0
 	}
@@ -362,7 +346,7 @@ estate_burghers_commercial_board_of_advice = {
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	influence = 0.05
-	#loyalty = 0.05
+	
 	is_valid = {
 		always = no
 	}
@@ -376,6 +360,10 @@ estate_burghers_commercial_board_of_advice = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.03 }
 	}
+	#conditional_modifier = {
+	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
+	#	modifier = { monthly_ottoman_decadence = 0.02 }
+	#}
 	ai_will_do = {
 		factor = 9
 		modifier = {
@@ -393,7 +381,7 @@ estate_burghers_new_world_charter = {
 	icon = privilege_grant_new_world_charter
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
-	#loyalty = 0.05
+	
 	influence = 0.05
 	is_valid = {
 		NOT = { is_colonial_nation = yes }
@@ -403,7 +391,7 @@ estate_burghers_new_world_charter = {
 		}
 	}
 	penalties = {
-		global_tariffs = -0.10
+		global_tariffs = -0.1
 	}
 	benefits = {
 		global_colonial_growth = 25
@@ -454,14 +442,10 @@ estate_burghers_new_world_charter = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.03 }
 	}
-	conditional_modifier = {
-		trigger = {
-			has_country_flag = ned_new_world_charters_buff_flag
-		}
-		modifier = {
-			naval_forcelimit_modifier = 0.05
-		}
-	}
+	#conditional_modifier = {
+	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
+	#	modifier = { monthly_ottoman_decadence = 0.02 }
+	#}
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -487,7 +471,7 @@ estate_burghers_indebted_to_burghers = {
 	icon = privilege_give_money
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
-	#loyalty = 0.05
+	
 	influence = 0.05
 	on_granted = {
 		if = {
@@ -574,6 +558,10 @@ estate_burghers_indebted_to_burghers = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.03 }
 	}
+	#conditional_modifier = {
+	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
+	#	modifier = { monthly_ottoman_decadence = 0.02 }
+	#}
 	ai_will_do = {
 		factor = 0
 	}
@@ -583,7 +571,7 @@ estate_burghers_free_enterprise = {
 	icon = privilege_comission_merchant_ships_for_war
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
-	#loyalty = 0.1
+	
 	influence = 0.1
 	penalties = {
 	}
@@ -592,10 +580,10 @@ estate_burghers_free_enterprise = {
 	}
 	conditional_modifier = {
 		trigger = {
-			mercantilism = 75
+			mercantilism = 50
 		}
 		modifier = {
-			placed_merchant_power_modifier = 0.10
+			placed_merchant_power_modifier = 0.25
 		}
 	}
 	conditional_modifier = {
@@ -609,20 +597,10 @@ estate_burghers_free_enterprise = {
 			max_absolutism = 10
 		}
 	}
-	conditional_modifier = {
-		trigger = { has_country_flag = ned_buffed_free_enterprises }
-		modifier = {
-			trade_efficiency = 0.05
-			burghers_loyalty_modifier = 0.05
-		}
-	}
-	conditional_modifier = {
-		trigger = { has_reform = modern_economics_reform }
-		modifier = {
-			naval_forcelimit_modifier = 0.05
-			light_ship_cost = -0.10
-		}
-	}
+	#conditional_modifier = {
+	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
+	#	modifier = { monthly_ottoman_decadence = 0.02 }
+	#}
 	ai_will_do = {
 		factor = 10
 		modifier = {
@@ -636,34 +614,13 @@ estate_burghers_patronage_of_the_arts = {
 	icon = privilege_build_jain_temple
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
-	#loyalty = 0.05
-	influence = 0.05
-	conditional_modifier = {
-		trigger = { NOT = { has_country_flag = ned_patronage_buff_flag } }
-		modifier = { global_tax_modifier = -0.05 }
-	}
 	
-	conditional_modifier = {
-		trigger = { NOT = { has_country_flag = ned_patronage_buff_flag } }
-		modifier = { prestige = 0.5 }
+	influence = 0.05
+	penalties = {
+		global_tax_modifier = -0.05
 	}
-	conditional_modifier = {
-		trigger = { has_country_flag = ned_patronage_buff_flag }
-		modifier = { prestige = 1 }
-	}
-	conditional_modifier = {
-		trigger = { 
-			has_country_flag = TIM_upgrade_patronage_of_arts_privilege_flag
-			has_dlc = "Mandate of Heaven"
-		}
-		modifier = { global_prosperity_growth = 0.5 }
-	}
-	conditional_modifier = {
-		trigger = { 
-			has_country_flag = TIM_upgrade_patronage_of_arts_privilege_flag
-			NOT = { has_dlc = "Mandate of Heaven" }
-		}
-		modifier = { stability_cost_modifier = -0.10 }
+	benefits = {
+		prestige = 0.5
 	}
 	cooldown_years = 10
 	on_granted = {
@@ -711,6 +668,10 @@ estate_burghers_patronage_of_the_arts = {
 			build_cost = -0.05
 		}
 	}
+	#conditional_modifier = {
+	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
+	#	modifier = { monthly_ottoman_decadence = 0.02 }
+	#}
 	ai_will_do = {
 		factor = 0
 	}
@@ -721,7 +682,7 @@ estate_burghers_land_trade_rights = {
 	land_share = 5
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
-	#loyalty = 0.1
+	
 	influence = 0.1
 	is_valid = {
 	}
@@ -747,10 +708,10 @@ estate_burghers_land_trade_rights = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.03 }
 	}
-	conditional_modifier={
-		trigger = { has_country_flag = MAY_upgrade_privilege_of_burghers_flag }
-		modifier = { dip_tech_cost_modifier = -0.1 }
-	}
+	#conditional_modifier = {
+	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
+	#	modifier = { monthly_ottoman_decadence = 0.02 }
+	#}
 	ai_will_do = {
 		factor = 0
 	}
@@ -762,7 +723,7 @@ estate_burghers_monopoly_of_textiles = {
 	icon = privilege_monopoly_of_goods_cloth
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
-	#loyalty = 0.05
+	
 	is_valid = {
 		OR = {
 			has_dlc = "Emperor"
@@ -884,7 +845,7 @@ estate_burghers_monopoly_of_dyes = {
 	icon = privilege_monopoly_of_goods_dyes
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
-	#loyalty = 0.05
+	
 	is_valid = {
 		OR = {
 			has_dlc = "Emperor"
@@ -995,7 +956,7 @@ estate_burghers_monopoly_of_glass = {
 	icon = privilege_monopoly_of_goods_glass
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
-	#loyalty = 0.05
+	
 	is_valid = {
 		OR = {
 			has_dlc = "Emperor"
@@ -1124,7 +1085,7 @@ estate_burghers_monopoly_of_paper = {
 	icon = privilege_monopoly_of_goods_paper
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
-	#loyalty = 0.05
+	
 	is_valid = {
 		OR = {
 			has_dlc = "Emperor"
@@ -1297,6 +1258,10 @@ estate_burghers_the_great_privilege = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.03 }
 	}
+	#conditional_modifier = {
+	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
+	#	modifier = { monthly_ottoman_decadence = 0.02 }
+	#}
 	ai_will_do = {
 		factor = 0
 	}
@@ -1307,7 +1272,7 @@ estate_burghers_exclusive_trade_rights = {
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	influence = 0.05
-	#loyalty = 0.05
+	
 	is_valid = {
 		has_dlc = "Emperor"
 		any_active_trade_node = {
@@ -1345,7 +1310,6 @@ estate_burghers_exclusive_trade_rights = {
 				}
 			}
 		}
-		#add_mercantilism = 3
 	}
 	on_revoked = {
 		custom_tooltip = estate_burghers_exclusive_trade_rights_revoke_tooltip
@@ -1377,6 +1341,10 @@ estate_burghers_exclusive_trade_rights = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.03 }
 	}
+	#conditional_modifier = {
+	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
+	#	modifier = { monthly_ottoman_decadence = 0.02 }
+	#}
 	ai_will_do = {
 		factor = 0
 	}
@@ -1387,17 +1355,16 @@ estate_burghers_control_over_monetary_policy = {
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	influence = 0.05
-	#loyalty = 0.05
+	
 	is_valid = {
 		always = no
-		has_dlc = "Emperor"
 	}
 	penalties = {
 		#all_power_cost = 0.05
 	}
 	benefits = {
 		inflation_reduction = 0.15
-		#interest = -0.5
+		#interest = -0.25
 		production_efficiency = 0.05
 	}
 	conditional_modifier = {
@@ -1413,6 +1380,10 @@ estate_burghers_control_over_monetary_policy = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.03 }
 	}
+	#conditional_modifier = {
+	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
+	#	modifier = { monthly_ottoman_decadence = 0.02 }
+	#}
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -1434,7 +1405,7 @@ estate_burghers_private_trade_fleets = {
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	influence = 0.1
-	#loyalty = 0.05
+	
 	is_valid = {
 		NOT = { is_colonial_nation = yes }
 		OR = {
@@ -1499,18 +1470,13 @@ estate_burghers_private_trade_fleets = {
 		}
 	}
 	conditional_modifier = {
-		trigger = { 
-			has_country_flag = oma_private_trading_fleets_buff_flag
-		}
-		modifier = { 
-			naval_forcelimit_modifier = 0.10
-		}
-	}
-	
-	conditional_modifier = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.03 }
 	}
+	#conditional_modifier = {
+	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
+	#	modifier = { monthly_ottoman_decadence = 0.02 }
+	#}
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -1530,7 +1496,7 @@ estate_burghers_prussian_confederation = {
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	influence = 0.1
-	#loyalty = 0.1
+	
 	is_valid = {
 		tag = TEU
 		has_disaster = prussian_confederation_disaster
@@ -1591,6 +1557,10 @@ estate_burghers_statutory_rights = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.03 }
 	}
+	#conditional_modifier = {
+	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
+	#	modifier = { monthly_ottoman_decadence = 0.02 }
+	#}
 	ai_will_do = {
 		factor = 0
 	}
@@ -1665,6 +1635,10 @@ estate_burghers_khmer_irrigation = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.03 }
 	}
+	#conditional_modifier = {
+	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
+	#	modifier = { monthly_ottoman_decadence = 0.02 }
+	#}
 	ai_will_do = {
 		factor = 1000
 	}
@@ -1672,19 +1646,20 @@ estate_burghers_khmer_irrigation = {
 
 estate_burghers_tropical_nation = {
 	icon = privilege_grant_new_world_charter
-	#loyalty = 0.05
+	
 	influence = 0.05
 	is_valid = {
 		OR = {
 			has_estate_privilege = estate_burghers_tropical_nation
 			technology_group = chinese
+			OR = {
+				tag = SON
+				was_tag = SON
+				tag = ZAN
+				was_tag = ZAN
+			}
 			technology_group = indian
-			tag = SON
-			was_tag = SON
-			tag = ZAN
-			was_tag = ZAN
 		}
-		
 	}
 	can_select = {
 		capital_scope = {
@@ -1737,6 +1712,10 @@ estate_burghers_tropical_nation = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.03 }
 	}
+	#conditional_modifier = {
+	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
+	#	modifier = { monthly_ottoman_decadence = 0.02 }
+	#}
 	ai_will_do = {
 		factor = 1000
 	}
@@ -1746,7 +1725,7 @@ estate_burghers_orang_laut_alliances = {
 	icon = privilege_diplo_power
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
-	#loyalty = 0.1
+	
 	influence = 0.15
 	can_select = {
 		capital_scope = {
@@ -1767,6 +1746,10 @@ estate_burghers_orang_laut_alliances = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.03 }
 	}
+	#conditional_modifier = {
+	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
+	#	modifier = { monthly_ottoman_decadence = 0.02 }
+	#}
 	ai_will_do = {
 		factor = 5
 	}
@@ -1778,7 +1761,7 @@ estate_burghers_hydraulic_rights = {
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	influence = 0.05
-	#loyalty = 0.05
+	
 	is_valid = {
 		has_unlocked_estate_privilege = { estate_privilege = estate_burghers_hydraulic_rights }
 	}
@@ -1882,7 +1865,7 @@ estate_burghers_control_over_the_mint = {
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	influence = 0.05
-	#loyalty = 0.05
+	
 	is_valid = {
 		has_unlocked_estate_privilege = { estate_privilege = estate_burghers_control_over_the_mint }
 		gold = 1
@@ -1971,7 +1954,7 @@ estate_burghers_forest_expansion = {
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	influence = 0.05
-	#loyalty = 0.05
+	
 	is_valid = {
 		has_unlocked_estate_privilege = { estate_privilege = estate_burghers_forest_expansion }
 	}
@@ -2049,7 +2032,7 @@ estate_burghers_mountain_expansion = {
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	influence = 0.05
-	#loyalty = 0.05
+	
 	is_valid = {
 		has_unlocked_estate_privilege = { estate_privilege = estate_burghers_mountain_expansion }
 	}
@@ -2139,17 +2122,13 @@ estate_burghers_orthodox_tolerance = {
 	icon = privilege_tolerance_heretics
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
-	#loyalty = 0.05
+	
 	influence = 0.05
 	is_valid = {
 		religion_group = christian
 		NOT = { religion = orthodox }
 		NOT = { religion = coptic }
 		#has_unlocked_estate_privilege = { estate_privilege = estate_burghers_orthodox_tolerance }
-	}
-	conditional_modifier = {
-		trigger = { has_country_flag = hun_empower_orthodox_autonomy }
-		modifier = { max_absolutism = 5 church_loyalty_modifier = 0.1 }
 	}
 	can_select = {
 		religion_group = christian
@@ -2271,7 +2250,7 @@ estate_burghers_polish_merchant_seal = {
 		}
 	}
 	influence = 0.05
-	#loyalty = 0.05
+	
 	benefits = { 
 		placed_merchant_power = 5 
 		center_of_trade_upgrade_cost = -0.1 
@@ -2343,7 +2322,7 @@ estate_burghers_the_new_middle_class = {
 		NOT = { has_country_flag = enserfed_peasants }
 	}
 	influence = 0.1
-	#loyalty = 0.15
+	
 	can_revoke = {
 		government = republic
 	}
@@ -2393,7 +2372,7 @@ estate_burghers_sindicat_remensa_privilege = {
 		has_country_flag = remensa_privilege_flag
 	}
 	influence = 0.1
-	#loyalty = 0.15
+	
 	benefits = {
 		burghers_privilege_slots = 1
 		global_trade_goods_size_modifier = 0.1
@@ -2419,7 +2398,7 @@ estate_burghers_autonomous_trade_companies = {
 		}
 	}
 	influence = 0.05
-	#loyalty = 0.05
+	
 	benefits = { 
 		placed_merchant_power = 5 
 		center_of_trade_upgrade_cost = -0.1 
@@ -2435,32 +2414,14 @@ estate_burghers_autonomous_trade_companies = {
 #Domination generic Estate Privileges
 estate_burghers_development_of_cities = {
 	icon = privilege_development_efficiency
-	#loyalty = 0.05
+	
 	influence = 0.05
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
-	conditional_modifier = {
-		trigger = {
-			OR = {
-				has_country_flag = ITA_upgrade_city_expansion_privileges_flag
-				has_country_flag = INC_remove_max_absolutism_penalty_from_city_expansion_privileges_flag
-			}
-		}
-		modifier = {
-			max_absolutism = 5
-		}
-	}
 	is_valid = {
 		has_dlc = "Domination"
 	}
 	on_granted = {
-		if = {
-			limit = {
-				has_country_flag = ITA_upgrade_city_expansion_privileges_flag
-			}
-			custom_tooltip = ITA_doing_estate_burghers_agendas
-		}
-		
 		custom_tooltip = estate_burghers_development_of_cities_gt
 		tooltip = {
 			add_province_modifier = {
@@ -2506,6 +2467,10 @@ estate_burghers_development_of_cities = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.03 }
 	}
+	#conditional_modifier = {
+	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
+	#	modifier = { monthly_ottoman_decadence = 0.02 }
+	#}
 	ai_will_do = {
 		factor = 0
 	}
@@ -2540,6 +2505,10 @@ estate_burghers_control_over_the_coinage = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.03 }
 	}
+	#conditional_modifier = {
+	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
+	#	modifier = { monthly_ottoman_decadence = 0.02 }
+	#}
 	ai_will_do = {
 		factor = 0
 	}
@@ -2551,8 +2520,8 @@ estate_burghers_economical_boost = {
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	is_valid = {
-		NOT = { is_colonial_nation = yes }
 		has_dlc = "Domination"
+		NOT = { is_colonial_nation = yes }
 	}
 	can_select = {
 		if = {
@@ -2621,6 +2590,10 @@ estate_burghers_economical_boost = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.03 }
 	}
+	#conditional_modifier = {
+	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
+	#	modifier = { monthly_ottoman_decadence = 0.02 }
+	#}
 	ai_will_do = {
 		factor = 0
 	}
@@ -2655,6 +2628,10 @@ estate_burghers_expanded_monopoly_rights = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.03 }
 	}
+	#conditional_modifier = {
+	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
+	#	modifier = { monthly_ottoman_decadence = 0.02 }
+	#}
 	ai_will_do = {
 		factor = 10
 		modifier = {
@@ -2698,6 +2675,10 @@ estate_burghers_force_impressment = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.03 }
 	}
+	#conditional_modifier = {
+	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
+	#	modifier = { monthly_ottoman_decadence = 0.02 }
+	#}
 	ai_will_do = {
 		factor = 0
 	}
@@ -2737,6 +2718,10 @@ estate_burghers_naval_school_right = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.03 }
 	}
+	#conditional_modifier = {
+	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
+	#	modifier = { monthly_ottoman_decadence = 0.02 }
+	#}
 	ai_will_do = {
 		factor = 0
 	}
@@ -2750,9 +2735,6 @@ estate_burghers_financial_demand = {
 	is_valid = {
 		has_dlc = "Domination"
 	}
-	benefits = {
-		global_tax_modifier = 0.1
-	}
 	can_select = {
 		is_at_war = no
 	}
@@ -2765,25 +2747,29 @@ estate_burghers_financial_demand = {
 	on_cooldown_expires = {
 		country_event = { id = echo.14 }
 	}
-	# on_granted = {
-	# 	enable_estate_action = {
-	# 		estate_action = ASK_FOR_CONTRIBUTION_BURGHERS
-	# 	}
-	# }
-	# on_invalid = {
-	# 	disable_estate_action = {
-	# 		estate_action = ASK_FOR_CONTRIBUTION_BURGHERS
-	# 	}
-	# }
-	# on_revoked = {
-	# 	disable_estate_action = {
-	# 		estate_action = ASK_FOR_CONTRIBUTION_BURGHERS
-	# 	}
-	# }
+	#on_granted = {
+	#	enable_estate_action = {
+	#		estate_action = ASK_FOR_CONTRIBUTION_BURGHERS
+	#	}
+	#}
+	#on_invalid = {
+	#	disable_estate_action = {
+	#		estate_action = ASK_FOR_CONTRIBUTION_BURGHERS
+	#	}
+	#}
+	#on_revoked = {
+	#	disable_estate_action = {
+	#		estate_action = ASK_FOR_CONTRIBUTION_BURGHERS
+	#	}
+	#}
 	conditional_modifier = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.03 }
 	}
+	#conditional_modifier = {
+	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
+	#	modifier = { monthly_ottoman_decadence = 0.02 }
+	#}
 	ai_will_do = {
 		factor = 0
 	}
@@ -2799,76 +2785,35 @@ estate_burghers_promote_burgher_bookkeeping = {
 	}
 	loyalty_scaled_conditional_modifier = {
 		trigger = { always = yes }
-		# trigger = {
-		# 	NOT = {
-		# 		has_government_attribute = GER_upgrade_merchant_bookkeeping
-		# 	}
-		# }
 		modifier = {
 			inflation_action_cost = -0.25
 			interest = -0.15
 			state_maintenance_modifier = -0.20
 		}
 	}
-	loyalty_scaled_conditional_modifier = {
-		trigger = {
-			has_government_attribute = GER_upgrade_merchant_bookkeeping
-		}
-		modifier = {
-			inflation_action_cost = -0.275
-			interest = -0.175
-			state_maintenance_modifier = -0.225
-		}
-	}
 	on_granted = {
-		if = {
-			limit = {
-				has_government_attribute = GER_upgrade_merchant_bookkeeping
-			}
-			scaling_with_loyalty_privilege_tooltip = {
-				estate_privilege = estate_burghers_promote_burgher_bookkeeping_upgraded
-			}
-		}
-		else = {
-			scaling_with_loyalty_privilege_tooltip = {
-				estate_privilege = estate_burghers_promote_burgher_bookkeeping
-			}
+		scaling_with_loyalty_privilege_tooltip = {
+			estate_privilege = estate_burghers_promote_burgher_bookkeeping
 		}
 	}
 	on_revoked = {
-		if = {
-			limit = {
-				has_government_attribute = GER_upgrade_merchant_bookkeeping
-			}
-			scaling_with_loyalty_privilege_tooltip = {
-				estate_privilege = estate_burghers_promote_burgher_bookkeeping_upgraded
-			}
-		}
-		else = {
-			scaling_with_loyalty_privilege_tooltip = {
-				estate_privilege = estate_burghers_promote_burgher_bookkeeping
-			}
+		scaling_with_loyalty_privilege_tooltip = {
+			estate_privilege = estate_burghers_promote_burgher_bookkeeping
 		}
 	}
 	on_invalid = {
-		if = {
-			limit = {
-				has_government_attribute = GER_upgrade_merchant_bookkeeping
-			}
-			scaling_with_loyalty_privilege_tooltip = {
-				estate_privilege = estate_burghers_promote_burgher_bookkeeping_upgraded
-			}
-		}
-		else = {
-			scaling_with_loyalty_privilege_tooltip = {
-				estate_privilege = estate_burghers_promote_burgher_bookkeeping
-			}
+		scaling_with_loyalty_privilege_tooltip = {
+			estate_privilege = estate_burghers_promote_burgher_bookkeeping
 		}
 	}
 	conditional_modifier = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.03 }
 	}
+	#conditional_modifier = {
+	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
+	#	modifier = { monthly_ottoman_decadence = 0.02 }
+	#}
 	ai_will_do = {
 		factor = 10
 	}
@@ -2882,7 +2827,7 @@ estate_burghers_great_works_of_iran = {
 	icon = privilege_dev_cost_desert
 	land_share = 5
 	max_absolutism = -5
-	#loyalty = 0.05
+	
 	influence = 0.05
 	is_valid = {
 		has_unlocked_estate_privilege = {
@@ -3019,7 +2964,7 @@ estate_burghers_fund_karimi = {
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	land_share = 5
-	#loyalty = 0.1
+	
 	influence = 0.1
 	is_valid = {
 		is_or_was_tag = {
@@ -3042,7 +2987,7 @@ estate_burghers_foreign_expeditions = {
 	icon = estate_burghers_foreign_expeditions
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
-	#loyalty = 0.05
+	
 	influence = 0.1
 	is_valid = {
 		has_unlocked_estate_privilege = { 
@@ -3069,7 +3014,7 @@ estate_burghers_nile_goods_transport = {
 	icon = estate_burghers_nile_goods_transport
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
-	#loyalty = 0.05
+	
 	influence = 0.1
 	is_valid = {
 		has_unlocked_estate_privilege = { 
@@ -3096,7 +3041,7 @@ estate_burghers_monopoly_of_coffee = {
 	icon = estate_burghers_monopoly_of_coffee
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
-	#loyalty = 0.1
+	
 	is_valid = {
 		has_country_flag = mam_enable_coffee_monopoly_flag
 	}
@@ -3347,10 +3292,9 @@ estate_burghers_exkousseiai_for_latins = {
 
 estate_burghers_BYZ_single_market = {
 	icon = estate_burghers_BYZ_single_market
-	#loyalty = 0.1
+	
 	influence = 0.05
 	max_absolutism = -5
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	is_valid = {
 		has_unlocked_estate_privilege = { estate_privilege = estate_burghers_BYZ_single_market }
 	}
@@ -3387,7 +3331,7 @@ estate_burghers_BYZ_single_market = {
 
 estate_burghers_ARB_oasis_development = {
 	icon = estate_burghers_arb_oasis_development
-	#loyalty = 0.05
+	
 	influence = 0.15
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
@@ -3425,7 +3369,7 @@ estate_burghers_ARB_oasis_development = {
 		}
 	}
 	on_revoked = {
-		custom_tooltip = bs_ARB_estate_burghers_desert_development_rt
+		custom_tooltip = ARB_estate_burghers_arid_development_rt
 		hidden_effect = {
 			every_owned_province = {
 				limit = {
@@ -3434,7 +3378,7 @@ estate_burghers_ARB_oasis_development = {
 				remove_province_modifier = ARB_estate_burghers_arid_climate_development
 			}
 		}
-		custom_tooltip = ARB_estate_burghers_desert_development_rt
+		custom_tooltip = bs_ARB_estate_burghers_desert_development_rt
 		hidden_effect = {
 			every_owned_province = {
 				limit = {
@@ -3451,7 +3395,7 @@ estate_burghers_ARB_oasis_development = {
 
 estate_burghers_YEM_coffee_monopoly = {
 	icon = estate_burghers_monopoly_of_coffee
-	#loyalty = 0.1
+	
 	influence = 0
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
@@ -3542,7 +3486,7 @@ estate_burghers_YEM_coffee_monopoly = {
 estate_burghers_persian_rugs = {
 	icon = privilege_dev_cost_desert
 	max_absolutism = 0
-	#loyalty = 0.05
+	
 	influence = 0.05
 	is_valid = {
 		has_unlocked_estate_privilege = {
@@ -3604,7 +3548,6 @@ estate_burghers_persian_rugs = {
 		factor = 100
 	}
 }
-
 estate_burghers_italian_coastal_influence = {
 	icon = estate_burghers_reliance_on_republics
 	loyalty = 0.0
@@ -3716,9 +3659,9 @@ estate_burghers_italian_coastal_influence = {
 
 estate_burghers_livestock_regulations = {
 	icon = privilege_monopoly_of_goods_livestock
-	#loyalty = 0.05
+	loyalty = 0.05
 	influence = 0.1
-	max_absolutism = -5
+	max_absolutism = -10
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	is_valid = {
 		mission_completed = feo_black_sea_domination
@@ -3761,7 +3704,7 @@ estate_burghers_livestock_regulations = {
 
 estate_burghers_arabian_traders = {
 	icon = privilege_make_generous_donation
-	#loyalty = 0.1
+	loyalty = 0.1
 	influence = 0.05
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
@@ -3812,7 +3755,7 @@ estate_burghers_arabian_traders = {
 			has_country_flag = orm_arabian_merchants_privilege_buff
 		}
 		modifier = { 
-			monthly_arabic_trade_influence_power = 0.15
+			arabic_trade_influence_power_gain_modifier = 0.15
 		}
 	}
 	can_revoke = {
@@ -3860,9 +3803,9 @@ estate_burghers_omani_marines = {
 
 estate_burghers_ITA_promote_latin_merchants = {
 	icon = privilege_ducats
-	#loyalty = 0.05
+	loyalty = 0.05
 	influence = 0.1
-	max_absolutism = -5
+	max_absolutism = -10
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	is_valid = {
 		mission_completed = ITA_the_trades_to_come
@@ -4013,7 +3956,7 @@ estate_burghers_ITA_promote_latin_merchants = {
 
 estate_burghers_ITA_permit_merchant_colonists = {
 	icon = estate_burghers_ITA_permit_merchant_colonists
-	#loyalty = 0.1
+	loyalty = 0.1
 	influence = 0.05
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
@@ -4047,7 +3990,7 @@ estate_burghers_ITA_permit_merchant_colonists = {
 
 estate_burghers_GER_customs_union = {
 	icon = estate_burghers_GER_customs_union
-	#loyalty = 0.05
+	loyalty = 0.05
 	influence = 0.1
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
@@ -4069,7 +4012,7 @@ estate_burghers_GER_customs_union = {
 
 estate_burghers_GER_turn_towards_mercantilism = {
 	icon = estate_burghers_GER_turn_towards_mercantilism
-	#loyalty = 0.1
+	loyalty = 0.1
 	influence = 0
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
@@ -4280,7 +4223,7 @@ estate_burghers_hungarian_royal_cities = {
 	icon = privilege_development_efficiency
 	max_absolutism = -5
 	land_share = 5
-	#loyalty = 0.1
+	loyalty = 0.1
 	influence = 0.05
 	is_valid = {
 		has_unlocked_estate_privilege = {
@@ -4342,7 +4285,7 @@ estate_burghers_INC_mountain_development = {
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	influence = 0.1
-	#loyalty = 0.05
+	loyalty = 0.05
 	is_valid = {
 		is_andean_society_trigger = yes
 	}
@@ -4452,7 +4395,7 @@ estate_burghers_INC_mountain_development = {
 			}
 		}
 	}
-    on_granted_province = {
+	on_granted_province = {
         if = {
             limit = {
                 owner = { has_country_flag = INC_upgrade_mountain_development_privilege_flag }
@@ -4484,12 +4427,7 @@ estate_burghers_INC_mountain_development = {
                     duration = -1
                 }
             }
-            else = { 
-                add_province_modifier = {
-                    name = estate_burghers_mountain_expansion_penalty
-                    duration = -1
-                }
-            }
+            else = { }
         }
         else = {
             if = {
@@ -4519,12 +4457,7 @@ estate_burghers_INC_mountain_development = {
                     duration = -1
                 }
             }
-            else = { 
-                add_province_modifier = {
-                    name = estate_burghers_mountain_expansion_penalty
-                    duration = -1
-                }
-            }
+            else = { }
         }
     }
 	on_revoked = {
@@ -4583,9 +4516,9 @@ estate_burghers_INC_mountain_development = {
 
 estate_burghers_MAY_support_of_chontal_maya = {
 	icon = privilege_mayan_canoes
-	#loyalty = 0.1
+	loyalty = 0.1
 	influence = 0
-	max_absolutism = -5
+	max_absolutism = -10
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	is_valid = {
 		has_country_flag = MAY_chontal_maya_priv_flag
@@ -4606,9 +4539,9 @@ estate_burghers_MAY_support_of_chontal_maya = {
 
 estate_burghers_MAY_tropical_adaptation = {
 	icon = privilege_jungle_adaptation
-	#loyalty = 0.05
+	loyalty = 0.05
 	influence = 0.1
-	max_absolutism = -5
+	max_absolutism = -10
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	is_valid = {
 		is_mayan_society_trigger = yes
@@ -4682,7 +4615,7 @@ estate_burghers_MAY_tropical_adaptation = {
 
 estate_burghers_SUN_support_recovering_populations = {
 	icon = privilege_development_efficiency
-	#loyalty = 0.05
+	loyalty = 0.05
 	influence = 0.1
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
@@ -4716,7 +4649,7 @@ estate_burghers_SUN_support_recovering_populations = {
 
 estate_burghers_AZT_sponsor_artisans = {
 	icon = privilege_aztec_artisans
-	#loyalty = 0.05
+	loyalty = 0.05
 	influence = 0.1
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
@@ -4741,7 +4674,7 @@ estate_burghers_AZT_sponsor_artisans = {
 
 estate_burghers_AZT_mexican_gold_mines = {
 	icon = privilege_gold_mint
-	#loyalty = 0.05
+	loyalty = 0.05
 	influence = 0.1
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
@@ -4802,7 +4735,6 @@ estate_burghers_fugger_family = {
 	loyalty = 0
 	influence = 0.05
 	is_valid = {
-		
 		is_or_was_tag = { tag = HAB }
 	}
 	penalties = {

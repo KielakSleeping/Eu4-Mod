@@ -3,8 +3,6 @@ country_decisions = {
 		color = { 0  166  0 }
 		potential = {
 			ai = no
-
-			
 			NOT = { is_bankrupt = yes }
 			NOT = { is_colonial_nation = yes }
 		}
@@ -29,8 +27,6 @@ country_decisions = {
 		color = { 0  166  0 }
 		potential = {
 			ai = no
-
-			
 			NOT = { is_bankrupt = yes }
 			NOT = { is_colonial_nation = yes }
 		}
@@ -54,8 +50,6 @@ country_decisions = {
 		color = { 0  166  0 }
 		potential = {
 			ai = no
-
-			
 			NOT = { is_bankrupt = yes }
 			NOT = { is_colonial_nation = yes }
 			check_variable = {
@@ -84,8 +78,6 @@ country_decisions = {
 		color = { 0  166  0 }
 		potential = {
 			ai = no
-
-			
 			NOT = { is_bankrupt = yes }
 			NOT = { is_colonial_nation = yes }
 			check_variable = {
@@ -114,8 +106,6 @@ country_decisions = {
 		color = { 0  166  0 }
 		potential = {
 			ai = no
-
-			
 			NOT = { is_bankrupt = yes }
 			NOT = { is_colonial_nation = yes }
 			check_variable = {
@@ -144,8 +134,6 @@ country_decisions = {
 		color = { 0  166  0 }
 		potential = {
 			ai = no
-
-			
 			NOT = { is_bankrupt = yes }
 			NOT = { is_colonial_nation = yes }
 			check_variable = {
@@ -174,8 +162,6 @@ country_decisions = {
 		color = { 0  166  0 }
 		potential = {
 			ai = no
-
-			
 			NOT = { is_bankrupt = yes }
 			NOT = { is_colonial_nation = yes }
 			check_variable = {
@@ -204,8 +190,6 @@ country_decisions = {
 		color = { 0  166  0 }
 		potential = {
 			ai = no
-
-			
 			NOT = { is_bankrupt = yes }
 			NOT = { is_colonial_nation = yes }
 			check_variable = {
@@ -234,8 +218,6 @@ country_decisions = {
 		color = { 0  166  0 }
 		potential = {
 			ai = no
-
-			
 			NOT = { is_bankrupt = yes }
 			NOT = { is_colonial_nation = yes }
 			check_variable = {
@@ -264,8 +246,6 @@ country_decisions = {
 		color = { 0  166  0 }
 		potential = {
 			ai = no
-
-			
 			NOT = { is_bankrupt = yes }
 			NOT = { is_colonial_nation = yes }
 			check_variable = {
@@ -294,8 +274,6 @@ country_decisions = {
 		color = { 0  166  0 }
 		potential = {
 			ai = no
-
-			
 			NOT = { is_bankrupt = yes }
 			NOT = { is_colonial_nation = yes }
 			check_variable = {
@@ -324,8 +302,6 @@ country_decisions = {
 		color = { 0  166  0 }
 		potential = {
 			ai = no
-
-			
 			NOT = { is_bankrupt = yes }
 			NOT = { is_colonial_nation = yes }
 			check_variable = {
@@ -355,8 +331,6 @@ country_decisions = {
 		color = { 0  166  0 }
 		potential = {
 			ai = no
-
-			
 			NOT = { is_bankrupt = yes }
 			NOT = { is_colonial_nation = yes }
 			capital_scope = {
@@ -379,8 +353,6 @@ country_decisions = {
 		potential = {
 			NOT = { is_colonial_nation = yes }
 			ai = no
-
-			
 			NOT = { is_bankrupt = yes }
 			always = yes 
 		}

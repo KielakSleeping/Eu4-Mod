@@ -14,15 +14,7 @@ militarization_mechanic = {
 					discipline = 0.05
 					manpower_recovery_speed = 0.20
 					land_maintenance_modifier = -0.20
-					monthly_militarized_society = -0.5
-				}
-			}
-			scaled_modifier = {
-				trigger = {
-					has_government_attribute = GER_buff_prussian_militarization
-				}
-				modifier = {
-					infantry_power = 0.025
+					monthly_militarized_society = -0.50
 				}
 			}
 		}

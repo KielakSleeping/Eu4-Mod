@@ -5583,11 +5583,11 @@ estate_action_RECRUIT_MARATHI_TROOPS_MARATHA = {
 	estate_action_yearly_manpower = {
 		estate = estate_maratha
 	}
-	# estate_action_scaling_modifier = {
-	# 	estate = estate_maratha
-	# 	name = DEMAND_MORE_TROOPS_NOBLES
-	# 	duration = 7300
-	# }
+	#estate_action_scaling_modifier = {
+	#	estate = estate_maratha
+	#	name = DEMAND_MORE_TROOPS_NOBLES
+	#	duration = 7300
+	#}
 	add_estate_loyalty = {
 		estate = estate_maratha
 		loyalty = -15
@@ -5657,13 +5657,9 @@ estate_action_CALL_DIET_NOBLES = {
 }
 estate_action_GRANT_GENERALSHIP_NOBLES = {
 	create_general = {
-		tradition = 40
-		add_siege = 1
-	}
-	# create_leader_scaling_with_tradition = {
-	# 	leader = general
-	# 	type = army
-	# }
+				tradition = 40
+				add_siege = 1
+			}
 	#add_estate_influence_modifier = {
 	#	estate = estate_nobles
 	#	desc = EST_VAL_GRANTED_GENERALSHIP
@@ -5793,11 +5789,11 @@ estate_action_DEMAND_MORE_TROOPS_NOBLES = {
 	estate_action_yearly_manpower = {
 		estate = estate_nobles
 	}
-	# estate_action_scaling_modifier = {
-	# 	estate = estate_nobles
-	# 	name = DEMAND_MORE_TROOPS_NOBLES
-	# 	duration = 7300
-	# }
+	#estate_action_scaling_modifier = {
+	#	estate = estate_nobles
+	#	name = DEMAND_MORE_TROOPS_NOBLES
+	#	duration = 7300
+	#}
 	add_estate_loyalty = {
 		estate = estate_nobles
 		loyalty = -15
@@ -5812,11 +5808,11 @@ estate_action_SUPPORT_TRIBES_NOMADIC_TRIBES = {
 }
 estate_action_CONTRIBUTE_WARRIORS_NOMADIC_TRIBES = {
 	add_yearly_manpower = 2
-	# estate_action_scaling_modifier = {
-	# 	estate = estate_nomadic_tribes
-	# 	name = CONTRIBUTE_WARRIORS_NOMADIC_TRIBES
-	# 	duration = 3650
-	# }
+	#estate_action_scaling_modifier = {
+	#	estate = estate_nomadic_tribes
+	#	name = CONTRIBUTE_WARRIORS_NOMADIC_TRIBES
+	#	duration = 3650
+	#}
 	add_estate_loyalty = {
 		estate = estate_nomadic_tribes
 		loyalty = -15
@@ -5831,12 +5827,14 @@ estate_action_RAISE_HOST_NOMADIC_TRIBES = {
 			cost = 0
 		}
 	}
-	# create_leader_scaling_with_tradition = {
-	# 	type = army
-	# 	leader = general
-	# }
 	add_estate_influence_modifier = {
 		estate = estate_nomadic_tribes
+		desc = EST_VAL_RAISED_HOST
+		influence = 15
+		duration = 3650
+	}
+	add_estate_influence_modifier = {
+		estate = estate_nobles
 		desc = EST_VAL_RAISED_HOST
 		influence = 15
 		duration = 3650
@@ -5982,11 +5980,11 @@ estate_action_RECRUIT_RAJPUT_TROOPS_RAJPUT = {
 	estate_action_yearly_manpower = {
 		estate = estate_rajput
 	}
-	# estate_action_scaling_modifier = {
-	# 	estate = estate_rajput
-	# 	name = DEMAND_MORE_TROOPS_NOBLES
-	# 	duration = 7300
-	# }
+	#estate_action_scaling_modifier = {
+	#	estate = estate_rajput
+	#	name = DEMAND_MORE_TROOPS_NOBLES
+	#	duration = 7300
+	#}
 	add_estate_loyalty = {
 		estate = estate_rajput
 		loyalty = -15

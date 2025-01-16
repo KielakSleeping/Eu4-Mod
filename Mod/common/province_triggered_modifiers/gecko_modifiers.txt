@@ -804,8 +804,6 @@ conquest_of_toledo = {
 	}
 }
 
-
-
 Easter_egg = {
 	potential = {
 		normal_or_historical_nations = yes

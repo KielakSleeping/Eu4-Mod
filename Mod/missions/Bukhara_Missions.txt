@@ -3,13 +3,10 @@ bukhara_missions_slot_1 = {
 	generic = no
 	ai = yes
 	potential = {
-		always = no
-		# OR = {
-		# 	tag = BUK
-		# 	was_tag = BUK
-		# 	tag = SHY
-		# 	was_tag = SHY
-		# }	
+		OR = {
+			tag = BUK
+			was_tag = BUK
+		}	
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -140,13 +137,10 @@ bukhara_missions_slot_2 = {
 	ai = yes
 	
 	potential = {
-		always = no
-		# 	OR = {
-		# 		tag = BUK
-		# 		was_tag = BUK
-		# 		tag = SHY
-		# 		was_tag = SHY
-		# }
+			OR = {
+				tag = BUK
+				was_tag = BUK
+		}
 			NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes

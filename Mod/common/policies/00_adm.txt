@@ -34,7 +34,7 @@ organized_stables = {
        }
 
        leader_land_shock = 1 
-       cav_to_inf_ratio = 0.15
+       cav_to_inf_ratio = 0.10
 	cavalry_power = 0.05
 
        ai_will_do = { 
@@ -122,10 +122,8 @@ lessons_of_the_sea = {
                full_idea_group = maritime_ideas 
        }
 
-       #navy_tradition = 1 
-       global_trade_power = 0.1
-       development_cost = -0.05
-       trade_efficiency = 0.1 
+       navy_tradition = 1 
+       global_trade_power = 0.1 
 
        ai_will_do = { 
                factor = 1 
@@ -166,9 +164,8 @@ health_care = {
                full_idea_group = quality_ideas 
        }
 
-       drill_decay_modifier = -0.10
-       monarch_lifespan = 0.25 
-	discipline = 0.03
+       drill_decay_modifier = -0.15
+       monarch_lifespan = 0.2 
 
        ai_will_do = { 
                factor = 1 
@@ -339,7 +336,7 @@ futuristic_building_materials = {
        }
 
        build_cost = -0.1 
-       global_trade_goods_size_modifier = 0.10 
+       global_trade_goods_size_modifier = 0.15 
 
        ai_will_do = { 
                factor = 1 
@@ -484,11 +481,8 @@ global_fleet = {
                full_idea_group = maritime_ideas 
        }
 
-       #naval_forcelimit_modifier = 0.2 
-       #leader_naval_manuever = 1
-       administrative_efficiency = 0.025
-       overextension_impact_modifier = -0.1
-       core_creation = -0.1
+       naval_forcelimit_modifier = 0.2 
+       leader_naval_manuever = 1
 
        ai_will_do = { 
                factor = 1 
@@ -618,7 +612,7 @@ battle_priests = {
                full_idea_group = quality_ideas 
        }
 
-       army_tradition = 0.5 
+       army_tradition = 1 
        global_missionary_strength = 0.01
        drill_decay_modifier = -0.15 
 

@@ -58,7 +58,6 @@ table_of_ranks_mechanic = {
 					add_fire = 1
 					#add_manuever = 2
 				}
-				custom_tooltip = appoint_general_admiral_ct
 			}
 			cooldown_years = 20
 			ai_chance = {
@@ -79,7 +78,6 @@ table_of_ranks_mechanic = {
 					add_fire = 1
 					#add_siege = 1
 				}
-				custom_tooltip = appoint_general_field_marshal_ct
 			}
 			cooldown_years = 20
 			ai_chance = {

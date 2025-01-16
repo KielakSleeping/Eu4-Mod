@@ -337,7 +337,9 @@ tysyatsky_reform = {
 	potential = {
 		has_dlc = "Domination"
 		OR = {
-			has_unlocked_government_reform = { government_reform = tysyatsky_reform }
+			has_unlocked_government_reform = {
+				government_reform = tysyatsky_reform
+			}
 			AND = {
 				NOT = { tag = RUS }
 				OR = {
@@ -373,7 +375,9 @@ namestnik_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		has_dlc = "Domination"
-		has_unlocked_government_reform = { government_reform = namestnik_reform }
+		has_unlocked_government_reform = {
+			government_reform = namestnik_reform
+		}
 	}
 	modifiers = {
 		global_autonomy = -0.03
@@ -391,7 +395,9 @@ oprichnina_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		has_dlc = "Domination"
-		has_unlocked_government_reform = { government_reform = oprichnina_reform }
+		has_unlocked_government_reform = {
+			government_reform = oprichnina_reform
+		}
 	}
 	modifiers = {
 		global_rebel_suppression_efficiency = 1
@@ -467,7 +473,9 @@ governing_senate_reform = {
 		NOT = { has_government_attribute = is_pirate_republic_reform }
 		OR = {
 			have_had_reform = governing_senate_reform
-			has_unlocked_government_reform = { government_reform = governing_senate_reform }
+			has_unlocked_government_reform = {
+				government_reform = governing_senate_reform
+			}
 			has_reform = ruthenian_tsardom
 		}
 	}
@@ -518,7 +526,9 @@ enforced_autocracy_reform = {
 		NOT = { has_government_attribute = is_pirate_republic_reform }
 		OR = {
 			have_had_reform = enforced_autocracy_reform
-			has_unlocked_government_reform = { government_reform = enforced_autocracy_reform }
+			has_unlocked_government_reform = {
+				government_reform = enforced_autocracy_reform
+			}
 			has_reform = ruthenian_tsardom
 		}
 	}
@@ -561,7 +571,7 @@ holy_state_reform = {
 			OR = {
 				tag = SIC
 				tag = TTS
-			}
+			}	
 		}
 	}
 	trigger = {
@@ -941,15 +951,6 @@ empower_buddhist_temples_reform = {
 		yearly_karma_decay = 0.05
 		stability_cost_modifier = -0.15
 	}
-	conditional = {
-		allow = { has_dlc = "Common Sense" }
-		custom_attributes = {
-			#clergy_estate_agendas_gives_karma = yes	#Adds Karma by 10
-			#seizing_land_takes_karma = yes	#Reduces Karma by 10
-			#buffed_monastic_temples = yes
-			enable_karma_decision = yes	#Allows decision every 20 years to add or remove 10 Karma
-		}
-	}
 	
 	ai = {
 		factor = 1
@@ -1088,8 +1089,6 @@ strengthen_the_dhimmi_reform = {
 	}
 	custom_attributes = {
 		free_guarantee_dhimmi_autonomy = yes
-		disables_estate_brahmins = yes
-		enables_estate_dhimmi = yes
 	}
 	
 	ai = {
@@ -1221,16 +1220,18 @@ curtail_clergy_power_reform = {
 secure_clergy_power_reform = {
 	icon = "warrior_monks_reform"
 	allow_normal_conversion = yes
+	
 	potential = {
-		always = no
 		NOT = { has_government_attribute = is_pirate_republic_reform }
 		OR = {
 			is_revolutionary = no
 			NOT = { has_dlc = "Emperor" }
 		}
+		always = no
 	}
 	modifiers = {
 		church_influence_modifier = 0.05
+		#adm_advisor_cost = -0.1
 	}
 	effect = {
 		hidden_effect = {
@@ -1412,7 +1413,9 @@ holy_synod_reform = {
 		NOT = { has_government_attribute = is_pirate_republic_reform }
 		OR = {
 			have_had_reform = holy_synod_reform
-			has_unlocked_government_reform = { government_reform = holy_synod_reform }
+			has_unlocked_government_reform = {
+				government_reform = holy_synod_reform
+			}
 			has_reform = ruthenian_tsardom
 		}
 	}
@@ -1464,7 +1467,9 @@ strengthened_the_patriarchy_reform = {
 		NOT = { has_government_attribute = is_pirate_republic_reform }
 		OR = {
 			have_had_reform = strengthened_the_patriarchy_reform
-			has_unlocked_government_reform = { government_reform = strengthened_the_patriarchy_reform }
+			has_unlocked_government_reform = {
+				government_reform = strengthened_the_patriarchy_reform
+			}
 			has_reform = ruthenian_tsardom
 		}
 	}
@@ -1494,7 +1499,9 @@ head_of_the_patriarchy_reform = {
 		NOT = { has_government_attribute = is_pirate_republic_reform }
 		OR = {
 			have_had_reform = head_of_the_patriarchy_reform
-			has_unlocked_government_reform = { government_reform = head_of_the_patriarchy_reform }
+			has_unlocked_government_reform = {
+				government_reform = head_of_the_patriarchy_reform
+			}
 		}
 	}
 	trigger = {
@@ -1547,7 +1554,9 @@ peters_government_reform = {
 		NOT = { has_government_attribute = is_pirate_republic_reform }
 		OR = {
 			have_had_reform = peters_government_reform
-			has_unlocked_government_reform = { government_reform = peters_government_reform }
+			has_unlocked_government_reform = {
+				government_reform = peters_government_reform
+			}
 		}
 	}
 	modifiers = {
@@ -1575,7 +1584,9 @@ fiqh_laws_reform = {
 		NOT = { has_government_attribute = is_pirate_republic_reform }
 		OR = {
 			have_had_reform = fiqh_laws_reform
-			has_unlocked_government_reform = { government_reform = fiqh_laws_reform }
+			has_unlocked_government_reform = {
+				government_reform = fiqh_laws_reform
+			}
 			has_reform = sultanate_of_rum_reform
 		}
 	}
@@ -1606,7 +1617,9 @@ sufism_decree_reform = {
 		NOT = { has_government_attribute = is_pirate_republic_reform }
 		OR = {
 			have_had_reform = sufism_decree_reform
-			has_unlocked_government_reform = { government_reform = sufism_decree_reform }
+			has_unlocked_government_reform = {
+				government_reform = sufism_decree_reform
+			}
 			has_reform = sultanate_of_rum_reform
 		}
 	}
@@ -1643,7 +1656,9 @@ anglican_state_church_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		has_dlc = "Domination"
-		has_unlocked_government_reform = { government_reform = anglican_state_church_reform }
+		has_unlocked_government_reform = {
+			government_reform = anglican_state_church_reform
+		}
 	}
 	trigger = {
 		OR = {
@@ -1669,7 +1684,9 @@ english_conciliarism_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		has_dlc = "Domination"
-		has_unlocked_government_reform = { government_reform = english_conciliarism_reform }
+		has_unlocked_government_reform = {
+			government_reform = english_conciliarism_reform
+		}
 	}
 	trigger = {
 		religion_group = christian
@@ -1690,7 +1707,9 @@ legacy_of_the_safavid_reform = {
 	icon = "legacy_of_the_safavid_reform"
 	allow_normal_conversion = yes
 	potential = {
-		has_unlocked_government_reform = { government_reform = legacy_of_the_safavid_reform }
+		has_unlocked_government_reform = {
+			government_reform = legacy_of_the_safavid_reform
+		}
 	}
 	trigger = {
 		OR = {
@@ -1836,11 +1855,11 @@ cavalry_warfare_reform = {
 	icon = "cavalry"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { has_unlocked_government_reform = { government_reform = legacy_of_the_seljuk_reform } }
 		OR = {
 			NOT = {tag = MCH}
 			NOT = {was_tag = MCH}
 		}
-		NOT = { has_unlocked_government_reform = { government_reform = legacy_of_the_seljuk_reform } }
 	}
 	trigger = {
 		if = {
@@ -1860,7 +1879,6 @@ cavalry_warfare_reform = {
 		factor = 1
 	}
 }
-
 bastard_amphibious_specialization_reform = {
 	icon = "marine"
 	allow_normal_conversion = yes
@@ -1920,7 +1938,6 @@ bastard_amphibious_specialization_reform = {
 		}
 	}
 }
-
 amphibious_specialization_reform = {
 	icon = "marine"
 	allow_normal_conversion = yes
@@ -1930,6 +1947,7 @@ amphibious_specialization_reform = {
 			AND = { 
 				NOT = { primary_culture = english }
 				NOT = { primary_culture = anglois }
+				NOT = { culture_group = malay }
 			}
 		}
 	}
@@ -1989,7 +2007,6 @@ mercenary_leadership_reform = {
 	icon = "war_economy"
 	allow_normal_conversion = yes
 	potential = {
-		always = no
 		OR = {
 			NOT = { has_dlc = "Domination" }
 			NOT = { full_idea_group = mercenary_ideas }
@@ -2028,7 +2045,6 @@ doppelsoldner_reform = {
 	icon = "mercenaries"
 	allow_normal_conversion = yes
 	potential = {
-		always = no
 		has_dlc = "Domination"
 		NOT = { primary_culture = swiss }
 	}
@@ -2043,9 +2059,8 @@ doppelsoldner_reform = {
 		}
 	}
 	modifiers = {
-		mercenary_cost = -0.15
+		mercenary_cost = -0.1
 		possible_condottieri = 0.5
-		merc_leader_army_tradition = 0.25
 	}
 	conditional = {
 		allow = { has_dlc = "Domination" }
@@ -2067,7 +2082,9 @@ maritime_military_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		NOT = {
-			has_unlocked_government_reform = { government_reform = professional_navy_reform }
+			has_unlocked_government_reform = {
+				government_reform = professional_navy_reform
+			}
 		}
 	}
 	trigger = {
@@ -2103,7 +2120,9 @@ expanded_devshirme_system_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			has_unlocked_government_reform = { government_reform = expanded_devshirme_system_reform }
+			has_unlocked_government_reform = {
+				government_reform = expanded_devshirme_system_reform
+			}
 			have_had_reform = expanded_devshirme_system_reform
 		}
 		NOT = { has_unlocked_government_reform = { government_reform = mansure_army_reform } }
@@ -2148,7 +2167,9 @@ reformed_ottoman_conscription_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			has_unlocked_government_reform = { government_reform = reformed_ottoman_conscription_reform }
+			has_unlocked_government_reform = {
+				government_reform = reformed_ottoman_conscription_reform
+			}
 			have_had_reform = reformed_ottoman_conscription_reform
 		}
 		NOT = { has_unlocked_government_reform = { government_reform = mansure_army_reform } }
@@ -2179,7 +2200,9 @@ mansure_army_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			has_unlocked_government_reform = { government_reform = mansure_army_reform }
+			has_unlocked_government_reform = {
+				government_reform = mansure_army_reform
+			}
 			have_had_reform = mansure_army_reform
 		}
 	}
@@ -2228,7 +2251,9 @@ janissary_military_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			has_unlocked_government_reform = { government_reform = janissary_military_reform }
+			has_unlocked_government_reform = {
+				government_reform = janissary_military_reform
+			}
 			have_had_reform = janissary_military_reform
 		}
 	}
@@ -2281,14 +2306,13 @@ wei_suo_system_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		has_dlc = "Domination"
-		culture_group = east_asian
-		NOT = { primary_culture = korean_new }
-		NOT = { primary_culture = altaic_new }
-		NOT = { primary_culture = manchu_new }
 		OR = {
 			culture_group = east_asian
 			culture_group = malay
 		}
+		NOT = { primary_culture = korean_new }
+		NOT = { primary_culture = altaic_new }
+		NOT = { primary_culture = manchu_new }
 	}
 	trigger = {
 		if = {
@@ -2612,7 +2636,6 @@ rajput_military_leadership_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		has_estate = estate_rajput
-		has_dlc = "Dharma"
 	}
 	trigger = {
 		if = {
@@ -2636,7 +2659,7 @@ rajput_military_leadership_reform = {
 	ai = {
 		factor = 1000
 	}
-} 
+}
 
 #Marathas
 the_maratha_army_reform = {
@@ -2719,9 +2742,9 @@ qollar_aghasi_regiments_reform = {
 	}
 	modifiers = {
 		reinforce_cost_modifier = -0.25
+		global_autonomy = -0.03
 		cav_to_inf_ratio = 0.1
 		cavalry_cost = -0.1
-		global_autonomy = -0.03
 	}
 
 	ai = {
@@ -2733,7 +2756,9 @@ legacy_of_the_seljuk_reform = {
 	icon = "legacy_of_the_seljuk_reform"
 	allow_normal_conversion = yes
 	potential = {
-		has_unlocked_government_reform = { government_reform = legacy_of_the_seljuk_reform }
+		has_unlocked_government_reform = {
+			government_reform = legacy_of_the_seljuk_reform
+		}
 	}
 	trigger = {
 		if = {
@@ -2757,7 +2782,7 @@ legacy_of_the_seljuk_reform = {
 }
 
 #Burmese
-ahmudan_system_reform = {
+_system_reform = {
 	icon = "burmese_flag"
 	allow_normal_conversion = yes
 	potential = {
@@ -2779,9 +2804,6 @@ ahmudan_system_reform = {
 	modifiers = {
 		reinforce_cost_modifier = -0.2
 		reinforce_speed = 0.2
-	}
-	custom_attributes = {
-		ahmudan_system = yes
 	}
 	
 	ai = {
@@ -2828,7 +2850,9 @@ the_cawa_regiments_reform = {
 			has_dlc = "Origins"
 		}
 		OR = {
-			has_unlocked_government_reform = { government_reform = the_cawa_regiments_reform }
+			has_unlocked_government_reform = {
+				government_reform = the_cawa_regiments_reform
+			}
 			primary_culture = amhara
 		}
 	}
@@ -3054,7 +3078,6 @@ condottieri_contracts_reform = {
 	icon = "soldiers_7"
 	allow_normal_conversion = yes
 	potential = {
-		always = no
 		has_dlc = "Domination"
 		culture_group = latin
 	}
@@ -3068,9 +3091,9 @@ condottieri_contracts_reform = {
 		}
 	}
 	modifiers = {
-		mercenary_cost = -0.15
+		#mercenary_cost = -0.15
 		possible_condottieri = 1
-		mercenary_discipline = 0.05
+		#mercenary_discipline = 0.05
 	}
 	custom_attributes = {
 		mercs_do_not_cost_army_professionalism = yes
@@ -3099,7 +3122,7 @@ compagnie_dordonnance_reform = {
 		}
 	}
 	modifiers = {
-		drill_decay_modifier = -0.33
+		drill_decay_modifier = -0.15
 		army_tradition_decay = -0.005
 		cav_to_inf_ratio = 0.1
 		global_regiment_cost = -0.05
@@ -3136,7 +3159,6 @@ musketeers_reform = {
 	modifiers = {
 		has_musketeer = yes
 		allowed_musketeer_fraction = 0.25
-		nobles_influence_modifier = -0.1
 	}
 	
 	ai = {
@@ -3219,7 +3241,6 @@ swiss_mercenary_reform = {
 	icon = "infantry"
 	allow_normal_conversion = yes
 	potential = {
-		always = no
 		has_dlc = "Domination"
 		primary_culture = swiss
 	}
@@ -3233,10 +3254,10 @@ swiss_mercenary_reform = {
 		}
 	}
 	modifiers = {
-		mercenary_cost = -0.25
+		mercenary_cost = -0.1
 		possible_condottieri = 0.5
 		merc_leader_army_tradition = 0.33
-		mercenary_discipline = 0.05
+		mercenary_discipline = 0.025
 	}
 	conditional = {
 		allow = { has_dlc = "Domination" }
@@ -3258,18 +3279,14 @@ expanded_black_army_reform = {
 	icon = "black_army_reform"
 	allow_normal_conversion = yes
 	potential = {
-		OR = {
-			has_dlc = "Domination"
-			has_dlc = "Winds of Change"
-		}
+		has_dlc = "Domination"
 		primary_culture = hungarian
 	}
 	modifiers = {
-		#mercenary_manpower = 1
-		war_taxes_cost_modifier = -0.5
-		army_tradition_from_battle = 0.3
-		land_forcelimit_modifier = 0.05
-		#allow_mercenary_drill = yes
+		mercenary_manpower = 0.1
+		war_taxes_cost_modifier = -1
+		army_tradition_from_battle = 0.5
+		allow_mercenary_drill = yes
 	}
 	trigger = {
 		if = {
@@ -3280,13 +3297,8 @@ expanded_black_army_reform = {
 			}
 		}
 	}
-	conditional = {
-		allow = {
-			has_dlc = "Cradle of Civilization"
-		}
-		# custom_attributes = {
-		# 	mercs_do_not_cost_army_professionalism = yes
-		# }
+	custom_attributes = {
+		mercs_do_not_cost_army_professionalism = yes
 	}
 	ai = {
 		factor = 1000
@@ -3298,7 +3310,9 @@ theme_system_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		has_dlc = "King of Kings"
-		has_unlocked_government_reform = { government_reform = theme_system_reform }
+		has_unlocked_government_reform = {
+			government_reform = theme_system_reform
+		}
 	}
 	modifiers = {
 		manpower_in_own_culture_provinces = 0.25
@@ -3322,8 +3336,6 @@ royal_marines_reform = {
 		OR = {
 			primary_culture = english
 			primary_culture = anglois
-			tag = GBR
-			tag = AVE
 		}
 	}
 	trigger = {
@@ -3380,7 +3392,9 @@ professional_navy_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		has_dlc = "Domination"
-		has_unlocked_government_reform = { government_reform = professional_navy_reform }
+		has_unlocked_government_reform = {
+			government_reform = professional_navy_reform
+		}
 	}
 	trigger = {
 		if = {
@@ -3460,31 +3474,11 @@ staatse_leger_reform = {
 		reinforce_speed = 0.25
 	}
 	custom_attributes = {
-		#mercs_do_not_cost_army_professionalism = yes
-		has_defense_of_the_united_provinces = yes
+		mercs_do_not_cost_army_professionalism = yes
 	}
-	
-	effect = {
-		if = {
-			limit = {
-				has_country_flag = ned_staatse_leger_buff_flag
-			}
-			add_country_modifier = {
-				name = ned_empowered_staatse_leger
-				duration = -1
-			}
-		}
+	custom_attributes = {
+		has_defense_of_the_united_provinces = yes	#Can enact the righteous army
 	}
-	
-	removed_effect = {
-		if = {
-			limit = {
-				has_country_modifier = ned_empowered_staatse_leger
-			}
-			remove_country_modifier = ned_empowered_staatse_leger
-		}
-	}
-	
 	ai = {
 		factor = 1000
 	}
@@ -3556,7 +3550,6 @@ allotment_system = {
 		#has_carolean = yes
 		manpower_in_own_culture_provinces = 0.2
 		amount_of_carolean = 0.25
-		#amount_of_carolean = 0.25
 	}
 
 	ai = {
@@ -3875,10 +3868,6 @@ new_world_exploitation_reform = {
 		}
 	}
 	trigger = {
-		# OR = {
-		# 	full_idea_group = expansion_ideas
-		# 	full_idea_group = exploration_ideas
-		# }
 		if = {
 			limit = {
 				is_revolutionary = yes
@@ -4045,7 +4034,9 @@ thalassocracy_reform = {
 	icon = "admiralty_reform"
 	allow_normal_conversion = yes
 	potential = {
-		has_unlocked_government_reform = { government_reform = thalassocracy_reform }
+		has_unlocked_government_reform = {
+			government_reform = thalassocracy_reform
+		}
 	}
 	trigger = {
 	}
@@ -4068,7 +4059,9 @@ royal_charters_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		has_dlc = "Domination"
-		has_unlocked_government_reform = { government_reform = royal_charters_reform }
+		has_unlocked_government_reform = {
+			government_reform = royal_charters_reform
+		}
 	}
 	trigger = {
 	}
@@ -4095,7 +4088,9 @@ commercial_trade_empire_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		has_dlc = "Domination"
-		has_unlocked_government_reform = { government_reform = commercial_trade_empire_reform }
+		has_unlocked_government_reform = {
+			government_reform = commercial_trade_empire_reform
+		}
 	}
 	trigger = {
 	}
@@ -4314,57 +4309,6 @@ restore_the_master_of_offices_reform = {
 	}
 }
 
-chinampa_farms_reform = {
-	icon = "land_christian_sun_reform"
-	allow_normal_conversion = yes
-	potential = {
-		OR = {
-			primary_culture = aztek
-			has_country_flag = unlock_aztec_missions_flag
-		}
-	}
-	trigger = {
-		custom_trigger_tooltip = {
-			tooltip = AZT_COMPLETED_FARMS_MISSION
-			has_country_flag = azt_chinampa_reform_flag
-		}
-	}
-	valid_for_nation_designer = yes
-	nation_designer_cost = 60
-	modifiers = {
-		global_trade_goods_size_modifier = 0.05
-	}
-	
-	custom_attributes = {
-		chinampa_farms_mechanic = yes
-	}
-	
-	effect = {
-		hidden_effect = {
-			every_owned_province = {
-				limit = {
-					trade_goods = grain
-				}
-				add_province_modifier = {
-					name = chinampa_farms_modifier
-					duration = -1
-					hidden = yes
-				}
-			}
-		}
-	}
-	removed_effect = {
-		hidden_effect = {
-			every_owned_province = {
-				limit = {
-					has_province_modifier = chinampa_farms_modifier
-				}
-				remove_province_modifier = chinampa_farms_modifier
-			}
-		}
-	}
-}
-
 #1.36 Armenia
 
 nakharar_title = {
@@ -4447,16 +4391,12 @@ turkoman_ottoman_institutions = {
 
 #Court Ideas
 superiority_of_the_state_reform = {
-	icon = russian_queen	
+	icon = russian_queen	#TODO
 	potential = {
 		NOT = { has_unlocked_government_reform = { government_reform = divided_aristocracy_reform } }
 	}
 	trigger = {
-		OR = {
-			full_idea_group = diplomatic_ideas
-			full_idea_group = influence_ideas	
-		}
-		
+		full_idea_group = court_ideas
 	}
 	modifiers = {
 		all_estate_influence_modifier = -0.1
@@ -4474,7 +4414,7 @@ superiority_of_the_state_reform = {
 
 #Persia
 divided_aristocracy_reform = {
-	icon = "feudal_theocracy"
+	icon = russian_queen	#TODO
 	potential = {
 		has_unlocked_government_reform = { government_reform = divided_aristocracy_reform }
 	}
@@ -4502,7 +4442,9 @@ modernized_furusiyya_reform = {
 		has_dlc = "King of Kings"
 		OR = {
 			have_had_reform = modernized_furusiyya_reform
-			has_unlocked_government_reform = { government_reform = modernized_furusiyya_reform }
+			has_unlocked_government_reform = {
+				government_reform = modernized_furusiyya_reform
+			}
 		}
 		
 	}
@@ -4542,10 +4484,12 @@ karimi_stations_reform = {
 	icon = "karimi_stations_reform"
 	allow_normal_conversion = yes
 	potential = {
-		has_dlc = "King of Kings"
+		has_dlc = "Domination"
 		OR = {
 			have_had_reform = karimi_stations_reform
-			has_unlocked_government_reform = { government_reform = karimi_stations_reform }
+			has_unlocked_government_reform = {
+				government_reform = karimi_stations_reform
+			}
 		}
 		
 	}
@@ -4592,7 +4536,9 @@ state_madrasas_reform = {
 		has_dlc = "King of Kings"
 		OR = {
 			have_had_reform = state_madrasas_reform
-			has_unlocked_government_reform = { government_reform = state_madrasas_reform }
+			has_unlocked_government_reform = {
+				government_reform = state_madrasas_reform
+			}
 		}
 	}
 	modifiers = {
@@ -4619,7 +4565,9 @@ integrated_ottoman_officials = {
 		has_dlc = "King of Kings"
 		OR = {
 			have_had_reform = integrated_ottoman_officials
-			has_unlocked_government_reform = { government_reform = integrated_ottoman_officials }
+			has_unlocked_government_reform = {
+				government_reform = integrated_ottoman_officials
+			}
 		}
 	}
 	modifiers = {
@@ -4639,7 +4587,6 @@ integrated_ottoman_officials = {
 		factor = 10
 	}
 }
-
 russian_mercenary_guard_reform = {
 	icon = russian_mercenary_guard_reform
 	allow_normal_conversion = no
@@ -4773,7 +4720,7 @@ german_cultural_disunity_reform = {
 		has_country_flag = GER_stuck_disunited
 	}
 	modifiers = {
-		promote_culture_cost = 0.5
+    	promote_culture_cost = 0.5
 	}
 	government_abilities = {
 		cultural_unity_mechanic
@@ -4804,13 +4751,10 @@ german_cultural_disunity_reform = {
 german_franconian_reform = {
 	icon = "paper_with_seal"
 	potential = {
-		custom_trigger_tooltip = {
-			tooltip = GER_unlocked_via_kaiserreich
-			has_country_flag = GER_unlocked_franconian_reform
-		}
+		has_country_flag = GER_unlocked_franconian_reform
 	}
 	modifiers = {
-		idea_cost = -0.1
+    	idea_cost = -0.1
 		same_culture_advisor_cost = -0.1
 	}
 	
@@ -4858,13 +4802,10 @@ german_franconian_reform = {
 german_saxon_reform = {
 	icon = "paper_money_map"
 	potential = {
-		custom_trigger_tooltip = {
-			tooltip = GER_unlocked_via_kaiserreich
-			has_country_flag = GER_unlocked_saxon_reform
-		}
+		has_country_flag = GER_unlocked_saxon_reform
 	}
 	modifiers = {
-		production_efficiency = 0.1
+    	production_efficiency = 0.1
 	}
 	
 	effect = {
@@ -4915,13 +4856,10 @@ german_saxon_reform = {
 german_lower_saxon_reform = {
 	icon = "consulate_of_the_sea"
 	potential = {
-		custom_trigger_tooltip = {
-			tooltip = GER_unlocked_via_kaiserreich
-			has_country_flag = GER_unlocked_lower_saxon_reform
-		}
+		has_country_flag = GER_unlocked_lower_saxon_reform
 	}
 	modifiers = {
-		trade_efficiency = 0.1
+    	trade_efficiency = 0.1
 		own_coast_naval_combat_bonus = 1.0
 	}
 	conditional = {
@@ -4939,13 +4877,10 @@ german_lower_saxon_reform = {
 german_rhenish_reform = {
 	icon = "merchant"
 	potential = {
-		custom_trigger_tooltip = {
-			tooltip = GER_unlocked_via_kaiserreich
-			has_country_flag = GER_unlocked_rhenish_reform
-		}
+		has_country_flag = GER_unlocked_rhenish_reform
 	}
 	modifiers = {
-		ae_impact = -0.15 
+    	ae_impact = -0.15 
 		diplomats = 1
 	}
 	
@@ -4961,13 +4896,10 @@ german_rhenish_reform = {
 german_austrian_reform = {
 	icon = "crown"
 	potential = {
-		custom_trigger_tooltip = {
-			tooltip = GER_unlocked_via_kaiserreich
-			has_country_flag = GER_unlocked_austrian_reform
-		}
+		has_country_flag = GER_unlocked_austrian_reform
 	}
 	modifiers = {
-		chance_to_inherit = 0.25
+    	chance_to_inherit = 0.25
 	}
 	
 	custom_attributes = {
@@ -4980,97 +4912,88 @@ german_austrian_reform = {
 }
 
 german_bavarian_reform = {
-	icon = "politician"
-	potential = {
-		custom_trigger_tooltip = {
-			tooltip = GER_unlocked_via_kaiserreich
-			has_country_flag = GER_unlocked_bavarian_reform
-		}
-	}
-	modifiers = {
-		monthly_splendor = 2
-		prestige = 1
-	}
-	
-	conditional = {
-		allow = {
-			has_dlc = "Mandate of Heaven"
-		}
-		custom_attributes = {
-			GER_taking_age_rewards_gives_stability = yes
-		}
-	}
-	
-	conditional = {
-		allow = {
-			NOT = { has_dlc = "Mandate of Heaven" }
-		}
-		custom_attributes = {
-			diet_increases_not_influence = yes
-		}
-	}
-	
-	ai = {
-		factor = 1
-	}
-}
+    icon = "politician"
+    potential = {
+        has_country_flag = GER_unlocked_bavarian_reform
+    }
+    modifiers = {
+        monthly_splendor = 2
+        prestige = 1
+    }
+    
+    conditional = {
+        allow = {
+            has_dlc = "Mandate of Heaven"
+        }
+        custom_attributes = {
+            GER_taking_age_rewards_gives_stability = yes
+        }
+    }
+    
+    conditional = {
+        allow = {
+            NOT = { has_dlc = "Mandate of Heaven" }
+        }
+        custom_attributes = {
+            diet_increases_not_influence = yes
+        }
+    }
+    
+    ai = {
+        factor = 1
+    }
+} 
 
 german_prussian_reform = {
-	icon = "prussian_monarchy"
-	potential = {
-		custom_trigger_tooltip = {
-			tooltip = GER_unlocked_via_kaiserreich
-			has_country_flag = GER_unlocked_prussian_reform
-		}
-	}
-	modifiers = {
-		monthly_militarized_society = 0.1
-		monthly_prussian_militarized_society_1 = 0.1
-		monthly_prussian_militarized_society_2 = 0.1
-		monthly_prussian_militarized_society_3 = 0.1
-		land_maintenance_modifier = -0.05
-	}
-	
-	conditional = {
-		allow = {
-			OR = {
-				has_dlc = "Rights of Man"
-				has_dlc = "Domination"
-			}
-		}
-		custom_attributes = {
-			GER_buff_prussian_militarization = yes
-		}
-	}
-	conditional = {
-		allow = {
-			NOT = {
-				OR = {
-					has_dlc = "Rights of Man"
-					has_dlc = "Domination"
-				}
-			}
-		}
-		custom_attributes = {
-			free_noble_levies = yes
-		}
-	}
-	
-	ai = {
-		factor = 1
-	}
-}
+    icon = "prussian_monarchy"
+    potential = {
+        has_country_flag = GER_unlocked_prussian_reform
+    }
+    modifiers = {
+        monthly_militarized_society = 0.1
+        monthly_prussian_militarized_society_1 = 0.1
+        monthly_prussian_militarized_society_2 = 0.1
+        monthly_prussian_militarized_society_3 = 0.1
+        land_maintenance_modifier = -0.05
+    }
+    
+    conditional = {
+        allow = {
+            OR = {
+                has_dlc = "Rights of Man"
+                has_dlc = "Domination"
+            }
+        }
+        custom_attributes = {
+            GER_buff_prussian_militarization = yes
+        }
+    }
+    conditional = {
+        allow = {
+            NOT = {
+                OR = {
+                    has_dlc = "Rights of Man"
+                    has_dlc = "Domination"
+                }
+            }
+        }
+        custom_attributes = {
+            free_noble_levies = yes
+        }
+    }
+    
+    ai = {
+        factor = 1
+    }
+} 
 
 german_swiss_reform = {
 	icon = "mercenaries"
 	potential = {
-		custom_trigger_tooltip = {
-			tooltip = GER_unlocked_via_kaiserreich
-			has_country_flag = GER_unlocked_swiss_reform
-		}
+		has_country_flag = GER_unlocked_swiss_reform
 	}
 	modifiers = {
-		mercenary_manpower = 0.25
+    	mercenary_manpower = 0.25
 	}
 	
 	conditional = {
@@ -5092,48 +5015,42 @@ german_swiss_reform = {
 }
 
 german_swabian_reform = {
-	icon = "paper_with_seal_3"
-	potential = {
-		custom_trigger_tooltip = {
-			tooltip = GER_unlocked_via_kaiserreich
-			has_country_flag = GER_unlocked_swabian_reform
-		}
-	}
-	modifiers = {
-		inflation_reduction = 0.1
-		development_cost_in_primary_culture = -0.1
-	}
-	
-	conditional = {
-		allow = { has_dlc = "Domination" }
-		custom_attributes = {
-			GER_upgrade_merchant_bookkeeping = yes
-		}
-	}
-	conditional = {
-		allow = {
-			NOT = { has_dlc = "Domination" }
-		}
-		custom_attributes = {
-			no_mercantilism_loss_from_privilege = yes
-		}
-	}
-	
-	ai = {
-		factor = 1
-	}
-}
+    icon = "paper_with_seal_3"
+    potential = {
+        has_country_flag = GER_unlocked_swabian_reform
+    }
+    modifiers = {
+        inflation_reduction = 0.1
+        development_cost_in_primary_culture = -0.1
+    }
+    
+    conditional = {
+        allow = { has_dlc = "Domination" }
+        custom_attributes = {
+            GER_upgrade_merchant_bookkeeping = yes
+        }
+    }
+    conditional = {
+        allow = {
+            NOT = { has_dlc = "Domination" }
+        }
+        custom_attributes = {
+            no_mercantilism_loss_from_privilege = yes
+        }
+    }
+    
+    ai = {
+        factor = 1
+    }
+} 
 
 german_westphalian_reform = {
 	icon = "church"
 	potential = {
-		custom_trigger_tooltip = {
-			tooltip = GER_unlocked_via_kaiserreich
-			has_country_flag = GER_unlocked_westphalian_reform
-		}
+		has_country_flag = GER_unlocked_westphalian_reform
 	}
 	modifiers = {
-		papal_influence = 1
+    	papal_influence = 1
 		church_power_modifier = 0.25
 		monthly_fervor_increase = 1
 		global_missionary_strength = 0.02
@@ -5151,21 +5068,20 @@ german_westphalian_reform = {
 german_other_reform = {
 	icon = "crown"
 	potential = {
-		custom_trigger_tooltip = {
-			tooltip = GER_unlocked_via_kaiserreich
-			has_country_flag = GER_unlocked_other_reform
-		}
+		has_country_flag = GER_unlocked_other_reform
 	}
 	modifiers = {
-		governing_capacity_modifier = 0.15
+    	governing_capacity_modifier = 0.15
 	}
-} 
+}
 
 merchant_representation_reform = {
 	icon = "merchant_representation_reform"
 	allow_normal_conversion = yes
 	potential = {
-		has_unlocked_government_reform = { government_reform = merchant_representation_reform }
+		has_unlocked_government_reform = {
+			government_reform = merchant_representation_reform
+		}
 	}
 	trigger = {
 	}
@@ -5203,7 +5119,9 @@ integrated_ottoman_officials = {
 		has_dlc = "King of Kings"
 		OR = {
 			have_had_reform = integrated_ottoman_officials
-			has_unlocked_government_reform = { government_reform = integrated_ottoman_officials }
+			has_unlocked_government_reform = {
+				government_reform = integrated_ottoman_officials
+			}
 		}
 	}
 	modifiers = {
@@ -5415,8 +5333,8 @@ cuman_lancers_reform = {
 		army_tradition_on_stackwipe = yes
 	}
 	modifiers = {
-		cav_to_inf_ratio = 0.15
-		cavalry_cost = -0.10
+		cav_to_inf_ratio = 0.25
+		cavalry_cost = -0.2
 	}
 	
 	ai = {
@@ -5480,7 +5398,9 @@ imperial_hungarian_government = { #Hungarian alternative of the Imperial Austria
 	legacy_equivalent = feudal_monarchy
 	potential = { #added via script
 		has_dlc = "Winds of Change"
-		has_unlocked_government_reform = { government_reform = imperial_hungarian_government }
+		has_unlocked_government_reform = {
+			government_reform = imperial_hungarian_government
+		}
 	}
 	valid_for_nation_designer = no
 
@@ -5496,7 +5416,9 @@ bergordnung_reforms_reform = {
 	icon = "laesio_enormis_reform"
 	allow_normal_conversion = yes
 	potential = {
-		has_unlocked_government_reform = { government_reform = bergordnung_reforms_reform }
+		has_unlocked_government_reform = {
+			government_reform = bergordnung_reforms_reform
+		}
 		OR = {
 			tag = BOH
 			was_tag = BOH
@@ -5519,7 +5441,9 @@ vozove_hradby_reform = {
 	icon = "vozove_hradby_reform"
 	allow_normal_conversion = yes
 	potential = {
-		has_unlocked_government_reform = { government_reform = vozove_hradby_reform }
+		has_unlocked_government_reform = {
+			government_reform = vozove_hradby_reform
+		}
 		OR = {
 			tag = BOH
 			was_tag = BOH

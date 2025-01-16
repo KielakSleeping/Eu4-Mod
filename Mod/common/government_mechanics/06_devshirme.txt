@@ -89,7 +89,7 @@ devshirme_mechanic = {
 				define_advisor = {
 					type = statesman
 					skill = 3
-					cost_multiplier = 0.4
+					cost_multiplier = 0.25
 				}
 				add_country_modifier = {
 					name = tur_grand_vizier_modifier
@@ -109,8 +109,8 @@ devshirme_mechanic = {
 					NOT = { religion_group = ROOT }
 				}
 			}
-			effect = {
-				add_yearly_manpower = 0.3 
+			effect = { 
+				add_yearly_manpower = 0.3
 				mil_power_cost = 50
 				add_country_modifier = {
 					name = tur_eyalet_recruits

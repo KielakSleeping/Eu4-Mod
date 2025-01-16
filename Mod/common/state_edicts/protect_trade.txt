@@ -34,7 +34,7 @@ edict_protect_trade = {
 		}
 		modifier = {
 			factor = 4
-			any_province_in_state = {
+			area_for_scope_province = {
 				province_trade_power = 60
 			}
 		}

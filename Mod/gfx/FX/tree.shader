@@ -179,7 +179,7 @@ VertexShader =
 			float vSummedRandom = v.vUV1.x + vRandom;
 			vSummedRandom = vSummedRandom >= 1.0f ? vSummedRandom - 1.0f : vSummedRandom;
 			
-			float vHeightScaleFactor = 0.75f + vSummedRandom * 0.5f;
+			float vHeightScaleFactor = 0.05f + vSummedRandom * 0.5f;
 			Out.vPosition = float4( v.vPosition.xyz, 1.0 );
 			Out.vPosition.y *= vHeightScaleFactor;
 			float randSin = sin( v.vPos_YRot.w );
@@ -227,29 +227,29 @@ VertexShader =
 
 	MainCode VertexShaderShadow
 	[[
-		VS_OUTPUT_SHADOW main( const VS_INPUT_INSTANCE v )
-		{
-			VS_OUTPUT_SHADOW Out;
-			float vRandom = v.vPos_YRot.w / 6.28318531f;
-			float vSummedRandom = v.vUV1.x + vRandom;
-			vSummedRandom = vSummedRandom >= 1.0f ? vSummedRandom - 1.0f : vSummedRandom;
-			
-			float vHeightScaleFactor = 0.75f + vSummedRandom * 0.5f;
-			Out.vPosition = float4( v.vPosition.xyz, 1.0f );
-			Out.vPosition.y *= vHeightScaleFactor;
-			float randSin = sin( v.vPos_YRot.w );
-			float randCos = cos( v.vPos_YRot.w );
-			Out.vPosition.xz = float2( 
-				Out.vPosition.x * randCos - Out.vPosition.z * randSin, 
-				Out.vPosition.x * randSin + Out.vPosition.z * randCos );
-			Out.vPosition.y += Out.vPosition.x * v.vSlopes.x + Out.vPosition.z * v.vSlopes.y;
-			Out.vPosition.xyz += v.vPos_YRot.xyz;
-			Out.vPosition 	= mul( ViewProjectionMatrix, Out.vPosition );
-			Out.fDepth 		= Out.vPosition.zw;	
-			
-			Out.vTexCoord0_UV = v.vUV0;
-			return Out;
-		}
+//		VS_OUTPUT_SHADOW main( const VS_INPUT_INSTANCE v )
+//		{
+//			VS_OUTPUT_SHADOW Out;
+//			float vRandom = v.vPos_YRot.w / 6.28318531f;
+//			float vSummedRandom = v.vUV1.x + vRandom;
+//			vSummedRandom = vSummedRandom >= 1.0f ? vSummedRandom - 1.0f : vSummedRandom;
+//			
+//			float vHeightScaleFactor = 0.75f + vSummedRandom * 0.5f;
+//			Out.vPosition = float4( v.vPosition.xyz, 1.0f );
+//			Out.vPosition.y *= vHeightScaleFactor;
+//			float randSin = sin( v.vPos_YRot.w );
+//			float randCos = cos( v.vPos_YRot.w );
+//			Out.vPosition.xz = float2( 
+//				Out.vPosition.x * randCos - Out.vPosition.z * randSin, 
+//				Out.vPosition.x * randSin + Out.vPosition.z * randCos );
+//			Out.vPosition.y += Out.vPosition.x * v.vSlopes.x + Out.vPosition.z * v.vSlopes.y;
+//			Out.vPosition.xyz += v.vPos_YRot.xyz;
+//			Out.vPosition 	= mul( ViewProjectionMatrix, Out.vPosition );
+//			Out.fDepth 		= Out.vPosition.zw;	
+//			
+//			Out.vTexCoord0_UV = v.vUV0;
+//			return Out;
+//		}
 	]]
 
 }

@@ -93,19 +93,6 @@ shogunate_mechanic = {
 				}
 				add_dip_power = 50
 				custom_tooltip = shogun_every_daimyo_sankin_kotai_tt
-				hidden_effect = {
-					every_subject_country = {
-						limit = {
-							is_subject_of_type = daimyo_vassal
-						}
-						add_country_modifier = {
-							name = subject_sankin_kotai
-							duration = 3650
-							message = MULTISUBJECTINTERACT
-							message_data = sankin_kotai
-						}
-					}
-				}
 			}
 			cooldown_years = 10
 			ai_chance = {

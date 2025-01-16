@@ -461,11 +461,10 @@ country_event = {
 		hidden_effect = {
 			if = {
 				limit = {
-					NOT = {
-						1879 = {
+					1879 = {
 							NOT = { is_core = ALE }
 						}
-					}
+					
 				}
 				1879 = { add_core = ALE	}
 			}

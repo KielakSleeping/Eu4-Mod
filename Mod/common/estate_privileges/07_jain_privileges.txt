@@ -3,7 +3,7 @@ estate_jains_land_rights = {
 	land_share = 5
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
-	#loyalty = 0.05
+	
 	influence = 0.05
 	can_select = {
 	}
@@ -11,15 +11,8 @@ estate_jains_land_rights = {
 	}
 	penalties = {
 	}
-
 	benefits = {
 		governing_capacity = 100
-	}
-	conditional_modifier = {
-		trigger = { has_country_flag = ned_land_rights_buff_flag }
-		modifier = {
-			governing_capacity = 20
-		}
 	}
 	ai_will_do = {
 		factor = 5
@@ -201,7 +194,6 @@ estate_jains_diplomacy = {
 	loyalty = -0.05
 	is_valid = {
 		always = no
-		NOT = { has_estate = estate_burghers }
 	}
 	can_select = {
 		can_select_monarch_power_privilege = {
@@ -253,7 +245,7 @@ estate_jains_diplomacy = {
 
 estate_jains_clerical_class = {
 	icon = privilege_patronize_jain_families
-	#loyalty = 0.1
+	
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	influence = 0.1
@@ -339,11 +331,9 @@ estate_jains_conscientious_objection = {
 	icon = privilege_commission_jain_scripture
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
-	#loyalty = 0.1
-	penalties = {
-		global_manpower_modifier = -0.1
-	}
+	
 	modifier = {can_not_declare_war = yes}
+	
 	benefits = {
 		interest = -0.75
 	}
@@ -358,71 +348,12 @@ estate_jains_grant_liberties = {
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	influence = 0.1
-	#loyalty = 0.1
+	
 	is_valid = {
 	}
 	penalties = {
 	}
 	benefits = {
-	}
-	conditional_modifier = {
-		trigger = {
-			has_country_flag = MUG_upgrade_grant_jains_liberties_flag
-		}
-		modifier = {
-			global_prov_trade_power_modifier = 0.05
-		}
-	}
-	on_granted = {
-		if = {
-			limit = {
-				has_country_flag = MUG_upgrade_grant_jains_liberties_flag
-			}
-			1340 = {
-				add_trade_modifier = {
-					who = ROOT
-					duration = -1
-					power = 10
-					key = MUG_jain_liberties
-				}
-			}
-		}
-	}
-	on_revoked = {
-		if = {
-			limit = {
-				1340 = {
-					has_trade_modifier = {
-						who = ROOT 
-						key = MUG_jain_liberties
-					}
-				}
-			}
-			1340 = {
-				remove_trade_modifier = {
-					who = ROOT 
-					key = MUG_jain_liberties
-				}
-			}
-		}
-	}
-	on_invalid = {
-		if = {
-			limit = {
-				1340 = {
-					has_trade_modifier = {
-						who = ROOT 
-						key = MUG_jain_liberties
-					}
-				}
-			}
-			1340 = {
-				remove_trade_modifier = {
-					who = ROOT 
-					key = MUG_jain_liberties
-				}
-			}
-		}
 	}
 	ai_will_do = {
 		factor = 1
@@ -434,7 +365,7 @@ estate_jains_land_trade_rights = {
 	land_share = 5
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
-	#loyalty = 0.1
+	
 	influence = 0.1
 	is_valid = {
 	}
@@ -467,7 +398,7 @@ estate_jains_monopoly_of_textiles = {
 	icon = privilege_monopoly_of_goods_cloth
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
-	#loyalty = 0.05
+	
 	is_valid = {
 		OR = {
 			has_dlc = "Emperor"
@@ -509,42 +440,17 @@ estate_jains_monopoly_of_textiles = {
 					silk = 1
 				}
 			}
-			if = {
-				limit = {
-					has_country_flag = MUG_upgrade_monopoly_flag
-				}
-				add_mercantilism = 2
-			}
-			else = {
-				add_mercantilism = 2
-			}
+			add_mercantilism = 2
 		}
-		if = {
-			limit = {
-				has_country_flag = MUG_upgrade_monopoly_flag
-			}
-			add_years_of_owned_provinces_production_income = {
-				years = 12
-				trigger = {
-					OR = {
-						trade_goods = cloth
-						trade_goods = silk
-					}
+		add_years_of_owned_provinces_production_income = {
+			years = 9
+			trigger = {
+				OR = {
+					trade_goods = cloth
+					trade_goods = silk
 				}
-				custom_tooltip = MONOPOLY_INCOME_CLOTH_SILK_DESC
 			}
-		}
-		else = {
-			add_years_of_owned_provinces_production_income = {
-				years = 9
-				trigger = {
-					OR = {
-						trade_goods = cloth
-						trade_goods = silk
-					}
-				}
-				custom_tooltip = MONOPOLY_INCOME_CLOTH_SILK_DESC
-			}
+			custom_tooltip = MONOPOLY_INCOME_CLOTH_SILK_DESC
 		}
 		custom_tooltip = estate_jains_monopoly_of_textiles_effect_tooltip
 	}
@@ -617,7 +523,7 @@ estate_jains_monopoly_of_dyes = {
 	icon = privilege_monopoly_of_goods_dyes
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
-	#loyalty = 0.05
+	
 	is_valid = {
 		OR = {
 			has_dlc = "Emperor"
@@ -730,7 +636,7 @@ estate_jains_monopoly_of_glass = {
 	icon = privilege_monopoly_of_goods_glass
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
-	#loyalty = 0.05
+	
 	is_valid = {
 		OR = {
 			has_dlc = "Emperor"
@@ -843,7 +749,7 @@ estate_jains_monopoly_of_paper = {
 	icon = privilege_monopoly_of_goods_paper
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
-	#loyalty = 0.05
+	
 	is_valid = {
 		OR = {
 			has_dlc = "Emperor"
@@ -957,7 +863,7 @@ estate_jains_exclusive_trade_rights = {
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	influence = 0.05
-	#loyalty = 0.05
+	
 	is_valid = {
 		has_dlc = "Emperor"
 		any_active_trade_node = {
@@ -1034,7 +940,7 @@ estate_jains_control_over_monetary_policy = {
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	influence = 0.05
-	#loyalty = 0.05
+	
 	is_valid = {
 		always = no
 		has_dlc = "Emperor"
@@ -1069,7 +975,7 @@ estate_jains_private_trade_fleets = {
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	influence = 0.1
-	#loyalty = 0.05
+	
 	is_valid = {
 		has_dlc = "Emperor"
 		NOT = { has_estate = estate_vaisyas }
@@ -1109,7 +1015,7 @@ estate_jains_private_trade_fleets = {
 #Domination generic Estate Privileges
 estate_jains_development_of_cities = {
 	icon = privilege_development_efficiency
-	#loyalty = 0.05
+	
 	influence = 0.05
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
@@ -1383,13 +1289,12 @@ estate_jains_promote_jain_bookkeeping = {
 		factor = 0
 	}
 }
-
 estate_jains_MUG_gujarati_trade = {
 	icon = privilege_comission_merchant_ships_for_war
-	max_absolutism = -5
+	max_absolutism = -10
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	influence = 0.15
-	#loyalty = 0.05
+	loyalty = 0.05
 	is_valid = {
 		has_country_flag = MUG_gujarat_privilege_flag
 	}
@@ -1436,7 +1341,7 @@ estate_jains_MUG_support_malaccan_viceroyalty = {
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	influence = 0.1
-	#loyalty = 0.1
+	loyalty = 0.1
 	is_valid = {
 		has_country_flag = MUG_unlock_trade_company_support_priv_flag
 	}

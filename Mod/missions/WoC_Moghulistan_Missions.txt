@@ -10,8 +10,6 @@ woc_moghulistan_1 = {
 			OR = {
 				tag = CHG
 				tag = KAS
-				tag = BUK
-				tag = SHY
 			}
 		has_dlc = "Winds of Change"
 	}
@@ -68,7 +66,7 @@ woc_moghulistan_1 = {
 		trigger = {  
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				region = persia_region
-				value = 15
+				value = 20
 			}
 		} 
 
@@ -81,10 +79,7 @@ woc_moghulistan_1 = {
 						province_has_center_of_trade_of_level = 1
 					}
 					owner = {
-						add_adm_power = 10
-						add_dip_power = 10
-						add_mil_power = 10
-						add_treasury  = 100
+						add_dip_power = 25
 					}
 				}
 			}
@@ -118,30 +113,20 @@ woc_moghulistan_1 = {
 				every_owned_province = {
 					limit = {
 						region = caucasia_region
-						AND = {
-							OR = {
-								has_building = fort_15th
-								has_building = fort_16th
-								has_building = fort_17th
-								has_building = fort_18th
-							}
+						OR = {
 							has_terrain = mountain
+							has_terrain = hills
 						}
 					}
-					add_province_modifier = {
-						name = moghulistan_caucasus_fort_cost_no_slot
-						duration = -1
+					owner = {
+						add_legitimacy_equivalent = { amount = 2 }
 					}
-					# owner = {
-					# 	add_legitimacy_equivalent = { amount = 2 }
-					# }
 				}
 			}
 			
 			custom_tooltip = SEPERATOR_TOOLTIP
 			
-			add_army_tradition_or_mil_power = { amount = 20 }
-			add_prestige_or_monarch_power = { amount = 25}
+			add_army_tradition_or_mil_power = { amount = 10 }
 		} 
 	}
 
@@ -168,31 +153,27 @@ woc_moghulistan_1 = {
 		}
 
 		effect = {  
-			#custom_tooltip = TATARS_RAZING_CHURCHES_NOW_GRANTS_DUCATS
-			#set_country_flag = tatars_curch_raze_flag
+			custom_tooltip = TATARS_RAZING_CHURCHES_NOW_GRANTS_DUCATS
+			set_country_flag = tatars_curch_raze_flag
 			
 			custom_tooltip = SEPERATOR_TOOLTIP
 			
-			# complex_dynamic_effect = {
-			# 	first_custom_tooltip = TATARS_IF_CAIRO_AND_BAGHDAD_HAVE_BEEN_RAZED
-			# 	first_limit = "
-			# 		410 = {
-			# 			has_province_modifier = province_razed
-			# 		}
-			# 		361 = {
-			# 			has_province_modifier = province_razed
-			# 		}
-			# 	"
-			# 	first_effect = "
-			# 		change_innovativeness = 5
-			# 		add_adm_power = 50
-			# 		add_dip_power = 50
-			# 		add_mil_power = 50
-			# 	"
-			# }
-			add_country_modifier = {
-				name = moghulistan_egypt
-				duration = -1
+			complex_dynamic_effect = {
+				first_custom_tooltip = TATARS_IF_CAIRO_AND_BAGHDAD_HAVE_BEEN_RAZED
+				first_limit = "
+					410 = {
+						has_province_modifier = province_razed
+					}
+					361 = {
+						has_province_modifier = province_razed
+					}
+				"
+				first_effect = "
+					change_innovativeness = 5
+					add_adm_power = 50
+					add_dip_power = 50
+					add_mil_power = 50
+				"
 			}
 		} 
 	}
@@ -333,8 +314,6 @@ woc_moghulistan_2 = {
 			OR = {
 				tag = CHG
 				tag = KAS
-				tag = BUK
-				tag = SHY
 			}
 		has_dlc = "Winds of Change"
 	}
@@ -429,11 +408,11 @@ woc_moghulistan_2 = {
 		} 
 
 		effect = {  
-			add_years_of_income = 2.5
+			add_years_of_income = 0.6
 			
 			custom_tooltip = SEPERATOR_TOOLTIP
 			
-			change_government_reform_progress = 150
+			change_government_reform_progress = 50
 		}
 	}
 
@@ -495,23 +474,18 @@ woc_moghulistan_2 = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				region = anatolia_region
 				province_is_on_an_island = no
-				value = 25
+				value = 15
 			}
 		}
 
 		effect = {  
-			#custom_tooltip = MOGHULISTAN_ORGANIZER_GRANTS_RAZE_GAIN
-			#set_country_flag = moghulistan_organizer_flag
+			custom_tooltip = MOGHULISTAN_ORGANIZER_GRANTS_RAZE_GAIN
+			set_country_flag = moghulistan_organizer_flag
 			
-			# add_estate_loyalty = {
-			#	estate = estate_nomadic_tribes
-			#	loyalty = 15
-			# }
-			add_country_modifier = {
-				name = moghulistan_anatolia
-				duration = -1
+			add_estate_loyalty = {
+				estate = estate_nomadic_tribes
+				loyalty = 15
 			}
-
 		} 
 	}
 
@@ -608,8 +582,6 @@ woc_moghulistan_3 = {
 			OR = {
 				tag = CHG
 				tag = KAS
-				tag = BUK
-				tag = SHY
 			}
 		has_dlc = "Winds of Change"
 	}
@@ -656,7 +628,7 @@ woc_moghulistan_3 = {
 						area = shanshan_area
 						area = tarim_basin_area
 					}
-					value = 10
+					value = 15
 				}
 			}
 			else = {
@@ -668,7 +640,7 @@ woc_moghulistan_3 = {
 						area = shanshan_area
 						area = tarim_basin_area
 					}
-					value = 10
+					value = 15
 				}
 			}
 		} 
@@ -706,7 +678,7 @@ woc_moghulistan_3 = {
 				"
 				first_effect = "
 					2121 = {
-						add_base_production = 5
+						add_base_production = 3
 					}
 				"
 			}
@@ -926,8 +898,6 @@ woc_moghulistan_4 = {
 			OR = {
 				tag = CHG
 				tag = KAS
-				tag = BUK
-				tag = SHY
 			}
 		has_dlc = "Winds of Change"
 	}
@@ -957,7 +927,7 @@ woc_moghulistan_4 = {
 			
 			distribute_development = {
 				type = production
-				amount = 25
+				amount = 5
 			}
 		} 
 	}
@@ -1189,8 +1159,6 @@ woc_moghulistan_5 = {
 			OR = {
 				tag = CHG
 				tag = KAS
-				tag = BUK
-				tag = SHY
 			}
 		has_dlc = "Winds of Change"
 	}

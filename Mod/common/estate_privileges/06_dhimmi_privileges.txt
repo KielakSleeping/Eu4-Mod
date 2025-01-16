@@ -3,7 +3,7 @@ estate_dhimmi_land_rights = {
 	land_share = 5
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
-	#loyalty = 0.05
+	
 	influence = 0.05
 	is_valid = {always = no}
 	can_select = {
@@ -12,20 +12,17 @@ estate_dhimmi_land_rights = {
 	}
 	penalties = {
 	}
-
 	benefits = {
 		governing_capacity = 100
-	}
-	conditional_modifier = {
-		trigger = { has_country_flag = ned_land_rights_buff_flag }
-		modifier = {
-			governing_capacity = 20
-		}
 	}
 	conditional_modifier = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.03 }
 	}
+	#conditional_modifier = {
+	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
+	#	modifier = { monthly_ottoman_decadence = 0.02 }
+	#}
 	ai_will_do = {
 		factor = 5
 		modifier = {
@@ -258,6 +255,10 @@ estate_dhimmi_lighter_dhimmi_taxes = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.03 }
 	}
+	#conditional_modifier = {
+	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
+	#	modifier = { monthly_ottoman_decadence = 0.02 }
+	#}
 	ai_will_do = {
 		factor = 0
 	}
@@ -267,12 +268,12 @@ estate_dhimmi_dhimmi_nobles = {
 	icon = privilege_promoto_dhimmi_nobles
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
-	#loyalty = 0.05
+	
 	influence = 0.05
-	# penalties = {
-	# 	church_loyalty_modifier = -0.05
-	# 	nobles_loyalty_modifier = -0.05
-	# }
+	#penalties = {
+	#	church_loyalty_modifier = -0.05
+	#	nobles_loyalty_modifier = -0.05
+	#}
 	benefits = {
 		free_leader_pool = 1
 	}
@@ -280,6 +281,10 @@ estate_dhimmi_dhimmi_nobles = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.03 }
 	}
+	#conditional_modifier = {
+	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
+	#	modifier = { monthly_ottoman_decadence = 0.02 }
+	#}
 	ai_will_do = {
 		factor = 0
 	}
@@ -290,7 +295,7 @@ estate_dhimmi_manpower = {
 	land_share = 5
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
-	loyalty = -0.05
+	#loyalty = -0.05
 	influence = 0.05
 	is_valid = {
 		any_owned_province = {
@@ -346,6 +351,10 @@ estate_dhimmi_manpower = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.03 }
 	}
+	#conditional_modifier = {
+	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
+	#	modifier = { monthly_ottoman_decadence = 0.02 }
+	#}
 	penalties = {
 	}
 	benefits = {
@@ -370,9 +379,9 @@ estate_dhimmi_tolerance = {
 	can_select = {
 		NOT = { has_estate_privilege = estate_church_enforced_one_faith }
 	}
-	# penalties = {
-	# 	church_loyalty_modifier = -0.05
-	# }
+	#penalties = {
+	#	church_loyalty_modifier = -0.05
+	#}
 	benefits = {
 		tolerance_heathen = 2
 	}
@@ -380,6 +389,10 @@ estate_dhimmi_tolerance = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.03 }
 	}
+	#conditional_modifier = {
+	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
+	#	modifier = { monthly_ottoman_decadence = 0.02 }
+	#}
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -408,7 +421,7 @@ estate_dhimmi_guaranteed_autonomy = {
 	icon = privilege_grant_autonomy
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
-	#loyalty = 0.05
+	
 	influence = 0.05
 	is_valid = {
 		any_owned_province = {
@@ -482,6 +495,10 @@ estate_dhimmi_guaranteed_autonomy = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.03 }
 	}
+	#conditional_modifier = {
+	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
+	#	modifier = { monthly_ottoman_decadence = 0.02 }
+	#}
 	ai_will_do = {
 		factor = 1000
 		modifier = {
@@ -508,7 +525,7 @@ estate_dhimmi_administrative_privileges = {
 	land_share = 5
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
-	#loyalty = 0.1
+	
 	influence = 0.1
 	is_valid = {
 	}
@@ -534,6 +551,10 @@ estate_dhimmi_administrative_privileges = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.03 }
 	}
+	#conditional_modifier = {
+	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
+	#	modifier = { monthly_ottoman_decadence = 0.02 }
+	#}
 	cooldown_years = 25
 	ai_will_do = {
 		factor = 0
@@ -547,7 +568,7 @@ estate_dhimmi_guarantee_of_traditions = {
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	influence = 0.1
-	#loyalty = 0.1
+	
 	is_valid = {
 		any_owned_province = {
 			NOT = { religion = root }
@@ -611,9 +632,9 @@ estate_dhimmi_guarantee_of_traditions = {
 			remove_province_modifier = estate_dhimmi_guaranteed_autonomy_mod
 		}
 	}
-	# penalties = {
-	# 	church_loyalty_modifier = -0.05
-	# }
+	#penalties = {
+	#	church_loyalty_modifier = -0.05
+	#}
 	benefits = {
 		tolerance_heathen = 2
 	}
@@ -658,10 +679,10 @@ estate_dhimmi_guarantee_of_traditions = {
 
 estate_dhimmi_grant_liberties = {
 	icon = privilege_tolerance_heathen
-	max_absolutism = -5
+	max_absolutism = -10
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	influence = 0.1
-	#loyalty = 0.1
+	
 	is_valid = {
 	}
 	penalties = {
@@ -672,6 +693,10 @@ estate_dhimmi_grant_liberties = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.03 }
 	}
+	#conditional_modifier = {
+	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
+	#	modifier = { monthly_ottoman_decadence = 0.02 }
+	#}
 	ai_will_do = {
 		factor = 1
 	}
@@ -682,7 +707,7 @@ estate_dhimmi_millet_system = {
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	influence = 0.1
-	#loyalty = 0.05
+	
 	is_valid = {
 		has_unlocked_estate_privilege = {
 			estate_privilege = estate_dhimmi_millet_system
@@ -762,7 +787,7 @@ estate_dhimmi_millet_system = {
 #Domination generic Estate Privileges
 estate_dhimmi_development_of_communities = {
 	icon = privilege_development_efficiency
-	#loyalty = 0.05
+	
 	influence = 0.05
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
@@ -810,6 +835,10 @@ estate_dhimmi_development_of_communities = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.03 }
 	}
+	#conditional_modifier = {
+	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
+	#	modifier = { monthly_ottoman_decadence = 0.02 }
+	#}
 
 	mechanics = {
 		no_estate_crownland_loss_from_developing
@@ -852,6 +881,10 @@ estate_dhimmi_grant_trading_privileges = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.03 }
 	}
+	#conditional_modifier = {
+	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
+	#	modifier = { monthly_ottoman_decadence = 0.02 }
+	#}
 	ai_will_do = {
 		factor = 0
 	}
@@ -930,6 +963,10 @@ estate_dhimmi_dhimmi_education = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.03 }
 	}
+	#conditional_modifier = {
+	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
+	#	modifier = { monthly_ottoman_decadence = 0.02 }
+	#}
 	ai_will_do = {
 		factor = 0
 	}
@@ -967,6 +1004,10 @@ estate_dhimmi_promote_dhimmi_nobility = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.03 }
 	}
+	#conditional_modifier = {
+	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
+	#	modifier = { monthly_ottoman_decadence = 0.02 }
+	#}
 	ai_will_do = {
 		factor = 0
 	}
@@ -1040,6 +1081,10 @@ estate_dhimmi_protected_communities = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.03 }
 	}
+	#conditional_modifier = {
+	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
+	#	modifier = { monthly_ottoman_decadence = 0.02 }
+	#}
 	ai_will_do = {
 		factor = 0
 	}
@@ -1052,7 +1097,6 @@ estate_dhimmi_contribution_demand = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	is_valid = {
 		always = no
-		has_dlc = "Domination"
 	}
 	on_granted = {
 		enable_estate_action = {
@@ -1073,6 +1117,10 @@ estate_dhimmi_contribution_demand = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.03 }
 	}
+	#conditional_modifier = {
+	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
+	#	modifier = { monthly_ottoman_decadence = 0.02 }
+	#}
 	ai_will_do = {
 		factor = 0
 	}

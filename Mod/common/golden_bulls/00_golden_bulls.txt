@@ -38,7 +38,7 @@ apostolicae_servitutis = {
 praeclara_carissimi = {
     modifier = {
 		tolerance_heathen = 2
-         build_cost = -0.05
+        build_cost = -0.05
     }
 	potential = {
 	}
@@ -74,7 +74,7 @@ immensa_aeterni_dei = {
 
 libertas_ecclesiae = {
     modifier = {
-        technology_cost = -0.05
+       technology_cost = -0.05
     }
 	potential = {
 	}
@@ -83,7 +83,6 @@ libertas_ecclesiae = {
     }
     ai_will_do = {
         factor = 0
-        
     }
 }
 
@@ -100,17 +99,5 @@ dei_gratia_rex = {
     }
     ai_will_do = {
         factor = 1
-        modifier = {
-            factor = 1
-            average_unrest = 2
-        }
-        modifier = {
-            factor = 1
-            average_unrest = 4
-        }
-        modifier = {
-            factor = 1
-            average_unrest = 6
-        }
     }
 }

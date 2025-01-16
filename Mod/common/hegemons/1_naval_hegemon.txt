@@ -28,6 +28,7 @@ naval_hegemon = {
 		global_sailors_modifier = 2.0
 		ship_durability = 0.1
 		reduced_liberty_desire = 20
+		
 	}
 	
 	max = {
