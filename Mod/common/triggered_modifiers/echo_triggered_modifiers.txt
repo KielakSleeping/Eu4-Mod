@@ -235,49 +235,49 @@ Ahead_of_time = {
 	army_tradition = 0.5
 	expand_infrastructure_cost_modifier = -0.15
 }
-TUR = {
-	potential = {
-		tag = TUR
-	}
-		
-	trigger = {
-		NOT = {
-			is_year = 1465
-		}
-		OR = {
-			AND = {
-				is_in_war = {
-					attackers = HUN
-				}
-				is_in_war = {
-					defenders = MAM
-				}
-				MAM = {
-					ai = no
-				}
-				HUN = {
-					ai = no
-				}
-			}
-			AND = {
-				is_in_war = {
-						attackers = HUN
-				}
-				is_in_war = {
-						attackers = MAM
-				}
-				MAM = {
-					ai = no
-				}
-				HUN = {
-					ai = no
-				}
-			}			
-		}	
-	}
-	mercenary_manpower = 1
-	land_forcelimit = 15
-}
+# TUR = {
+#	potential = {
+#		tag = TUR
+#	}
+#		
+#	trigger = {
+#		NOT = {
+#			is_year = 1465
+#		}
+#		OR = {
+#			AND = {
+#				is_in_war = {
+#					attackers = HUN
+#				}
+#				is_in_war = {
+#					defenders = MAM
+#				}
+#				MAM = {
+#					ai = no
+#				}
+#				HUN = {
+#					ai = no
+#				}
+#			}
+#			AND = {
+#				is_in_war = {
+#						attackers = HUN
+#				}
+#				is_in_war = {
+#						attackers = MAM
+#				}
+#				MAM = {
+#					ai = no
+#				}
+#				HUN = {
+#					ai = no
+#				}
+#			}			
+#		}	
+#	}
+#	mercenary_manpower = 1
+#	land_forcelimit = 15
+# }
 
 # Peace_of_Italy = {
 # 	potential = {
