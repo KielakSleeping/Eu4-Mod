@@ -3035,7 +3035,9 @@ country_event = {
 	desc = MEE_Byzantine_Events.46.d
 	picture = SIEGE_eventPicture
 	
-	is_triggered_only = yes
+	trigger = {
+		always = no
+	}
 
 	option = {
 		name = MEE_Byzantine_Events.46.a
