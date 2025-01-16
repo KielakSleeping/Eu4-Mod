@@ -153,13 +153,18 @@ emperor_reichstag_collegia = {
 	}
 	emperor = {
 		build_cost = -0.05
+		global_tax_income = 60
 	}
-	emperor_per_prince = {
-		global_tax_income = 1.25
+	# emperor_per_prince = {
+	# 	global_tax_income = 1.25
+	# }
+	elector = {
+		advisor_cost = -0.135
 	}
-	elector_per_prince = {
-		advisor_cost = -0.0045
-	}
+	
+	# elector_per_prince = {
+	# 	advisor_cost = -0.0045
+	# }
 }
 
 emperor_expand_gemeiner_pfennig = {
@@ -170,15 +175,22 @@ emperor_expand_gemeiner_pfennig = {
 	potential = {
 		has_dlc = "Emperor"
 	}
-	emperor_per_prince = {
-		global_manpower = 0.7
+	emperor = {
+		global_manpower = 30
 	}
-	elector_per_prince = {
-		global_manpower = 0.5
+	elector = {
+		global_tax_income = 68
+		global_manpower = 20
 	}
-	elector_per_prince = {
-		 global_tax_income = 1.2
-	}
+	# emperor_per_prince = {
+	# 	global_manpower = 0.7
+	# }
+	# elector_per_prince = {
+	# 	global_manpower = 0.5
+	# }
+	# elector_per_prince = {
+	# 	 global_tax_income = 1.2
+	# }
 }
 
 emperor_rechenschaft = {
@@ -189,11 +201,20 @@ emperor_rechenschaft = {
 	potential = {
 		has_dlc = "Emperor"
 	}
-	emperor_per_prince = {
-		land_forcelimit	= 0.65
+	emperor = {
+		land_forcelimit = 25
 	}
-	elector_per_prince = {
-		land_forcelimit	= 0.5
+	elector = {
+		land_forcelimit = 15
+	}
+	# emperor_per_prince = {
+	# 	land_forcelimit	= 0.65
+	# }
+	# elector_per_prince = {
+	# 	land_forcelimit	= 0.5
+	# }
+	province = {
+		local_production_efficiency = 0.05
 	}
 	province = {
 		local_production_efficiency = 0.05
@@ -239,7 +260,7 @@ emperor_reichskrieg = {
 		land_morale = 0.025
 	}
 	province = {
-		local_manpower_modifier = 0.25
+		local_manpower_modifier = 0.175
 	}
 }
 

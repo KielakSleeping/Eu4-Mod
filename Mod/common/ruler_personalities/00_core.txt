@@ -2099,7 +2099,9 @@ fierce_negotiator_personality = {
 	
 	peace_desire = -10
 	
-	merc_maintenance_modifier = -0.25
+	#merc_maintenance_modifier = -0.25
+	global_regiment_cost = -0.05
+	land_maintenance_modifier = -0.05
 	nation_designer_cost = 2
 } #1 easier event
 

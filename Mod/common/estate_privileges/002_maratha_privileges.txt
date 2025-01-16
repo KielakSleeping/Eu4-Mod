@@ -3,7 +3,7 @@ estate_maratha_land_rights = {
 	land_share = 5
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
-	
+	#loyalty = 0.05
 	influence = 0.05
 	can_select = {
 	}
@@ -11,8 +11,15 @@ estate_maratha_land_rights = {
 	}
 	penalties = {
 	}
+
 	benefits = {
 		governing_capacity = 100
+	}
+	conditional_modifier = {
+		trigger = { has_country_flag = ned_land_rights_buff_flag }
+		modifier = {
+			governing_capacity = 20
+		}
 	}
 	ai_will_do = {
 		factor = 5
@@ -196,10 +203,9 @@ estate_maratha_military = {
 		always = no
 	}
 	can_select = {
-		custom_trigger_tooltip = {
-			tooltip = no_other_mil_privilege
-			NOT = { has_estate_privilege = estate_nobles_nobility_primacy }
-			NOT = { has_estate_privilege = estate_rajput_military }
+		can_select_monarch_power_privilege = {
+			estate = estate_maratha
+			type = mil
 		}
 	}
 	on_granted = {
@@ -250,10 +256,10 @@ estate_maratha_advisor = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	influence = 0.05
 	is_valid = {
-		NOT = { religion_group = muslim }
 		always = no
+		NOT = { religion_group = muslim }
 	}
-	
+	#loyalty = 0.05
 	penalties = {
 		stability_cost_modifier = 0.1
 	}
@@ -281,7 +287,7 @@ estate_maratha_loyalty_privilege = {
 	icon = privilege_royal_authority
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
-	
+	#loyalty = 0.1
 	influence = 0.1
 	penalties = {
 	}
@@ -301,7 +307,7 @@ estate_maratha_levies = {
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes NOT = { has_government_attribute = free_noble_levies } } modifier = { max_absolutism = 1 } }
 	influence = 0.1
-	
+	#loyalty = 0.1
 	is_valid = {
 		NOT = { religion_group = muslim }
 	}
@@ -474,7 +480,7 @@ estate_maratha_special_privilege = {
 	icon = privilege_promote_maratha_nobility
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
-	
+	#loyalty = 0.05
 	influence = 0.05
 	is_valid = {
 		has_reform = permanent_marathas_council_reform
@@ -486,6 +492,9 @@ estate_maratha_special_privilege = {
 	penalties = {
 	}
 	benefits = {
+	}
+	mechanics = {
+		exempt_from_seize_land
 	}
 	ai_will_do = {
 		factor = 10
@@ -502,7 +511,7 @@ estate_maratha_monopoly_of_metals = {
 	icon = privilege_monopoly_of_goods_iron
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
-	
+	#loyalty = 0.05
 	is_valid = {
 		OR = {
 			has_dlc = "Emperor"
@@ -625,7 +634,7 @@ estate_maratha_monopoly_of_livestock = {
 	icon = privilege_monopoly_of_goods_livestock
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
-	
+	#loyalty = 0.05
 	is_valid = {
 		OR = {
 			has_dlc = "Emperor"
@@ -736,7 +745,7 @@ estate_maratha_monopoly_of_gems = {
 	icon = privilege_monopoly_of_goods_gems
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
-	
+	#loyalty = 0.05
 	is_valid = {
 		OR = {
 			has_dlc = "Emperor"
@@ -848,7 +857,7 @@ estate_maratha_subject_rights = {
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	influence = 0.1
-	
+	#loyalty = 0.05
 	is_valid = {
 		any_subject_country = {
 			OR = {
@@ -857,6 +866,8 @@ estate_maratha_subject_rights = {
 				is_subject_of_type = march
 				is_subject_of_type = client_march
 				is_subject_of_type = personal_union
+				is_subject_of_type = incorporated_vassal
+				is_subject_of_type = integrated_personal_union
 			}
 		}
 		NOT = { has_estate = estate_nobles }
@@ -874,6 +885,8 @@ estate_maratha_subject_rights = {
 						is_subject_of_type = march
 						is_subject_of_type = client_march
 						is_subject_of_type = personal_union
+						is_subject_of_type = incorporated_vassal
+						is_subject_of_type = integrated_personal_union
 					}
 				}
 			}
@@ -934,6 +947,8 @@ estate_maratha_better_integration = {
 				is_subject_of_type = daimyo_vassal
 				is_subject_of_type = personal_union
 				is_subject_of_type = appanage
+				is_subject_of_type = incorporated_vassal
+				is_subject_of_type = integrated_personal_union
 			}
 		}
 		NOT = { has_estate = estate_nobles }
@@ -965,7 +980,7 @@ estate_maratha_better_integration = {
 #Domination generic Estate Privileges
 estate_maratha_development_of_marathi_lands = {
 	icon = privilege_development_efficiency
-	
+	#loyalty = 0.1
 	influence = 0.05
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
@@ -1040,9 +1055,9 @@ estate_maratha_military_ministerium = {
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	is_valid = {
-		has_dlc = "Domination"
 		always = no
-	}	
+		has_dlc = "Domination"
+	}
 	can_select = {
 	}
 	on_granted = {

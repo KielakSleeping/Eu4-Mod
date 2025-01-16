@@ -4268,16 +4268,16 @@ gbr_ave_row_1 = {
 		}
 		position = 12
 		provinces_to_highlight = {
-			province_id = 1269
+			province_id = 1270
 		}		
 		trigger = { 
-			1269 = {
+			1270 = {
 				is_strongest_trade_power = ROOT
 			}
-			1269 = {
+			1270 = {
 				highest_value_trade_node = yes
 			}
-			1269 = {
+			1270 = {
 				trade_node_value = 500
 			}
 			reform_level = 8

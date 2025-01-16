@@ -49,7 +49,7 @@ return_manpower_modifier = {
 		always = yes
 	}
 
-	may_return_manpower_on_disband = yes
+	#may_return_manpower_on_disband = yes
 	general_cost = -0.125
 	drill_gain_modifier = 0.25
 }

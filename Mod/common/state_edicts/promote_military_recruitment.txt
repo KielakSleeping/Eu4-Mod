@@ -31,7 +31,7 @@ edict_promote_military_recruitment = {
 			all_province_in_state = {
 				base_manpower = 4
 			}
-			area_for_scope_province = {
+			any_province_in_state = {
 				base_manpower = 16
 			}
 		}

@@ -3272,14 +3272,16 @@ woc_hun_fifth_branch = {
 			num_of_cities = 30
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-		}
-		
 			num_of_owned_provinces_with = {
 				value = 30
+				
 				NOT = { unrest = 1 }
 				NOT = { nationalism = 1 }
 				NOT = { local_autonomy = 1 }
 			}
+		}
+		
+			
 		
 		
 		effect = {

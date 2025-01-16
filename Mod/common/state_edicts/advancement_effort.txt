@@ -35,7 +35,7 @@ edict_advancement_effort = {
 		}
 		modifier = {
 			factor = 5
-			area_for_scope_province = {
+			any_province_in_state = {
 				is_capital = yes
 			}
 		}
