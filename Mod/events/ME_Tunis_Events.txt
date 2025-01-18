@@ -622,7 +622,7 @@ province_event = {
 			religion = ibadi
 		}
 		
-		add_dip_power = -50 #nothing happens
+		owner = {add_dip_power = -50} #nothing happens
 	}
 }
 
@@ -634,7 +634,7 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	goto = Tunis_the_province
+	goto = 341
 	
 	immediate = {
 		hidden_effect = {
@@ -678,15 +678,15 @@ country_event = {
 			}
 			add_war_exhaustion = -0.5
 		}
-		else = { }
 		
-		random = {
-			chance = 10
+		
+		# random = {
+		# 	chance = 10
 			
-			event_target:Tunis_the_province = {
-				change_religion = sunni
-			}
-		}
+		# 	event_target:Tunis_the_province = {
+		# 		change_religion = sunni
+		# 	}
+		# }
 	}
 	
 	after = {
