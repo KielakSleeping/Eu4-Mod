@@ -63,7 +63,7 @@ country_event = {
 				limit = { owned_by = ROOT }
 				add_base_manpower = 1
 				if = {
-					limit {
+					limit = {
 						all_neighbor_province = {
 							has_fort_building_trigger = no
 						}
@@ -663,7 +663,7 @@ country_event = {
 	}
 	trigger = {
 		NOT = { exists = AST }
-		NOT = { has_ruler = "Küchük Muhammad" }
+		NOT = { has_ruler = "Kï¿½chï¿½k Muhammad" }
 		tag = GOL
 	}
 	mean_time_to_happen = {
@@ -675,7 +675,7 @@ country_event = {
 	}
 }
 
-#Death of Küchük Muhammad
+#Death of Kï¿½chï¿½k Muhammad
 country_event = {
 	id = X_CRI_events.11
 	title = X_CRI_events.11.t

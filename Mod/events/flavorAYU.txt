@@ -1,7 +1,7 @@
 ########################################
 # Flavor Events for Ayutthaya
 #
-# written by Sara Wendel-Örtqvist
+# written by Sara Wendel-ï¿½rtqvist
 ########################################
 
 namespace = flavor_ayu
@@ -19,7 +19,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = AYU
-			tag = SIAM
+			tag = SIA
 		}
 		NOT = { is_year = 1500 }
 	}
@@ -59,7 +59,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = AYU
-			tag = SIAM
+			tag = SIA
 		}
 		is_year = 1500
 		NOT = { is_year = 1600 }
@@ -91,7 +91,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = AYU
-			tag = SIAM
+			tag = SIA
 		}
 		is_year = 1600
 		NOT = { is_year = 1700 }
@@ -176,7 +176,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = AYU
-			tag = SIAM
+			tag = SIA
 		}
 		is_year = 1600
 		NOT = { is_year = 1800 }
@@ -226,7 +226,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = AYU
-			tag = SIAM
+			tag = SIA
 		}
 		is_year = 1600
 		NOT = { is_year = 1800 }
@@ -305,7 +305,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = AYU
-			tag = SIAM
+			tag = SIA
 		}
 		is_year = 1625
 		NOT = { is_year = 1675 }
@@ -348,7 +348,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = AYU
-			tag = SIAM
+			tag = SIA
 		}
 		is_year = 1600
 		trade_efficiency = 0.5
@@ -381,7 +381,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = AYU
-			tag = SIAM
+			tag = SIA
 		}
 		is_year = 1600
 		NOT = { is_year = 1700 }
@@ -420,7 +420,7 @@ country_event = {
 				has_dlc = "Leviathan"
 				OR = {
 					tag = AYU
-					tag = SIAM
+					tag = SIA
 				}
 				is_year = 1675
 				NOT = { is_year = 1700 }
@@ -474,7 +474,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = AYU
-			tag = SIAM
+			tag = SIA
 		}
 		is_year = 1625
 		NOT = { is_year = 1675 }
