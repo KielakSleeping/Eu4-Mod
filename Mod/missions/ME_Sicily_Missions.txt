@@ -689,7 +689,7 @@ sicily_mission_3 = {
 	}
 
 	sic_norman_navy = {
-		icon = me_mission_venice_small_ship_in_port
+		icon = mission_galleass
 		position = 4
 		required_missions = {
 			sic_port_palermo
@@ -988,7 +988,7 @@ sicily_mission_4 = {
 	has_country_shield = yes
 
 	sic_citra_pharum = {		
-		icon = me_mission_aragon_lighthouse_of_alexandria
+		icon = mission_raid_on_genoa
 		position = 2
 		required_missions = { sic_vespri_siciliani }
 		trigger = {

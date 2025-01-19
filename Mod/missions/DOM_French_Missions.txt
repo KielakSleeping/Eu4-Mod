@@ -3185,7 +3185,7 @@ french_missions_3_normal_continued = {
 			province_id = 1269 
 		}
 		trigger = {
-			1269 = { 
+			1744 = { 
 				trade_share = {
 					country = ROOT 
 					share = 75
@@ -3214,7 +3214,7 @@ french_missions_3_normal_continued = {
 				hidden_effect = { 
 					every_owned_province = {
 						limit = { 
-							same_trade_node_as = 1269
+							same_trade_node_as = 1744
 							province_has_center_of_trade_of_level = 1 
 						}
 						owner = { add_mercantilism = 1 }

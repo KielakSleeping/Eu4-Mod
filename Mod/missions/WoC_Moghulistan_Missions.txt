@@ -631,18 +631,18 @@ woc_moghulistan_3 = {
 				area = shanshan_area
 				area = tarim_basin_area
 			}
-			if = {
-				limit = {
-					OR = {
-						tag = CHG
-						tag = KAS
-					}
-				}
-				owned_by = ROOT
-			}
-			else = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+			# if = {
+			# 	limit = {
+			# 		OR = {
+			# 			tag = CHG
+			# 			tag = KAS
+			# 		}
+			# 	}
+			# 	owned_by = ROOT
+			# }
+			# else = {
+			# 	country_or_non_sovereign_subject_holds = ROOT
+			# }
 		} 
 
 		trigger = {  

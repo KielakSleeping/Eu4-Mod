@@ -828,16 +828,9 @@ sca_development_slot_3 = {
 			}
 		}
 		effect = {
-			if = {
-				limit = {
-					NOT = { has_unlocked_merc_company = { merc_company = merc_hakkapeliita_cavalry } }
-				}
-				unlock_merc_company = {
-					merc_company = merc_hakkapeliita_cavalry
-				}
-			}
-			else = {
-				add_yearly_manpower = 2
+			add_country_modifier = {
+				name = sca_finland_cav
+				duration = -1
 			}
 			add_years_of_owned_provinces_production_income = {
 				custom_tooltip = sca_expand_finland_tt

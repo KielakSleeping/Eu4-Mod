@@ -3343,9 +3343,10 @@ tur_arabian_conquest = {
 			}
 			else = { custom_tooltip = BONUS_REWARD_NO }
 			tooltip = {
-				unlock_merc_company = {
-					merc_company = merc_tatar_vanguard
-				}
+				add_adm_power = 200
+				# unlock_merc_company = {
+				# 	merc_company = merc_tatar_vanguard
+				# }
 				country_event_with_insight = {
 					id = flavor_tur.251
 					insight_tooltip = INSIGHT_JUST_TOOLTIP
@@ -3382,9 +3383,10 @@ tur_arabian_conquest = {
 						1974 = { country_or_non_sovereign_subject_holds = ROOT }
 						2411 = { country_or_non_sovereign_subject_holds = ROOT }
 					}
-					unlock_merc_company = {
-						merc_company = merc_tatar_vanguard
-					}
+					# unlock_merc_company = {
+					# 	merc_company = merc_tatar_vanguard
+					# }
+					add_adm_power = 200
 					country_event_with_insight = {
 						id = flavor_tur.251
 						insight_tooltip = INSIGHT_JUST_TOOLTIP

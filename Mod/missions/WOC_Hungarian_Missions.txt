@@ -3286,8 +3286,8 @@ woc_hun_fifth_branch = {
 		
 		effect = {
 			change_tag = EOH
-			on_change_tag_effect = no
-			swap_non_generic_missions = no
+			#on_change_tag_effect = no
+			#swap_non_generic_missions = no
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = { NOT = { government_rank = 3 } }

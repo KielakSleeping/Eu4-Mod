@@ -68,7 +68,7 @@ X_CRI_slot_1 = {
 
 	#Throne of the Crimea
 	X_CRI_mission_9 = {
-        icon = X_CRI_mission_crimea_khanate_icon
+        icon = mission_hunting
         required_missions = { 
 			X_CRI_mission_4
 		}
@@ -193,7 +193,7 @@ X_CRI_slot_2 = {
 	}
 	#Cuma Cami
 	X_CRI_mission_7 = {
-        icon = me_mission_great_mosque
+        icon = mission_constantinople
         required_missions = { X_CRI_mission_6 }
 		position = 3
 		trigger = {
@@ -295,9 +295,14 @@ X_CRI_slot_3 = {
 		}
 		trigger = {
 			stability = 2
-			estate_loyalty = {
-				estate = estate_nomadic_tribes
-				loyalty = 60
+			if = {
+				limit = {
+					has_estate = estate_nomadic_tribes
+				}
+				estate_loyalty = {
+					estate = estate_nomadic_tribes
+					loyalty = 60
+				}
 			}
 			284 = { X_has_latest_building_trigger = { fort = yes builder = ROOT } }
 		}
@@ -312,9 +317,10 @@ X_CRI_slot_3 = {
 			}
 			if = {
 				limit = { 
+					NOT = {tag = GLH} 
 					284 = { 
 						NOT = { is_capital_of = ROOT }
-						NOT = { tag = GLH }
+						#NOT = { tag = GLH }
 					} 
 				}
 				set_capital = 284
@@ -345,9 +351,10 @@ X_CRI_slot_3 = {
 			}
 			if = {
 				limit = { 
+					NOT = {tag = GLH} 
 					284 = { 
 						NOT = { is_capital_of = ROOT }
-						NOT = { tag = GLH }
+						#NOT = { tag = GLH }
 					} 
 				}
 				set_capital = 284
@@ -482,7 +489,7 @@ X_CRI_slot_3 = {
 									limit = { base_production = 2 }
 									add_base_production = -1
 								}
-								else = {
+								else_if = {
 									limit = { base_manpower = 2 }
 									add_base_manpower = -1
 								}
@@ -497,7 +504,7 @@ X_CRI_slot_3 = {
 									limit = { base_manpower = 2 }
 									add_base_manpower = -1
 								}
-								else = {
+								else_if = {
 									limit = { base_tax = 2 }
 									add_base_tax = -1
 								}
@@ -511,7 +518,7 @@ X_CRI_slot_3 = {
 									limit = { base_tax = 2 }
 									add_base_tax = -1
 								}
-								else = {
+								else_if = {
 									limit = { base_production = 2 }
 									add_base_production = -1
 								}

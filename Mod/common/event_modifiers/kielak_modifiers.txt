@@ -51,3 +51,10 @@ moghulistan_anatolia = {
 	loot_amount = 0.50
 	cavalry_shock = 0.25
 }
+
+sca_finland_cav = {
+	cavalry_power = 0.05
+	cav_to_inf_ratio = 0.05
+	cavalry_shock = 0.15
+	cavalry_cost = -0.1
+}

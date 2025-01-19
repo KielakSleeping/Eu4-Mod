@@ -1918,31 +1918,31 @@ GER_early_coal_mining = {
 	
 }
 
-# GER_treaty_port = {
-# 	potential = {
-# 		owner = {
-# 			has_country_flag = JHC_GER_overseas_empire_flag
-# 		}
-# 	}
+GER_treaty_port = {
+	potential = {
+		owner = {
+			has_country_flag = JHC_GER_overseas_empire_flag
+		}
+	}
 
-# 	trigger = {
-# 		controlled_by = owner
-# 		has_merchant = ROOT
-# 	}
+	trigger = {
+		controlled_by = owner
+		#has_merchant = ROOT
+	}
 
-# 	global_trade_goods_size_modifier = 0.05
-# 	trade_goods_size = 1 #intended
+	global_trade_goods_size_modifier = 0.05
+	trade_goods_size = 1 #intended
 	
-# 	#Province scope
-# 	on_activation = {
+	#Province scope
+	on_activation = {
 	
-# 	}
+	}
 	
-# 	on_deactivation = {
+	on_deactivation = {
 	
-# 	}
+	}
 	
-# }
+}
 
 
 GER_staying_in_lubeck = {

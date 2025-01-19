@@ -3,12 +3,11 @@
 owner = FUL
 controller = FUL
 add_core = FUL
-trade_goods = iron
+trade_goods = salt
 is_city = yes
 culture = fulani 
 religion = shamanism #Fetishism
 capital = "Galam"
-trade_goods = unknown
 hre = no
 base_tax = 3 
 base_production = 3

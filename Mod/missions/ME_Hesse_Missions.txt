@@ -484,7 +484,7 @@ HES_Missions_5 = {
 		}
 	}
 	rhn_generic_embrace_renaissance = {
-		icon = me_mission_renaissance
+		icon = renaissance_city
 		required_missions = { }
 		position = 3
 		provinces_to_highlight = {

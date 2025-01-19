@@ -1051,7 +1051,7 @@ TUN_missions_3 = {
 	}
 	
 	TUN_zituna_madrasah = {
-		icon = me_mission_zaytunah
+		icon = jerusalem
 		required_missions = { }
 		position = 8
 		provinces_to_highlight = {
