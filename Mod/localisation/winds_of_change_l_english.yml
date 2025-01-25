@@ -2503,7 +2503,7 @@
 
  #Mechanics:
  mechanic_seven_provinces_organization_yes:1 "Unlocks the §YSeven Provinces Organization§! Mechanic which has the following effects:\nPrimary Culture Group provinces in the Low Countries gain\n   §G-10.0%§! Development Cost\n   §G+10.0%§! Goods Produced Modifier\n   §G-25.0%§! Province Governing Cost\n   §G-10%§! Construction Cost and Time\n\nProvinces outside of the Low Countries in §YEurope§! gain:\n   §R+25.0%§! Province Governing Cost\n   §R+33%§! Minimum Autonomy"
- mechanic_economic_golden_age_yes:0 "§YFree Enterprise§! Burghers Estate Privilege will now give:\n   §G+10.0%§! Naval Forcelimit Modifier\n   §G-15.0%§! Light Ship Cost"
+ mechanic_economic_golden_age_yes:0 "§YFree Enterprise§! Burghers Estate Privilege will now give:\n   §G+5.0%§! Trade Efficiency"
  mechanic_republican_virtues_yes:0 "§YStatist§! Candidates will have §G+1§! in all Monarch Categories"
  mechanic_orangist_cause_yes:1 "When an §YOrangist§! Ruler wins at least §Y25§! battles as a general, they will gain the Ruler Trait §YOrangist Stadtholder§!"
  
