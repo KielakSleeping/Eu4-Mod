@@ -12364,16 +12364,13 @@ ITA_new_renaissance = {
 }
 
 ITA_adapt_the_condotierri = {
-	possible_condottieri = 1
-	mercenary_discipline = 0.05
-	merc_maintenance_modifier = -0.25
-	merc_leader_army_tradition = 0.5
+	fire_damage = 0.1
+	shock_damage_received = -0.05
 }
 
 ITA_modern_military = {
-	fire_damage = 0.10
 	shock_damage = 0.10
-	shock_damage_received = -0.5
+	fire_damage_received = -0.05
 }
 
 ITA_diplomatic_revolution_weaker = {
