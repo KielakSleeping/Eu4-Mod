@@ -2888,7 +2888,7 @@ mandala_reform = {
 	modifiers = {
 		diplomatic_upkeep = 1
 		vassal_income = 0.2
-		vassal_forcelimit_bonus = 1
+		vassal_forcelimit_bonus = 0.5
 	}
 	free_concentrate_development = yes
 }
@@ -2997,7 +2997,7 @@ siamese_absolutism = {
 	modifiers = {
 		max_absolutism = 10
 		monarch_admin_power = 1
-		development_cost_in_primary_culture = -0.1
+		development_cost_in_primary_culture = -0.05
 	}
 	free_concentrate_development = yes
 }
@@ -5636,9 +5636,13 @@ corvee_reform = {
 		}
 	}
 	modifiers = {
-		global_manpower_modifier = 0.1
-		build_cost = -0.1
+		#global_manpower_modifier = 0.1
+		#build_cost = -0.1
+		vassal_forcelimit_bonus = 0.25
+		vassal_manpower_bonus = 0.1
+		vassal_sailors_bonus = 0.25
 		num_accepted_cultures = 1
+		diplomatic_reputation = 1
 	}
 	custom_attributes = {
 		manpower_sailors_on_build = yes

@@ -6070,12 +6070,12 @@ siam_mandala_modifier = {
 }
 
 siam_monument_modifier = {
-	build_cost = -0.1
+	build_cost = -0.05
 	great_project_upgrade_cost = -0.25
 }
 
 siam_best_city_modifier = {
-	development_cost_in_primary_culture = -0.1
+	development_cost_in_primary_culture = -0.05
 	vassal_income = 0.15
 }
 
