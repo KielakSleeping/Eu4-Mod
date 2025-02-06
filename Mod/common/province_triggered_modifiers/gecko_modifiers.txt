@@ -259,7 +259,7 @@ conquest_of_cairo = {
 				NOT = { 	
 					has_global_modifier_value = {
 					which = infantry_power
-					value = 0.31
+					value = 0.41
 					}
 				}
 				NOT = { 	
@@ -399,7 +399,7 @@ conquest_of_moscow = {
 				NOT = { 	
 					has_global_modifier_value = {
 					which = infantry_power
-					value = 0.31
+					value = 0.41
 					}
 				}
 				NOT = { 	
@@ -605,7 +605,7 @@ conquest_of_warszawa = {
 				NOT = { 	
 					has_global_modifier_value = {
 					which = infantry_power
-					value = 0.31
+					value = 0.41
 					}
 				}
 				NOT = { 	
@@ -683,7 +683,7 @@ conquest_of_herat = {
 			NOT = { 	
 					has_global_modifier_value = {
 					which = infantry_power
-					value = 0.31
+					value = 0.41
 					}
 				}
 				NOT = { 	
@@ -804,7 +804,158 @@ conquest_of_toledo = {
 	}
 }
 
+conquest_of_ava = {
 
+	potential = {
+		normal_or_historical_nations = yes
+	}
+	trigger = {
+		owner = {
+				NOT = { tag = AVA }
+				NOT = { tag = MNG }
+				NOT = { 	
+					has_global_modifier_value = {
+					which = discipline
+					value = 0.31
+					}
+				}
+				upper_burma_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = PREV
+				}	
+			}
+		controlled_by = ROOT
+		has_owner_accepted_culture = yes		
+		}	
+	discipline = 0.025
+	land_morale = 0.025
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+
+
+}
+
+conquest_of_ayutthaya = {
+
+	potential = {
+		normal_or_historical_nations = yes
+	}
+	trigger = {
+		owner = {
+				NOT = { tag = AYU }
+				NOT = { tag = SIA }
+				NOT = { tag = MNG }
+				NOT = { 	
+					has_global_modifier_value = {
+					which = discipline
+					value = 0.31
+					}
+				}
+				central_thai_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = PREV
+				}	
+			}
+		controlled_by = ROOT
+		has_owner_accepted_culture = yes		
+		}	
+	discipline = 0.025
+	land_morale = 0.025
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+
+
+}
+
+conquest_of_brunei = {
+
+	potential = {
+		normal_or_historical_nations = yes
+	}
+	trigger = {
+		owner = {
+				#NOT = { tag = AVA }
+				# NOT = { 	
+				# 	has_global_modifier_value = {
+				# 	which = discipline
+				# 	value = 0.31
+				# 	}
+				# }
+				brunei_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = PREV
+				}	
+			}
+		controlled_by = ROOT
+		has_owner_accepted_culture = yes		
+		}	
+	ship_durability = 0.025
+	naval_morale = 0.025
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+
+
+}
+
+
+b_conquest_of_beijing = {
+
+	potential = {
+		normal_or_historical_nations = yes
+	}
+	trigger = {
+		owner = {
+				NOT = { tag = MNG }
+				NOT = { 	
+					has_global_modifier_value = {
+					which = discipline
+					value = 0.31
+					}
+				}
+				hebei_area= {
+					type = all
+					country_or_non_sovereign_subject_holds = PREV
+				}	
+			}
+		controlled_by = ROOT
+		has_owner_accepted_culture = yes		
+		}	
+	discipline = 0.025
+	land_morale = 0.025
+	imperial_mandate = 0.02
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+
+
+}
 
 Easter_egg = {
 	potential = {
