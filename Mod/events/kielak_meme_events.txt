@@ -9,8 +9,7 @@ country_event = {
     trigger = {
         always = yes
         NOT = { year = 1483 }
-        is_bankrupt = no 
-        tag = ENG
+        is_bankrupt = yes
     }
 
     mean_time_to_happen = {
@@ -19,9 +18,6 @@ country_event = {
 
     option = {
         name = "kielak_meme_event_karaman.0.a"
-        ai_chance = {
-            10
-        }
 
         add_adm_power = 20
     }
