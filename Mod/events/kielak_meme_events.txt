@@ -8,7 +8,7 @@ country_event = {
 
     trigger = {
         always = yes
-        NOT = { year = 1483 }
+        NOT = { year = 1482 }
         is_bankrupt = yes
     }
 
@@ -21,4 +21,11 @@ country_event = {
 
         add_adm_power = 20
     }
+}
+
+country_event = {
+    id = kielak_meme_event_karaman.0
+    title = "kielak_meme_event_karaman.0.t"
+    desc = "kielak_meme_event_karaman.0.d"
+    picture = DEATH_OF_HEIR_eventPicture
 }
