@@ -123,8 +123,8 @@ lessons_of_the_sea = {
        }
 
        #navy_tradition = 1 
-       global_trade_power = 0.05
-       development_cost = -0.05
+       global_trade_power = 0.15
+       #development_cost = -0.05
        trade_efficiency = 0.1 
 
        ai_will_do = { 
@@ -255,7 +255,8 @@ capitalism = {
 
        #Mechanic: +1/-1 Dev from Manufactories 
        reform_progress_growth = 0.20
-	production_efficiency = 0.15 
+	production_efficiency = 0.15
+        interest = -0.2
 
        ai_will_do = { 
                factor = 1 
@@ -276,7 +277,8 @@ better_hooves = {
        }
 
        cavalry_cost = -0.10 
-       movement_speed = 0.10 
+       movement_speed = 0.10
+       cavalry_power = 0.05  
 
        ai_will_do = { 
                factor = 1 
@@ -297,7 +299,8 @@ mass_produced_rifles = {
        }
 
        infantry_cost = -0.10 
-       leader_land_fire = 1 
+       leader_land_fire = 1
+       fire_damage = 0.05
 
        ai_will_do = { 
                factor = 1 
@@ -317,8 +320,12 @@ there_are_millions_just_like_you = {
                full_idea_group = quantity_ideas 
        }
 
-       reinforce_cost_modifier = -0.15 
-       global_manpower_modifier = 0.10 
+       reinforce_cost_modifier = -0.125
+       global_manpower_modifier = 0.125
+       land_forcelimit_modifier = 0.125
+       reinforce_speed = 0.125
+       land_maintenance_modifier = -0.125
+
 
        ai_will_do = { 
                factor = 1 

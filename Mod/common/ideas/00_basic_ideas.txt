@@ -852,7 +852,7 @@ defensive_ideas = {
 	}
 	improved_foraging = {
 		war_exhaustion = -0.08
-		enemy_core_creation = 0.15
+		#enemy_core_creation = 0.15
 	}
 	
 	ai_will_do = {
