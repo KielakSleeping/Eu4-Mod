@@ -157,6 +157,7 @@ economic_ideas = {
 
 	national_bank = {
 		production_efficiency = 0.1
+		free_adm_policy = 1
 		
 	}
 	merchant_passes = {
@@ -840,7 +841,7 @@ defensive_ideas = {
 		garrison_size = 0.25
 	}
 	regimental_system = {
-		fire_damage_received = -0.05
+		fire_damage_received = -0.075
 	}
 	defensive_mentality = {
 		max_hostile_attrition = 1
@@ -916,6 +917,7 @@ quantity_ideas = {
 	bonus = {
 		land_forcelimit_modifier = 0.25
 		reinforce_cost_modifier = -0.20
+		free_mil_policy = 1
 	}
 
 	mass_army = {

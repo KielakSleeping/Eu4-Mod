@@ -2146,7 +2146,7 @@ cossacks_regiment = {
 
 carolean_regiment = {
 	morale_damage = 0.1
-	drill_decay_modifier = -0.25
+	drill_decay_modifier = -0.15
 }
 
 revolutionary_guard_regiment = {
@@ -2164,7 +2164,7 @@ innovativeness = {
 }
 
 rajput_regiment = {
-	drill_decay_modifier = -0.25
+	drill_decay_modifier = -0.15
 	reinforce_cost_modifier = -0.5
 	land_morale = 0.05
 }
