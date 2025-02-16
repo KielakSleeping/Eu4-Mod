@@ -92,9 +92,9 @@ great_mongol_state_reform = {
 	conditional = {
 		allow = { has_dlc = "Mandate of Heaven" }
 		allow_banners = yes
-		# custom_attributes = {
-		# 	can_recruit_banners_from_primary_culture_provinces = yes
-		# }
+		custom_attributes = {
+			can_recruit_banners_from_primary_culture_provinces = yes
+		}
 	}
 	custom_attributes = {
 		enables_horde_idea_group = no

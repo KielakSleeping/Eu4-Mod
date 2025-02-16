@@ -58,3 +58,7 @@ sca_finland_cav = {
 	cavalry_shock = 0.15
 	cavalry_cost = -0.1
 }
+
+african_cultures = {
+	num_accepted_cultures = 4
+}

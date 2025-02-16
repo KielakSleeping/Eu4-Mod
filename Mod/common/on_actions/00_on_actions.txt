@@ -26,6 +26,10 @@ on_startup = {
 	gecko_mercs = { update = yes on_startup = yes }
 	development_counter = { on_startup = yes }
 	educate_ruler = { update = yes on_startup = yes }
+
+	#Add Cardinals at game Start to Capitals of all Catholic Player Slots
+	add_cardinals_to_player_slots = yes #found in kielak_scripted_effects.txt
+
 	if = {
 		limit = {
 				OR = {

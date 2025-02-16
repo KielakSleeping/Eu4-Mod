@@ -418,9 +418,9 @@ absolutist_france_reform = {
 		
 	}
 
-	custom_attributes = {
-		centralize_state_development = yes 
-	}
+	# custom_attributes = {
+	# 	centralize_state_development = yes 
+	# }
 }
 
 indep_daimyo = {

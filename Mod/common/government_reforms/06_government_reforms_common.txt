@@ -5254,17 +5254,17 @@ seven_provinces_reform = {
 					hidden = yes
 				}
 			}
-			every_owned_province = {
-				limit = {
-					NOT = { region = low_countries_region }
-					continent = europe
-				}
-				add_province_modifier = {
-					name = ned_seven_provinces_organization_negative_modifier
-					duration = -1
-					hidden = yes
-				}
-			}
+			# every_owned_province = {
+			# 	limit = {
+			# 		NOT = { region = low_countries_region }
+			# 		continent = europe
+			# 	}
+			# 	add_province_modifier = {
+			# 		name = ned_seven_provinces_organization_negative_modifier
+			# 		duration = -1
+			# 		hidden = yes
+			# 	}
+			# }
 		}
 	}
 
@@ -5276,12 +5276,12 @@ seven_provinces_reform = {
 				}
 				remove_province_modifier = ned_seven_provinces_organization_positive_modifier
 			}
-			every_owned_province = {
-				limit = {
-					has_province_modifier = ned_seven_provinces_organization_negative_modifier
-				}
-				remove_province_modifier = ned_seven_provinces_organization_negative_modifier
-			}
+			# every_owned_province = {
+			# 	limit = {
+			# 		has_province_modifier = ned_seven_provinces_organization_negative_modifier
+			# 	}
+			# 	remove_province_modifier = ned_seven_provinces_organization_negative_modifier
+			# }
 		}
 	}
 

@@ -476,6 +476,11 @@ songhai_maghreb_slot = {
 			add_permanent_claim = 2264
 			add_permanent_claim = 2260
 			add_permanent_claim = 2246
+
+			add_country_modifier = {
+				name = african_cultures
+				duration = -1
+			}
 		}
 		ai_weight = {
 			factor = 500	#Historical conquest

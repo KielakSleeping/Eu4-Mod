@@ -1205,7 +1205,7 @@ NED_2_1 = {
 			define_advisor = {
 				type = naval_reformer
 				skill = 3
-				cost_multiplier = 0.25
+				cost_multiplier = 0.5
 				name = "Piet Hein"
 			}
 			add_country_modifier = {
@@ -3157,7 +3157,7 @@ NED_5_1 = {
 					define_advisor = {
 						type = artist
 						skill = 3
-						cost_multiplier = 0.25
+						cost_multiplier = 0.5
 						name = \"Pieter Post\"
 					}
 				"

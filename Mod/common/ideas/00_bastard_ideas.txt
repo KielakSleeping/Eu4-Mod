@@ -1395,11 +1395,12 @@ BUR_Ideas = {
 LOT_ideas = {
 	start = {
 		infantry_power = 0.1
-		global_manpower_modifier = 0.20
+		global_manpower_modifier = 0.25
 	}
 	
 	bonus = {
 		global_trade_power = 0.2
+		
 	}
 	
 	trigger = {
@@ -1408,7 +1409,7 @@ LOT_ideas = {
 	free = yes		#will be added at load.
 	
 	gc_bur_estates_general = {
-		global_trade_goods_size_modifier = 0.10
+		global_trade_goods_size_modifier = 0.2
 		num_accepted_cultures = 2
 	}
 	golden_fleece = {
@@ -1424,13 +1425,16 @@ LOT_ideas = {
 	}
 	lot_dutch_cities = {
 		trade_efficiency = 0.1
+		global_own_trade_power = 0.1
 	}
 	lot_carolingian_renaissance_II = {
 		idea_cost = -0.1
+		technology_cost = -0.05
 	}
 	lot_court_of_europe = {
 		prestige = 1
 		advisor_cost = -0.1
+		prestige_decay = -0.01
 	}
 	lot_european_empire = {
 		core_creation = -0.15
@@ -1477,6 +1481,55 @@ NED_ideas = {
 		fire_damage = 0.15
 	}
 }
+
+NED_improved_ideas = {
+	start = {
+		leader_land_fire = 1
+		global_manpower_modifier = 0.25
+	}
+	
+	bonus = {
+		artillery_fire = 0.5
+	}
+
+	trigger = {
+		# OR = {
+		# 	tag = NED
+		# 	tag = HOL
+		# }
+		tag = NED
+		has_country_flag = is_UCN_flag
+	}
+	free = yes		#will be added at load.
+	
+	amsterdam_wisselbank_improved = {
+		interest = -0.25
+		naval_forcelimit_modifier = 0.2
+	}
+	dutch_trading_spirit = {
+		merchants = 1
+		trade_efficiency = 0.1
+	}
+	polders = {
+		development_cost = -0.1
+	}
+	instructie_voor_de_admiraliteiten_improved = {
+		allowed_marine_fraction = 0.35
+		sailors_recovery_speed = 0.15
+	}
+	embrace_humanism_improved = {
+		land_morale = 0.1
+		manpower_recovery_speed = 0.15
+	}
+	army_sappers_improved = {
+		siege_ability = 0.15
+		discipline = 0.05
+	}
+	platoon_fire = {
+		fire_damage = 0.15
+	}
+}
+
 POR_ideas = {
 	start = {
 		movement_speed_in_fleet_modifier = 1

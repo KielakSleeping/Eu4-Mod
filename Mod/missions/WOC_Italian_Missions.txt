@@ -2177,7 +2177,8 @@ ITA_non_conquest_2 = {
 		}
 		trigger = {
 			home_trade_node = {
-				highest_value_trade_node = yes
+				#highest_value_trade_node = yes
+				trade_node_value = 200
 				trade_share = {
 					country = ROOT
 					share = 80

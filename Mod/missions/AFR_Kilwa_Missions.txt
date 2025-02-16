@@ -755,6 +755,10 @@ kilwa_asia_trade_missions_slot = {
 				}
 				add_permanent_claim = ROOT
 			}
+			add_country_modifier = {
+				name = african_cultures
+				duration = -1
+			}
 		}
 		ai_weight = {
 			factor = 500	#Madagascar is in the same culture group astonishingly

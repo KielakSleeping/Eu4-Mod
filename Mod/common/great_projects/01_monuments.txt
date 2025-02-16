@@ -8098,7 +8098,8 @@ fire_temple_of_ateshgah = {
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			#discipline = 0.025
-			fire_damage_received = -0.05
+			fire_damage_received = -0.025
+			fire_damage = 0.025
 		}
 
 		#what effects happen when this tier is achieved
@@ -8128,7 +8129,8 @@ fire_temple_of_ateshgah = {
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			#discipline = 0.05
-			fire_damage_received = -0.075
+			fire_damage_received = -0.05
+			fire_damage = 0.05
 			culture_conversion_cost = -0.05
 		}
 
@@ -8158,9 +8160,10 @@ fire_temple_of_ateshgah = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			discipline = 0.05
-			fire_damage_received = -0.075
-			# fire_damage = 0.05			
+			#discipline = 0.05
+			fire_damage_received = -0.05
+			fire_damage = 0.05
+			shock_damage = 0.05			
 			culture_conversion_cost = -0.1
 		}
 

@@ -2409,7 +2409,7 @@ WoC_austria_2_1 = {
 		icon = balance_the_estates
 		position = 11
 		trigger = {
-			crown_land_share = 40
+			crown_land_share = 30
 			if = {
 				limit = {
 					has_estate = estate_nobles
@@ -2539,7 +2539,7 @@ WoC_austria_2_1 = {
 				type = treasurer
 				name = "Franz Anton von Raab"
 				skill = 3
-				cost_multiplier = 0.25
+				cost_multiplier = 0.5
 			}
 			custom_tooltip = SEPERATOR_TOOLTIP
 			country_event_with_option_insight = {
@@ -2561,16 +2561,16 @@ WoC_austria_2_1 = {
 					custom_tooltip = HAB_UNLOCK_RAAB_RESTRICTIONS_PRIVILEGE
 					custom_tooltip = SEPERATOR_TOOLTIP
 				"
-				option_2 = "
-					add_estate_loyalty = {
-						estate = estate_nobles
-						loyalty = 15
-					}
+				# option_2 = "
+				# 	add_estate_loyalty = {
+				# 		estate = estate_nobles
+				# 		loyalty = 15
+				# 	}
 
-					custom_tooltip = SEPERATOR_TOOLTIP
+				# 	custom_tooltip = SEPERATOR_TOOLTIP
 
-					custom_tooltip = HAB_MODIFY_SUPREMACY_OVER_THE_CROWN_PRIVILEGE
-				"
+				# 	custom_tooltip = HAB_MODIFY_SUPREMACY_OVER_THE_CROWN_PRIVILEGE
+				# "
 			}
 		} 
 	}

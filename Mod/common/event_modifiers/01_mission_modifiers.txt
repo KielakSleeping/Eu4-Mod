@@ -12746,11 +12746,11 @@ ven_wealth_of_india_modifier = {
 }
 
 ned_seven_provinces_organization_positive_modifier = {
-	local_development_cost = -0.1
-	trade_goods_size_modifier = 0.1
-	local_governing_cost = -0.25
-	local_build_cost = -0.1
-	local_build_time = -0.1
+	local_development_cost = -0.075
+	trade_goods_size_modifier = 0.075
+	local_governing_cost = -0.225
+	local_build_cost = -0.075
+	local_build_time = -0.075
 }
 
 ned_seven_provinces_organization_negative_modifier = {
