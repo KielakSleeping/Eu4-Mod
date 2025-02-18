@@ -536,8 +536,8 @@ maritime_ideas = {
 		ship_trade_power_modifier = 0.2
 	}
 	merchant_marine = {
-		trade_range_modifier = 0.30	
-    	sailors_recovery_speed = 0.2
+		#trade_range_modifier = 0.30	
+    	sailors_recovery_speed = 0.25
 		
 	}
 	sheltered_ports = {
