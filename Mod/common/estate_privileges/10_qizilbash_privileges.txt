@@ -7,6 +7,7 @@ estate_qizilbash_land_rights = {
 	influence = 0.05
 	is_valid = {always = no}
 	can_select = {
+		ai=no
 		not = { has_estate_privilege = estate_ghulams_land_rights }
 		not = { has_estate_privilege = estate_nobles_land_rights }
 	}
@@ -210,6 +211,7 @@ estate_qizilbash_military = {
 		always = no
 	}
 	can_select = {
+		ai=no
 		can_select_monarch_power_privilege = {
 			estate = estate_qizilbash
 			type = mil
@@ -287,6 +289,7 @@ estate_qizilbash_establish_the_qizilbash_regiments = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	influence = 0.05
 	can_select = {
+		ai=no
 	}
 	on_granted = {
 	}
@@ -317,6 +320,7 @@ estate_qizilbash_expand_the_qizilbash_regiments = {
 		has_estate_privilege = estate_qizilbash_establish_the_qizilbash_regiments
 	}
 	can_select = {
+		ai=no
 	}
 	on_granted = {
 	}
@@ -358,6 +362,7 @@ estate_qizilbash_horse_responsibilities = {
 		has_estate_privilege = estate_qizilbash_establish_the_qizilbash_regiments
 	}
 	can_select = {
+		ai=no
 	}
 	on_granted = {
 		if = {
@@ -420,6 +425,7 @@ estate_qizilbash_protected_communities = {
 		}
 	}
 	can_select = {
+		ai=no
 	}
 	on_granted = {
 		custom_tooltip = estate_qizilbash_protected_communities_gt
@@ -481,6 +487,7 @@ estate_qizilbash_military_leadership = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	influence = 0.05
 	can_select = {
+		ai=no
 		army_tradition = 30
 	}
 	on_granted = {
@@ -504,6 +511,7 @@ estate_qizilbash_supremacy_over_the_aristocracy = {
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	can_select = {
+		ai=no
 	}
 	on_granted = {
 	}
@@ -536,6 +544,7 @@ estate_qizilbash_defensive_policy = {
 		}
 	}
 	can_select = {
+		ai=no
 		NOT = { has_estate_privilege = estate_nobles_defensive_policy }
 		NOT = { has_estate_privilege = estate_ghulams_defensive_policy }
 	}
@@ -566,6 +575,7 @@ estate_qizilbash_regimental_discipline = {
 		}
 	}
 	can_select = {
+		ai=no
 	}
 	on_granted = {
 		add_country_modifier = {
@@ -637,6 +647,7 @@ estate_qizilbash_tofangchi_regiment = {
 		}
 	}
 	can_select = {
+		ai=no
 		NOT = { has_estate_privilege = estate_nobles_tofangchi_regiment }
 		NOT = { has_estate_privilege = estate_ghulams_tofangchi_regiment }
 	}
@@ -666,6 +677,7 @@ estate_qizilbash_tupchi_artillery_corps = {
 		}
 	}
 	can_select = {
+		ai=no
 		NOT = { has_estate_privilege = estate_nobles_tupchi_artillery_corps }
 		NOT = { has_estate_privilege = estate_ghulams_tupchi_artillery_corps }
 	}
@@ -718,6 +730,7 @@ estate_qizilbash_qurchi_service = {
 		}
 	}
 	can_select = {
+		ai=no
 		NOT = { has_estate_privilege = estate_nobles_qurchi_service }
 		NOT = { has_estate_privilege = estate_ghulams_qurchi_service }
 	}
@@ -760,6 +773,7 @@ estate_qizilbash_mamlukian_administration = {
 		}
 	}
 	can_select = {
+		ai=no
 		NOT = { has_estate_privilege = estate_nobles_mamlukian_administration }
 		NOT = { has_estate_privilege = estate_ghulams_mamlukian_administration }
 	}

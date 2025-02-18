@@ -6,6 +6,7 @@ estate_maratha_land_rights = {
 	#loyalty = 0.05
 	influence = 0.05
 	can_select = {
+		ai=no
 	}
 	on_granted = {
 	}
@@ -203,6 +204,7 @@ estate_maratha_military = {
 		always = no
 	}
 	can_select = {
+		ai=no
 		can_select_monarch_power_privilege = {
 			estate = estate_maratha
 			type = mil
@@ -264,6 +266,7 @@ estate_maratha_advisor = {
 		stability_cost_modifier = 0.1
 	}
 	can_select = { 
+		ai=no
 		NOT = { has_estate_privilege = estate_nobles_advisors }
 		NOT = { has_estate_privilege = estate_rajput_advisor }
 	}
@@ -289,6 +292,9 @@ estate_maratha_loyalty_privilege = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	#loyalty = 0.1
 	influence = 0.1
+	can_select = {
+		ai=no
+	}
 	penalties = {
 	}
 	benefits = {
@@ -312,6 +318,7 @@ estate_maratha_levies = {
 		NOT = { religion_group = muslim }
 	}
 	can_select = {
+		ai=no
 		if = {
 			limit = {
 				has_estate = estate_nobles
@@ -424,6 +431,9 @@ estate_maratha_levies_for_muslims = {
 	is_valid = {
 		religion_group = muslim
 	}
+	can_select = {
+		ai=no
+	}
 	on_granted = {
 		custom_tooltip = estate_maratha_levies_for_muslims_effect_tooltip
 	}
@@ -526,6 +536,7 @@ estate_maratha_monopoly_of_metals = {
 		NOT = { has_estate = estate_nobles }
 	}
 	can_select = {
+		ai=no
 		custom_trigger_tooltip = {
 			tooltip = unavailable_during_revolution_disaster
 			NOT = { has_disaster = revolution }
@@ -646,6 +657,7 @@ estate_maratha_monopoly_of_livestock = {
 		NOT = { has_estate = estate_nobles }
 	}
 	can_select = {
+		ai=no
 		custom_trigger_tooltip = {
 			tooltip = unavailable_during_revolution_disaster
 			NOT = { has_disaster = revolution }
@@ -757,6 +769,7 @@ estate_maratha_monopoly_of_gems = {
 		NOT = { has_estate = estate_nobles }
 	}
 	can_select = {
+		ai=no
 		custom_trigger_tooltip = {
 			tooltip = unavailable_during_revolution_disaster
 			NOT = { has_disaster = revolution }
@@ -874,6 +887,7 @@ estate_maratha_subject_rights = {
 		NOT = { has_estate = estate_rajput }
 	}
 	can_select = {
+		ai=no
 		custom_trigger_tooltip = {
 			tooltip = estate_nobles_strong_duchies_trigger_tooltip
 			calc_true_if = {
@@ -955,6 +969,7 @@ estate_maratha_better_integration = {
 		NOT = { has_estate = estate_rajput }
 	}
 	can_select = {
+		ai=no
 	}
 	on_granted = {
 		disable_annexation_penalty = yes
@@ -989,6 +1004,7 @@ estate_maratha_development_of_marathi_lands = {
 		has_dlc = "Domination"
 	}
 	can_select = {
+		ai=no
 		any_owned_province = {
 			OR = {
 				culture_group = western_aryan
@@ -1059,6 +1075,7 @@ estate_maratha_military_ministerium = {
 		has_dlc = "Domination"
 	}
 	can_select = {
+		ai=no
 	}
 	on_granted = {
 		enable_estate_action = {
@@ -1089,6 +1106,7 @@ estate_maratha_royal_court_tasks = {
 		has_dlc = "Domination"
 	}
 	can_select = {
+		ai=no
 		if = {
 			limit = { has_estate_privilege = estate_rajput_royal_court_tasks }
 			NOT = { has_estate_privilege = estate_rajput_royal_court_tasks }
@@ -1162,6 +1180,9 @@ estate_maratha_noble_promotion = {
 	is_valid = {
 		has_dlc = "Domination"
 	}
+	can_select = {
+		ai=no
+	}
 	on_granted = {
 		enable_estate_action = {
 			estate_action = PROMOTE_MARATHA_NOBILITY_MARATHA
@@ -1191,6 +1212,7 @@ estate_maratha_force_conscription = {
 		has_dlc = "Domination"
 	}
 	can_select = {
+		ai=no
 		if = {
 			limit = { has_estate = estate_nobles }
 			NOT = { has_estate_privilege = estate_nobles_force_conscription }

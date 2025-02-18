@@ -6,6 +6,7 @@ estate_church_land_rights = {
 	#loyalty = 0.05
 	influence = 0.05
 	can_select = {
+		ai=no
 	}
 	on_granted = {
 	}
@@ -216,6 +217,7 @@ estate_church_religious_state = {
 		always = no
 	}
 	can_select = {
+		ai=no
 		can_select_monarch_power_privilege = {
 			estate = estate_church
 			type = adm
@@ -331,6 +333,9 @@ estate_church_new_world_mission = {
 	benefits = {
 		native_assimilation = 0.5
 	}
+	can_select = {
+		ai=no
+	}
 	on_granted = {
 		if = {
 			limit = { has_dlc = "Domination" }
@@ -392,6 +397,7 @@ estate_church_papal_emissary = {
 		NOT = { tag = PAP }
 	}
 	can_select = {
+		ai=no
 		papal_influence = 20
 		num_of_cardinals = 1
 	}
@@ -444,6 +450,9 @@ estate_church_clerical_ministers = {
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	influence = 0.10
+	can_select = {
+		ai=no
+	}
 	on_granted = {
 		if = {
 			limit = { has_estate_privilege = estate_church_freedom_of_interpretation }
@@ -679,6 +688,9 @@ estate_church_freedom_of_interpretation = {
 		religion_group = muslim
 		always = no
 	}
+	can_select = {
+		ai=no
+	}
 	on_granted = {
 		if = {
 			limit = { has_estate_privilege = estate_church_clerical_ministers }
@@ -784,6 +796,7 @@ estate_church_inwards_perfection = {
 		NOT = { has_government_mechanic = perfectionism_mechanic }
 	}
 	can_select = {
+		ai=no
 		NOT = { has_estate_privilege = estate_church_for_the_faith }
 		NOT = { has_country_flag = mng_outward_perfection_flag } 
 		NOT = { has_estate_privilege = estate_church_inwards_perfection }
@@ -866,6 +879,7 @@ estate_church_enforced_one_faith = {
 		}
 	}
 	can_select = {
+		ai=no
 		NOT = { has_estate_privilege = estate_burghers_enforced_interfaith_dialogue }
 		NOT = { has_estate_privilege = estate_dhimmi_tolerance }
 		NOT = { has_estate_privilege = estate_dhimmi_guarantee_of_traditions }
@@ -901,6 +915,7 @@ estate_church_administrative_privileges = {
 	is_valid = {
 	}
 	can_select = {
+		ai=no
 	}
 	can_revoke = {
 	}
@@ -952,6 +967,7 @@ estate_church_monopoly_of_incense = {
 		}
 	}
 	can_select = {
+		ai=no
 		custom_trigger_tooltip = {
 			tooltip = unavailable_during_revolution_disaster
 			NOT = { has_disaster = revolution }
@@ -1062,6 +1078,7 @@ estate_church_monopoly_of_wool = {
 		}
 	}
 	can_select = {
+		ai=no
 		custom_trigger_tooltip = {
 			tooltip = unavailable_during_revolution_disaster
 			NOT = { has_disaster = revolution }
@@ -1173,6 +1190,7 @@ estate_church_monopoly_of_wine = {
 		}
 	}
 	can_select = {
+		ai=no
 		custom_trigger_tooltip = {
 			tooltip = unavailable_during_revolution_disaster
 			NOT = { has_disaster = revolution }
@@ -1304,6 +1322,7 @@ estate_church_monopoly_of_slaves = {
 		}
 	}
 	can_select = {
+		ai=no
 		custom_trigger_tooltip = {
 			tooltip = unavailable_during_revolution_disaster
 			NOT = { has_disaster = revolution }
@@ -1419,6 +1438,7 @@ estate_church_for_the_faith = {
 		}
 	}
 	can_select = {
+		ai=no
 		OR = {
 			has_country_flag = improved_expansionist_zealotry
 			any_known_country = {
@@ -1522,6 +1542,9 @@ estate_church_statutory_rights = {
 	is_valid = {
 		has_estate_privilege = estate_church_statutory_rights
 	}
+	can_select = {
+		ai=no
+	}
 	on_granted = {
 		change_estate_land_share = {
 			estate = all
@@ -1546,6 +1569,7 @@ estate_church_statutory_rights = {
 estate_church_brahmins_at_court = {
 	icon = privilege_seek_support_of_brahmins
 	can_select = {
+		ai=no
 		if = {
 			limit = {
 				has_mission = mnd_khm_religion
@@ -1641,6 +1665,7 @@ estate_church_karma_temples = {
 		}
 	}
 	can_select = {
+		ai=no
 	}
 	on_granted = {
 		if = {
@@ -1686,6 +1711,7 @@ estate_church_influence_temples = {
 		religion = catholic
 	}
 	can_select = {
+		ai=no
 		religion = catholic
 	}
 	on_granted = {
@@ -1709,6 +1735,7 @@ estate_church_lao_animism = {
 	loyalty = -0.05
 	influence = 0.6
 	can_select = {
+		ai=no
 		primary_culture = lao
 		religion_group = eastern
 	}
@@ -1824,6 +1851,7 @@ estate_church_religious_diplomats = {
 	is_valid = {
 	}
 	can_select = {
+		ai=no
 	}
 	on_granted = {
 		#add_increase_same_religion_opinion = yes
@@ -1920,6 +1948,7 @@ estate_church_one_faith_one_culture = {
 	is_valid = {
 	}
 	can_select = {
+		ai=no
 	}
 	on_granted = {
 		# if = {
@@ -2123,6 +2152,7 @@ estate_church_heir_shrine = {
 		has_government_attribute = heir
 	}
 	can_select = {
+		ai=no
 		NOT = { has_estate_privilege = estate_church_embrace_singluar_cult }
 	}
 	on_granted = {
@@ -2173,6 +2203,7 @@ estate_church_embrace_singluar_cult = {
 		has_dlc = "Rights of Man"
 	}
 	can_select = {
+		ai=no
 		NOT = { has_estate_privilege = estate_church_flexible_cults }
 		NOT = { has_estate_privilege = estate_church_heir_shrine }
 	}
@@ -2218,6 +2249,7 @@ estate_church_flexible_cults = {
 		NOT = { has_country_flag = enabled_cult_switching_mission }
 	}
 	can_select = {
+		ai=no
 		NOT = { has_estate_privilege = estate_church_embrace_singluar_cult }
 	}
 	on_granted = {
@@ -2336,6 +2368,7 @@ estate_church_yakobs_churches = {
 		religion_group = christian
 	}
 	can_select = {
+		ai=no
 		religion_group = christian
 	}
 	on_granted = {
@@ -2382,6 +2415,7 @@ estate_church_anti_heresy_act = {
 		has_unlocked_estate_privilege = { estate_privilege = estate_church_anti_heresy_act }
 	}
 	can_select = {
+		ai=no
 		religion_group = christian
 		NOT = { religion = orthodox }
 		NOT = { religion = coptic }
@@ -2426,6 +2460,9 @@ estate_church_lands_of_riga = {
 		has_dlc = "Lions of the North"
 		has_estate_privilege = estate_church_lands_of_riga
 	}
+	can_select = {
+		ai=no
+	}
 	can_revoke = {
 		owns_core_province = 37
 		owns_core_province = 4241
@@ -2466,6 +2503,9 @@ estate_church_bishopric_of_dorpat = {
 		has_dlc = "Lions of the North"
 		has_estate_privilege = estate_church_bishopric_of_dorpat
 	}
+	can_select = {
+		ai=no
+	}
 	can_revoke = {
 	}
 	on_revoked = {
@@ -2494,6 +2534,9 @@ estate_church_bishopric_of_osel_wiek = {
 	is_valid = {
 		has_dlc = "Lions of the North"
 		has_estate_privilege = estate_church_bishopric_of_osel_wiek
+	}
+	can_select = {
+		ai=no
 	}
 	can_revoke = {
 	}
@@ -2524,6 +2567,9 @@ estate_church_bishopric_of_courland = {
 		has_dlc = "Lions of the North"
 		has_estate_privilege = estate_church_bishopric_of_courland
 	}
+	can_select = {
+		ai=no
+	}
 	can_revoke = {
 	}
 	on_revoked = {
@@ -2552,6 +2598,9 @@ estate_church_bishopric_of_reval = {
 	is_valid = {
 		has_dlc = "Lions of the North"
 		has_estate_privilege = estate_church_bishopric_of_reval
+	}
+	can_select = {
+		ai=no
 	}
 	can_revoke = {
 	}
@@ -2585,6 +2634,7 @@ estate_church_japanese_christian_communities_privilege = {
 		}
 	}
 	can_select = {
+		ai=no
 		OR = { 
 			has_estate_privilege = estate_church_japanese_christian_communities_privilege 
 			custom_trigger_tooltip = {
@@ -2617,6 +2667,9 @@ estate_church_development_of_temples = {
 	is_valid = {
 		always = no
 		has_dlc = "Domination"
+	}
+	can_select = {
+		ai=no
 	}
 	on_granted = {
 		custom_tooltip = estate_church_development_of_temples_gt
@@ -2680,6 +2733,7 @@ estate_church_expand_the_theology = {
 		has_dlc = "Domination"
 	}
 	can_select = {
+		ai=no
 		if = {
 			limit = { has_estate = estate_brahmins }
 			NOT = { has_estate_privilege = estate_brahmins_expand_the_theology }
@@ -2738,6 +2792,7 @@ estate_church_clerical_education = {
 		has_dlc = "Domination"
 	}
 	can_select = {
+		ai=no
 		if = {
 			limit = { has_estate = estate_brahmins }
 			NOT = { has_estate_privilege = estate_brahmins_clerical_education }
@@ -2837,6 +2892,9 @@ estate_church_religious_delegation = {
 	is_valid = {
 		has_dlc = "Domination"
 	}
+	can_select = {
+		ai=no
+	}
 	on_granted = {
 		enable_estate_action = {
 			estate_action = RELIGIOUS_DELEGATION_CHURCH
@@ -2872,6 +2930,9 @@ estate_church_institutionalized_clergy = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	is_valid = {
 		has_dlc = "Domination"
+	}
+	can_select = {
+		ai=no
 	}
 	conditional_modifier = {
 		trigger = {
@@ -2916,6 +2977,9 @@ estate_church_donation_right = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	is_valid = {
 		has_dlc = "Domination"
+	}
+	can_select = {
+		ai=no
 	}
 	loyalty_scaled_conditional_modifier = {
 		trigger = {
@@ -2973,6 +3037,9 @@ estate_church_BYZ_legitimization_of_dynasty = {
 		tag = BYZ
 		has_country_flag = BYZ_privilege_for_support_of_dynasty
 	}
+	can_select = {
+		ai=no
+	}
 	on_granted = {
 		custom_tooltip = BYZ_if_above_33_patriarch_authority
 	}
@@ -3006,6 +3073,9 @@ estate_church_union_of_the_churches = {
 	influence = 0
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
+	can_select = {
+		ai=no
+	}
 	is_valid = {
 		OR = {
 			tag = BYZ
@@ -3096,6 +3166,9 @@ estate_church_muslim_integration = {
 	influence = 0.05
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
+	can_select = {
+		ai=no
+	}
 	is_valid = {
 		has_unlocked_estate_privilege = { estate_privilege = estate_church_muslim_integration }
 		any_owned_province = {
@@ -3152,6 +3225,9 @@ estate_church_fund_dar_al_hadith = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	#loyalty = 0.1
 	influence = 0.1
+	can_select = {
+		ai=no
+	}
 	is_valid = {
 		is_or_was_tag = { tag = MAM }
 		has_dlc = "King of Kings"
@@ -3175,6 +3251,9 @@ estate_church_fund_madrasas = {
 	land_share = 5
 	#loyalty = 0.05
 	influence = 0.05
+	can_select = {
+		ai=no
+	}
 	is_valid = {
 		is_or_was_tag = { tag = MAM }
 		has_dlc = "King of Kings"
@@ -3200,6 +3279,9 @@ estate_church_sponsor_waqf_payments = {
 	land_share = 5
 	#loyalty = 0.1
 	influence = 0.15
+	can_select = {
+		ai=no
+	}
 	is_valid = {
 		is_or_was_tag = { tag = MAM }
 		religion_group = muslim
@@ -3243,6 +3325,7 @@ estate_church_INC_idol_making = {
 		has_country_flag = INC_unlock_the_idol_privilege_flag
 	}
 	can_select = {
+		ai=no
 		trade_goods_produced_amount = {
 			trade_goods = gold
 			amount = 1
@@ -3326,6 +3409,9 @@ estate_church_MAY_cocoa_monopoly = {
 		any_owned_province = {
 			trade_goods = cocoa
 		}
+	}
+	can_select = {
+		ai=no
 	}
 	on_granted = {
 		if = {
@@ -3469,6 +3555,9 @@ estate_church_TIM_promote_ijazah = {
 	is_valid = {
 		has_country_flag = TIM_unlock_privilege_for_innovativeness_gain_flag
 	}
+	can_select = {
+		ai=no
+	}
 	mechanics = {
 		exempt_from_seize_land
 	}
@@ -3496,6 +3585,9 @@ estate_church_MUG_promote_divine_religion = {
 	max_absolutism = 10
 	is_valid = {
 		has_country_flag = MUG_promote_din_i_ilahi_flag
+	}
+	can_select = {
+		ai=no
 	}
 	penalties = {
 		religious_unity = -0.1

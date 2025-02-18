@@ -6,6 +6,7 @@ estate_ghulams_land_rights = {
 	influence = 0.05
 	is_valid = {always = no}
 	can_select = {
+		ai=no
 		not = { has_estate_privilege = estate_nobles_land_rights }
 		not = { has_estate_privilege = estate_qizilbash_land_rights }
 	}
@@ -208,6 +209,7 @@ estate_ghulams_military = {
 		always = no
 	}
 	can_select = {
+		ai=no
 		can_select_monarch_power_privilege = {
 			estate = estate_ghulams
 			type = mil
@@ -272,6 +274,7 @@ estate_ghulams_advisor = {
 		stability_cost_modifier = 0.1
 	}
 	can_select = { 
+		ai=no
 		NOT = { has_estate_privilege = estate_nobles_advisors }
 		NOT = { has_estate_privilege = estate_rajput_advisor }
 		NOT = { has_estate_privilege = estate_maratha_advisor }
@@ -317,6 +320,9 @@ estate_ghulams_levies = {
 	#loyalty = 0.05
 	is_valid = {
 		religion_group = muslim
+	}
+	can_select = {
+		ai=no
 	}
 	on_granted = {
 		custom_tooltip = estate_ghulams_levies_effect_tooltip
@@ -381,6 +387,9 @@ estate_ghulams_levies_non_muslims = {
 	is_valid = {
 		NOT = { religion_group = muslim }
 	}
+	can_select = {
+		ai=no
+	}
 	penalties = {
 		nobles_loyalty_modifier = -0.05
 	}
@@ -402,6 +411,9 @@ estate_ghulams_special_privilege = {
 	land_share = 5
 	is_valid = {
 		always = no
+	}
+	can_select = {
+		ai=no
 	}
 	modifier_by_land_ownership = {
 		infantry_power = 0.2
@@ -510,6 +522,7 @@ estate_ghulams_ensure_caucasian_sovereignty = {
 		}
 	}
 	can_select = {
+		ai=no
 		any_owned_province = {
 			culture_group = caucasian
 		}
@@ -577,6 +590,7 @@ estate_ghulams_defensive_policy = {
 		}
 	}
 	can_select = {
+		ai=no
 		NOT = { has_estate_privilege = estate_nobles_defensive_policy }
 		NOT = { has_estate_privilege = estate_qizilbash_defensive_policy }
 	}
@@ -607,6 +621,7 @@ estate_ghulams_tofangchi_regiment = {
 		}
 	}
 	can_select = {
+		ai=no
 		NOT = { has_estate_privilege = estate_nobles_tofangchi_regiment }
 		NOT = { has_estate_privilege = estate_qizilbash_tofangchi_regiment }
 	}
@@ -636,6 +651,7 @@ estate_ghulams_tupchi_artillery_corps = {
 		}
 	}
 	can_select = {
+		ai=no
 		NOT = { has_estate_privilege = estate_nobles_tupchi_artillery_corps }
 		NOT = { has_estate_privilege = estate_qizilbash_tupchi_artillery_corps }
 	}
@@ -688,6 +704,7 @@ estate_ghulams_qurchi_service = {
 		}
 	}
 	can_select = {
+		ai=no
 		NOT = { has_estate_privilege = estate_nobles_qurchi_service }
 		NOT = { has_estate_privilege = estate_qizilbash_qurchi_service }
 	}
@@ -730,6 +747,7 @@ estate_ghulams_mamlukian_administration = {
 		}
 	}
 	can_select = {
+		ai=no
 		NOT = { has_estate_privilege = estate_nobles_mamlukian_administration }
 		NOT = { has_estate_privilege = estate_qizilbash_mamlukian_administration }
 	}

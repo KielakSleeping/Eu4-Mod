@@ -6,6 +6,7 @@ estate_burghers_land_rights = {
 	#loyalty = 0.05
 	influence = 0.05
 	can_select = {
+		ai=no
 	}
 	on_granted = {
 	}
@@ -219,6 +220,7 @@ estate_burghers_enforced_interfaith_dialogue = {
 		}
 	}
 	can_select = {
+		ai=no
 		NOT = { has_estate_privilege = estate_church_enforced_one_faith }
 	}
 	benefits = {
@@ -266,6 +268,7 @@ estate_burghers_land_of_commerce = {
 		always = no
 	}
 	can_select = {
+		ai=no
 		can_select_monarch_power_privilege = {
 			estate = estate_burghers
 			type = dip
@@ -323,6 +326,7 @@ estate_burghers_admirals = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	influence = 0.05
 	can_select = {
+		ai=no
 		if = {
 			limit = {
 				NOT = { has_country_flag = ned_burghers_in_admirality_buff_flag }
@@ -366,6 +370,9 @@ estate_burghers_commercial_board_of_advice = {
 	is_valid = {
 		always = no
 	}
+	can_select = {
+		ai=no
+	}
 	penalties = {
 		stability_cost_modifier = 0.1
 	}
@@ -401,6 +408,9 @@ estate_burghers_new_world_charter = {
 			num_of_colonists = 1
 			num_of_colonies = 1
 		}
+	}
+	can_select = {
+		ai=no
 	}
 	penalties = {
 		global_tariffs = -0.10
@@ -559,6 +569,7 @@ estate_burghers_indebted_to_burghers = {
 	benefits = {
 	}
 	can_select = {
+		ai=no
 		not = { has_estate_privilege = estate_burghers_reliance_on_republics }
 		if = {
 			limit = {
@@ -585,6 +596,9 @@ estate_burghers_free_enterprise = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	#loyalty = 0.1
 	influence = 0.1
+	can_select = {
+		ai=no
+	}
 	penalties = {
 	}
 	benefits = {
@@ -638,6 +652,9 @@ estate_burghers_patronage_of_the_arts = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	#loyalty = 0.05
 	influence = 0.05
+	can_select = {
+		ai=no
+	}
 	conditional_modifier = {
 		trigger = { NOT = { has_country_flag = ned_patronage_buff_flag } }
 		modifier = { global_tax_modifier = -0.05 }
@@ -726,6 +743,7 @@ estate_burghers_land_trade_rights = {
 	is_valid = {
 	}
 	can_select = {
+		ai=no
 	}
 	can_revoke = {
 	}
@@ -776,6 +794,7 @@ estate_burghers_monopoly_of_textiles = {
 		}
 	}
 	can_select = {
+		ai=no
 		custom_trigger_tooltip = {
 			tooltip = unavailable_during_revolution_disaster
 			NOT = { has_disaster = revolution }
@@ -895,6 +914,7 @@ estate_burghers_monopoly_of_dyes = {
 		}
 	}
 	can_select = {
+		ai=no
 		custom_trigger_tooltip = {
 			tooltip = unavailable_during_revolution_disaster
 			NOT = { has_disaster = revolution }
@@ -1006,6 +1026,7 @@ estate_burghers_monopoly_of_glass = {
 		}
 	}
 	can_select = {
+		ai=no
 		custom_trigger_tooltip = {
 			tooltip = unavailable_during_revolution_disaster
 			NOT = { has_disaster = revolution }
@@ -1135,6 +1156,7 @@ estate_burghers_monopoly_of_paper = {
 		}
 	}
 	can_select = {
+		ai=no
 		custom_trigger_tooltip = {
 			tooltip = unavailable_during_revolution_disaster
 			NOT = { has_disaster = revolution }
@@ -1240,6 +1262,9 @@ estate_burghers_the_great_privilege = {
 		has_dlc = "Emperor"
 		has_estate_privilege = estate_burghers_the_great_privilege
 	}
+	can_select = {
+		ai=no
+	}
 	on_granted = {
 		every_country = {
 			limit = {
@@ -1320,6 +1345,9 @@ estate_burghers_exclusive_trade_rights = {
 			}
 		}
 	}
+	can_select = {
+		ai=no
+	}
 	on_granted = {
 		random_active_trade_node = {
 			limit = {
@@ -1392,6 +1420,9 @@ estate_burghers_control_over_monetary_policy = {
 		always = no
 		has_dlc = "Emperor"
 	}
+	can_select = {
+		ai=no
+	}
 	penalties = {
 		#all_power_cost = 0.05
 	}
@@ -1443,6 +1474,9 @@ estate_burghers_private_trade_fleets = {
 		}
 		num_of_ports = 1
 		navy_size = 1
+	}
+	can_select = {
+		ai=no
 	}
 	penalties = {
 	}
@@ -1535,6 +1569,9 @@ estate_burghers_prussian_confederation = {
 		tag = TEU
 		has_disaster = prussian_confederation_disaster
 	}
+	can_select = {
+		ai=no
+	}
 	on_granted = {
 		custom_tooltip = prussian_confederation_privilege_tt
 		add_estate_loyalty = {
@@ -1576,6 +1613,9 @@ estate_burghers_statutory_rights = {
 	is_valid = {
 		has_estate_privilege = estate_burghers_statutory_rights
 	}
+	can_select = {
+		ai=no
+	}
 	on_granted = {
 		change_estate_land_share = {
 			estate = all
@@ -1600,6 +1640,7 @@ estate_burghers_statutory_rights = {
 estate_burghers_khmer_irrigation = {
 	icon = privilege_monopoly_of_goods_livestock
 	can_select = {
+		ai=no
 		OR = {
 			has_estate_privilege = estate_vaisyas_khmer_irrigation
 			mission_completed = mnd_khm_irrigation
@@ -1687,6 +1728,7 @@ estate_burghers_tropical_nation = {
 		
 	}
 	can_select = {
+		ai=no
 		capital_scope = {
 			has_climate = tropical
 		}
@@ -1749,6 +1791,7 @@ estate_burghers_orang_laut_alliances = {
 	#loyalty = 0.1
 	influence = 0.15
 	can_select = {
+		ai=no
 		capital_scope = {
 			region = malaya_region
 		}
@@ -1783,6 +1826,7 @@ estate_burghers_hydraulic_rights = {
 		has_unlocked_estate_privilege = { estate_privilege = estate_burghers_hydraulic_rights }
 	}
 	can_select = {
+		ai=no
 		any_owned_province = {
 			OR = {
 				has_terrain = desert
@@ -1888,6 +1932,7 @@ estate_burghers_control_over_the_mint = {
 		gold = 1
 	}
 	can_select = {
+		ai=no
 	}
 	on_granted = {
 		custom_tooltip = estate_burghers_control_over_the_mint_gt
@@ -1976,6 +2021,7 @@ estate_burghers_forest_expansion = {
 		has_unlocked_estate_privilege = { estate_privilege = estate_burghers_forest_expansion }
 	}
 	can_select = {
+		ai=no
 		any_owned_province = {
 			OR = {
 				has_terrain = forest
@@ -2054,6 +2100,7 @@ estate_burghers_mountain_expansion = {
 		has_unlocked_estate_privilege = { estate_privilege = estate_burghers_mountain_expansion }
 	}
 	can_select = {
+		ai=no
 		any_owned_province = {
 			OR = {
 				has_terrain = mountain
@@ -2152,6 +2199,7 @@ estate_burghers_orthodox_tolerance = {
 		modifier = { max_absolutism = 5 church_loyalty_modifier = 0.1 }
 	}
 	can_select = {
+		ai=no
 		religion_group = christian
 		NOT = { religion = orthodox }
 		NOT = { religion = coptic }
@@ -2270,6 +2318,9 @@ estate_burghers_polish_merchant_seal = {
 			has_estate_privilege = estate_burghers_the_great_privilege
 		}
 	}
+	can_select = {
+		ai=no
+	}
 	influence = 0.05
 	#loyalty = 0.05
 	benefits = { 
@@ -2294,6 +2345,9 @@ estate_burghers_rise_of_the_burghers = {
 		has_estate_privilege = estate_burghers_rise_of_the_burghers
 		is_revolutionary = no
 		NOT = { has_country_flag = enserfed_peasants }
+	}
+	can_select = {
+		ai=no
 	}
 	influence = 0.15
 	loyalty = 0.0
@@ -2341,6 +2395,9 @@ estate_burghers_the_new_middle_class = {
 			}
 		}
 		NOT = { has_country_flag = enserfed_peasants }
+	}
+	can_select = {
+		ai=no
 	}
 	influence = 0.1
 	#loyalty = 0.15
@@ -2392,6 +2449,9 @@ estate_burghers_sindicat_remensa_privilege = {
 		has_dlc = "Domination"
 		has_country_flag = remensa_privilege_flag
 	}
+	can_select = {
+		ai=no
+	}
 	influence = 0.1
 	#loyalty = 0.15
 	benefits = {
@@ -2417,6 +2477,9 @@ estate_burghers_autonomous_trade_companies = {
 		has_unlocked_estate_privilege = {
 			estate_privilege = estate_burghers_autonomous_trade_companies
 		}
+	}
+	can_select = {
+		ai=no
 	}
 	influence = 0.05
 	#loyalty = 0.05
@@ -2452,6 +2515,9 @@ estate_burghers_development_of_cities = {
 	}
 	is_valid = {
 		has_dlc = "Domination"
+	}
+	can_select = {
+		ai=no
 	}
 	on_granted = {
 		if = {
@@ -2520,6 +2586,7 @@ estate_burghers_control_over_the_coinage = {
 		has_dlc = "Domination"
 	}
 	can_select = {
+		ai=no
 	}
 	on_granted = {
 		enable_estate_action = {
@@ -2555,6 +2622,7 @@ estate_burghers_economical_boost = {
 		has_dlc = "Domination"
 	}
 	can_select = {
+		ai=no
 		if = {
 			limit = { has_estate_privilege = estate_vaisyas_economical_boost }
 			NOT = { has_estate_privilege = estate_vaisyas_economical_boost }
@@ -2634,6 +2702,9 @@ estate_burghers_expanded_monopoly_rights = {
 	is_valid = {
 		has_dlc = "Domination"
 	}
+	can_select = {
+		ai=no
+	}
 	on_granted = {
 		enable_estate_action = {
 			estate_action = GRANT_MONOPOLY_CHARTER_BURGHERS
@@ -2674,6 +2745,7 @@ estate_burghers_force_impressment = {
 		primitives = no
 	}
 	can_select = {
+		ai=no
 		num_of_ports = 1
 	}
 	benefits = {
@@ -2716,6 +2788,7 @@ estate_burghers_naval_school_right = {
 		prestige_from_naval = 0.5
 	}
 	can_select = {
+		ai=no
 		num_of_ports = 1
 	}
 	on_granted = {
@@ -2754,6 +2827,7 @@ estate_burghers_financial_demand = {
 		global_tax_modifier = 0.1
 	}
 	can_select = {
+		ai=no
 		is_at_war = no
 	}	
 	benefits = {
@@ -2796,6 +2870,9 @@ estate_burghers_promote_burgher_bookkeeping = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	is_valid = {
 		has_dlc = "Domination"
+	}
+	can_select = {
+		ai=no
 	}
 	loyalty_scaled_conditional_modifier = {
 		trigger = { always = yes }
@@ -2890,6 +2967,7 @@ estate_burghers_great_works_of_iran = {
 		}
 	}
 	can_select = {
+		ai=no
 		custom_trigger_tooltip = {
 			tooltip = has_unlocked_estate_burghers_great_works_of_iran_tt
 			has_unlocked_estate_privilege = {
@@ -3027,6 +3105,9 @@ estate_burghers_fund_karimi = {
 		}
 		has_dlc = "King of Kings"
 	}
+	can_select = {
+		ai=no
+	}
 	modifier_by_land_ownership = {
 		global_tax_modifier = -0.25
 		trade_efficiency = 0.2
@@ -3048,6 +3129,9 @@ estate_burghers_foreign_expeditions = {
 		has_unlocked_estate_privilege = { 
 			estate_privilege = estate_burghers_foreign_expeditions 
 		}
+	}
+	can_select = {
+		ai=no
 	}
 	benefits = {
 		colonists = 1
@@ -3076,6 +3160,9 @@ estate_burghers_nile_goods_transport = {
 			estate_privilege = estate_burghers_nile_goods_transport 
 		}
 	}
+	can_select = {
+		ai=no
+	}
 	benefits = {
 		global_ship_trade_power = 0.2
 	}
@@ -3101,6 +3188,7 @@ estate_burghers_monopoly_of_coffee = {
 		has_country_flag = mam_enable_coffee_monopoly_flag
 	}
 	can_select = {
+		ai=no
 		custom_trigger_tooltip = {
 			tooltip = unavailable_during_revolution_disaster
 			NOT = { has_disaster = revolution }
@@ -3219,6 +3307,9 @@ estate_burghers_reliance_on_republics = {
 		}
 		NOT = { has_country_flag = estate_burghers_reliance_on_republics_removed }
 	}
+	can_select = {
+		ai=no
+	}
 	can_revoke = {
 		num_of_ports = 8
 	}
@@ -3301,6 +3392,9 @@ estate_burghers_exkousseiai_for_latins = {
 		}
 		NOT = { has_country_flag = estate_burghers_exkousseiai_for_latins_removed }
 	}
+	can_select = {
+		ai=no
+	}
 	can_revoke = {
 		custom_trigger_tooltip = {
 			tooltip = BYZ_revokable_via_decision
@@ -3354,6 +3448,9 @@ estate_burghers_BYZ_single_market = {
 	is_valid = {
 		has_unlocked_estate_privilege = { estate_privilege = estate_burghers_BYZ_single_market }
 	}
+	can_select = {
+		ai=no
+	}
 	on_granted = {
 		custom_tooltip = BYZ_bonuses_of_single_market
 	}
@@ -3393,6 +3490,9 @@ estate_burghers_ARB_oasis_development = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	is_valid = {
 		has_country_flag = ARB_unlock_oasis_development_flag
+	}
+	can_select = {
+		ai=no
 	}
 	on_granted = {
 		custom_tooltip = ARB_estate_burghers_arid_development_gt
@@ -3460,6 +3560,9 @@ estate_burghers_YEM_coffee_monopoly = {
 		any_owned_province = {
 			trade_goods = coffee
 		}
+	}
+	can_select = {
+		ai=no
 	}
 	on_granted = {
 		if = {
@@ -3550,6 +3653,7 @@ estate_burghers_persian_rugs = {
 		}
 	}
 	can_select = {
+		ai=no
 		any_owned_province = {
 			OR = {
 				trade_goods = cloth
@@ -3623,6 +3727,7 @@ estate_burghers_italian_coastal_influence = {
 		}
 	}
 	can_select = {
+		ai=no
 	}
 	on_granted = {
 	}
@@ -3723,6 +3828,9 @@ estate_burghers_livestock_regulations = {
 	is_valid = {
 		mission_completed = feo_black_sea_domination
 	}
+	can_select = {
+		ai=no
+	}
 	on_granted_province = {
 		if = {
 			limit = {
@@ -3769,6 +3877,7 @@ estate_burghers_arabian_traders = {
 		has_country_flag = orm_arabic_merchants_flag
 	}
 	can_select = {
+		ai=no
 	}
 	on_granted = {
 	}
@@ -3833,6 +3942,7 @@ estate_burghers_omani_marines = {
 		has_country_flag = oma_omani_marines_privilege_flag
 	}
 	can_select = {
+		ai=no
 	}
 	on_granted = {
 		add_country_modifier = {
@@ -3866,6 +3976,9 @@ estate_burghers_ITA_promote_latin_merchants = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	is_valid = {
 		mission_completed = ITA_the_trades_to_come
+	}
+	can_select = {
+		ai=no
 	}
 	on_granted = {
 		if = {
@@ -4020,7 +4133,9 @@ estate_burghers_ITA_permit_merchant_colonists = {
 	is_valid = {
 		has_country_flag = ITA_estate_privilege_for_colonization_flag
 	}
-	
+	can_select = {
+		ai=no
+	}
 	conditional_modifier = {
 		trigger = {
 			has_any_colonist_idea = yes
@@ -4054,6 +4169,9 @@ estate_burghers_GER_customs_union = {
 	is_valid = {
 		mission_completed = GER_zollverein
 	}
+	can_select = {
+		ai=no
+	}
 	benefits = {
 		diplomatic_annexation_cost = -0.05
 		monthly_cultural_unity = 0.25
@@ -4075,6 +4193,9 @@ estate_burghers_GER_turn_towards_mercantilism = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	is_valid = {
 		has_country_flag = GER_a_turn_towards_mercantilism_privilege_flag
+	}
+	can_select = {
+		ai=no
 	}
 	on_granted = {
 		custom_tooltip = GER_bonuses_of_mercantilism
@@ -4120,6 +4241,9 @@ estate_burghers_black_devils = {
 	is_valid = {
 		has_country_flag = ned_unlock_black_devils_privilege_flag
 	}
+	can_select = {
+		ai=no
+	}
 	on_granted = {
 		add_country_modifier = {
 			name = ned_black_devils_modifier
@@ -4152,6 +4276,7 @@ estate_burghers_maximize_cargo_space = {
 		has_country_flag = ned_unlocks_fluyts_privileges_flag
 	}
 	can_select = {
+		ai=no
 		estate_loyalty = {
 			estate = estate_burghers
 			loyalty = 60
@@ -4200,6 +4325,7 @@ estate_burghers_diversify_fluyts = {
 		has_country_flag = ned_unlocks_fluyts_privileges_flag
 	}
 	can_select = {
+		ai=no
 		estate_loyalty = {
 			estate = estate_burghers
 			loyalty = 60
@@ -4247,6 +4373,9 @@ estate_burghers_voc_privilege = {
 	is_valid = {
 		has_country_flag = ned_voc_privilege_flag
 	}
+	can_select = {
+		ai=no
+	}
 	on_granted = {
 		custom_tooltip = NED_UNLOCKS_VOC_ESTABLISHMENT
 	}
@@ -4288,6 +4417,7 @@ estate_burghers_hungarian_royal_cities = {
 		}
 	}
 	can_select = {
+		ai=no
 	}
 	on_granted = {
 		custom_tooltip = estate_burghers_hungarian_royal_cities_tt
@@ -4347,6 +4477,7 @@ estate_burghers_INC_mountain_development = {
 		is_andean_society_trigger = yes
 	}
 	can_select = {
+		ai=no
 		any_owned_province = {
 			OR = {
 				has_terrain = mountain
@@ -4590,6 +4721,9 @@ estate_burghers_MAY_support_of_chontal_maya = {
 	is_valid = {
 		has_country_flag = MAY_chontal_maya_priv_flag
 	}
+	can_select = {
+		ai=no
+	}
 	penalties = {
 		galley_power = -0.1
 		heavy_ship_power = -0.1
@@ -4614,6 +4748,7 @@ estate_burghers_MAY_tropical_adaptation = {
 		is_mayan_society_trigger = yes
 	}
 	can_select = {
+		ai=no
 		any_owned_province = {
 			has_terrain = jungle
 		}
@@ -4689,6 +4824,9 @@ estate_burghers_SUN_support_recovering_populations = {
 	is_valid = {
 		has_country_flag = SUN_burgher_privilege_recovery_flag
 	}
+	can_select = {
+		ai=no
+	}
 	benefits = {
 		development_cost_in_primary_culture = -0.1
 		global_prosperity_growth = 0.5
@@ -4723,6 +4861,9 @@ estate_burghers_AZT_sponsor_artisans = {
 	is_valid = {
 		has_country_flag = azt_unlock_sponsor_artisans_flag
 	}
+	can_select = {
+		ai=no
+	}
 	loyalty_scaled_conditional_modifier = {
 		trigger = { always = yes }
 		modifier = {
@@ -4747,6 +4888,9 @@ estate_burghers_AZT_mexican_gold_mines = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	is_valid = {
 		has_country_flag = azt_mexican_gold_mines_flag
+	}
+	can_select = {
+		ai=no
 	}
 	benefits = {
 		gold_depletion_chance_modifier = -0.5
@@ -4805,6 +4949,9 @@ estate_burghers_fugger_family = {
 		
 		is_or_was_tag = { tag = HAB }
 	}
+	can_select = {
+		ai=no
+	}
 	penalties = {
 		trade_efficiency = -0.05
 	}
@@ -4833,6 +4980,9 @@ estate_burghers_TIM_gulf_toll = {
 	loyalty = -0.05
 	is_valid = {
 		has_country_flag = TIM_gulf_toll_privilege_flag
+	}
+	can_select = {
+		ai=no
 	}
 	on_granted = {
 		1334 = {

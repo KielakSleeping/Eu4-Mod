@@ -9,6 +9,7 @@ estate_cossacks_land_rights = {
 		always = no
 	}
 	can_select = {
+		ai=no
 	}
 	on_granted = {
 	}
@@ -374,6 +375,7 @@ estate_cossacks_establish_the_cossack_regiments = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	influence = 0.05
 	can_select = {
+		ai=no
 	}
 	on_granted = {
 	}
@@ -427,6 +429,7 @@ estate_cossacks_expand_the_cossack_regiments = {
 		has_estate_privilege = estate_cossacks_establish_the_cossack_regiments
 	}
 	can_select = {
+		ai=no
 	}
 	on_granted = {
 		if = {
@@ -544,6 +547,9 @@ estate_cossacks_prime_herding_rights = {
 			has_terrain = steppe
 		}
 	}
+	can_select = {
+		ai=no
+	}
 	on_granted = {
 		custom_tooltip = estate_cossacks_prime_herding_rights_effect_tooltip
 		if = {
@@ -649,6 +655,9 @@ estate_cossacks_freedom_of_the_steppes = {
 			has_dlc = "Winds of Change"
 		}
 	}
+	can_select = {
+		ai=no
+	}
 	on_granted = {
 		custom_tooltip = estate_cossacks_freedom_of_the_steppes_gt
 		tooltip = {
@@ -736,6 +745,7 @@ estate_cossacks_grant_military_leadership = {
 		has_dlc = "Domination"
 	}
 	can_select = {
+		ai=no
 	}
 	on_granted = {
 		enable_estate_action = {
@@ -771,6 +781,9 @@ estate_cossacks_exempt_from_bureaucracy = {
 			has_dlc = "Winds of Change"
 			has_dlc = "Domination"
 		}
+	}
+	can_select = {
+		ai=no
 	}
 	on_granted = {
 		enable_estate_action = {
@@ -853,6 +866,7 @@ estate_cossacks_military_service = {
 		has_dlc = "Domination"
 	}
 	can_select = {
+		ai=no
 	}
 	on_granted = {
 		enable_estate_action = {
@@ -896,6 +910,7 @@ estate_cossacks_expand_cossacks_raiders = {
 		}
 	}
 	can_select = {
+		ai=no
 	}
 	on_granted = {
 		custom_tooltip = estate_cossacks_expand_cossacks_raiders_gt

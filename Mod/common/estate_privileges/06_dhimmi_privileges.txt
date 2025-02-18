@@ -7,6 +7,7 @@ estate_dhimmi_land_rights = {
 	influence = 0.05
 	is_valid = {always = no}
 	can_select = {
+		ai=no
 	}
 	on_granted = {
 	}
@@ -208,6 +209,9 @@ estate_dhimmi_lighter_dhimmi_taxes = {
 			NOT = { religion_group = root }
 		}
 	}
+	can_select = {
+		ai=no
+	}
 	on_granted = {
 		custom_tooltip = estate_dhimmi_lighter_dhimmi_taxes_effect_tooltip
 	}
@@ -273,6 +277,9 @@ estate_dhimmi_dhimmi_nobles = {
 	# 	church_loyalty_modifier = -0.05
 	# 	nobles_loyalty_modifier = -0.05
 	# }
+	can_select = {
+		ai=no
+	}
 	benefits = {
 		free_leader_pool = 1
 	}
@@ -297,7 +304,8 @@ estate_dhimmi_manpower = {
 			NOT = { religion_group = root }
 		}
 	}
-	can_select = {		
+	can_select = {
+		ai=no	
 		NOT = { has_estate_privilege = estate_janissary_strict_devshirme_recruitment }
 	}
 	on_granted = {
@@ -368,6 +376,7 @@ estate_dhimmi_tolerance = {
 		NOT = { has_unlocked_estate_privilege = { estate_privilege = estate_dhimmi_guarantee_of_traditions } }
 	}
 	can_select = {
+		ai=no
 		NOT = { has_estate_privilege = estate_church_enforced_one_faith }
 	}
 	# penalties = {
@@ -415,6 +424,9 @@ estate_dhimmi_guaranteed_autonomy = {
 			NOT = { religion_group = root }
 		}
 		NOT = { has_unlocked_estate_privilege = { estate_privilege = estate_dhimmi_guarantee_of_traditions } }
+	}
+	can_select = {
+		ai=no
 	}
 	on_granted = {
 		custom_tooltip = estate_dhimmi_guaranteed_autonomy_effect_tooltip
@@ -513,6 +525,7 @@ estate_dhimmi_administrative_privileges = {
 	is_valid = {
 	}
 	can_select = {
+		ai=no
 	}
 	can_revoke = {
 	}
@@ -556,6 +569,7 @@ estate_dhimmi_guarantee_of_traditions = {
 		has_unlocked_estate_privilege = { estate_privilege = estate_dhimmi_guarantee_of_traditions }
 	}
 	can_select = {
+		ai=no
 		NOT = { has_estate_privilege = estate_church_enforced_one_faith }
 	}
 	on_granted = {
@@ -664,6 +678,9 @@ estate_dhimmi_grant_liberties = {
 	#loyalty = 0.1
 	is_valid = {
 	}
+	can_select = {
+		ai=no
+	}
 	penalties = {
 	}
 	benefits = {
@@ -689,6 +706,7 @@ estate_dhimmi_millet_system = {
 		}
 	}
 	can_select = {
+		ai=no
 	} 
 	on_granted = {
 		scaling_with_loyalty_privilege_tooltip = {
@@ -770,6 +788,9 @@ estate_dhimmi_development_of_communities = {
 		always = no
 		has_dlc = "Domination"
 	}
+	can_select = {
+		ai=no
+	}
 	on_granted = {
 		custom_tooltip = estate_dhimmi_development_of_communities_gt
 		tooltip = {
@@ -828,6 +849,7 @@ estate_dhimmi_grant_trading_privileges = {
 		has_dlc = "Domination"
 	}
 	can_select = {
+		ai=no
 		if = {
 			limit = { has_estate = estate_brahmins }
 			NOT = { has_estate_privilege = estate_brahmins_expand_the_theology }
@@ -866,6 +888,7 @@ estate_dhimmi_dhimmi_education = {
 		has_dlc = "Domination"
 	}
 	can_select = {
+		ai=no
 		if = {
 			limit = { has_estate = estate_brahmins }
 			NOT = { has_estate_privilege = estate_brahmins_clerical_education }
@@ -943,6 +966,9 @@ estate_dhimmi_promote_dhimmi_nobility = {
 	is_valid = {
 		has_dlc = "Domination"
 	}
+	can_select = {
+		ai=no
+	}
 	benefits = {
 		free_leader_pool = 1
 	}
@@ -1013,6 +1039,9 @@ estate_dhimmi_protected_communities = {
 			}
 		}
 	}
+	can_select = {
+		ai=no
+	}
 	on_granted = {
 		scaling_with_loyalty_privilege_tooltip = {
 			estate_privilege = estate_dhimmi_protected_communities
@@ -1053,6 +1082,9 @@ estate_dhimmi_contribution_demand = {
 	is_valid = {
 		always = no
 		has_dlc = "Domination"
+	}
+	can_select = {
+		ai=no
 	}
 	on_granted = {
 		enable_estate_action = {

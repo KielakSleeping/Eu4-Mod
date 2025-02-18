@@ -6,6 +6,7 @@ estate_brahmins_land_rights = {
 	#loyalty = 0.05
 	influence = 0.05
 	can_select = {
+		ai=no
 	}
 	on_granted = {
 	}
@@ -204,6 +205,7 @@ estate_brahmins_brahmin_governance = {
 		always = no
 	}
 	can_select = {
+		ai=no
 		can_select_monarch_power_privilege = {
 			estate = estate_brahmins
 			type = adm
@@ -258,6 +260,9 @@ estate_brahmins_legitimacy_to_rule = {
 	influence = 0.05
 	is_valid = {
 		religion_group = muslim
+	}
+	can_select = {
+		ai=no
 	}
 	penalties = {
 		church_loyalty_modifier = -0.05
@@ -339,6 +344,7 @@ estate_brahmins_flexible_deities = {
 		has_dlc = "Wealth of Nations"
 	}
 	can_select = {
+		ai=no
 		if = {
 			limit = {
 				NOT = { has_government_attribute = reduce_new_deity_decision_cd }
@@ -370,6 +376,9 @@ estate_brahmins_loyalty_privilege = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	#loyalty = 0.1
 	influence = 0.1
+	can_select = {
+		ai=no
+	}
 	penalties = {
 	}
 	benefits = {
@@ -393,6 +402,9 @@ estate_brahmins_guaranteed_autonomy = {
 		any_owned_province = {
 			religion_group = dharmic
 		}
+	}
+	can_select = {
+		ai=no
 	}
 	on_granted = {
 		custom_tooltip = estate_brahmins_guaranteed_autonomy_effect_tooltip
@@ -471,6 +483,7 @@ estate_brahmins_administrative_privileges = {
 	is_valid = {
 	}
 	can_select = {
+		ai=no
 	}
 	can_revoke = {
 	}
@@ -539,6 +552,7 @@ estate_brahmins_monopoly_of_incense = {
 		NOT = { has_estate = estate_church }
 	}
 	can_select = {
+		ai=no
 		custom_trigger_tooltip = {
 			tooltip = unavailable_during_revolution_disaster
 			NOT = { has_disaster = revolution }
@@ -650,6 +664,7 @@ estate_brahmins_monopoly_of_wool = {
 		NOT = { has_estate = estate_church }
 	}
 	can_select = {
+		ai=no
 		custom_trigger_tooltip = {
 			tooltip = unavailable_during_revolution_disaster
 			NOT = { has_disaster = revolution }
@@ -761,6 +776,7 @@ estate_brahmins_for_the_faith = {
 		}
 	}
 	can_select = {
+		ai=no
 		any_known_country = {
 			NOT = { religion = root }
 		}
@@ -843,6 +859,9 @@ estate_brahmins_statutory_rights = {
 	is_valid = {
 		has_estate_privilege = estate_brahmins_statutory_rights
 	}
+	can_select = {
+		ai=no
+	}
 	on_granted = {
 		change_estate_land_share = {
 			estate = all
@@ -870,6 +889,7 @@ estate_brahmins_religious_diplomats = {
 		NOT = { has_estate = estate_church }
 	}
 	can_select = {
+		ai=no
 	}
 	on_granted = {
 		#add_increase_same_religion_opinion = yes
@@ -903,6 +923,7 @@ estate_brahmins_one_faith_one_culture = {
 		NOT = { has_estate = estate_church }
 	}
 	can_select = {
+		ai=no
 	}
 	on_granted = {
 		custom_tooltip = bs_estate_church_one_faith_one_culture_gta
@@ -1051,6 +1072,9 @@ estate_brahmins_development_of_temples = {
 		always = no
 		has_dlc = "Domination"
 	}
+	can_select = {
+		ai=no
+	}
 	on_granted = {
 		custom_tooltip = estate_brahmins_development_of_temples_gt
 		tooltip = {
@@ -1105,6 +1129,7 @@ estate_brahmins_expand_the_theology = {
 		has_dlc = "Domination"
 	}
 	can_select = {
+		ai=no
 		if = {
 			limit = { has_estate = estate_church }
 			NOT = { has_estate_privilege = estate_church_expand_the_theology }
@@ -1148,6 +1173,7 @@ estate_brahmins_clerical_education = {
 		has_dlc = "Domination"
 	}
 	can_select = {
+		ai=no
 		if = {
 			limit = { has_estate = estate_church }
 			NOT = { has_estate_privilege = estate_church_clerical_education }
@@ -1244,6 +1270,9 @@ estate_brahmins_legitimacy_of_rule = {
 		has_dlc = "Domination"
 		religion_group = muslim
 	}
+	can_select = {
+		ai=no
+	}
 	on_granted = {
 		enable_estate_action = {
 			estate_action = SEEK_BRAHMIN_LEGITIMACY_BRAHMINS
@@ -1271,6 +1300,9 @@ estate_brahmins_institutionalized_brahimns = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	is_valid = {
 		has_dlc = "Domination"
+	}
+	can_select = {
+		ai=no
 	}
 	on_granted = {
 		enable_estate_action = {
@@ -1312,6 +1344,9 @@ estate_brahmins_donation_right = {
 			missionary_maintenance_cost = -1
 			prestige_per_development_from_conversion = 0.5
 		}
+	}
+	can_select = {
+		ai=no
 	}
 	on_granted = {
 		if = {

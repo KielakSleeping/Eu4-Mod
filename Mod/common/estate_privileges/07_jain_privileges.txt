@@ -6,6 +6,7 @@ estate_jains_land_rights = {
 	#loyalty = 0.05
 	influence = 0.05
 	can_select = {
+		ai=no
 	}
 	on_granted = {
 	}
@@ -204,6 +205,7 @@ estate_jains_diplomacy = {
 		NOT = { has_estate = estate_burghers }
 	}
 	can_select = {
+		ai=no
 		can_select_monarch_power_privilege = {
 			estate = estate_jains
 			type = dip
@@ -258,6 +260,7 @@ estate_jains_clerical_class = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	influence = 0.1
 	can_select = {
+		ai=no
 	}
 	on_granted = {
 	}
@@ -320,6 +323,7 @@ estate_jains_indebted_to_jains = {
 	benefits = {
 	}
 	can_select = {
+		ai=no
 		if = {
 			limit = {
 				has_estate_privilege = estate_jains_indebted_to_jains
@@ -340,6 +344,9 @@ estate_jains_conscientious_objection = {
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	#loyalty = 0.1
+	can_select = {
+		ai=no
+	}
 	penalties = {
 		global_manpower_modifier = -0.1
 	}
@@ -360,6 +367,9 @@ estate_jains_grant_liberties = {
 	influence = 0.1
 	#loyalty = 0.1
 	is_valid = {
+	}
+	can_select = {
+		ai=no
 	}
 	penalties = {
 	}
@@ -439,6 +449,7 @@ estate_jains_land_trade_rights = {
 	is_valid = {
 	}
 	can_select = {
+		ai=no
 	}
 	can_revoke = {
 	}
@@ -483,6 +494,7 @@ estate_jains_monopoly_of_textiles = {
 		NOT = { has_estate = estate_burghers }
 	}
 	can_select = {
+		ai=no
 		custom_trigger_tooltip = {
 			tooltip = unavailable_during_revolution_disaster
 			NOT = { has_disaster = revolution }
@@ -630,6 +642,7 @@ estate_jains_monopoly_of_dyes = {
 		NOT = { has_estate = estate_burghers }
 	}
 	can_select = {
+		ai=no
 		custom_trigger_tooltip = {
 			tooltip = unavailable_during_revolution_disaster
 			NOT = { has_disaster = revolution }
@@ -743,6 +756,7 @@ estate_jains_monopoly_of_glass = {
 		NOT = { has_estate = estate_burghers }
 	}
 	can_select = {
+		ai=no
 		custom_trigger_tooltip = {
 			tooltip = unavailable_during_revolution_disaster
 			NOT = { has_disaster = revolution }
@@ -856,6 +870,7 @@ estate_jains_monopoly_of_paper = {
 		NOT = { has_estate = estate_burghers }
 	}
 	can_select = {
+		ai=no
 		custom_trigger_tooltip = {
 			tooltip = unavailable_during_revolution_disaster
 			NOT = { has_disaster = revolution }
@@ -971,6 +986,9 @@ estate_jains_exclusive_trade_rights = {
 		}
 		NOT = { has_estate = estate_vaisyas }
 	}
+	can_select = {
+		ai=no
+	}
 	on_granted = {
 		random_active_trade_node = {
 			limit = {
@@ -1040,6 +1058,9 @@ estate_jains_control_over_monetary_policy = {
 		has_dlc = "Emperor"
 		NOT = { has_estate = estate_vaisyas }
 	}
+	can_select = {
+		ai=no
+	}
 	penalties = {
 		#all_power_cost = 0.05
 	}
@@ -1078,6 +1099,9 @@ estate_jains_private_trade_fleets = {
 		}
 		navy_size = 1
 	}
+	can_select = {
+		ai=no
+	}
 	penalties = {
 	}
 	benefits = {
@@ -1115,6 +1139,9 @@ estate_jains_development_of_cities = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	is_valid = {
 		has_dlc = "Domination"
+	}
+	can_select = {
+		ai=no
 	}
 	on_granted = {
 		custom_tooltip = estate_jains_development_of_cities_gt
@@ -1172,6 +1199,7 @@ estate_jains_right_to_offer_loans = {
 		has_dlc = "Domination"
 	}
 	can_select = {
+		ai=no
 	}
 	benefits = {
 	}
@@ -1204,6 +1232,7 @@ estate_jains_economical_boost = {
 		has_dlc = "Domination"
 	}
 	can_select = {
+		ai=no
 		if = {
 			limit = { has_estate_privilege = estate_vaisyas_economical_boost }
 			NOT = { has_estate_privilege = estate_vaisyas_economical_boost }
@@ -1279,6 +1308,9 @@ estate_jains_patronize_jain_familiy = {
 	is_valid = {
 		has_dlc = "Domination"
 	}
+	can_select = {
+		ai=no
+	}
 	on_granted = {
 		enable_estate_action = {
 			estate_action = PATRONIZE_JAIN_FAMILIES_JAINS
@@ -1318,6 +1350,7 @@ estate_jains_incorruptible_offices = {
 		has_dlc = "Domination"
 	}
 	can_select = {
+		ai=no
 	}
 	on_granted = {
 		enable_estate_action = {
@@ -1346,6 +1379,9 @@ estate_jains_promote_jain_bookkeeping = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	is_valid = {
 		has_dlc = "Domination"
+	}
+	can_select = {
+		ai=no
 	}
 	loyalty_scaled_conditional_modifier = {
 		trigger = { always = yes }
@@ -1392,6 +1428,9 @@ estate_jains_MUG_gujarati_trade = {
 	#loyalty = 0.05
 	is_valid = {
 		has_country_flag = MUG_gujarat_privilege_flag
+	}
+	can_select = {
+		ai=no
 	}
 	conditional_modifier = {
 		trigger = {
@@ -1440,7 +1479,9 @@ estate_jains_MUG_support_malaccan_viceroyalty = {
 	is_valid = {
 		has_country_flag = MUG_unlock_trade_company_support_priv_flag
 	}
-	
+	can_select = {
+		ai=no
+	}
 	benefits = {
 		trade_company_governing_cost = -0.1
 	}
@@ -1462,7 +1503,9 @@ estate_jains_MUG_debase_the_ruppee = {
 	is_valid = {
 		has_country_flag = MUG_unlock_industrial_privilege_flag
 	}
-	
+	can_select = {
+		ai=no
+	}
 	benefits = {
 		production_efficiency = 0.25
 		global_tax_modifier = 0.25

@@ -6,6 +6,7 @@ estate_nomadic_tribes_land_rights = {
 	#loyalty = 0.05
 	influence = 0.05
 	can_select = {
+		ai=no
 	}
 	on_granted = {
 	}
@@ -244,6 +245,7 @@ estate_nomadic_tribes_guaranteed_leadgership_in_host = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	influence = 0.05
 	can_select = {
+		ai=no
 		if = {
 			limit = {
 				NOT = { has_country_flag = hordes_no_at_for_guaranteed_leadership_flag }
@@ -299,6 +301,9 @@ estate_nomadic_tribes_primacy_to_the_bannermen = {
 			primary_culture = manchu_new
 		}
 	}
+	can_select = {
+		ai=no
+	}
 	penalties = {
 		amount_of_banners = -0.25
 	}
@@ -347,6 +352,9 @@ estate_nomadic_tribes_freedom_of_the_steppes = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	is_valid = {
 		has_dlc = "Domination"
+	}
+	can_select = {
+		ai=no
 	}
 	on_granted = {
 		custom_tooltip = estate_nomadic_tribes_freedom_of_the_steppes_gt
@@ -401,6 +409,7 @@ estate_nomadic_tribes_grant_military_leadership = {
 		has_dlc = "Domination"
 	}
 	can_select = {
+		ai=no
 	}
 	on_granted = {
 		enable_estate_action = {
@@ -431,6 +440,7 @@ estate_nomadic_tribes_military_service = {
 		has_dlc = "Domination"
 	}
 	can_select = {
+		ai=no
 	}
 	on_granted = {
 		enable_estate_action = {
@@ -469,6 +479,7 @@ estate_nomadic_tribes_ensure_tribal_loyalty = {
 	is_valid = {
 		has_dlc = "Domination"
 	}
+
 	loyalty_scaled_conditional_modifier = {
 		trigger = {
 			always = yes
@@ -478,6 +489,7 @@ estate_nomadic_tribes_ensure_tribal_loyalty = {
 		}
 	}
 	can_select = {
+		ai=no
 	}
 	on_granted = {
 		enable_estate_action = {
@@ -508,6 +520,7 @@ estate_nomadic_tribes_secured_succession = {
 		has_dlc = "Domination"
 	}
 	can_select = {
+		ai=no
 	}
 	on_granted = {
 		if = {
@@ -550,6 +563,7 @@ estate_nomadic_tribes_basqaq_autonomy = {
 		has_country_flag = hordes_basqaqs_unlocked_flag
 	}
 	can_select = {
+		ai=no
 		NOT = { has_estate_privilege = estate_nobles_basqaq_autonomy }
 	}
 	penalties = {
@@ -575,6 +589,7 @@ estate_nomadic_tribes_religious_tolerance = {
 		has_country_flag = hordes_religious_tolerance_tribal_privilege_flag
 	}
 	can_select = {
+		ai=no
 		NOT = { has_estate_privilege = estate_church_religious_tolerance }
 	}
 	loyalty_scaled_conditional_modifier = {
@@ -599,7 +614,9 @@ estate_nomadic_tribes_nomadic_caravans = {
 	is_valid = {
 		has_country_flag = hordes_nomadic_caravans_flag
 	}
-	
+	can_select = {
+		ai=no
+	}
 	loyalty_scaled_conditional_modifier = {
 		trigger = { 
 			OR = {
@@ -629,7 +646,9 @@ estate_nomadic_tribes_tribal_absolutism = {
 	is_valid = {
 		has_country_flag = hordes_tribal_absolutism_flag
 	}
-	
+	can_select = {
+		ai=no
+	}
 	on_granted = {
 		custom_tooltip = HORDES_TRIBAL_ABSOLUTISM_TT
 	}

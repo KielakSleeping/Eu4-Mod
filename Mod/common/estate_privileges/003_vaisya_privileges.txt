@@ -6,6 +6,7 @@ estate_vaisyas_land_rights = {
 	#loyalty = 0.05
 	influence = 0.05
 	can_select = {
+		ai=no
 	}
 	on_granted = {
 	}
@@ -199,6 +200,9 @@ estate_vaisyas_loyalty_privilege = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	#loyalty = 0.1
 	influence = 0.1
+	can_select = {
+		ai=no
+	}
 	penalties = {
 	}
 	benefits = {
@@ -245,6 +249,9 @@ estate_vaisyas_wartaxes = {
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = -0.05
+	can_select = {
+		ai=no
+	}
 	benefits = {
 		war_taxes_cost_modifier = -0.5
 		war_exhaustion = -0.02
@@ -268,6 +275,9 @@ estate_vaisyas_patronage_of_the_arts = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	#loyalty = 0.05
 	influence = 0.05
+	can_select = {
+		ai=no
+	}
 	penalties = {
 		global_tax_modifier = -0.05
 	}
@@ -312,6 +322,7 @@ estate_vaisyas_land_trade_rights = {
 		always = no
 	}
 	can_select = {
+		ai=no
 	}
 	can_revoke = {
 	}
@@ -354,6 +365,7 @@ estate_vaisyas_monopoly_of_textiles = {
 		}
 	}
 	can_select = {
+		ai=no
 		custom_trigger_tooltip = {
 			tooltip = unavailable_during_revolution_disaster
 			NOT = { has_disaster = revolution }
@@ -474,6 +486,7 @@ estate_vaisyas_monopoly_of_dyes = {
 		}
 	}
 	can_select = {
+		ai=no
 		custom_trigger_tooltip = {
 			tooltip = unavailable_during_revolution_disaster
 			NOT = { has_disaster = revolution }
@@ -585,6 +598,7 @@ estate_vaisyas_monopoly_of_glass = {
 		}
 	}
 	can_select = {
+		ai=no
 		custom_trigger_tooltip = {
 			tooltip = unavailable_during_revolution_disaster
 			NOT = { has_disaster = revolution }
@@ -696,6 +710,7 @@ estate_vaisyas_monopoly_of_paper = {
 		}
 	}
 	can_select = {
+		ai=no
 		custom_trigger_tooltip = {
 			tooltip = unavailable_during_revolution_disaster
 			NOT = { has_disaster = revolution }
@@ -810,6 +825,9 @@ estate_vaisyas_exclusive_trade_rights = {
 			}
 		}
 	}
+	can_select = {
+		ai=no
+	}
 	on_granted = {
 		random_active_trade_node = {
 			limit = {
@@ -877,6 +895,9 @@ estate_vaisyas_control_over_monetary_policy = {
 	is_valid = {
 		has_dlc = "Emperor"
 	}
+	can_select = {
+		ai=no
+	}
 	penalties = {
 		#all_power_cost = 0.05
 	}
@@ -923,6 +944,9 @@ estate_vaisyas_private_trade_fleets = {
 		}
 		navy_size = 1
 	}
+	can_select = {
+		ai=no
+	}
 	penalties = {
 	}
 	benefits = {
@@ -946,6 +970,7 @@ estate_vaisyas_private_trade_fleets = {
 estate_vaisyas_khmer_irrigation = {
 	icon = privilege_monopoly_of_goods_livestock
 	can_select = {
+		ai=no
 		OR = {
 			mission_completed = mnd_khm_irrigation
 			has_estate_privilege = estate_vaisyas_khmer_irrigation
@@ -1020,6 +1045,9 @@ estate_vaisyas_development_of_cities = {
 	is_valid = {
 		has_dlc = "Domination"
 	}
+	can_select = {
+		ai=no
+	}
 	on_granted = {
 		custom_tooltip = estate_vaisyas_development_of_cities_gt
 		tooltip = {
@@ -1076,6 +1104,7 @@ estate_vaisyas_control_over_the_coinage = {
 		has_dlc = "Domination"
 	}
 	can_select = {
+		ai=no
 	}
 	on_granted = {
 		enable_estate_action = {
@@ -1106,6 +1135,7 @@ estate_vaisyas_economical_boost = {
 		has_dlc = "Domination"
 	}
 	can_select = {
+		ai=no
 		if = {
 			limit = { has_estate_privilege = estate_burghers_economical_boost }
 			NOT = { has_estate_privilege = estate_burghers_economical_boost }
@@ -1181,6 +1211,9 @@ estate_vaisyas_expanded_guild_rights = {
 	is_valid = {
 		has_dlc = "Domination"
 	}
+	can_select = {
+		ai=no
+	}
 	on_granted = {
 		enable_estate_action = {
 			estate_action = SEEK_GUILD_SUPPORT_VAISYAS
@@ -1217,6 +1250,7 @@ estate_vaisyas_force_impressment = {
 		primitives = no
 	}
 	can_select = {
+		ai=no
 		num_of_ports = 1
 	}
 	benefits = {

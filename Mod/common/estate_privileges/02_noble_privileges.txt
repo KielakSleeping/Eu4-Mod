@@ -6,6 +6,7 @@ estate_nobles_land_rights = {
 	#loyalty = 0.05
 	influence = 0.05
 	can_select = {
+		ai=no
 		not = { has_estate_privilege = estate_ghulams_land_rights }
 		not = { has_estate_privilege = estate_qizilbash_land_rights }
 	}
@@ -223,6 +224,7 @@ estate_nobles_nobility_primacy = {
 		always = no
 	}
 	can_select = {
+		ai=no
 		can_select_monarch_power_privilege = {
 			estate = estate_nobles
 			type = mil
@@ -296,6 +298,7 @@ estate_nobles_officer_corp = {
 		NOT = { has_estate = estate_qizilbash }
 	}
 	can_select = {
+		ai=no
 		if = {
 			limit = {
 				NOT = { has_country_flag = azt_free_officer_corp_flag }
@@ -369,6 +372,7 @@ estate_nobles_levies = {
 		NOT = { has_estate = estate_ghulams }
 	}
 	can_select = {
+		ai=no
 		NOT = { has_estate_privilege = estate_nobles_golden_liberty }
 		if = {
 			limit = {
@@ -500,7 +504,8 @@ estate_nobles_advisors = {
 	is_valid = {
 		always = no
 	}
-	can_select = { 
+	can_select = {
+		ai=no
 		NOT = { has_estate_privilege = estate_maratha_advisor }
 		NOT = { has_estate_privilege = estate_rajput_advisor }
 	}
@@ -534,6 +539,7 @@ estate_nobles_right_of_counsel = {
 		cavalry_cost = 0.1
 	}
 	can_select = {
+		ai=no
 	}
 	benefits = {
 		cav_to_inf_ratio = 0.15
@@ -598,6 +604,7 @@ estate_nobles_french_strong_duchies = {
 		}
 	}
 	can_select = {
+		ai=no
 		custom_trigger_tooltip = {
 			tooltip = estate_nobles_strong_duchies_trigger_tooltip
 			calc_true_if = {
@@ -674,6 +681,7 @@ estate_nobles_supremacy_over_crown = {
 		NOT = { has_government_attribute = blocked_call_diet }
 	}
 	can_select = { 
+		ai=no
 		NOT = { has_estate_privilege = estate_eunuchs_supremacy_over_crown_privilege }
 	}
 	penalties = {
@@ -725,6 +733,7 @@ estate_nobles_monopoly_of_metals = {
 		}
 	}
 	can_select = {
+		ai=no
 		custom_trigger_tooltip = {
 			tooltip = unavailable_during_revolution_disaster
 			NOT = { has_disaster = revolution }
@@ -845,6 +854,7 @@ estate_nobles_monopoly_of_livestock = {
 		}
 	}
 	can_select = {
+		ai=no
 		custom_trigger_tooltip = {
 			tooltip = unavailable_during_revolution_disaster
 			NOT = { has_disaster = revolution }
@@ -955,6 +965,7 @@ estate_nobles_monopoly_of_gems = {
 		}
 	}
 	can_select = {
+		ai=no
 		custom_trigger_tooltip = {
 			tooltip = unavailable_during_revolution_disaster
 			NOT = { has_disaster = revolution }
@@ -1064,6 +1075,9 @@ estate_nobles_junker_primacy = {
 			has_reform = prussian_republic_reform
 		}
 	}
+	can_select = {
+		ai=no
+	}
 	penalties = {
 		#all_power_cost = 0.05
 	}
@@ -1130,6 +1144,7 @@ estate_nobles_strong_duchies = {
 		NOT = { has_estate_privilege = estate_nobles_french_strong_duchies }
 	}
 	can_select = {
+		ai=no
 		custom_trigger_tooltip = {
 			tooltip = estate_nobles_strong_duchies_trigger_tooltip
 			calc_true_if = {
@@ -1216,6 +1231,9 @@ estate_nobles_golden_liberty = {
 			has_reform = elective_monarchy
 			has_reform = polish_elective_monarchy 
 		}
+	}
+	can_select = {
+		ai=no
 	}
 	can_revoke = {
 		if = {
@@ -1314,6 +1332,9 @@ estate_nobles_nieszawa_privileges = {
 	is_valid = {
 		has_estate_privilege = estate_nobles_nieszawa_privileges #event privilege for Poland
 	}
+	can_select = {
+		ai=no
+	}
 	can_revoke = no
 	penalties = {
 		technology_cost = 0.05
@@ -1334,6 +1355,9 @@ estate_nobles_pacta_conventa = {
 	#loyalty = 0.05
 	is_valid = {
 		has_estate_privilege = estate_nobles_pacta_conventa #event privilege for Poland
+	}
+	can_select = {
+		ai=no
 	}
 	can_revoke = no
 	penalties = {
@@ -1359,6 +1383,9 @@ estate_nobles_veto_heir_apparent = {
 			has_reform = elective_monarchy
 		}
 	}
+	can_select = {
+		ai=no
+	}
 	penalties = {
 	}
 	benefits = {
@@ -1376,6 +1403,9 @@ estate_nobles_statutory_rights = {
 	influence = 0.1
 	is_valid = {
 		has_estate_privilege = estate_nobles_statutory_rights
+	}
+	can_select = {
+		ai=no
 	}
 	on_granted = {
 		change_estate_land_share = {
@@ -1409,6 +1439,7 @@ estate_nobles_command_of_the_military = {
 		has_estate_privilege = estate_nobles_command_of_the_military
 	}
 	can_select = {
+		ai=no
 	}
 	on_granted = {
 		custom_tooltip = estate_nobles_command_of_the_military_tt
@@ -1448,6 +1479,7 @@ estate_nobles_better_integration = {
 		}
 	}
 	can_select = {
+		ai=no
 	}
 	on_granted = {
 		disable_annexation_penalty = yes
@@ -1492,6 +1524,7 @@ estate_nobles_neighbor_raids = {
 		}
 	}
 	can_select = {
+		ai=no
 		NOT = { has_country_modifier = the_abolish_slavery_act }
 	}
 	on_granted = {
@@ -1523,6 +1556,7 @@ estate_nobles_cawa_peace_keepers = {
 		has_unlocked_estate_privilege = { estate_privilege = estate_nobles_cawa_peace_keepers }
 	}
 	can_select = {
+		ai=no
 		custom_trigger_tooltip = {
 			tooltip = eth_estate_did_not_have_cawa_privilege_for_five_years
 			OR = {
@@ -1599,6 +1633,7 @@ estate_nobles_cawa_offensive_fighters = {
 		has_unlocked_estate_privilege = { estate_privilege = estate_nobles_cawa_offensive_fighters }
 	}
 	can_select = {
+		ai=no
 		custom_trigger_tooltip = {
 			tooltip = eth_estate_did_not_have_cawa_privilege_for_five_years
 			OR = {
@@ -1664,6 +1699,7 @@ estate_nobles_grant_power_to_the_bashorun = {
 		has_unlocked_estate_privilege = { estate_privilege = estate_nobles_grant_power_to_the_bashorun }
 	}
 	can_select = {
+		ai=no
 		custom_trigger_tooltip = {
 			tooltip = can_not_have_tributaries
 			NOT = { has_reform = celestial_empire }
@@ -1707,6 +1743,7 @@ estate_nobles_carolean_march = {
 		has_unlocked_estate_privilege = { estate_privilege = estate_nobles_carolean_march }
 	}
 	can_select = {
+		ai=no
 		custom_trigger_tooltip = {
 			tooltip = estate_did_not_have_carolean_privilege_for_five_years
 			OR = {
@@ -1768,6 +1805,7 @@ estate_nobles_carolean_charge = {
 		has_unlocked_estate_privilege = { estate_privilege = estate_nobles_carolean_charge }
 	}
 	can_select = {
+		ai=no
 		custom_trigger_tooltip = {
 			tooltip = estate_did_not_have_carolean_privilege_for_five_years
 			OR = {
@@ -1830,6 +1868,7 @@ estate_nobles_leidang_conscription = {
 		has_unlocked_estate_privilege = { estate_privilege = estate_nobles_leidang_conscription }
 	}
 	can_select = {
+		ai=no
 		num_of_ports = 1
 	}
 	penalties = {
@@ -1866,6 +1905,7 @@ estate_nobles_leidang_mass_conscription = {
 		}
 	}
 	can_select = {
+		ai=no
 		has_estate_privilege = estate_nobles_leidang_conscription
 	}
 	penalties = {
@@ -1916,6 +1956,7 @@ estate_nobles_leidang_elite_conscription = {
 		}
 	}
 	can_select = {
+		ai=no
 		has_estate_privilege = estate_nobles_leidang_conscription
 	}
 	penalties = {
@@ -1959,6 +2000,7 @@ estate_nobles_religious_conscription = {
 		has_estate = estate_church
 	}
 	can_select = {
+		ai=no
 		has_estate = estate_church
 	}
 	can_revoke = {
@@ -2068,6 +2110,7 @@ estate_nobles_decentralized_tribe = {
 		NOT = { has_country_flag = centralized_tribes_level_2 }
 	}
 	can_select = {
+		ai=no
 		NOT = { has_estate_privilege = estate_nobles_tribe_unification }
 		NOT = { has_estate_privilege = estate_nobles_tribe_centralization }
 	}
@@ -2111,6 +2154,7 @@ estate_nobles_tribe_unification = {
 		has_country_flag = centralized_tribes_level_1
 	}
 	can_select = {
+		ai=no
 		legitimacy = 90
 		NOT = { num_of_rebel_controlled_provinces = 1 }
 		NOT = { num_of_rebel_armies = 1 }
@@ -2169,6 +2213,7 @@ estate_nobles_tribe_centralization = {
 		has_country_flag = centralized_tribes_level_2
 	}
 	can_select = {
+		ai=no
 		legitimacy = 90
 		NOT = { num_of_rebel_controlled_provinces = 1 }
 		NOT = { num_of_rebel_armies = 1 }
@@ -2216,6 +2261,9 @@ estate_nobles_danish_nobility = {
 		has_dlc = "Lions of the North"
 		has_estate_privilege = estate_nobles_danish_nobility
 	}
+	can_select = {
+		ai=no
+	}
 	can_revoke = {
 		stability = 1
 		NOT = { num_of_rebel_controlled_provinces = 1 }
@@ -2257,6 +2305,9 @@ estate_nobles_nobles_instead_of_royal_court = {
 		has_dlc = "Lions of the North"
 		has_estate_privilege = estate_nobles_nobles_instead_of_royal_court
 	}
+	can_select = {
+		ai=no
+	}
 	can_revoke = {
 		stability = 1
 		NOT = { num_of_rebel_controlled_provinces = 1 }
@@ -2293,6 +2344,9 @@ estate_nobles_sponsor_hussars = {
 	is_valid = {
 		has_estate_privilege = estate_nobles_sponsor_hussars
 	}
+	can_select = {
+		ai=no
+	}
 	influence = 0.05
 	loyalty = -0.05
 	benefits = { 
@@ -2314,6 +2368,9 @@ estate_nobles_mansabdari_cav_maintenance = {
 	influence = 0.05
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	can_select = {
+		ai=no
+	}
 	benefits = {
 		cav_to_inf_ratio = 0.1
 	}
@@ -2337,6 +2394,9 @@ estate_nobles_mansabdari_military_service = {
 	influence = 0.05
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	can_select = {
+		ai=no
+	}
 	benefits = {
 		leader_land_manuever = 1
 	}
@@ -2359,6 +2419,9 @@ estate_nobles_mansabdari_royal_rule = {
 	loyalty = -0.15
 	influence = -0.3
 	max_absolutism = 10
+	can_select = {
+		ai=no
+	}
 	penalties = {
 		land_maintenance_modifier = 0.1
 	}
@@ -2377,6 +2440,9 @@ estate_nobles_rynda = {
 	influence = 0.05
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	can_select = {
+		ai=no
+	}
 	on_granted = {
 		custom_tooltip = estate_nobles_rynda_at
 		custom_tooltip = SCALES_WITH_LOYALTY_TT
@@ -2402,6 +2468,9 @@ estate_nobles_landed_army = {
 	influence = 0.05
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	can_select = {
+		ai=no
+	}
 	benefits = {
 		cav_to_inf_ratio = 0.05
 		cavalry_cost = -0.1
@@ -2429,6 +2498,9 @@ estate_nobles_mestnichestvo = {
 			ai = no
 			NOT = { is_year = 1500 }
 		}
+	}
+	can_select = {
+		ai=no
 	}
 	#loyalty = 0.05
 	influence = 0.1
@@ -2494,6 +2566,7 @@ estate_nobles_early_serfdom = {
 		NOT = { has_country_flag = final_serfdom_privileges }
 	}
 	can_select = {
+		ai=no
 		NOT = { has_estate_privilege = estate_nobles_increased_peasant_freedom }
 	}
 	can_revoke = no
@@ -2578,6 +2651,9 @@ estate_nobles_legalized_serfdom = {
 		NOT = { has_country_flag = level_three_serfdom_privileges }
 		NOT = { has_country_flag = final_serfdom_privileges }
 	}
+	can_select = {
+		ai=no
+	}
 	can_revoke = no
 	on_granted = {
 		custom_tooltip = estate_privilege_cannot_be_revoked
@@ -2656,6 +2732,9 @@ estate_nobles_total_serfdom = {
 		NOT = { has_country_flag = liberated_peasants }
 		NOT = { has_country_flag = final_serfdom_privileges }
 	}
+	can_select = {
+		ai=no
+	}
 	can_revoke = no
 	on_granted = {
 		custom_tooltip = estate_privilege_cannot_be_revoked
@@ -2730,6 +2809,9 @@ estate_nobles_restricted_serfdom = {
 		has_estate_privilege = estate_nobles_restricted_serfdom
 		NOT = { has_country_flag = liberated_peasants }
 	}
+	can_select = {
+		ai=no
+	}
 	can_revoke = no
 	on_granted = {
 		custom_tooltip = estate_privilege_cannot_be_revoked
@@ -2803,6 +2885,9 @@ estate_nobles_devastating_serfdom = {
 		}
 		has_estate_privilege = estate_nobles_devastating_serfdom
 		NOT = { has_country_flag = liberated_peasants }
+	}
+	can_select = {
+		ai=no
 	}
 	can_revoke = no
 	on_granted = {
@@ -2881,6 +2966,7 @@ estate_nobles_increased_peasant_freedom = {
 		NOT = { has_country_flag = enserfed_peasants }
 	}
 	can_select = {
+		ai=no
 		NOT = { has_estate_privilege = estate_nobles_early_serfdom }
 	}
 	can_revoke = no
@@ -2960,6 +3046,9 @@ estate_nobles_peasant_liberation = {
 		has_country_flag = level_two_serfdom_privileges
 		NOT = { has_country_flag = enserfed_peasants }
 	}
+	can_select = {
+		ai=no
+	}
 	can_revoke = no
 	on_granted = {
 		custom_tooltip = estate_privilege_cannot_be_revoked
@@ -3024,6 +3113,9 @@ estate_nobles_factionalist_nobility = {
 		has_dlc = "Domination"
 		tag = CAS
 	}
+	can_select = {
+		ai=no
+	}
 	can_revoke = {
 		crown_land_share = 50 
 	}
@@ -3074,6 +3166,9 @@ estate_nobles_consolidated_noble_contracts = {
 		has_dlc = "Domination" 
 		NOT = { absolutism = 50 }
 	}
+	can_select = {
+		ai=no
+	}
 	on_granted = {
 	}
 	on_revoked = {
@@ -3111,6 +3206,9 @@ estate_nobles_english_villeinage = {
 	is_valid = {
 		has_dlc = "Domination"
 		has_estate_privilege = estate_nobles_english_villeinage
+	}
+	can_select = {
+		ai=no
 	}
 	can_revoke = {
 		OR = {
@@ -3150,6 +3248,9 @@ estate_nobles_english_copyhold_tenure = {
 		has_unlocked_estate_privilege = {
 			estate_privilege = estate_nobles_english_copyhold_tenure
 		}
+	}
+	can_select = {
+		ai=no
 	}
 	can_revoke = {
 		
@@ -3199,6 +3300,9 @@ estate_nobles_development_of_castles = {
 	}
 	is_valid = {
 		has_dlc = "Domination"
+	}
+	can_select = {
+		ai=no
 	}
 	on_granted = {
 		custom_tooltip = estate_nobles_development_of_castles_gt
@@ -3289,6 +3393,7 @@ estate_nobles_statesman_servitude = {
 		has_dlc = "Domination"
 	}
 	can_select = {
+		ai=no
 	}
 	on_granted = {
 		enable_estate_action = {
@@ -3323,6 +3428,7 @@ estate_nobles_royal_court_tasks = {
 		has_dlc = "Domination"
 	}
 	can_select = {
+		ai=no
 		if = {
 			limit = { has_estate_privilege = estate_rajput_royal_court_tasks }
 			NOT = { has_estate_privilege = estate_rajput_royal_court_tasks }
@@ -3400,6 +3506,9 @@ estate_nobles_diet_right = {
 	is_valid = {
 		has_dlc = "Domination"
 	}
+	can_select = {
+		ai=no
+	}
 	on_granted = {
 		enable_estate_action = {
 			estate_action = CALL_DIET_NOBLES
@@ -3440,6 +3549,7 @@ estate_nobles_force_conscription = {
 	}
 
 	can_select = {
+		ai=no
 		if = {
 			limit = { has_estate = estate_maratha }
 			NOT = { has_estate_privilege = estate_maratha_force_conscription }
@@ -3483,6 +3593,7 @@ estate_nobles_noble_officer_right = {
 		has_dlc = "Domination"
 	}
 	can_select = {
+		ai=no
 		if = {
 			limit = { has_estate = estate_rajput }
 			NOT = { has_estate_privilege = estate_rajput_force_conscription }
@@ -3525,6 +3636,9 @@ estate_nobles_expedition_rights = {
 		has_dlc = "Domination"
 		#has_any_exploration_idea = yes
 		num_of_colonists = 1
+	}
+	can_select = {
+		ai=no
 	}
 	loyalty_scaled_conditional_modifier = {
 		trigger = {
@@ -3584,6 +3698,7 @@ estate_nobles_highland_fortifications = {
 		}
 	}
 	can_select = {
+		ai=no
 		custom_trigger_tooltip = {
 			tooltip = has_unlocked_estate_nobles_highland_fortifications_tt
 			has_unlocked_estate_privilege = {
@@ -3651,6 +3766,7 @@ estate_nobles_emirs_of_baghdad = {
 		}
 	}
 	can_select = {
+		ai=no
 	}
 	on_granted = {
 		custom_tooltip = estate_nobles_emirs_of_baghdad_tt_granted
@@ -3715,6 +3831,9 @@ estate_nobles_deteriorating_army = {
 		}
 		NOT = { has_country_flag = estate_nobles_deteriorating_army_removed }
 	}
+	can_select = {
+		ai=no
+	}
 	can_revoke = {
 		custom_trigger_tooltip = {
 			tooltip = BYZ_revokable_via_decision
@@ -3761,6 +3880,7 @@ estate_nobles_defensive_policy = {
 		}
 	}
 	can_select = {
+		ai=no
 		NOT = { has_estate_privilege = estate_qizilbash_defensive_policy }
 		NOT = { has_estate_privilege = estate_ghulams_defensive_policy }
 	}
@@ -3791,6 +3911,7 @@ estate_nobles_tofangchi_regiment = {
 		}
 	}
 	can_select = {
+		ai=no
 		NOT = { has_estate_privilege = estate_qizilbash_tofangchi_regiment }
 		NOT = { has_estate_privilege = estate_ghulams_tofangchi_regiment }
 	}
@@ -3820,6 +3941,7 @@ estate_nobles_tupchi_artillery_corps = {
 		}
 	}
 	can_select = {
+		ai=no
 		NOT = { has_estate_privilege = estate_qizilbash_tupchi_artillery_corps }
 		NOT = { has_estate_privilege = estate_ghulams_tupchi_artillery_corps }
 	}
@@ -3872,6 +3994,7 @@ estate_nobles_qurchi_service = {
 		}
 	}
 	can_select = {
+		ai=no
 		NOT = { has_estate_privilege = estate_ghulams_qurchi_service }
 		NOT = { has_estate_privilege = estate_qizilbash_qurchi_service }
 	}
@@ -3914,6 +4037,7 @@ estate_nobles_mamlukian_administration = {
 		}
 	}
 	can_select = {
+		ai=no
 		NOT = { has_estate_privilege = estate_ghulams_mamlukian_administration }
 		NOT = { has_estate_privilege = estate_qizilbash_mamlukian_administration }
 	}
@@ -3969,6 +4093,9 @@ estate_nobles_enlist_the_mamluks = {
 		}
 		has_dlc = "King of Kings"
 	}
+	can_select = {
+		ai=no
+	}
 	benefits = {
 		has_mamluks = yes 
 		allowed_mamluks_fraction = 0.2
@@ -3989,6 +4116,9 @@ estate_nobles_ITA_military_governors = {
 			tag = ROM 
 			was_tag = ROM
 		}
+	}
+	can_select = {
+		ai=no
 	}
 	benefits = {
 		state_governing_cost = -0.05
@@ -4051,6 +4181,9 @@ estate_nobles_GER_diploma_andreanum = {
 	is_valid = {
 		has_country_flag = GER_unlock_diploma_andreanum_flag
 	}
+	can_select = {
+		ai=no
+	}
 	benefits = {
 		territories_governing_cost = -0.05
 	}
@@ -4077,6 +4210,9 @@ estate_nobles_orangist_privileges = {
 	influence = 0.1
 	is_valid = {
 		has_country_flag = ned_buff_orangist_candidates_flag
+	}
+	can_select = {
+		ai=no
 	}
 	on_granted = {
 		custom_tooltip = NED_UNLOCK_OVERTHROW_STATIST_CANDIDATES
@@ -4106,6 +4242,7 @@ estate_nobles_vegvar_system = {
 		}
 	}
 	can_select = {
+		ai=no
 		any_owned_province = {
 			any_neighbor_province = {
 				NOT = { owned_by = ROOT }
@@ -4191,6 +4328,9 @@ estate_nobles_MAY_arm_nobles_with_obsidian_blades = {
 			}
 		}
 	}
+	can_select = {
+		ai=no
+	}
 	benefits = {
 		infantry_cost = -0.05
 	}
@@ -4259,6 +4399,9 @@ estate_nobles_MAY_spread_dynastic_influence = {
 	is_valid = {
 		has_country_flag = MAY_unlock_privilege_for_tributaries_flag
 	}
+	can_select = {
+		ai=no
+	}
 	penalties = {
 		reduced_liberty_desire = -10
 	}
@@ -4283,6 +4426,7 @@ estate_nobles_AZT_triple_alliance = {
 		has_estate_privilege = estate_nobles_AZT_triple_alliance
 	}
 	can_select = {
+		ai=no
 	
 	}
 	benefits = {
@@ -4327,7 +4471,9 @@ estate_nobles_AZT_warrior_culture = {
 	is_valid = {
 		has_country_flag = azt_military_culture_flag
 	}
-	
+	can_select = {
+		ai=no
+	}
 	on_granted = {
 		custom_tooltip = AZT_grant_bonuses_to_culture_province
 		tooltip	= {
@@ -4418,6 +4564,7 @@ estate_nobles_reformatio_sigismundi = {
 		}
 	}
 	can_select = {
+		ai=no
 		custom_trigger_tooltip = {
 			tooltip = has_unlocked_estate_nobles_reformatio_sigismundi
 			has_unlocked_estate_privilege = {
@@ -4495,6 +4642,7 @@ estate_nobles_basqaq_autonomy = {
 		has_country_flag = hordes_basqaqs_unlocked_flag
 	}
 	can_select = {
+		ai=no
 		NOT = { has_estate_privilege = estate_nomadic_tribes_basqaq_autonomy }
 	}
 	penalties = {
@@ -4520,6 +4668,7 @@ estate_nobles_imperial_war_leader = {
 		has_country_flag = hab_imperial_warleader_flag
 	}
 	can_select = {
+		ai=no
 	}
 	on_granted = {
 	}
@@ -4545,6 +4694,7 @@ estate_nobles_hab_habsburg_connections = {
 		has_country_flag = hab_unlocked_habsburg_connections
 	}
 	can_select = {
+		ai=no
 	}
 	on_granted = {
 	}
@@ -4575,6 +4725,7 @@ estate_nobles_habsburg_disunity = {
 		}
 	}
 	can_select = {
+		ai=no
 	}
 	penalties = {
 		global_autonomy = 0.05
@@ -4605,6 +4756,9 @@ estate_nobles_melting_pot_of_cultures = {
 	influence = 0.05
 	is_valid = {
 		has_country_flag = hab_melting_pot_flag
+	}
+	can_select = {
+		ai=no
 	}
 	on_granted = {
 		custom_tooltip = HAB_EXPLAIN_MODIFIERS_MELTING_POT
@@ -4689,6 +4843,7 @@ estate_nobles_hab_von_raab_restructions = {
 		has_country_flag = hab_von_raab_restrictions_flag
 	}
 	can_select = {
+		ai=no
 	}
 	on_granted = {
 		custom_tooltip = VON_RAAB_RESTRICTIONS_TOOLTIP
@@ -4724,6 +4879,9 @@ estate_nobles_TIM_soyurghal_grants = {
 		}
 		NOT = { has_country_flag = estate_nobles_TIM_soyurghal_grants_revoked }
 	}
+	can_select = {
+		ai=no
+	}
 	penalties = {
 		global_tax_modifier = -0.1
 		reform_progress_growth = -0.1
@@ -4751,6 +4909,9 @@ estate_nobles_TIM_chagatai_warriors = {
 	is_valid = {
 		has_country_flag = TIM_unlock_privilege_about_chagatai_flag
 	}
+	can_select = {
+		ai=no
+	}
 	benefits = {
 		cavalry_power = 0.05
 		cav_to_inf_ratio = 0.25
@@ -4776,6 +4937,9 @@ estate_nobles_TIM_appease_the_elites = {
 	#loyalty = 0.05
 	is_valid = {
 		has_country_flag = TIM_unlock_appease_the_elites_privilege_flag
+	}
+	can_select = {
+		ai=no
 	}
 	penalties = {
 		land_forcelimit_modifier = -0.1
@@ -4872,7 +5036,9 @@ estate_nobles_MUG_development_of_the_subah = {
 	is_valid = {
 		has_country_flag = MUG_unlock_privilege_subahs_flag
 	}
-	
+	can_select = {
+		ai=no
+	}
 	benefits = {
 		state_governing_cost = -0.15
 	}
@@ -4893,6 +5059,9 @@ estate_nobles_four_class_system = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	is_valid = {
 		has_country_flag = yua_four_class_system_flag
+	}
+	can_select = {
+		ai=no
 	}
 	loyalty_scaled_conditional_modifier = {
 		trigger = { always = yes }
@@ -4948,6 +5117,9 @@ estate_nobles_hungarian_nobility_privileges = {
 				is_core = HUN
 			}
 		}
+	}
+	can_select = {
+		ai=no
 	}
 	on_granted = {
 		custom_tooltip = HAB_ALL_HUNGARIAN_PROVINCES_GAIN_THE_FOLLOWING
@@ -5019,6 +5191,9 @@ estate_nobles_austrian_nobility_privileges = {
 				is_core = HAB
 			}
 		}
+	}
+	can_select = {
+		ai=no
 	}
 	on_granted = {
 		custom_tooltip = HUN_ALL_AUSTRIAN_PROVINCES_GAIN_THE_FOLLOWING
