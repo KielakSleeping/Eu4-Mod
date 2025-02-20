@@ -979,6 +979,11 @@ external_mission_reform = {
 	modifiers = {
 		manpower_recovery_speed = 0.1
 	}
+	conditional = {
+		allow = {
+		}
+		claim_states = yes
+	}
 	custom_attributes = {
 		seizing_land_no_rebels = yes
 	}
