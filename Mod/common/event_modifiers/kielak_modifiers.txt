@@ -61,4 +61,5 @@ sca_finland_cav = {
 
 african_cultures = {
 	num_accepted_cultures = 4
+	culture_conversion_cost = -0.1
 }
