@@ -392,7 +392,7 @@ kor_military_missions_2 = {
 				tooltip = have_at_least_7point5_more_discipline
 				has_global_modifier_value = {
 					which = discipline
-					value = 0.075
+					value = 0.05
 				}
 			}
 		}
@@ -1487,7 +1487,7 @@ korea_economic_social_political_path_3 = {
 			OR = {
 				crown_land_share = 90
 				custom_trigger_tooltip = {
-					tooltip = KOR_two_pleased_estates_tooltip #Two §Yestates§! have at least §Y70 loyalty§!, the other has at least §Y50 loyalty§!.
+					tooltip = KOR_two_pleased_estates_tooltip #Two ï¿½Yestatesï¿½! have at least ï¿½Y70 loyaltyï¿½!, the other has at least ï¿½Y50 loyaltyï¿½!.
 					OR = {
 						AND = {
 							estate_loyalty = {

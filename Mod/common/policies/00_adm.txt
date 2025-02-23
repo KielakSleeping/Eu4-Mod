@@ -168,7 +168,7 @@ health_care = {
 
        drill_decay_modifier = -0.10
        monarch_lifespan = 0.25 
-	discipline = 0.03
+	discipline = 0.025
 
        ai_will_do = { 
                factor = 1 
@@ -232,7 +232,9 @@ unsiegable = {
                full_idea_group = defensive_ideas 
        }
 
-       defensiveness = 0.25 
+       defensiveness = 0.25
+       garrison_damage = 0.2
+       garrison_size = 0.1 
        fs = 1
 
        ai_will_do = { 

@@ -118,10 +118,10 @@ designate_march = {
 		potential = {
 		}
 		allow = {
-			OR = {
-				has_reform = centralize_reform
-				has_idea = marcher_lords
-			}	
+			#OR = {
+				#has_reform = centralize_reform
+			has_idea = marcher_lords
+			#}	
 		}
 	}
 	condition = {
@@ -129,11 +129,27 @@ designate_march = {
 		potential = {
 		}
 		allow = {
-			NOT = {
-				ROOT = {
-					march = 4
+			if ={
+				limit = {
+					AND = {
+						full_idea_group = influence_ideas
+						full_idea_group = administrative_ideas
+					}
+				}
+				NOT = {
+					ROOT = {
+						march = 5
+					}
 				}
 			}
+			else = {
+				NOT = {
+					ROOT = {
+						march = 4
+					}
+				}
+			}
+			
 		}
 	}	
 }

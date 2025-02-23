@@ -393,8 +393,8 @@ trench_warfare = {
                full_idea_group = quality_ideas 
        }
 
-       morale_damage_received = -0.1 
-       reserves_organisation = 0.125
+       #morale_damage_received = -0.1 
+       reserves_organisation = 0.15
 	discipline = 0.025 
 
        ai_will_do = { 

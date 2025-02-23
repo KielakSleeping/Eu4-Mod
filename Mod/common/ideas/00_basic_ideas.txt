@@ -868,7 +868,7 @@ quality_ideas = {
 		#infantry_power = 0.05
 		#cavalry_power = 0.05
 		artillery_power = 0.05
-		free_land_leader_pool = 2
+		free_land_leader_pool = 1
 		general_cost = -0.125
 	}
 
@@ -890,10 +890,10 @@ quality_ideas = {
 	escort_ships = {
 		drill_gain_modifier = 0.15
 		drill_decay_modifier = -0.15
-		discipline = 0.05
+		discipline = 0.025
 	}
 	naval_drill = {
-		morale_damage_received = -0.10
+		#morale_damage_received = -0.10
 		reserves_organisation = 0.10
 		special_unit_forcelimit = 0.10
 	}
@@ -923,6 +923,7 @@ quantity_ideas = {
 	mass_army = {
 		global_manpower_modifier = 0.30
 		global_sailors_modifier = 0.30
+		free_land_leader_pool = 1
 	}
 	the_young_can_serve = {
 		manpower_recovery_speed = 0.20
