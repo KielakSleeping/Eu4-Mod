@@ -63,3 +63,10 @@ african_cultures = {
 	num_accepted_cultures = 4
 	culture_conversion_cost = -0.1
 }
+
+lotharingian_conquest_of_germany = {
+	technology_cost = -0.025
+	infantry_power = 0.025
+	cavalry_power = 0.025
+	artillery_power = 0.025
+}

@@ -479,7 +479,8 @@ age_of_reformation = {
 		}
 		
 		obj_colonial_empire = {
-			num_of_trade_companies = 1
+			#num_of_trade_companies = 1
+			num_of_colonists = 2
 		}
 		
 		obj_force_converted = {
@@ -768,7 +769,8 @@ age_of_absolutism = {
 		
 	objectives = {
 		obj_3_trade_companies = {
-			num_of_trade_companies = 2
+			#num_of_trade_companies = 2
+			manpower = 1000
 		}
 		
 		obj_universities = {
@@ -795,10 +797,11 @@ age_of_absolutism = {
 		}
 		
 		obj_win_religious_war = {
-			custom_trigger_tooltip = {
-				tooltip = obj_religious_league_war_on_winning_side_tooltip
-				has_country_flag = religious_league_war_on_winning_side
-			}
+			government_rank = 3
+			# custom_trigger_tooltip = {
+			# 	tooltip = obj_religious_league_war_on_winning_side_tooltip
+			# 	has_country_flag = religious_league_war_on_winning_side
+			# }
 			
 		}
 	}	

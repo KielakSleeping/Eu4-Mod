@@ -219,17 +219,17 @@ emp_lotharingia_1 = {
 				AND = {
 					OR = {
 						area = liguria_area
-						area = venetia_area
+						#area = venetia_area
 						area = emilia_romagna_area
 						area = tuscany_area
 					}
 					NOT = {
 						ROOT = {
 							num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-								value = 15 #out of 18
+								value = 8 #out of 18
 								OR = {
 									area = liguria_area
-									area = venetia_area
+									#area = venetia_area
 									area = emilia_romagna_area
 									area = tuscany_area
 								}
@@ -238,20 +238,20 @@ emp_lotharingia_1 = {
 					}
 				}
 				province_id = 101
-				province_id = 112
+				#province_id = 112
 				province_id = 116
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			owns_or_non_sovereign_subject_of = 101
-			owns_or_non_sovereign_subject_of = 112
+			#owns_or_non_sovereign_subject_of = 112
 			owns_or_non_sovereign_subject_of = 116
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 15 #out of 18
+				value = 8 #out of 18
 				OR = {
 					area = liguria_area
-					area = venetia_area
+					#area = venetia_area
 					area = emilia_romagna_area
 					area = tuscany_area
 				}
@@ -1934,7 +1934,7 @@ emp_lotharingia_5 = {
 		icon = carolingian_empire
 		required_missions = { emp_bur_east_francia }
 		trigger = {
-			num_of_cities = 200
+			num_of_cities = 120
 		}
 		effect = {
 			if = {

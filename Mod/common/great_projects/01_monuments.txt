@@ -20881,7 +20881,7 @@ golden_kremnica = {
 		country_modifiers = {
 			monthly_gold_inflation_modifier = -0.2
 			gold_depletion_chance_modifier = -0.2
-			interest = -0.5
+			interest = -0.3
 		}
 		on_upgraded = {
 			154 = {
@@ -20905,7 +20905,7 @@ golden_kremnica = {
 		country_modifiers = {
 			monthly_gold_inflation_modifier = -0.33
 			gold_depletion_chance_modifier = -0.33
-			interest = -1
+			interest = -0.6
 		}
 		on_upgraded = {
 			154 = {

@@ -102,7 +102,10 @@ merciful_tyrant = {
 
       	global_unrest = -3
        years_of_nationalism = -15 
-       religious_unity = 0.25
+       #religious_unity = 0.25
+       	stability_cost_modifier = -0.25
+        free_adm_policy = 1
+        diplomatic_upkeep = 1
 
        ai_will_do = { 
                factor = 1 
@@ -473,7 +476,8 @@ stay_out_of_my_node = {
        }
 
        embargo_efficiency = 0.30
-       min_autonomy_in_territories = -0.1 
+       manpower_in_accepted_culture_provinces = 0.15
+        
 
        ai_will_do = { 
                factor = 1 
