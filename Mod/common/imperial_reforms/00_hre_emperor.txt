@@ -382,7 +382,7 @@ emperor_imperial_estates = {
 	}
 
 	province = {
-		#defensiveness = 0.1
+		local_defensiveness = 0.1
 		supply_limit_modifier = 0.2
 	}
 	member = {
