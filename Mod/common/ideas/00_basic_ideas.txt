@@ -826,7 +826,7 @@ defensive_ideas = {
 
 	bonus = {
 		military_tactics = 0.13
-		core_decay_on_your_own = -0.5
+		#core_decay_on_your_own = -0.5
 	}
 
 	battlefield_commisions = {
