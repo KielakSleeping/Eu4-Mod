@@ -684,8 +684,18 @@ Merc_payments = {
 }
 qolu_ai_sieges = {
 	potential = {
-		ai = yes
-		is_subject = no
+		OR = {
+			AND = {
+				ai = yes
+				is_subject_of_type = daimyo_vassal
+			}
+			AND = {
+				ai = yes
+				is_subject = no
+			}
+		}
+		#ai = yes
+		#is_subject = no
 	}
 
 	trigger = {
