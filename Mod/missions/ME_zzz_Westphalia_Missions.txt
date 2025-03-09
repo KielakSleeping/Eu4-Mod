@@ -396,6 +396,30 @@ WES_missions_2 = {
 					duration = 3650
 				}
 			}
+
+
+			if = {
+				limit = { 
+					estate_loyalty = {
+						estate = estate_nobles
+						loyalty = 60
+					}
+				}
+				add_country_modifier = {
+					name = WES_the_noble_of_westphalia
+					duration = 9125
+				}
+			}
+
+			if = {
+				limit = { 
+					NOT = { has_estate = estate_nobles }
+				}
+				add_country_modifier = {
+					name = WES_more_property
+					duration = 3650
+				}
+			}
 		}
 	}
 
