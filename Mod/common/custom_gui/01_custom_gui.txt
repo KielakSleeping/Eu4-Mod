@@ -29,7 +29,7 @@ custom_button = {
 			NOT = { has_country_modifier = trade_hub_created }
 			treasury = 200
 			dip_power = 50
-			is_at_war = no
+			#is_at_war = no
 		}	
 		ROOT = {
 			NOT = {
