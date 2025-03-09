@@ -145,8 +145,8 @@ gc_por_1 = {
 					duration = -1
 				}
 			}
-			set_country_flag = por_bandeirantes_flag
-			custom_tooltip = por_bandeirantes_tooltip
+			#set_country_flag = por_bandeirantes_flag
+			#custom_tooltip = por_bandeirantes_tooltip
 		}
 	}
 	gc_por_jesuits = {
@@ -456,7 +456,7 @@ gc_por_2 = {
 				add_core = POR
 			}
 			define_explorer = {
-				name = "Lançarote de Freitas"
+				name = "Lanï¿½arote de Freitas"
 				shock = 1
 				fire = 3
 				manuever = 2

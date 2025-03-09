@@ -3199,7 +3199,7 @@ mos_rus_siberian_conquest = {
 				name = rus_new_world_colonization
 				duration = 36500
 			}
-			increase_gold_discovery = yes
+			#increase_gold_discovery = yes
 			furdan_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
