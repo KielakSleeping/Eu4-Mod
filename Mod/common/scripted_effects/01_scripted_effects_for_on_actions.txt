@@ -3078,6 +3078,21 @@ on_colony_finished_effect = {
 	# 		id = flavor_gbr.200
 	# 	}
 	# }
+	if = {
+		limit = {
+			OR = {
+				continent = north_america
+				continent = south_america
+				colonial_region = colonial_australia
+				colonial_region = colonial_south_africa
+			}	
+		}
+		add_permanent_province_modifier = {
+			name = b_colony_warscore 
+			duration = -1 
+			hidden = yes 
+		}
+	}
 }
 
 on_colonist_boosting_colony_effect = {
