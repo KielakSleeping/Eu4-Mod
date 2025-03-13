@@ -1612,7 +1612,7 @@ ITA_non_conquest_1 = {
 				AND = {
 					NOT = { 
 						ROOT = {
-							num_of_centers_of_trade = 30
+							num_of_centers_of_trade = 20
 						}
 					}
 					province_has_center_of_trade_of_level = 1
@@ -2178,7 +2178,7 @@ ITA_non_conquest_2 = {
 		trigger = {
 			home_trade_node = {
 				#highest_value_trade_node = yes
-				trade_node_value = 200
+				trade_node_value = 150
 				trade_share = {
 					country = ROOT
 					share = 80
@@ -2759,7 +2759,7 @@ ITA_non_conquest_3 = {
 			}
 			trading_part = {
 				trade_goods = wine
-				value = 0.67
+				value = 0.45
 			}
 			production_leader = {
 				trade_goods = wine
