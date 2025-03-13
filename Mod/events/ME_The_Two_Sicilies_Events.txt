@@ -163,6 +163,8 @@ country_event = {
 	desc = ME_The_Two_Sicilies_Events.4.D
 	picture = ADVISOR_eventPicture
 
+	fire_only_once = yes
+
 	trigger = {
 		121 = {
 			owned_by = ROOT
