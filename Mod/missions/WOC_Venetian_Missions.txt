@@ -1639,20 +1639,21 @@ venice_missions_slot_3 = {
 			
 		}
 		effect = {
-			if = {
-				limit = { tag = VEN	}
-				custom_tooltip = ven_upgrade_state_inuisition_idea_tt
-				hidden_effect = {
-					set_country_flag = ven_upgrade_state_inuisition_idea_flag
-					swap_free_idea_group = yes
-				}
-			}
-			else = {
+			# if = {
+			# 	limit = { tag = VEN	}
+			# 	custom_tooltip = ven_upgrade_state_inuisition_idea_tt
+			# 	hidden_effect = {
+			# 		set_country_flag = ven_upgrade_state_inuisition_idea_flag
+			# 		swap_free_idea_group = yes
+			# 	}
+			# }
+			#else = {
 				add_country_modifier = {
 					name = ven_standardized_relazioni
-					duration = 7300
+					#duration = 7300
+					duration = -1
 				}
-			}
+			#}
 		}
 	}
 

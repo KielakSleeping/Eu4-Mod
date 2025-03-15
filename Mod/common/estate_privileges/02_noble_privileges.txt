@@ -1139,6 +1139,8 @@ estate_nobles_strong_duchies = {
 				is_subject_of_type = personal_union
 				is_subject_of_type = incorporated_vassal
 				is_subject_of_type = integrated_personal_union
+				is_subject_of_type = eyalet
+				is_subject_of_type = core_eyalet
 			}
 		}
 		NOT = { has_estate_privilege = estate_nobles_french_strong_duchies }
@@ -1158,6 +1160,8 @@ estate_nobles_strong_duchies = {
 						is_subject_of_type = personal_union
 						is_subject_of_type = incorporated_vassal
 						is_subject_of_type = integrated_personal_union
+						is_subject_of_type = eyalet
+						is_subject_of_type = core_eyalet
 					}
 				}
 			}
@@ -3211,15 +3215,16 @@ estate_nobles_english_villeinage = {
 		ai=no
 	}
 	can_revoke = {
-		OR = {
-			crown_land_share = 40
-			AND = {
-				crown_land_share = 30
-				has_estate_privilege = estate_church_religious_state
-				has_estate_privilege = estate_nobles_nobility_primacy
-				has_estate_privilege = estate_burghers_land_of_commerce
-			}
-		}
+		crown_land_share = 30
+		# OR = {
+		# 	crown_land_share = 40
+		# 	AND = {
+		# 		crown_land_share = 30
+		# 		has_estate_privilege = estate_church_religious_state
+		# 		has_estate_privilege = estate_nobles_nobility_primacy
+		# 		has_estate_privilege = estate_burghers_land_of_commerce
+		# 	}
+		# }
 	}
 	on_granted = {
 	}

@@ -263,7 +263,7 @@ stateless_society = {
 	nation_designer_cost = 0
 	modifiers = {
 		governing_capacity_modifier = -0.99
-		defensiveness = 0.75
+		#defensiveness = 0.75
 		land_morale = 0.15
 	}
 	ai = {

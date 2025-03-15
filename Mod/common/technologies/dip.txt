@@ -95,7 +95,7 @@ technology = { #Naval Ambitions
 	
 	naval_morale			= 0.3
 	range					= 115
-	impressment_offices 	= yes
+	#impressment_offices 	= yes
 	naval_engagement_width = 10
 }
 
@@ -141,6 +141,7 @@ technology = { #Wharf
 	
 	range					= 	100
 	wharf = yes
+	impressment_offices 	= yes
 
 }
 

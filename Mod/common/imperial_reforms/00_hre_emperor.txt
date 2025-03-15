@@ -87,8 +87,8 @@ emperor_gemeinerpfennig = {
 	}
 	member = {
 		#diplomatic_reputation = 2
-		land_forcelimit_modifier = 0.1
-		interest = -0.15
+		land_forcelimit_modifier = 0.05
+		interest = -0.10
 	}
 
 	emperor = {
@@ -114,7 +114,7 @@ emperor_perpetual_diet = {
 		has_dlc = "Emperor"
 	}
 	all = {
-		province_warscore_cost = -0.075
+		province_warscore_cost = -0.05
 		core_creation = -0.1
 	}
 
@@ -175,7 +175,7 @@ emperor_landsknechtswesen = {
 	}
 
 	emperor = {
-		idea_cost = -0.1
+		idea_cost = -0.05
 	}
 
 	member = {
@@ -195,13 +195,13 @@ emperor_landfriede = {
 
 
 	all = {
-		technology_cost = -0.05
+		technology_cost = -0.025
 		possible_policy = 1		
 	}
 
 	emperor = {
 		prestige = 0.5
-		all_power_cost = -0.05
+		all_power_cost = -0.02
 	}
 	province = {
 		local_institution_spread = 0.3
@@ -345,7 +345,7 @@ emperor_reichskrieg = {
 
 	all = {
 		land_forcelimit_modifier = 0.1
-		global_regiment_cost = -0.1
+		global_regiment_cost = -0.05
 	}
 	# all = {
 	# 	land_morale = 0.025
@@ -433,7 +433,7 @@ emperor_privilegia_de_non_appelando = {
 		has_dlc = "Emperor"
 	}
 	all = {
-		military_tactics = 0.05
+		#military_tactics = 0.05
 		fire_damage = 0.025
 		shock_damage = 0.025
 		fire_damage_received = -0.025
@@ -478,8 +478,8 @@ emperor_renovatio = {
 	}
 
 	all = {
-		land_morale = 0.05
-		discipline = 0.025
+		land_morale = 0.025
+		#discipline = 0.025
 	}
 
 	member = {

@@ -330,7 +330,7 @@ return_of_the_seapeople = {
        }
 
        may_perform_slave_raid = yes
-	available_province_loot = 0.5
+	available_province_loot = 1
 	coast_raid_range = 1
 
        ai_will_do = { 

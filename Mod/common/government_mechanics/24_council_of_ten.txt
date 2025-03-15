@@ -181,7 +181,7 @@ council_of_ten = {
 						add_republican_tradition = -2
 					}
 					else = { add_republican_tradition = -3 }
-					change_government_reform_progress = 25
+					change_government_reform_progress = 20
 				}
 				add_government_power = {
 					mechanic_type = council_of_ten

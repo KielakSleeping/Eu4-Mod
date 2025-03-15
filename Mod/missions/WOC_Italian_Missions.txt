@@ -1636,7 +1636,7 @@ ITA_non_conquest_1 = {
 				}
 				monthly_trade_income = 300
 			}
-			num_of_centers_of_trade = 30
+			num_of_centers_of_trade = 20
 			calc_true_if = {
 				all_trade_node = {
 					trade_share = {

@@ -5273,8 +5273,12 @@ ven_venetian_carnevale = {
 }
 
 ven_standardized_relazioni = {
-	spy_offence = 0.33
-	global_spy_defence = 0.33
+	#spy_offence = 0.33
+	#global_spy_defence = 0.33
+	max_absolutism = 10
+	diplomats = 1
+	spy_offence = 0.2
+	global_spy_defence = 0.2
 }
 
 ven_urban_renewal = {
