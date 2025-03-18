@@ -2417,8 +2417,10 @@ swedish_military_reforms = {
 }
 
 swedish_mercenary_core = {
-	merc_maintenance_modifier = -0.1
-	mercenary_manpower = 0.5
+	#merc_maintenance_modifier = -0.1
+	#mercenary_manpower = 0.5
+	land_morale = 0.05
+	cavalry_cost = -0.1
 }
 
 swedish_naval_reforms = {

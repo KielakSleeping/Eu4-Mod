@@ -146,6 +146,7 @@ temple = {
 	}
 	on_built = {
 		on_built_tax_building_effect = yes
+		bastard_dev_cost_add_from_buildings = yes
 		on_province_tax_building_built_estate_privileges_effect = yes
 		add_development_from_building = {
 			building = temple
