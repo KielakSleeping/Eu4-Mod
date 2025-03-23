@@ -89,17 +89,20 @@ educate_ruler = {
 			hidden_effect = {
 				export_to_variable = {
 					which = ruler_adm_skill
-					value = trigger_value:ADM
+					#value = trigger_value:ADM
+					value = ADM
 					who = ROOT
 				}
 				export_to_variable = {
 					which = ruler_dip_skill
-					value = trigger_value:DIP
+					#value = trigger_value:DIP
+					value = DIP
 					who = ROOT
 				}
 				export_to_variable = {
 					which = ruler_mil_skill
-					value = trigger_value:MIL
+					#value = trigger_value:MIL
+					value = MIL
 					who = ROOT
 				}
 				set_variable = {
