@@ -1925,6 +1925,7 @@ amphibious_specialization_reform = {
 	icon = "marine"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = {culture_group = malay }
 		OR = {
 			NOT = { has_dlc = "Domination" }
 			AND = { 
