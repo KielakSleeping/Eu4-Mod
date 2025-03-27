@@ -931,7 +931,7 @@ quantity_ideas = {
 	}
 	enforced_service = {
 		global_regiment_cost = -0.10		
-		land_morale = 0.075
+		land_morale = 0.05
 		land_maintenance_modifier = -0.1
 	}
 	camp_followers = {
@@ -940,7 +940,7 @@ quantity_ideas = {
 	}
 	reinforcement_drafts = {
 		war_taxes_cost_modifier = -1.0
-		reinforce_speed = 0.33
+		reinforce_speed = 0.2
 	}
 	the_old_and_infirm = {
 		land_forcelimit = 15
