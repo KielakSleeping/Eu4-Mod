@@ -111,6 +111,7 @@ NDefines.NCountry.INNOVATIVENESS_AHEAD_OF_TIME_BONUS = 0
 NDefines.NCountry.MONARCH_MIN_SKILL = 1
 NDefines.NCountry.MAX_PROVINCES_FOR_FREE_CITY = 8
 NDefines.NCountry.MIN_POPULATION_FOR_TRADEGOOD_ASSIGNMENT = 1000 -- So ppl dont reroll tradegoods
+NDefines.NCountry.COUNTRIES_GETTING_SCORE = 0 -- disables countries getting monthly score, might help with performance
 NDefines.NEconomy.MAX_BUILDING_SLOTS = 18
 NDefines.NEconomy.GOLD_MINE_SIZE = 35
 NDefines.NEconomy.EDICTS_DURATION_MONTHS = 1
