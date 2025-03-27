@@ -805,7 +805,7 @@ offensive_ideas = {
 		artillery_level_modifier = 0.2
 	}
 	engineer_corps = {
-		assault_fort_ability = 0.3
+		assault_fort_ability = 0.1
 		assault_fort_cost_modifier = -1.0
 	}
 	grand_army = {
