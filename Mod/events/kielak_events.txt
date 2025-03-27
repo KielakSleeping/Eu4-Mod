@@ -1,0 +1,61 @@
+namespace = kielak_events
+
+country_event = {
+	id = kielak_events.1
+	title = kielak_events.1.t
+	picture = HRE_eventPicture
+	desc = kielak_events.1.d
+
+	trigger = {
+		HAB  = {
+			is_emperor = yes
+			NOT = {is_year = 1470 }
+			NOT = {
+				has_country_modifier = emperor_dec_elector
+			}
+			OR = {
+				is_in_war = {
+					attacker_leader = THIS
+					defender_leader = BRA
+				}
+				is_in_war = {
+					attacker_leader = THIS
+					defender_leader = ROT
+				}
+				is_in_war = {
+					attacker_leader = THIS
+					defender_leader = VEN
+				}
+				is_in_war = {
+					attacker_leader = THIS
+					defender_leader = MLO
+				}
+				is_in_war = {
+					attacker_leader = THIS
+					defender_leader = HES
+				}
+				is_in_war = {
+					attacker_leader = THIS
+					defender_leader = HSA
+				}
+				is_in_war = {
+					attacker_leader = THIS
+					defender_leader = SIC
+				}
+			}
+			
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+
+	option = {
+		name = kielak_events.1.a
+		add_country_modifier = {
+			name = emperor_dec_elector
+			duration = 3600
+		}
+	}
+
+}
