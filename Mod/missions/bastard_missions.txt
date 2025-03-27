@@ -211,14 +211,9 @@ X_POR_slot_5 = {
 			province_id = 230 #lazy highlight for now
 		}
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = X_POR_mission_4_tt
-				has_country_flag = X_POR_west_african_slave_trade_cflag
-			}
-			slaves = 10
+			has_global_flag = triangle_happened
 			230 = {
 				owned_by = ROOT
-				trade_goods = slaves
 				has_building = workshop
 			}
 		}
@@ -228,6 +223,7 @@ X_POR_slot_5 = {
 				add_base_tax = 1
 				add_base_production = 1
 				add_base_manpower = 1
+				change_trade_goods = slaves
 			}
 			change_price = {
 				trade_goods = slaves
@@ -235,7 +231,7 @@ X_POR_slot_5 = {
 				value = 0.2
 				duration = 7300
 			}
-			clr_country_flag = X_POR_west_african_slave_trade_cflag
+			#clr_country_flag = X_POR_west_african_slave_trade_cflag
 		}
 	}
 }

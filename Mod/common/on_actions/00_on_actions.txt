@@ -225,6 +225,22 @@ on_war_won = {
 	ROOT = { country_event = { id = tributary_events.32 } }
 	if = {
 		limit = {
+			ROOT = { has_idea = buffer_states}
+			AND = {
+				FROM = { is_subject_of = ROOT }				
+				ROOT = { NOT = { has_country_modifier = trained_subject_officers} }
+			}
+		}
+		FROM = { 
+			add_country_modifier = {
+				name = trained_subject_officers
+				duration = -1
+				hidden = yes
+				}
+		}
+	}
+	if = {
+		limit = {
 			any_known_country = {
 				humiliated_by = ROOT
 			}
