@@ -73,4 +73,7 @@ lotharingian_conquest_of_germany = {
 
 emperor_dec_elector = {
 	imperial_authority_value = -0.1
+	diplomatic_reputation = -1
+	global_unrest = 2
+	reduced_liberty_desire = -10
 }
