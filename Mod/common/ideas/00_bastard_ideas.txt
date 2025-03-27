@@ -784,7 +784,8 @@ FU2_ideas = {
 HES_ideas = {
 	start = {
 		stability_cost_modifier = -0.1
-		global_tax_modifier = 0.1
+		#global_tax_modifier = 0.1
+		land_morale = 0.1
 	}
 	bonus = {
 		merc_maintenance_modifier = -0.15
