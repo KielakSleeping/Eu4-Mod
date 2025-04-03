@@ -14,37 +14,59 @@ country_event = {
 				has_country_modifier = emperor_dec_elector
 			}
 			OR = {
-				is_in_war = {
+				AND = {
+					is_in_war = {
 					attacker_leader = THIS
 					defender_leader = BRA
+					}
+					BRA = {ai = no}
 				}
-				is_in_war = {
+				AND = {
+					is_in_war = {
 					attacker_leader = THIS
 					defender_leader = ROT
+					}
+					ROT = {ai = no}
 				}
-				is_in_war = {
+				AND = {
+					is_in_war = {
 					attacker_leader = THIS
 					defender_leader = VEN
+					}
+					VEN = {ai = no}
 				}
-				is_in_war = {
+				AND = {
+					is_in_war = {
 					attacker_leader = THIS
 					defender_leader = MLO
+					}
+					MLO = {ai = no}
 				}
-				is_in_war = {
+				AND = {
+					is_in_war = {
 					attacker_leader = THIS
 					defender_leader = HES
+					}
+					HES = {ai = no}
 				}
-				is_in_war = {
+				AND = {
+					is_in_war = {
 					attacker_leader = THIS
 					defender_leader = HSA
+					}
+					HSA = {ai = no}
 				}
-				is_in_war = {
+				AND = {
+					is_in_war = {
 					attacker_leader = THIS
 					defender_leader = SIC
+					}
+					SIC = {ai = no}
 				}
 			}
 			
 		}
+
 	}
 	mean_time_to_happen = {
 		months = 4
