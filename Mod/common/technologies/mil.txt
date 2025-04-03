@@ -226,6 +226,7 @@ technology = {
 	year = 1531
 	
 	#Reiter
+	supply_limit 		= 	0.5
 	maneuver_value 		= 	0.25
 	cavalry_fire		= 	0.25
 	
@@ -315,6 +316,7 @@ technology = {
 	
 	#Star Bastions
 	fort_16th = yes
+	supply_limit 		= 	0.5
 	infantry_fire		=	0.3
 	cavalry_shock		=	0.25
 	artillery_fire 		= 	0.25
@@ -376,6 +378,7 @@ technology = {
 	year = 1609
 	
 	#Standardisation of Calibre
+	supply_limit 		= 	0.5
 	artillery_shock 	= 	0.1
 	artillery_fire 		= 	0.25
 	cavalry_shock		=	0.25
@@ -392,7 +395,7 @@ technology = {
 	year = 1622
 	
 	cavalry_shock		=	0.25
-	supply_limit		= 	0.5	
+	#supply_limit		= 	0.5	
 	artillery_fire		=	0.3
 	enable = maharathan_cavalry		
 	enable = manchu_banner		
@@ -459,7 +462,7 @@ technology = {
 	year = 1661
 	
 	#Killing Grounds
-	
+	supply_limit 		= 	0.5
 	infantry_fire		= 	0.5
 	artillery_fire		=	0.3
 		
@@ -508,7 +511,7 @@ technology = {
 	year = 1700
 	
 	#Light Cavalry
-	
+	supply_limit 		= 	0.5
 	cavalry_shock		=	0.25
 	military_tactics 	= 	0.25
 	maneuver_value 		= 	0.5
@@ -570,7 +573,7 @@ technology = {
 	
 	#Light Infantry Companies
 	sprite_level = 4
-
+	supply_limit 		= 	0.5
 	land_morale			=	1.0
 
 	enable = austrian_white_coat	
@@ -611,7 +614,7 @@ technology = {
 	year = 1760
 	
 	#Bayonet
-	supply_limit		=	0.5
+	#supply_limit		=	0.5
 	infantry_fire		= 	0.5	
 }
 
@@ -620,6 +623,7 @@ technology = {
 	year = 1775
 	
 	#Cuirassier
+	supply_limit 		= 	0.5
 	maneuver_value 		= 	0.25
 	infantry_shock		=	0.5	
 	
