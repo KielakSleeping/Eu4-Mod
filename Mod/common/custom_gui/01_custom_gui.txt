@@ -136,21 +136,21 @@ custom_button = {
 		#These will apply on the province
 		if = {
 			limit = { trade_goods = grain }
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = echo_production_hub_grain_pmod
 					duration = -1
 				}
 		}
 		else_if = {
 			limit = { trade_goods = livestock }
-			add_province_modifier = {
+			add_permanent_province_modifier = {
 				name = echo_production_hub_livestock_pmod
 				duration = -1
 			}
 		}
 		else_if = {
 			limit = { trade_goods = naval_supplies }
-			add_province_modifier = {
+			add_permanent_province_modifier = {
 				name = echo_production_hub_naval_supplies_pmod
 				duration = -1
 			}
