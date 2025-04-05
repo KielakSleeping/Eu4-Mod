@@ -942,7 +942,7 @@ regimental_camp = {
 	cost = 150
 	time = 12
 	modifier = {
-		land_forcelimit = 0.75
+		land_forcelimit = 0.5
 	}
 	bonus_modifier = {
 		land_forcelimit = 0.25
@@ -2470,14 +2470,14 @@ conscription_center = {
 #	}
 
 	modifier = {
-		land_forcelimit = 1.5
+		land_forcelimit = 1
 	}
-	bonus_modifier = {
-		land_forcelimit = 0.5
-	}
-	bonus_manufactory = { # Will apply an extra modifier if these goods
-		grain
-	}
+	# bonus_modifier = {
+	# 	land_forcelimit = 0.5
+	# }
+	# bonus_manufactory = { # Will apply an extra modifier if these goods
+	# 	grain
+	# }
 
 	on_built = {
 		bastard_dev_cost_add_from_buildings = yes
