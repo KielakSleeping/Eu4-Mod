@@ -213,8 +213,6 @@ conquest_of_vienna = {
 		owner = {
 			NOT = { tag = HAB }
 			NOT = { tag = AHU }
-			NOT = { tag = POL }
-			NOT = { tag = PLC }
 			NOT = { 	
 					has_global_modifier_value = {
 					which = discipline

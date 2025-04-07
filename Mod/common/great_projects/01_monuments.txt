@@ -15207,8 +15207,13 @@ churches_lalibela = {
 	type = monument
 
 	build_trigger = {
-		province_is_or_accepts_religion = {
-			religion = coptic
+		OR = {
+			province_is_or_accepts_religion = {
+				religion = coptic
+			}
+			province_is_or_accepts_religion = {
+				religion = jewish
+			}
 		}
 	}
 
@@ -15219,14 +15224,24 @@ churches_lalibela = {
 	}
 
 	can_use_modifiers_trigger = {
-		province_is_or_accepts_religion = {
-			religion = coptic
+		OR = {
+			province_is_or_accepts_religion = {
+				religion = coptic
+			}
+			province_is_or_accepts_religion = {
+				religion = jewish
+			}
 		}
 	}
 
 	can_upgrade_trigger = {
-		province_is_or_accepts_religion = {
-			religion = coptic
+		OR = {
+			province_is_or_accepts_religion = {
+				religion = coptic
+			}
+			province_is_or_accepts_religion = {
+				religion = jewish
+			}
 		}
 	}
 
