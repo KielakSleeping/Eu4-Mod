@@ -219,6 +219,7 @@ country_decisions = {
 		}
 		allow = {
 			NOT = { has_country_modifier = slackening_modifier }
+			NOT = { has_country_modifier = no_exploit_extra_manpower }
 			has_not_any_estate_disaster_active = yes
 			estate_loyalty = {
 				estate = estate_rajput
@@ -242,6 +243,10 @@ country_decisions = {
 			}
 			increase_estate_action_counter = {
 				estate = estate_rajput
+			}
+			add_country_modifier = {
+				name = no_exploit_extra_manpower
+				duration = 9125
 			}
 		}
 		ai_will_do = {

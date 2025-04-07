@@ -77,3 +77,7 @@ emperor_dec_elector = {
 	global_unrest = 2
 	reduced_liberty_desire = -10
 }
+
+no_exploit_extra_manpower = {
+	female_advisor_chance = 0.01
+}
