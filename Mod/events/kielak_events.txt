@@ -81,3 +81,26 @@ country_event = {
 	}
 
 }
+
+country_event = { #Ethiopia Jewish Path Event at game start
+	id = kielak_events.2
+	title = kielak_events.2.t
+	picture = RELIGION_eventPicture
+	desc = kielak_events.2.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = kielak_events.2.a
+		change_religion = jewish
+		every_owned_province = {
+			change_religion = jewish
+		}
+	}
+
+	option = {
+		name = kielak_events.2.b
+	}
+
+}

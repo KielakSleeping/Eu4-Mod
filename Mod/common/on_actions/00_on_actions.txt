@@ -32,6 +32,18 @@ on_startup = {
 
 	if = {
 		limit = {
+			AND = {
+				tag = ETH
+				ai = no
+			}
+		}
+		country_event = {
+			id = kielak_events.2
+		}
+	}
+
+	if = {
+		limit = {
 				OR = {
 					tag = MOR
 					tag = TUN

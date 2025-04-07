@@ -97,3 +97,7 @@
     kielak_events.1.d: "Apparently the Emperor had to declare on a poor and weak elector this early in the game. What shameful behaviour."
     kielak_events.1.a: "The HRE is shocked and displeased with the Emperor."
     emperor_dec_elector: "Shameful Emperor"
+    kielak_events.2.t: "A Question of Faith"
+    kielak_events.2.d: "The recent Semien revolts have sparked an interest in the jewish traditions."
+    kielak_events.2.a: "Jewish is the way to go."
+    kielak_events.2.b: "Coptic is the way to go."
