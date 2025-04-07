@@ -2365,11 +2365,19 @@ estate_church_yakobs_churches = {
 	#loyalty = 0.1
 	is_valid = {
 		has_unlocked_estate_privilege = { estate_privilege = estate_church_yakobs_churches }
-		religion_group = christian
+		#religion_group = christian
+		OR = {
+			religion_group = christian
+			religion = jewish
+		}
 	}
 	can_select = {
 		ai=no
-		religion_group = christian
+		#religion_group = christian
+		OR = {
+			religion_group = christian
+			religion = jewish
+		}
 	}
 	on_granted = {
 	}
