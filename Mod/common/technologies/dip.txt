@@ -149,7 +149,7 @@ technology = { #Man of War
 	# Tech 12
 	year = 1557
 	naval_morale			=	0.4
-	may_slander_merchants = yes
+	#may_slander_merchants = yes
 
 	naval_battery = yes
 	naval_engagement_width = 15
@@ -371,6 +371,7 @@ technology = { #The Gold Standard
 	# Tech 32
 	year = 1835
 	
+	may_slander_merchants = yes
 	trade_efficiency 		= 	0.01
 	trade_range				=	20
 	global_colonial_growth  = 	50

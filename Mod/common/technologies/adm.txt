@@ -54,7 +54,7 @@ technology = { #Medieval Administration
 	# Tech 3
 	year = 1440
 	production_efficiency	=	0.01
-	may_support_rebels = yes
+	#may_support_rebels = yes
 }
  
 technology = { #Temples
@@ -320,6 +320,7 @@ technology = { #Four Field Rotation
 	year = 1835
 	
 	#Four field rotation
+	may_support_rebels = yes
 	production_efficiency 	=	0.01
 	
 }
