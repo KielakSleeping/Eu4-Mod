@@ -533,7 +533,8 @@ maritime_ideas = {
 
 	merchant_traditions = {
 		naval_forcelimit_modifier = 0.15
-		ship_trade_power_modifier = 0.2
+		global_ship_trade_power = 0.1
+
 	}
 	merchant_marine = {
 		#trade_range_modifier = 0.30	
