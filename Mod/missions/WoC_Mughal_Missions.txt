@@ -250,20 +250,20 @@ WoC_mughals_1 = {
 						piety = 0.75
 					"
 					first_effect = "
-						custom_tooltip = MUG_upgrade_clerical_ministers
-						set_country_flag = MUG_upgrade_clerical_ministers_flag
+						#custom_tooltip = MUG_upgrade_clerical_ministers
+						#set_country_flag = MUG_upgrade_clerical_ministers_flag
 						
 						custom_tooltip = \" \"
 						
-						add_corruption = -1
+						add_corruption = -4
 					"
 					second_custom_tooltip = MUG_if_mysticism
 					second_limit = "
 						NOT = { piety = -0.33 }
 					"
 					second_effect = "
-						custom_tooltip = MUG_upgrade_freedom_of_interpretation
-						set_country_flag = MUG_upgrade_freedom_of_interpretation_flag
+						#custom_tooltip = MUG_upgrade_freedom_of_interpretation
+						#set_country_flag = MUG_upgrade_freedom_of_interpretation_flag
 						
 						custom_tooltip = \" \"
 						
@@ -300,8 +300,8 @@ WoC_mughals_1 = {
 		provinces_to_highlight = {
 		}
 		trigger = {
-			is_ahead_of_time_in_technology = { tech = adm }
-			is_ahead_of_time_in_technology = { tech = dip }
+			#is_ahead_of_time_in_technology = { tech = adm }
+			#is_ahead_of_time_in_technology = { tech = dip }
 			is_ahead_of_time_in_technology = { tech = mil }
 			
 			if = {
@@ -1628,8 +1628,8 @@ WoC_mughals_4 = {
 			
 			custom_tooltip = " "
 			
-			custom_tooltip = MUG_unlock_gurkhas
-			set_country_flag = MUG_unlock_gurkhas_flag
+			#custom_tooltip = MUG_unlock_gurkhas
+			#set_country_flag = MUG_unlock_gurkhas_flag
 		}
 	}
 	
@@ -2209,8 +2209,8 @@ WoC_mughals_4_2 = {
 			}
 		}
 		effect = {
-			custom_tooltip = MUG_upgrade_monopoly
-			set_country_flag = MUG_upgrade_monopoly_flag
+			#custom_tooltip = MUG_upgrade_monopoly
+			#set_country_flag = MUG_upgrade_monopoly_flag
 			
 			custom_tooltip = " "
 			
