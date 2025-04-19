@@ -388,7 +388,7 @@ ARB_ideas = { #Arabian Empire
 GZM_ideas = { #Great Zimbabwe Empire
 	start = {
 		infantry_shock = 0.25
-		infantry_cost = -0.2
+		infantry_cost = -0.1
 	}
 	
 	bonus = {
@@ -3122,7 +3122,7 @@ DEC_ideas = {
 MER_ideas = {
 	start = {	
 		infantry_power = 0.1
-		infantry_cost = -0.2
+		infantry_cost = -0.1
 	}
 	bonus = {
 		war_exhaustion = -0.03		
@@ -3178,7 +3178,7 @@ RJP_ideas = {
 	}
 	marwari_horses = {
 		infantry_power = 0.15
-		infantry_cost = -0.2
+		infantry_cost = -0.1
 	}
 	rjp_purbia_legacy = {
 		fire_damage = 0.1
@@ -3338,7 +3338,7 @@ AYU_ideas = {
 AVA_ideas = {
 	start = {
 		land_morale = 0.1
-		infantry_cost = -0.2
+		infantry_cost = -0.1
 	}
 	
 	bonus = {

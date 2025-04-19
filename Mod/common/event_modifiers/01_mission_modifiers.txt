@@ -8888,7 +8888,8 @@ mch_5_trusted_companions_modifier = {
 	country_admin_power = 1 
 }
 mjz_dominance_of_the_horselords_modifier = {
-	cav_to_inf_ratio = 0.50
+	#cav_to_inf_ratio = 0.50
+	cavalry_cost = -0.1
 	nomadic_tribes_loyalty_modifier = 0.05
 }
 mjz_formalized_yellow_shamanism_modifier = {
