@@ -1932,7 +1932,7 @@ new_order_regiment_mobilized_modifier = {
 }
 
 inward_focus_modifier = {
-	core_creation = 0.33
+	core_creation = 0.15
 	province_warscore_cost = 1
 	stability_cost_to_declare_war = 1
 	ae_impact = 0.33
@@ -1956,8 +1956,8 @@ outward_focus_modifier = {
 }
 
 expansion_focus_modifier = {
-	development_cost_modifier = 0.1
-	all_estate_loyalty_equilibrium = -0.1
+	#development_cost_modifier = 0.1
+	all_estate_loyalty_equilibrium = -0.05
 	global_unrest = 2
 	diplomatic_reputation = -1
 	core_creation = -0.1
