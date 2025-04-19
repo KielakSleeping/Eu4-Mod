@@ -1945,12 +1945,14 @@ inward_focus_modifier = {
 }
 
 outward_focus_modifier = {
-	ae_impact = 0.15
-	land_forcelimit_modifier = -0.1
+	#ae_impact = 0.15
+	#land_forcelimit_modifier = -0.1
+	build_cost = 0.10
 	trade_efficiency = 0.1
-	diplomatic_reputation = 1
-	global_colonial_growth = 20
-	range = 0.25
+	#diplomatic_reputation = 1
+	global_colonial_growth = 15
+	colony_development_boost = 1
+	#range = 0.25
 	burghers_loyalty_modifier = 0.05
 	harmonization_speed = 0.25
 }
