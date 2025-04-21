@@ -1298,20 +1298,64 @@ ethiopia_slot_aksumite_empire = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				region = arabia_region
-				value = 25
+
+			if = {
+				limit = { religion = coptic  }
+
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					region = arabia_region
+					value = 25
+				}
+				is_at_war = no
 			}
-			is_at_war = no
+
+			else_if = {
+				limit = { religion = jewish  }
+					
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					region = arabia_region
+					value = 25
+				}
+				owns_core_province = 379	# Jerusalem
+				owns_core_province = 364	# Gaza
+				owns_core_province = 1854	# Jaffa
+				is_at_war = no
+
+			}
+	
 		}
 		effect = {
-			country_event = {
-				id = flavor_eth.39
+
+			if = {
+				limit = { 
+					religion = coptic
+				}
+
+				country_event = {
+					id = flavor_eth.39
+				}
+				add_prestige = 30
+				add_country_modifier = {
+					name = eth_surpassed_aksumite_empire
+					duration = 18250
+				}
 			}
-			add_prestige = 30
-			add_country_modifier = {
-				name = eth_surpassed_aksumite_empire
-				duration = 18250
+
+			else_if = {
+				limit = {  
+					religion = jewish
+				}
+
+
+				country_event = {
+					id = kielak_events.3
+				}
+				add_prestige = 30
+				add_country_modifier = {
+					name = eth_surpassed_aksumite_empire
+					duration = 18250
+				}
+
 			}
 		}
 		ai_weight = {
