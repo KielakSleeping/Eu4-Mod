@@ -688,7 +688,7 @@ trade_ideas = {
 		build_cost = -0.05	
 	}
 	fast_negotiations = {
-		land_forcelimit_modifier = 0.075
+		land_forcelimit_modifier = 0.05
     	mercantilism_cost = -0.25
 	}
 
