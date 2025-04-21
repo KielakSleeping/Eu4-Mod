@@ -4388,7 +4388,7 @@ korea_in_balance = {
 }
 
 kor_developed_capital = {
-	advisor_cost = -0.25
+	advisor_cost = -0.20
 	legitimacy = 0.5
 }
 
