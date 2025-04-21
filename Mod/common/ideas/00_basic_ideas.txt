@@ -434,8 +434,8 @@ influence_ideas = {
 	
 	}
 	diplomatic_influence = {
-		leader_cost = -0.125
-    	siege_ability = 0.125
+		leader_cost = -0.10
+    	siege_ability = 0.10
 		monarch_military_power = 1
 	candidate_random_bonus = 1
   
@@ -794,7 +794,7 @@ offensive_ideas = {
 		artillery_cost = -0.2
 	}
 	national_conscripts = {
-		siege_ability = 0.2
+		siege_ability = 0.15
 		may_refill_garrison = yes
 	}
 	superior_firepower = {

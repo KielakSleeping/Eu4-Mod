@@ -352,7 +352,8 @@ city_spanning_stables = {
                full_idea_group = aristocracy_ideas 
        }
 
-       cavalry_power = 0.10 
+       cavalry_power = 0.10
+       cav_to_inf_ratio = 0.10
         
 
        ai_will_do = { 
@@ -374,7 +375,8 @@ structural_weakness_analysis = {
        }
 
        artillery_levels_available_vs_fort = 1 
-       siege_ability = 0.20 
+       siege_ability = 0.10
+       artillery_power = 0.05
 
        ai_will_do = { 
                factor = 1 
