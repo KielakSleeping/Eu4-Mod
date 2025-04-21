@@ -207,7 +207,7 @@ suppress_minority = {
 }
 
 army_reform = {
-	land_morale = 0.20
+	land_morale = 0.15
 	mil_tech_cost_modifier = -0.10
 }
 naval_reform = {
@@ -1177,7 +1177,7 @@ navigator_boost = {
 }
 
 grand_captain_boost = {
-	land_morale = 0.20
+	land_morale = 0.15
 }
 
 army_organiser_boost = {
@@ -1185,7 +1185,7 @@ army_organiser_boost = {
 }
 
 commandant_boost = {
-	discipline = 0.1
+	discipline = 0.075
 }
 
 quartermaster_boost = {
