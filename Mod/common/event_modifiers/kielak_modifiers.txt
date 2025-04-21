@@ -81,3 +81,7 @@ emperor_dec_elector = {
 no_exploit_extra_manpower = {
 	female_advisor_chance = 0.01
 }
+
+kielak_new_world_colony_trade_power = {
+	province_trade_power_value = 2.5
+}
