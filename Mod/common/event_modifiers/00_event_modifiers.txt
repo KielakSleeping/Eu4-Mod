@@ -4246,7 +4246,7 @@ love_of_devoted = {
 }
 
 full_elan = {
-	land_morale = 0.15
+	land_morale = 0.125
 }
 
 finest_infantry = {
