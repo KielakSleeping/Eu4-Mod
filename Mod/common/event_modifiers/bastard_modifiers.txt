@@ -83,7 +83,7 @@ bastard_dev_cost_modifier_5 = {
 	local_development_cost_modifier = -0.06
 }
 bastard_dev_cost_modifier_6 = {
-	local_development_cost_modifier = -0.75
+	local_development_cost_modifier = -0.075
 }
 provincial_investment_woods = {
 	local_development_cost_modifier = -0.03
