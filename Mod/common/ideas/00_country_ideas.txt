@@ -14323,6 +14323,8 @@ ISR_ideas = {
 	bonus = {
 		#diplomatic_reputation = 1
 		global_tax_modifier = 0.5
+		reinforce_speed = 0.25
+		land_attrition = -0.2
 	}
 	
 	trigger = {
@@ -14343,7 +14345,7 @@ ISR_ideas = {
 		merchants = 1
 	}
 	jewish_trade_tradition = {
-		trade_efficiency = 0.1
+		trade_efficiency = 0.15
 		land_forcelimit_modifier = 0.1
 		#trade_steering = 0.1
 	}
