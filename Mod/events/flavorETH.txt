@@ -19,8 +19,10 @@ country_event = {
 	trigger = {
 		tag = ETH
 		NOT = { is_year = 1550 }
-		religion_group = christian
-		
+		OR = {
+			religion_group = christian
+			religion = jewish
+		}
 		any_owned_province = {
 			has_discovered = POR
 		}
