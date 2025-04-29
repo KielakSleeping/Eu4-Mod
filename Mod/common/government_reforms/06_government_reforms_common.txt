@@ -39,6 +39,7 @@ united_cantons_reform = {
 
 parliamentary_reform = {
 	icon = "judge"
+	lock_level_when_selected = yes
 	modifiers = {
 		global_unrest = -1
 	}
