@@ -2970,7 +2970,7 @@ colonial_ideas = {
 		horde_unity = 1
 	}
 	continental_trade = {
-		global_prov_trade_power_modifier = 0.25
+		global_prov_trade_power_modifier = 0.75
 	}
 	manufacturing_center = {
 		build_cost = -0.1
