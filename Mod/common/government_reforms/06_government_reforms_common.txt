@@ -45,6 +45,7 @@ parliamentary_reform = {
 	}
 	potential = {
 		is_revolutionary = no
+		NOT = { has_country_modifier = kielak_anti_monopoly_exploit_mondifier }
 		NOT = { has_government_attribute = is_pirate_republic_reform }
 		NOT = { has_government_attribute = english_parliament }
 		NOT = { #has a special "senate" themed reform
