@@ -3181,7 +3181,7 @@ ming_missions_3 = {
 				}
 				AND = {
 					NOT = { has_estate_privilege = estate_church_inwards_perfection } 
-					grown_by_states = 6 
+					#grown_by_states = 6 
 					if = { 
 						limit = { 
 							OR = { 
