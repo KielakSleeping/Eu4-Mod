@@ -39,7 +39,7 @@ united_cantons_reform = {
 
 parliamentary_reform = {
 	icon = "judge"
-	lock_level_when_selected = yes
+	#lock_level_when_selected = yes
 	modifiers = {
 		global_unrest = -1
 	}
@@ -115,6 +115,12 @@ parliamentary_reform = {
 				has_reform = celestial_empire
 				religion = confucianism
 			}
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = kielak_anti_monopoly_exploit_mondifier
+			duration = 7300
 		}
 	}
 	post_removed_effect = {

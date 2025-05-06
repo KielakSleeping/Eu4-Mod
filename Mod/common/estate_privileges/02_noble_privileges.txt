@@ -734,6 +734,7 @@ estate_nobles_monopoly_of_metals = {
 	}
 	can_select = {
 		ai=no
+		NOT = { has_country_modifier = kielak_anti_monopoly_exploit_mondifier }
 		custom_trigger_tooltip = {
 			tooltip = unavailable_during_revolution_disaster
 			NOT = { has_disaster = revolution }
@@ -855,6 +856,7 @@ estate_nobles_monopoly_of_livestock = {
 	}
 	can_select = {
 		ai=no
+		NOT = { has_country_modifier = kielak_anti_monopoly_exploit_mondifier }
 		custom_trigger_tooltip = {
 			tooltip = unavailable_during_revolution_disaster
 			NOT = { has_disaster = revolution }
@@ -966,6 +968,7 @@ estate_nobles_monopoly_of_gems = {
 	}
 	can_select = {
 		ai=no
+		NOT = { has_country_modifier = kielak_anti_monopoly_exploit_mondifier }
 		custom_trigger_tooltip = {
 			tooltip = unavailable_during_revolution_disaster
 			NOT = { has_disaster = revolution }
