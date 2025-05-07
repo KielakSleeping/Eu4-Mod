@@ -852,9 +852,9 @@ cb_crusade = {
 			cb_on_religious_enemies = yes
 		}
 
-		FROM = {
-			ai = yes
-		}
+		# FROM = {
+		# 	ai = yes
+		# }
 	}
 
 	war_goal = superiority_crusade
