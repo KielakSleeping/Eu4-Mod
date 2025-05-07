@@ -96,15 +96,20 @@ combat_janissary_decadence = {
 	category = 1
 
 	allow = {
-		janissary_percentage = 0.1
+		janissary_percentage = 0.50
 	}
 
 	
 	modifier = {
-		discipline = 0.05
-		is_janissary_modifier = yes
+		#discipline = 0.05
+		#is_janissary_modifier = yes
 	}
-	
+	effect = {
+		add_country_modifier = {
+			name = kielak_ottomans_janissary_parliament_modifier
+			duration = 3650
+		}
+	}
 	chance = {
 		factor = 1
 		modifier = {

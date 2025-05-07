@@ -90,3 +90,8 @@ kielak_new_world_colony_trade_power = {
 kielak_anti_monopoly_exploit_mondifier = {
 	envoy_travel_time = -0.1
 }
+
+kielak_ottomans_janissary_parliament_modifier = {
+	discipline = 0.05
+	is_janissary_modifier = yes
+}
