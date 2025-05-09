@@ -115,8 +115,8 @@ technology = {
 	enable = gaelic_galloglaigh				
 	enable = aztec_tribal_warfare	
 	enable = zapotec_tribal_warfare		
-	enable = songhai_tribal_warfare		
-	enable = niger_kongolese_tribal_warfare		
+	#enable = songhai_tribal_warfare		
+	#enable = niger_kongolese_tribal_warfare		
 	enable = bantu_tribal_warfare	
 	enable = mali_tribal_warfare	
 	enable = pueblo_ambush	
@@ -205,7 +205,8 @@ technology = {
 	year = 1518
 	
 	#Ditch
-	
+	enable = songhai_tribal_warfare		
+	enable = niger_kongolese_tribal_warfare
 	enable = south_indian_musketeer	
 	enable = mughal_musketeer		
 	enable = ottoman_janissary	
