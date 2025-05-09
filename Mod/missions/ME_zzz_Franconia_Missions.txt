@@ -193,6 +193,10 @@ FKN_Gen_Missions_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			add_country_modifier = {
+				name = kielak_roth_early_buff
+				duration = 1825
+			}
 			custom_tooltip = FKN_40_general
 			hidden_effect = {
 				create_general = {
