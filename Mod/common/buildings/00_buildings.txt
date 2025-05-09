@@ -2472,12 +2472,12 @@ conscription_center = {
 	modifier = {
 		land_forcelimit = 1.5
 	}
-	# bonus_modifier = {
-	# 	land_forcelimit = 0.5
-	# }
-	# bonus_manufactory = { # Will apply an extra modifier if these goods
-	# 	grain
-	# }
+	bonus_modifier = {
+		land_forcelimit = 0.5
+	}
+	bonus_manufactory = { # Will apply an extra modifier if these goods
+		grain
+	}
 
 	on_built = {
 		bastard_dev_cost_add_from_buildings = yes
@@ -3364,20 +3364,34 @@ impressment_offices = {
 	cost = 400
 	time = 12
 
+	# build_trigger = {
+	# 	has_port = yes
+	# }
 	build_trigger = {
-		has_port = yes
+		area_for_scope_province = {
+				owner = {
+					tag = ROOT
+				}
+				type = all
+				has_manpower_building_trigger = yes
+				development = 30
+				is_prosperous = yes
+				base_manpower = 10
+			}
 	}
 
 	modifier = {
-		local_sailors = 750
-		ship_recruit_speed = -0.1
-		local_ship_cost = -0.05
+		local_manpower_modifier = 1
+		local_sailors_modifier = 2
+		# local_sailors = 750
+		# ship_recruit_speed = -0.1
+		# local_ship_cost = -0.05
 	}
-	bonus_modifier = {
-		local_sailors = 250
-		ship_recruit_speed = -0.1
-		local_ship_cost = -0.05
-	}
+	# bonus_modifier = {
+	# 	local_sailors = 250
+	# 	ship_recruit_speed = -0.1
+	# 	local_ship_cost = -0.05
+	# }
 	onmap = no
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
 	on_built = {
