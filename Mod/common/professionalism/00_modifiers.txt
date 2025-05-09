@@ -34,7 +34,7 @@ refill_garrison_modifier = {
 	}
 	
 	may_refill_garrison = yes
-	general_cost = -0.125
+	general_cost = -0.05
 	drill_gain_modifier = 0.25
 }
 
@@ -50,7 +50,7 @@ return_manpower_modifier = {
 	}
 
 	may_return_manpower_on_disband = yes
-	general_cost = -0.125
+	general_cost = -0.05
 	drill_gain_modifier = 0.25
 }
 
@@ -65,7 +65,7 @@ general_cost_modifier = {
 		always = yes
 	}
 
-	general_cost = -0.125
+	general_cost = -0.05
 	drill_gain_modifier = 0.25
 }
 
@@ -80,6 +80,6 @@ reserves_organisation_modifier = {
 		always = yes
 	}
 
-	general_cost = -0.125
+	general_cost = -0.05
 	drill_gain_modifier = 0.25
 }
