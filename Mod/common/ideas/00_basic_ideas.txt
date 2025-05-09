@@ -826,7 +826,7 @@ defensive_ideas = {
 	category = MIL
 
 	bonus = {
-		military_tactics = 0.13
+		military_tactics = 0.15
 		#core_decay_on_your_own = -0.5
 	}
 
@@ -842,7 +842,7 @@ defensive_ideas = {
 		garrison_size = 0.25
 	}
 	regimental_system = {
-		fire_damage_received = -0.075
+		fire_damage_received = -0.1
 	}
 	defensive_mentality = {
 		max_hostile_attrition = 1
@@ -853,7 +853,7 @@ defensive_ideas = {
 		garrison_damage = 0.2
 	}
 	improved_foraging = {
-		war_exhaustion = -0.08
+		war_exhaustion = -0.1
 		#enemy_core_creation = 0.15
 	}
 	
