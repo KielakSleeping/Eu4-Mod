@@ -942,7 +942,7 @@ regimental_camp = {
 	cost = 150
 	time = 12
 	modifier = {
-		land_forcelimit = 0.5
+		land_forcelimit = 0.75
 	}
 	bonus_modifier = {
 		land_forcelimit = 0.25
@@ -2470,7 +2470,7 @@ conscription_center = {
 #	}
 
 	modifier = {
-		land_forcelimit = 1
+		land_forcelimit = 1.5
 	}
 	# bonus_modifier = {
 	# 	land_forcelimit = 0.5
