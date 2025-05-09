@@ -83,31 +83,46 @@ country_decisions = {
 			}
 		}
 		effect = {
+			# if = {
+			# 	limit = {
+			# 		is_part_of_hre = yes
+			# 		is_elector = no
+			# 		is_emperor = no
+			# 	}
+			# 	emperor = {
+			# 		add_opinion = {
+			# 			who = root
+			# 			modifier = opinion_left_empire
+			# 		}
+			# 	}
+			# 	set_in_empire = no
+			# 	emperor = {
+			# 		country_event = { id = hre_event.5 }
+			# 	}
+			# }
+			# if = {
+			# 	limit = {
+			# 		NOT = { government_rank = 2 }
+			# 	}
+			# 	hidden_effect = {
+			# 		set_in_empire = no
+			# 	}
+			# 	set_government_rank = 2
+			# }
 			if = {
 				limit = {
 					is_part_of_hre = yes
-					is_elector = no
-					is_emperor = no
+					is_elector = yes
 				}
-				emperor = {
-					add_opinion = {
-						who = root
-						modifier = opinion_left_empire
-					}
-				}
+				elector = no
 				set_in_empire = no
-				emperor = {
-					country_event = { id = hre_event.5 }
+				every_subject_country = {
+					if = {
+						limit = { is_part_of_hre = yes  }
+						set_in_empire = no
+					}
+					
 				}
-			}
-			if = {
-				limit = {
-					NOT = { government_rank = 2 }
-				}
-				hidden_effect = {
-					set_in_empire = no
-				}
-				set_government_rank = 2
 			}
 			change_tag = ITA
 			on_change_tag_effect = yes

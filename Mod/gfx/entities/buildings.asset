@@ -301,7 +301,10 @@ entity = {
 	default_state = "idle"
 	state = { name = "idle" 		animation = "idle" }	
 }
-
+entity = {
+	name = "westerngfx_manufactory_soldier_households"
+	pdxmesh = "westerngfx_manufactory_soldier_households"
+}
 entity = {
 	name = "westerngfx_fort_15th"
 	pdxmesh = "westerngfx_fort_15th"
