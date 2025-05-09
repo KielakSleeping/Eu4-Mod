@@ -3463,12 +3463,18 @@ state_house = {
 	}
 
 	modifier = {
-		local_tax_modifier = 1
+		local_centralize_state_cost = -0.33
 	}
 	
 	onmap = no
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
 	on_built = {
+		area = {
+			add_province_modifier = {
+				name = kielak_state_house
+				duration = -1
+			}
+		}
 		bastard_dev_cost_add_from_buildings = yes
 		add_development_from_building = {
 			building = state_house
@@ -3477,6 +3483,9 @@ state_house = {
 		}
 	}
 	on_destroyed = {
+		area = {
+			remove_province_modifier = kielak_state_house
+		}
 		bastard_dev_cost_remove_from_buildings = yes
 		remove_development_from_building = {
 			building = state_house
