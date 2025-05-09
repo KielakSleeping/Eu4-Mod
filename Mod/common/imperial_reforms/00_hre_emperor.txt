@@ -232,6 +232,7 @@ emperor_reichstag_collegia = {
 	emperor = {
 		production_efficiency = 0.1
 		trade_efficiency = 0.05
+		global_manpower = 5
 	}
 	
 	# province = {
@@ -259,7 +260,9 @@ emperor_expand_gemeiner_pfennig = {
 	elector_per_prince = {
 		global_tax_income = 1.25
 	}
-
+	emperor = {
+		land_forcelimit = 5
+	}
 	# emperor_per_prince = {
 	# 	global_manpower = 0.7
 	# }
@@ -313,6 +316,8 @@ emperor_geteilte_macht = {
 	#}
 	emperor = {
 		advisor_cost = -0.1
+		global_manpower = 5
+		land_forcelimit = 5
 	}
 	all = {
 		technology_cost = -0.05
@@ -361,7 +366,8 @@ emperor_hofgericht = {
 		has_dlc = "Emperor"
 	}
 	member = {
-		global_manpower = 12.5
+		global_manpower = 10
+		global_manpower = 5
 	}
 	emperor = {
 		#build_cost = -0.1
@@ -392,6 +398,7 @@ emperor_imperial_estates = {
 		#all_power_cost = -0.05
 		yearly_army_professionalism = 0.0015
 		siege_ability = 0.1
+		land_forcelimit = 5
 	}
 }
 
@@ -445,6 +452,8 @@ emperor_privilegia_de_non_appelando = {
 		vassal_forcelimit_bonus = 0.15
 		vassal_naval_forcelimit_bonus = 0.15
 		vassal_sailors_bonus = 0.3
+		global_manpower = 5
+		land_forcelimit = 5
 	}
 	# member = {
 	# 	stability_cost_modifier = -0.10
