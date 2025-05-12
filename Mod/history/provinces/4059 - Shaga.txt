@@ -1,6 +1,6 @@
 #4059 - Shaga
 
-culture = masaba
+culture = bena
 religion = shamanism #Fetishism
 trade_goods = unknown
 hre = no

@@ -1,6 +1,6 @@
 #4054 - Kikuyu
 
-culture = masaba
+culture = bena
 religion = shamanism #Fetishism
 trade_goods = unknown
 hre = no
