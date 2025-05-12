@@ -12652,9 +12652,9 @@ ven_plague_doctors_modifier = {
 }
 
 ven_defensive_stance_modifier = {
-	local_defensiveness = 0.2
-	local_development_cost = -0.1
-	local_manpower_modifier = 0.25
+	local_defensiveness = 0.15
+	local_development_cost = -0.05
+	local_manpower_modifier = 0.20
 }
 
 ven_iron_wall_of_italy_modifier = {

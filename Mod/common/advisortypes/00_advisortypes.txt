@@ -1759,7 +1759,7 @@ army_reformer = {
 			}
 		}
 		modifier = {
-			siege_ability = 0.01
+			siege_ability = 0.02
 		}
 	}
 
