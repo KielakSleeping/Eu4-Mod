@@ -16909,9 +16909,7 @@ walls_benin = {
 	type = monument
 
 	build_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = pagan
-		}
+		has_owner_religion = yes
 	}
 
 	on_built = {
@@ -16921,15 +16919,11 @@ walls_benin = {
 	}
 
 	can_use_modifiers_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = pagan
-		}
+		has_owner_religion = yes
 	}
 
 	can_upgrade_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = pagan
-		}
+		has_owner_religion = yes
 	}
 
 	keep_trigger = {
