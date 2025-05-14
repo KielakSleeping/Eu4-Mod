@@ -76,7 +76,7 @@ tolerant_state = {
        }
 
        advisor_cost = -0.10 
-       stability_cost_modifier = -0.20
+       stability_cost_modifier = -0.1
 	global_autonomy = -0.15 
 
        ai_will_do = { 

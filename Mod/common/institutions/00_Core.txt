@@ -896,7 +896,7 @@ printing_press = {
 	
 
 	bonus = {
-		stability_cost_modifier = -0.10
+		stability_cost_modifier = -0.05
 		all_estate_loyalty_equilibrium = 0.1
 	}
 

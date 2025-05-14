@@ -103,7 +103,7 @@ merciful_tyrant = {
       	global_unrest = -3
        years_of_nationalism = -15 
        #religious_unity = 0.25
-       	stability_cost_modifier = -0.25
+       	stability_cost_modifier = -0.1
         free_adm_policy = 1
         diplomatic_upkeep = 1
 

@@ -84,7 +84,7 @@ religious_ideas = {
 		
 	}
 	devoutness = {
-		stability_cost_modifier = -0.2
+		stability_cost_modifier = -0.1
 		tolerance_own = 2
 	}
 	inquisition = {
@@ -267,7 +267,7 @@ administrative_ideas = {
     	possible_adm_policy = 1
 	}
 	stable_government = {
-		stability_cost_modifier = -0.2
+		stability_cost_modifier = -0.1
     	legitimacy = 1
 		republican_tradition = 0.3
     	devotion = 1
