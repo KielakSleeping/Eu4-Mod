@@ -423,7 +423,8 @@ government_investment = {
 }
 
 reduced_stability_cost = {
-	stability_cost_modifier = -0.2
+	#stability_cost_modifier = -0.2
+	monthly_splendor = 4
 }
 
 gresham_college_royal_society = {	#Permanent
