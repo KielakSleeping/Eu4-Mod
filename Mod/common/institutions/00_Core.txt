@@ -1340,15 +1340,16 @@ global_trade = {
 		is_institution_enabled = printing_press
 		is_island = no
 		highest_value_trade_node = yes
-		OR = {
-			province_has_center_of_trade_of_level = 3
-			province_has_center_of_trade_of_level = 2
-			is_capital = yes
-			AND = {
-				is_year = 1630 #fallback
-				province_has_center_of_trade_of_level = 1
-			}
-		}
+		is_capital = yes
+		# OR = {
+		# 	province_has_center_of_trade_of_level = 3
+		# 	province_has_center_of_trade_of_level = 2
+		# 	is_capital = yes
+		# 	AND = {
+		# 		is_year = 1630 #fallback
+		# 		province_has_center_of_trade_of_level = 1
+		# 	}
+		# }
 		owner = {
 			any_active_trade_node = {
 				is_strongest_trade_power = PREV
