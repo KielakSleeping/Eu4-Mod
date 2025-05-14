@@ -1751,3 +1751,11 @@ dummy =
 {
 	copy_from = default
 }
+
+kielak_special_vassal = {
+	copy_from = vassal
+	count = vassal
+
+	annex_cost_per_development = 4
+
+}
