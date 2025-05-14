@@ -946,7 +946,7 @@ empower_buddhist_temples_reform = {
 		church_influence_modifier = 0.1
 		church_loyalty_modifier = 0.1
 		yearly_karma_decay = 0.05
-		stability_cost_modifier = -0.15
+		stability_cost_modifier = -0.10
 	}
 	conditional = {
 		allow = { has_dlc = "Common Sense" }
@@ -1033,7 +1033,7 @@ abolished_caste_system_reform = {
 	}
 	modifiers = {
 		all_estate_influence_modifier = -0.15
-		stability_cost_modifier = -0.2
+		stability_cost_modifier = -0.10
 	}
 	custom_attributes = {
 		seizing_land_no_rebels = yes
@@ -4084,7 +4084,7 @@ royal_charters_reform = {
 	modifiers = {
 		yearly_corruption = -0.1
 		global_unrest = -1 
-		stability_cost_modifier = -0.15
+		stability_cost_modifier = -0.10
 	}
 	conditional = {
 		allow = {
