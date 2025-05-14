@@ -3431,8 +3431,8 @@ ITA_non_conquest_5 = {
 					num_of_times_improved = 10
 				}
 			}
-			is_ahead_of_time_in_technology = { tech = adm }
-			is_ahead_of_time_in_technology = { tech = dip }
+			#is_ahead_of_time_in_technology = { tech = adm }
+			#is_ahead_of_time_in_technology = { tech = dip }
 			is_ahead_of_time_in_technology = { tech = mil }
 		}
 		effect = {
