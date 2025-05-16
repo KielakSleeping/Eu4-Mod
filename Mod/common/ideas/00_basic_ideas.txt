@@ -299,7 +299,7 @@ infrastructure_ideas = {
 
 	state_efficiency = {
 		global_prosperity_growth = 0.5
-    	global_monthly_devastation = -0.5
+    	global_monthly_devastation = -0.1
 	}
 	organised_construction = {
 		build_cost = -0.15
