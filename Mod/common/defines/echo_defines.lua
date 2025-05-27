@@ -33,7 +33,6 @@ NDefines.NDiplomacy.PEACE_COST_DEMAND_PROVINCE = 1					-- Demand a province (sca
 NDefines.NDiplomacy.PEACE_COST_CONCEDE_PROVINCE = 1000				-- Demand colonial area province concession.
 NDefines.NDiplomacy.PEACE_COST_ANNUL = 5
 NDefines.NDiplomacy.REFUSED_CALL_FROM_TRIBUTARY_MANDATE_LOSS = 0
-NDefines.NDiplomacy.TRIBUTE_BASE_MANPOWER = 0 -- cant demand MP from tributaries
 NDefines.NDiplomacy.CELESTIAL_EMPIRE_MANDATE_PER_5_LOANS = -0.36
 NDefines.NDiplomacy.CELESTIAL_EMPIRE_REFORM_MIN_VALUE = 70
 NDefines.NDiplomacy.CHANGE_COLONIAL_TYPE_COST = 0
