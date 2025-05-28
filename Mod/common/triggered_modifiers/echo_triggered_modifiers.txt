@@ -62,13 +62,13 @@ Minor = {
 			ROOT = {
 				ai = no
 			}	
-			NOT = { is_emperor = yes }
+			#NOT = { is_emperor = yes }
 			current_age = age_of_discovery
 	}
 	
 	trigger = {
 		NOT = {total_own_and_non_tributary_subject_development = 400 }	
-		NOT = { is_emperor = yes }
+		#NOT = { is_emperor = yes }
 		NOT = { is_colonial_nation = yes }	
 	}
 	advisor_cost = -0.25

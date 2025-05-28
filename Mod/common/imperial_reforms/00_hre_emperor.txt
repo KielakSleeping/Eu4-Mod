@@ -367,13 +367,14 @@ emperor_hofgericht = {
 	}
 	member = {
 		global_manpower = 10
-		global_manpower = 5
+		
 	}
 	emperor = {
 		#build_cost = -0.1
 		infantry_power = 0.025
 		cavalry_power = 0.025
 		artillery_power = 0.025
+		global_manpower = 5
 	}
 	disabled_by = emperor_reichstag_collegia
 	gui_container = right_branch
