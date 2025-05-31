@@ -541,15 +541,19 @@ chinese_warlord = {
 	potential = {
 		OR = {
 			tag = WUU
-			tag = CXI
+			#tag = CXI
 			tag = YUE
+			tag = CSH
+			tag = QIC
 		}
 	}
 	trigger = {
 		OR = {
 			tag = WUU
-			tag = CXI
+			#tag = CXI
 			tag = YUE
+			tag = CSH
+			tag = QIC
 		}
 	}
 	maintain_dynasty = yes
@@ -586,21 +590,24 @@ chinese_warlord = {
 			}
 		}
 	}
-	fixed_rank = 2
+	#fixed_rank = 2
 
 	modifiers = {
-		advisor_cost = -0.1
-		governing_capacity = 500
-		liberty_desire = 50
+		#advisor_cost = -0.1
+		governing_capacity = 200
+		#liberty_desire = 50
+		#province_warscore_cost = 0.2
+		core_creation = -0.1
 	}
 	
 	ai = {
 		factor = 1000
 	}
 
-	custom_attributes = {
-		has_unify_china_cb = yes
-	}
+	# custom_attributes = {
+	# 	has_unify_china_cb = yes
+	# }
+	
 }
 
 kalmar_union = {
