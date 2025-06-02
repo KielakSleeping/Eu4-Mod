@@ -3,7 +3,7 @@ add_government_reform = chinese_warlord
 technology_group = chinese
 religion = confucianism
 primary_culture = xibei
-capital = 689 # Fengyuan
+capital = 2180 # Fengyuan
 
 
 
@@ -23,6 +23,7 @@ capital = 689 # Fengyuan
 1420.1.1 = {
 	clear_scripted_personalities = yes
 	add_ruler_personality = bold_fighter_personality
+	add_ruler_personality = well_connected_personality
 }
 
 

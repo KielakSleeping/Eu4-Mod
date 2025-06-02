@@ -1797,6 +1797,7 @@ high_harmony = {
 	devotion = 1
 	harmonization_speed = 1
 	yearly_corruption = -0.5
+	global_manpower_modifier = 0.2
 }
 
 low_harmony = {

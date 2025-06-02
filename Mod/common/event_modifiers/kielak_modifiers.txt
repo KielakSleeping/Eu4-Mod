@@ -110,3 +110,6 @@ kielak_milan_tuscany_buff = {
 	morale_damage_received = -0.1
 }
 
+yue_reward_1 = {
+	trade_goods_size = 3
+}

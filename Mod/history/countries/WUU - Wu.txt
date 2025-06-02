@@ -22,5 +22,5 @@ capital = 684	#Hangzhou
 1420.1.1 = {
 	clear_scripted_personalities = yes
 	add_ruler_personality = merchant_basileus_personality
-	add_ruler_personality = embezzler_personality
+	add_ruler_personality = greedy_personality
 }
