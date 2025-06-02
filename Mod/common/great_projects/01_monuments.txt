@@ -12163,7 +12163,7 @@ duomo_milano = {
 			factor = 750
 		}
 		province_modifiers = {
-			#local_tax_modifier = 0.5
+			local_tax_modifier = 0.5
 		}
 		area_modifier = {
 			#local_religious_conversion_resistance = 0.66
@@ -12187,7 +12187,7 @@ duomo_milano = {
 			factor = 1500
 		}
 		province_modifiers = {
-			#local_tax_modifier = 0.75
+			local_tax_modifier = 0.75
 		}
 		area_modifier = {
 			#local_religious_conversion_resistance = 1

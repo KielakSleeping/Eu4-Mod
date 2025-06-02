@@ -132,3 +132,57 @@ country_event = { #Ethiopia form Israel instead of Aksum if Jewish
 	}
 
 }
+
+country_event = { #China Slots choose harmonized religion
+	id = kielak_events.4
+	title = kielak_events.4.t
+	picture = RELIGION_eventPicture
+	desc = kielak_events.4.d
+
+	is_triggered_only = yes
+	
+	option = {
+		name = kielak_events.4.a
+		add_harmonized_religion = shinto
+	}
+	option = {
+		name = kielak_events.4.b
+		add_harmonized_religion = animism
+	}
+	option = {
+		name = kielak_events.4.c
+		add_harmonized_religion = sunni
+	}
+	option = {
+		name = kielak_events.4.dd
+		add_harmonized_religion = hinduism
+	}
+
+	option = {
+		name = kielak_events.4.e
+		add_harmonized_religion = catholic
+	}
+	option = {
+		name = kielak_events.4.f
+		add_harmonized_religion = mahayana
+	}
+	option = {
+		name = kielak_events.4.g
+		add_harmonized_religion = buddhism
+	}
+	option = {
+		name = kielak_events.4.h
+		add_harmonized_religion = vajrayana
+	}
+	option = {
+		name = kielak_events.4.i
+		add_harmonized_religion = zoroastrian
+	}
+
+	option = {
+		name = kielak_events.4.j
+		add_harmonized_religion = jewish
+	}
+
+
+}

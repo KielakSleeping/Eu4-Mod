@@ -1,7 +1,7 @@
 ########################################
 # Flavor Events for Vijayanagar
 #
-# written by Sara Wendel-Örtqvist
+# written by Sara Wendel-ï¿½rtqvist
 ########################################
 
 namespace = flavor_vij
@@ -396,374 +396,374 @@ country_event = {
 ########################################
 
 #The Tamil Trade Guilds
-country_event = {
-	id = flavor_vij.11
-	title = "flavor_vij.11.t"
-	desc = "flavor_vij.11.d"
-	picture = ECONOMY_eventPicture
+# country_event = {
+# 	id = flavor_vij.11
+# 	title = "flavor_vij.11.t"
+# 	desc = "flavor_vij.11.d"
+# 	picture = ECONOMY_eventPicture
 	
-	fire_only_once = yes
+# 	fire_only_once = yes
 	
-	trigger = {
-		always = no
-		NOT = { is_year = 1500 }
-		tag = VIJ
-		num_of_cities = 2
-		any_owned_province = {
-			culture = tamil
-		}
-	}
+# 	trigger = {
+# 		always = no
+# 		NOT = { is_year = 1500 }
+# 		tag = VIJ
+# 		num_of_cities = 2
+# 		any_owned_province = {
+# 			culture = tamil
+# 		}
+# 	}
 	
-	mean_time_to_happen = {
-		months = 60
-	}
+# 	mean_time_to_happen = {
+# 		months = 60
+# 	}
 	
-	option = {
-		name = "flavor_vij.11.a" #We can allow them greater autonomy.
-		ai_chance = {
-			factor = 1
-		}
-		every_owned_province = {
-			limit = {
-				culture = tamil
-	 		}
-			add_province_modifier = {
-				name = "tamil_traders_content"
-				duration = 3650
-			}
-			add_local_autonomy = 40
-		}
-		set_country_flag = had_tamil_trade_event
-	}
-	option = {
-		name = "flavor_vij.11.b" #We need to keep these shopkeepers on a tight leash
-		ai_chance = {
-			factor = 0
-		}
-		add_stability = -1
-		every_owned_province = {
-			limit = {
-				culture = tamil
-	 		}
-			add_province_modifier = {
-				name = "tamil_traders_angered"
-				duration = 3650
-			}
-		}
-		set_country_flag = had_tamil_trade_event
-	}
-}
+# 	option = {
+# 		name = "flavor_vij.11.a" #We can allow them greater autonomy.
+# 		ai_chance = {
+# 			factor = 1
+# 		}
+# 		every_owned_province = {
+# 			limit = {
+# 				culture = tamil
+# 	 		}
+# 			add_province_modifier = {
+# 				name = "tamil_traders_content"
+# 				duration = 3650
+# 			}
+# 			add_local_autonomy = 40
+# 		}
+# 		set_country_flag = had_tamil_trade_event
+# 	}
+# 	option = {
+# 		name = "flavor_vij.11.b" #We need to keep these shopkeepers on a tight leash
+# 		ai_chance = {
+# 			factor = 0
+# 		}
+# 		add_stability = -1
+# 		every_owned_province = {
+# 			limit = {
+# 				culture = tamil
+# 	 		}
+# 			add_province_modifier = {
+# 				name = "tamil_traders_angered"
+# 				duration = 3650
+# 			}
+# 		}
+# 		set_country_flag = had_tamil_trade_event
+# 	}
+# }
 
-#Vaduga
-country_event = {
-	id = flavor_vij.12
-	title = "flavor_vij.12.t"
-	desc = "flavor_vij.12.d"
-	picture = COLONIZATION_eventPicture
+# #Vaduga
+# country_event = {
+# 	id = flavor_vij.12
+# 	title = "flavor_vij.12.t"
+# 	desc = "flavor_vij.12.d"
+# 	picture = COLONIZATION_eventPicture
 	
-	fire_only_once = yes
+# 	fire_only_once = yes
 	
-	trigger = {
-		always = no
-		NOT = { is_year = 1500 }
-		tag = VIJ
-		num_of_cities = 2
-		any_owned_province = {
-			culture = tamil
-		}
-	}
+# 	trigger = {
+# 		always = no
+# 		NOT = { is_year = 1500 }
+# 		tag = VIJ
+# 		num_of_cities = 2
+# 		any_owned_province = {
+# 			culture = tamil
+# 		}
+# 	}
 	
-	mean_time_to_happen = {
-		months = 168
-	}
+# 	mean_time_to_happen = {
+# 		months = 168
+# 	}
 	
-	option = {
-		name = "flavor_vij.12.a" #Ignore the Tamil protests.
-		every_owned_province = {
-			limit = {
-				culture = tamil
-				has_port = no #Only the highlands
-	 		}
-			add_province_modifier = {
-				name = "vadugan_settlement"
-				duration = 3650
-			}
-		}
-		set_country_flag = had_vaduga_event
-	}
-	option = {
-		name = "flavor_vij.12.b" #Help them defend their homes.
-		every_owned_province = {
-			limit = {
-				culture = tamil
-				has_port = no #Only the highlands
-	 		}
-			add_local_autonomy = 25
-			add_province_modifier = {
-				name = "rural_tamil_autonomy"
-				duration = 3650
-			}
-		}
-		set_country_flag = had_vaduga_event
-	}
-}
+# 	option = {
+# 		name = "flavor_vij.12.a" #Ignore the Tamil protests.
+# 		every_owned_province = {
+# 			limit = {
+# 				culture = tamil
+# 				has_port = no #Only the highlands
+# 	 		}
+# 			add_province_modifier = {
+# 				name = "vadugan_settlement"
+# 				duration = 3650
+# 			}
+# 		}
+# 		set_country_flag = had_vaduga_event
+# 	}
+# 	option = {
+# 		name = "flavor_vij.12.b" #Help them defend their homes.
+# 		every_owned_province = {
+# 			limit = {
+# 				culture = tamil
+# 				has_port = no #Only the highlands
+# 	 		}
+# 			add_local_autonomy = 25
+# 			add_province_modifier = {
+# 				name = "rural_tamil_autonomy"
+# 				duration = 3650
+# 			}
+# 		}
+# 		set_country_flag = had_vaduga_event
+# 	}
+# }
 
-#Rise of Tamil Grandee (Chellappa Saluva Narasimha Nayaka)
-country_event = {
-	id = flavor_vij.13
-	title = "flavor_vij.13.t"
-	desc = "flavor_vij.13.d"
-	picture = ADVISOR_eventPicture
+# #Rise of Tamil Grandee (Chellappa Saluva Narasimha Nayaka)
+# country_event = {
+# 	id = flavor_vij.13
+# 	title = "flavor_vij.13.t"
+# 	desc = "flavor_vij.13.d"
+# 	picture = ADVISOR_eventPicture
 	
-	fire_only_once = yes
+# 	fire_only_once = yes
 	
-	trigger = {
-		always = no
-		NOT = { is_year = 1550 }
-		tag = VIJ
-		num_of_cities = 2
-		any_owned_province = {
-			culture = tamil
-			local_autonomy = 50
-		}
-	}
+# 	trigger = {
+# 		always = no
+# 		NOT = { is_year = 1550 }
+# 		tag = VIJ
+# 		num_of_cities = 2
+# 		any_owned_province = {
+# 			culture = tamil
+# 			local_autonomy = 50
+# 		}
+# 	}
 	
-	mean_time_to_happen = {
-		months = 50
-	}
+# 	mean_time_to_happen = {
+# 		months = 50
+# 	}
 	
-	option = {
-		name = "flavor_vij.13.a" #Keep your friends close and your enemies closer
-		ai_chance = {
-			factor = 50
-		}
-		define_general = {
-			name = "Chellappa Saluva"
-			shock = 4
-			fire = 3
-			manuever = 4
-		}
-		set_country_flag = chellappas_ambition
-	}
-	option = {
-		name = "flavor_vij.13.b" #Try to limit his influence to his Tamil power base.
-		ai_chance = {
-			factor = 50
-		}
-		random_owned_province = {
-			limit = {
-				culture = tamil
-	 		}
-			add_province_modifier = {
-				name = "tamil_grandee"
-				duration = -1
-			}
-			add_local_autonomy = 25
-		}
-		every_owned_province = {
-			limit = {
-				culture = tamil
-			}
-			add_local_autonomy = 15	#This benefits other Tamil chiefs and powerholders too.
-		}
-		set_country_flag = chellappa_local
-	}
-	option = {
-		name = "flavor_vij.13.c" #Strike now to crush him before he grows too strong.
-		ai_chance = {
-			factor = 0
-		}
-		add_stability = -1
-		random_owned_province = {
-			limit = {
-				culture = tamil
-			}
-			spawn_rebels = {
-				type = nationalist_rebels
-				size = 2
-				leader = "Chellappa"
-				leader_dynasty = "Saluva"
-			}
-		}
-		random_owned_province = {
-			limit = {
-				culture = tamil
-	 		}
-			spawn_rebels = {
-				type = nationalist_rebels
-				size = 1
-			}
-		}
-		set_country_flag = chellappa_mission_flag
-	}
-}
+# 	option = {
+# 		name = "flavor_vij.13.a" #Keep your friends close and your enemies closer
+# 		ai_chance = {
+# 			factor = 50
+# 		}
+# 		define_general = {
+# 			name = "Chellappa Saluva"
+# 			shock = 4
+# 			fire = 3
+# 			manuever = 4
+# 		}
+# 		set_country_flag = chellappas_ambition
+# 	}
+# 	option = {
+# 		name = "flavor_vij.13.b" #Try to limit his influence to his Tamil power base.
+# 		ai_chance = {
+# 			factor = 50
+# 		}
+# 		random_owned_province = {
+# 			limit = {
+# 				culture = tamil
+# 	 		}
+# 			add_province_modifier = {
+# 				name = "tamil_grandee"
+# 				duration = -1
+# 			}
+# 			add_local_autonomy = 25
+# 		}
+# 		every_owned_province = {
+# 			limit = {
+# 				culture = tamil
+# 			}
+# 			add_local_autonomy = 15	#This benefits other Tamil chiefs and powerholders too.
+# 		}
+# 		set_country_flag = chellappa_local
+# 	}
+# 	option = {
+# 		name = "flavor_vij.13.c" #Strike now to crush him before he grows too strong.
+# 		ai_chance = {
+# 			factor = 0
+# 		}
+# 		add_stability = -1
+# 		random_owned_province = {
+# 			limit = {
+# 				culture = tamil
+# 			}
+# 			spawn_rebels = {
+# 				type = nationalist_rebels
+# 				size = 2
+# 				leader = "Chellappa"
+# 				leader_dynasty = "Saluva"
+# 			}
+# 		}
+# 		random_owned_province = {
+# 			limit = {
+# 				culture = tamil
+# 	 		}
+# 			spawn_rebels = {
+# 				type = nationalist_rebels
+# 				size = 1
+# 			}
+# 		}
+# 		set_country_flag = chellappa_mission_flag
+# 	}
+# }
 
-#Revolt of Chellappa (pretender)
-country_event = {
-	id = flavor_vij.14
-	title = "flavor_vij.14.t"
-	desc = "flavor_vij.14.d"
-	picture = CIVIL_WAR_eventPicture
+# #Revolt of Chellappa (pretender)
+# country_event = {
+# 	id = flavor_vij.14
+# 	title = "flavor_vij.14.t"
+# 	desc = "flavor_vij.14.d"
+# 	picture = CIVIL_WAR_eventPicture
 	
-	fire_only_once = yes
+# 	fire_only_once = yes
 	
-	trigger = {
-		tag = VIJ
-		had_country_flag = { flag = chellappas_ambition days = 1825 }
-		has_leader = "Chellappa Saluva"
-		any_owned_province = {
-			culture = tamil
-		}
-	}
+# 	trigger = {
+# 		tag = VIJ
+# 		had_country_flag = { flag = chellappas_ambition days = 1825 }
+# 		has_leader = "Chellappa Saluva"
+# 		any_owned_province = {
+# 			culture = tamil
+# 		}
+# 	}
 	
-	mean_time_to_happen = {
-		months = 24
-	}
+# 	mean_time_to_happen = {
+# 		months = 24
+# 	}
 	
-	option = {
-		name = "flavor_vij.14.a" #Ok
-		if = {
-			limit = {
-				any_owned_province = {
-					culture = tamil
-					highest_supply_limit_in_area = yes
-				}
-			}
-			random_owned_province = {
-				limit = {
-					culture = tamil
-					highest_supply_limit_in_area = yes
-				}
-				spawn_rebels = {
-					type = pretender_rebels
-					size = 3
-					leader = "Narasimha"
-					leader_dynasty = "Saluva"
-				}
-			}
-		}
-		else = {
-			random_owned_province = {
-				limit = {
-					culture = tamil
-				}
-				spawn_rebels = {
-					type = pretender_rebels
-					size = 3
-					leader = "Narasimha"
-					leader_dynasty = "Saluva"
-				}
-			}
-		}
-		kill_leader = {
-			type = "Chellappa Saluva"
-		}
-		add_stability = -1
-		clr_country_flag = chellappas_ambition
-		set_country_flag = chellappa_mission_flag
-	}
-}
+# 	option = {
+# 		name = "flavor_vij.14.a" #Ok
+# 		if = {
+# 			limit = {
+# 				any_owned_province = {
+# 					culture = tamil
+# 					highest_supply_limit_in_area = yes
+# 				}
+# 			}
+# 			random_owned_province = {
+# 				limit = {
+# 					culture = tamil
+# 					highest_supply_limit_in_area = yes
+# 				}
+# 				spawn_rebels = {
+# 					type = pretender_rebels
+# 					size = 3
+# 					leader = "Narasimha"
+# 					leader_dynasty = "Saluva"
+# 				}
+# 			}
+# 		}
+# 		else = {
+# 			random_owned_province = {
+# 				limit = {
+# 					culture = tamil
+# 				}
+# 				spawn_rebels = {
+# 					type = pretender_rebels
+# 					size = 3
+# 					leader = "Narasimha"
+# 					leader_dynasty = "Saluva"
+# 				}
+# 			}
+# 		}
+# 		kill_leader = {
+# 			type = "Chellappa Saluva"
+# 		}
+# 		add_stability = -1
+# 		clr_country_flag = chellappas_ambition
+# 		set_country_flag = chellappa_mission_flag
+# 	}
+# }
 
-#Revolt of Chellappa (nationalist)
-country_event = {
-	id = flavor_vij.15
-	title = "flavor_vij.15.t"
-	desc = "flavor_vij.15.d"
-	picture = CIVIL_WAR_eventPicture
+# #Revolt of Chellappa (nationalist)
+# country_event = {
+# 	id = flavor_vij.15
+# 	title = "flavor_vij.15.t"
+# 	desc = "flavor_vij.15.d"
+# 	picture = CIVIL_WAR_eventPicture
 	
-	fire_only_once = yes
+# 	fire_only_once = yes
 	
-	trigger = {
-		tag = VIJ
-		had_country_flag = { flag = chellappa_local days = 1095 }
-		any_owned_province = {
-			has_province_modifier = tamil_grandee
-			local_autonomy = 50
-		}
-	}
+# 	trigger = {
+# 		tag = VIJ
+# 		had_country_flag = { flag = chellappa_local days = 1095 }
+# 		any_owned_province = {
+# 			has_province_modifier = tamil_grandee
+# 			local_autonomy = 50
+# 		}
+# 	}
 	
-	mean_time_to_happen = {
-		months = 24
-	}
+# 	mean_time_to_happen = {
+# 		months = 24
+# 	}
 	
-	option = {
-		name = "flavor_vij.15.a" #Ok
-		random_owned_province = {
-			limit = {
-				culture = tamil
-				NOT = { has_province_modifier = tamil_grandee }
-	 		}
-			spawn_rebels = {
-				type = nationalist_rebels
-				size = 1
-			}
-		}
-		random_owned_province = {
-			limit = {
-				culture = tamil
-				NOT = { has_province_modifier = tamil_grandee }
-	 		}
-			spawn_rebels = {
-				type = nationalist_rebels
-				size = 1
-			}
-		}
-		random_owned_province = {
-			limit = {
-				has_province_modifier = tamil_grandee
-			}
-			remove_province_modifier = tamil_grandee
-			spawn_rebels = {
-				type = nationalist_rebels
-				size = 3
-				leader = "Chellappa"
-				leader_dynasty = "Saluva"
-			}
-		}
-		add_stability = -1
-		clr_country_flag = chellappa_local
-		set_country_flag = chellappa_mission_flag
-	}
-}
+# 	option = {
+# 		name = "flavor_vij.15.a" #Ok
+# 		random_owned_province = {
+# 			limit = {
+# 				culture = tamil
+# 				NOT = { has_province_modifier = tamil_grandee }
+# 	 		}
+# 			spawn_rebels = {
+# 				type = nationalist_rebels
+# 				size = 1
+# 			}
+# 		}
+# 		random_owned_province = {
+# 			limit = {
+# 				culture = tamil
+# 				NOT = { has_province_modifier = tamil_grandee }
+# 	 		}
+# 			spawn_rebels = {
+# 				type = nationalist_rebels
+# 				size = 1
+# 			}
+# 		}
+# 		random_owned_province = {
+# 			limit = {
+# 				has_province_modifier = tamil_grandee
+# 			}
+# 			remove_province_modifier = tamil_grandee
+# 			spawn_rebels = {
+# 				type = nationalist_rebels
+# 				size = 3
+# 				leader = "Chellappa"
+# 				leader_dynasty = "Saluva"
+# 			}
+# 		}
+# 		add_stability = -1
+# 		clr_country_flag = chellappa_local
+# 		set_country_flag = chellappa_mission_flag
+# 	}
+# }
 
-#Chellappa Marginalized
-country_event = {
-	id = flavor_vij.16
-	title = "flavor_vij.16.t"
-	desc = "flavor_vij.16.d"
-	picture = ADVISOR_eventPicture
+# #Chellappa Marginalized
+# country_event = {
+# 	id = flavor_vij.16
+# 	title = "flavor_vij.16.t"
+# 	desc = "flavor_vij.16.d"
+# 	picture = ADVISOR_eventPicture
 	
-	fire_only_once = yes
+# 	fire_only_once = yes
 	
-	trigger = {
-		tag = VIJ
-		has_country_flag = chellappa_local
-		OR = {
-			any_owned_province = {
-				has_province_modifier = tamil_grandee
-				NOT = { local_autonomy = 5 }
-			}
-			had_country_flag = { flag = chellappa_local days = 5475 }
-		}
-	}
+# 	trigger = {
+# 		tag = VIJ
+# 		has_country_flag = chellappa_local
+# 		OR = {
+# 			any_owned_province = {
+# 				has_province_modifier = tamil_grandee
+# 				NOT = { local_autonomy = 5 }
+# 			}
+# 			had_country_flag = { flag = chellappa_local days = 5475 }
+# 		}
+# 	}
 	
-	mean_time_to_happen = {
-		months = 24
-	}
+# 	mean_time_to_happen = {
+# 		months = 24
+# 	}
 	
-	option = {
-		name = "flavor_vij.16.a" #Ok
-		add_stability_or_adm_power = yes
-		clr_country_flag = chellappa_local
-		random_owned_province = {
-			limit = {
-				has_province_modifier = tamil_grandee
-			}
-			remove_province_modifier = tamil_grandee
-		}
-		set_country_flag = chellappa_mission_flag
-	}
-}
+# 	option = {
+# 		name = "flavor_vij.16.a" #Ok
+# 		add_stability_or_adm_power = yes
+# 		clr_country_flag = chellappa_local
+# 		random_owned_province = {
+# 			limit = {
+# 				has_province_modifier = tamil_grandee
+# 			}
+# 			remove_province_modifier = tamil_grandee
+# 		}
+# 		set_country_flag = chellappa_mission_flag
+# 	}
+# }
 
 #Pulicat
 country_event = {

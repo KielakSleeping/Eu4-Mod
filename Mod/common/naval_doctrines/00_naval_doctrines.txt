@@ -559,7 +559,8 @@ mamluk_galley_doctrine = {
 
 	cost = 0.1
 	country_modifier = {
-		global_ship_cost = -0.2
+		#global_ship_cost = -0.2
+		galley_power = 0.1
 	}
 	effect = {} #TODO link with naval professionalism ?
 	removed_effect = {}
@@ -589,7 +590,8 @@ mamluk_warships_doctrine = {
 
 	cost = 0.1
 	country_modifier = {
-		disengagement_chance = 0.15
+		disengagement_chance = 0.05
+		naval_morale = 0.05
 	}
 	effect = {} #TODO link with naval professionalism ?
 	removed_effect = {}
