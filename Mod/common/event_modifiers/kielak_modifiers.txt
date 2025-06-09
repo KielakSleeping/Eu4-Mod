@@ -142,6 +142,12 @@ kielak_china_final_mission_reward = {
 	all_power_cost = -0.025
 }
 
+kielak_shun_tibetian_horses = {
+	cavalry_flanking = 0.7
+	movement_speed = 0.1
+	fire_damage_received = -0.05
+}
+
 kielak_yue_colonial_ventures = {
 	colony_development_boost = 1
 	global_colonial_growth = 15

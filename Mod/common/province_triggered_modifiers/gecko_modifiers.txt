@@ -566,6 +566,7 @@ conquest_of_rome = {
 	}
 	trigger = {
 		owner = {
+				NOT = { tag = ITA }
 				NOT = { 	
 					has_global_modifier_value = {
 					which = discipline

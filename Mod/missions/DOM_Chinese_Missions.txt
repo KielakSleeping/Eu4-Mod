@@ -1873,6 +1873,10 @@ chinese_kingdoms_2 = {
 		position = 4 
 		trigger = {
 			grown_by_development = 1000
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				superregion = china_superregion
+				value = 100
+			}
 			# OR = { 
 			# 	if = {
 			# 		limit = { has_dlc = "Mandate of Heaven" }

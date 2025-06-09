@@ -371,7 +371,7 @@ YUE_ideas = { #Yue
 		naval_forcelimit_modifier = 0.15
 	}
 	YUE_3 = {
-		province_trade_power_modifier = 0.15
+		global_prov_trade_power_modifier = 0.15
 		merchants = 1
 	}
 	YUE_4 = {
@@ -425,7 +425,7 @@ YUE_upgrade_ideas = { #Yue
 		allowed_marine_fraction = 0.3
 	}
 	YUE_3 = {
-		province_trade_power_modifier = 0.15
+		global_prov_trade_power_modifier = 0.15
 		merchants = 1
 	}
 	YUE_4_upgrade = {
