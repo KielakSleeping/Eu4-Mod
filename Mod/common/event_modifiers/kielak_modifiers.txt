@@ -168,3 +168,8 @@ kielak_qic_stop_horde_advances = {
 kielak_qic_victory_over_manchu = {
 	shock_damage_received = -0.05
 }
+
+kielak_yue_marines_buff = {
+	discipline = 0.05
+	is_marine_modifier = yes
+}

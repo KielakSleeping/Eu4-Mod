@@ -3088,6 +3088,16 @@ chinese_kingdoms_3 = {
 		effect = {
 			set_country_flag = kielak_china_upgraded_ideas_flag
 			swap_free_idea_group = yes
+
+			if = {
+				limit = {
+					tag = YUE
+				}
+				add_country_modifier = {
+					name = kielak_yue_marines_buff
+					duration = -1
+				}
+			}
 			# if = {
 			# 	limit = { is_emperor_of_china = yes } 
 			# 	add_country_modifier = {
