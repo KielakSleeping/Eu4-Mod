@@ -140,49 +140,88 @@ country_event = { #China Slots choose harmonized religion
 	desc = kielak_events.4.d
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = kielak_events.4.a
+		trigger = {
+			NOT = { has_harmonized_with = shinto }
+		}
 		add_harmonized_religion = shinto
 	}
+
+
 	option = {
 		name = kielak_events.4.b
+		trigger = {
+			NOT = { has_harmonized_with = pagan }
+		}
 		add_harmonized_religion = animism
 	}
+
 	option = {
 		name = kielak_events.4.c
+		trigger = {
+			NOT = { has_harmonized_with = muslim }
+		}
 		add_harmonized_religion = sunni
 	}
 	option = {
 		name = kielak_events.4.dd
+		trigger = {
+			NOT = { has_harmonized_with = dharmic }
+		}
 		add_harmonized_religion = hinduism
 	}
 
 	option = {
 		name = kielak_events.4.e
+		trigger = {
+			NOT = { has_harmonized_with = christian }
+		}
 		add_harmonized_religion = catholic
 	}
 	option = {
 		name = kielak_events.4.f
+		trigger = {
+			NOT = { has_harmonized_with = mahayana }
+		}
 		add_harmonized_religion = mahayana
 	}
 	option = {
 		name = kielak_events.4.g
+		trigger = {
+			NOT = { has_harmonized_with = buddhism }
+		}
 		add_harmonized_religion = buddhism
 	}
 	option = {
 		name = kielak_events.4.h
+		trigger = {
+			NOT = { has_harmonized_with = vajrayana }
+		}
 		add_harmonized_religion = vajrayana
 	}
 	option = {
 		name = kielak_events.4.i
+		trigger = {
+			NOT = { has_harmonized_with = zoroastrian_group }
+		}
 		add_harmonized_religion = zoroastrian
 	}
 
 	option = {
 		name = kielak_events.4.j
+		trigger = {
+			NOT = { has_harmonized_with = jewish_group }
+		}
 		add_harmonized_religion = jewish
 	}
 
+
+	option = {
+		name = kielak_events.4.k
+		add_prestige = 1
+	}
+	
 
 }
