@@ -489,7 +489,7 @@ diplomatic_ideas = {
     	global_manpower_modifier = 0.10
 	}
 	cabinet = {
-		dip_advisor_cost = -0.25
+		advisor_cost = -0.15
   		reform_progress_growth = 0.20
 	}
 	benign_diplomats = {
@@ -670,15 +670,15 @@ trade_ideas = {
 		}
 	}
 	merchant_adventures = {
-		center_of_trade_upgrade_cost = -0.20
-		great_project_upgrade_cost = -0.20
+		center_of_trade_upgrade_cost = -0.30
+		great_project_upgrade_cost = -0.30
 	}
 	national_trade_policy = {
 		trade_efficiency = 0.1
    		placed_merchant_power = 15
 	}
 	overseas_merchants = {
-		embargo_efficiency = 0.30
+		embargo_efficiency = 0.40
     		burghers_loyalty_modifier = 0.1
 		jains_loyalty_modifier = 0.1
 		vaisyas_loyalty_modifier = 0.1
@@ -689,7 +689,7 @@ trade_ideas = {
 	}
 	fast_negotiations = {
 		land_forcelimit_modifier = 0.05
-    	mercantilism_cost = -0.25
+    	mercantilism_cost = -0.3
 	}
 
 	ai_will_do = {

@@ -3125,7 +3125,8 @@ colonial_ideas = {
 		global_prov_trade_power_modifier = 0.75
 	}
 	manufacturing_center = {
-		build_cost = -0.1
+		#build_cost = -0.1
+		production_efficiency= .05
 	}
 	free_thinkers = {
 		idea_cost = -0.1
