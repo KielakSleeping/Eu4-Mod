@@ -436,7 +436,7 @@ holy_sites = {
                full_idea_group = theocracy_gov_ideas
        }
 
-       development_cost_in_primary_culture = -0.075
+       development_cost_in_primary_culture = -0.05
 
        ai_will_do = { 
                factor = 1 

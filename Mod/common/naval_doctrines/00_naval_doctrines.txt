@@ -445,7 +445,8 @@ the_junk_fleet = {
 
 	cost = 0.1
 	country_modifier = {
-		light_ship_cost = -0.5
+	#	light_ship_cost = -0.2
+		global_ship_cost = .10
 		naval_forcelimit_modifier = 0.25
 	}
 	effect = {}
