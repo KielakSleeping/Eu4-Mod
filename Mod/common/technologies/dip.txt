@@ -141,7 +141,7 @@ technology = { #Wharf
 	
 	range					= 	100
 	wharf = yes
-	impressment_offices 	= yes
+	#impressment_offices 	= yes
 
 }
 
@@ -183,7 +183,7 @@ technology = { #The Galleon
 	naval_maintenance		= 	0.1
 	range					=	50
 	global_colonial_growth  = 	15
-	
+	impressment_offices 	= yes
 	enable = galleon
 	enable = early_frigate
 	may_sabotage_recruitment = yes

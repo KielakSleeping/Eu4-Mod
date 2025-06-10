@@ -1637,8 +1637,8 @@ navigator = {
 	}
 	
 	# Bonus
-	global_colonial_growth = 25
-	
+	global_colonial_growth = 20
+	#colonist_placement_chance = .05
 	skill_scaled_modifier = {
 		trigger = {
 			owner = { 

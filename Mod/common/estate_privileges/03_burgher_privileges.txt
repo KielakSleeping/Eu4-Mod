@@ -416,8 +416,8 @@ estate_burghers_new_world_charter = {
 		global_tariffs = -0.10
 	}
 	benefits = {
-		global_colonial_growth = 25
-		colonist_placement_chance = 0.05
+		global_colonial_growth = 20
+		#colonist_placement_chance = 0.075
 	}
 	on_granted = {
 		if = {
