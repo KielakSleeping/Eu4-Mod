@@ -976,7 +976,7 @@ theocracy_gov_ideas = {
 		prestige_per_development_from_conversion = 0.3
 	}
 	friends_in_high_places = {
-		manpower_in_true_faith_provinces= 0.15
+		manpower_in_true_faith_provinces= 0.25
 	}
 	flesh_is_weak = {
 		morale_damage = 0.15
@@ -988,8 +988,8 @@ theocracy_gov_ideas = {
 		warscore_cost_vs_other_religion = -0.075
 	}
 	conviction_of_sin = {
-		manpower_in_own_culture_provinces = 0.15
-		development_cost_in_primary_culture = -0.075
+		manpower_in_own_culture_provinces = 0.25
+		development_cost_in_primary_culture = -0.05
 	}
 	martyrs = {
 		church_loyalty_modifier = 0.1
