@@ -20,7 +20,7 @@ free_oarsmen = {
 
 	cost = 0.1
 	country_modifier = {
-		allowed_marine_fraction = 0.33
+		allowed_marine_fraction = 0.25
 	}
 	effect = {}
 	removed_effect = {}
