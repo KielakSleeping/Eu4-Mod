@@ -294,7 +294,7 @@ X_CRI_slot_3 = {
 			province_id = 284
 		}
 		trigger = {
-			stability = 2
+			#stability = 2
 			if = {
 				limit = {
 					has_estate = estate_nomadic_tribes
@@ -307,6 +307,7 @@ X_CRI_slot_3 = {
 			284 = { X_has_latest_building_trigger = { fort = yes builder = ROOT } }
 		}
 		effect = {
+			add_stability = 2
 			284 = { 
 				add_base_tax = 2
 				add_base_production = 2
