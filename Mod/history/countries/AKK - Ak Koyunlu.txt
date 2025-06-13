@@ -86,8 +86,9 @@ add_truce_with = QOM
 			fire = 4	
 			shock = 4	
 			manuever = 4	
-			siege = 0
+			siege = 2
 		}
+		add_piety = -1.0
 	}
 	clear_scripted_personalities = yes
 	add_heir_personality = bold_fighter_personality
