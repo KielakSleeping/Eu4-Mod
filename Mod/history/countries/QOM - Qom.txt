@@ -7,7 +7,7 @@ religion = shiite
 technology_group = muslim
 capital = 429 # Qom
 religious_school = jafari_school
-
+add_truce_with = QAR
 1442.1.1 = { #Appointed as governor of Sultaniyya, Qazvin, Rayy and Qom, but takes up tribute from Kashan, Qazvin, Sari, Isfahan, Natanz, Firuzkuh, Sultaniyya, Tarum, Azerbaijan as well.
 	religion = shiite
 	monarch = {
