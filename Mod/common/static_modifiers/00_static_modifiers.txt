@@ -1023,7 +1023,7 @@ devotion = {
 	papal_influence = 2
 	monthly_fervor_increase = 2
 	church_power_modifier = 0.5
-	harmonization_speed = 0.5
+	#harmonization_speed = 0.5
 	monthly_piety_accelerator = 0.01
 	yearly_authority = 0.5
 	yearly_patriarch_authority = 0.01
@@ -1799,7 +1799,7 @@ high_harmony = {
 	meritocracy = 1
 	legitimacy = 0.5
 	devotion = 1
-	harmonization_speed = 1
+	#harmonization_speed = 1
 	yearly_corruption = -0.5
 	global_manpower_modifier = 0.2
 }
@@ -1924,13 +1924,13 @@ equipped_streltsy_modifier_weaker = {
 }
 
 equipped_streltsy_modifier = {
-	infantry_power = 0.1
+	infantry_power = 0.5
 	is_streltsy_modifier = yes
 }
 
 prepared_streltsy_modifier = {
-	reinforce_speed = 0.2
-	reinforce_cost_modifier = -0.1
+	reinforce_speed = 0.1
+	reinforce_cost_modifier = -0.05
 	is_streltsy_modifier = yes
 }
 
@@ -1961,7 +1961,7 @@ outward_focus_modifier = {
 	colony_development_boost = 1
 	#range = 0.25
 	burghers_loyalty_modifier = 0.05
-	harmonization_speed = 0.25
+	#harmonization_speed = 0.25
 }
 
 expansion_focus_modifier = {
@@ -2107,7 +2107,7 @@ samurai_regiment = {
 
 qizilbash_regiment = {
 	fire_damage_received = -0.05
-	land_maintenance_modifier = -0.25
+	#land_maintenance_modifier = -0.25
 }
 
 mamluks_regiment = {
