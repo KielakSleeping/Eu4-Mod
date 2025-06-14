@@ -422,7 +422,7 @@ kor_military_missions_2 = {
 			add_mil_power = 50
 			add_country_modifier = {
 				name = hwacha_firepower_bonus
-				duration = 7300
+				duration = 10950
 			}
 		}
 	}
