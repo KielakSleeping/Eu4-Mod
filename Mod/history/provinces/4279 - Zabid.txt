@@ -3,7 +3,7 @@
 owner = RAS
 controller = RAS
 culture = yemeni_culture
-religion = sunni
+religion = shiite
 capital = "Zabid"
 trade_goods = coffee
 hre = no
