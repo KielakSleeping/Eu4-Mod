@@ -1924,7 +1924,7 @@ equipped_streltsy_modifier_weaker = {
 }
 
 equipped_streltsy_modifier = {
-	infantry_power = 0.5
+	infantry_power = 0.05
 	is_streltsy_modifier = yes
 }
 

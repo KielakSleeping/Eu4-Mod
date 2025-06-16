@@ -330,7 +330,7 @@ there_are_millions_just_like_you = {
        #reinforce_cost_modifier = -0.125
        global_manpower_modifier = 0.10
        land_forcelimit_modifier = 0.10
-       global_regiment_cost = -0.1
+       global_regiment_cost = -0.05
        #reinforce_speed = 0.125
        #land_maintenance_modifier = -0.125
 
