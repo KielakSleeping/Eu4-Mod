@@ -376,7 +376,7 @@ YUE_ideas = { #Yue
 	}
 	YUE_4 = {
 		#infantry_power = 0.1
-		land_morale = 0.05
+		#land_morale = 0.05
 		sailors_recovery_speed = 0.25
 		sailor_maintenance_modifer = -0.15
 	}
