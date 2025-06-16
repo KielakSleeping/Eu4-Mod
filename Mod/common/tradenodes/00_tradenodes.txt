@@ -1796,7 +1796,8 @@ krakow={
 	}
 	members={
 		258 259 260 261 262 263 264 1940 256 257 1938 1939 254 255 2424 2959 2960 2961 2966 4238 2963 1859 4523 4524 4526 4528 4525 4527 4533 4541 4723
-	}
+		43 1841 2997 #west_prussia_area
+		40 41 42 2958 767 #east_prussia_area
 }
 #saxony={
 #	location=61
@@ -1953,8 +1954,6 @@ baltic_sea={
 		48 2995 4746 #hinter_pommern_area
 		45 2996 46 
 		44 1857
-		43 1841 2997 #west_prussia_area
-		40 41 42 2958 767 #east_prussia_area
 		54 55 1874 4771 #weser_area
 	}
 }
