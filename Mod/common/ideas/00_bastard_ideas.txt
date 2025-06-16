@@ -1575,7 +1575,7 @@ LOT_ideas = {
 
 	}
 	lot_glory_of_charlemagne = {
-		land_morale = 0.10
+		land_morale = 0.15
 		discipline = 0.05
 	}
 	lot_dutch_cities = {
@@ -1592,7 +1592,7 @@ LOT_ideas = {
 		prestige_decay = -0.01
 	}
 	lot_european_empire = {
-		core_creation = -0.15
+		core_creation = -0.20
 	}
 }
 NED_ideas = {
