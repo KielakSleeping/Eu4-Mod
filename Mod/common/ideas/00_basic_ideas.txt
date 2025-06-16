@@ -170,14 +170,14 @@ economic_ideas = {
 	}
 	debt_and_loans = {
 		land_maintenance_modifier = -0.10
-		global_regiment_cost = -0.05
+	#	global_regiment_cost = -0.05
 	}
 	nationalistic_enthusiasm = {
 		gold_depletion_chance_modifier = -0.25
     	global_trade_goods_size_modifier = 0.1
 	}
 	smithian_economics = {
-		global_ship_cost = -0.2
+		global_ship_cost = -0.1
     	state_maintenance_modifier = -0.20
 	}
 
@@ -933,7 +933,7 @@ quantity_ideas = {
 	enforced_service = {
 		global_regiment_cost = -0.10		
 		land_morale = 0.05
-		land_maintenance_modifier = -0.1
+		land_maintenance_modifier = -0.05
 	}
 	camp_followers = {
 		regiment_manpower_usage = -0.1
