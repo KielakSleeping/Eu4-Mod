@@ -1603,6 +1603,10 @@ kiev = {
 		276 4115 4242 4544 #minsk_area
 		269 277 1937 4537 #podlasie_area
 		272 770 4535 4536 #lithuania_area
+		270 271 1936 4534 #samogitia_area
+		37 38 4241 273 #livonia_area
+		36 1834 1842 #estonia_area
+		1935 39 35 #curonia_area
 	}
 }
 
@@ -1918,7 +1922,6 @@ rheinland={
 		49 50 62 63 51 60 61 1759 1763 52 58 59 2964 2965 2969 2993 4741 4742 4743 4744 4747 4748 4778 
 		4772 53
 		4749 4786
-		54 55 1874 4771 #weser_area
 	}
 }
 baltic_sea={
@@ -1952,11 +1955,7 @@ baltic_sea={
 		44 1857
 		43 1841 2997 #west_prussia_area
 		40 41 42 2958 767 #east_prussia_area
-		270 271 1936 4534 #samogitia_area
-		37 38 4241 273 #livonia_area
-		36 1834 1842 #estonia_area
-		1935 39 35 #curonia_area
-
+		54 55 1874 4771 #weser_area
 	}
 }
 wien={
