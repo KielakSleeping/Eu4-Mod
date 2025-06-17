@@ -1922,7 +1922,7 @@ rheinland={
 	}
 }
 baltic_sea={
-	location=12
+	location=1
 	color={
 		8 82 165 
 	}
@@ -2031,32 +2031,38 @@ wien={
 #		
 #	}
 #}
-#lubeck={
-#	location=12
-#	color={
-#		190 70 70 
-#	}
-#	outgoing={
-#		name="champagne"
-#		path={
-#			1857 44 1268 1269 
-#		}
-#		control={
-#			2966.000000 1599.000000 2957.000000 1596.000000 2915.000000 1602.000000 2868.000000 1576.000000 
-#		}
-#	}
-#	outgoing={
-#		name="english_channel"
-#		path={
-#		}
-#		control={
-#			2915.000000 1602.000000 2871.000000 1592.500000 2807.000000 1593.000000
-#		}
-#	}
-#	members={
-#
-#	}
-#}
+lubeck={
+	location=12
+	color={
+		190 70 70 
+  	}
+	outgoing={
+		name="champagne"		path={
+			1857 44 1268 1269 
+		}
+		control={
+			2966.000000 1599.000000 2957.000000 1596.000000 2915.000000 1602.000000 2868.000000 1576.000000 
+		}
+	}
+	outgoing={
+		name="english_channel"
+		path={
+		}
+		control={
+			2915.000000 1602.000000 2871.000000 1592.500000 2807.000000 1593.000000
+		}
+	}
+	members={
+		54 55 1874 4771 #weser_area
+		47 2994 4745 1858 #vorpommern_area
+		48 2995 4746 #hinter_pommern_area
+		12 14 1981 1983 #denmark_area
+		15 1984 4142 4149 #north_jutland
+		13 44 1775 4141 #schleswig-holstein
+		45 46 1857 2996 #mecklemburg
+
+	}
+}
 
 genua={
 	location=1298
