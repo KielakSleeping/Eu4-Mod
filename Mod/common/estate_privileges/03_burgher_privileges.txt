@@ -2327,6 +2327,7 @@ estate_burghers_polish_merchant_seal = {
 	benefits = { 
 		placed_merchant_power = 5 
 		center_of_trade_upgrade_cost = -0.1 
+		mercantilism_cost = -0.15
 	}
 	penalties = {
 	}
