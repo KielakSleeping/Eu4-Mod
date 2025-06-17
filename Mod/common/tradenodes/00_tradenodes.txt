@@ -547,14 +547,14 @@ hatton_bank = {
 		}
 	}
 		
-	#outgoing={
-	#	name="north_sea"
-	#	path={
-	#	}
-	#	control={
-	#		2616.000000 1643.500000 2735.000000 1747.000000 2819.000000 1721.000000
-	#	}
-	#}
+	outgoing={
+		name="lubeck"
+		path={
+		}
+		control={
+			2616.000000 1643.500000 2735.000000 1747.000000 2819.000000 1721.000000
+		}
+	}
 	outgoing={
 		name="baltic_sea"
 		path={
@@ -1786,7 +1786,7 @@ krakow={
 		}
 	}
 	outgoing={
-		name="baltic_sea"
+		name="lubeck"
 		path={
 			258 255 1859 43 1927 1926 
 		}

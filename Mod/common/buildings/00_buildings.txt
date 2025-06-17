@@ -3381,8 +3381,8 @@ impressment_offices = {
 	}
 
 	modifier = {
-		local_manpower_modifier = 1
-		local_sailors_modifier = 2
+		local_manpower_modifier = .8
+		local_sailors_modifier = 1.6
 		# local_sailors = 750
 		# ship_recruit_speed = -0.1
 		# local_ship_cost = -0.05
