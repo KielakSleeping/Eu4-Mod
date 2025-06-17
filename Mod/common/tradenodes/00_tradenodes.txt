@@ -1932,7 +1932,7 @@ baltic_sea={
 		8 82 165 
 	}
 	outgoing={
-		name="holland"
+		name="lubeck"
 		path={
 			1857 44 1268 1269 
 		}
@@ -2031,7 +2031,8 @@ lubeck={
 		190 70 70 
   	}
 	outgoing={
-		name="champagne"		path={
+		name="holland"		
+		path={
 			1857 44 1268 1269 
 		}
 		control={
