@@ -639,6 +639,12 @@ royal_marriage = {
 }
 
 guaranteeaction = {
+	  condition = {
+        allow = {
+            always = no
+        }
+    }
+}
 	effect = {
 		change_asha_vahishta = { value = 1 }
 	}
