@@ -714,7 +714,7 @@ aristocracy_ideas = {
 		movement_speed = 0.2
 	}
 	serfdom = {
-		cavalry_power = 0.125
+		cavalry_power = 0.1
 	}
 	noble_resilience = {
 		cav_to_inf_ratio = 0.15
@@ -724,7 +724,7 @@ aristocracy_ideas = {
 		leader_land_shock = 1
 	}
 	international_nobility = {
-		shock_damage = 0.125
+		shock_damage = 0.1
 	}
 	rightful_conquest = {
 		nobles_loyalty_modifier = 0.1

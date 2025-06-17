@@ -6,7 +6,7 @@ elector = yes
 technology_group = western
 religion = catholic
 primary_culture = lower_saxon
-capital = 45	# Lübeck
+capital = 45	# Lï¿½beck
 historical_friend = HAM #Hamburg
 historical_friend = BRE #Bremen
 historical_friend = RIG #Riga
@@ -15,9 +15,9 @@ historical_friend = RIG #Riga
 	monarch = {
 		birth_date = 1415.9.22
 		name = "Stadtrat"
-		adm = 3
-		dip = 3
-		mil = 3
+		adm = 5
+		dip = 5
+		mil = 4
 	}
 }
 

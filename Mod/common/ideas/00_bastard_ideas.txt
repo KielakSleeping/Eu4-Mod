@@ -846,7 +846,7 @@ BRA_ideas = {
 
 HSA_ideas = {
 	start = {
-		caravan_power = 0.4
+		caravan_power = 0.5
 		production_efficiency = 0.1
 	}
 	

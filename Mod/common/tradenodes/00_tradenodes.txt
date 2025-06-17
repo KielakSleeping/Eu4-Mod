@@ -1910,7 +1910,7 @@ rheinland={
 		}
 	}
 	outgoing={
-		name="baltic_sea"
+		name="lubeck"
 		path={
 			1762 57 53 1857 45 
 		}
