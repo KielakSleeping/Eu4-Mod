@@ -2148,7 +2148,7 @@ woc_hun_third_branch = {
 		}
 		
 		effect = {
-			add_yearly_manpower = 2.5
+			add_yearly_manpower = 0.5
 			define_advisor = {
 				type = commandant
 				skill = 3
