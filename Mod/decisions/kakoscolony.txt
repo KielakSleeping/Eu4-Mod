@@ -1,0 +1,1691 @@
+country_decisions = {
+
+	alaska_nation = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = changed_from_colonial_nation }
+			was_never_end_game_tag_trigger = yes
+			is_nomad = no
+			is_random_new_world = no
+			NOT = { tag = HLR }
+			NOT = { tag = PAP }
+			OR = {
+				is_former_colonial_nation = no
+				is_colonial_nation = yes
+				AND = {
+					NOT = {
+						OR = {
+							technology_group = north_american
+							technology_group = mesoamerican
+							technology_group = andean
+							technology_group = high_american
+							technology_group = south_american
+						}
+					}
+					capital_scope = {
+					 region = cascadia_region
+							
+						
+						is_core = ROOT
+					}
+				}
+			}
+			colonial_alaska = {
+				owned_by = ROOT
+			}
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 3	
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				region = cascadia_region
+						}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			is_at_war = no
+			NOT = { exists = ALA }
+			capital_scope = {
+				region = cascadia_region
+				is_core = ROOT
+			}
+			num_of_owned_provinces_with = {
+				value = 35
+				is_city = yes
+				OR = {
+					region = cascadia_region
+				}
+			}
+		}
+		effect = {
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { is_former_colonial_nation = yes }
+					}
+					ROOT = { save_event_target_as = old_tag_target }
+					set_country_flag = was_not_former_colonial_nation
+				}
+			}
+			change_tag = ALA
+			on_change_tag_effect = yes
+			if = {
+				limit = {
+					NOT = { is_former_colonial_nation = yes }
+				}
+				restore_old_nation_on_formation_effect = yes
+				remove_non_electors_emperors_from_empire_effect = yes
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			if = {
+				limit = {
+					OR = {
+						culture_group = british
+						primary_culture = anglois
+					}
+					NOT = { primary_culture = american }
+				}
+			}
+			if = {
+				limit = {
+					culture_group = iberian
+					NOT = { primary_culture = mexican }
+				}
+			}
+			if = {
+				limit = {
+					culture_group = french
+					NOT = { primary_culture = quebecois }
+				}
+			}
+			colonial_alaska = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			#can't have more than one elective monarchy in the game
+			if = {
+				limit = {
+					has_reform = elective_monarchy
+				}
+				change_government = monarchy
+				add_government_reform = feudalism_reform
+			}
+			set_country_flag = changed_from_colonial_nation
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}
+
+
+
+country_decisions = {
+
+	brazil_nation = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = changed_from_colonial_nation }
+			was_never_end_game_tag_trigger = yes
+			is_nomad = no
+			is_random_new_world = no
+			NOT = { tag = HLR }
+			NOT = { tag = PAP }
+			OR = {
+				is_former_colonial_nation = no
+				is_colonial_nation = yes
+				AND = {
+					NOT = {
+						OR = {
+							technology_group = north_american
+							technology_group = mesoamerican
+							technology_group = andean
+							technology_group = high_american
+							technology_group = south_american
+						}
+					}
+					capital_scope = {
+						region = brazil_region
+						is_core = ROOT
+					}
+				}
+			}
+			colonial_brazil = {
+				owned_by = ROOT
+			}
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 3	
+				}
+			}
+		}
+		provinces_to_highlight = {
+			region = brazil_region
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+		
+			is_at_war = no
+			capital_scope = {
+				region = brazil_region
+				is_core = ROOT
+			}
+			num_of_owned_provinces_with = {
+				value = 60
+				 region = brazil_region
+				is_city = yes
+			}
+			NOT = { exists = BRZ }
+		}
+		effect = {
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { is_former_colonial_nation = no }
+					}
+					ROOT = { save_event_target_as = old_tag_target }
+					set_country_flag = was_not_former_colonial_nation
+				}
+			}
+			change_tag = BRZ
+			on_change_tag_effect = yes
+			if = {
+				limit = {
+					NOT = { is_former_colonial_nation = yes }
+				}
+				restore_old_nation_on_formation_effect = yes
+				remove_non_electors_emperors_from_empire_effect = yes
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			if = {
+				limit = {
+					culture_group = iberian
+					NOT = { primary_culture = brazilian }
+				}
+			}
+			colonial_brazil = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			#can't have more than one elective monarchy in the game
+			if = {
+				limit = {
+					has_reform = elective_monarchy
+				}
+				change_government = monarchy
+				add_government_reform = feudalism_reform
+			}
+			set_country_flag = changed_from_colonial_nation
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	por_flee_to_brazil = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = changed_from_colonial_nation }
+			NOT = { has_country_flag = fled_to_brazil }
+			was_never_end_game_tag_trigger = yes
+			is_random_new_world = no
+			normal_or_historical_nations = yes
+			tag = POR
+			government = monarchy
+			any_subject_country = {
+				is_colonial_nation = yes
+				capital_scope = {
+					colonial_region = colonial_brazil
+				}
+			}
+			NOT = {
+				num_of_owned_provinces_with = {
+					continent = europe
+					value = 5
+				}
+			}
+		}
+		allow = {
+			
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			custom_trigger_tooltip = {
+				tooltip = brazil_provinces_tooltip
+				any_subject_country = {
+					is_colonial_nation = yes
+					capital_scope = {
+						colonial_region = colonial_brazil
+					}
+					num_of_cities = 20
+				}
+			}
+		}
+		effect = {
+			change_tag = BRZ
+			on_change_tag_effect = yes
+			every_subject_country = {
+				limit = {
+					is_colonial_nation = yes
+					capital_scope = {
+						colonial_region = colonial_brazil
+					}
+				}
+				FROM = { inherit = PREV }
+			}
+			custom_tooltip = brazil_move_capital_tooltip
+			hidden_effect = {
+				if = {
+					limit = {
+						763 = {
+							owned_by = ROOT
+						}
+					}
+					763 = {
+						move_capital_effect = yes
+					}
+				}
+				else = {
+					random_owned_province = {
+						limit = {
+							colonial_region = colonial_brazil
+						}
+						move_capital_effect = yes
+					}
+				}					
+			}
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = {
+					religion_group = christian
+				}
+				custom_tooltip = brazil_portugal_tooltip
+				hidden_effect = {
+					every_owned_province = {
+						limit = {
+							continent = europe
+						}
+						add_core = POR
+					}
+					release = POR
+					POR = {
+						change_government = monarchy
+						add_government_reform = autocracy_reform
+						swap_non_generic_missions = yes
+					}
+					create_union = POR
+				}
+				hidden_effect = {
+					every_province = {
+						limit = {
+							continent = europe
+							is_core = ROOT
+						}
+						add_core = POR
+						remove_core = BRZ
+					}
+				}
+			}
+			add_stability = -2
+			add_prestige = -25
+			if = {
+                limit = { has_custom_ideas = no }
+                country_event = { id = ideagroups.1 } #Swap Ideas
+            }
+			set_country_flag = changed_from_colonial_nation
+			set_country_flag = fled_to_brazil
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+
+
+country_decisions = {
+
+	canada_nation = {
+		major = yes
+		potential = {
+			OR = {
+				NOT = { has_country_flag = changed_from_colonial_nation }
+				tag = CSC
+				tag = ALA
+				tag = QUE
+			}
+			was_never_end_game_tag_trigger = yes
+			is_nomad = no
+			is_random_new_world = no
+			NOT = { tag = HLR }
+			NOT = { tag = PAP }
+			NOT = { tag = ALA }
+			OR = {
+				is_former_colonial_nation = no
+				is_colonial_nation = yes
+				AND = {
+					NOT = {
+						OR = {
+							technology_group = north_american
+							technology_group = mesoamerican
+							technology_group = andean
+							technology_group = high_american
+							technology_group = south_american
+						}
+					}
+					capital_scope = {
+						region = canada_region
+						is_core = ROOT
+					}
+				}
+			}
+			colonial_canada = {
+				owned_by = ROOT
+			}
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 3	
+				}
+			}
+		}
+		provinces_to_highlight = {
+			region = canada_region
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			is_at_war = no
+			capital_scope = {
+				region = canada_region
+				is_core = ROOT
+			}
+			num_of_owned_provinces_with = {
+				value = 50
+				region = canada_region
+				is_city = yes
+			}
+			NOT = { exists = CAN }
+		}
+		effect = {
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { is_former_colonial_nation = no }
+					}
+					ROOT = { save_event_target_as = old_tag_target }
+					set_country_flag = was_not_former_colonial_nation
+				}
+			}
+			if = {
+				limit = {
+					culture_group = french
+					NOT = { primary_culture = quebecois }
+				}
+			}
+			change_tag = CAN
+			on_change_tag_effect = yes
+			if = {
+				limit = {
+					NOT = { is_former_colonial_nation = yes }
+				}
+				restore_old_nation_on_formation_effect = yes
+				remove_non_electors_emperors_from_empire_effect = yes
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			colonial_canada = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			#can't have more than one elective monarchy in the game
+			if = {
+				limit = {
+					has_reform = elective_monarchy
+				}
+				change_government = monarchy
+				add_government_reform = feudalism_reform
+			}
+			set_country_flag = changed_from_colonial_nation
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}
+
+
+country_decisions = {
+
+	chile_nation = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = changed_from_colonial_nation }
+			was_never_end_game_tag_trigger = yes
+			is_nomad = no
+			is_random_new_world = no
+			NOT = { tag = HLR }
+			NOT = { tag = PAP }	
+			OR = {
+				is_former_colonial_nation = no
+				is_colonial_nation = yes
+				AND = {
+					NOT = {
+						OR = {
+							technology_group = north_american
+							technology_group = mesoamerican
+							technology_group = andean
+							technology_group = high_american
+							technology_group = south_american
+
+						}
+					}
+					capital_scope = {
+						region = la_plata_region
+						is_core = ROOT
+					}
+				}
+			}
+			colonial_la_plata = {
+				owned_by = ROOT
+			}
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 3	
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				region = la_plata_region
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			is_at_war = no
+			NOT = { exists = CHL }
+			num_of_owned_provinces_with = {
+				value = 44
+				is_city = yes
+				OR = {
+					region = la_plata_region
+				}
+			}
+		}
+		effect = {
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { is_former_colonial_nation = yes }
+					}
+					ROOT = { save_event_target_as = old_tag_target }
+					set_country_flag = was_not_former_colonial_nation
+				}
+			}
+			change_tag = CHL
+			on_change_tag_effect = yes
+			if = {
+				limit = {
+					NOT = { is_former_colonial_nation = yes }
+				}
+				restore_old_nation_on_formation_effect = yes
+				remove_non_electors_emperors_from_empire_effect = yes
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			colonial_la_plata = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			#can't have more than one elective monarchy in the game
+			if = {
+				limit = {
+					has_reform = elective_monarchy
+				}
+				change_government = monarchy
+				add_government_reform = feudalism_reform
+			}
+			add_prestige = 25
+			set_country_flag = changed_from_colonial_nation
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}
+
+
+country_decisions = {
+
+	illinois_nation = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = changed_from_colonial_nation }
+			was_never_end_game_tag_trigger = yes
+			is_nomad = no
+			is_random_new_world = no
+			NOT = { tag = HLR }
+			NOT = { tag = PAP }
+			OR = {
+				is_former_colonial_nation = no
+				is_colonial_nation = yes
+				AND = {
+					NOT = {
+						OR = {
+							technology_group = north_american
+							technology_group = mesoamerican
+							technology_group = andean
+							technology_group = high_american
+							technology_group = south_american
+						}
+					}
+					capital_scope = {
+						region = mississippi_region
+						region = great_lakes_region
+						region = great_plains_region
+						is_core = ROOT
+					}
+				}
+			}
+			colonial_louisiana = {
+				owned_by = ROOT
+			}
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 3	
+				}
+			}
+		}
+		provinces_to_highlight = {
+			region = mississippi_region
+			region = great_lakes_region
+			region = great_plains_region
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			is_at_war = no
+			capital_scope = {
+				region = mississippi_region
+				region = great_lakes_region
+				region = great_plains_region
+				is_core = ROOT
+			}
+			num_of_owned_provinces_with = {
+				value = 40
+				region = mississippi_region
+				is_core = root
+				is_city = yes
+			}
+			NOT = { exists = ILI }
+		}
+		effect = {
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { is_former_colonial_nation = yes }
+					}
+					ROOT = { save_event_target_as = old_tag_target }
+					set_country_flag = was_not_former_colonial_nation
+				}
+			}
+			change_tag = ILI
+			on_change_tag_effect = yes
+			if = {
+				limit = {
+					NOT = { is_former_colonial_nation = yes }
+				}
+				restore_old_nation_on_formation_effect = yes
+				remove_non_electors_emperors_from_empire_effect = yes
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			if = {
+				limit = {
+					culture_group = british
+					NOT = { primary_culture = american }
+				}
+			}
+			if = {
+				limit = {
+					culture_group = french
+					NOT = { primary_culture = louisianans }
+				}
+			}
+			great_lakes_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			#can't have more than one elective monarchy in the game
+			if = {
+				limit = {
+					has_reform = elective_monarchy
+				}
+				change_government = monarchy
+				add_government_reform = feudalism_reform
+			}
+			add_prestige = 25
+			set_country_flag = changed_from_colonial_nation
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}
+
+
+country_decisions = {
+
+	mexico_nation = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = changed_from_colonial_nation }
+			is_nomad = no
+			was_never_end_game_tag_trigger = yes
+			is_random_new_world = no
+			NOT = { tag = HLR }
+			NOT = { tag = PAP }
+			OR = {
+				is_former_colonial_nation = no
+				is_colonial_nation = yes
+				AND = {
+					NOT = {
+						OR = {
+							technology_group = north_american
+							technology_group = mesoamerican
+							technology_group = andean
+							technology_group = high_american
+							technology_group = south_american
+						}
+					}
+					capital_scope = {
+						region = mexico_region
+						is_core = ROOT
+					}
+				}
+			}
+			colonial_mexico = {
+				owned_by = ROOT
+			}
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 3	
+				}
+			}
+		}
+		provinces_to_highlight = {
+			region = mexico_region
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			is_at_war = no
+			capital_scope = {
+				region = mexico_region
+				region = rio_grande_region
+				is_core = ROOT
+			}
+			num_of_owned_provinces_with = {
+				value = 60
+				region = mexico_region
+				is_city = yes
+			}
+			NOT = { exists = MEX }
+		}
+		effect = {
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { is_former_colonial_nation = yes }
+					}
+					ROOT = { save_event_target_as = old_tag_target }
+					set_country_flag = was_not_former_colonial_nation
+				}
+			}
+			change_tag = MEX
+			on_change_tag_effect = yes
+			if = {
+				limit = {
+					NOT = { is_former_colonial_nation = yes }
+				}
+				restore_old_nation_on_formation_effect = yes
+				remove_non_electors_emperors_from_empire_effect = yes
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			if = {
+				limit = {
+					culture_group = iberian
+					NOT = { primary_culture = mexican }
+				}
+			}
+			colonial_mexico = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			#can't have more than one elective monarchy in the game
+			if = {
+				limit = {
+					has_reform = elective_monarchy
+				}
+				change_government = monarchy
+				add_government_reform = feudalism_reform
+			}
+			set_country_flag = changed_from_colonial_nation
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}
+
+
+country_decisions = {
+
+	peru_nation = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = changed_from_colonial_nation }
+			is_nomad = no
+			was_never_end_game_tag_trigger = yes
+			is_random_new_world = no
+			NOT = { tag = HLR }
+			NOT = { tag = PAP }
+			OR = {
+				is_former_colonial_nation = no
+				is_colonial_nation = yes
+				AND = {
+					NOT = {
+						OR = {
+							technology_group = north_american
+							technology_group = mesoamerican
+							technology_group = andean
+							technology_group = high_american
+							technology_group = south_american
+						}
+					}
+					capital_scope = {
+						region = peru_region
+						is_core = ROOT
+					}
+				}
+			}
+			colonial_peru = {
+				owned_by = ROOT
+			}
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 3	
+				}
+			}
+		}
+		provinces_to_highlight = {
+			region = peru_region
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+		
+			is_at_war = no
+			capital_scope = {
+				region = peru_region
+				is_core = ROOT
+				is_city = yes
+			}
+			num_of_owned_provinces_with = {
+				value = 35
+				region = peru_region
+				is_city = yes
+			}
+			NOT = { exists = PEU }
+		}
+		effect = {
+			
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { is_former_colonial_nation = yes }
+					}
+					ROOT = { save_event_target_as = old_tag_target }
+					set_country_flag = was_not_former_colonial_nation
+				}
+			}
+			change_tag = PEU
+			on_change_tag_effect = yes
+			if = {
+				limit = {
+					NOT = { is_former_colonial_nation = yes }
+				}
+				restore_old_nation_on_formation_effect = yes
+				remove_non_electors_emperors_from_empire_effect = yes
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			colonial_peru = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+			
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			#can't have more than one elective monarchy in the game
+			if = {
+				limit = {
+					has_reform = elective_monarchy
+				}
+				change_government = monarchy
+				add_government_reform = feudalism_reform
+			}
+			add_prestige = 25
+			set_country_flag = changed_from_colonial_nation
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}
+
+
+country_decisions = {
+
+	sonora_nation = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = changed_from_colonial_nation }
+			was_never_end_game_tag_trigger = yes
+			is_nomad = no
+			is_random_new_world = no
+			NOT = { tag = HLR }
+			NOT = { tag = PAP }
+			OR = {
+				is_former_colonial_nation = no
+				is_colonial_nation = yes
+				AND = {
+					NOT = {
+						OR = {
+							technology_group = north_american
+							technology_group = mesoamerican
+							technology_group = andean
+							technology_group = high_american
+						}
+					}
+					capital_scope = {
+						region = california_region
+						is_core = ROOT
+					}
+				}
+			}
+			colonial_california = {
+				owned_by = ROOT
+			}
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 3	
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				region = california_region
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			is_at_war = no
+			NOT = { exists = SNA }
+			num_of_owned_provinces_with = {
+				value = 35
+				OR = {
+					region = california_region
+				}
+				is_core = root
+				is_city = yes
+			}
+		}
+		effect = {
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { is_former_colonial_nation = yes }
+					}
+					ROOT = { save_event_target_as = old_tag_target }
+					set_country_flag = was_not_former_colonial_nation
+				}
+			}
+			change_tag = SNA
+			on_change_tag_effect = yes
+			if = {
+				limit = {
+					NOT = { is_former_colonial_nation = yes }
+				}
+				restore_old_nation_on_formation_effect = yes
+				remove_non_electors_emperors_from_empire_effect = yes
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			if = {
+				limit = {
+					culture_group = british
+					NOT = { primary_culture = american }
+				}
+			}
+			if = {
+				limit = {
+					culture_group = iberian
+					NOT = { primary_culture = mexican }
+				}
+			}
+			if = {
+				limit = {
+					culture_group = french
+					NOT = { primary_culture = louisianans }
+				}
+			}
+			sonora_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+			}
+			baja_california_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+			}
+			chihuahua_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+			}
+			arizona_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+			}
+			apacheria_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+			}
+			durango_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+			}
+			nayarit_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+			}
+			2476 = {
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			set_country_flag = changed_from_colonial_nation
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			#can't have more than one elective monarchy in the game
+			if = {
+				limit = {
+					has_reform = elective_monarchy
+				}
+				change_government = monarchy
+				add_government_reform = feudalism_reform
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}
+
+
+country_decisions = {
+
+	upca_nation = {
+		major = yes
+		potential = { 
+			NOT = { has_country_flag = changed_from_colonial_nation }
+			was_never_end_game_tag_trigger = yes
+			is_nomad = no
+			is_random_new_world = no
+			NOT = { tag = HLR }
+			NOT = { tag = PAP }
+			OR = {
+				is_former_colonial_nation = no
+				is_colonial_nation = yes
+				AND = {
+					NOT = {
+						OR = {
+							technology_group = north_american
+							technology_group = mesoamerican
+							technology_group = andean
+							technology_group = high_american
+							technology_group = south_american
+						}
+					}
+					capital_scope = {
+					region = central_america_region	
+
+
+						is_core = ROOT
+					}
+				}
+			}
+			colonial_alaska = {
+				owned_by = ROOT
+			}
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 3	
+				}
+			}
+		}
+		provinces_to_highlight = {
+			region = central_america_region
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			is_at_war = no
+			NOT = { exists = CAM }
+			num_of_owned_provinces_with = {
+				value = 38
+				region = central_america_region
+				is_city = yes
+			}
+		}
+		effect = {
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { is_former_colonial_nation = yes }
+					}
+					ROOT = { save_event_target_as = old_tag_target }
+					set_country_flag = was_not_former_colonial_nation
+				}
+			}
+			change_tag = CAM
+			on_change_tag_effect = yes
+			if = {
+				limit = {
+					NOT = { is_former_colonial_nation = yes }
+				}
+				restore_old_nation_on_formation_effect = yes
+				remove_non_electors_emperors_from_empire_effect = yes
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			if = {
+				limit = {
+					culture_group = iberian
+					NOT = { primary_culture = mexican }
+				}
+			}
+			colonial_mexico = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			#can't have more than one elective monarchy in the game
+			if = {
+				limit = {
+					has_reform = elective_monarchy
+				}
+				change_government = monarchy
+				add_government_reform = feudalism_reform
+			}
+			add_prestige = 25
+			set_country_flag = changed_from_colonial_nation
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}
+
+
+country_decisions = {
+
+	venezuela_nation = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = changed_from_colonial_nation }
+			was_never_end_game_tag_trigger = yes
+			is_nomad = no
+			is_random_new_world = no
+			NOT = { tag = HLR }
+			NOT = { tag = PAP }
+			OR = {
+				is_former_colonial_nation = no
+				is_colonial_nation = yes
+				AND = {
+					NOT = {
+						OR = {
+							technology_group = north_american
+							technology_group = mesoamerican
+							technology_group = andean
+							technology_group = high_american
+							technology_group = south_american
+						}
+					}
+					capital_scope = {
+						region = colombia_region 
+						is_core = ROOT
+					}
+				}
+			}
+			colonial_colombia = {
+				owned_by = ROOT
+			}
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 3	
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				region = colombia_region
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			is_at_war = no
+			NOT = { exists = VNZ }
+			num_of_owned_provinces_with = {
+				value = 55
+				OR = {
+				region = colombia_region
+				}
+				is_city = yes
+			}
+		}
+		effect = {
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { is_former_colonial_nation = yes }
+					}
+					ROOT = { save_event_target_as = old_tag_target }
+					set_country_flag = was_not_former_colonial_nation
+				}
+			}
+			change_tag = VNZ
+			on_change_tag_effect = yes
+			if = {
+				limit = {
+					NOT = { is_former_colonial_nation = yes }
+				}
+				restore_old_nation_on_formation_effect = yes
+				remove_non_electors_emperors_from_empire_effect = yes
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			colonial_colombia = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			#can't have more than one elective monarchy in the game
+			if = {
+				limit = {
+					has_reform = elective_monarchy
+				}
+				change_government = monarchy
+				add_government_reform = feudalism_reform
+			}
+			add_prestige = 25
+			set_country_flag = changed_from_colonial_nation
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}
+
+
+country_decisions = {
+
+	vermont_nation = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = changed_from_colonial_nation }
+			was_never_end_game_tag_trigger = yes
+			is_nomad = no
+			is_random_new_world = no
+			NOT = { tag = HLR }
+			NOT = { tag = PAP }
+			OR = {
+				is_former_colonial_nation = no
+				is_colonial_nation = yes
+				AND = {
+					NOT = {
+						OR = {
+							technology_group = north_american
+							technology_group = mesoamerican
+							technology_group = andean
+							technology_group = high_american
+							technology_group = south_american
+						}
+					}
+					capital_scope = {
+						region = northeast_america_region
+						is_core = ROOT
+					}
+				}
+			}
+			colonial_eastern_america = {
+				owned_by = ROOT
+			}
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 3	
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+					region = northeast_america_region
+					ROOT = {
+						NOT = {
+					}
+				}
+			}
+		}
+		allow = {
+			is_at_war = no
+			capital_scope = {
+				region = northeast_america_region
+				is_core = ROOT
+			}
+			
+			num_of_owned_provinces_with = {
+				value = 40
+				region = northeast_america_region
+				is_core = root
+				is_city = yes
+			}
+			NOT = { exists = VRM }
+		}
+		effect = {
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { is_former_colonial_nation = yes }
+					}
+					ROOT = { save_event_target_as = old_tag_target }
+					set_country_flag = was_not_former_colonial_nation
+				}
+			}
+			change_tag = VRM
+			on_change_tag_effect = yes
+			2563 = {
+				change_province_name = "Vermont"
+				rename_capital = "Montpelier"
+			}
+			if = {
+				limit = {
+					NOT = { is_former_colonial_nation = yes }
+				}
+				restore_old_nation_on_formation_effect = yes
+				remove_non_electors_emperors_from_empire_effect = yes
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			if = {
+				limit = {
+					culture_group = british
+					NOT = { primary_culture = american }
+				}
+			}
+			if = {
+				limit = {
+					culture_group = french
+					NOT = { primary_culture = quebecois }
+				}
+			}
+			northeast_america_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+			}
+			upper_acadia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+			}
+			lower_acadia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			#can't have more than one elective monarchy in the game
+			if = {
+				limit = {
+					has_reform = elective_monarchy
+				}
+				change_government = monarchy
+				add_government_reform = feudalism_reform
+			}
+			add_prestige = 25
+			set_country_flag = changed_from_colonial_nation
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { exists = CAN }	#Canada is more important to form
+			}
+		}
+	}
+
+}
+
+
+country_decisions = {
+
+	west_indies_nation = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = changed_from_colonial_nation }
+			was_never_end_game_tag_trigger = yes
+			is_nomad = no
+			is_random_new_world = no
+			NOT = { tag = HLR }
+			NOT = { tag = PAP }
+			OR = {
+				is_former_colonial_nation = no
+				is_colonial_nation = yes
+				AND = {
+					NOT = {
+						OR = {
+							technology_group = north_american
+							technology_group = mesoamerican
+							technology_group = andean
+							technology_group = high_american
+							technology_group = south_american
+						}
+					}
+					capital_scope = {
+						region = carribeans_region
+						is_core = ROOT
+					}
+				}
+			}
+			colonial_the_carribean = {
+				owned_by = ROOT
+			}
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 3	
+				}
+			}
+		}
+		allow = {
+			is_at_war = no
+			capital_scope = {
+				region = carribeans_region
+				is_core = ROOT
+			}
+			num_of_owned_provinces_with = {
+				value = 35
+				region = carribeans_region
+				is_core = root
+				is_city = yes
+			}
+			NOT = { exists = WSI }
+		}
+		provinces_to_highlight = {
+			region = carribeans_region
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+				is_city = no
+			}
+		}
+		effect = {
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { is_former_colonial_nation = yes }
+					}
+					ROOT = { save_event_target_as = old_tag_target }
+					set_country_flag = was_not_former_colonial_nation
+				}
+			}
+			change_tag = WSI
+			on_change_tag_effect = yes
+			if = {
+				limit = {
+					NOT = { is_former_colonial_nation = yes }
+				}
+				restore_old_nation_on_formation_effect = yes
+				remove_non_electors_emperors_from_empire_effect = yes
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			colonial_the_carribean = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			#can't have more than one elective monarchy in the game
+			if = {
+				limit = {
+					has_reform = elective_monarchy
+				}
+				change_government = monarchy
+				add_government_reform = feudalism_reform
+			}
+			add_prestige = 25
+			set_country_flag = changed_from_colonial_nation
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}
