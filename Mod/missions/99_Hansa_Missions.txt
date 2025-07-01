@@ -2078,10 +2078,10 @@ lubeck_missions_5 = {
 				has_flagship = yes 
 			}
 			else = { navy_tradition = 60 }
-			custom_trigger_tooltip = {
-				tooltip = hsa_enacted_adler_von_lubeck_decision_tt
-				has_country_flag = adler_built
-			}
+			#custom_trigger_tooltip = {
+			#	tooltip = hsa_enacted_adler_von_lubeck_decision_tt
+			#	has_country_flag = adler_built
+			#}
 			num_of_heavy_ship = 25
 			custom_trigger_tooltip = {
 				tooltip = hsa_largest_fleet_from_rivals_or_naval_ideas_tt

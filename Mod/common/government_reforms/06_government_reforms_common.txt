@@ -3166,7 +3166,6 @@ gendarmes_reform = {
 			custom_trigger_tooltip = {
 				tooltip = has_unlocked_this_reform_tt
 				has_country_flag = fra_unlock_gendarmes
-				tag = LOT
 			}
 		}
 		if = {
@@ -3174,6 +3173,9 @@ gendarmes_reform = {
 			OR = {
 				has_reform = gendarmes_reform
 				has_not_modifier_locking_military_tier = yes
+			}
+			OR ={
+				tag = LOT
 			}
 		}
 	}
