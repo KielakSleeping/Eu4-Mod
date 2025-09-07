@@ -817,7 +817,14 @@ kor_fortify_missions = {
 		trigger = {
 			num_of_owned_provinces_with = {
 				value = 5
-				has_building = fort_16th
+
+				OR = {
+					has_building = fort_15th
+					has_building = fort_16th
+					has_building = fort_17th
+					has_building = fort_18th
+				}
+				
 			}
 		}
 		effect = {
