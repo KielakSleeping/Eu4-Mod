@@ -18965,7 +18965,7 @@ grand_canal_1 = {
 			factor = 350
 		}
 		province_modifiers = {
-			trade_goods_size = 0.5
+			trade_goods_size = 0.25
 			trade_value_modifier = 0.1
 		}
 		area_modifier = {
@@ -18982,7 +18982,7 @@ grand_canal_1 = {
 			factor = 750
 		}
 		province_modifiers = {
-			trade_goods_size = 1
+			trade_goods_size = 0.5
 			trade_value_modifier = 0.15
 		}
 		area_modifier = {
@@ -19026,7 +19026,7 @@ grand_canal_2 = {
 	start = 1822 #Suzhou
 	date = 1427.01.09
 	time = { months = 0	}
-	build_cost = 0
+	build_cost = 750
 	can_be_moved = no
 	move_days_per_unit_distance = 10
 	starting_tier = 1
@@ -19075,7 +19075,7 @@ grand_canal_2 = {
 			factor = 350
 		}
 		province_modifiers = {
-			trade_goods_size = 0.5
+			trade_goods_size = 0.25
 			trade_value_modifier = 0.1
 		}
 		area_modifier = {
@@ -19092,7 +19092,7 @@ grand_canal_2 = {
 			factor = 750
 		}
 		province_modifiers = {
-			trade_goods_size = 1
+			trade_goods_size = 0.5
 			trade_value_modifier = 0.15
 		}
 		area_modifier = {
@@ -19136,7 +19136,7 @@ grand_canal_3 = {
 	start = 2145 #Zhenjiang
 	date = 1427.01.09
 	time = { months = 0	}
-	build_cost = 0
+	build_cost = 750
 	can_be_moved = no
 	move_days_per_unit_distance = 10
 	starting_tier = 1
@@ -19185,7 +19185,7 @@ grand_canal_3 = {
 			factor = 350
 		}
 		province_modifiers = {
-			trade_goods_size = 0.5
+			trade_goods_size = 0.25
 			trade_value_modifier = 0.1
 		}
 		area_modifier = {
@@ -19202,7 +19202,7 @@ grand_canal_3 = {
 			factor = 750
 		}
 		province_modifiers = {
-			trade_goods_size = 1
+			trade_goods_size = 0.5
 			trade_value_modifier = 0.15
 		}
 		area_modifier = {
@@ -19246,7 +19246,7 @@ grand_canal_4 = {
 	start = 1821 #Nanjing
 	date = 1427.01.09
 	time = { months = 0	}
-	build_cost = 0
+	build_cost = 750
 	can_be_moved = no
 	move_days_per_unit_distance = 10
 	starting_tier = 1
@@ -19295,7 +19295,7 @@ grand_canal_4 = {
 			factor = 350
 		}
 		province_modifiers = {
-			trade_goods_size = 0.5
+			trade_goods_size = 0.25
 			trade_value_modifier = 0.1
 		}
 		area_modifier = {
@@ -19312,7 +19312,7 @@ grand_canal_4 = {
 			factor = 750
 		}
 		province_modifiers = {
-			trade_goods_size = 1
+			trade_goods_size = 0.5
 			trade_value_modifier = 0.15
 		}
 		area_modifier = {

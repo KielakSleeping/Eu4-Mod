@@ -3155,11 +3155,16 @@ chinese_kingdoms_3 = {
 			# total_development = 1500 
 		}
 		effect = {
-			set_emperor_of_china = ROOT
+			#set_emperor_of_china = ROOT
 			# add_country_modifier = {
 			# 	name = era_of_the_great_dragon_modifier
 			# 	duration = -1 
 			# }
+			country_event = {
+				id = kielak_events.4
+			}
+			custom_tooltip = "We will be able to choose a religion to instantly harmonize."
+			
 		}
 	}
 }
@@ -8476,6 +8481,177 @@ kielak_china_slot_unique_qic_missions_2 = {
 					duration = -1
 				}
 			}
+		}
+	}
+
+
+
+
+
+}
+
+kielak_china_slot_unique_wu_missions_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = WUU
+
+	}
+
+
+	wu_mission_1_4 = {
+		icon = mission_unite_home_region
+		required_missions = {
+			wu_mission_2_3
+		}
+		provinces_to_highlight = {
+			area = south_jiangsu_area
+		}
+
+		position = 6
+
+		trigger = {
+			AND = {
+				south_jiangsu_area = {
+					type = all
+					owned_by = ROOT
+				}
+				SZH = {
+					exists = no
+				}
+			}
+		}
+
+		effect = {
+			country_event = {
+				id = kielak_events.7
+			}
+		}
+	}
+
+	wu_mission_1_5 = {
+		icon = mission_unite_home_region
+		required_missions = {
+			wu_mission_1_4
+		}
+		position = 7
+		trigger = {
+			owns = 730
+			is_at_war = no
+
+			OR = {
+				has_won_war_against = {
+					who = MJZ
+				}
+				
+				has_won_war_against = {
+					who = MCH
+				}
+			}
+			
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = kielak_qic_victory_over_manchu
+				duration = -1
+			}
+
+			korea_region = {
+				limit = { 
+					NOT = { is_core = ROOT } 
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+
+		}
+	}
+
+
+
+
+}
+
+kielak_china_slot_unique_wu_missions_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = WUU
+
+	}
+
+
+	wu_mission_2_3 = {
+		icon = mission_unite_home_region
+		position = 1
+		provinces_to_highlight = {
+			area = fujian_area
+		}
+
+		trigger = {
+
+			OR = {
+				MIN= {
+					is_subject_of = ROOT
+					fujian_area = {
+						type = all
+						owned_by = THIS
+					}
+				}
+
+				fujian_area = {
+					owned_by = ROOT
+					is_core = ROOT
+				}
+			}
+			
+		}
+
+		effect = {
+			custom_tooltip = "If we complete this mission via subject, we will get an event that lets us decide between converting some of our subjects tax and production development into manpower development in our own provinces, to fortify our subjects borders, or to gain cores on its lands. If we complete this mission through conquest the whole state will produce tea, produce more goods and be cheaper to develop."
+			if = {
+				limit = { 
+					MIN= {
+						is_subject_of = ROOT
+						fujian_area = {
+							type = all
+							owned_by = THIS
+						}
+					}
+				}
+
+				country_event = {
+					id = kielak_events.6
+				}
+			}
+
+			else_if = {
+				limit = { 
+					fujian_area = {
+						type = all
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				2153 = {
+					change_trade_goods = tea
+				}
+
+				every_owned_province = {
+					limit = {
+						area = fujian_area
+					}
+					add_province_modifier = {
+						name = kielak_dragons_eylashes_tea
+						duration = -1
+					}
+				}
+			}
+			
 		}
 	}
 

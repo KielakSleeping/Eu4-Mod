@@ -228,3 +228,282 @@ country_event = { #China Slots choose harmonized religion
 	
 
 }
+
+
+country_event = { #Ming annex day 1 to destroy mandate event
+	id = kielak_events.5
+	title = kielak_events.5.t
+	picture = RELIGION_eventPicture
+	desc = kielak_events.5.d
+
+	is_triggered_only = yes
+
+	option = {
+		inherit = MNG
+	}
+
+}
+
+
+country_event = { #Wuu event for MIN integration approach
+	id = kielak_events.6
+	title = kielak_events.6.t
+	picture = DIPLOMACY_eventPicture
+	desc = kielak_events.6.d
+
+	is_triggered_only = yes
+
+	option = {
+		
+		1829 = {
+			add_base_production = -4
+			add_base_tax = -4
+		}
+		669 = {
+			add_base_production = -4
+			add_base_tax = -4
+		}
+
+		2150 = {
+			add_base_manpower = 4
+		}
+		1824 = {
+			add_base_manpower = 4
+		}
+	}
+
+	option = {
+
+		1829 = {
+			add_base_production = -4
+			add_base_tax = -4
+			add_building = fort_15th
+			add_core = WUU
+		}
+
+	}
+
+	option = {
+		fujian_area  = {
+				limit = {
+					NOT = { is_core = ROOT }
+				}
+				add_core = ROOT
+			}
+
+	}
+
+}
+
+country_event = { #Wuu Grand Canal Keeper Event
+	id = kielak_events.7
+	title = kielak_events.7.t
+	picture = CULTURE_eventPicture
+	desc = kielak_events.7.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = kielak_events.7.a
+		add_adm_power = 200
+		south_jiangsu_area = {
+			cede_province = SZH
+			add_core = SZH
+			set_local_autonomy = 0
+		}
+
+		create_subject = {
+			subject_type = kielak_grand_canal_keeper
+			subject = SZH
+		}
+
+		SZH = {
+			add_tariff_value = 0.65
+			add_liberty_desire = -50
+		}
+		custom_tooltip = "The Grand Canal Keeper is a special un-annexable subject that will pay us in Tariffs, administer the Grand Canals for us and upgrade them every 40 years. After 80 years the Great Canal Keeper will be inherited by us."
+	}
+
+	option = {
+		name = kielak_events.7.b
+		1821 = {
+			add_base_production = -3
+			add_base_tax = -3
+			add_base_manpower = -3
+			add_great_project_tier = {
+				type = grand_canal_4
+				tier = -1
+			}
+		}
+		1822 = {
+			add_base_production = -3
+			add_base_tax = -3
+			add_base_manpower = -3
+			add_great_project_tier = {
+				type = grand_canal_2
+				tier = -1
+			}
+		}
+		2145 = {
+			add_base_production = -3
+			add_base_tax = -3
+			add_base_manpower = -3
+			add_great_project_tier = {
+				type = grand_canal_3
+				tier = -1
+			}
+		}
+		684 = {
+			add_great_project_tier = {
+				type = grand_canal_1
+				tier = 2
+			}
+		}
+	}
+
+	option = {
+		name = kielak_events.7.c
+		add_prestige = 20
+		1822 = {
+			center_of_trade = 1
+		}
+	}
+
+}
+
+country_event = { #Wuu Grand Canal Keeper 1st Canal Upgrade event 1
+	id = kielak_events.8
+	title = kielak_events.8.t
+	picture = CULTURE_eventPicture
+	desc = kielak_events.8.d
+
+	fire_only_once = yes
+
+	trigger = {
+		is_year = 1484
+		SZH = {
+			AND = {
+				owns = 1821
+				owns = 2145
+				owns = 1822
+			}
+			is_subject_of = WUU
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		1821 = {
+			add_great_project_tier = {
+				type = grand_canal_4
+				tier = 1
+			}
+		}
+		1822 = {
+			add_great_project_tier = {
+				type = grand_canal_2
+				tier = 1
+			}
+		}
+		2145 = {
+			add_great_project_tier = {
+				type = grand_canal_3
+				tier = 1
+			}
+		}
+
+		WUU = {
+			country_event = {
+				id = kielak_events.10
+			}
+		}
+		
+	}
+
+}
+
+country_event = { #Wuu Grand Canal Keeper 1st Canal Upgrade event 2
+	id = kielak_events.9
+	title = kielak_events.9.t
+	picture = CULTURE_eventPicture
+	desc = kielak_events.9.d
+
+	fire_only_once = yes
+
+	trigger = {
+		is_year = 1524
+		SZH = {
+			AND = {
+				owns = 1821
+				owns = 2145
+				owns = 1822
+			}
+		is_subject_of = WUU	
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		1821 = {
+			add_great_project_tier = {
+				type = grand_canal_4
+				tier = 1
+			}
+		}
+		1822 = {
+			add_great_project_tier = {
+				type = grand_canal_2
+				tier = 1
+			}
+		}
+		2145 = {
+			add_great_project_tier = {
+				type = grand_canal_3
+				tier = 1
+			}
+		}
+
+		WUU = {
+			country_event = {
+
+				id = kielak_events.11
+			}
+		}
+		
+	}
+
+}
+
+country_event = { #Wuu Grand Canal Keeper Upgrade Notification Event 1
+	id = kielak_events.10
+	title = kielak_events.10.t
+	picture = CULTURE_eventPicture
+	desc = kielak_events.10.d
+
+	is_triggered_only = yes
+
+	option = {
+		add_prestige = 25
+	}
+
+}
+
+country_event = { #Wuu Grand Canal Keeper Upgrade Notification Event 1
+	id = kielak_events.11
+	title = kielak_events.11.t
+	picture = CULTURE_eventPicture
+	desc = kielak_events.11.d
+
+	is_triggered_only = yes
+
+	option = {
+		inherit = SZH
+	}
+
+}

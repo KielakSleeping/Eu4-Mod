@@ -173,3 +173,19 @@ kielak_yue_marines_buff = {
 	discipline = 0.05
 	is_marine_modifier = yes
 }
+
+kielak_grand_canal_keeper_nation = {
+	can_not_send_merchants = yes
+	production_efficiency = 0.25
+	global_trade_goods_size_modifier = 0.2
+	global_tax_income = 36
+}
+
+kielak_grand_canal_keeper_subject = {
+	merchants = 1
+}
+
+kielak_dragons_eylashes_tea = {
+	local_development_cost = -0.1
+	trade_goods_size_modifier = 0.1
+}
