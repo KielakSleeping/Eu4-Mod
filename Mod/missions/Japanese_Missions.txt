@@ -527,12 +527,24 @@ japanse_missions_the_empire = {
 		icon = mission_japanese_fort
 		
 		trigger = {
-			grown_by_states = 2
+			#grown_by_states = 2
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				region = japan_region
+				value = 10
+			}
 		}
 		effect = {
 			add_country_modifier = {
 				name = JAP_sengoku_contender
 				duration = 7300
+			}
+
+			japan_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
 		}
 	}
