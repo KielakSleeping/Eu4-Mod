@@ -3220,14 +3220,15 @@ WoC_austria_3_1 = {
 				area = bohemia_area
 				area = moravia_area
 				area = slovakia_area
-				province_id = 135
-				province_id = 4240
-				province_id = 1864
+				#province_id = 135
+				#province_id = 4240
+				#province_id = 1864
 				area = carinthia_area
 				area = venetia_area
 				area = tirol_area
 				area = inner_austria_area
 				area = austria_proper_area
+				area = transdanubia_area
 			}
 			NOT = {
 				owned_by = ROOT
@@ -3235,16 +3236,17 @@ WoC_austria_3_1 = {
 		}
 		trigger = {
 			adm_tech = 10
-			OR = {
-				HUN = {
-					NOT = {
-						total_development = 200
-					}
-				}
-				NOT = {
-					exists = HUN
-				}
-			}
+			total_development = 1000
+			# OR = {
+			# 	HUN = {
+			# 		NOT = {
+			# 			total_development = 200
+			# 		}
+			# 	}
+			# 	NOT = {
+			# 		exists = HUN
+			# 	}
+			# }
 			custom_trigger_tooltip = {
 				tooltip = gecko_habsburg_empire_requirements_tooltip
 				erzgebirge_area = {
@@ -3263,13 +3265,17 @@ WoC_austria_3_1 = {
 					type = all 
 					owned_by = ROOT
 				}
-				135 = {
-					owned_by = ROOT
-				}
-				4240 = {
-					owned_by = ROOT
-				}
-				1864 = {
+				# 135 = {
+				# 	owned_by = ROOT
+				# }
+				# 4240 = {
+				# 	owned_by = ROOT
+				# }
+				# 1864 = {
+				# 	owned_by = ROOT
+				# }
+				transdanubia_area = {
+					type = all
 					owned_by = ROOT
 				}
 				carinthia_area = {
