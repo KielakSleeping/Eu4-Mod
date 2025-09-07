@@ -388,13 +388,17 @@ kor_military_missions_2 = {
 		position = 2
 		required_missions = { kor_build_army_mission }
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = have_at_least_5_more_discipline
-				has_global_modifier_value = {
+			has_global_modifier_value = {
 					which = discipline
 					value = 0.05
 				}
-			}
+			# custom_trigger_tooltip = {
+			# 	tooltip = have_at_least_5_more_discipline
+			# 	has_global_modifier_value = {
+			# 		which = discipline
+			# 		value = 0.05
+			# 	}
+			# }
 		}
 		effect = {
 			capital_scope = { add_base_manpower = 1 }
@@ -1109,7 +1113,7 @@ kor_turtle_ships_tree = {
 		trigger = {
 			has_global_modifier_value = {
 				which = ship_durability
-				value = 0.05
+				value = 0.025
 			}
 		}
 		effect = {
