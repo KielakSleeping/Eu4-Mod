@@ -732,6 +732,7 @@ aristocracy_ideas = {
 		maratha_loyalty_modifier = 0.1
 		rajput_loyalty_modifier = 0.1
 		qizilbash_loyalty_modifier = 0.1
+		nomadic_tribes_loyalty_modifier = 0.1
 	}
 	local_nobility = {
 		warscore_from_battles_modifier = 0.15
