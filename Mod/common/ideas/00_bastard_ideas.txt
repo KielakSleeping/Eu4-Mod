@@ -3146,6 +3146,56 @@ colonial_ideas = {
 	}
 }
 
+colonial_ideas_upgraded = {
+	start = {
+		development_cost = 0.10
+		governing_capacity_modifier = -0.15
+		no_religion_penalty = yes
+	}
+	
+	bonus = {
+		land_morale = -0.10
+	}
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = became_nw_formable
+	}
+	free = yes
+	
+	founding_fathers = {
+		legitimacy = 1
+		devotion = 1
+		republican_tradition = 0.5
+		meritocracy = 1
+		horde_unity = 1
+	}
+	continental_trade_upgraded = {
+		global_prov_trade_power_modifier = 0.75
+		centralize_state_cost = -0.2
+	}
+	manufacturing_center_upgraded = {
+		#build_cost = -0.1
+		production_efficiency= 0.1
+		expand_infrastructure_cost_modifier = -0.2
+	}
+	free_thinkers_upgraded = {
+		idea_cost = -0.1
+		liberty_desire = -15
+	}
+	colonial_militia_upgraded = {
+		global_regiment_cost = -0.1
+		reinforce_speed = 0.1
+	}
+	new_frontiers = {
+		auto_explore_adjacent_to_colony = yes
+		global_colonial_growth = 10
+	}
+	liberty_heroes = {
+		global_unrest = -1
+		free_leader_pool = 1
+	}
+}
 
 chinese_ideas = {
 	start = {
