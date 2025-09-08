@@ -8537,35 +8537,46 @@ kielak_china_slot_unique_wu_missions_1 = {
 		}
 		position = 7
 		trigger = {
-			owns = 730
-			is_at_war = no
+			owns = 1821
+			owns = 1822
+			owns = 2145
+			owns = 684
 
-			OR = {
-				has_won_war_against = {
-					who = MJZ
-				}
-				
-				has_won_war_against = {
-					who = MCH
+			1821 = {
+				has_great_project = {
+					type = grand_canal_4
+					tier = 3
 				}
 			}
+			
+			1822 = {
+				has_great_project = {
+					type = grand_canal_2
+					tier = 3
+				}
+			}
+
+			2145 = {
+				has_great_project = {
+					type = grand_canal_3
+					tier = 3
+				}
+			}
+			684 = {
+				has_great_project = {
+					type = grand_canal_1
+					tier = 3
+				}
+			}
+
 			
 		}
 
 		effect = {
 			add_country_modifier = {
-				name = kielak_qic_victory_over_manchu
+				name = kielak_wu_grand_canal_master
 				duration = -1
 			}
-
-			korea_region = {
-				limit = { 
-					NOT = { is_core = ROOT } 
-					NOT = { owned_by = ROOT } 
-				}
-				add_permanent_claim = ROOT 
-			}
-
 		}
 	}
 

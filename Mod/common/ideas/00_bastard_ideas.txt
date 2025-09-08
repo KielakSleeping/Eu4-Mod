@@ -404,7 +404,7 @@ YUE_upgrade_ideas = { #Yue
 	
 	bonus = {
 		production_efficiency = 0.15
-		colony_development_boost = 1
+		
 	}
 	
 	trigger = {
@@ -421,6 +421,7 @@ YUE_upgrade_ideas = { #Yue
 	}
 	YUE_2_upgrade = {
 		global_colonial_growth = 20
+		colony_development_boost = 1
 		naval_forcelimit_modifier = 0.25
 		allowed_marine_fraction = 0.3
 	}
