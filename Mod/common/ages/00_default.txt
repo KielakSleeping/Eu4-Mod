@@ -974,8 +974,10 @@ age_of_absolutism = {
 					culture_group = malay
 					culture_group = thai_group
 					tag = YUE
-					tag = CXI
+					#tag = CXI
 					tag = WUU
+					tag = CSH
+					tag = QIC
 				}
 			}
 			modifier = {
