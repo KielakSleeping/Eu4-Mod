@@ -568,7 +568,6 @@ country_event = { #Colonial Nations generate strong ruler
 	option = {
 		name = kielak_events.12_option_c
 		set_country_flag = took_fred
-		set_ruler_flag = fred_is_ruler
 		define_ruler = {
 			name = "Fred F. Fredrickson"
 			dynasty = ROOT
@@ -740,12 +739,8 @@ country_event = { #Colonial Nations John and William last resort
 	picture = PANIC_eventPicture
 	desc = kielak_events.17.d
 
-	trigger = {
-		AND = {
-			has_country_flag = last_resort_of_john_and_william
-			has_ruler_flag = fred_is_ruler
-		}
-		
+	trigger = {		
+		has_country_flag = last_resort_of_john_and_william
 	}
 
 	mean_time_to_happen = {
