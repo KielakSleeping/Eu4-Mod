@@ -254,7 +254,7 @@ country_event = { #Wuu event for MIN integration approach
 	is_triggered_only = yes
 
 	option = {
-		
+		name = kielak_events.6_option_a
 		1829 = {
 			add_base_production = -4
 			add_base_tax = -4
@@ -273,7 +273,7 @@ country_event = { #Wuu event for MIN integration approach
 	}
 
 	option = {
-
+		name = kielak_events.6_option_b
 		1829 = {
 			add_base_production = -4
 			add_base_tax = -4
@@ -284,6 +284,7 @@ country_event = { #Wuu event for MIN integration approach
 	}
 
 	option = {
+		name = kielak_events.6_option_c
 		fujian_area  = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -381,6 +382,7 @@ country_event = { #Wuu Grand Canal Keeper 1st Canal Upgrade event 1
 
 	trigger = {
 		is_year = 1484
+		tag = SZH
 		SZH = {
 			AND = {
 				owns = 1821
@@ -434,6 +436,7 @@ country_event = { #Wuu Grand Canal Keeper 1st Canal Upgrade event 2
 	fire_only_once = yes
 
 	trigger = {
+		tag = SZH
 		is_year = 1524
 		SZH = {
 			AND = {
@@ -489,6 +492,7 @@ country_event = { #Wuu Grand Canal Keeper Upgrade Notification Event 1
 	is_triggered_only = yes
 
 	option = {
+		name = kielak_events.10_option_a
 		add_prestige = 25
 	}
 
@@ -503,7 +507,265 @@ country_event = { #Wuu Grand Canal Keeper Upgrade Notification Event 1
 	is_triggered_only = yes
 
 	option = {
+		name = kielak_events.11_option_a
 		inherit = SZH
 	}
 
 }
+
+
+country_event = { #Colonial Nations generate strong ruler
+	id = kielak_events.12
+	title = kielak_events.12.t
+	picture = CATHOLIC_RULERS_PRAYING_eventPicture
+	desc = kielak_events.12.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = kielak_events.12_option_a
+		set_country_flag = took_john
+		define_ruler = {
+			name = "John J. Johnson"
+			dynasty = ROOT
+			culture = ROOT
+			religion = ROOT
+			adm = 6
+			dip = 3
+			mil = 3
+			claim = 100
+			age = 30
+
+		}
+		hidden_effect = {
+			add_ruler_personality = architectural_visionary_personality
+		}
+		
+		
+	}
+
+	option = {
+		name = kielak_events.12_option_b
+		set_country_flag = took_william
+		define_ruler = {
+			name = "William W. Willson"
+			dynasty = ROOT
+			culture = ROOT
+			religion = ROOT
+			adm = 3
+			dip = 6
+			mil = 3
+			claim = 100
+			age = 30
+		}
+		hidden_effect = {
+			add_ruler_personality = industrious_personality
+		}
+		
+		
+	}
+
+	option = {
+		name = kielak_events.12_option_c
+		set_country_flag = took_fred
+		set_ruler_flag = fred_is_ruler
+		define_ruler = {
+			name = "Fred F. Fredrickson"
+			dynasty = ROOT
+			culture = ROOT
+			religion = ROOT
+			adm = 3
+			dip = 3
+			mil = 6
+			claim = 100
+			age = 30
+		}
+		hidden_effect = {
+			add_ruler_personality = cruel_personality
+		}
+		
+	}
+
+}
+
+
+country_event = { #Colonial Nations Fred hates John
+	id = kielak_events.13
+	title = kielak_events.13.t
+	picture = PANIC_eventPicture
+	desc = kielak_events.13.d
+
+	trigger = {
+		has_country_flag = took_john
+	}
+
+	mean_time_to_happen = {
+		years = 5
+	}
+
+	immediate = {
+		clr_country_flag = took_john
+	}
+
+	option = {
+		name = kielak_events.13_option_a
+		capital_scope = {
+			spawn_rebels = {
+				size = 2
+				type = leadered_peasant_rebels
+				leader = "Fred F. Fredrickson"
+			}
+		}	
+
+	}
+
+}
+
+country_event = { #Colonial Nations Fred hates William
+	id = kielak_events.14
+	title = kielak_events.14.t
+	picture = PANIC_eventPicture
+	desc = kielak_events.14.d
+
+	trigger = {
+		has_country_flag = took_william
+	}
+
+	mean_time_to_happen = {
+		years = 5
+	}
+
+	immediate = {
+		clr_country_flag = took_william
+	}
+
+	option = {
+		name = kielak_events.14_option_a
+		capital_scope = {
+			spawn_rebels = {
+				size = 2
+				type = leadered_peasant_rebels
+				leader = "Fred F. Fredrickson"
+			}
+		}	
+
+	}
+
+}
+
+country_event = { #Colonial Nations John and William hate Fred
+	id = kielak_events.15
+	title = kielak_events.15.t
+	picture = PANIC_eventPicture
+	desc = kielak_events.15.d
+
+	trigger = {
+		has_country_flag = took_fred
+	}
+
+	mean_time_to_happen = {
+		years = 5
+	}
+
+	immediate = {
+		clr_country_flag = took_fred
+		set_country_flag = revolts_of_john_and_william
+	}
+
+	option = {
+		name = kielak_events.15_option_a
+		capital_scope = {
+			spawn_rebels = {
+				size = 2
+				type = leadered_peasant_rebels
+				leader = "John J. Johnson"
+			}
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				size = 2
+				type = leadered_peasant_rebels
+				leader = "William W. Willson"
+			}
+		}	
+
+	}
+
+}
+
+country_event = { #Colonial Nations John and William back for more
+	id = kielak_events.16
+	title = kielak_events.16.t
+	picture = PANIC_eventPicture
+	desc = kielak_events.16.d
+
+	trigger = {
+		has_country_flag = revolts_of_john_and_william
+	}
+
+	mean_time_to_happen = {
+		years = 5
+	}
+
+	immediate = {
+		clr_country_flag = revolts_of_john_and_william
+		set_country_flag = last_resort_of_john_and_william
+	}
+
+	option = {
+		add_stability = -1
+		name = kielak_events.16_option_a
+		capital_scope = {
+			spawn_rebels = {
+				size = 3
+				type = leadered_peasant_rebels
+				leader = "John J. Johnson"
+			}
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				size = 1
+				type = leadered_peasant_rebels
+				leader = "William W. Willson"
+			}
+		}	
+
+	}
+
+}
+
+country_event = { #Colonial Nations John and William last resort
+	id = kielak_events.17
+	title = kielak_events.17.t
+	picture = PANIC_eventPicture
+	desc = kielak_events.17.d
+
+	trigger = {
+		AND = {
+			has_country_flag = last_resort_of_john_and_william
+			has_ruler_flag = fred_is_ruler
+		}
+		
+	}
+
+	mean_time_to_happen = {
+		years = 5
+	}
+
+	immediate = {
+		clr_country_flag = last_resort_of_john_and_william
+	}
+
+	option = {
+		name = kielak_events.17_option_a
+		add_stability = -1
+		kill_ruler = yes
+		add_country_modifier = {
+			name = kielak_colonial_fred_assasinate
+			duration = 3650
+		}	
+	}
+
+}
+
+

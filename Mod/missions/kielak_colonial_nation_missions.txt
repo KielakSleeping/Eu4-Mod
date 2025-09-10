@@ -1,0 +1,1557 @@
+# Missions for Colonial Nations in NW and their Formables
+
+
+kielak_colonial_missions_slot_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+
+	potential = {
+		AND = {
+			is_colonial_nation = yes
+			capital_scope = {
+				NOT = {
+					OR = {
+						colonial_region = colonial_south_africa
+						colonial_region = colonial_australia
+						colonial_region = colonial_east_indies
+					}
+					
+				}
+			}
+		}	
+	}
+
+
+	kielak_colonial_mission_1_1 = {
+		icon = indonesian_trade
+		position = 1
+		required_missions = {}
+		
+		trigger = {
+			navy_size_percentage = 1
+		}
+
+		effect = {
+			define_advisor = {
+				type = naval_reformer
+				name = "Jack Starling"
+				cost_multiplier = 0.5
+				age = 40
+				skill = 2
+			}
+		}
+
+	}
+
+	kielak_colonial_mission_1_2 = {
+		icon = imperial_navy
+		position = 2
+		required_missions = { kielak_colonial_mission_1_1}
+		
+		trigger = {
+			navy_size_percentage = 1
+			sailors_percentage = 1
+			dock = 5
+			
+
+		}
+
+		effect = {
+			custom_tooltip = "A random province gets its dock upgraded."
+			random_owned_province = {
+				limit = {
+					has_dock_building_trigger = yes
+				}
+				upgrade_dock_building = yes
+			}
+		}
+
+	}
+
+	kielak_colonial_mission_1_3 = {
+		icon = crusader_fleet
+		position = 3
+		required_missions = { kielak_colonial_mission_1_2}
+		
+		trigger = {
+			grown_by_development = 200
+			num_of_total_ports = 10
+			shipyard = 10
+		}
+
+		effect = {
+
+			custom_tooltip = "A random province gets its shipyard upgraded."
+			random_owned_province = {
+				limit = {
+					has_shipyard_building_trigger = yes
+				}
+				upgrade_shipyard_building = yes
+			}
+
+			add_country_modifier = {
+				name = kielak_colonial_increase_navy_size
+				duration = -1
+			}
+		}
+
+	}
+
+	kielak_colonial_mission_1_4 = {
+		icon = mission_galleass
+		position = 4
+		required_missions = { kielak_colonial_mission_1_3}
+		
+		trigger = {
+			grown_by_development = 350
+			naval_forcelimit = 100
+			num_of_heavy_ship = 20
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = kielak_colonial_navy_improvements
+				duration = -1
+			}
+		}
+
+	}
+
+	kielak_colonial_mission_1_5 = {
+		icon = mission_rb_grow_the_channel
+		position = 5
+		required_missions = { kielak_colonial_mission_1_4}
+		
+		trigger = {
+			navy_size_percentage = 1
+			naval_forcelimit = 250
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = kielak_colonial_transport_attrition
+				duration = -1
+			}
+		}
+
+	}
+
+}
+
+kielak_colonial_missions_slot_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+
+	potential = {
+		AND = {
+			is_colonial_nation = yes
+			capital_scope = {
+				NOT = {
+					OR = {
+						colonial_region = colonial_south_africa
+						colonial_region = colonial_australia
+						colonial_region = colonial_east_indies
+					}
+					
+				}
+			}
+		}	
+	}
+
+	kielak_colonial_mission_2_1 = {
+		icon = fra_educational_reforms
+		position = 1
+		required_missions = { }
+		provinces_to_highlight = {
+		}
+
+
+		trigger = {
+			AND = {
+				ADM = 6
+				DIP = 6
+				MIL = 6
+			}
+		}
+
+		effect = {
+			add_republican_tradition = 25
+			add_stability = 1
+			add_prestige = 20
+		}
+
+	}
+
+	kielak_colonial_mission_2_2 = {
+		icon = fra_develop_trade
+		position = 2
+		required_missions = { kielak_colonial_mission_2_1	}
+		provinces_to_highlight = {
+		}
+
+
+		trigger = {
+			republican_tradition = 90
+			stability = 1
+			reform_level = 2
+		}
+
+		effect = {
+			change_government_reform_progress = 100
+			change_estate_land_share = {
+				estate = estate_church
+				share = -5
+			}
+			change_estate_land_share = {
+				estate = estate_burghers
+				share = -5
+			}
+
+			if = {
+				limit = { has_estate = estate_nobles  }
+					change_estate_land_share = {
+						estate = estate_nobles
+						share = -5
+				}
+			}
+
+			
+		}
+
+	}
+
+	kielak_colonial_mission_2_3 = {
+		icon = mission_english_renaissance
+		position = 3
+		required_missions = { kielak_colonial_mission_2_2	}
+		provinces_to_highlight = {
+		}
+
+
+		trigger = {
+			crown_land_share = 50
+			estate_loyalty = {
+				estate = estate_church
+				loyalty = 60
+			}
+			estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 60
+			}
+
+			if = {
+				limit = { has_estate = estate_nobles }
+					estate_loyalty = {
+						estate = estate_nobles
+						loyalty = 60
+				}
+			}
+			
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = kielak_colonial_mission_controlling_the_estates
+				duration = -1
+			}
+		}
+
+	}
+
+	kielak_colonial_mission_2_4 = {
+		icon = spa_infantes_aragon
+		position = 4
+		required_missions = { kielak_colonial_mission_2_3	}
+		provinces_to_highlight = {
+		}
+
+
+		trigger = {
+			reform_level = 8
+			republican_tradition = 90
+			stability = 3
+		}
+
+		effect = {
+			country_event = {
+				id = kielak_events.12
+			}
+		}
+
+	}
+
+
+}
+
+kielak_colonial_missions_slot_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+
+	potential = {
+		is_colonial_nation = yes
+		AND = {
+			is_colonial_nation = yes
+			capital_scope = {
+				NOT = {
+					OR = {
+						colonial_region = colonial_south_africa
+						colonial_region = colonial_australia
+						colonial_region = colonial_east_indies
+					}
+					
+				}
+			}
+		}	
+
+	}
+
+	#Develop Capital Province
+	kielak_colonial_mission_3_1 = {
+		icon = mission_conquer_50_development
+		position = 1
+		required_missions = {}
+		provinces_to_highlight = {
+			is_capital_of = ROOT
+					
+		}
+
+		trigger = {
+			capital_scope = {
+				area_for_scope_province = {
+					type = all
+					owned_by = ROOT
+				}
+			}
+
+			
+		}
+
+		effect = {
+			capital_scope = {
+				if = {
+					limit = { 
+						has_fort_building_trigger = yes
+					}
+					add_base_manpower = 2
+					add_province_modifier = {
+						name = kielak_colonial_mission_capital_wall
+						duration = -1
+					}
+				}
+
+				else_if = {
+					limit = { 	
+						has_fort_building_trigger = no
+					}
+					add_building = fort_15th
+					add_province_modifier = {
+						name = kielak_colonial_mission_capital_wall
+						duration = -1
+					}
+				}
+
+			}
+
+		}
+
+
+
+	}
+	kielak_colonial_mission_3_2 = {
+		icon = prosperity_for_all
+		position = 2
+		required_missions = { kielak_colonial_mission_3_1 }
+		provinces_to_highlight = {
+		}
+
+		trigger = {
+			capital_scope = {
+				area_for_scope_province = {
+					type = all
+					owned_by = ROOT
+					development = 15
+				}
+			}
+
+			
+		}
+
+
+		effect = {
+			custom_tooltip = "The next time we expand infrastructure in a province we will get a special event allowing us to customize further the province."
+			hidden_effect = {
+				set_country_flag = kielak_expand_infra_buff_flag
+			}
+			
+		}
+
+	}
+
+	kielak_colonial_mission_3_3 = {
+		icon = consolidate_switzerland
+		position = 3
+		required_missions = { kielak_colonial_mission_3_2 }
+		provinces_to_highlight = {
+		
+		}
+
+		trigger = {
+		
+			grown_by_states = 4
+			
+		}
+
+
+		effect = {
+			add_treasury = 500
+			add_country_modifier = {
+				name = kielak_colonial_mission_build_phase
+				duration = 1825
+			}
+			
+		}
+
+	}
+
+	kielak_colonial_mission_3_4 = {
+		icon = mission_rb_conquer_wales
+		position = 4
+		required_missions = { kielak_colonial_mission_3_3 }
+		provinces_to_highlight = {
+		
+		}
+
+		trigger = {
+			all_owned_province = {
+				is_prosperous = yes
+				num_of_buildings_in_province = 2
+			}
+			
+		}
+
+
+		effect = {
+			add_country_modifier = {
+				name = kielak_colonial_mission_dev_phase
+				duration = 3650
+			}
+			
+		}
+
+	}
+}
+
+kielak_colonial_missions_slot_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+
+	potential = {
+		AND = {
+			is_colonial_nation = yes
+			capital_scope = {
+				NOT = {
+					OR = {
+						colonial_region = colonial_south_africa
+						colonial_region = colonial_australia
+						colonial_region = colonial_east_indies
+					}
+					
+				}
+			}
+		}	
+	}
+
+	kielak_colonial_mission_4_1 = {
+		icon = mission_landsknecht_soldier
+		position = 1
+		required_missions = {  }
+		provinces_to_highlight = {
+		
+		}
+
+		trigger = {
+			overlord = {
+				capital_scope = {
+					controlled_by = THIS
+					has_siege = no
+				}
+			}
+			mil_tech = 9
+			AND = {
+				NOT = { mission_completed = kielak_colonial_mission_4_2 }
+				NOT = { mission_completed = kielak_colonial_mission_4_3 }
+			}
+
+			if = {
+				limit = {
+					AND = {
+						mil_tech = 9
+						NOT = { mil_tech = 11 } 
+					} 
+					
+				}
+				manpower = 25
+			}
+
+			if = {
+				limit = {
+					AND = {
+						mil_tech = 11
+						NOT = { mil_tech = 14 } 
+					} 
+					
+				}
+				manpower = 27
+			}
+
+			if = {
+				limit = {
+					AND = {
+						mil_tech = 14
+						NOT = { mil_tech = 16 } 
+					} 
+					
+				}
+				manpower = 29
+			}
+
+			if = {
+				limit = {
+					AND = {
+						mil_tech = 16
+						NOT = { mil_tech = 18 } 
+					} 
+					
+				}
+				manpower = 30
+			}
+
+			if = {
+				limit = {
+					AND = {
+						mil_tech = 18
+						NOT = { mil_tech = 20 } 
+					} 
+					
+				}
+				manpower = 32
+			}
+
+			if = {
+				limit = {
+					AND = {
+						mil_tech = 20
+						NOT = { mil_tech = 22 } 
+					} 
+					
+				}
+				manpower = 34
+			}
+
+			if = {
+				limit = {
+					AND = {
+						mil_tech = 22
+						NOT = { mil_tech = 24 } 
+					} 
+					
+				}
+				manpower = 36
+			}
+
+			if = {
+				limit = {
+					AND = {
+						mil_tech = 24
+						NOT = { mil_tech = 26} 
+					} 
+					
+				}
+				manpower = 38
+			}
+
+			if = {
+				limit = {
+					mil_tech = 26
+					
+				}
+				manpower = 40
+			}
+		}
+
+
+		effect = {
+			custom_tooltip = "We will spawn a full combat width worth of our infantry in the capital of our overlord. The manpower and ducat cost will be payed by us."
+			if = {
+				limit = { 
+					AND = {
+						mil_tech = 9
+						NOT = { mil_tech = 11 } 
+					}
+				}
+				overlord = {
+					capital_scope = {
+							create_units_of_type_in_province = {
+							amount = 25
+							unit_type = infantry
+							who = ROOT
+						}
+					}
+			
+				}
+				add_manpower = -25
+				add_treasury = -250
+			}
+
+			else_if = {
+				limit = { 
+					AND = {
+						mil_tech = 11
+						NOT = { mil_tech = 14 } 
+					}
+				}
+				overlord = {
+					capital_scope = {
+							create_units_of_type_in_province = {
+							amount = 27
+							unit_type = infantry
+							who = ROOT
+						}
+					}
+			
+				}
+				add_manpower = -27
+				add_treasury = -270
+			}
+			else_if = {
+				limit = { 
+					AND = {
+						mil_tech = 14
+						NOT = { mil_tech = 16 } 
+					}
+				}
+				overlord = {
+					capital_scope = {
+							create_units_of_type_in_province = {
+							amount = 29
+							unit_type = infantry
+							who = ROOT
+						}
+					}
+			
+				}
+				add_manpower = -29
+				add_treasury = -290
+			}
+
+			else_if = {
+				limit = { 
+					AND = {
+						mil_tech = 16
+						NOT = { mil_tech = 18 } 
+					}
+				}
+				overlord = {
+					capital_scope = {
+							create_units_of_type_in_province = {
+							amount = 30
+							unit_type = infantry
+							who = ROOT
+						}
+					}
+			
+				}
+				add_manpower = -30
+				add_treasury = -300
+			}
+
+			else_if = {
+				limit = { 
+					AND = {
+						mil_tech = 18
+						NOT = { mil_tech = 20 } 
+					}
+				}
+				overlord = {
+					capital_scope = {
+							create_units_of_type_in_province = {
+							amount = 32
+							unit_type = infantry
+							who = ROOT
+						}
+					}
+			
+				}
+				add_manpower = -32
+				add_treasury = -320
+			}
+
+			else_if = {
+				limit = { 
+					AND = {
+						mil_tech = 20
+						NOT = { mil_tech = 22 } 
+					}
+				}
+				overlord = {
+					capital_scope = {
+							create_units_of_type_in_province = {
+							amount = 34
+							unit_type = infantry
+							who = ROOT
+						}
+					}
+			
+				}
+				add_manpower = -34
+				add_treasury = -340
+			}
+
+			else_if = {
+				limit = { 
+					AND = {
+						mil_tech = 22
+						NOT = { mil_tech = 24 } 
+					}
+				}
+				overlord = {
+					capital_scope = {
+							create_units_of_type_in_province = {
+							amount = 36
+							unit_type = infantry
+							who = ROOT
+						}
+					}
+			
+				}
+				add_manpower = -36
+				add_treasury = -360
+			}
+
+			else_if = {
+				limit = { 
+					AND = {
+						mil_tech = 24
+						NOT = { mil_tech = 26 } 
+					}
+				}
+				overlord = {
+					capital_scope = {
+							create_units_of_type_in_province = {
+							amount = 38
+							unit_type = infantry
+							who = ROOT
+						}
+					}
+			
+				}
+				add_manpower = -38
+				add_treasury = -380
+			}
+
+			else_if = {
+				limit = { 
+					mil_tech = 26
+				}
+				overlord = {
+					capital_scope = {
+							create_units_of_type_in_province = {
+							amount = 40
+							unit_type = infantry
+							who = ROOT
+						}
+					}
+			
+				}
+				add_manpower = -40
+				add_treasury = -400
+			}
+
+		}
+
+	}
+	kielak_colonial_mission_4_2 = {
+		icon = mission_cossack_cavalry
+		position = 2
+		required_missions = {  }
+		provinces_to_highlight = {
+		
+		}
+
+		trigger = {
+			overlord = {
+				capital_scope = {
+					controlled_by = THIS
+					has_siege = no
+				}
+			}
+			mil_tech = 9
+			AND = {
+				NOT = { mission_completed = kielak_colonial_mission_4_1 }
+				NOT = { mission_completed = kielak_colonial_mission_4_3 }
+			}
+
+			if = {
+				limit = {
+					AND = {
+						mil_tech = 9
+						NOT = { mil_tech = 11 } 
+					} 
+					
+				}
+				manpower = 25
+			}
+
+			if = {
+				limit = {
+					AND = {
+						mil_tech = 11
+						NOT = { mil_tech = 14 } 
+					} 
+					
+				}
+				manpower = 27
+			}
+
+			if = {
+				limit = {
+					AND = {
+						mil_tech = 14
+						NOT = { mil_tech = 16 } 
+					} 
+					
+				}
+				manpower = 29
+			}
+
+			if = {
+				limit = {
+					AND = {
+						mil_tech = 16
+						NOT = { mil_tech = 18 } 
+					} 
+					
+				}
+				manpower = 30
+			}
+
+			if = {
+				limit = {
+					AND = {
+						mil_tech = 18
+						NOT = { mil_tech = 20 } 
+					} 
+					
+				}
+				manpower = 32
+			}
+
+			if = {
+				limit = {
+					AND = {
+						mil_tech = 20
+						NOT = { mil_tech = 22 } 
+					} 
+					
+				}
+				manpower = 34
+			}
+
+			if = {
+				limit = {
+					AND = {
+						mil_tech = 22
+						NOT = { mil_tech = 24 } 
+					} 
+					
+				}
+				manpower = 36
+			}
+
+			if = {
+				limit = {
+					AND = {
+						mil_tech = 24
+						NOT = { mil_tech = 26} 
+					} 
+					
+				}
+				manpower = 38
+			}
+
+			if = {
+				limit = {
+					mil_tech = 26
+					
+				}
+				manpower = 40
+			}
+		}
+
+
+		effect = {
+			custom_tooltip = "We will spawn a full combat width worth of our cavalry in the capital of our overlord. The manpower and ducat cost will be payed by us."
+			if = {
+				limit = { 
+					AND = {
+						mil_tech = 9
+						NOT = { mil_tech = 11 } 
+					}
+				}
+				overlord = {
+					capital_scope = {
+							create_units_of_type_in_province = {
+							amount = 25
+							unit_type = cavalry
+							who = ROOT
+						}
+					}
+			
+				}
+				add_manpower = -25
+				add_treasury = -625
+			}
+
+			else_if = {
+				limit = { 
+					AND = {
+						mil_tech = 11
+						NOT = { mil_tech = 14 } 
+					}
+				}
+				overlord = {
+					capital_scope = {
+							create_units_of_type_in_province = {
+							amount = 27
+							unit_type = cavalry
+							who = ROOT
+						}
+					}
+			
+				}
+				add_manpower = -27
+				add_treasury = -675
+			}
+			else_if = {
+				limit = { 
+					AND = {
+						mil_tech = 14
+						NOT = { mil_tech = 16 } 
+					}
+				}
+				overlord = {
+					capital_scope = {
+							create_units_of_type_in_province = {
+							amount = 29
+							unit_type = cavalry
+							who = ROOT
+						}
+					}
+			
+				}
+				add_manpower = -29
+				add_treasury = -725
+			}
+
+			else_if = {
+				limit = { 
+					AND = {
+						mil_tech = 16
+						NOT = { mil_tech = 18 } 
+					}
+				}
+				overlord = {
+					capital_scope = {
+							create_units_of_type_in_province = {
+							amount = 30
+							unit_type = cavalry
+							who = ROOT
+						}
+					}
+			
+				}
+				add_manpower = -30
+				add_treasury = -750
+			}
+
+			else_if = {
+				limit = { 
+					AND = {
+						mil_tech = 18
+						NOT = { mil_tech = 20 } 
+					}
+				}
+				overlord = {
+					capital_scope = {
+							create_units_of_type_in_province = {
+							amount = 32
+							unit_type = cavalry
+							who = ROOT
+						}
+					}
+			
+				}
+				add_manpower = -32
+				add_treasury = -800
+			}
+
+			else_if = {
+				limit = { 
+					AND = {
+						mil_tech = 20
+						NOT = { mil_tech = 22 } 
+					}
+				}
+				overlord = {
+					capital_scope = {
+							create_units_of_type_in_province = {
+							amount = 34
+							unit_type = cavalry
+							who = ROOT
+						}
+					}
+			
+				}
+				add_manpower = -34
+				add_treasury = -850
+			}
+
+			else_if = {
+				limit = { 
+					AND = {
+						mil_tech = 22
+						NOT = { mil_tech = 24 } 
+					}
+				}
+				overlord = {
+					capital_scope = {
+							create_units_of_type_in_province = {
+							amount = 36
+							unit_type = cavalry
+							who = ROOT
+						}
+					}
+			
+				}
+				add_manpower = -36
+				add_treasury = -900
+			}
+
+			else_if = {
+				limit = { 
+					AND = {
+						mil_tech = 24
+						NOT = { mil_tech = 26 } 
+					}
+				}
+				overlord = {
+					capital_scope = {
+							create_units_of_type_in_province = {
+							amount = 38
+							unit_type = cavalry
+							who = ROOT
+						}
+					}
+			
+				}
+				add_manpower = -38
+				add_treasury = -950
+			}
+
+			else_if = {
+				limit = { 
+					mil_tech = 26
+				}
+				overlord = {
+					capital_scope = {
+							create_units_of_type_in_province = {
+							amount = 40
+							unit_type = cavalry
+							who = ROOT
+						}
+					}
+			
+				}
+				add_manpower = -40
+				add_treasury = -1000
+			}
+
+		}
+
+	}
+	kielak_colonial_mission_4_3 = {
+		icon = mission_cannons_firing
+		position = 3
+		required_missions = {  }
+		provinces_to_highlight = {
+		
+		}
+
+		trigger = {
+			overlord = {
+				capital_scope = {
+					controlled_by = THIS
+					has_siege = no
+				}
+			}
+			mil_tech = 9
+			AND = {
+				NOT = { mission_completed = kielak_colonial_mission_4_1 }
+				NOT = { mission_completed = kielak_colonial_mission_4_2 }
+			}
+
+			if = {
+				limit = {
+					AND = {
+						mil_tech = 9
+						NOT = { mil_tech = 11 } 
+					} 
+					
+				}
+				manpower = 25
+			}
+
+			if = {
+				limit = {
+					AND = {
+						mil_tech = 11
+						NOT = { mil_tech = 14 } 
+					} 
+					
+				}
+				manpower = 27
+			}
+
+			if = {
+				limit = {
+					AND = {
+						mil_tech = 14
+						NOT = { mil_tech = 16 } 
+					} 
+					
+				}
+				manpower = 29
+			}
+
+			if = {
+				limit = {
+					AND = {
+						mil_tech = 16
+						NOT = { mil_tech = 18 } 
+					} 
+					
+				}
+				manpower = 30
+			}
+
+			if = {
+				limit = {
+					AND = {
+						mil_tech = 18
+						NOT = { mil_tech = 20 } 
+					} 
+					
+				}
+				manpower = 32
+			}
+
+			if = {
+				limit = {
+					AND = {
+						mil_tech = 20
+						NOT = { mil_tech = 22 } 
+					} 
+					
+				}
+				manpower = 34
+			}
+
+			if = {
+				limit = {
+					AND = {
+						mil_tech = 22
+						NOT = { mil_tech = 24 } 
+					} 
+					
+				}
+				manpower = 36
+			}
+
+			if = {
+				limit = {
+					AND = {
+						mil_tech = 24
+						NOT = { mil_tech = 26} 
+					} 
+					
+				}
+				manpower = 38
+			}
+
+			if = {
+				limit = {
+					mil_tech = 26
+					
+				}
+				manpower = 40
+			}
+		}
+
+
+		effect = {
+			custom_tooltip = "We will spawn a full combat width worth of our artillery in the capital of our overlord. The manpower and ducat cost will be payed by us."
+			if = {
+				limit = { 
+					AND = {
+						mil_tech = 9
+						NOT = { mil_tech = 11 } 
+					}
+				}
+				overlord = {
+					capital_scope = {
+							create_units_of_type_in_province = {
+							amount = 25
+							unit_type = artillery
+							who = ROOT
+						}
+					}
+			
+				}
+				add_manpower = -25
+				add_treasury = -750
+			}
+
+			else_if = {
+				limit = { 
+					AND = {
+						mil_tech = 11
+						NOT = { mil_tech = 14 } 
+					}
+				}
+				overlord = {
+					capital_scope = {
+							create_units_of_type_in_province = {
+							amount = 27
+							unit_type = artillery
+							who = ROOT
+						}
+					}
+			
+				}
+				add_manpower = -27
+				add_treasury = -810
+			}
+			else_if = {
+				limit = { 
+					AND = {
+						mil_tech = 14
+						NOT = { mil_tech = 16 } 
+					}
+				}
+				overlord = {
+					capital_scope = {
+							create_units_of_type_in_province = {
+							amount = 29
+							unit_type = artillery
+							who = ROOT
+						}
+					}
+			
+				}
+				add_manpower = -29
+				add_treasury = -870
+			}
+
+			else_if = {
+				limit = { 
+					AND = {
+						mil_tech = 16
+						NOT = { mil_tech = 18 } 
+					}
+				}
+				overlord = {
+					capital_scope = {
+							create_units_of_type_in_province = {
+							amount = 30
+							unit_type = artillery
+							who = ROOT
+						}
+					}
+			
+				}
+				add_manpower = -30
+				add_treasury = -840
+			}
+
+			else_if = {
+				limit = { 
+					AND = {
+						mil_tech = 18
+						NOT = { mil_tech = 20 } 
+					}
+				}
+				overlord = {
+					capital_scope = {
+							create_units_of_type_in_province = {
+							amount = 32
+							unit_type = artillery
+							who = ROOT
+						}
+					}
+			
+				}
+				add_manpower = -32
+				add_treasury = -900
+			}
+
+			else_if = {
+				limit = { 
+					AND = {
+						mil_tech = 20
+						NOT = { mil_tech = 22 } 
+					}
+				}
+				overlord = {
+					capital_scope = {
+							create_units_of_type_in_province = {
+							amount = 34
+							unit_type = artillery
+							who = ROOT
+						}
+					}
+			
+				}
+				add_manpower = -34
+				add_treasury = -960
+			}
+
+			else_if = {
+				limit = { 
+					AND = {
+						mil_tech = 22
+						NOT = { mil_tech = 24 } 
+					}
+				}
+				overlord = {
+					capital_scope = {
+							create_units_of_type_in_province = {
+							amount = 36
+							unit_type = artillery
+							who = ROOT
+						}
+					}
+			
+				}
+				add_manpower = -36
+				add_treasury = -1020
+			}
+
+			else_if = {
+				limit = { 
+					AND = {
+						mil_tech = 24
+						NOT = { mil_tech = 26 } 
+					}
+				}
+				overlord = {
+					capital_scope = {
+							create_units_of_type_in_province = {
+							amount = 38
+							unit_type = artillery
+							who = ROOT
+						}
+					}
+			
+				}
+				add_manpower = -38
+				add_treasury = -1080
+			}
+
+			else_if = {
+				limit = { 
+					mil_tech = 26
+				}
+				overlord = {
+					capital_scope = {
+							create_units_of_type_in_province = {
+							amount = 40
+							unit_type = artillery
+							who = ROOT
+						}
+					}
+			
+				}
+				add_manpower = -40
+				add_treasury = -1140
+			}
+
+		}
+
+	}
+
+}
+
+kielak_colonial_missions_slot_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+
+	potential = {
+		AND = {
+			is_colonial_nation = yes
+			capital_scope = {
+				NOT = {
+					OR = {
+						colonial_region = colonial_south_africa
+						colonial_region = colonial_australia
+						colonial_region = colonial_east_indies
+					}
+					
+				}
+			}
+		}	
+	}
+
+
+	kielak_colonial_mission_5_1 = {
+		icon = mission_assemble_an_army
+		position = 1
+		required_missions = {}
+		
+		trigger = {
+			army_size_percentage = 1
+		}
+
+		effect = {
+			define_advisor = {
+				type = army_reformer
+				name = "Martin Shooter"
+				cost_multiplier = 0.5
+				age = 40
+				skill = 2
+			}
+		}
+
+	}
+
+	kielak_colonial_mission_5_2 = {
+		icon = mission_mnd_dai_control_the_army
+		position = 2
+		required_missions = { kielak_colonial_mission_5_1}
+		
+		trigger = {
+			army_size_percentage = 1
+			manpower_percentage = 1
+			barracks = 10
+		}
+
+		effect = {
+			capital_scope = {
+				add_or_upgrade_manpower_building = yes
+			}
+		}
+
+	}
+
+	kielak_colonial_mission_5_3 = {
+		icon = qng_ten_grand_campaigns
+		position = 3
+		required_missions = { kielak_colonial_mission_5_2}
+		
+		trigger = {
+			grown_by_development = 200
+			all_owned_province = {
+				has_manpower_building_trigger = yes
+			}
+		}
+
+		effect = {
+
+			capital_scope = {
+				if = {
+					limit = { 
+						has_building = soldier_households
+					}
+
+					add_base_manpower = 5
+				}
+
+				else = {
+					add_building = soldier_households
+				}
+			}
+		}
+
+	}
+
+	kielak_colonial_mission_5_4 = {
+		icon = fortress_of_belgrade
+		position = 4
+		required_missions = { kielak_colonial_mission_5_3}
+		
+		trigger = {
+			grown_by_development = 350
+			all_owned_province = {
+				has_forcelimit_building_trigger = yes
+			}
+		}
+
+		effect = {
+			capital_scope = {
+				if = {
+					limit = { 
+						has_building = armory
+					}
+
+					add_base_manpower = 5
+				}
+
+				else = {
+					add_building = armory
+				}
+			}
+		}
+
+	}
+
+	kielak_colonial_mission_5_5 = {
+		icon = army_reforms
+		position = 5
+		required_missions = { kielak_colonial_mission_5_4}
+		
+		trigger = {
+			NOT = { manpower_percentage = 0.1}
+			overlord = {
+				NOT = { manpower_percentage = 0.1 }
+				all_owned_province = {
+					NOT = { has_construction = army }
+				}
+			}
+			all_owned_province = {
+				NOT = { has_construction = army  }
+			}
+			NOT = { has_country_modifier = slackening_modifier }
+		}
+
+		effect = {
+			add_yearly_manpower = 0.5
+			add_army_professionalism = 0.05
+			add_country_modifier = {
+				name = kielak_colonial_last_resort
+				duration = 3650
+			}
+		}
+
+	}
+
+}
+

@@ -137,7 +137,7 @@ kielak_china_int_mission = {
 }
 
 kielak_china_final_mission_reward = {
-	imperial_mandate = 0.1
+	#imperial_mandate = 0.1
 	discipline = 0.05
 	all_power_cost = -0.025
 }
@@ -193,4 +193,51 @@ kielak_dragons_eylashes_tea = {
 kielak_wu_grand_canal_master = {
 	technology_cost = -0.05
 	fire_damage_received = -0.05
+}
+
+
+kielak_colonial_mission_capital_wall = {
+	local_defensiveness = 0.25
+	local_hostile_movement_speed = 0.15
+}
+
+kielak_colonial_mission_build_phase = {
+	build_cost = -0.1
+	build_time = -0.25
+}
+
+kielak_colonial_mission_dev_phase = {
+	development_cost = -0.05
+	country_admin_power = 1
+	country_diplomatic_power = 1
+	country_military_power = 1
+}
+
+kielak_colonial_mission_controlling_the_estates = {
+	all_estate_loyalty_equilibrium = 0.1
+	republican_tradition = 0.2
+}
+
+kielak_colonial_fred_assasinate = {
+	republican_tradition = -0.2
+	global_unrest = 2
+}
+
+kielak_colonial_last_resort = {
+	manpower_recovery_speed = -0.1
+	global_regiment_cost = 0.1
+	discipline = -0.025
+}
+
+
+kielak_colonial_increase_navy_size = {
+	naval_forcelimit = 20
+}
+kielak_colonial_navy_improvements = {
+	sailor_maintenance_modifer = -0.1
+	navy_tradition = 0.25
+}
+
+kielak_colonial_transport_attrition = {
+	transport_attrition = -0.2
 }

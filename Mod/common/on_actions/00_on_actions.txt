@@ -5738,6 +5738,20 @@ on_capital_moved = {
 
 #ROOT = province that was expanded in, FROM = country that did it
 on_expanded_infrastructure = {
+	if = {
+		limit = {
+			FROM = { has_country_flag = kielak_expand_infra_buff_flag }
+		}
+
+		province_event = {
+			id = kielak_province_events.1
+		}
+		
+		FROM = {
+			clr_country_flag = kielak_expand_infra_buff_flag
+		}
+
+	}
 }
 on_expanded_infrastructure_removed = {
 }
