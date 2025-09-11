@@ -764,3 +764,192 @@ country_event = { #Colonial Nations John and William last resort
 }
 
 
+country_event = { #Colonial Formables Infantry or Cavalry Nation choice
+	id = kielak_events.18
+	title = kielak_events.18.t
+	picture = BIG_BOOK_eventPicture
+	desc = kielak_events.18.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = kielak_events.18_option_a
+		hidden_effect = {
+			set_country_flag = colonial_infantry_path
+		}
+		
+	}
+
+	option = {
+		name = kielak_events.18_option_b
+		hidden_effect = {
+			set_country_flag = colonial_cavalry_path
+		}
+		
+	}
+
+}
+
+country_event = { #Colonial Formables Cavalry offensive or defensive
+	id = kielak_events.19
+	title = kielak_events.19.t
+	picture = PRAYING_eventPicture
+	desc = kielak_events.19.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = kielak_events.19_option_a
+		hidden_effect = {
+			set_country_flag = colonial_cavalry_offensive_path
+		}
+		
+	}
+
+	option = {
+		name = kielak_events.19_option_b
+		hidden_effect = {
+			set_country_flag = colonial_cavalry_defensive_path
+		}
+		
+	}
+
+}
+
+
+country_event = { #Colonial Formables respawn wiped elite cavalry
+	id = kielak_events.20
+	title = kielak_events.20.t
+	picture = TEMPORAL_RIFT_eventPicture
+	desc = kielak_events.20.d
+
+	trigger = {
+		AND = {
+			NOT = {
+				num_of_special_units = {
+					special_unit_category = revolutionary_guard
+					type = cavalry
+					value = 1
+				}
+			}
+			
+			had_country_flag = {
+				flag = spawned_elite_cavalry
+				days = 9125
+			}
+
+			capital_scope = {
+				controlled_by = ROOT
+				has_siege = no
+			}
+		}
+		
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		clr_country_flag = spawned_elite_cavalry
+	}
+
+	option = {
+		name = kielak_events.20_option_a
+		create_unit_forcelimit_percentage = {
+				type = cavalry
+				special_unit_category = revolutionary_guard
+				force_limit_percentage = 0.1
+			}
+		hidden_effect = {
+			set_country_flag = spawned_elite_cavalry
+		}
+			
+		
+	}
+
+
+
+}
+
+
+country_event = { #Colonial Formables Infantry offensive or defensive
+	id = kielak_events.21
+	title = kielak_events.21.t
+	picture = REVOLT_HUGUENOTS_eventPicture
+	desc = kielak_events.21.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = kielak_events.21_option_a
+		hidden_effect = {
+			set_country_flag = colonial_infantry_offensive_path
+		}
+		
+	}
+
+	option = {
+		name = kielak_events.21_option_b
+		hidden_effect = {
+			set_country_flag = colonial_infantry_defensive_path
+		}
+		
+	}
+
+}
+
+country_event = { #Colonial Formables respawn wiped elite cavalry
+	id = kielak_events.22
+	title = kielak_events.22.t
+	picture = TEMPORAL_RIFT_eventPicture
+	desc = kielak_events.22.d
+
+	trigger = {
+		AND = {
+			NOT = {
+				num_of_special_units = {
+					special_unit_category = revolutionary_guard
+					type = infantry
+					value = 1
+				}
+			}
+			
+			had_country_flag = {
+				flag = spawned_elite_infantry
+				days = 9125
+			}
+
+			capital_scope = {
+				controlled_by = ROOT
+				has_siege = no
+			}
+		}
+		
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		clr_country_flag = spawned_elite_infantry
+	}
+
+	option = {
+		name = kielak_events.22_option_a
+		create_unit_forcelimit_percentage = {
+				type = infantry
+				special_unit_category = revolutionary_guard
+				force_limit_percentage = 0.1
+			}
+		hidden_effect = {
+			set_country_flag = spawned_elite_infantry
+		}
+			
+		
+	}
+
+
+
+}

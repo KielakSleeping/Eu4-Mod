@@ -215,6 +215,7 @@ kielak_colonial_mission_dev_phase = {
 
 kielak_colonial_mission_controlling_the_estates = {
 	all_estate_loyalty_equilibrium = 0.1
+	all_estate_influence_modifier = 0.1
 	republican_tradition = 0.2
 }
 
@@ -240,4 +241,56 @@ kielak_colonial_navy_improvements = {
 
 kielak_colonial_transport_attrition = {
 	transport_attrition = -0.2
+}
+
+kielak_colonial_formable_cavalry_ratio = {
+	cav_to_inf_ratio = 0.10
+	leader_land_manuever = 1
+}
+
+kielak_colonial_formable_cavalry_flanking = {
+	cavalry_flanking = 0.25
+}
+
+kielak_colonial_formable_cavalry_offensive = {
+	is_revolutionary_guard_modifier = yes
+	fire_damage_received = 0.05
+	shock_damage_received = 0.05
+	shock_damage = 0.15
+	morale_damage = 0.2
+
+}
+
+kielak_colonial_formable_cavalry_defensive = {
+	is_revolutionary_guard_modifier = yes
+	fire_damage_received = -0.15
+	shock_damage_received = -0.15
+	shock_damage = -0.10
+	morale_damage_received = -0.2
+}
+
+kielak_colonial_formable_infantry_pip = {
+	army_tradition_from_battle = 0.1
+	leader_land_manuever = 1
+}
+
+kielak_colonial_formable_infantry_buff = {
+	reinforce_cost_modifier = -0.1
+	drill_gain_modifier = 0.1
+}
+
+kielak_colonial_formable_infantry_offensive = {
+	is_revolutionary_guard_modifier = yes
+	fire_damage_received = 0.05
+	shock_damage_received = 0.05
+	fire_damage = 0.15
+	morale_damage = 0.2
+}
+
+kielak_colonial_formable_infantry_defensive = {
+	is_revolutionary_guard_modifier = yes
+	fire_damage_received = -0.15
+	shock_damage_received = -0.15
+	fire_damage = -0.10
+	morale_damage_received = -0.2
 }

@@ -1555,3 +1555,405 @@ kielak_colonial_missions_slot_5 = {
 
 }
 
+kielak_colonial_formables_missions_slot_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+
+	potential = {
+		has_country_flag = became_nw_formable
+	}
+
+
+
+	kielak_colonial_formables_mission_1_8 = {
+		icon = mission_teutonic_lancer
+		position = 8
+		required_missions = { kielak_colonial_formables_mission_2_7 }
+		provinces_to_highlight = {
+		
+		}
+
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = "Has chosen Durable Path"
+				hidden_trigger = {
+					has_country_flag = colonial_cavalry_defensive_path
+				}
+			}
+			
+			capital_scope = {
+				controlled_by = ROOT
+				has_siege = no
+			}
+			total_development = 500
+			all_owned_province = {
+				has_manpower_building_trigger = yes
+				has_forcelimit_building_trigger = yes
+			}
+			armory = 15
+		}
+
+		effect = {
+			custom_tooltip = "Will spawn a elite stack of cavalry equal to 10% of our forcelimit. If all our elite cavalry get wiped they will respawn after 25 years."
+			add_country_modifier = {
+				name = kielak_colonial_formable_cavalry_defensive
+				duration = -1
+			}
+			create_unit_forcelimit_percentage = {
+				type = cavalry
+				special_unit_category = revolutionary_guard
+				force_limit_percentage = 0.1
+			}
+			hidden_effect = {
+				set_country_flag = spawned_elite_cavalry
+			}
+			
+		}
+
+	}
+	
+
+
+}
+
+
+kielak_colonial_formables_missions_slot_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+
+	potential = {
+		has_country_flag = became_nw_formable
+	}
+
+
+
+	kielak_colonial_formables_mission_2_6 = {
+		icon = mam_refine_the_furusiyya
+		position = 6
+		required_missions = { kielak_colonial_formables_mission_3_5 }
+		provinces_to_highlight = {
+		
+		}
+
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = "Has chosen the Cavalry Path"
+				hidden_trigger = {
+					has_country_flag = colonial_cavalry_path
+				}
+			}
+			cavalry_fraction = 0.6
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = kielak_colonial_formable_cavalry_ratio
+				duration = -1
+			}
+		}
+
+	}
+
+	kielak_colonial_formables_mission_2_7 = {
+		icon = mission_protect_albania
+		position = 7
+		required_missions = { kielak_colonial_formables_mission_2_6  }
+		provinces_to_highlight = {
+		
+		}
+
+		trigger = {
+			has_global_modifier_value = {
+				which = cavalry_power
+				value = 0.2
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = kielak_colonial_formable_cavalry_flanking
+				duration = -1
+			}
+
+			country_event = {
+				id = kielak_events.19
+			}
+		}
+
+	}
+
+	kielak_colonial_formables_mission_2_8 = {
+		icon = mission_control_the_ganges_delta
+		position = 8
+		required_missions = { kielak_colonial_formables_mission_2_7  }
+		provinces_to_highlight = {
+		
+		}
+
+		trigger = {
+
+			custom_trigger_tooltip = {
+				tooltip = "Has chosen Fierce Path"
+				hidden_trigger = {
+					has_country_flag = colonial_cavalry_offensive_path
+				}
+			}
+			
+			capital_scope = {
+				controlled_by = ROOT
+				has_siege = no
+			}
+			total_development = 500
+			all_owned_province = {
+				has_manpower_building_trigger = yes
+				has_forcelimit_building_trigger = yes
+			}
+			armory = 15
+		}
+
+		effect = {
+			custom_tooltip = "Will spawn a elite stack of cavalry equal to 10% of our forcelimit. If all our elite cavalry get wiped they will respawn after 25 years."
+			add_country_modifier = {
+				name = kielak_colonial_formable_cavalry_offensive
+				duration = -1
+			}
+			create_unit_forcelimit_percentage = {
+				type = cavalry
+				special_unit_category = revolutionary_guard
+				force_limit_percentage = 0.1
+			}
+			hidden_effect = {
+				set_country_flag = spawned_elite_cavalry
+			}
+			
+		}
+
+	}
+
+
+}
+
+
+kielak_colonial_formables_missions_slot_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+
+	potential = {
+		has_country_flag = became_nw_formable
+	}
+
+
+
+	kielak_colonial_formables_mission_3_5 = {
+		icon = mission_russian_patriarchatee
+		position = 5
+		required_missions = {  }
+		provinces_to_highlight = {
+		
+		}
+
+		trigger = {
+			ai = no
+		}
+
+		effect = {
+			custom_tooltip = "Lets us choose between the Cavalry or Infantry Path"
+			country_event = {
+				id = kielak_events.18
+			}
+		}
+
+	}
+
+
+}
+
+
+kielak_colonial_formables_missions_slot_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+
+	potential = {
+		has_country_flag = became_nw_formable
+	}
+
+
+
+	kielak_colonial_formables_mission_4_6 = {
+		icon = mission_recruit_streltsy
+		position = 6
+		required_missions = { kielak_colonial_formables_mission_3_5 }
+		provinces_to_highlight = {
+		
+		}
+
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = "Has chosen Infantry Path"
+				hidden_trigger = {
+					has_country_flag = colonial_infantry_path
+				}
+			}
+			
+			infantry_fraction = 0.7
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = kielak_colonial_formable_infantry_pip
+				duration = -1
+			}
+		}
+
+	}
+
+	kielak_colonial_formables_mission_4_7 = {
+		icon = mission_fekete_sereg
+		position = 7
+		required_missions = { kielak_colonial_formables_mission_4_6 }
+		provinces_to_highlight = {
+		
+		}
+
+		trigger = {
+			has_global_modifier_value = {
+				which = infantry_power
+				value = 0.2
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = kielak_colonial_formable_infantry_buff
+				duration = -1
+			}
+
+			country_event = {
+				id = kielak_events.21
+			}
+		}
+
+	}
+
+	kielak_colonial_formables_mission_4_8 = {
+		icon = mission_the_varangians
+		position = 8
+		required_missions = { kielak_colonial_formables_mission_4_7 }
+		provinces_to_highlight = {
+		
+		}
+
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = "Has chosen Agressive Path"
+				hidden_trigger = {
+					has_country_flag = colonial_infantry_offensive_path
+				}
+			}
+			
+			capital_scope = {
+				controlled_by = ROOT
+				has_siege = no
+			}
+			total_development = 500
+			all_owned_province = {
+				has_manpower_building_trigger = yes
+				has_forcelimit_building_trigger = yes
+			}
+			armory = 15
+		}
+
+		effect = {
+			custom_tooltip = "Will spawn a elite stack of infantry equal to 10% of our forcelimit. If all our elite infantry get wiped they will respawn after 25 years."
+			add_country_modifier = {
+				name = kielak_colonial_formable_infantry_offensive
+				duration = -1
+			}
+			create_unit_forcelimit_percentage = {
+				type = infantry
+				special_unit_category = revolutionary_guard
+				force_limit_percentage = 0.1
+			}
+
+			hidden_effect = {
+				set_country_flag = spawned_elite_infantry
+			}
+			
+		}
+
+	}
+	
+
+
+}
+
+kielak_colonial_formables_missions_slot_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+
+	potential = {
+		has_country_flag = became_nw_formable
+	}
+
+
+
+	kielak_colonial_formables_mission_5_8 = {
+		icon = mission_livonian_knights
+		position = 8
+		required_missions = { kielak_colonial_formables_mission_4_7 }
+		provinces_to_highlight = {
+		
+		}
+
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = "Has chosen Defensive Path"
+				hidden_trigger = {
+					has_country_flag = colonial_infantry_defensive_path
+				}
+			}
+			
+			capital_scope = {
+				controlled_by = ROOT
+				has_siege = no
+			}
+			total_development = 500
+			all_owned_province = {
+				has_manpower_building_trigger = yes
+				has_forcelimit_building_trigger = yes
+			}
+			armory = 15
+		}
+
+		effect = {
+			custom_tooltip = "Will spawn a elite stack of infantry equal to 10% of our forcelimit. If all our elite infantry get wiped they will respawn after 25 years."
+			add_country_modifier = {
+				name = kielak_colonial_formable_infantry_defensive
+				duration = -1
+			}
+			create_unit_forcelimit_percentage = {
+				type = infantry
+				special_unit_category = revolutionary_guard
+				force_limit_percentage = 0.1
+			}
+			hidden_effect = {
+				set_country_flag = spawned_elite_infantry
+			}
+			
+		}
+
+	}
+	
+
+
+}

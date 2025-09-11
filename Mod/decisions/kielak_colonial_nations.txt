@@ -35,6 +35,7 @@ country_decisions = {
 			change_tag = ALA
 			remove_non_electors_emperors_from_empire_effect = yes
 			
+			
 			if = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
@@ -45,6 +46,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			set_country_flag = became_nw_formable
+			swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 0
@@ -85,6 +87,7 @@ country_decisions = {
 			change_tag = BRZ
 			remove_non_electors_emperors_from_empire_effect = yes
 			
+			
 			if = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
@@ -95,6 +98,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			set_country_flag = became_nw_formable
+			swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 0
@@ -138,6 +142,7 @@ country_decisions = {
 			change_tag = CAN
 			remove_non_electors_emperors_from_empire_effect = yes
 			
+			
 			if = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
@@ -148,6 +153,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			set_country_flag = became_nw_formable
+			swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 0
@@ -189,6 +195,7 @@ country_decisions = {
 			change_tag = CHL
 			remove_non_electors_emperors_from_empire_effect = yes
 			
+			
 			if = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
@@ -199,6 +206,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			set_country_flag = became_nw_formable
+			swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 0
@@ -244,6 +252,7 @@ country_decisions = {
 			change_tag = ILI
 			remove_non_electors_emperors_from_empire_effect = yes
 			
+			
 			if = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
@@ -254,6 +263,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			set_country_flag = became_nw_formable
+			swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 0
@@ -291,6 +301,7 @@ country_decisions = {
 			change_tag = MEX
 			remove_non_electors_emperors_from_empire_effect = yes
 			
+			
 			if = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
@@ -301,6 +312,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			set_country_flag = became_nw_formable
+			swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 0
@@ -342,6 +354,7 @@ country_decisions = {
 			change_tag = PEU
 			remove_non_electors_emperors_from_empire_effect = yes
 			
+			
 			if = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
@@ -352,6 +365,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			set_country_flag = became_nw_formable
+			swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 0
@@ -389,6 +403,7 @@ country_decisions = {
 			change_tag = SNA
 			remove_non_electors_emperors_from_empire_effect = yes
 			
+			
 			if = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
@@ -399,6 +414,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			set_country_flag = became_nw_formable
+			swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 0
@@ -436,6 +452,7 @@ country_decisions = {
 			change_tag = CAM
 			remove_non_electors_emperors_from_empire_effect = yes
 			
+			
 			if = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
@@ -446,6 +463,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			set_country_flag = became_nw_formable
+			swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 0
@@ -482,6 +500,7 @@ country_decisions = {
 			change_tag = VNZ
 			remove_non_electors_emperors_from_empire_effect = yes
 			
+			
 			if = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
@@ -492,6 +511,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			set_country_flag = became_nw_formable
+			swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 0
@@ -533,6 +553,7 @@ country_decisions = {
 			change_tag = VRM
 			remove_non_electors_emperors_from_empire_effect = yes
 			
+			
 			if = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
@@ -543,6 +564,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			set_country_flag = became_nw_formable
+			swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 0
@@ -581,6 +603,7 @@ country_decisions = {
 			change_tag = WSI
 			remove_non_electors_emperors_from_empire_effect = yes
 			
+			
 			if = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
@@ -591,6 +614,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			set_country_flag = became_nw_formable
+			swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 0
