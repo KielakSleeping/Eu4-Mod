@@ -958,7 +958,7 @@ country_event = { #Colonial Formables respawn wiped elite cavalry
 country_event = { #Colonial Formables California Fortify California Plateu
 	id = kielak_events.23
 	title = kielak_events.23.t
-	picture = TEMPORAL_RIFT_eventPicture
+	picture = GREAT_BUILDING_eventPicture
 	desc = kielak_events.23.d
 
 	is_triggered_only = yes
@@ -1015,7 +1015,7 @@ country_event = { #Colonial Formables California Fortify California Plateu
 country_event = { #Colonial Formables California Fortify Northern California
 	id = kielak_events.24
 	title = kielak_events.24.t
-	picture = TEMPORAL_RIFT_eventPicture
+	picture = GREAT_BUILDING_eventPicture
 	desc = kielak_events.24.d
 
 	is_triggered_only = yes
@@ -1062,7 +1062,7 @@ country_event = { #Colonial Formables California Fortify Northern California
 country_event = { #Colonial Formables Alaska Mountain Pass Defenses
 	id = kielak_events.25
 	title = kielak_events.25.t
-	picture = TEMPORAL_RIFT_eventPicture
+	picture = GREAT_BUILDING_eventPicture
 	desc = kielak_events.25.d
 
 	is_triggered_only = yes
@@ -1099,7 +1099,7 @@ country_event = { #Colonial Formables Alaska Mountain Pass Defenses
 country_event = { #Colonial Formables Mexico Develop Mexico
 	id = kielak_events.26
 	title = kielak_events.26.t
-	picture = TEMPORAL_RIFT_eventPicture
+	picture = CITY_DEVELOPMENT_eventPicture
 	desc = kielak_events.26.d
 
 	is_triggered_only = yes
@@ -1127,7 +1127,7 @@ country_event = { #Colonial Formables Mexico Develop Mexico
 country_event = { #Colonial Formables Mexico Rio Grand and El Passo Defense Lines
 	id = kielak_events.27
 	title = kielak_events.27.t
-	picture = TEMPORAL_RIFT_eventPicture
+	picture = FORT_eventPicture
 	desc = kielak_events.27.d
 
 	is_triggered_only = yes
@@ -1157,4 +1157,21 @@ country_event = { #Colonial Formables Mexico Rio Grand and El Passo Defense Line
 
 
 }
+
+country_event = { #Notify Austria about negative modifier event at game start
+	id = kielak_events.28
+	title = kielak_events.28.t
+	picture = PANIC_eventPicture
+	desc = kielak_events.28.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = kielak_events.28_option_a
+			
+	}
+
+
+}
+
 

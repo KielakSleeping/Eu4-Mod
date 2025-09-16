@@ -2010,7 +2010,7 @@ kielak_colonial_formables_ALA_missions_slot_1 = {
 	}
 
 	kielak_colonial_formables_ALA_mission_1_10 = {
-		icon = mission_livonian_knights
+		icon = mission_longships
 		position = 10
 		required_missions = { kielak_colonial_formables_ALA_mission_1_9  }
 		provinces_to_highlight = {
@@ -2046,7 +2046,7 @@ kielak_colonial_formables_ALA_missions_slot_3 = {
 	}
 
 	kielak_colonial_formables_ALA_mission_3_8 = {
-		icon = mission_livonian_knights
+		icon = mission_rb_settle_the_north
 		position = 8
 		required_missions = {  }
 		provinces_to_highlight = {
@@ -2116,7 +2116,7 @@ kielak_colonial_formables_ALA_missions_slot_3 = {
 	}
 
 	kielak_colonial_formables_ALA_mission_3_9 = {
-		icon = mission_livonian_knights
+		icon = mission_rb_colonise_canada
 		position = 9
 		required_missions = { kielak_colonial_formables_ALA_mission_3_8  }
 		provinces_to_highlight = {
@@ -2144,7 +2144,7 @@ kielak_colonial_formables_ALA_missions_slot_3 = {
 	}
 
 	kielak_colonial_formables_ALA_mission_3_10 = {
-		icon = mission_livonian_knights
+		icon = alpine_defenses
 		position = 10
 		required_missions = { kielak_colonial_formables_ALA_mission_3_9 }
 		provinces_to_highlight = {
@@ -2192,7 +2192,7 @@ kielak_colonial_formables_ALA_missions_slot_5 = {
 	}
 
 	kielak_colonial_formables_ALA_mission_5_9 = {
-		icon = mission_livonian_knights
+		icon = mission_protect_white_sea_trade
 		position = 9
 		required_missions = {  }
 		provinces_to_highlight = {
@@ -2228,7 +2228,7 @@ kielak_colonial_formables_ALA_missions_slot_5 = {
 
 
 	kielak_colonial_formables_ALA_mission_5_10 = {
-		icon = mission_livonian_knights
+		icon = mission_norse_faith
 		position = 10
 		required_missions = { kielak_colonial_formables_ALA_mission_5_9  }
 		provinces_to_highlight = {
@@ -2276,7 +2276,7 @@ kielak_colonial_formables_BRZ_missions_slot_1 = {
 	}
 
 	kielak_colonial_formables_BRZ_mission_1_9 = {
-		icon = mission_livonian_knights
+		icon = mnd_maj_sunda_relations
 		position = 9
 		required_missions = {  }
 		provinces_to_highlight = {
@@ -2305,7 +2305,7 @@ kielak_colonial_formables_BRZ_missions_slot_1 = {
 	}
 
 	kielak_colonial_formables_BRZ_mission_1_10 = {
-		icon = mission_livonian_knights
+		icon = mission_portuguese_malacca
 		position = 10
 		required_missions = { kielak_colonial_formables_BRZ_mission_1_9  }
 		provinces_to_highlight = {
@@ -2351,7 +2351,7 @@ kielak_colonial_formables_BRZ_missions_slot_3 = {
 	}
 
 	kielak_colonial_formables_BRZ_mission_3_8 = {
-		icon = mission_livonian_knights
+		icon = mission_african_gold
 		position = 8
 		required_missions = {  }
 		provinces_to_highlight = {
@@ -2380,7 +2380,7 @@ kielak_colonial_formables_BRZ_missions_slot_3 = {
 	}
 
 	kielak_colonial_formables_BRZ_mission_3_9 = {
-		icon = mission_livonian_knights
+		icon = mission_guilds_of_barcelona
 		position = 9
 		required_missions = { kielak_colonial_formables_BRZ_mission_3_8  }
 		provinces_to_highlight = {
@@ -2411,7 +2411,7 @@ kielak_colonial_formables_BRZ_missions_slot_3 = {
 	}
 
 	kielak_colonial_formables_BRZ_mission_3_10 = {
-		icon = mission_livonian_knights
+		icon = dominant_economy
 		position = 10
 		required_missions = { kielak_colonial_formables_BRZ_mission_3_9 }
 		provinces_to_highlight = {
@@ -2455,7 +2455,7 @@ kielak_colonial_formables_BRZ_missions_slot_5 = {
 	}
 
 	kielak_colonial_formables_BRZ_mission_5_9 = {
-		icon = mission_livonian_knights
+		icon = mission_pow_just_around_the_riverbend
 		position = 9
 		required_missions = {  }
 		provinces_to_highlight = {
@@ -2521,7 +2521,7 @@ kielak_colonial_formables_BRZ_missions_slot_5 = {
 
 
 	kielak_colonial_formables_BRZ_mission_5_10 = {
-		icon = mission_livonian_knights
+		icon = mission_caribbean_cn
 		position = 10
 		required_missions = { kielak_colonial_formables_BRZ_mission_5_9  }
 		provinces_to_highlight = {
@@ -2571,7 +2571,7 @@ kielak_colonial_formables_CAN_missions_slot_1 = {
 	}
 
 	kielak_colonial_formables_CAN_mission_1_9 = {
-		icon = mission_livonian_knights
+		icon = mission_che_the_cave_country
 		position = 9
 		required_missions = {  }
 		provinces_to_highlight = {
@@ -2612,7 +2612,7 @@ kielak_colonial_formables_CAN_missions_slot_1 = {
 	}
 
 	kielak_colonial_formables_CAN_mission_1_10 = {
-		icon = mission_livonian_knights
+		icon = mission_ne_great_lakes_conquest
 		position = 10
 		required_missions = { kielak_colonial_formables_CAN_mission_1_9  }
 		provinces_to_highlight = {
@@ -2654,7 +2654,7 @@ kielak_colonial_formables_CAN_missions_slot_3 = {
 	}
 
 	kielak_colonial_formables_CAN_mission_3_8 = {
-		icon = mission_livonian_knights
+		icon = mission_expand_into_the_forest
 		position = 8
 		required_missions = {  }
 		provinces_to_highlight = {
@@ -2693,7 +2693,7 @@ kielak_colonial_formables_CAN_missions_slot_3 = {
 	}
 
 	kielak_colonial_formables_CAN_mission_3_9 = {
-		icon = mission_livonian_knights
+		icon = mission_build_up_to_force_limit
 		position = 9
 		required_missions = { kielak_colonial_formables_CAN_mission_3_8  }
 		provinces_to_highlight = {
@@ -2721,7 +2721,7 @@ kielak_colonial_formables_CAN_missions_slot_3 = {
 	}
 
 	kielak_colonial_formables_CAN_mission_3_10 = {
-		icon = mission_livonian_knights
+		icon = mission_the_finns
 		position = 10
 		required_missions = { kielak_colonial_formables_CAN_mission_3_9 }
 		provinces_to_highlight = {
@@ -2766,7 +2766,7 @@ kielak_colonial_formables_CAN_missions_slot_5 = {
 	}
 
 	kielak_colonial_formables_CAN_mission_5_9 = {
-		icon = mission_livonian_knights
+		icon = mission_swedish_military_advise
 		position = 9
 		required_missions = {  }
 		provinces_to_highlight = {
@@ -2793,7 +2793,7 @@ kielak_colonial_formables_CAN_missions_slot_5 = {
 
 
 	kielak_colonial_formables_CAN_mission_5_10 = {
-		icon = mission_livonian_knights
+		icon = mission_swedish_nobility
 		position = 10
 		required_missions = { kielak_colonial_formables_CAN_mission_5_9  }
 		provinces_to_highlight = {
@@ -2836,7 +2836,7 @@ kielak_colonial_formables_CHL_missions_slot_1 = {
 	}
 
 	kielak_colonial_formables_CHL_mission_1_9 = {
-		icon = mission_livonian_knights
+		icon = mission_sw_against_the_desert
 		position = 9
 		required_missions = {  }
 		provinces_to_highlight = {
@@ -2867,7 +2867,7 @@ kielak_colonial_formables_CHL_missions_slot_1 = {
 	}
 
 	kielak_colonial_formables_CHL_mission_1_10 = {
-		icon = mission_livonian_knights
+		icon = mission_polynesian_navy_build
 		position = 10
 		required_missions = { kielak_colonial_formables_CHL_mission_1_9  }
 		provinces_to_highlight = {
@@ -2914,7 +2914,7 @@ kielak_colonial_formables_CHL_missions_slot_3 = {
 	}
 
 	kielak_colonial_formables_CHL_mission_3_8 = {
-		icon = mission_livonian_knights
+		icon = mission_che_the_cave_country
 		position = 8
 		required_missions = {  }
 		provinces_to_highlight = {
@@ -2961,7 +2961,7 @@ kielak_colonial_formables_CHL_missions_slot_3 = {
 	}
 
 	kielak_colonial_formables_CHL_mission_3_9 = {
-		icon = mission_livonian_knights
+		icon = mission_pue_restore_mesa_verde
 		position = 9
 		required_missions = { kielak_colonial_formables_CHL_mission_3_8  }
 		provinces_to_highlight = {
@@ -2995,7 +2995,7 @@ kielak_colonial_formables_CHL_missions_slot_3 = {
 	}
 
 	kielak_colonial_formables_CHL_mission_3_10 = {
-		icon = mission_livonian_knights
+		icon = mission_mnd_maj_end_disaster
 		position = 10
 		required_missions = { kielak_colonial_formables_CHL_mission_3_9 }
 		provinces_to_highlight = {
@@ -3045,7 +3045,7 @@ kielak_colonial_formables_CHL_missions_slot_5 = {
 	}
 
 	kielak_colonial_formables_CHL_mission_5_9 = {
-		icon = mission_livonian_knights
+		icon = mission_pol_breadbasket_europe
 		position = 9
 		required_missions = {  }
 		provinces_to_highlight = {
@@ -3074,7 +3074,7 @@ kielak_colonial_formables_CHL_missions_slot_5 = {
 
 
 	kielak_colonial_formables_CHL_mission_5_10 = {
-		icon = mission_livonian_knights
+		icon = per_establish_the_qurchi
 		position = 10
 		required_missions = { kielak_colonial_formables_CHL_mission_5_9  }
 		provinces_to_highlight = {
@@ -3115,7 +3115,7 @@ kielak_colonial_formables_ILI_missions_slot_1 = {
 	}
 
 	kielak_colonial_formables_ILI_mission_1_9 = {
-		icon = mission_livonian_knights
+		icon = mission_colonize_louisiana
 		position = 9
 		required_missions = {  }
 		provinces_to_highlight = {
@@ -3147,7 +3147,7 @@ kielak_colonial_formables_ILI_missions_slot_1 = {
 	}
 
 	kielak_colonial_formables_ILI_mission_1_10 = {
-		icon = mission_livonian_knights
+		icon = mission_pol_tend_east
 		position = 10
 		required_missions = { kielak_colonial_formables_ILI_mission_1_9  }
 		provinces_to_highlight = {
@@ -3185,7 +3185,7 @@ kielak_colonial_formables_ILI_missions_slot_3 = {
 	}
 
 	kielak_colonial_formables_ILI_mission_3_8 = {
-		icon = mission_livonian_knights
+		icon = mission_restore_faith_in_the_throne
 		position = 8
 		required_missions = {  }
 		provinces_to_highlight = {
@@ -3208,7 +3208,7 @@ kielak_colonial_formables_ILI_missions_slot_3 = {
 	}
 
 	kielak_colonial_formables_ILI_mission_3_9 = {
-		icon = mission_livonian_knights
+		icon = mission_intervene_in_castile
 		position = 9
 		required_missions = { kielak_colonial_formables_ILI_mission_3_8  }
 		provinces_to_highlight = {
@@ -3231,7 +3231,7 @@ kielak_colonial_formables_ILI_missions_slot_3 = {
 	}
 
 	kielak_colonial_formables_ILI_mission_3_10 = {
-		icon = mission_livonian_knights
+		icon = mission_crown_of_sweden
 		position = 10
 		required_missions = { kielak_colonial_formables_ILI_mission_3_9 }
 		provinces_to_highlight = {
@@ -3268,7 +3268,7 @@ kielak_colonial_formables_ILI_missions_slot_5 = {
 	}
 
 	kielak_colonial_formables_ILI_mission_5_9 = {
-		icon = mission_livonian_knights
+		icon = mission_eric_the_pirate
 		position = 9
 		required_missions = {  }
 		provinces_to_highlight = {
@@ -3299,7 +3299,7 @@ kielak_colonial_formables_ILI_missions_slot_5 = {
 
 
 	kielak_colonial_formables_ILI_mission_5_10 = {
-		icon = mission_livonian_knights
+		icon = mission_norwegian_ship
 		position = 10
 		required_missions = { kielak_colonial_formables_ILI_mission_5_9  }
 		provinces_to_highlight = {
@@ -3343,7 +3343,7 @@ kielak_colonial_formables_MEX_missions_slot_1 = {
 	}
 
 	kielak_colonial_formables_MEX_mission_1_9 = {
-		icon = mission_livonian_knights
+		icon = mission_african_gold
 		position = 9
 		required_missions = {  }
 		provinces_to_highlight = {
@@ -3368,7 +3368,7 @@ kielak_colonial_formables_MEX_missions_slot_1 = {
 	}
 
 	kielak_colonial_formables_MEX_mission_1_10 = {
-		icon = mission_livonian_knights
+		icon = dominant_economy
 		position = 10
 		required_missions = { kielak_colonial_formables_MEX_mission_1_9  }
 		provinces_to_highlight = {
@@ -3417,7 +3417,7 @@ kielak_colonial_formables_MEX_missions_slot_3 = {
 	}
 
 	kielak_colonial_formables_MEX_mission_3_8 = {
-		icon = mission_livonian_knights
+		icon = mission_colonize_the_caribbean
 		position = 8
 		required_missions = {  }
 		provinces_to_highlight = {
@@ -3443,7 +3443,7 @@ kielak_colonial_formables_MEX_missions_slot_3 = {
 	}
 
 	kielak_colonial_formables_MEX_mission_3_9 = {
-		icon = mission_livonian_knights
+		icon = mission_kingdom_of_new_spain
 		position = 9
 		required_missions = { kielak_colonial_formables_MEX_mission_3_8  }
 		provinces_to_highlight = {
@@ -3530,7 +3530,7 @@ kielak_colonial_formables_MEX_missions_slot_3 = {
 	}
 
 	kielak_colonial_formables_MEX_mission_3_10 = {
-		icon = mission_livonian_knights
+		icon = mission_intervene_in_castile
 		position = 10
 		required_missions = { kielak_colonial_formables_MEX_mission_3_9 }
 		provinces_to_highlight = {
@@ -3568,7 +3568,7 @@ kielak_colonial_formables_MEX_missions_slot_5 = {
 	}
 
 	kielak_colonial_formables_MEX_mission_5_9 = {
-		icon = mission_livonian_knights
+		icon = mission_turning_the_tables
 		position = 9
 		required_missions = {  }
 		provinces_to_highlight = {
@@ -3598,7 +3598,7 @@ kielak_colonial_formables_MEX_missions_slot_5 = {
 
 
 	kielak_colonial_formables_MEX_mission_5_10 = {
-		icon = mission_livonian_knights
+		icon = mission_brazilian_bandeirantes
 		position = 10
 		required_missions = { kielak_colonial_formables_MEX_mission_5_9  }
 		provinces_to_highlight = {
@@ -3671,7 +3671,7 @@ kielak_colonial_formables_PEU_missions_slot_1 = {
 	}
 
 	kielak_colonial_formables_PEU_mission_1_9 = {
-		icon = mission_livonian_knights
+		icon = mission_tawantinsuyu
 		position = 9
 		required_missions = {  }
 		provinces_to_highlight = {
@@ -3718,7 +3718,7 @@ kielak_colonial_formables_PEU_missions_slot_1 = {
 	}
 
 	kielak_colonial_formables_PEU_mission_1_10 = {
-		icon = mission_livonian_knights
+		icon = mission_royal_roads
 		position = 10
 		required_missions = { kielak_colonial_formables_PEU_mission_1_9  }
 		provinces_to_highlight = {
@@ -3759,7 +3759,7 @@ kielak_colonial_formables_PEU_missions_slot_3 = {
 	}
 
 	kielak_colonial_formables_PEU_mission_3_8 = {
-		icon = mission_livonian_knights
+		icon = mission_chapultepec_aqueduct
 		position = 8
 		required_missions = {  }
 		provinces_to_highlight = {
@@ -3803,7 +3803,7 @@ kielak_colonial_formables_PEU_missions_slot_3 = {
 	}
 
 	kielak_colonial_formables_PEU_mission_3_9 = {
-		icon = mission_livonian_knights
+		icon = mission_dalaskogen
 		position = 9
 		required_missions = { kielak_colonial_formables_PEU_mission_3_8  }
 		provinces_to_highlight = {
@@ -3830,7 +3830,7 @@ kielak_colonial_formables_PEU_missions_slot_3 = {
 	}
 
 	kielak_colonial_formables_PEU_mission_3_10 = {
-		icon = mission_livonian_knights
+		icon = mission_hessian_jaeger_corps
 		position = 10
 		required_missions = { kielak_colonial_formables_PEU_mission_3_9 }
 		provinces_to_highlight = {
@@ -3876,7 +3876,7 @@ kielak_colonial_formables_PEU_missions_slot_5 = {
 	}
 
 	kielak_colonial_formables_PEU_mission_5_9 = {
-		icon = mission_livonian_knights
+		icon = mission_northumberland_coast
 		position = 9
 		required_missions = {  }
 		provinces_to_highlight = {
@@ -3913,7 +3913,7 @@ kielak_colonial_formables_PEU_missions_slot_5 = {
 
 
 	kielak_colonial_formables_PEU_mission_5_10 = {
-		icon = mission_livonian_knights
+		icon = mission_sailor_boat
 		position = 10
 		required_missions = { kielak_colonial_formables_PEU_mission_5_9  }
 		provinces_to_highlight = {
@@ -3952,7 +3952,7 @@ kielak_colonial_formables_SNA_missions_slot_1 = {
 	}
 
 	kielak_colonial_formables_SNA_mission_1_9 = {
-		icon = mission_livonian_knights
+		icon = mission_retake_ceuta
 		position = 9
 		required_missions = {  }
 		provinces_to_highlight = {
@@ -4023,7 +4023,7 @@ kielak_colonial_formables_SNA_missions_slot_1 = {
 	}
 
 	kielak_colonial_formables_SNA_mission_1_10 = {
-		icon = mission_livonian_knights
+		icon = mission_sponsor_piracy
 		position = 10
 		required_missions = { kielak_colonial_formables_SNA_mission_1_9  }
 		provinces_to_highlight = {
@@ -4091,7 +4091,7 @@ kielak_colonial_formables_SNA_missions_slot_3 = {
 	}
 
 	kielak_colonial_formables_SNA_mission_3_8 = {
-		icon = mission_livonian_knights
+		icon = mission_fire_of_london
 		position = 8
 		required_missions = {  }
 		provinces_to_highlight = {
@@ -4126,7 +4126,7 @@ kielak_colonial_formables_SNA_missions_slot_3 = {
 	}
 
 	kielak_colonial_formables_SNA_mission_3_9 = {
-		icon = mission_livonian_knights
+		icon = expand_the_terraferma
 		position = 9
 		required_missions = { kielak_colonial_formables_SNA_mission_3_8  }
 		provinces_to_highlight = {
@@ -4182,7 +4182,7 @@ kielak_colonial_formables_SNA_missions_slot_3 = {
 	}
 
 	kielak_colonial_formables_SNA_mission_3_10 = {
-		icon = mission_livonian_knights
+		icon = mission_pue_restore_mesa_verde
 		position = 10
 		required_missions = { kielak_colonial_formables_SNA_mission_3_9 }
 		provinces_to_highlight = {
@@ -4222,7 +4222,7 @@ kielak_colonial_formables_SNA_missions_slot_5 = {
 	}
 
 	kielak_colonial_formables_SNA_mission_5_9 = {
-		icon = mission_livonian_knights
+		icon = french_indochina
 		position = 9
 		required_missions = {  }
 		provinces_to_highlight = {
@@ -4269,7 +4269,7 @@ kielak_colonial_formables_SNA_missions_slot_5 = {
 
 
 	kielak_colonial_formables_SNA_mission_5_10 = {
-		icon = mission_livonian_knights
+		icon = fortress_switzerland
 		position = 10
 		required_missions = { kielak_colonial_formables_SNA_mission_5_9  }
 		provinces_to_highlight = {
@@ -4333,7 +4333,7 @@ kielak_colonial_formables_CAM_missions_slot_1 = {
 	}
 
 	kielak_colonial_formables_CAM_mission_1_9 = {
-		icon = mission_livonian_knights
+		icon = mission_jungle
 		position = 9
 		required_missions = {  }
 		provinces_to_highlight = {
@@ -4359,7 +4359,7 @@ kielak_colonial_formables_CAM_missions_slot_1 = {
 	}
 
 	kielak_colonial_formables_CAM_mission_1_10 = {
-		icon = mission_livonian_knights
+		icon = mission_rb_inland_india
 		position = 10
 		required_missions = { kielak_colonial_formables_CAM_mission_1_9  }
 		provinces_to_highlight = {
@@ -4402,7 +4402,7 @@ kielak_colonial_formables_CAM_missions_slot_3 = {
 	}
 
 	kielak_colonial_formables_CAM_mission_3_8 = {
-		icon = mission_livonian_knights
+		icon = mission_conquer_bengal_dlh
 		position = 8
 		required_missions = {  }
 		provinces_to_highlight = {
@@ -4433,7 +4433,7 @@ kielak_colonial_formables_CAM_missions_slot_3 = {
 	}
 
 	kielak_colonial_formables_CAM_mission_3_9 = {
-		icon = mission_livonian_knights
+		icon = mission_clear_the_delta
 		position = 9
 		required_missions = { kielak_colonial_formables_CAM_mission_3_8  }
 		provinces_to_highlight = {
@@ -4468,7 +4468,7 @@ kielak_colonial_formables_CAM_missions_slot_3 = {
 	}
 
 	kielak_colonial_formables_CAM_mission_3_10 = {
-		icon = mission_livonian_knights
+		icon = mission_aztec_city_alliance
 		position = 10
 		required_missions = { kielak_colonial_formables_CAM_mission_3_9 }
 		provinces_to_highlight = {
@@ -4513,7 +4513,7 @@ kielak_colonial_formables_CAM_missions_slot_5 = {
 	}
 
 	kielak_colonial_formables_CAM_mission_5_9 = {
-		icon = mission_livonian_knights
+		icon = mission_chichen_itza
 		position = 9
 		required_missions = {  }
 		provinces_to_highlight = {
@@ -4545,7 +4545,7 @@ kielak_colonial_formables_CAM_missions_slot_5 = {
 
 
 	kielak_colonial_formables_CAM_mission_5_10 = {
-		icon = mission_livonian_knights
+		icon = mission_chichen_itzas
 		position = 10
 		required_missions = { kielak_colonial_formables_CAM_mission_5_9  }
 		provinces_to_highlight = {
@@ -4596,7 +4596,7 @@ kielak_colonial_formables_VNZ_missions_slot_1 = {
 	}
 
 	kielak_colonial_formables_VNZ_mission_1_9 = {
-		icon = mission_livonian_knights
+		icon = mission_jungle
 		position = 9
 		required_missions = {  }
 		provinces_to_highlight = {
@@ -4623,7 +4623,7 @@ kielak_colonial_formables_VNZ_missions_slot_1 = {
 	}
 
 	kielak_colonial_formables_VNZ_mission_1_10 = {
-		icon = mission_livonian_knights
+		icon = mission_mnd_khm_restored_empire
 		position = 10
 		required_missions = { kielak_colonial_formables_VNZ_mission_1_9  }
 		provinces_to_highlight = {
@@ -4664,7 +4664,7 @@ kielak_colonial_formables_VNZ_missions_slot_3 = {
 	}
 
 	kielak_colonial_formables_VNZ_mission_3_8 = {
-		icon = mission_livonian_knights
+		icon = mission_mnd_maj_porch_of_mecca
 		position = 8
 		required_missions = {  }
 		provinces_to_highlight = {
@@ -4686,7 +4686,7 @@ kielak_colonial_formables_VNZ_missions_slot_3 = {
 	}
 
 	kielak_colonial_formables_VNZ_mission_3_9 = {
-		icon = mission_livonian_knights
+		icon = dominant_economy
 		position = 9
 		required_missions = { kielak_colonial_formables_VNZ_mission_3_8  }
 		provinces_to_highlight = {
@@ -4715,7 +4715,7 @@ kielak_colonial_formables_VNZ_missions_slot_3 = {
 	}
 
 	kielak_colonial_formables_VNZ_mission_3_10 = {
-		icon = mission_livonian_knights
+		icon = mission_oceania_assemble_an_army
 		position = 10
 		required_missions = { kielak_colonial_formables_VNZ_mission_3_9 }
 		provinces_to_highlight = {
@@ -4761,7 +4761,7 @@ kielak_colonial_formables_VNZ_missions_slot_5 = {
 	}
 
 	kielak_colonial_formables_VNZ_mission_5_9 = {
-		icon = mission_livonian_knights
+		icon = mission_ne_great_lakes_conquest
 		position = 9
 		required_missions = {  }
 		provinces_to_highlight = {
@@ -4800,7 +4800,7 @@ kielak_colonial_formables_VNZ_missions_slot_5 = {
 
 
 	kielak_colonial_formables_VNZ_mission_5_10 = {
-		icon = mission_livonian_knights
+		icon = mission_mnd_siam_revolution
 		position = 10
 		required_missions = { kielak_colonial_formables_VNZ_mission_5_9  }
 		provinces_to_highlight = {
@@ -4860,7 +4860,7 @@ kielak_colonial_formables_VRM_missions_slot_1 = {
 	}
 
 	kielak_colonial_formables_VRM_mission_1_9 = {
-		icon = mission_livonian_knights
+		icon = mission_che_botanical_exports
 		position = 9
 		required_missions = {  }
 		provinces_to_highlight = {
@@ -4902,7 +4902,7 @@ kielak_colonial_formables_VRM_missions_slot_1 = {
 	}
 
 	kielak_colonial_formables_VRM_mission_1_10 = {
-		icon = mission_livonian_knights
+		icon = mission_ne_great_lakes_conquest
 		position = 10
 		required_missions = { kielak_colonial_formables_VRM_mission_1_9  }
 		provinces_to_highlight = {
@@ -4958,7 +4958,7 @@ kielak_colonial_formables_VRM_missions_slot_3 = {
 	}
 
 	kielak_colonial_formables_VRM_mission_3_8 = {
-		icon = mission_livonian_knights
+		icon = mission_raid_christian_trade
 		position = 8
 		required_missions = {  }
 		provinces_to_highlight = {
@@ -4980,7 +4980,7 @@ kielak_colonial_formables_VRM_missions_slot_3 = {
 	}
 
 	kielak_colonial_formables_VRM_mission_3_9 = {
-		icon = mission_livonian_knights
+		icon = mission_corsairs_of_the_north_sea
 		position = 9
 		required_missions = { kielak_colonial_formables_VRM_mission_3_8  }
 		provinces_to_highlight = {
@@ -5008,7 +5008,7 @@ kielak_colonial_formables_VRM_missions_slot_3 = {
 	}
 
 	kielak_colonial_formables_VRM_mission_3_10 = {
-		icon = mission_livonian_knights
+		icon = mission_colonize_the_west
 		position = 10
 		required_missions = { kielak_colonial_formables_VRM_mission_3_9 }
 		provinces_to_highlight = {
@@ -5050,7 +5050,7 @@ kielak_colonial_formables_VRM_missions_slot_5 = {
 	}
 
 	kielak_colonial_formables_VRM_mission_5_9 = {
-		icon = mission_livonian_knights
+		icon = mission_dominate_genoa
 		position = 9
 		required_missions = {  }
 		provinces_to_highlight = {
@@ -5085,7 +5085,7 @@ kielak_colonial_formables_VRM_missions_slot_5 = {
 
 
 	kielak_colonial_formables_VRM_mission_5_10 = {
-		icon = mission_livonian_knights
+		icon = mission_control_venice
 		position = 10
 		required_missions = { kielak_colonial_formables_VRM_mission_5_9  }
 		provinces_to_highlight = {
@@ -5132,7 +5132,7 @@ kielak_colonial_formables_WSI_missions_slot_1 = {
 	}
 
 	kielak_colonial_formables_WSI_mission_1_9 = {
-		icon = mission_livonian_knights
+		icon = mission_gain_mana
 		position = 9
 		required_missions = {  }
 		provinces_to_highlight = {
@@ -5166,7 +5166,7 @@ kielak_colonial_formables_WSI_missions_slot_1 = {
 	}
 
 	kielak_colonial_formables_WSI_mission_1_10 = {
-		icon = mission_livonian_knights
+		icon = mission_pow_the_laughing_king
 		position = 10
 		required_missions = { kielak_colonial_formables_WSI_mission_1_9  }
 		provinces_to_highlight = {
@@ -5225,7 +5225,7 @@ kielak_colonial_formables_WSI_missions_slot_3 = {
 	}
 
 	kielak_colonial_formables_WSI_mission_3_8 = {
-		icon = mission_livonian_knights
+		icon = end_genoese_competition
 		position = 8
 		required_missions = {  }
 		provinces_to_highlight = {
@@ -5248,7 +5248,7 @@ kielak_colonial_formables_WSI_missions_slot_3 = {
 	}
 
 	kielak_colonial_formables_WSI_mission_3_9 = {
-		icon = mission_livonian_knights
+		icon = mission_unite_coromandel
 		position = 9
 		required_missions = { kielak_colonial_formables_WSI_mission_3_8  }
 		provinces_to_highlight = {
@@ -5275,7 +5275,7 @@ kielak_colonial_formables_WSI_missions_slot_3 = {
 	}
 
 	kielak_colonial_formables_WSI_mission_3_10 = {
-		icon = mission_livonian_knights
+		icon = mission_raid_christian_trade
 		position = 10
 		required_missions = { kielak_colonial_formables_WSI_mission_3_9 }
 		provinces_to_highlight = {
@@ -5318,7 +5318,7 @@ kielak_colonial_formables_WSI_missions_slot_5 = {
 	}
 
 	kielak_colonial_formables_WSI_mission_5_9 = {
-		icon = mission_livonian_knights
+		icon = mission_pirate_fleet
 		position = 9
 		required_missions = {  }
 		provinces_to_highlight = {
@@ -5348,7 +5348,7 @@ kielak_colonial_formables_WSI_missions_slot_5 = {
 
 
 	kielak_colonial_formables_WSI_mission_5_10 = {
-		icon = mission_livonian_knights
+		icon = mission_pirate_flag
 		position = 10
 		required_missions = { kielak_colonial_formables_WSI_mission_5_9  }
 		provinces_to_highlight = {

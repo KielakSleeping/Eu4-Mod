@@ -2183,64 +2183,107 @@ WoC_austria_2_1 = {
 
 			custom_tooltip = SEPERATOR_TOOLTIP
 
-			if = {
+			# if = {
+			# 	limit = {
+			# 		exists = HUN
+			# 		valid_for_personal_unions_trigger = yes
+			# 		HUN = {
+			# 			valid_for_personal_unions_trigger = yes
+			# 		}
+			# 	}
+			# 	add_casus_belli = {
+			# 		type = cb_restore_personal_union
+			# 		months = 300
+			# 		target = HUN
+			# 	}
+			# }
+			# else = {
+			# 	slovakia_area = {
+			# 		limit = {
+			# 			NOT = { is_core = ROOT }
+			# 			NOT = { is_permanent_claim = ROOT }
+			# 		}
+			# 		add_permanent_claim = ROOT
+			# 	}
+			# 	transdanubia_area = {
+			# 		limit = {
+			# 			NOT = { is_core = ROOT }
+			# 			NOT = { is_permanent_claim = ROOT }
+			# 		}
+			# 		add_permanent_claim = ROOT
+			# 	}
+			# 	alfold_area = {
+			# 		limit = {
+			# 			NOT = { is_core = ROOT }
+			# 			NOT = { is_permanent_claim = ROOT }
+			# 		}
+			# 		add_permanent_claim = ROOT
+			# 	}
+			# 	slavonia_area = {
+			# 		limit = {
+			# 			NOT = { is_core = ROOT }
+			# 			NOT = { is_permanent_claim = ROOT }
+			# 		}
+			# 		add_permanent_claim = ROOT
+			# 	}
+			# 	croatia_area = {
+			# 		limit = {
+			# 			NOT = { is_core = ROOT }
+			# 			NOT = { is_permanent_claim = ROOT }
+			# 		}
+			# 		add_permanent_claim = ROOT
+			# 	}
+			# 	east_adriatic_coast_area = {
+			# 		limit = {
+			# 			NOT = { is_core = ROOT }
+			# 			NOT = { is_permanent_claim = ROOT }
+			# 		}
+			# 		add_permanent_claim = ROOT
+			# 	}
+			# }
+			slovakia_area = {
 				limit = {
-					exists = HUN
-					valid_for_personal_unions_trigger = yes
-					HUN = {
-						valid_for_personal_unions_trigger = yes
-					}
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
-				add_casus_belli = {
-					type = cb_restore_personal_union
-					months = 300
-					target = HUN
-				}
+				add_permanent_claim = ROOT
 			}
-			else = {
-				slovakia_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
+			transdanubia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
-				transdanubia_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-				alfold_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-				slavonia_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-				croatia_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-				east_adriatic_coast_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
+				add_permanent_claim = ROOT
 			}
+			alfold_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			slavonia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			croatia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			east_adriatic_coast_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+
 		}
 		ai_weight = {
 			factor = 500	#Historical conquest
