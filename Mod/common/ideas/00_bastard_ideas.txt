@@ -375,8 +375,8 @@ YUE_ideas = { #Yue
 		merchants = 1
 	}
 	YUE_4 = {
-		#infantry_power = 0.1
-		land_morale = 0.05
+		infantry_power = 0.05
+		#land_morale = 0.05
 		sailors_recovery_speed = 0.25
 		sailor_maintenance_modifer = -0.15
 	}
@@ -430,7 +430,7 @@ YUE_upgrade_ideas = { #Yue
 		merchants = 1
 	}
 	YUE_4_upgrade = {
-		#infantry_power = 0.1
+		infantry_power = 0.1
 		#land_morale = 0.05
 		sailors_recovery_speed = 0.3
 		sailor_maintenance_modifer = -0.15

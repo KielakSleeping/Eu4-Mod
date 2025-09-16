@@ -277,6 +277,7 @@ kielak_colonial_missions_slot_2 = {
 		}
 
 		effect = {
+			custom_tooltip = "This Event will let us chose a new Ruler for our Country."
 			country_event = {
 				id = kielak_events.12
 			}
