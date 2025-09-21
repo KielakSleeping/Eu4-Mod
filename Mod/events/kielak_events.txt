@@ -1175,3 +1175,35 @@ country_event = { #Notify Austria about negative modifier event at game start
 }
 
 
+
+country_event = { #Upgrades Fleet In Being to Kaylaks Kayak
+	id = kielak_events.29
+	title = kielak_events.29.t
+	picture = NAVAL_MILITARY_eventPicture
+	desc = kielak_events.29.d
+
+	trigger = {
+		NOT = { has_country_flag = kaylaks_kayak_doctrine_unlocked  }
+		naval_forcelimit = 300
+		is_colonial_nation = no
+		is_year = 1550
+		ai = no
+	}
+
+	mean_time_to_happen = {
+		years = 1
+	}
+
+	option = {
+		name = kielak_events.29_option_a
+
+		hidden_effect = {
+			set_country_flag = kaylaks_kayak_doctrine_unlocked 
+		}
+			
+	}
+
+
+}
+
+

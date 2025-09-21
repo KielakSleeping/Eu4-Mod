@@ -197,6 +197,9 @@
     kielak_events.28.t: "Warning"
     kielak_events.28.d: "If we were to declare an offensive war onto an Elector of the HRE (where we are the agressor and war leader, and an elector is the defendant and war leader) before the year 1470, we will get a negative event that severly decreases our monthly Imperal Authoirty Gain, increases Unrest, and makes our subjects more disloyal. This event has a MTTH of 4 months, so if we need to declare offensively pre 1470 to remove rivals or stuff like that that can get peaced out almost instantly this event should not fire. We can savely declare on electors after 1470."
     kielak_events.28_option_a: "Understood"
+    kielak_events.29.t: "Kaylaks Kayaks have arrived!"
+    kielak_events.29.d: "The pinnacle of transportation that sailors across the seven seas have only heard rumors about has finally reached our country. Let them take us out and beyond."
+    kielak_events.29_option_a: "Unlock Kaylaks Kayaks Naval Doctrine."
 
     kielak_province_events.1.t: "A hard choice."
     kielak_province_events.1.d: "The hardest choices require the strongest wills."
