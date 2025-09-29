@@ -257,16 +257,13 @@ kielak_colonial_formable_cavalry_offensive = {
 	is_revolutionary_guard_modifier = yes
 	cavalry_power = 0.1
 	morale_damage = 0.10
-	fire_damage_received = 0.1
-	shock_damage_received = 0.1
+	
 	
 
 }
 
 kielak_colonial_formable_cavalry_defensive = {
 	is_revolutionary_guard_modifier = yes
-	cavalry_power = -0.1
-	morale_damage = -0.10
 	fire_damage_received = -0.1
 	shock_damage_received = -0.1
 }
@@ -285,14 +282,10 @@ kielak_colonial_formable_infantry_offensive = {
 	is_revolutionary_guard_modifier = yes
 	infantry_power = 0.1
 	morale_damage = 0.10
-	fire_damage_received = 0.1
-	shock_damage_received = 0.1
 }
 
 kielak_colonial_formable_infantry_defensive = {
 	is_revolutionary_guard_modifier = yes
-	infantry_power = -0.1
-	morale_damage = -0.10
 	fire_damage_received = -0.1
 	shock_damage_received = -0.1
 }
@@ -470,7 +463,7 @@ kielak_colonial_formable_carribean_growth_spurt = {
 
 kielak_colonial_formable_carribean_cuban_cigars = {
 	trade_goods_size = 2
-	trade_value = 25
+	province_trade_power_value = 25
 }
 
 kielak_colonial_formable_carribean_captain_jack_sparrow = {

@@ -2308,7 +2308,7 @@ wei_suo_system_reform = {
 		}
 	}
 	modifiers = {
-		global_regiment_cost = -0.15
+		global_regiment_cost = -0.05
 	}
 	custom_attributes = {
 		improved_military_buildings = yes	#Barracks, Regimental Camps and Soldier Househols are buffed 
@@ -2437,6 +2437,7 @@ green_standard_army_reform = {
 			primary_culture = manchu_new
 			primary_culture = manchu
 		}
+		NOT = { tag = QNG }
 	}
 	trigger = {
 		if = {

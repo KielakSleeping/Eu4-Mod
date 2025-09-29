@@ -451,7 +451,7 @@ kielak_colonial_missions_slot_3 = {
 kielak_colonial_missions_slot_4 = {
 	slot = 4
 	generic = no
-	ai = yes
+	ai = no
 	has_country_shield = yes
 
 	potential = {
@@ -1530,6 +1530,7 @@ kielak_colonial_missions_slot_5 = {
 		required_missions = { kielak_colonial_mission_5_4}
 		
 		trigger = {
+			ai = no
 			NOT = { manpower_percentage = 0.1}
 			overlord = {
 				NOT = { manpower_percentage = 0.1 }
@@ -3398,6 +3399,7 @@ kielak_colonial_formables_MEX_missions_slot_1 = {
 				add_base_production = 5
 				add_permanent_province_modifier = {
 					name = kielak_colonial_formable_mexico_infinite_gold
+					duration = -1
 				}
 			}
 		}

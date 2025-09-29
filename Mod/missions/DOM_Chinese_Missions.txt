@@ -2477,16 +2477,16 @@ DOM_Qing_Missions_2_b = {
 			else = {
 				add_legitimacy = 25
 			}
-			custom_tooltip = extinguish_ming_tt
-			hidden_effect = {
-				china_superregion = {
-					limit = {
-						NOT = { owned_by = ROOT }
-						NOT = { is_core = ROOT }
-					}
-					add_core = ROOT
-				}
-			}
+			# custom_tooltip = extinguish_ming_tt
+			# hidden_effect = {
+			# 	china_superregion = {
+			# 		limit = {
+			# 			NOT = { owned_by = ROOT }
+			# 			NOT = { is_core = ROOT }
+			# 		}
+			# 		add_core = ROOT
+			# 	}
+			# }
 			change_ruler_stat = {
 				type = adm
 				amount = 1
@@ -6050,10 +6050,11 @@ DOM_Qing_Missions_4_b = {
 		position = 12
 		trigger = {
 			OR = { 
-				AND = { 
-					in_golden_age = yes 
-					monthly_income = 300 
-				}
+				# AND = { 
+				# 	in_golden_age = yes 
+				# 	monthly_income = 300 
+				# }
+				monthly_income = 300 
 				AND = {
 					grown_by_development = 1250
 					if = { 
@@ -6066,12 +6067,12 @@ DOM_Qing_Missions_4_b = {
 						NOT = { great_power_rank = 4 }
 					}
 				}
-				AND = { 
-					is_emperor_of_china = yes 
-					stability = 3 
-					imperial_mandate = 85
-					empire_of_china_num_reforms_passed = 8
-				}
+				# AND = { 
+				# 	is_emperor_of_china = yes 
+				# 	stability = 3 
+				# 	imperial_mandate = 85
+				# 	empire_of_china_num_reforms_passed = 8
+				# }
 			}
 		}
 		effect = {

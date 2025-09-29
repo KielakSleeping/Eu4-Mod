@@ -1471,12 +1471,13 @@ gbr_colonial_investment = {
 crown_colony_overlord = {
 	merchants = 1
 	#global_trade_power = 0.05
+	global_tariffs = -0.05
 }
 
 private_enterprise_overlord = {
 	merchants = 1
 	#global_trade_power = 0.05
-	global_tariffs = -0.05
+	global_tariffs = -0.1
 }
 
 self_governing_colony_overlord = {
@@ -1494,10 +1495,10 @@ crown_colony_subject = {
 }
 
 private_enterprise_subject = {
-	global_ship_trade_power = 0.2
-	global_trade_goods_size_modifier = 0.2
+	global_ship_trade_power = 0.1
+	global_trade_goods_size_modifier = 0.1
 	naval_tradition_from_trade = 0.1
-	ship_power_propagation = 0.1
+	#ship_power_propagation = 0.1
 	colonists = 1
 	global_colonial_growth = 10
 }
