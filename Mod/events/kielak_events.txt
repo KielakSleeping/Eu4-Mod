@@ -1206,4 +1206,51 @@ country_event = { #Upgrades Fleet In Being to Kaylaks Kayak
 
 }
 
+country_event = { #jains estate ipa priviledge renew event
+    id = kielak_events.30 #
+    title = kielak_events.30.t
+    desc = kielak_events.30.d
+    picture = COURT_eventPicture
+    is_triggered_only = yes
+
+
+	option = {
+		name = kielak_events.30_option_a
+		custom_tooltip = kielak_renew_jains_priv_tooltip
+		add_estate_loyalty = {
+			estate = estate_jains
+			loyalty = 10
+		}
+		reapply_estate_privilege = { privilege = estate_jains_conscientious_objection }
+	}
+	option = {
+		name = kielak_events.30_option_b
+		custom_tooltip = kielak_revoke_jains_priv_tooltip
+		add_estate_loyalty = {
+			estate = estate_jains
+			loyalty = -10
+		}
+		hidden_effect = {
+			remove_estate_privilege = estate_jains_conscientious_objection
+		}
+	}
+}
+
+country_event = { #bengal piety event
+    id = kielak_events.31 #
+    title = kielak_events.31.t
+    desc = kielak_events.31.d
+    picture = RELIGION_eventPicture
+    is_triggered_only = yes
+
+	option = {
+		name = kielak_events.31_option_a
+		add_piety = 0.5
+	}
+	option = {
+		name = kielak_events.31_option_b
+		add_piety = -0.5
+		
+	}
+}
 

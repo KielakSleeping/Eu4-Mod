@@ -3364,6 +3364,10 @@ impressment_offices = {
 	cost = 400
 	time = 12
 
+	manufactory = {
+		all
+	}
+
 	# build_trigger = {
 	# 	has_port = yes
 	# }
@@ -3401,11 +3405,11 @@ impressment_offices = {
 			type = manpower
 			value = 2
 		}
-		add_dev_from_building = {
-			building = impressment_offices 
-			type = manpower 
-			value = 1 
-		}
+		# add_dev_from_building = {
+		# 	building = impressment_offices 
+		# 	type = manpower 
+		# 	value = 1 
+		# }
 	}
 	on_destroyed = {
 		bastard_dev_cost_remove_from_buildings = yes
@@ -3414,11 +3418,11 @@ impressment_offices = {
 			type = manpower
 			value = 2
 		}
-		remove_dev_from_building = {
-			building = impressment_offices 
-			type = manpower 
-			value = 1 
-		}
+		# remove_dev_from_building = {
+		# 	building = impressment_offices 
+		# 	type = manpower 
+		# 	value = 1 
+		# }
 	}
 	on_obsolete = {
 	}

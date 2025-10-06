@@ -1480,18 +1480,19 @@ KoK_YEM_missions_3_RAS_religious = {
 		trigger = {
 			384 = { owned_by = ROOT }
 			385 = { owned_by = ROOT }
-			if = {
-				limit = {
-					OR = {
-						has_dlc = "Emperor"
-						has_dlc = "Rights of Man"
-					}
-				}
-				is_great_power = yes
-			}
-			else = {
-				total_development = 300
-			}
+			# if = {
+			# 	limit = {
+			# 		OR = {
+			# 			has_dlc = "Emperor"
+			# 			has_dlc = "Rights of Man"
+			# 		}
+			# 	}
+			# 	is_great_power = yes
+			# }
+			# else = {
+			# 	total_development = 300
+			# }
+			total_development = 300
 			army_size = 60
 		}
 		effect = {

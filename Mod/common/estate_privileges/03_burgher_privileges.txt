@@ -1806,7 +1806,7 @@ estate_burghers_orang_laut_alliances = {
 	penalties = {
 	}
 	benefits = {
-		global_own_trade_power = 0.25
+		global_own_trade_power = 0.15
 	}
 	conditional_modifier = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
@@ -2817,6 +2817,7 @@ estate_burghers_naval_school_right = {
 		factor = 0
 	}
 }
+
 estate_burghers_financial_demand = {
 	icon = privilege_ducats
 	loyalty = 0.0
@@ -2826,21 +2827,42 @@ estate_burghers_financial_demand = {
 	is_valid = {
 		has_dlc = "Domination"
 	}
-	benefits = {
-		global_tax_modifier = 0.1
-	}
+	# benefits = {
+	# 	global_tax_modifier = 0.1
+	# }
 	can_select = {
 		ai=no
 		is_at_war = no
 	}	
 	benefits = {
-		interest = -0.75
-		all_power_cost = 0.05 
-		production_efficiency = 0.05
+		interest = -1
+		build_cost = 2
+		center_of_trade_upgrade_cost = 2
+		great_project_upgrade_cost = 2
+		great_project_upgrade_time = 2
+		#build_time = 1
+		#all_power_cost = 0.05
+		#can_not_declare_war = yes
 	}
 	cooldown_years = 5
 	on_cooldown_expires = {
 		country_event = { id = echo.14 }
+	}
+	on_granted = {
+		custom_tooltip = kielak_burghers_ipa_tooltip
+		hidden_effect = {
+			set_country_flag = kielak_ipa_priviledge_lose_inflation_on_repaid_loans
+		}
+	}
+
+	on_revoked = {
+		hidden_effect = {
+			clr_country_flag = kielak_ipa_priviledge_lose_inflation_on_repaid_loans
+		}
+		add_country_modifier = {
+			name = kielak_ipa_anti_abuse_debuff
+			duration = 365
+		}
 	}
 	# on_granted = {
 	# 	enable_estate_action = {
@@ -2865,6 +2887,7 @@ estate_burghers_financial_demand = {
 		factor = 0
 	}
 }
+
 estate_burghers_promote_burgher_bookkeeping = {
 	icon = privilege_investigate_corruption
 	loyalty = 0.0

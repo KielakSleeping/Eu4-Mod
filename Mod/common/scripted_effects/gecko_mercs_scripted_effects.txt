@@ -693,7 +693,7 @@ gecko_mercs_army_professionalism_cost = {
 			add_army_professionalism = -0.001
 		}
 		else = {
-			add_army_professionalism = -0.002
+			add_army_professionalism = -0.001
 		}
 	}
 }

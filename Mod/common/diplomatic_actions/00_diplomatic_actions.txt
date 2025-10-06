@@ -159,6 +159,23 @@ designate_march = {
 declarewar = {
 
 	condition = {
+		tooltip = kielak_ipa_anti_war_priviledge
+		potential = {
+			ROOT = {
+				has_country_flag = kielak_ipa_priviledge_lose_inflation_on_repaid_loans
+			}
+		}
+		allow = {
+			FROM = {
+				ai = yes
+			}
+			FROM = {
+				is_subject = no
+			}
+		}
+	}
+
+	condition = {
 		tooltip = gecko_stability
 		potential = {
 		}

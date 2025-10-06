@@ -1123,7 +1123,7 @@ DOM_Qing_Missions_1_b_formable = {
 				num_of_banners = 32 
 			}
 			else = { num_of_cavalry = 50 } 
-			empire_of_china_reform_passed = modernize_the_banners_decision
+			#empire_of_china_reform_passed = modernize_the_banners_decision
 			OR = {
 				national_focus = MIL 
 				army_reformer = 3 
@@ -1646,6 +1646,9 @@ DOM_Qing_Missions_2 = {
 						duration = 3650 
 					}
 				}
+			}
+			mongolia_region = {
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -5557,7 +5560,7 @@ DOM_Qing_Missions_4 = {
 	
 	mch_ensure_internal_stability = { 
 		icon = balance_the_estates
-		required_missions = { mch_issue_seven_grievances qng_formalize_ritual_practices }
+		required_missions = { qng_formalize_ritual_practices }
 		position = 4
 		trigger = {
 			has_adm_advisor_3 = yes 
@@ -6770,7 +6773,7 @@ DOM_Qing_Missions_5 = {
 	
 	mjz_mount_paektu = {
 		icon = mission_buddhist_monk_praying
-		required_missions = { mjz_break_through_korea }
+		required_missions = {  }
 		position = 2
 		provinces_to_highlight = {
 			province_id = 4201
@@ -6823,7 +6826,7 @@ DOM_Qing_Missions_5 = {
 					has_country_modifier = black_shamanism_modifier
 				}
 				AND = { 
-					is_emperor_of_china = yes 
+					#is_emperor_of_china = yes 
 					religion = confucianism 
 					harmony = 80 
 				}
@@ -6851,9 +6854,12 @@ DOM_Qing_Missions_5 = {
 			
 			custom_tooltip = confucianism_reward_tt
 			tooltip = { 
-				add_country_modifier = { 
-					name = mjz_formalized_confucian_practices_modifier 
-					duration = -1
+				# add_country_modifier = { 
+				# 	name = mjz_formalized_confucian_practices_modifier 
+				# 	duration = -1
+				# }
+				country_event = {
+					id = kielak_events.4
 				}
 			}
 			
@@ -6874,9 +6880,12 @@ DOM_Qing_Missions_5 = {
 				}
 				else_if = { 
 					limit = { religion = confucianism }
-					add_country_modifier = { 
-						name = mjz_formalized_confucian_practices_modifier 
-						duration = -1
+					# add_country_modifier = { 
+					# 	name = mjz_formalized_confucian_practices_modifier 
+					# 	duration = -1
+					# }
+					country_event = {
+						id = kielak_events.4
 					}
 				}
 			}
@@ -8053,7 +8062,7 @@ kielak_china_slot_unique_shun_missions_1 = {
 
 
 	shun_mission_1_4 = {
-		icon = mission_unite_home_region
+		icon = mission_buddhist_monk_praying
 		required_missions = {
 			shun_mission_2_3
 		}
@@ -8098,7 +8107,7 @@ kielak_china_slot_unique_shun_missions_1 = {
 	}
 
 	shun_mission_1_5 = {
-		icon = mission_unite_home_region
+		icon = mng_pure_land
 		required_missions = {
 			shun_mission_1_4
 		}
@@ -8139,7 +8148,7 @@ kielak_china_slot_unique_shun_missions_2 = {
 
 
 	shun_mission_2_3 = {
-		icon = mission_unite_home_region
+		icon = mission_non-western_cavalry_raid
 		position = 1
 		provinces_to_highlight = {
 			region = mongolia_region
@@ -8206,7 +8215,7 @@ kielak_china_slot_unique_yue_missions_1 = {
 
 
 	yue_mission_1_4 = {
-		icon = mission_unite_home_region
+		icon = indonesian_trade
 		required_missions = {
 			yue_mission_2_3
 		}
@@ -8239,7 +8248,7 @@ kielak_china_slot_unique_yue_missions_1 = {
 	}
 
 	yue_mission_1_5 = {
-		icon = mission_unite_home_region
+		icon = mission_colonize_the_caribbean
 		required_missions = {
 			yue_mission_1_4
 		}
@@ -8291,7 +8300,7 @@ kielak_china_slot_unique_yue_missions_2 = {
 
 
 	yue_mission_2_3 = {
-		icon = mission_unite_home_region
+		icon = mission_trade_with_japan
 		position = 1
 		provinces_to_highlight = {
 			region = mongolia_region
@@ -8375,7 +8384,7 @@ kielak_china_slot_unique_qic_missions_1 = {
 
 
 	qic_mission_1_4 = {
-		icon = mission_unite_home_region
+		icon = mng_nomadic_frontier
 		required_missions = {
 			qic_mission_2_3
 		}
@@ -8404,7 +8413,7 @@ kielak_china_slot_unique_qic_missions_1 = {
 	}
 
 	qic_mission_1_5 = {
-		icon = mission_unite_home_region
+		icon = qng_balance_mandate
 		required_missions = {
 			qic_mission_1_4
 		}
@@ -8458,7 +8467,7 @@ kielak_china_slot_unique_qic_missions_2 = {
 
 
 	qic_mission_2_3 = {
-		icon = mission_unite_home_region
+		icon = mng_thirteen_provinces
 		position = 1
 		provinces_to_highlight = {
 			#region = mongolia_region
@@ -8502,7 +8511,7 @@ kielak_china_slot_unique_wu_missions_1 = {
 
 
 	wu_mission_1_4 = {
-		icon = mission_unite_home_region
+		icon = mng_shengshi_zhishi
 		required_missions = {
 			wu_mission_2_3
 		}
@@ -8532,7 +8541,7 @@ kielak_china_slot_unique_wu_missions_1 = {
 	}
 
 	wu_mission_1_5 = {
-		icon = mission_unite_home_region
+		icon = mng_jing_hang_grand_canal
 		required_missions = {
 			wu_mission_1_4
 		}
@@ -8597,7 +8606,7 @@ kielak_china_slot_unique_wu_missions_2 = {
 
 
 	wu_mission_2_3 = {
-		icon = mission_unite_home_region
+		icon = mng_survey_ocean_shores
 		position = 1
 		provinces_to_highlight = {
 			area = fujian_area

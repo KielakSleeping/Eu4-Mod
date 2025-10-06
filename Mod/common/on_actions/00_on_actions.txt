@@ -5415,6 +5415,15 @@ on_loan_repaid = {
 		}
 		add_inflation = -0.05
 	}
+
+	if = {
+		limit = { 
+			FROM = {
+				has_country_flag = kielak_ipa_priviledge_lose_inflation_on_repaid_loans
+			}
+		}
+		add_inflation = -0.05
+	}
 	
 }
 

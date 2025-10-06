@@ -1303,9 +1303,9 @@ forbidden_city = {
 
 	#can we build it?
 	build_trigger = {
-		owner = {
-			has_reform = celestial_empire
-		}
+		# owner = {
+		# 	has_reform = celestial_empire
+		# }
 	}
 
 	#what to do when it's built
@@ -1320,16 +1320,16 @@ forbidden_city = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-		owner = {
-			has_reform = celestial_empire
-		}
+		# owner = {
+		# 	has_reform = celestial_empire
+		# }
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		owner = {
-			has_reform = celestial_empire
-		}
+		# owner = {
+		# 	has_reform = celestial_empire
+		# }
 	}
 
 	#can our country keep it or is it destroyed when we get hold of it?
@@ -1387,7 +1387,8 @@ forbidden_city = {
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			yearly_absolutism = 0.25
-			imperial_mandate = 0.03
+			trade_efficiency = 0.05
+			#imperial_mandate = 0.03
 		}
 
 		#what effects happen when this tier is achieved
@@ -1417,7 +1418,8 @@ forbidden_city = {
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			yearly_absolutism = 0.5
-			imperial_mandate = 0.03
+			#imperial_mandate = 0.03
+			trade_efficiency = 0.05
 			prestige_decay = -0.01
 		}
 
@@ -1448,12 +1450,14 @@ forbidden_city = {
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			yearly_absolutism = 0.5
-			imperial_mandate = 0.05
+			#imperial_mandate = 0.05
+			trade_efficiency = 0.1
 			prestige_decay = -0.02
 		}
 
 		#what effects happen when this tier is achieved
 		on_upgraded = {
+			
 		}
 	}
 }

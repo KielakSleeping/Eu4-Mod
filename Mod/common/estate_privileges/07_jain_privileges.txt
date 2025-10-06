@@ -346,15 +346,45 @@ estate_jains_conscientious_objection = {
 	#loyalty = 0.1
 	can_select = {
 		ai=no
+		is_at_war = no
 	}
-	penalties = {
-		global_manpower_modifier = -0.1
-	}
+	# penalties = {
+	# 	#global_manpower_modifier = -0.1
+	# 	build_cost = 1
+	# 	build_time = 1
+	# }
 	benefits = {
-		interest = -0.75
-		can_not_declare_war = yes
+		interest = -1
+		build_cost = 1.5
+		center_of_trade_upgrade_cost = 2
+		great_project_upgrade_cost = 2
+		#build_time = 1
+		#all_power_cost = 0.05
+		#can_not_declare_war = yes
 	}
-	cooldown_years = 10
+
+	on_granted = {
+		custom_tooltip = kielak_jains_ipa_tooltip
+		hidden_effect = {
+			set_country_flag = kielak_ipa_priviledge_lose_inflation_on_repaid_loans
+		}
+	}
+
+	on_revoked = {
+		hidden_effect = {
+			clr_country_flag = kielak_ipa_priviledge_lose_inflation_on_repaid_loans
+		}
+		add_country_modifier = {
+			name = kielak_ipa_anti_abuse_debuff
+			duration = 365
+		}
+	}
+
+	cooldown_years = 5
+	on_cooldown_expires = {
+		country_event = { id = kielak_events.30 }
+	}
+
 	ai_will_do = {
 		factor = 0
 	}
@@ -1387,7 +1417,7 @@ estate_jains_promote_jain_bookkeeping = {
 		trigger = { always = yes }
 		modifier = {
 			inflation_action_cost = -0.5
-			#interest = -0.5
+			interest = -0.15
 			state_maintenance_modifier = -0.25
 		}
 	}

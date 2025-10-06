@@ -2947,13 +2947,14 @@ converted_bengal = {
 }
 
 mint_towns_bng = {
-	production_efficiency = 0.1
-	inflation_reduction = 0.1
+	production_efficiency = 0.2
+	inflation_reduction = 0.2
 }
 
 bng_textiles = {
 	dip_tech_cost_modifier = -0.1
 	global_institution_spread = 0.2
+	global_trade_goods_size_modifier = 0.1
 }
 
 bng_sufi_mystic_settlers = {
@@ -2969,6 +2970,7 @@ bng_proto_industrial_shipyards = {
 
 garjat_fealty = {
 	diplomatic_reputation = 2
+	vassal_income = 0.15
 }
 
 bng_orissa_conquest = {
@@ -10634,6 +10636,7 @@ turkoman_era_of_white_sheep2 = {
 turkoman_ended_the_ayyubids = {
 	diplomatic_reputation = 1
 	prestige = 1
+	global_tax_income = 36
 }
 
 turkmen_new_turkoman_power = {

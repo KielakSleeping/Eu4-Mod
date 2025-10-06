@@ -116,6 +116,7 @@ yue_reward_1 = {
 
 kielak_china_slow_harmonization = {
 	harmonization_speed = -0.8
+	num_accepted_cultures = 1
 }
 
 kielak_china_buildup_phase = {
@@ -641,4 +642,21 @@ kielak_colonial_formable_venezuelan_building_spree = {
 kielak_colonial_formable_venezuelan_cocain_empire = {
 	global_trade_goods_size_modifier = 0.1
 	max_absolutism_effect = 0.1
+}
+
+kielak_ayu_int_mission = {
+	land_morale = 0.1
+}
+
+kielak_ayu_china_mission = {
+	discipline = 0.05
+}
+
+kielak_ipa_anti_abuse_debuff = {
+	interest = 0.5
+	can_not_declare_war = yes
+}
+
+kielak_bengal_morale_mission = {
+	land_morale = 0.1
 }
