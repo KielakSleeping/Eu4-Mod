@@ -660,13 +660,26 @@ guaranteeaction = {
         allow = {
             always = no
         }
+
+		potential = {
+			
+		}
     }
-}
+
 	effect = {
 		change_asha_vahishta = { value = 1 }
 	}
 }
 threaten_war = {
+	  condition = {
+        allow = {
+            always = no
+        }
+
+		potential = {
+			
+		}
+    }
 	effect = {
 		change_asha_vahishta = { value = -10 }
 	}
