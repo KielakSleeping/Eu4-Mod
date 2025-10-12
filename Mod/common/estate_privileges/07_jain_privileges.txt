@@ -347,6 +347,14 @@ estate_jains_conscientious_objection = {
 	can_select = {
 		ai=no
 		is_at_war = no
+		NOT = {
+			ROOT = {
+				any_owned_province = {
+					has_construction = building
+				}
+				
+			}
+		}
 	}
 	# penalties = {
 	# 	#global_manpower_modifier = -0.1

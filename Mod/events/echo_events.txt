@@ -380,6 +380,9 @@ country_event = {
 			loyalty = 10
 		}
 		reapply_estate_privilege = { privilege = estate_burghers_financial_demand }
+		hidden_effect = {
+			remove_country_modifier = kielak_ipa_anti_abuse_debuff
+		}
 	}
 	option = {
 		name = echo.14.b

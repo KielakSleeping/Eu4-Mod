@@ -1222,6 +1222,9 @@ country_event = { #jains estate ipa priviledge renew event
 			loyalty = 10
 		}
 		reapply_estate_privilege = { privilege = estate_jains_conscientious_objection }
+		hidden_effect = {
+			remove_country_modifier = kielak_ipa_anti_abuse_debuff
+		}
 	}
 	option = {
 		name = kielak_events.30_option_b

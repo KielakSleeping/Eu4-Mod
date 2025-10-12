@@ -2833,6 +2833,14 @@ estate_burghers_financial_demand = {
 	can_select = {
 		ai=no
 		is_at_war = no
+		NOT = {
+			ROOT = {
+				any_owned_province = {
+					has_construction = building
+				}
+				
+			}
+		}
 	}	
 	benefits = {
 		interest = -1
