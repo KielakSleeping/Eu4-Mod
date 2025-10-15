@@ -195,7 +195,7 @@ kielak_wu_grand_canal_master = {
 
 kielak_colonial_mission_capital_wall = {
 	local_defensiveness = 0.25
-	local_hostile_movement_speed = 0.15
+	local_hostile_movement_speed = -0.15
 }
 
 kielak_colonial_mission_build_phase = {
@@ -504,7 +504,7 @@ kielak_colonial_formable_mexico_forcelimit = {
 }
 
 kielak_colonial_formable_mexico_military_manpower = {
-	morale_damage_received = 0.1
+	morale_damage_received = -0.1
 }
 
 kielak_colonial_formable_mexico_military_forcelimit = {
@@ -512,7 +512,7 @@ kielak_colonial_formable_mexico_military_forcelimit = {
 }
 
 kielak_colonial_formable_mexico_military_manpower_and_forcelimit = {
-	morale_damage_received = 0.1
+	morale_damage_received = -0.1
 	morale_damage = 0.1
 }
 
@@ -577,7 +577,7 @@ kielak_colonial_formable_central_america_jungle_warrios = {
 }
 
 kielak_colonial_formable_central_america_jungle_vines = {
-	local_hostile_movement_speed = 0.3
+	local_hostile_movement_speed = -0.3
 	local_defensiveness = 0.1
 }
 
