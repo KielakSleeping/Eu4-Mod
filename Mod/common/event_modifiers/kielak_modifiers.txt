@@ -471,10 +471,12 @@ kielak_colonial_formable_carribean_captain_jack_sparrow = {
 kielak_colonial_formable_carribean_protecting_trade = {
 	global_ship_trade_power = 0.1
 	trade_efficiency = 0.05
+	allowed_marine_fraction = 0.1
 }
 
 kielak_colonial_formable_carribean_protecting_trade_2 = {
 	global_own_trade_power = 0.1
+	allowed_marine_fraction = 0.1
 }
 
 kielak_colonial_formable_carribean_elite_marines = {
@@ -484,6 +486,7 @@ kielak_colonial_formable_carribean_elite_marines = {
 
 kielak_colonial_formable_carribean_troop_shipments = {
 	transport_attrition = -0.2
+	allowed_marine_fraction = 0.1
 }
 
 kielak_colonial_formable_mexico_tackle_inflation = {
@@ -655,4 +658,9 @@ kielak_ipa_anti_abuse_debuff = {
 
 kielak_bengal_morale_mission = {
 	land_morale = 0.1
+}
+
+kielak_colonial_formable_carribean_may_raid_coasts = {
+	may_perform_slave_raid_on_same_religion = yes
+	coast_raid_range = 1
 }

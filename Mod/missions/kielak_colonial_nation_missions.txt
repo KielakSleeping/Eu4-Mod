@@ -5343,6 +5343,7 @@ kielak_colonial_formables_WSI_missions_slot_5 = {
 					tier = 1
 				}
 				add_or_upgrade_shipyard_building = yes
+				add_or_upgrade_dock_building = yes
 			}
 		}
 
@@ -5393,6 +5394,18 @@ kielak_colonial_formables_WSI_missions_slot_5 = {
 				center_of_trade = 3
 				
 			}
+
+			custom_tooltip = SEPERATOR_TOOLTIP
+
+			custom_tooltip = "Until we lose ownership of Tortuga we will also get:"
+
+			custom_tooltip = SEPERATOR_TOOLTIP
+
+			add_country_modifier = {
+				name = kielak_colonial_formable_carribean_may_raid_coasts
+				duration = -1
+			}
+		
 
 			
 		}

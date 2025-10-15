@@ -1257,3 +1257,37 @@ country_event = { #bengal piety event
 	}
 }
 
+
+country_event = { #West Indies loses Tortuga
+    id = kielak_events.32 #
+    title = kielak_events.32.t
+    desc = kielak_events.32.d
+    picture = PIRATE_CAPTAINS_eventPicture
+   
+	
+	trigger = {
+		AND = {
+			has_country_modifier = kielak_colonial_formable_carribean_may_raid_coasts
+			489 = {
+				NOT = {
+					owned_by = ROOT
+				}
+			}
+		}
+		
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = kielak_events.32_option_a
+		remove_country_modifier = kielak_colonial_formable_carribean_may_raid_coasts
+		add_prestige = -25
+		add_stability = -1
+		
+	}
+
+}
+
