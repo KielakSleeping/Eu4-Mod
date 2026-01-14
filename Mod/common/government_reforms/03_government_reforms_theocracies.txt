@@ -967,6 +967,11 @@ internal_mission_reform = {
 	modifiers = {
 		tolerance_own = 2
 	}
+	conditional = {
+		allow = {
+		}
+		claim_states = yes
+	}	
 	custom_attributes = {
 		seizing_land_no_rebels = yes
 		on_church_built_clergy_loyalty = yes

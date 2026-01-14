@@ -4592,6 +4592,12 @@ diwan_al_khass_reform = {
 		#development_cost = -0.05
 		build_cost = -0.1
 	}
+
+	conditional = {
+		allow = {
+		}
+		claim_states = yes
+	}	
 	
 	ai = {
 		factor = 10
@@ -5481,6 +5487,11 @@ extend_the_unio_trium_nationum_reform = {
 	custom_attributes = {
 		seizing_land_no_rebels_from_estate_nobles = yes
 	}
+	conditional = {
+		allow = {
+		}
+		claim_states = yes
+	}	
 	modifiers = {
 		global_unrest = -1
 		nobles_privilege_slots = 1

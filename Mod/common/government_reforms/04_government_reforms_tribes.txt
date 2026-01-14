@@ -540,6 +540,11 @@ civil_society_reform = {
 		global_tax_modifier = 0.15
 		yearly_corruption = -0.05
 	}
+	conditional = {
+		allow = {
+		}
+		claim_states = yes
+	}		
 	ai = {
 		factor = 1
 		modifier = {

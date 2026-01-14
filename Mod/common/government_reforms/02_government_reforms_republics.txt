@@ -2171,6 +2171,11 @@ republican_authoritarianism_reform = {
 		global_unrest = -1
 		max_absolutism = 5
 	}
+	conditional = {
+		allow = {
+		}
+		claim_states = yes
+	}	
 	ai = {
 		factor = 1
 	}
@@ -2263,6 +2268,11 @@ democratic_values_reform = {
 		may_recruit_female_generals = yes
 		female_advisor_chance = 0.25
 	}
+	conditional = {
+		allow = {
+		}
+		claim_states = yes
+	}	
 	ai = {
 		factor = 1
 	}
@@ -2320,6 +2330,11 @@ religious_values_reform = {
 		church_influence_modifier = 0.1
 		church_loyalty_modifier = 0.05
 	}
+	conditional = {
+		allow = {
+		}
+		claim_states = yes
+	}	
 	ai = {
 		factor = 1
 	}

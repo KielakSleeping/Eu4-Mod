@@ -4934,6 +4934,11 @@ deccani_society_reform = {
 	modifiers = {
 		free_dip_policy = 1
 	}
+	conditional = {
+		allow = {
+		}
+		claim_states = yes
+	}		
 	ai = {
 		factor = 3
 	}
