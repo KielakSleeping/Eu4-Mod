@@ -5338,6 +5338,12 @@ support_state_reform = {
 		republican_tradition = 0.2
 	}
 
+	conditional = {
+		allow = {
+		}
+		claim_states = yes
+	}
+
 	custom_attributes = {
 		republican_virtues = yes
 	}
