@@ -5388,6 +5388,7 @@ apostolic_kingdom = {
 	}
 	legacy_equivalent = feudal_monarchy
 	valid_for_nation_designer = no
+	lock_level_when_selected = yes
 
 	nation_designer_trigger = {
 		primary_culture = hungarian
