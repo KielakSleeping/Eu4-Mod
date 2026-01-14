@@ -2805,6 +2805,10 @@ remove_all_age_of_discovery_modifiers = {
 			limit = { has_country_modifier = YEM_rise_of_yemen }
 			remove_country_modifier = YEM_rise_of_yemen
 		}
+		if = {
+			limit = { has_country_modifier = hab_onwards_for_glory }
+			remove_country_modifier = hab_onwards_for_glory
+		}
 	}
 }
 remove_all_age_of_reformation_modifiers = {
