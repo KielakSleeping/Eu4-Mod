@@ -398,20 +398,25 @@ influence_ideas = {
 	}
 
 	tribute_system = {
-		accept_vassalization_reasons = 25
+		#accept_vassalization_reasons = 25
+		siege_ability = 0.10
 		manpower_recovery_speed = 0.15
 	}
 	additional_loyalist_recruitment = {
-			reduced_liberty_desire = 30
-    	vassal_income = 0.25
+		accept_vassalization_reasons = 15
+		advisor_cost = -0.1
+    	#vassal_income = 0.25
 	}
 	integrated_elites = {
+		vassal_income = 0.2
 		diplomatic_upkeep = 1
-		advisor_cost = -0.1
+		#advisor_cost = -0.1
 	}
 	buffer_states = {
 		#trained_subject_officers_tt = 0.025
-		 effect = {
+		monarch_military_power = 1
+		candidate_random_bonus = 1
+		effect = {
         		every_subject_country = {
             			limit = { OR = { is_vassal = yes
 						is_march = yes}
@@ -434,10 +439,11 @@ influence_ideas = {
 	
 	}
 	diplomatic_influence = {
+		reduced_liberty_desire = 30
 		leader_cost = -0.10
-    	siege_ability = 0.10
-		monarch_military_power = 1
-	candidate_random_bonus = 1
+    	#siege_ability = 0.10
+		#monarch_military_power = 1
+		#candidate_random_bonus = 1
   
 	}
 	postal_service = {
