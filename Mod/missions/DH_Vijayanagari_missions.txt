@@ -470,6 +470,9 @@ vij_tamil_conquest = {
 			}
 		}
 		effect = {
+			create_general = {
+				tradition = 40
+			}
 			2100 = {
 				if = {
 					limit = {

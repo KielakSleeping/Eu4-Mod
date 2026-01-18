@@ -46,6 +46,9 @@ mer_western_expansion = {
 			owns = 4464 #Bundi
 		}
 		effect = {
+			create_general = {
+				tradition = 40
+			}
 			patan_area = {
 				limit = {
 					NOT = { is_core = ROOT }

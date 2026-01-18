@@ -3,6 +3,7 @@ add_government_reform = chinese_warlord
 technology_group = chinese
 religion = confucianism
 primary_culture = xibei
+add_accepted_culture = sichuanese
 capital = 2180 # Fengyuan
 
 

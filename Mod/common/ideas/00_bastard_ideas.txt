@@ -379,7 +379,7 @@ YUE_ideas = { #Yue
 		merchants = 1
 	}
 	YUE_4 = {
-		infantry_power = 0.05
+		#infantry_power = 0.05
 		#land_morale = 0.05
 		sailors_recovery_speed = 0.25
 		sailor_maintenance_modifer = -0.15
@@ -425,7 +425,7 @@ YUE_upgrade_ideas = { #Yue
 	}
 	YUE_2_upgrade = {
 		global_colonial_growth = 20
-		colony_development_boost = 1
+		#colony_development_boost = 1
 		naval_forcelimit_modifier = 0.25
 		allowed_marine_fraction = 0.3
 	}
@@ -434,14 +434,16 @@ YUE_upgrade_ideas = { #Yue
 		merchants = 1
 	}
 	YUE_4_upgrade = {
-		infantry_power = 0.1
+		#infantry_power = 0.05
 		#land_morale = 0.05
 		sailors_recovery_speed = 0.3
 		sailor_maintenance_modifer = -0.15
+		colony_development_boost = 1
 	}
 	YUE_7_upgrade = {
 		advisor_cost = -0.15
 		state_maintenance_modifier = -0.20
+		infantry_power = 0.05
 	}
 	YUE_6_upgrade = {
 		global_unrest = -2
@@ -2208,7 +2210,7 @@ ITA_ideas = {
 	}
 	
 	bonus = {
-		defensiveness = 0.15
+		defensiveness = 0.10
 	}
 	
 	trigger = {
@@ -3301,7 +3303,7 @@ BAH_ideas = {
 DEC_ideas = {
 	start = {
 		administrative_efficiency = 0.05
-		land_morale = 0.05
+		land_morale = 0.1
 	}
 
 	bonus = {
