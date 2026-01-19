@@ -1675,11 +1675,11 @@ venice_missions_slot_3 = {
 				type = ven_cradle_of_opulence
 				amount = 20
 			}
-			custom_tooltip = zim_amongst_the_great_powers_tt
-			country_event = {
-				id = flavor_ven.48
-			}
-			custom_tooltip = event_insight_flavor_ven.48
+			# custom_tooltip = zim_amongst_the_great_powers_tt
+			# country_event = {
+			# 	id = flavor_ven.48
+			# }
+			# custom_tooltip = event_insight_flavor_ven.48
 		}
 	}
 
