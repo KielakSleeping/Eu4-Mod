@@ -76,6 +76,7 @@ emperor_dec_elector = {
 	diplomatic_reputation = -1
 	global_unrest = 2
 	reduced_liberty_desire = -15
+	monarch_lifespan = -0.5
 }
 
 no_exploit_extra_manpower = {
