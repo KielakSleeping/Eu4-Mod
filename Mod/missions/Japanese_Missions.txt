@@ -527,6 +527,7 @@ japanse_missions_the_empire = {
 		icon = mission_japanese_fort
 		
 		trigger = {
+			ai=no
 			#grown_by_states = 2
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				region = japan_region
