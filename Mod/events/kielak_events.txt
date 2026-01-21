@@ -81,6 +81,13 @@ country_event = {
 			name = emperor_dec_elector
 			duration = 3600
 		}
+		hidden_effect = {
+			every_elector = {
+				country_event = {
+					id = kielak_events.33
+				}
+			}	
+		}
 	}
 
 }
@@ -1291,3 +1298,17 @@ country_event = { #West Indies loses Tortuga
 
 }
 
+country_event = { #Notify Electors about Austria Decline (1st event in this file)
+    id = kielak_events.33 #
+    title = kielak_events.33.t
+    desc = kielak_events.33.d
+    picture = HRE_eventPicture
+   
+	is_triggered_only = yes
+	
+
+	option = {
+		name = kielak_events.33_option_a	
+	}
+
+}

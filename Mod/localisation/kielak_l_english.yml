@@ -211,6 +211,11 @@
     kielak_events.32.t: "A Pirates Nightmare"
     kielak_events.32.d: "Tortuga is lost, our honor stained, our reputation ruined."
     kielak_events.32_option_a: "A Pirates Life was not for us it seems."
+    kielak_events.33.t: "The Emperors Agression"
+    kielak_events.33.d: "§RAustria decided to declare on a fellow elector!§! This act of terror will greatly slow down progress in the HRE as for 10 years Austria (only Austria) gets §R-0.25§! monthly Imperial Authority. Maybe it would be wise to elect a new Emperor?\nAustria additionaly gets (for 10 years) §R-50%§! Monrach Lifespan, §R+15%§! Liberty Desire in Subjects, §R-1§!Dip Rep and §R+2§! Unrest."
+    kielak_events.33_option_a: "Will we act or will we watch?"
+
+
     kielak_colonial_formable_carribean_may_raid_coasts: "Hoist the Black Flag"
     kielak_renew_jains_priv_tooltip: "Renews the Jains Conscientious Objections Priviledge"
     kielak_revoke_jains_priv_tooltip: "Revokes the Jains Conscientious Objections Priviledge"
