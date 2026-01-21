@@ -101,6 +101,22 @@ remove_freecity = {
 
 }
 
+grant_freecity = {
+	condition = {
+		tooltip = "Can't make Players Free Cities"
+		potential = {
+			FROM = {
+				ai = no
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
+
+}
+
+
 ask_for_march = {
 	condition = {
 		tooltip = bs_tooltip_ask_march
