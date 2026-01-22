@@ -364,13 +364,13 @@ songhai_historical_conquest_slot = {
 				}
 				add_permanent_claim = ROOT
 			}
-			niger_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
+			# niger_region = {
+			# 	limit = {
+			# 		NOT = { is_core = ROOT }
+			# 		NOT = { is_permanent_claim = ROOT }
+			# 	}
+			# 	add_permanent_claim = ROOT
+			# }
 		}
 	}
 
@@ -797,6 +797,13 @@ songhai_mossi_slot = {
 			enable_branching_mission_review = {
 				key = SON
 				ai_event_id = flavor_son.5
+			}
+			niger_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
 		}
 		ai_weight = {
