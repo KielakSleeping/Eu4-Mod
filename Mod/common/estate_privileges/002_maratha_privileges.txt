@@ -1077,19 +1077,19 @@ estate_maratha_military_ministerium = {
 	can_select = {
 		ai=no
 	}
-	on_granted = {
+	on_granted = {	
 		enable_estate_action = {
-			estate_action = RECRUIT_MINISTER_MARATHA
-		}
-	}
-	on_revoked = {
-		disable_estate_action = {
-			estate_action = RECRUIT_MINISTER_MARATHA
+			estate_action = GRANT_GENERALSHIP_NOBLES
 		}
 	}
 	on_invalid = {
 		disable_estate_action = {
-			estate_action = RECRUIT_MINISTER_MARATHA
+			estate_action = GRANT_GENERALSHIP_NOBLES
+		}
+	}
+	on_revoked = {
+		disable_estate_action = {
+			estate_action = GRANT_GENERALSHIP_NOBLES
 		}
 	}
 	ai_will_do = {
