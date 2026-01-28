@@ -1556,8 +1556,8 @@ BUR_Ideas = {
 }
 LOT_ideas = {
 	start = {
-		infantry_power = 0.1
-		global_manpower_modifier = 0.25
+		infantry_power = 0.15
+		global_manpower_modifier = 0.30
 	}
 	
 	bonus = {
@@ -1577,7 +1577,8 @@ LOT_ideas = {
 	golden_fleece = {
 		#merc_maintenance_modifier = -0.2
 		#mercenary_discipline = 0.025
-		land_maintenance_modifier = -0.10
+		#land_maintenance_modifier = -0.10
+		yearly_innovativeness = 0.05
 		global_regiment_cost = -0.10
 
 	}
@@ -1586,17 +1587,18 @@ LOT_ideas = {
 		discipline = 0.05
 	}
 	lot_dutch_cities = {
-		trade_efficiency = 0.1
-		global_own_trade_power = 0.1
+		trade_efficiency = 0.2
+		trade_goods_size_modifier = 0.2
+		#global_own_trade_power = 0.2
 	}
 	lot_carolingian_renaissance_II = {
 		idea_cost = -0.1
-		technology_cost = -0.05
+		technology_cost = -0.10
 	}
 	lot_court_of_europe = {
 		prestige = 1
-		advisor_cost = -0.1
-		prestige_decay = -0.01
+		advisor_cost = -0.15
+		prestige_decay = -0.02
 	}
 	lot_european_empire = {
 		core_creation = -0.20
@@ -1605,7 +1607,7 @@ LOT_ideas = {
 NED_ideas = {
 	start = {
 		leader_land_fire = 1
-		global_manpower_modifier = 0.25
+		global_manpower_modifier = 0.2
 	}
 	
 	bonus = {
@@ -1628,7 +1630,7 @@ NED_ideas = {
 		trade_efficiency = 0.1
 	}
 	polders = {
-		development_cost = -0.1
+		development_cost = -0.05
 	}
 	instructie_voor_de_admiraliteiten = {
 		allowed_marine_fraction = 0.25
@@ -1637,7 +1639,7 @@ NED_ideas = {
 		land_morale = 0.1
 	}
 	army_sappers = {
-		siege_ability = 0.15
+		siege_ability = 0.10
 	}
 	platoon_fire = {
 		fire_damage = 0.15

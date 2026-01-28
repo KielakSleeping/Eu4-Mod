@@ -12203,6 +12203,9 @@ duomo_milano = {
 		area_modifier = {
 			#local_religious_conversion_resistance = 0.66
 		}
+		region_modifier = {
+			development_cost = 0.05
+		}
 		country_modifiers = {
 			papal_influence = 1
 			monthly_fervor_increase = 0.5
@@ -12227,13 +12230,15 @@ duomo_milano = {
 		area_modifier = {
 			#local_religious_conversion_resistance = 1
 		}
+		region_modifier = {
+			development_cost = 0.10
+		}
 		country_modifiers = {
 			papal_influence = 2
 			monthly_fervor_increase = 1
 			church_power_modifier = 0.15
 			global_religious_conversion_resistance = 0.5
 			church_loyalty_modifier = 0.15
-			development_cost = -0.05
 		}
 		on_upgraded = {			
 		}
