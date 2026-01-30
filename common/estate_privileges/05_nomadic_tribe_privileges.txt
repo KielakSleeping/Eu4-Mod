@@ -760,7 +760,7 @@ estate_nomadic_tribes_flexible_deities = {
 			}
 			estate_influence = {
 				estate = estate_nomadic_tribes
-				influence = 40
+				influence = 20
 			}
 		}
 	}
