@@ -711,3 +711,20 @@ country_event = {
 		}
 	}
 }
+
+# KIELAK MOD KUZARITE EVENTS
+
+country_event = {
+	id = K_CRI_events.1
+	title = K_CRI_events.1.t
+	desc = K_CRI_events.1.d1
+	picture = FORT_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = K_CRI_events.1.a
+		add_country_modifier = {
+			name = kielak_kuzarite_1
+			duration = 3650
+		}
+	}
+}
