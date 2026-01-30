@@ -621,3 +621,6 @@
     kielak_colonial_formable_mexico_forcelimit: "Mexicos Force"
     kielak_colonial_formable_mexico_rio_grande_border: "The Fence"
     kielak_colonial_formable_mexico_el_paso_border: "The Wall"
+
+    kuzarite:0 "Kuzarite"
+    kuzarite_religion_desc:0 "Kuzarism emerged with the conversion of the Khazars to Judaism in the Eighth century."
