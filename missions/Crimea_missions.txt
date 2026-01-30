@@ -161,14 +161,18 @@ X_CRI_slot_1 = {
 	}
 
 	K_CRI_mission_kuzarite_2 = {
-		icon = mission_hunting
+		icon = mission_seize_the_dragon_throne
 		required_missions = { K_CRI_mission_kuzarite_1 }
 		position = 5
 		trigger = {
-			stability = 1
+			stability = 2
+			astrakhan_area = {
+				type = all
+				country_or_subject_holds = ROOT		
+			}	
 		}
 		effect = {
-			country_event = { id = X_CRI_events.5 }
+			country_event = { id = K_CRI_events.2 }
 		}		
 	}
 

@@ -72,3 +72,18 @@ country_event = {
 		clr_country_flag = kuzarite_deity_interaction
 	}
 }
+
+country_event = {
+	id = K_CRI_events.2
+	title = K_CRI_events.2.t
+	desc = K_CRI_events.2.d1
+	picture = RELIGION_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = K_CRI_events.2.a
+		change_religion = kuzarite
+		every_owned_province = {
+			change_religion = kuzarite
+		}
+	}
+}
