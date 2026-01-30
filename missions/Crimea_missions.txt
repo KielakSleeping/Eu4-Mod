@@ -148,6 +148,42 @@ X_CRI_slot_1 = {
 			}
 		}
 	}
+
+	K_CRI_mission_kuzarite_1 = {
+		icon = mission_hunting
+		position = 4
+		trigger = {
+			stability = 1
+		}
+		effect = {
+			country_event = { id = K_CRI_events.1 }
+		}
+	}
+
+	K_CRI_mission_kuzarite_2 = {
+		icon = mission_hunting
+		required_missions = { K_CRI_mission_kuzarite_1 }
+		position = 5
+		trigger = {
+			stability = 1
+		}
+		effect = {
+			country_event = { id = X_CRI_events.5 }
+		}		
+	}
+
+	K_CRI_mission_kuzarite_3 = {
+		icon = mission_hunting
+		required_missions = { K_CRI_mission_kuzarite_2 }
+		position = 6
+		trigger = {
+			stability = 1
+		}
+		effect = {
+			country_event = { id = X_CRI_events.5 }
+		}		
+	}
+
 }
 
 X_CRI_slot_2 = {
