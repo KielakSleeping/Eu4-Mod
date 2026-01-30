@@ -2252,12 +2252,8 @@ jewish_group = {
 		icon = 30
 		color = { 83 29 184 }
 		country = {
-			cavalry_power = 0.1
-			advisor_cost = -0.1
-		}
-	
-		country_as_secondary = {
-			cavalry_shock = 0.1
+			cavalry_cost = -0.1
+			same_religion_advisor_cost = -0.1
 		}
 
 		personal_deity = yes
