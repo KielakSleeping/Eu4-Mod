@@ -50,6 +50,22 @@ Steppe_rule_2 = {
 	horde_unity = 5
 }
 
+Steppe_rule_3 = {
+	potential = {
+		ai = no
+		is_nomad= yes
+		religion = kuzarite
+		current_age = age_of_discovery
+	}
+
+	trigger = {
+		religion = kuzarite
+		current_age = age_of_discovery
+	}
+	cav_to_inf_ratio = 0.25
+	horde_unity = 5
+}
+
 Minor = {
 	potential = {
 	OR = {
