@@ -665,3 +665,7 @@ kielak_colonial_formable_carribean_may_raid_coasts = {
 	may_perform_slave_raid_on_same_religion = yes
 	coast_raid_range = 1
 }
+
+kielak_kuzarite_1 = {
+	prestige = 1
+}
