@@ -640,6 +640,9 @@
     kuzarite_deity_title:0 "Time to change our Deity"
     kuzarite_deity_desc:0 "Time to change our Deity desc"
 
+    kuzarite_deity_church_title:0 "Time to change our Deity"
+    kuzarite_deity_church_desc:0 "Time to change our Deity desc"
+
     K_CRI_events.2.t:0 "The Faith of our Forefathers"
     K_CRI_events.2.d1:0 "Forefathers one and all, bare witness!"
     K_CRI_events.2.a:0 "We shall follow in their footsteps."
