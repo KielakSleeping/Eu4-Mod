@@ -122,6 +122,7 @@ estate_nomadic_tribes = {
 		estate_nomadic_tribes_religious_tolerance
 		estate_nomadic_tribes_nomadic_caravans
 		estate_nomadic_tribes_tribal_absolutism
+		estate_nomadic_tribes_flexible_deities
 	}
 
 	agendas = {

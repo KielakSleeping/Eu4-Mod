@@ -630,3 +630,12 @@
     kielak_kuzarite_1:"Respected Past"
     K_CRI_mission_kuzarite_1_title:0 "The Khazars of Old"
     K_CRI_mission_kuzarite_1_desc:0 "Long ago, the nomads that occupied the areas we did reportedly converted to Judaism. An old Khazar Khan brought a Christian, a Muslim, and a Jew to his court, with the Jew coming out as the most convicing. Truly, there is little evidence if this really happened, and not much more to know if the Kuzarite Khazars even existed, yet it stays as an interesting point in our history."
+
+    kuzarite_events.2.a:0 "MPR"
+    kuzarite_events.2.b:0 "CCR"
+    kuzarite_events.2.c:0 "DAC"
+    kuzarite_events.2.e:0 "DTP"
+    kuzarite_events.2.f:0 "DEV"
+    kuzarite_events.2.g:0 "FDR"
+    kuzarite_deity_title:0 "Time to change our Deity"
+    kuzarite_deity_desc:0 "Time to change our Deity desc"
