@@ -62,3 +62,68 @@ country_decisions = {
 		}
 	}
 }
+
+country_decisions = {
+	kuzarite_deity_church = {
+		potential = {
+			religion = kuzarite
+			has_estate = estate_church
+		}
+		allow = {
+			has_estate_privilege = estate_church_flexible_deities
+			if = {
+				limit = {
+					has_government_attribute = reduce_new_deity_decision_cd
+				}
+				custom_trigger_tooltip = {
+					tooltip = decision_once_every_five_years
+					OR = {
+						has_personal_deity = kuzarite1
+						has_personal_deity = kuzarite2
+						has_personal_deity = kuzarite3
+						has_personal_deity = kuzarite4
+						has_personal_deity = kuzarite5
+						has_personal_deity = kuzarite6
+					}
+					OR = {
+						NOT = { has_country_flag = kuzarite_deity_decision }
+						had_country_flag = {
+							flag = kuzarite_deity_decision
+							days = 1825
+						}
+					}
+				}
+			}
+			else = {
+				custom_trigger_tooltip = {
+					tooltip = decision_once_every_twenty_years
+					OR = {
+						has_personal_deity = kuzarite1
+						has_personal_deity = kuzarite2
+						has_personal_deity = kuzarite3
+						has_personal_deity = kuzarite4
+						has_personal_deity = kuzarite5
+						has_personal_deity = kuzarite6
+					}
+					OR = {
+						NOT = { has_country_flag = kuzarite_deity_decision }
+						had_country_flag = {
+							flag = kuzarite_deity_decision
+							days = 7300
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			reduce_legitimacy_large_effect = yes
+			set_country_flag = kuzarite_deity_interaction
+			clr_country_flag = kuzarite_deity_decision
+			set_country_flag = kuzarite_deity_decision
+			country_event = { id = kuzarite_events.2 }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
