@@ -13201,7 +13201,7 @@ mng_earthquake_modifier = {
 #Infrastructure Events Modifiers#
 
 road_maintenance_modifier = {
-	global_tax_modifier = -0.15
+	global_tax_modifier = -0.1
 	movement_speed = 0.05 
 }
 
@@ -13439,7 +13439,7 @@ inaccurate_road_maps = {
 }
 
 insufficient_construction_supplies = {
-	build_cost = 0.15
+	#build_cost = 0.15
 }
 
 slowed_down_development = {
