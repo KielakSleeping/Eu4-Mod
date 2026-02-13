@@ -12422,7 +12422,8 @@ NAG_ideas = {
 BNG_ideas = {
 	start = {
 		infantry_power = 0.1
-		global_manpower_modifier = 0.15
+		#global_manpower_modifier = 0.15
+		development_cost = -0.1
 	}
 	
 	bonus = {
@@ -12441,16 +12442,17 @@ BNG_ideas = {
 		army_tradition = 0.5
 	}
 	bng_clearing_the_delta = {
-		development_cost = -0.1
+		#development_cost = -0.1
+		global_manpower_modifier = 0.20
 	}
 	bng_attract_sufis = {
 		idea_cost = -0.1
 	}
 	bng_conquest_of_the_gangetic_plain = {
-		leader_land_shock = 1
+		leader_land_fire = 1
 	}
 	bng_rupees = {
-		global_tax_modifier = 0.1
+		global_tax_modifier = 0.15
 	}
 	bng_bengali_industrialization = {
 		global_trade_goods_size_modifier = 0.1
