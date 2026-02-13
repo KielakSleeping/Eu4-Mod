@@ -391,7 +391,7 @@ country_event = {
 		}
 		
 		event_target:ME_WES_Target_2 = {
-			change_religion = event_target:WES_province_religion
+			change_religion = jewish
 			add_base_tax = 2
 			add_base_production = 2
 			add_base_manpower = 2
