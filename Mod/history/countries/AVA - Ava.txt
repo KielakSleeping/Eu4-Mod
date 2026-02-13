@@ -249,9 +249,9 @@ lower_burma_area = {
 		birth_date = 1431.5.1
 		death_date = 1480.8.1
 		claim = 95
-		ADM = 2
-		DIP = 2
-		MIL = 2
+		ADM = 4
+		DIP = 3
+		MIL = 4
 	}
 }
 
