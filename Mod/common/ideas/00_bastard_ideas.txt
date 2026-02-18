@@ -179,8 +179,9 @@ QNG_ideas = {
 		prestige_from_land = 0.5
 	}
 	pigtail_or_death = {
-		global_unrest = -2
+		#global_unrest = -2
 		amount_of_banners = 0.2
+		culture_conversion_cost = -0.2
 	}
 }
 

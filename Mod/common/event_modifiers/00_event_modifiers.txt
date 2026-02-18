@@ -8544,6 +8544,7 @@ double_entry_booking = {
 #Institution Birthplaces
 birthplace_of_the_renaissance = {
 	local_development_cost = -0.05
+	local_build_cost = -0.1
 }
 
 birthplace_of_the_new_world = {
@@ -8552,22 +8553,26 @@ birthplace_of_the_new_world = {
 
 birthplace_of_printing_press = {
 	local_institution_spread = 0.1
+	yearly_innovativeness = 0.01
 }
 
 birthplace_of_global_trade = {
 	province_trade_power_modifier = 0.1
+	global_trade_power = 0.1
 }
 
 birthplace_of_manufactories = {
-	trade_goods_size = 0.5
+	trade_goods_size = 1.5
 }
 
 birthplace_of_enlightenment = {
 	local_autonomy = -0.05
+	governing_capacity = 200
 }
 
 birthplace_of_industrialization = {
 	allowed_num_of_buildings = 1
+	allowed_num_of_manufactories  = 1
 }
 
 religious_center = {
@@ -10066,7 +10071,7 @@ waqfs_donated = {
 }
 
 urban_decay = {
-	local_development_cost = 0.5
+	local_development_cost = 0.15
 }
 
 upkeep_of_holy_cities = {
@@ -10923,7 +10928,7 @@ vaisya_caste_system_enforced = {
 }
 
 drylands_frontier_development = {
-	local_development_cost = -0.2
+	local_development_cost = -0.1
 	local_tax_modifier = -0.15
 }
 
@@ -11580,8 +11585,8 @@ estate_burghers_the_great_privilege_mod = {
 }
 
 estate_burghers_exclusive_trade_rights_mod = {
-	min_local_autonomy = 20
-	local_development_cost = -0.15
+	min_local_autonomy = 10
+	local_development_cost = -0.1
 }
 
 estate_burghers_monopoly_of_textiles_mod = {
@@ -11752,8 +11757,8 @@ estate_burghers_development_of_cities_mod = {
 	local_governing_cost = -0.15
 }
 estate_cossacks_freedom_of_the_steppes_mod = {
-	local_governing_cost = -0.33
-	min_local_autonomy = 33
+	#local_governing_cost = -0.33
+	#min_local_autonomy = 33
 	local_development_cost = -0.05
 }
 estate_nomadic_tribes_freedom_of_the_steppes_mod = {
@@ -11764,10 +11769,10 @@ estate_dhimmi_development_of_communities_mod = {
 	religion = yes
 }
 estate_maratha_development_of_marathi_lands_mod = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 estate_rajput_development_of_rajput_lands_mod = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 estate_vaisyas_development_of_cities_mod = {
 	local_governing_cost = -0.15
@@ -12094,7 +12099,7 @@ estate_cossacks_prime_herding_rights_mod = {
 }
 
 estate_cossacks_exploration_expedition_mod = {
-	local_development_cost = -0.10
+	local_development_cost = -0.05
 }
 
 shortage_of_officers = {
@@ -12447,7 +12452,7 @@ lonos_blessing_mod = {
 }
 
 kaitiakitanga_mod = {
-	development_cost = 0.50
+	development_cost = 0.050
 }
 
 matariki_mod = {
@@ -12895,7 +12900,7 @@ estate_burghers_control_over_gold_mine = {
 }
 
 estate_burghers_hydraulic_rights_desert = {
-	local_development_cost = -0.25
+	local_development_cost = -0.15
 }
 
 estate_burghers_hydraulic_rights_coastal_desert = {
@@ -13082,23 +13087,23 @@ liv_the_general = {
 
 #Province modifiers
 estate_burghers_forest_expansion_forest = {
-	local_development_cost = -0.10
+	local_development_cost = -0.05
 }
 
 estate_burghers_forest_expansion_woods = {
-	local_development_cost = -0.10
+	local_development_cost = -0.05
 }
 
 estate_burghers_mountain_expansion_mountains = {
-	local_development_cost = -0.15
+	local_development_cost = -0.10
 }
 
 estate_burghers_mountain_expansion_highlands = {
-	local_development_cost = -0.05
+	local_development_cost = -0.075
 }
 
 estate_burghers_mountain_expansion_hills = {
-	local_development_cost = -0.05
+	local_development_cost = -0.075
 }
 
 estate_nobles_religious_conscription_cathedral = {
