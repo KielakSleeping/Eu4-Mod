@@ -44,7 +44,7 @@ country_decisions = {
 						NOT = { has_country_flag = kuzarite_deity_decision }
 						had_country_flag = {
 							flag = kuzarite_deity_decision
-							days = 7300
+							days = 3650
 						}
 					}
 				}
@@ -109,7 +109,7 @@ country_decisions = {
 						NOT = { has_country_flag = kuzarite_deity_decision }
 						had_country_flag = {
 							flag = kuzarite_deity_decision
-							days = 7300
+							days = 3650
 						}
 					}
 				}
