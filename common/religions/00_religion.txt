@@ -2252,7 +2252,7 @@ jewish_group = {
 		icon = 30
 		color = { 83 29 184 }
 		country = {
-			cavalry_cost = -0.1
+			cavalry_power = 0.05
 			same_religion_advisor_cost = -0.1
 		}
 
