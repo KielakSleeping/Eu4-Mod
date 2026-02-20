@@ -1574,6 +1574,7 @@ constantinople={
 		144 147 4699 #north greece
 		142 4698 #heptanesa
 		145 146 1773 4701 #greece
+		160 161 2998 4531 4532 #wallachia_area	
 	}
 }
 
