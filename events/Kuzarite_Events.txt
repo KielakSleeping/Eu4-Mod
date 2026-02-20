@@ -1,0 +1,89 @@
+# KIELAK MOD KUZARITE EVENTS
+
+namespace = kuzarite_events
+
+country_event = {
+	id = K_CRI_events.1
+	title = K_CRI_events.1.t
+	desc = K_CRI_events.1.d1
+	picture = FORT_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = K_CRI_events.1.a
+		add_country_modifier = {
+			name = kielak_kuzarite_1
+			duration = 3650
+		}
+	}
+}
+
+country_event = {
+	id = kuzarite_events.2
+	title = kuzarite_events.2.t
+	desc = kuzarite_events.2.d
+	picture = PRAYING_eventPicture
+	is_triggered_only = yes
+
+	# Shaivism
+	option = {
+		name = kuzarite_events.2.a
+		change_personal_deity = kuzarite1
+	}
+
+	# Skaktism
+	option = {
+		name = kuzarite_events.2.b
+		change_personal_deity = kuzarite2
+	}
+
+	# Vaishnavism
+	option = {
+		name = kuzarite_events.2.c
+		change_personal_deity = kuzarite3
+	}
+
+	# Ganga
+	option = {
+		name = kuzarite_events.2.e
+		change_personal_deity = kuzarite4
+	}
+
+	# Ganesha
+	option = {
+		name = kuzarite_events.2.f
+		change_personal_deity = kuzarite5
+	}
+
+	# Surya
+	option = {
+		name = kuzarite_events.2.g
+		change_personal_deity = kuzarite6
+	}
+	
+	# Not ready
+	option = {
+		trigger = {
+			NOT = { has_country_flag = kuzarite_deity_interaction }
+		}
+		name = kuzarite_events.2.i
+	}
+	
+	after = {
+		clr_country_flag = kuzarite_deity_interaction
+	}
+}
+
+country_event = {
+	id = K_CRI_events.2
+	title = K_CRI_events.2.t
+	desc = K_CRI_events.2.d1
+	picture = RELIGION_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = K_CRI_events.2.a
+		change_religion = kuzarite
+		every_owned_province = {
+			change_religion = kuzarite
+		}
+	}
+}
