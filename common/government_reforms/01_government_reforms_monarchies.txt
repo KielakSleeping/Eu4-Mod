@@ -7293,3 +7293,55 @@ crusader_nobility_reform = {
 	}
 
 }
+
+modern_kuzarite = {
+	icon = "all_under_tengri_reform"
+	allow_normal_conversion = yes
+	potential = {
+		religion = kuzarite
+		tag = GLH
+	}
+	trigger = {
+		religion = kuzarite
+		tag = GLH
+	}
+	modifiers = {
+		idea_cost = -0.05
+		merchants = 1
+	}
+
+	effect = {
+		hidden_effect = {
+			every_owned_province = {
+				if = {
+					limit = {
+						trade_goods = livestock
+					}
+					add_province_modifier = { 
+						name = livestock_glh_bonus_prod
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = livestock_glh_bonus_prod
+				}
+				remove_province_modifier = livestock_glh_bonus_prod
+			}
+		}
+	}
+
+	custom_attributes = {
+		extra_trade_goods_from_livestock = yes
+	}	
+
+	ai = {
+		factor = 3
+	}
+}

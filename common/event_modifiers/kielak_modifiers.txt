@@ -669,3 +669,7 @@ kielak_colonial_formable_carribean_may_raid_coasts = {
 kielak_kuzarite_1 = {
 	prestige = 1
 }
+
+livestock_glh_bonus_prod = {
+	local_production_efficiency = 0.75
+}
