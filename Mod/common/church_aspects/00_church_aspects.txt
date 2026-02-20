@@ -33,7 +33,7 @@ priests_may_marry_aspect = {
 		}
 	}
 	modifier = {
-		technology_cost = -0.025
+		technology_cost = -0.05
 	}
 	ai_will_do = {
 		factor = 10

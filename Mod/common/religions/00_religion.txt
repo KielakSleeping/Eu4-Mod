@@ -818,7 +818,7 @@ christian = {
 		
 		misguided_heretic = yes
 		
-		holy_sites = { 358 1227 1196 1234 392 }
+		holy_sites = { 358 1227 379 1234 390 }
 		
 		blessings = {
 			legitimize_government
@@ -1363,12 +1363,12 @@ dharmic = {
 		icon = 15
 		allowed_conversion = {
 			hinduism
-			sunni
-			shiite
+			#sunni
+			#shiite
 		}
 		country = {
 			mil_tech_cost_modifier = -0.1
-			land_morale = 0.05
+			land_morale = 0.1
 		}
 		province = {
 			local_missionary_strength = -0.01

@@ -21,7 +21,7 @@ free_oarsmen = {
 
 	cost = 0.1
 	country_modifier = {
-		allowed_marine_fraction = 0.25
+		allowed_marine_fraction = 0.2
 	}
 	effect = {}
 	removed_effect = {}
@@ -36,7 +36,7 @@ merchant_navy = {
 
 	cost = 0.1
 	country_modifier = {
-		global_ship_trade_power = 0.33
+		global_ship_trade_power = 0.20
 	}
 	effect = {}
 	removed_effect = {}
@@ -51,7 +51,8 @@ ship_boarding = {
 
 	cost = 0.1
 	country_modifier = {
-		capture_ship_chance = 0.33
+		capture_ship_chance = 0.30
+		#movespeed
 	}
 	
 	button_gfx = 4
@@ -94,9 +95,9 @@ grand_armada = {
 
 	cost = 0.1
 	country_modifier = {
-		allowed_marine_fraction = 0.25
+		allowed_marine_fraction = 0.2
 		leader_naval_manuever = 1
-		treasure_fleet_income = 0.25
+		treasure_fleet_income = 0.2
 	}
 	effect = {}
 	removed_effect = {}
@@ -118,7 +119,7 @@ portuguese_marines = {
 	country_modifier = {
 		siege_blockade_progress = 1
 		global_naval_barrage_cost = -0.5
-		allowed_marine_fraction = 0.15
+		allowed_marine_fraction = 0.20
 	}
 	effect = {}
 	removed_effect = {}
@@ -176,7 +177,7 @@ norwegian_sailors = {
 
 	cost = 0.1
 	country_modifier = {
-		allowed_marine_fraction = 0.15
+		allowed_marine_fraction = 0.20
 		movement_speed_in_fleet_modifier = 1
 	}
 	effect = {}
@@ -194,7 +195,7 @@ norwegian_sailors_upgraded = {
 
 	cost = 0.1
 	country_modifier = {
-		allowed_marine_fraction = 0.15
+		allowed_marine_fraction = 0.20
 		sailors_recovery_speed = 0.25
 		movement_speed_in_fleet_modifier = 2
 	}
@@ -217,7 +218,8 @@ dutch_trade_fleet = {
 	cost = 0.1
 	country_modifier = {
 		global_ship_trade_power = 0.25
-		range = 0.25
+		#range = 0.25
+		sailors_recovery_speed = 0.20
 	}
 	effect = {}
 	removed_effect = {}
@@ -385,7 +387,7 @@ novgorodian_ushkuiniks = {
 	cost = 0.1
 	country_modifier = {
 		sailor_maintenance_modifer = -0.1
-		allowed_marine_fraction = 0.15
+		allowed_marine_fraction = 0.20
 	}
 	effect = {}
 	removed_effect = {}
@@ -424,7 +426,7 @@ malayan_seafaring = {
 	cost = 0.1
 	country_modifier = {
 		landing_penalty = -1
-		allowed_marine_fraction = 0.25
+		allowed_marine_fraction = 0.2
 		regiment_disembark_speed = 0.5
 		naval_attrition = -0.25
 		transport_attrition = -0.5
@@ -582,7 +584,7 @@ mamluk_light_doctrine = {
 
 	cost = 0.1
 	country_modifier = {
-		global_ship_trade_power = 0.15
+		global_ship_trade_power = 0.25
 	}
 	effect = {} #TODO link with naval professionalism ?
 	removed_effect = {}
@@ -597,7 +599,7 @@ mamluk_warships_doctrine = {
 
 	cost = 0.1
 	country_modifier = {
-		disengagement_chance = 0.05
+		disengagement_chance = 0.1
 		naval_morale = 0.05
 	}
 	effect = {} #TODO link with naval professionalism ?
@@ -614,7 +616,7 @@ mamluk_transports_doctrine = {
 	cost = 0.1
 	country_modifier = {
 		transport_attrition = -0.5
-		allowed_marine_fraction = 0.1
+		allowed_marine_fraction = 0.2
 		movement_speed_in_fleet_modifier = 1
 	}
 	effect = {} #TODO link with naval professionalism ?

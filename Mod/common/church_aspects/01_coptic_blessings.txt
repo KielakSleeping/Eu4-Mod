@@ -89,8 +89,8 @@ will_of_the_martyrs = {
 	is_blessing = yes
 
 	modifier = {
-		discipline = 0.025
-		land_morale = 0.025
+		discipline = 0.05
+		#land_morale = 0.025
 	}
 	ai_will_do = {
 		factor = 15
