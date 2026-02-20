@@ -653,4 +653,7 @@
     livestock_glh_bonus_prod:0 "Increased care for our Herds"
     desc_livestock_glh_bonus_prod:0 "With the revival of our old traditions, more people have flocked back to their animals and are taking care of them as our ancestors did.."
     mechanic_extra_trade_goods_from_livestock_yes:0 "Every owned §YLivestock§! producing province gets the following bonuses:\nLocal Production Efficiency: §G+75.0%§!"
+
+    modern_kuzarite:0 "Modern Kuzarism"
+    modern_kuzarite_desc:0 "The resurgence of Kuzarism among our peoples has brought people back many centuries to religious brethren of old, and with it much change has been made from the original interpretations."
     
