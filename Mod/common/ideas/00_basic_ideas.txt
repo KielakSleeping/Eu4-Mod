@@ -28,7 +28,7 @@ innovativeness_ideas = {
 		global_institution_spread = 0.3
 	}
 	scientific_revolution = {
-		advisor_cost = -0.10
+		advisor_cost = -0.15
 		female_advisor_chance = 0.01
 	}
 	dynamic_court = {
@@ -60,7 +60,7 @@ religious_ideas = {
 	category = ADM
 
 	bonus = {
-		development_cost_in_primary_culture = -0.05
+		development_cost_in_primary_culture = -0.075
 		church_privilege_slots = 1 
 		brahmins_privilege_slots = 1
 	}
@@ -88,8 +88,8 @@ religious_ideas = {
 		tolerance_own = 2
 	}
 	inquisition = {
-		culture_conversion_cost = -0.2
-		culture_conversion_time = -0.2
+		culture_conversion_cost = -0.25
+		culture_conversion_time = -0.25
 	}
 	religious_tradition = {
     	manpower_in_true_faith_provinces= 0.15
@@ -200,7 +200,7 @@ expansion_ideas = {
 	category = ADM
 
 	bonus = {
-		administrative_efficiency = 0.075
+		administrative_efficiency = 0.1
 	}
 
 	additional_colonists = {
@@ -226,6 +226,7 @@ expansion_ideas = {
 	general_colonization_law = {
 		center_of_trade_upgrade_cost = -0.2
 		num_accepted_cultures = 2
+		
 	}
 	competetive_merchants = {
 		merchants = 1
@@ -358,7 +359,9 @@ humanist_ideas = {
 	}
 	cultural_ties = {
 		all_estate_loyalty_equilibrium = 0.1
-   		development_cost = -0.05
+   		#development_cost = -0.05
+		development_cost = -0.1
+		development_cost_in_primary_culture =0.05
     
 	}
 	humanist_tolerance = {
@@ -533,8 +536,8 @@ maritime_ideas = {
 	category = DIP
 
 	bonus = {
-		max_admiral_maneuver = 1
-	    leader_naval_manuever = 1
+		#max_admiral_maneuver = 1
+	    leader_naval_manuever = 2
 	}
 
 	merchant_traditions = {
@@ -557,7 +560,7 @@ maritime_ideas = {
 	}
 	ships_penny = {
 		navy_tradition = 1
-		naval_tradition_from_trade = 0.5
+		naval_tradition_from_trade = 1.0
 	}
 	sea_hawks = {
 		global_trade_power = 0.1
@@ -996,7 +999,7 @@ theocracy_gov_ideas = {
 	}
 	conviction_of_sin = {
 		manpower_in_own_culture_provinces = 0.20
-		development_cost_in_primary_culture = -0.05
+		development_cost_in_primary_culture = -0.075
 	}
 	martyrs = {
 		church_loyalty_modifier = 0.1
