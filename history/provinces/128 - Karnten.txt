@@ -1,4 +1,4 @@
-#128 - Kärnten
+#128 - Kï¿½rnten
 
 owner = HAB
 controller = HAB
@@ -15,6 +15,7 @@ fort_15th = yes #Hochosterwitz Castle
 capital = "Klagenfurt" 
 is_city = yes
 hre = yes
+center_of_trade = 1
 
 
 

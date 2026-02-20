@@ -6,7 +6,7 @@ echo_dnieper_buh_estuary_pmod = {
 	picture = "estuary_icon"
 }
 echo_production_hub_grain_pmod = {
-	trade_value_modifier = 1
+	trade_value_modifier = 0.5
 	local_development_cost = -0.15
 }
 
@@ -15,6 +15,10 @@ echo_production_hub_livestock_pmod = {
 	local_development_cost = -0.15
 }
 echo_production_hub_naval_supplies_pmod = {
+	trade_value_modifier = 0.5
+	local_development_cost = -0.15
+}
+echo_production_hub_wool_pmod ={
 	trade_value_modifier = 0.5
 	local_development_cost = -0.15
 }
@@ -31,7 +35,7 @@ free_colonist = {
 	colonists = 2
 	range = 10
 	trade_range_modifier = 1
-	global_colonial_growth = 35
+	global_colonial_growth = 20
 	may_explore = yes
 }
 
