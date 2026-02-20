@@ -117,6 +117,23 @@ workshop = {
 			type = production
 			value = 1
 		}
+
+		if = {
+			limit = {
+				NOT = {
+					has_province_modifier = workshop_cost_no_slot
+				}
+				owner = { has_idea = sea_hawks }
+				
+			}
+			hidden_effect = {
+				add_province_modifier = {
+					name = "workshop_cost_no_slot"
+					duration = -1
+				}
+			}
+		}
+
 	}
 	on_destroyed = {
 		bastard_dev_cost_remove_from_buildings = yes
@@ -125,6 +142,14 @@ workshop = {
 			type = production
 			value = 1
 		}
+
+		if = {
+			limit = { 
+				has_province_modifier = workshop_cost_no_slot
+			}
+			remove_province_modifier = workshop_cost_no_slot
+		}
+
 	}
 	on_obsolete = {
 	}
@@ -882,21 +907,6 @@ dock = {
 			value = 1
 		}
 
-		if = {
-			limit = {
-				NOT = {
-					has_province_modifier = docks_cost_no_slot
-				}
-				owner = { has_idea = sea_hawks }
-				
-			}
-			hidden_effect = {
-				add_province_modifier = {
-					name = "docks_cost_no_slot"
-					duration = -1
-				}
-			}
-		}
 	}
 	
 	on_destroyed = {
@@ -917,12 +927,6 @@ dock = {
 			value = 1
 		}
 
-		if = {
-			limit = { 
-				has_province_modifier = docks_cost_no_slot
-			}
-			remove_province_modifier = docks_cost_no_slot
-		}
 	}
 	on_obsolete = {
 	}
@@ -2214,6 +2218,23 @@ counting_house = {
 			value = 2
 			upgrade_value = 1
 		}
+
+		if = {
+			limit = {
+				NOT = {
+					has_province_modifier = workshop_cost_no_slot
+				}
+				owner = { has_idea = sea_hawks }
+				
+			}
+			hidden_effect = {
+				add_province_modifier = {
+					name = "workshop_cost_no_slot"
+					duration = -1
+				}
+			}
+		}
+
 	}
 	on_destroyed = {
 		bastard_dev_cost_remove_from_buildings = yes
@@ -2222,6 +2243,14 @@ counting_house = {
 			type = production
 			value = 2
 		}
+
+		if = {
+			limit = { 
+				has_province_modifier = workshop_cost_no_slot
+			}
+			remove_province_modifier = workshop_cost_no_slot
+		}
+
 	}
 	on_obsolete = {
 	}
@@ -2386,22 +2415,6 @@ drydock = {
 			upgrade_value = 1
 		}
 
-		if = {
-			limit = {
-				NOT = {
-					has_province_modifier = docks_cost_no_slot
-				}
-				owner = { has_idea = sea_hawks }
-				
-			}
-			hidden_effect = {
-				add_province_modifier = {
-					name = "docks_cost_no_slot"
-					duration = -1
-				}
-			}
-		}
-
 	}
 	
 	on_destroyed = {
@@ -2420,13 +2433,6 @@ drydock = {
 			building = drydock
 			type = production
 			value = 2
-		}
-
-		if = {
-			limit = { 
-				has_province_modifier = docks_cost_no_slot
-			}
-			remove_province_modifier = docks_cost_no_slot
 		}
 
 	}

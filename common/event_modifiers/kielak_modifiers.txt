@@ -23,7 +23,7 @@ trained_subject_officers2 = {
     	land_morale = 0.1
 }
 
-docks_cost_no_slot ={
+workshop_cost_no_slot ={
 	allowed_num_of_buildings = 1
 }
 
