@@ -253,7 +253,7 @@ administrative_ideas = {
 
 	administrative_council = {
 		adm_tech_cost_modifier = -0.1
-		reform_progress_growth = 0.2
+		reform_progress_growth = 0.3
 	}
 	local_rule = {
 		adm_advisor_cost = -0.25
