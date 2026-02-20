@@ -831,6 +831,7 @@ power_to_the_synagogoues_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		NOT = { has_government_attribute = is_pirate_republic_reform }
+		NOT = { religion = kuzarite }
 		OR = {
 			is_revolutionary = no
 			NOT = { has_dlc = "Emperor" }
