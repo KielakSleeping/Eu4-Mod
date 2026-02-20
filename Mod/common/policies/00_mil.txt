@@ -1064,8 +1064,10 @@ do_you_have_time_to_talk_about_our_lord_and_saviour = {
                full_idea_group = theocracy_gov_ideas
        }
 
-       manpower_in_own_culture_provinces = 0.15 
-       morale_damage_received = -0.05 
+       #manpower_in_own_culture_provinces = 0.15 
+       #morale_damage_received = -0.05 
+       manpower_recovery_speed = 0.15
+       morale_damage = 0.15
 
        ai_will_do = { 
                factor = 1 
