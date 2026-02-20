@@ -648,3 +648,9 @@
     K_CRI_events.2.a:0 "We shall follow in their footsteps."
     K_CRI_mission_kuzarite_2_title:0 "The Faith of our Forefathers"
     K_CRI_mission_kuzarite_2_desc:0 "Another elden ring reference"
+
+    estate_brahmins_flexible_deities_effect_tooltip:2 "Enables a decision that allows you to change your Personal Deity every §Y10§! years (kuzarite)/ §Y20§! years (hindu) at the cost of §Y25§! legitimacy (or its equivalent for other governments)."
+    livestock_glh_bonus_prod:0 "Increased care for our Herds"
+    desc_livestock_glh_bonus_prod:0 "With the revival of our old traditions, more people have flocked back to their animals and are taking care of them as our ancestors did.."
+    mechanic_extra_trade_goods_from_livestock_yes:0 "Every owned §YLivestock§! producing province gets the following bonuses:\nLocal Production Efficiency: §G+75.0%§!"
+    
