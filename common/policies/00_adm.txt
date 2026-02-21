@@ -616,8 +616,8 @@ blessing_the_land = {
 
        
        #development_cost_in_primary_culture = -0.075
-       trade_goods_size = 0.2
-	center_of_trade_upgrade_cost = -0.1 
+       global_trade_goods_size = 0.2
+        center_of_trade_upgrade_cost = -0.15
 
        ai_will_do = { 
                factor = 1 
