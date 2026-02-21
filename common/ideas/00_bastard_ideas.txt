@@ -1592,7 +1592,7 @@ LOT_ideas = {
 	}
 	lot_dutch_cities = {
 		trade_efficiency = 0.2
-		trade_goods_size_modifier = 0.2
+		#trade_goods_size_modifier = 0.2
 		#global_own_trade_power = 0.2
 	}
 	lot_carolingian_renaissance_II = {

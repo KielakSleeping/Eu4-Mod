@@ -11206,12 +11206,13 @@ ARB_muslim_enforced_religion_buff = {
 }
 
 ARB_estate_burghers_desert = {
-	local_development_cost = -0.15
+	local_development_cost = -0.10
 }
 
 ARB_estate_burghers_arid_climate_development = {
-	local_colonial_growth = 5
+	#local_colonial_growth = 5
 	#local_development_cost = -0.05
+	local_build_cost =   -0.05
 }
 
 ARB_oasis_city_on_stop_to_mecca = {
