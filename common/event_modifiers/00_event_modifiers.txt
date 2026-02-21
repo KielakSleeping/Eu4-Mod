@@ -12867,7 +12867,7 @@ mal_second_target = {
 
 #Mutapa modifiers
 zim_declining_city = {
-	local_development_cost = 0.55
+	#local_development_cost = 0.55
 	local_tax_modifier = -0.33
 	trade_goods_size_modifier = -0.33
 	local_manpower_modifier = -0.33
@@ -12904,7 +12904,7 @@ estate_burghers_hydraulic_rights_desert = {
 }
 
 estate_burghers_hydraulic_rights_coastal_desert = {
-	local_development_cost = -0.175
+	local_development_cost = -0.15
 }
 
 estate_burghers_hydraulic_rights_steppes = {
