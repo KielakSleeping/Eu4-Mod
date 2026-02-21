@@ -851,6 +851,8 @@ republic = {
 				#1.37 Bohemia
 				vozove_hradby_reform
 				russian_mercenary_guard_reform 
+				#Kielak
+				we_exiled_few_reform
 			}
 		}
 		parliamentary_vs_presidential = {
