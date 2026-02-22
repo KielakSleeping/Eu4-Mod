@@ -25,8 +25,8 @@ clerical_poverty_aspect = {
 punishment_of_sins_aspect = {
 	cost = 100
 	modifier = {
-		nobles_influence_modifier = -0.1
-		yearly_corruption = -0.05
+		discipline = 0.025
+		yearly_corruption = -0.1
 	}
 	effect = {
 		hidden_effect = { 
@@ -50,6 +50,7 @@ orphan_hetmans_aspect = {
 	cost = 100
 	modifier = {
 		army_tradition_decay = -0.01
+		army_tradition = 0.01
 	}
 	effect = {
 		hidden_effect = { 
@@ -73,7 +74,7 @@ bread_and_wine_aspect = {
 	cost = 100
 	modifier = {
 		tolerance_own = 1
-		global_trade_goods_size_modifier = 0.05
+		global_trade_goods_size = 0.2
 	}
 	effect = {
 		hidden_effect = { 
@@ -120,6 +121,7 @@ adamite_services_aspect = {
 	cost = 100
 	modifier = {
 		culture_conversion_cost = -0.2
+		culture_conversion_time = -0.2
 	}
 	effect = {
 		hidden_effect = { 
@@ -142,7 +144,7 @@ adamite_services_aspect = {
 pacifism_aspect = {
 	cost = 100
 	modifier = {
-		stability_cost_to_declare_war = 1
+		diplomatic_annexation_cost = -0.15
 		improve_relation_modifier = 0.3
 	}
 	ai_will_do = {
@@ -169,7 +171,8 @@ pacifism_aspect = {
 regular_defenestrations_aspect = {
 	cost = 100
 	modifier = {
-		harsh_treatment_cost = -0.33
+		infantry_fire = 0.1
+		infantry_shock = 0.1
 	}
 	effect = {
 		hidden_effect = { 
@@ -215,8 +218,8 @@ taborite_resurgence_aspect = {
 freedom_to_preach_aspect = {
 	cost = 100
 	modifier = {
-		religious_unity = 0.1
-		tolerance_heretic = 1
+		idea_Cost = -0.05
+		tolerance_heretic = 3
 	}
 	effect = {
 		hidden_effect = { 
