@@ -652,7 +652,7 @@
     estate_brahmins_flexible_deities_effect_tooltip:2 "Enables a decision that allows you to change your Personal Deity every §Y10§! years (kuzarite)/ §Y20§! years (hindu) at the cost of §Y25§! legitimacy (or its equivalent for other governments)."
     livestock_glh_bonus_prod:0 "Increased care for our Herds"
     desc_livestock_glh_bonus_prod:0 "With the revival of our old traditions, more people have flocked back to their animals and are taking care of them as our ancestors did.."
-    mechanic_extra_trade_goods_from_livestock_yes:0 "Every owned §YLivestock§! producing province gets the following bonuses:\nLocal Production Efficiency: §G+75.0%§!"
+    mechanic_extra_trade_goods_from_livestock_yes:0 "Every owned §YLivestock§! producing province gets the following bonuses:\nLocal Production Efficiency:0 §G+75.0%§!"
 
     modern_kuzarite:0 "Modern Kuzarism"
     modern_kuzarite_desc:0 "The resurgence of Kuzarism among our peoples has brought people back many centuries to religious brethren of old, and with it much change has been made from the original interpretations."
@@ -664,7 +664,7 @@
 
     kielak_hussite_events.1.t:0 "The Hussites of Bohemia"
     kielak_hussite_events.1.d:0 "With the recent conquest of Prague, the struggles of the Hussites in Bohemia has come to an end. Any resistance they could once bring has been shattered, and with so many of their brethren dead, a small group has decided to venture south in hope of more tolerant lands. With them they bring great deals of knowledge of glasswork and crystals, yet their religious conviction burns brighter in their hearts than anyone else. Should we allow these refugees to migrate into our lands, or should we send them away?"
-    kielak_hussite_events.1.a:0 "We shall welcome the Hussites into Venice."
+    kielak_hussite_events.1.a:0 "§GHussite Path§! We shall welcome the Hussites into Venice."
     kielak_hussite_events.1.b:0 "Send the Hussites away from our lands."
     hussite_refugees:0 "Hussite Refugees"
     denied_hussite_refugees:0 "Denied Hussite Refugees"
