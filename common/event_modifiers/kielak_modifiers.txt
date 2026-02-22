@@ -673,3 +673,13 @@ kielak_kuzarite_1 = {
 livestock_glh_bonus_prod = {
 	local_production_efficiency = 0.75
 }
+
+hussite_refugees = {
+	tolerance_heretic = 2
+	tolerance_own = -2
+}
+
+denied_hussite_refugees = {
+	tolerance_heretic = -2
+	tolerance_own = 2
+}
