@@ -686,7 +686,9 @@ AKS_ideas = {
 PRU_ideas = {
 	start = {
 		army_tradition = 0.5
-		ae_impact = -0.1
+		#ae_impact = -0.1
+		army_tradition_decay = -0.01
+		army_tradition_from_battle = 0.50
 	}
 	
 	bonus = {
@@ -709,7 +711,7 @@ PRU_ideas = {
 		monthly_prussian_militarized_society_3 = 0.33
 	}
 	army_professionalism = {
-		land_morale = 0.1
+		land_morale = 0.15
 	}	
 	noble_cadets = {
 		nobles_loyalty_modifier = 0.1
@@ -718,12 +720,12 @@ PRU_ideas = {
 		infantry_power = 0.15
 	}
 	regimental_cantons = {
-		global_manpower_modifier = 0.15
+		global_manpower_modifier = 0.25
 		global_regiment_recruit_speed = -0.1
 	}
 	religious_toleration = {
-		development_cost = -0.05
-		build_cost = -0.05
+		development_cost = -0.1
+		build_cost = -0.1
 	}
 }
 
@@ -1590,7 +1592,7 @@ LOT_ideas = {
 	}
 	lot_dutch_cities = {
 		trade_efficiency = 0.2
-		trade_goods_size_modifier = 0.2
+		#trade_goods_size_modifier = 0.2
 		#global_own_trade_power = 0.2
 	}
 	lot_carolingian_renaissance_II = {
