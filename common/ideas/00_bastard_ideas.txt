@@ -1908,11 +1908,12 @@ GBR_ideas = {
 AVE_ideas = {
 	start = {
 		global_manpower_modifier = 0.25
-		land_morale = 0.1
+		land_morale = 0.15
 	}
 
 	bonus = {
-		years_of_nationalism = -5
+		#years_of_nationalism = -5
+		discipline = 0.05
 	}
 	
 	trigger = {
@@ -1933,7 +1934,8 @@ AVE_ideas = {
 	}
 	the_many_thrones = {
 		heir_chance = 0.5
-		years_to_integrate_personal_union = -10
+		#years_to_integrate_personal_union = -10
+		diplomatic_upkeep = 2
 	}
 	reformed_angevin_infantry = {
 		infantry_power = 0.1
