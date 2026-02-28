@@ -660,7 +660,6 @@
     kaffa_slave_market:0 "Kaffa slave market"
     
     we_exiled_few_reform:0 "We Exiled Few"
-<<<<<<< HEAD
     we_exiled_few_reform_desc:0 "We Exiled Few pushed past our rampant persecution in Bohemia and left for fairer lands and a more tolerant people, willing to listen to the truth. The journey was bereft of haste and comfort, yet here we stand upon the ocean in Venice."
 
     kielak_hussite_events.1.t:0 "The Hussites of Bohemia"
@@ -675,6 +674,3 @@
     kielak_hussite_events.3.t:0 "The Exiled Few"
     kielak_hussite_events.3.d:0 "The exiled Hussites have found themselves refused access to the major cities and towns under our control, and thus have been pushed into the countryside and towards our neighbours. We were right to expell the heretics after all, as they have looted and sacked small settlements along their route of savagery out of our nation."
     kielak_hussite_events.3.a:0 "Good riddance."
-=======
-    we_exiled_few_reform_desc:0 "We Exiled Few pushed past our rampant persecution in Bohemia and left for fairer lands and a more tolerant people, willing to listen to the truth. The journey was bereft of haste and comfort, yet here we stand upon the ocean in Venice."
->>>>>>> parent of 9d7fda3 (hussite local)
