@@ -66,3 +66,46 @@ country_event = { #purchase the counties
 		add_treasury = -750
 	}
 }
+
+country_event = { #purchase the counties
+	id = gc_burgundy_event.3
+	title = "gc_burgundy_event.3.t"
+	desc = "gc_burgundy_event.3.d"
+	picture = REFORM_eventPicture
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = gc_burgundy_event.3.a
+		
+		75 = {
+			cede_province = LOT
+		}
+		75 = {
+			add_core = LOT
+		}
+		75 = {
+			add_core = HAB
+		}
+		4765 = {
+			cede_province = LOT
+		}
+		4765 = {
+			add_core = LOT
+		}
+		4765 = {
+			add_core = HAB
+		}
+		1880 = {
+			cede_province = LOT
+		}
+		1880 = {
+			add_core = LOT
+		}
+		1880 = {
+			add_core = HAB
+		}
+		add_treasury = -750
+	}
+}

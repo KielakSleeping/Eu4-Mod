@@ -89,7 +89,19 @@ emp_burgundy_1 = {
 		}
 		
 		effect = {
+			if = {
+				limit = {
+					tag = BUR 
+				}
 			country_event = { id = gc_burgundy_event.2 }
+
+			}
+			if = {
+				limit = {
+					tag = LOT
+				}
+			country_event = { id = gc_burgundy_event.3 }	
+			}
 		}
 	}
 	
