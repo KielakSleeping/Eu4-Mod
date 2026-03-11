@@ -688,7 +688,6 @@ PRU_ideas = {
 		army_tradition = 0.5
 		#ae_impact = -0.1
 		army_tradition_decay = -0.01
-		army_tradition_from_battle = 0.50
 	}
 	
 	bonus = {
@@ -705,19 +704,23 @@ PRU_ideas = {
 		stability_cost_modifier = -0.1
 	}
 	soldier_king = {
-		army_tradition_decay = -0.005
+		#army_tradition_decay = -0.01
 		monthly_prussian_militarized_society_1 = 0.33
 		monthly_prussian_militarized_society_2 = 0.33
 		monthly_prussian_militarized_society_3 = 0.33
+		
 	}
 	army_professionalism = {
 		land_morale = 0.15
 	}	
 	noble_cadets = {
 		nobles_loyalty_modifier = 0.1
+		army_tradition_from_battle = 0.50
 	}
 	goose_step = {
-		infantry_power = 0.15
+		#infantry_power = 0.15
+		infantry_shock  = 0.20
+		infantry_fire = 0.20
 	}
 	regimental_cantons = {
 		global_manpower_modifier = 0.25
@@ -774,7 +777,7 @@ WES_ideas = {
 		land_forcelimit_modifier = 0.2
 	}
 	bonus = {
-		global_manpower_modifier = 0.15
+		global_manpower_modifier = 0.20
 	}
 	trigger = {
 		tag = WES
@@ -796,14 +799,16 @@ WES_ideas = {
 		global_tax_modifier = 0.15
 	}
 	wes_enlightenment = {
-		defensiveness = 0.1
+		#defensiveness = 0.1
+		technology_cost = 0.1
 	}
 	wes_cities_of_the_rhineland = {
 		global_prov_trade_power_modifier = 0.25
 	}
 	wes_administrative_assimilation_of_rheinlanders = {
 		fire_damage = 0.1
-		same_culture_advisor_cost = -0.1
+		#same_culture_advisor_cost = -0.1
+		advisor_cost = -0.1
 	}
 }
 
