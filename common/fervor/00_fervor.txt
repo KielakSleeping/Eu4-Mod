@@ -101,8 +101,9 @@ fervor_diplomacy = {
 	}
 	effect = {
 		diplomatic_reputation = 2
-		improve_relation_modifier = 0.33
+		#improve_relation_modifier = 0.33
 		spy_action_cost_modifier = -0.33
+		diplomatic_annexation_cost = -0.15
 	}
 	ai_will_do = {
 		factor = 1
@@ -126,8 +127,8 @@ fervor_trade_buffed = {
 	trigger = {
 	}
 	effect = {
-		global_trade_power = 0.15
-		trade_efficiency = 0.15
+		global_trade_power = 0.125
+		trade_efficiency = 0.125
 		global_trade_goods_size_modifier = 0.125
 	}
 	ai_will_do = {
@@ -221,8 +222,9 @@ fervor_diplomacy_buffed = {
 	}
 	effect = {
 		diplomatic_reputation = 3
-		improve_relation_modifier = 0.375
+		#mprove_relation_modifier = 0.375
 		spy_action_cost_modifier = -0.375
+		diplomatic_annexation_cost = -0.2
 	}
 	ai_will_do = {
 		factor = 1
