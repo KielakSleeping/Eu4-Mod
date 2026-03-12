@@ -182,17 +182,17 @@ economic_ideas = {
 	}
 
 	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 0
-			is_vassal = yes
-
-		}
-		modifier = {
-			factor = 0
-			is_march = yes
-
-		}
+		factor = 0
+		#modifier = {
+		#	factor = 0
+		#	is_vassal = yes
+#
+#		}
+#		modifier = {
+#			factor = 0
+#			is_march = yes
+#
+#		}
 	}
 }
 
@@ -560,7 +560,7 @@ maritime_ideas = {
 	}
 	ships_penny = {
 		navy_tradition = 1
-		naval_tradition_from_trade = 1.0
+		naval_tradition_from_trade = 0.5
 	}
 	sea_hawks = {
 		global_trade_power = 0.1
@@ -927,7 +927,7 @@ quantity_ideas = {
 
 	bonus = {
 		land_forcelimit_modifier = 0.25
-		reinforce_cost_modifier = -0.20
+		reinforce_cost_modifier = -0.30
 		free_mil_policy = 1
 	}
 
@@ -954,12 +954,12 @@ quantity_ideas = {
 		reinforce_speed = 0.3
 	}
 	the_old_and_infirm = {
-		land_forcelimit = 15
-		#may_return_manpower_on_disband = yes
+		#land_forcelimit = 10
+		may_return_manpower_on_disband = yes
 	}
 	expanded_supply_trains = {
 		land_attrition = -0.20
-		global_supply_limit_modifier = 0.75
+		global_supply_limit_modifier = 1
 	}
 
 	ai_will_do = {
@@ -991,6 +991,7 @@ theocracy_gov_ideas = {
 	flesh_is_weak = {
 		morale_damage = 0.15
 		morale_damage_received = -0.10
+		
 	}
 	alpha_and_omega = {
 		culture_conversion_cost = -0.2
@@ -1006,6 +1007,7 @@ theocracy_gov_ideas = {
 		brahmins_hindu_loyalty_modifier = 0.1
 		dhimmi_loyalty_modifier = 0.1
 		same_culture_advisor_cost = -0.10
+		manpower_recovery_speed = 0.15
 	}
 
 	ai_will_do = {

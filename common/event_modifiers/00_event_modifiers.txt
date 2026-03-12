@@ -13235,12 +13235,12 @@ shift_on_military_affairs_modifier = {
 
 #Government Reforms
 amphibious_specialization_reform_modifier = {
-	regiment_manpower_usage = -0.2
+	regiment_manpower_usage = -0.1
 	is_marine_modifier = yes
 }
 
 bastard_amphibious_specialization_reform_modifier = {
-	regiment_manpower_usage = -0.25
+	regiment_manpower_usage = -0.15
 	is_marine_modifier = yes
 }
 

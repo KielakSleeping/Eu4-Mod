@@ -2241,7 +2241,10 @@ prussian_monarchy = {
 		NOT = { has_reform = prussian_monarchy_base }
 		OR = {
 			AND = {
+				tag = BRA
+				OR{
 				tag = PRU
+			}
 				OR = {
 					has_mission = emp_brapru_army_reforms_2
 					has_mission = emp_brapru_army_reforms_3

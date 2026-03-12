@@ -934,7 +934,7 @@ kashifs = {
     }
     modifier = {
 		local_governing_cost = -0.1
-        local_development_cost = -0.1
+        local_development_cost = -0.05
     }
     ai_priority = {
         factor = 2
@@ -958,15 +958,15 @@ savafid_order = {
         religion = shiite
     }
     color = { 68 110 35 }
-    cost = 150
+    cost = 75
     cost_type = mil_power
     per_province_effect = {
-        add_base_manpower = 2
+        add_base_manpower = 1
         owner = { add_piety = -0.02 }
         custom_tooltip = order_piety_tooltip
     }
     per_province_abandon_effect = {
-        add_base_manpower = -2
+        add_base_manpower = -1
         hidden_effect = {
             if = {
                 limit = { NOT = { base_manpower = 1 } }
@@ -996,15 +996,15 @@ zahediyeh_order = {
         religion_group = muslim
     }
     color = { 217 144 88 }
-    cost = 150
+    cost = 75
     cost_type = dip_power
     per_province_effect = {
-        add_base_production = 2
+        add_base_production = 1
         owner = { add_piety = -0.02 }
         custom_tooltip = order_piety_tooltip
     }
     per_province_abandon_effect = {
-        add_base_production = -2
+        add_base_production = -1
         hidden_effect = {
             if = {
                 limit = { NOT = { base_production = 1 } }
@@ -1034,7 +1034,7 @@ scuola_grande = {
     cost = 75
     cost_type = dip_power
     per_province_effect = {
-        owner = { add_splendor = 10 }
+        owner = { add_splendor = 05 }
         add_base_production = 1
     }
     per_province_abandon_effect = {
@@ -1043,7 +1043,9 @@ scuola_grande = {
     }
     modifier = {
 		#local_development_cost = -0.1
-        local_institution_spread = 0.25
+       #local_institution_spread = 0.25
+       local_build_time = -0.1
+       local_governing_cost = -0.05
     }
     ai_priority = {
         factor = 10
