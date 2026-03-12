@@ -1494,7 +1494,7 @@ estate_burghers_private_trade_fleets = {
 			}
 		}
 		modifier = {
-			global_ship_trade_power = 0.1
+			#global_ship_trade_power = 0.1
 		}
 	}
 	conditional_modifier = {
@@ -1506,7 +1506,7 @@ estate_burghers_private_trade_fleets = {
 			NOT = { has_country_flag = YEM_upgrade_trade_ships_priv_2 }
 		}
 		modifier = {
-			global_ship_trade_power = 0.2
+			#global_ship_trade_power = 0.2
 		}
 	}
 	conditional_modifier = {
@@ -1514,13 +1514,13 @@ estate_burghers_private_trade_fleets = {
 			has_country_flag = YEM_upgrade_trade_ships_priv_2
 		}
 		modifier = {
-			global_ship_trade_power = 0.3
+			#global_ship_trade_power = 0.3
 		}
 	}
 	conditional_modifier = {
 		trigger = { has_country_flag = mam_upgrade_private_trade_fleets_flag }
 		modifier = { 
-			global_ship_trade_power = 0.1 
+			#global_ship_trade_power = 0.1 
 			burghers_influence_modifier = -0.1
 		}
 	}
@@ -3198,7 +3198,8 @@ estate_burghers_nile_goods_transport = {
 		ai=no
 	}
 	benefits = {
-		global_ship_trade_power = 0.2
+		#	global_ship_trade_power = 0.2
+		trade_efficiency = 0.05
 	}
 
 	loyalty_scaled_conditional_modifier = {
@@ -3938,7 +3939,7 @@ estate_burghers_arabian_traders = {
 		}
 		modifier = { 
 			light_ship_cost = -0.2
-			ship_trade_power_modifier = 0.3
+			#ship_trade_power_modifier = 0.3
 		}
 	}
 	conditional_modifier = {
@@ -4243,7 +4244,7 @@ estate_burghers_GER_turn_towards_mercantilism = {
 			mercantilism = 60
 		}
 		modifier = {
-			global_ship_trade_power = 0.2
+			#global_ship_trade_power = 0.2
 		}
 	}
 	conditional_modifier = {
