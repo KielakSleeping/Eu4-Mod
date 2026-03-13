@@ -4710,7 +4710,7 @@ on_province_owner_change = {
 					
 	
 					
-			owner = { has_idea = sea_hawks }}
+			owner = { has_idea = sea_hawks }
 	
 				hidden_effect = {
 				add_province_modifier = {
