@@ -570,12 +570,12 @@ maritime_ideas = {
 				every_owned_province = {
 					limit = {
 						OR = {
-							has_building = workshop
-							has_building = counting_house
+							has_building = dock
+							has_building = drydock
 							}
 						}
 					add_province_modifier = {
-						name = workshop_cost_no_slot
+						name = dock_cost_no_slot
 						duration = -1
 						}
 					}
@@ -585,9 +585,10 @@ maritime_ideas = {
 			hidden_effect = {
 				every_owned_province = {
 					limit = {
-						has_province_modifier = workshop_cost_no_slot
+						has_province_modifier = dock_cost_no_slot
 					}
-					remove_province_modifier = workshop_cost_no_slot
+					remove_province_modifier = dock_cost_no_slot
+					}
 				}
 			}
 		}
@@ -658,10 +659,10 @@ trade_ideas = {
 			hidden_effect = {
 				every_owned_province = {
 					limit = {
-						has_trade_building_trigger = yes
+						has_production_building_trigger = yes
 						}
 					add_province_modifier = {
-						name = market_places_cost_no_slot
+						name = workshop_cost_no_slot
 						duration = -1
 						}
 					}
@@ -671,9 +672,9 @@ trade_ideas = {
 			hidden_effect = {
 				every_owned_province = {
 					limit = {
-						has_province_modifier = market_places_cost_no_slot
+						has_province_modifier = workshop_cost_no_slot
 					}
-					remove_province_modifier = market_places_cost_no_slot
+					remove_province_modifier = workshop_cost_no_slot
 				}
 			}
 		}

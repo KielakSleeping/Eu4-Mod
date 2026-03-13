@@ -30,6 +30,9 @@ workshop_cost_no_slot ={
 market_places_cost_no_slot ={
 	allowed_num_of_buildings = 1
 }
+dock_cost_no_slot ={
+	allowed_num_of_buildings = 1
+}
 
 churches_cost_no_slot ={
 	allowed_num_of_buildings = 1
