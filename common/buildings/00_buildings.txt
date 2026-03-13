@@ -51,21 +51,21 @@ marketplace = {
 			add_prosperity = 5
 		}
 
-		if = {
-			limit = {
-				NOT = {
-					has_province_modifier = market_places_cost_no_slot
-				}
-				owner = { has_idea = free_trade }
+		# if = {
+		# 	limit = {
+		# 		NOT = {
+		# 			has_province_modifier = market_places_cost_no_slot
+		# 		}
+		# 		owner = { has_idea = free_trade }
 				
-			}
-			hidden_effect = {
-				add_province_modifier = {
-					name = "market_places_cost_no_slot"
-					duration = -1
-				}
-			}
-		}
+		# 	}
+		# 	hidden_effect = {
+		# 		add_province_modifier = {
+		# 			name = "market_places_cost_no_slot"
+		# 			duration = -1
+		# 		}
+		# 	}
+		# }
 	}
 	on_destroyed = {
 		bastard_dev_cost_remove_from_buildings = yes
@@ -85,12 +85,12 @@ marketplace = {
 			add_prosperity = -5
 		}
 
-		if = {
-			limit = { 
-				has_province_modifier = market_places_cost_no_slot
-			}
-			remove_province_modifier = market_places_cost_no_slot
-		}
+		# if = {
+		# 	limit = { 
+		# 		has_province_modifier = market_places_cost_no_slot
+		# 	}
+		# 	remove_province_modifier = market_places_cost_no_slot
+		# }
 	}
 
 	on_construction_started = { } #Fires when you start the construction,  ROOT - Province FROM - Country that started
@@ -123,7 +123,7 @@ workshop = {
 				NOT = {
 					has_province_modifier = workshop_cost_no_slot
 				}
-				owner = { has_idea = sea_hawks }
+				owner = { has_idea = free_trade }
 				
 			}
 			hidden_effect = {
@@ -907,6 +907,22 @@ dock = {
 			value = 1
 		}
 
+		if = {
+			limit = {
+				NOT = {
+					has_province_modifier = dock_cost_no_slot
+				}
+				owner = { has_idea = sea_hawks }
+				
+			}
+			hidden_effect = {
+				add_province_modifier = {
+					name = "dock_cost_no_slot"
+					duration = -1
+				}
+			}
+		}		
+
 	}
 	
 	on_destroyed = {
@@ -926,6 +942,13 @@ dock = {
 			type = production
 			value = 1
 		}
+
+		if = {
+			limit = { 
+				has_province_modifier = dock_cost_no_slot
+			}
+			remove_province_modifier = dock_cost_no_slot
+		}		
 
 	}
 	on_obsolete = {
@@ -1625,21 +1648,21 @@ trade_depot = {
 			upgrade_value = 1
 		}
 
-		if = {
-			limit = {
-				NOT = {
-					has_province_modifier = market_places_cost_no_slot
-				}
-				owner = { has_idea = free_trade }
+		# if = {
+		# 	limit = {
+		# 		NOT = {
+		# 			has_province_modifier = market_places_cost_no_slot
+		# 		}
+		# 		owner = { has_idea = free_trade }
 				
-			}
-			hidden_effect = {
-				add_province_modifier = {
-					name = "market_places_cost_no_slot"
-					duration = -1
-				}
-			}
-		}
+		# 	}
+		# 	hidden_effect = {
+		# 		add_province_modifier = {
+		# 			name = "market_places_cost_no_slot"
+		# 			duration = -1
+		# 		}
+		# 	}
+		# }
 	}
 	on_destroyed = {
 		bastard_dev_cost_remove_from_buildings = yes
@@ -1649,12 +1672,12 @@ trade_depot = {
 			value = 2
 		}
 
-		if = {
-			limit = { 
-				has_province_modifier = market_places_cost_no_slot
-			}
-			remove_province_modifier = market_places_cost_no_slot
-		}
+		# if = {
+		# 	limit = { 
+		# 		has_province_modifier = market_places_cost_no_slot
+		# 	}
+		# 	remove_province_modifier = market_places_cost_no_slot
+		# }
 	}
 	on_obsolete = {
 	}
@@ -2161,21 +2184,21 @@ stock_exchange = {
 			}
 		}
 
-		if = {
-			limit = {
-				NOT = {
-					has_province_modifier = market_places_cost_no_slot
-				}
-				owner = { has_idea = free_trade }
+		# if = {
+		# 	limit = {
+		# 		NOT = {
+		# 			has_province_modifier = market_places_cost_no_slot
+		# 		}
+		# 		owner = { has_idea = free_trade }
 				
-			}
-			hidden_effect = {
-				add_province_modifier = {
-					name = "market_places_cost_no_slot"
-					duration = -1
-				}
-			}
-		}
+		# 	}
+		# 	hidden_effect = {
+		# 		add_province_modifier = {
+		# 			name = "market_places_cost_no_slot"
+		# 			duration = -1
+		# 		}
+		# 	}
+		# }
 	}
 	on_destroyed = {
 		bastard_dev_cost_remove_from_buildings = yes
@@ -2185,12 +2208,12 @@ stock_exchange = {
 			value = 3
 		}
 
-		if = {
-			limit = { 
-				has_province_modifier = market_places_cost_no_slot
-			}
-			remove_province_modifier = market_places_cost_no_slot
-		}
+		# if = {
+		# 	limit = { 
+		# 		has_province_modifier = market_places_cost_no_slot
+		# 	}
+		# 	remove_province_modifier = market_places_cost_no_slot
+		# }
 	}
 	on_obsolete = {
 	}
@@ -2224,7 +2247,7 @@ counting_house = {
 				NOT = {
 					has_province_modifier = workshop_cost_no_slot
 				}
-				owner = { has_idea = sea_hawks }
+				owner = { has_idea = free_trade }
 				
 			}
 			hidden_effect = {
@@ -2415,6 +2438,22 @@ drydock = {
 			upgrade_value = 1
 		}
 
+		if = {
+			limit = {
+				NOT = {
+					has_province_modifier = dock_cost_no_slot
+				}
+				owner = { has_idea = sea_hawks }
+				
+			}
+			hidden_effect = {
+				add_province_modifier = {
+					name = "dock_cost_no_slot"
+					duration = -1
+				}
+			}
+		}		
+
 	}
 	
 	on_destroyed = {
@@ -2434,6 +2473,13 @@ drydock = {
 			type = production
 			value = 2
 		}
+
+		if = {
+			limit = { 
+				has_province_modifier = dock_cost_no_slot
+			}
+			remove_province_modifier = dock_cost_no_slot
+		}		
 
 	}
 	on_obsolete = {

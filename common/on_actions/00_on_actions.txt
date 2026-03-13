@@ -4608,18 +4608,14 @@ on_province_owner_change = {
 		}
 	}
 
-#Marketplaces, Churches and Docks extra slot delete if no eco or trade ideas, works fine
+#Workshops, Churches and Docks extra slot delete if no eco or trade ideas, works fine
 
 	if = { 
-		limit = { has_province_modifier = market_places_cost_no_slot
+		limit = { has_province_modifier = workshop_cost_no_slot
 
 			owner = { NOT = {has_idea = free_trade} }
 		 	}
-		remove_province_modifier = market_places_cost_no_slot
-		if = {
-			limit = { has_province_modifier = workshop_cost_no_slot
-			owner  = { NOT = {has_idea = free_trade}}}
-		}
+		remove_province_modifier = churches_cost_no_slot
 
 	}
 
@@ -4723,6 +4719,8 @@ on_province_owner_change = {
 				}
 			}
 	}
+
+}
 
  #gecko fort line
 	if = {
