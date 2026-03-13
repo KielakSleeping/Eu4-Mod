@@ -800,7 +800,7 @@ WES_ideas = {
 	}
 	wes_enlightenment = {
 		#defensiveness = 0.1
-		technology_cost = 0.1
+		technology_cost = -0.1
 	}
 	wes_cities_of_the_rhineland = {
 		global_prov_trade_power_modifier = 0.25
