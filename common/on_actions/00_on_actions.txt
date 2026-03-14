@@ -4718,7 +4718,12 @@ on_province_owner_change = {
 					duration = -1
 				}
 			}
+
+		}
+
 	}
+
+}
 
 }
 
