@@ -13,7 +13,7 @@ tribal_federation_mechanic = {
 			max = 100
 			reset_on_new_ruler = no
 			base_monthly_growth = 0
-			development_scaled_capped_monthly_growth = -0.25
+			development_scaled_capped_monthly_growth = -0.1
 			development_scale_cap = 1
 			
 			scaled_modifier = {
