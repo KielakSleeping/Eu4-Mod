@@ -4608,7 +4608,7 @@ on_province_owner_change = {
 		}
 	}
 
-#Workshops, Churches and Docks extra slot delete if no eco or trade ideas, works fine
+
 
 	if = { 
 		limit = { has_province_modifier = workshop_cost_no_slot
@@ -4638,29 +4638,7 @@ on_province_owner_change = {
 	}
 
 
-#Add extra building slot if province with church or marketplace gets conquered while new owner has trade or eco ideas, works fine
 
-#	if = {
-#		limit = { AND = { OR = {has_building = marketplace
-#								has_building = trade_depot
-#								has_building = stock_exchange}
-#						NOT = {has_province_modifier = market_places_cost_no_slot}
-#					}
-#		
-#					
-#					
-#	
-#					
-#			owner = { has_idea = free_trade }
-#			}
-#	
-#				hidden_effect = {
-#				add_province_modifier = {
-#					name = "market_places_cost_no_slot"
-#					duration = -1
-#				}
-#			}
-#	}
 	if = {
 		limit = { AND = { OR = {has_building = workshop
 								has_building = counting_house}
@@ -4701,8 +4679,9 @@ on_province_owner_change = {
 
 	if = {
 		limit = { AND = { OR = {has_building = dock
-								has_building = drydock}
-						NOT = {has_province_modifier = dock_cost_no_slot
+								has_building = drydock
+								}
+						NOT = {has_province_modifier = dock_cost_no_slot}
 					}
 		
 					
@@ -4717,7 +4696,7 @@ on_province_owner_change = {
 					duration = -1
 				}
 			}
-		}
+	
 	}
 
  #gecko fort line
