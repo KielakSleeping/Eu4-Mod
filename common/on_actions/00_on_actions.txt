@@ -4701,8 +4701,7 @@ on_province_owner_change = {
 
 	if = {
 		limit = { AND = { OR = {has_building = dock
-								has_building = drydock
-								}
+								has_building = drydock}
 						NOT = {has_province_modifier = dock_cost_no_slot
 					}
 		
@@ -4711,21 +4710,15 @@ on_province_owner_change = {
 	
 					
 			owner = { has_idea = sea_hawks }
-	
+				}
 				hidden_effect = {
 				add_province_modifier = {
 					name = "dock_cost_no_slot"
 					duration = -1
 				}
 			}
-
 		}
-
 	}
-
-}
-
-}
 
  #gecko fort line
 	if = {
