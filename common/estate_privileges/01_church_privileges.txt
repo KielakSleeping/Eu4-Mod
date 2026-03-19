@@ -2152,8 +2152,7 @@ estate_church_heir_shrine = {
 		has_government_attribute = heir
 	}
 	can_select = {
-		player= no
-		ai=no
+	always = no
 		NOT = { has_estate_privilege = estate_church_embrace_singluar_cult }
 	}
 	on_granted = {
@@ -2204,8 +2203,7 @@ estate_church_embrace_singluar_cult = {
 		has_dlc = "Rights of Man"
 	}
 	can_select = {
-		player=no
-		ai=no
+		always = no
 		NOT = { has_estate_privilege = estate_church_flexible_cults }
 		NOT = { has_estate_privilege = estate_church_heir_shrine }
 	}
