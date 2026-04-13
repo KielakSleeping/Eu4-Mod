@@ -674,3 +674,6 @@
     kielak_hussite_events.3.t:0 "The Exiled Few"
     kielak_hussite_events.3.d:0 "The exiled Hussites have found themselves refused access to the major cities and towns under our control, and thus have been pushed into the countryside and towards our neighbours. We were right to expell the heretics after all, as they have looted and sacked small settlements along their route of savagery out of our nation."
     kielak_hussite_events.3.a:0 "Good riddance."
+
+    send_in_the_cannonfodder:0 "Kraken's Minions"
+    send_in_the_cannonfodder_desc:0 ""
