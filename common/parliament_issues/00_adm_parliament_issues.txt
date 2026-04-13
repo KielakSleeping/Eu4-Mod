@@ -125,7 +125,7 @@ appoint_a_new_prime_minister = {
 			define_advisor = {
 				type = statesman
 				skill = 3
-				cost_multiplier = 0.1
+				cost_multiplier = 0.75
 			}
 			"
 			fallback_effect = "

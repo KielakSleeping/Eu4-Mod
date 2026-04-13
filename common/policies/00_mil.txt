@@ -397,9 +397,9 @@ trench_warfare = {
        }
 
        #morale_damage_received = -0.1 
-       reserves_organisation = 0.15
+       #reserves_organisation = 0.15
 	discipline = 0.025 
-
+       drill_decay_modifier = -0.15
        ai_will_do = { 
                factor = 1 
        }
@@ -908,9 +908,9 @@ turtle_ships = {
                full_idea_group = maritime_ideas 
        }
 
-       ship_durability = 0.1 
+       #ship_durability = 0.1 
        #hull_size_modifier = 0.1
-       shock_damage_received = -0.05
+       shock_damage_received = -0.075
        fire_damage_received = -0.05
 
 

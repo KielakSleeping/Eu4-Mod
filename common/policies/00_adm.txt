@@ -55,7 +55,7 @@ strict_admistration = {
                full_idea_group = quality_ideas 
        }
 
-       yearly_army_professionalism = 0.005 
+       yearly_army_professionalism = 0.003
        discipline = 0.025 
 
        ai_will_do = { 
@@ -373,8 +373,8 @@ globalisation = {
                full_idea_group = infrastructure_ideas 
                full_idea_group = maritime_ideas 
        }
-
-       global_ship_cost = -0.15
+       trade_efficiency  = 0.1
+       #global_ship_cost = -0.15
        center_of_trade_upgrade_cost = -0.2
 	merchants = 1
 
