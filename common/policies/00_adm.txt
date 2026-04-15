@@ -35,7 +35,7 @@ organized_stables = {
 
        leader_land_shock = 1 
        cav_to_inf_ratio = 0.10
-	cavalry_power = 0.05
+	#cavalry_power = 0.05
 
        ai_will_do = { 
                factor = 1 
@@ -428,11 +428,15 @@ holy_sites = {
        potential = { 
                has_idea_group = infrastructure_ideas 
                has_idea_group = theocracy_gov_ideas
-       }
+               NOT ={ has_active_policy = holy_sites1}
+               NOT = { has_actve_policy = holysites2}
+                NOT = {mil_tech =15 }
+        }
 
        allow = { 
                full_idea_group = infrastructure_ideas 
                full_idea_group = theocracy_gov_ideas
+               NOT = { mil_tech = 15}
        }
 
        #development_cost_in_primary_culture = -0.05
@@ -441,6 +445,47 @@ holy_sites = {
                factor = 1 
        }
 } 
+holy_sites1 = {
+        monarch_power = ADM
+        potential = {
+                has_idea_group = infrastructure_ideas
+                has_idea_group = theocracy_gov_ideas
+                NOT = { has_active_policy  = holy_sites}
+                NOT = { has_active_policy = holy_sites2}
+                mil_tech = 15
+                NOT = { mil_tech = 22}
+        }
+        allow = {
+                full_idea_group = infrastructure_ideas
+                full_idea_group= theocracy_gov_ideas
+                NOT = {mil_tech = 22}
+                NOT ={has_active_policy = holy_sites }
+        }
+         land_morale_constant = 0.5
+            ai_will_do = { 
+               factor = 1 
+       }
+
+}
+holy_sites2 = {
+        monarch_power = ADM
+        potential = {
+                has_idea_group = infrastructure_ideas
+                has_idea_group = theocracy_gov_ideas
+                NOT = { has_active_policy = holy_sites2}
+                mil_tech = 22
+        }
+        allow = {
+                full_idea_group = infrastructure_ideas
+                full_idea_group= theocracy_gov_ideas
+                NOT = {mil_tech = 32}
+                NOT = { has_active_policy = holy_sites1 }
+        }
+           land_morale_constant = 0.75
+           ai_will_do = { 
+               factor = 1 
+       }
+}
 
 its_free_real_estate = { 
        monarch_power = ADM

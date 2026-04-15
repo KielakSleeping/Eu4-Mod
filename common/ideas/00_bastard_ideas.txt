@@ -1705,7 +1705,8 @@ NED_improved_ideas = {
 
 POR_ideas = {
 	start = {
-		movement_speed_in_fleet_modifier = 1
+		#movement_speed_in_fleet_modifier = 1
+		establish_order_cost = 0.4
 		infantry_power = 0.1
 	}
 	
@@ -1728,10 +1729,10 @@ POR_ideas = {
 		global_trade_power = 0.1
 	}
 	land_before_faith = {
-		global_colonial_growth = 15
+		global_colonial_growth = 20
 	}
 	the_bandeirantes = {
-		trade_efficiency = 0.05
+		trade_efficiency = 0.1
 	}
 	royal_absolutism = {
 		build_cost = -0.1
@@ -2888,10 +2889,10 @@ BUK_ideas = {
 		core_creation = -0.2
 	}
 	the_mantle_of_the_great_khan = {
-		cavalry_power = 0.125
+		cavalry_power = 0.1
 	}
 	unleash_the_tiger = {
-		shock_damage = 0.125
+		shock_damage = 0.1
 	}
 	bastard_populating_the_steppes = {
 		global_manpower_modifier = 0.2
@@ -2900,12 +2901,12 @@ BUK_ideas = {
 		technology_cost = -0.05
 	}
 	riches_of_the_silk_road = {
-		trade_efficiency = 0.125
+		trade_efficiency = 0.15
 		global_trade_goods_size_modifier = 0.1
 	}
 	buk_the_jews_of_bukhara = {
 		#artillery_shock = 1
-		artillery_power = 0.125
+		artillery_power = 0.1
 	}
 }
 
