@@ -24,8 +24,8 @@ innovativeness_ideas = {
     	reform_progress_growth = 0.25
 	}
 	empiricism = {
-		embracement_cost = -0.3
-		global_institution_spread = 0.3
+		embracement_cost = -0.25
+		global_institution_spread = 0.25
 	}
 	scientific_revolution = {
 		advisor_cost = -0.15
@@ -36,14 +36,14 @@ innovativeness_ideas = {
 		
 	}
 	print_culture = {
-		yearly_innovativeness = 0.4
+		yearly_innovativeness = 0.5
 		
 	}
 	optimism = {
 		monarch_admin_power = 1
     	monarch_diplomatic_power = 1
     	#monarch_military_power = 1
-		reelection_cost = -0.20
+		reelection_cost = -0.25
 	}
 	expanded_policies = {
 		all_power_cost = -0.025
@@ -71,16 +71,15 @@ religious_ideas = {
 	church_attendance_duty  = {
 		land_morale = 0.05
    		church_power_modifier = 0.1
-   		monthly_fervor_increase = 1
+   		monthly_fervor_increase = 2
     	papal_influence = 1
-   		yearly_patriarch_authority = 0.01
-   		yearly_harmony = 1
-   		monthly_karma = 0.1
+   		yearly_patriarch_authority = 0.05
+   		yearly_harmony = 2
 	}
 	divine_supremacy = {
     	missionaries = 2
 		global_missionary_strength = 0.03
-		prestige_per_development_from_conversion = 0.3
+		prestige_per_development_from_conversion = 0.25
 		
 	}
 	devoutness = {
@@ -100,7 +99,7 @@ religious_ideas = {
 	}
 	deus_vult = {
 		prestige = 1
-		same_religion_advisor_cost = -0.10
+		same_religion_advisor_cost = -0.15
 	}
 
 	ai_will_do = {
@@ -204,7 +203,7 @@ expansion_ideas = {
 	}
 
 	additional_colonists = {
-		core_creation = -0.2
+		core_creation = -0.25
 		unjustified_demands = -0.5
 	}
 	additional_merchants = {

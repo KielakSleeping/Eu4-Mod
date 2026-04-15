@@ -55,7 +55,7 @@ strict_admistration = {
                full_idea_group = quality_ideas 
        }
 
-       yearly_army_professionalism = 0.003
+       yearly_army_professionalism = 0.005
        discipline = 0.025 
 
        ai_will_do = { 
@@ -77,8 +77,8 @@ hold_the_line = {
        }
 
       	#development_cost = -0.025 
-	shock_damage_received = -0.05
-	fire_damage_received = -0.075
+	shock_damage_received = -0.075
+	fire_damage_received = -0.05
 	
 
        ai_will_do = { 
@@ -100,13 +100,10 @@ merciful_tyrant = {
                full_idea_group = influence_ideas 
        }
 
-      	global_unrest = -3
-       years_of_nationalism = -15 
-       #religious_unity = 0.25
-       	stability_cost_modifier = -0.1
         free_adm_policy = 1
-        diplomatic_upkeep = 1
-
+        diplomatic_upkeep = 2
+        reduced_liberty_desire = -0.1
+       num_accepted_culture = 1
        ai_will_do = { 
                factor = 1 
        }
@@ -126,7 +123,7 @@ lessons_of_the_sea = {
        }
 
        #navy_tradition = 1 
-       global_trade_power = 0.15
+       global_trade_power = 0.2
        #development_cost = -0.05
        trade_efficiency = 0.1 
 
@@ -149,8 +146,8 @@ you_mean_our_fort_right = {
        }
 
        leader_siege = 1 
-       siege_ability = 0.10
-       fire_damage = 0.025
+       #siege_ability = 0.10
+       fire_damage = 0.1
         
 
        ai_will_do = { 
@@ -171,7 +168,7 @@ health_care = {
                full_idea_group = quality_ideas 
        }
 
-       drill_decay_modifier = -0.10
+       drill_decay_modifier = -0.15
        monarch_lifespan = 0.25 
 	discipline = 0.025
 
@@ -218,6 +215,7 @@ military_research_centres = {
 
        mil_tech_cost_modifier = -0.1 
        drill_decay_modifier = -0.15
+       army_tradition_decay = -0.01
 
        ai_will_do = { 
                factor = 1 
@@ -238,8 +236,8 @@ unsiegable = {
        }
 
        defensiveness = 0.25
-       garrison_damage = 0.2
-       garrison_size = 0.1 
+       garrison_size = 0.25
+       fort_maintenence_modifier= -0.50
        fs = 1
 
        ai_will_do = { 
@@ -261,9 +259,9 @@ capitalism = {
        }
 
        #Mechanic: +1/-1 Dev from Manufactories 
-       reform_progress_growth = 0.20
-	production_efficiency = 0.15
-        interest = -0.2
+       #reform_progress_growth = 0.25
+	production_efficiency = 0.20
+        interest = -0.25
 
        ai_will_do = { 
                factor = 1 
@@ -283,9 +281,9 @@ better_hooves = {
                full_idea_group = aristocracy_ideas 
        }
 
-       cavalry_cost = -0.05 
-       movement_speed = 0.10
-       cavalry_power = 0.05  
+       cavalry_cost = -0.05
+       #movement_speed = 0.10
+       cavalry_power = 0.1
 
        ai_will_do = { 
                factor = 1 
@@ -438,7 +436,7 @@ holy_sites = {
        }
 
        #development_cost_in_primary_culture = -0.05
-       land_morale_constant = 0.2
+       land_morale_constant = 0.25
        ai_will_do = { 
                factor = 1 
        }
@@ -457,9 +455,9 @@ its_free_real_estate = {
                full_idea_group = diplomatic_ideas 
        }
 
-       province_warscore_cost = -0.10 
+       province_warscore_cost = -0.10
        core_creation = -0.2
-       cb_on_government_enemies = yes
+       #cb_on_government_enemies = yes
 
        ai_will_do = { 
                factor = 1 
@@ -479,7 +477,7 @@ stay_out_of_my_node = {
                full_idea_group = trade_ideas 
        }
 
-       embargo_efficiency = 0.30
+       embargo_efficiency = 0.50
        manpower_in_accepted_culture_provinces = 0.15
         
 
@@ -501,11 +499,8 @@ global_fleet = {
                full_idea_group = maritime_ideas 
        }
 
-       #naval_forcelimit_modifier = 0.2 
-       #leader_naval_manuever = 1
-       administrative_efficiency = 0.025
-       overextension_impact_modifier = -0.1
-       core_creation = -0.1
+       naval_forcelimit_modifier = 0.2 
+       core_creation = -0.2
 
        ai_will_do = { 
                factor = 1 
@@ -525,9 +520,9 @@ we_got_raizing_at_home = {
                full_idea_group = aristocracy_ideas 
        }
 
-       available_province_loot = 1 
-       loot_amount = 2
-       cavalry_cost = -0.05 
+       available_province_loot = 3
+       #loot_amount = 1
+       cav_to_inf_ratio = 0.15
 
        ai_will_do = { 
                factor = 1 
@@ -546,9 +541,7 @@ special_forces = {
                full_idea_group = expansion_ideas 
                full_idea_group = quality_ideas 
        }
-
-       administrative_efficiency = 0.05
-       land_morale = 0.05 
+       land_morale = 0.1
 
        ai_will_do = { 
                factor = 1 
@@ -568,10 +561,10 @@ send_in_the_next_batch = {
                full_idea_group = quantity_ideas 
        }
 
-       manpower_recovery_speed = 0.10 
-       morale_damage_received = -0.05
+       manpower_recovery_speed = 0.15
+       #morale_damage_received = -0.05
        land_morale = 0.05 
-       recover_army_morale_speed = 0.1
+       #recover_army_morale_speed = 0.1
 
        ai_will_do = { 
                factor = 1 
@@ -592,7 +585,7 @@ religious_lawgivers = {
                full_idea_group = diplomatic_ideas 
        }
 
-       reform_progress_growth = 0.2
+       reform_progress_growth = 0.25
        same_religion_advisor_cost = -0.10
 	manpower_in_true_faith_provinces= 0.1
 
@@ -613,11 +606,9 @@ blessing_the_land = {
                full_idea_group = religious_ideas 
                full_idea_group = trade_ideas 
        }
-
-       
-       #development_cost_in_primary_culture = -0.075
+       merchants = 1
        global_trade_goods_size = 0.2
-        center_of_trade_upgrade_cost = -0.15
+        center_of_trade_upgrade_cost = -0.25
 
        ai_will_do = { 
                factor = 1 
@@ -638,7 +629,6 @@ battle_priests = {
        }
 
        army_tradition = 0.5 
-       global_missionary_strength = 0.01
        drill_decay_modifier = -0.15 
 
        ai_will_do = { 
@@ -659,9 +649,9 @@ armor_of_saints = {
                full_idea_group = defensive_ideas 
        }
 
-       land_morale = 0.075
-       fire_damage_received = -0.05 
-
+       land_morale = 0.05
+       #fire_damage_received = -0.05
+       shock_damage_received = -0.1
        ai_will_do = { 
                factor = 1 
        }
@@ -700,9 +690,9 @@ the_chosen_one = {
                full_idea_group = theocracy_gov_ideas
                full_idea_group = influence_ideas 
        }
-
+       diplomatic_upkeep = 1
        reduced_liberty_desire = 30 
-       vassal_income = 0.3 
+       vassal_income = 0.3
 
        ai_will_do = { 
                factor = 1 
