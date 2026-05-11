@@ -102,7 +102,7 @@ merciful_tyrant = {
 
         free_adm_policy = 1
         diplomatic_upkeep = 2
-        reduced_liberty_desire = -0.1
+        reduced_liberty_desire = 10
        num_accepted_culture = 1
        ai_will_do = { 
                factor = 1 
