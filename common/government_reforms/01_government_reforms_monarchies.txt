@@ -43,9 +43,9 @@ autocracy_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
 	modifiers = {
-		unjustified_demands = -0.1
-		harsh_treatment_cost = -0.1
-		global_rebel_suppression_efficiency = 0.1
+		unjustified_demands = -0.25
+		#harsh_treatment_cost = -0.1
+		global_rebel_suppression_efficiency = 0.3
 	}
 	ai = {
 		factor = 0.5 #generic
@@ -61,8 +61,9 @@ elective_monarchy_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 10
 	modifiers = {
-		max_absolutism = -40
+		#max_absolutism = -40
 		all_estate_influence_modifier = 0.1
+		all_estate_loyalty_equilibrium = 0.1
 	}
 	custom_attributes = {
 		has_ruler_election = yes
@@ -279,6 +280,7 @@ shogunate = {
 		max_absolutism = 5
 		amount_of_samurai = 10
 		has_samurai = yes
+		diplomatic_annexation_cost = -0.15
 	}
 
 	custom_attributes = {
@@ -412,9 +414,10 @@ absolutist_france_reform = {
 	lock_level_when_selected = yes
 
 	modifiers = {
-		all_estate_influence_modifier = -0.1
+		#all_estate_influence_modifier = -0.1
 		development_cost = -0.05
-		max_absolutism = 10
+		max_absolutism = 20
+		all_estate_loyalty_equilibrium = 0.1
 		
 	}
 
@@ -821,9 +824,10 @@ british_monarchy = {
 	start_territory_to_estates = 0.3
 	modifiers = {
 		max_absolutism = -15
-		parliament_backing_chance = 0.10
+		parliament_backing_chance = 0.25
 		parliament_effect_duration = 5
-		annexation_relations_impact = -0.25
+		#annexation_relations_impact = -0.25
+		land_morale = 0.1
 		diplomats = 1
 	}
 
@@ -864,11 +868,13 @@ angevin_monarchy = {
 		has_dlc = "Domination"
 	}
 	modifiers = {
-		governing_capacity = 100
-		num_accepted_cultures = 2
+		governing_capacity = 400
+		num_accepted_cultures = 4
 		max_absolutism = 10
 		prestige = 1
-		max_possible_parliament_seats = 15
+		parliament_backing_chance = 0.25
+		land_morale = 0.15
+		#max_possible_parliament_seats = 15
 	}
 	effect = {
 		hidden_effect = {
@@ -922,7 +928,8 @@ absolute_british_monarchy = {
 		max_absolutism = 20
 		yearly_absolutism = 0.5
 		can_revoke_parliament_seats = yes
-		num_of_parliament_issues = -2
+		#num_of_parliament_issues = -2
+		land_morale = 0.1
 	}
 
 	conditional = {
@@ -1231,7 +1238,7 @@ irish_highkingdom_reform = {
 	nation_designer_cost = 15
 	modifiers = {
 		all_estate_loyalty_equilibrium = 0.05
-		morale_damage = 0.05
+		morale_damage = 0.15
 		same_culture_advisor_cost = -0.15
 		global_manpower_modifier = 0.15
 	}
@@ -1313,8 +1320,8 @@ sharifate_reform = {
 		tolerance_own = 2
 		missionaries = 1
 		global_missionary_strength = 0.01
-		monthly_piety_accelerator = 0.001
-		#same_religion_advisor_cost = -0.1
+		#monthly_piety_accelerator = 0.001
+		same_religion_advisor_cost = -0.20
 	}
 	conditional = {
 		allow = {
@@ -1352,12 +1359,12 @@ caliphate_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 50
 	modifiers = {
-		warscore_cost_vs_other_religion = -0.1
+		warscore_cost_vs_other_religion = -0.15
 		tolerance_own = 3
 		legitimacy = 1
-		governing_capacity = 100
-		missionaries = 1
-		global_missionary_strength = 0.02
+		governing_capacity = 300
+		missionaries = 2
+		global_missionary_strength = 0.05
 	}
 	custom_attributes = {
 		enables_divine_idea_group = yes
@@ -1386,9 +1393,9 @@ league_of_lezhe_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 30
 	modifiers = {
-		morale_damage = 0.1
+		morale_damage = 0.2
 		hostile_attrition = 1
-		defensiveness = 0.25
+		defensiveness = 0.30
 	}
 	custom_attributes = {
 		winning_battles_increases_legitimacy = yes
@@ -1457,7 +1464,7 @@ roman_empire_reform = {
 		administrative_efficiency = 0.05
 		max_absolutism = 10
 		culture_conversion_cost = -0.25
-		culture_conversion_time = -0.1
+		culture_conversion_time = -0.25
 	}
 	fixed_rank = 3
 	conditional = {
@@ -1562,7 +1569,8 @@ zoroastrian_persian_government_reform = {
 		global_missionary_strength = 0.01
 		tolerance_own = 2
 		development_cost = -0.05
-		monarch_admin_power = 2
+		#monarch_admin_power = 2
+		missionaries = 1
 	}
 	custom_attributes = {
 		enables_divine_idea_group = yes
@@ -1662,7 +1670,8 @@ burgundian_state_reform = {
 		rival_change_cost = -1
 		rival_border_fort_maintenance = -1
 		diplomatic_upkeep = 2
-		years_to_integrate_personal_union = -5
+		#years_to_integrate_personal_union = -5
+		diplomatic_annexation_cost = -0.1
 	}
 	ai = {
 		factor = 1
@@ -1772,7 +1781,7 @@ stadthalter_monarchy_reform = {
 			}
 
 			orangists = {
-				land_forcelimit_modifier = 0.25
+				land_forcelimit_modifier = 0.20
 				stability_cost_modifier = -0.10
 				legitimacy = 0.5
 			}
@@ -1916,10 +1925,11 @@ modernized_ottoman_government = {
 	maintain_dynasty = yes
 	modifiers = {
 		monarch_admin_power = 1 
+		monarch_military_power = 1
 		legitimacy = 1
 		all_estate_influence_modifier = -0.1
 		max_absolutism = 10
-		governing_capacity = 200
+		governing_capacity = 300
 	}
 
 	custom_attributes = {
@@ -2035,7 +2045,7 @@ sultanate_of_rum_reform = {
 		province_warscore_cost = -0.05
 		legitimacy = 0.5
 		max_absolutism = 5
-		governing_capacity = 150
+		governing_capacity = 250
 	}
 
 	custom_attributes = {
@@ -2223,7 +2233,7 @@ al_andalusia_government = {
 	modifiers = {
 		idea_cost = -0.1
 		tolerance_of_heathens_capacity = 2
-		tolerance_heathen = 1
+		tolerance_heathen = 2
 	}
 	conditional = {
 		allow = { has_dlc = "Cradle of Civilization" }
@@ -2242,7 +2252,7 @@ prussian_monarchy = {
 		OR = {
 			AND = {
 				tag = BRA
-				OR{
+				OR = {
 				tag = PRU
 			}
 				OR = {
@@ -2277,7 +2287,7 @@ prussian_monarchy = {
 		max_absolutism = 10
 		monarch_military_power = 1
 		nobles_loyalty_modifier = 0.1
-		governing_capacity_modifier = -0.3
+		#governing_capacity_modifier = -0.3
 		expand_administration_cost = 0.1
 	}
 
@@ -2377,7 +2387,7 @@ prussian_monarchy_base = {
 		max_absolutism = 10
 		monarch_military_power = 1
 		nobles_loyalty_modifier = 0.1
-		governing_capacity_modifier = -0.3
+		#governing_capacity_modifier = -0.3
 	}
 
 	conditional = {
@@ -2630,10 +2640,10 @@ russian_empire_reform = {
 	nation_designer_cost = 40
 
 	modifiers = {
-		max_absolutism = 10
-		yearly_absolutism = 0.5
+		max_absolutism = 20
+		yearly_absolutism = 1
 		global_autonomy = -0.05
-		global_manpower_modifier = 0.20
+		global_manpower_modifier = 0.25
 		embracement_cost = -0.5
 		governing_capacity = 350
 	}
@@ -2963,7 +2973,7 @@ misl_confederacy_reform = {
 	legacy_equivalent = feudal_monarchy
 	modifiers = {
 		global_manpower_modifier = 0.1
-		land_maintenance_modifier = -0.1
+		land_maintenance_modifier = -0.15
 	}
 }
 
@@ -3351,7 +3361,7 @@ musa_rule = {
 		}
 	}
 	modifiers = {
-		advisor_pool = 1
+		advisor_pool = 3
 		stability_cost_modifier = -0.05
 		legitimacy = 0.5
 	}
@@ -3639,7 +3649,7 @@ livonian_military_monarchy = {
 		development_cost = -0.05
 		monarch_military_power = 2
 		nobles_loyalty_modifier = 0.1
-		governing_capacity_modifier = -0.5
+		#governing_capacity_modifier = -0.25
 	}
 
 	conditional = {
@@ -3698,7 +3708,7 @@ livonian_naval_monarchy = {
 		is_eligible_for_hre_emperor = no
 		states_general_mechanic = {
 			statists = {
-				global_colonial_growth = 10
+				global_colonial_growth = 20
 				global_trade_power = 0.1
 				trade_efficiency = 0.1
 				legitimacy = -1
@@ -3987,10 +3997,11 @@ livonian_diplomatic_monarchy = {
 	modifiers = {
 		diplomatic_upkeep = 2
 		diplomatic_reputation = 2
-		vassal_forcelimit_bonus = 0.5
+		vassal_forcelimit_bonus = 2
 		vassal_income = 0.5
-		global_manpower_modifier = -0.33
-		land_forcelimit_modifier = -0.33
+		vassal_manpower_bonus = 0.5
+		#global_manpower_modifier = -0.33
+		#land_forcelimit_modifier = -0.33
 	}
 
 	conditional = {
@@ -4089,7 +4100,7 @@ livonian_administrative_monarchy = {
 		core_creation = -0.15
 		governing_capacity = 200
 		legitimacy = -0.5
-		diplomatic_reputation = -2
+		#diplomatic_reputation = -2
 	}
 }
 
@@ -4123,7 +4134,7 @@ livonian_admiral_monarchy = {
 
 	modifiers = {
 		allowed_marine_fraction = 0.25
-		governing_capacity_modifier = -0.25
+		#governing_capacity_modifier = -0.25
 		naval_forcelimit_modifier = 0.33
 		global_sailors_modifier = 0.25
 		ship_durability = 0.05
@@ -4213,7 +4224,7 @@ livonian_general_controlled_monarchy = {
 
 	modifiers = {
 		land_maintenance_modifier = -0.1
-		governing_capacity_modifier = 0.1
+		#governing_capacity_modifier = 0.1
 		land_forcelimit_modifier = 0.15
 		ae_impact = -0.1
 		army_tradition_decay = -0.001
@@ -4279,9 +4290,9 @@ livonian_enlightened_monarchy = {
 	nation_designer_cost = 75
 
 	modifiers = {
-		monarch_admin_power = 1
-		monarch_diplomatic_power = 1
-		monarch_military_power = 1
+		monarch_admin_power = 3
+		monarch_diplomatic_power = 3
+		monarch_military_power = 3
 		legitimacy = 1
 	}
 }
@@ -4383,7 +4394,7 @@ merchant_aristocracy_reform = {
 
 	modifiers = {
 		max_absolutism = -10
-		global_trade_goods_size_modifier = 0.05
+		global_trade_goods_size_modifier = 0.1
 	}
 
 	conditional = {
@@ -4908,9 +4919,9 @@ khalsa_reform = {
 		religion = sikhism
 	}
 	modifiers = {
-		tolerance_heathen = 1
-		tolerance_heretic = 1
-		land_morale = 0.05
+		tolerance_heathen = 2
+		tolerance_heretic = 2
+		land_morale = 0.1
 	}
 	conditional = {
 		allow = {
@@ -4964,7 +4975,7 @@ black_army_reform = {
 		is_revolutionary = no
 	}
 	modifiers = {
-		land_maintenance_modifier = -0.075
+		#land_maintenance_modifier = -0.075
 		cavalry_power = 0.025
 		infantry_power = 0.025
 		nobles_loyalty_modifier = -0.1
@@ -5001,7 +5012,7 @@ legion_of_honor_reform = {
 	modifiers = {
 		advisor_cost = -0.1
 		no_stability_loss_on_monarch_death = yes
-		yearly_army_professionalism = 0.005
+		yearly_army_professionalism = 0.01
 	}
 	custom_attributes = {
 		winning_battles_increases_legitimacy = yes
@@ -5122,7 +5133,7 @@ separation_of_boyars_from_court_reform = {
 	modifiers = {
 		yearly_government_power = 1.25
 		nobles_influence_modifier = -0.1
-		global_tax_modifier = 0.05
+		global_tax_modifier = 0.1
 		maratha_exclusive_influence_modifier = -0.1
 		rajput_exclusive_influence_modifier = -0.1
 	}
@@ -5144,7 +5155,7 @@ reform_the_pronoiars_reform = {
 	}
 	modifiers = {
 		allow_client_states = yes
-		num_of_pronoiars = 2
+		num_of_pronoiars = 4
 	}
 	conditional = {
 		allow = {
@@ -5172,7 +5183,7 @@ pronoiar_monarchy_reform = {
 	nation_designer_cost = 100
 	modifiers = {
 		allow_client_states = yes
-		num_of_pronoiars = 3
+		num_of_pronoiars = 5
 
 	}
 	conditional = {
@@ -5203,9 +5214,10 @@ house_of_lords_reform = {
 		}
 	}
 	modifiers = {
-		reform_progress_growth = 0.1
-		parliament_effect_duration = 5
-		nobles_loyalty_modifier = 0.05
+		reform_progress_growth = 0.15
+		#parliament_effect_duration = 5
+		nobles_loyalty_modifier = 0.1
+		parliament_backing_chance = 0.15
 	}
 	conditional = {
 		allow = {
@@ -5221,17 +5233,18 @@ ministerialis_promotion_reform = {
 	icon = "commander_king_reform"
 	allow_normal_conversion = yes
 	potential = {
-		always = no
+		always = yes
 		has_dlc = "Domination"
 		OR = {
 			tag = HLR
 			is_part_of_hre = yes
+			is_emperor = no
 		}
 	}
 	modifiers = {
-		nobles_privilege_slots = 1
+		#nobles_privilege_slots = 1
 		advisor_cost = -0.1
-		monthly_favor_modifier = 0.1
+		#monthly_favor_modifier = 0.1
 	}
 	conditional = {
 		allow = {
@@ -5370,8 +5383,8 @@ centralize_reform = {
 		}
 	}
 	modifiers = {
-		development_cost_modifier = -0.05
-		global_prosperity_growth = 0.5
+		#development_cost_modifier = -0.05
+		global_prosperity_growth = 0.75
 		all_estate_loyalty_equilibrium = -0.05
 	}
 	effect = {
@@ -6013,10 +6026,10 @@ dyanstic_administration_reform = {
 		}
 	}
 	modifiers = {
-		yearly_corruption = 0.15
+		yearly_corruption = -0.25
 		all_estate_influence_modifier = -0.1
 		monarch_admin_power = 1
-		advisor_pool = 1
+		advisor_pool = 3
 	}
 	ai = {
 		factor = 1
@@ -6077,8 +6090,10 @@ administration_of_the_parliament_reform = {
 		has_parliament = yes
 	}
 	modifiers = {
-		improve_relation_modifier = 0.2
-		monthly_favor_modifier = 0.33
+		#improve_relation_modifier = 0.2
+		#monthly_favor_modifier = 0.33
+		parliament_backing_chance  = 0.25
+		num_of_parliament_issues = 4
 	}
 	custom_attributes = {
 		parliament_seat_bonus = yes
@@ -6137,7 +6152,8 @@ court_of_art_and_culture_reform = {
 		has_unlocked_government_reform = { government_reform = court_of_art_and_culture_reform }
 	}
 	modifiers = {
-		advisor_pool = 1
+		advisor_pool = 2
+		advisor_cost = -0.1
 		culture_conversion_cost = -0.1
 		prestige_decay = -0.005
 	}
@@ -6171,8 +6187,8 @@ royal_decree_reform = {
 		is_revolutionary = no
 	}
 	modifiers = {
-		max_absolutism = 5
-		yearly_absolutism = 0.5
+		max_absolutism = 10
+		yearly_absolutism = 1
 	}
 	ai = {
 		factor = 1
@@ -6184,8 +6200,9 @@ aristocratic_court_reform = {
 	allow_normal_conversion = yes
 	modifiers = {
 		diplomatic_reputation = 1
-		monthly_favor_modifier = 0.25
-		improve_relation_modifier = 0.15
+		#monthly_favor_modifier = 0.25
+		#improve_relation_modifier = 0.15
+		diplomatic_annexation_cost = -0.15
 	}
 	ai = {
 		factor = 1
@@ -6561,7 +6578,7 @@ two_treatises_reform = {
 	modifiers = {
 		expand_administration_cost = -0.15
 		can_revoke_parliament_seats = yes
-		num_accepted_cultures = 1
+		num_accepted_cultures = 2
 	}
 	conditional = {
 		allow = { has_dlc = "Common Sense" }
@@ -6584,10 +6601,10 @@ the_leviathan_reform = {
 	#	}
 	#}
 	modifiers = {
-		harsh_treatment_cost = -0.33
+		#harsh_treatment_cost = -0.33
 		culture_conversion_cost = -0.15
 		culture_conversion_time = -0.15
-		reduced_liberty_desire = 10
+		reduced_liberty_desire = 15
 	}
 	ai = {
 		factor = 1
@@ -6637,7 +6654,7 @@ regional_representation_reform = {
 	allow_normal_conversion = yes
 	modifiers = {
 		min_autonomy_in_territories = -0.05
-		core_creation = -0.1
+		core_creation = -0.15
 	}
 }
 
@@ -7067,10 +7084,11 @@ land_christian_sun_reform = {
 	heir = no
 	fixed_rank = 3
 	modifiers = {
-		manpower_recovery_speed = 0.15
+		manpower_recovery_speed = 0.2
 		cb_on_religious_enemies = yes 
-		army_tradition = 1 
+		army_tradition = 2
 		allowed_samurai_fraction = 0.1
+		land_forcelimit_modifier = 0.2
 	}
 	
 	custom_attributes = {
@@ -7099,7 +7117,7 @@ strengthen_bakuhan_system_reform = {
 	}
 	modifiers = {
 		max_absolutism_effect = 0.2
-		max_absolutism = 5
+		max_absolutism = 10
 	}
 }
 
@@ -7240,8 +7258,10 @@ gothic_monarchy_reform = {
 	}
 
 	modifiers = {
-		merc_maintenance_modifier = -0.15
-		mercenary_manpower = 0.25
+		#merc_maintenance_modifier = -0.15
+		#mercenary_manpower = 0.25
+		global_manpower_modifier = 0.2
+		land_maintenance_modifier = -0.1
 	}
 
 	ai = {
