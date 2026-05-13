@@ -1706,7 +1706,7 @@ NED_improved_ideas = {
 POR_ideas = {
 	start = {
 		#movement_speed_in_fleet_modifier = 1
-		establish_order_cost = 0.4
+		establish_order_cost = -0.4
 		infantry_power = 0.1
 	}
 	

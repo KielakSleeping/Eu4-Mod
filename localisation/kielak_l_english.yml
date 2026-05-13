@@ -677,3 +677,6 @@
 
     send_in_the_cannonfodder:0 "Kraken's Minions"
     send_in_the_cannonfodder_desc:0 ""
+
+    holy_sites2:0 "Mousa Morale"
+    holy_sites2_desc:0 "You have been blessed by mousa exploits"
