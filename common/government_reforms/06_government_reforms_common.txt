@@ -89,7 +89,7 @@ parliamentary_reform = {
 		}
 		has_parliament = yes
 		custom_attributes = {
-			disables_estate_nobles = yes
+			#disables_estate_nobles = yes
 			blocked_call_diet = yes
 		}
 	}
@@ -117,15 +117,15 @@ parliamentary_reform = {
 			}
 		}
 	}
-	effect = {
-		add_country_modifier = {
-			name = kielak_anti_monopoly_exploit_mondifier
-			duration = 7300
-		}
-	}
-	post_removed_effect = {
-		give_estate_land_share_init = { estate = estate_nobles }
-	}
+	#effect = {
+	#	add_country_modifier = {
+	#		name = kielak_anti_monopoly_exploit_mondifier
+	#		duration = 7300
+	#	}
+	#}
+	#post_removed_effect = {
+	#	give_estate_land_share_init = { estate = estate_nobles }
+	#}
 }
 
 restoration_of_the_senate_reform = {
@@ -1316,10 +1316,11 @@ separate_clergy_from_state_affairs_reform = {
 		tolerance_of_heathens_capacity = 1
 		tolerance_of_heretics_capacity = 1
 		innovativeness_gain = 0.25
+		idea_cost = -0.05
 	}
 	custom_attributes = {
-		disables_estate_church = yes
-		disables_estate_brahmins = yes
+		#disables_estate_church = yes
+		#disables_estate_brahmins = yes
 	}
 	
 	ai = {
@@ -5253,8 +5254,8 @@ seven_provinces_reform = {
 	}
 
 	modifiers = {
-		manpower_in_culture_group_provinces = 0.15
-		manpower_in_own_culture_provinces = 0.15
+		manpower_in_culture_group_provinces = 0.1
+		manpower_in_own_culture_provinces = 0.1
 	}
 
 	custom_attributes = {
