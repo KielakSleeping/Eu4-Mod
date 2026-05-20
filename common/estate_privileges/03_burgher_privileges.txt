@@ -2843,7 +2843,7 @@ estate_burghers_financial_demand = {
 		}
 	}	
 	benefits = {
-		interest = -1
+		interest = -0.5
 		build_cost = 2
 		center_of_trade_upgrade_cost = 2
 		great_project_upgrade_cost = 2
