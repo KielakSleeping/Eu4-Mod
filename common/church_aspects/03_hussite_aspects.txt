@@ -171,7 +171,6 @@ pacifism_aspect = {
 regular_defenestrations_aspect = {
 	cost = 100
 	modifier = {
-		infantry_fire = 0.1
 		infantry_shock = 0.1
 	}
 	effect = {
