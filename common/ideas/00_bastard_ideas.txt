@@ -1566,7 +1566,7 @@ BUR_Ideas = {
 LOT_ideas = {
 	start = {
 		infantry_power = 0.15
-		global_manpower_modifier = 0.30
+		global_manpower_modifier = 0.20 # Lowered from 30%
 	}
 	
 	bonus = {
@@ -1580,15 +1580,11 @@ LOT_ideas = {
 	free = yes		#will be added at load.
 	
 	gc_bur_estates_general = {
-		global_trade_goods_size_modifier = 0.2
+		global_trade_goods_size_modifier = 0.1 # Lowered from 20%
 		num_accepted_cultures = 2
 	}
-	golden_fleece = {
-		#merc_maintenance_modifier = -0.2
-		#mercenary_discipline = 0.025
-		#land_maintenance_modifier = -0.10
-		yearly_innovativeness = 0.05
-		global_regiment_cost = -0.10
+	lot_golden_fleece = {
+		land_maintenance_modifier = -0.10
 
 	}
 	lot_glory_of_charlemagne = {
@@ -1596,17 +1592,17 @@ LOT_ideas = {
 		discipline = 0.05
 	}
 	lot_dutch_cities = {
-		trade_efficiency = 0.2
+		trade_efficiency = 0.15 # Lowered from 20%
 		#trade_goods_size_modifier = 0.2
 		#global_own_trade_power = 0.2
 	}
 	lot_carolingian_renaissance_II = {
 		idea_cost = -0.1
-		technology_cost = -0.10
+		technology_cost = -0.05 # Lowered from -10%
 	}
 	lot_court_of_europe = {
 		prestige = 1
-		advisor_cost = -0.15
+		#advisor_cost = -0.15
 		prestige_decay = -0.02
 	}
 	lot_european_empire = {
