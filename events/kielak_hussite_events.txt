@@ -37,6 +37,7 @@ country_event = {
 				}
 			}
 		}
+		set_country_flag = ven_accepted_hussite
 	}
 	option = {
 		name = kielak_hussite_events.1.b
@@ -45,5 +46,19 @@ country_event = {
 			age = age_of_discovery
 		}
 		add_prestige = 5
+		set_country_flag = ven_denied_hussite
+	}
+}
+
+country_event = {
+	id = kielak_hussite_events.2
+	title = kielak_hussite_events.2.t
+	desc = kielak_hussite_events.2.d
+	picture = ADVISOR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+
 	}
 }
