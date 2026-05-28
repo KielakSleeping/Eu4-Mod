@@ -1,0 +1,49 @@
+# KIELAK MOD HUSSITE EVENTS
+
+namespace = kielak_hussite_events
+
+country_event = {
+	id = kielak_hussite_events.1
+	title = kielak_hussite_events.1.t
+	desc = kielak_hussite_events.1.d
+	picture = DEFENESTRATION_PRAGUE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+		266 = {
+			NOT = { owned_by = BOH }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name =  kielak_hussite_events.1.a
+		112 = {
+			add_province_modifier = {
+			name = kielak_hussite_ven_capital
+			duration = -1
+		}
+		}
+		capital_scope = {
+			random_province_in_state = {
+				add_province_modifier = {
+					name = kielak_hussite_ven_small_hussite_community
+					duration = 18250
+				}
+			}
+		}
+	}
+	option = {
+		name = kielak_hussite_events.1.b
+		add_country_modifier_for_age = {
+			name = kielak_hussite_ven_denied_hussite
+			age = age_of_discovery
+		}
+		add_prestige = 5
+	}
+}
