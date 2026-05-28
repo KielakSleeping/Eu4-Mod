@@ -675,6 +675,11 @@
     kielak_hussite_events.3.d:0 "The exiled Hussites have found themselves refused access to the major cities and towns under our control, and thus have been pushed into the countryside and towards our neighbours. We were right to expell the heretics after all, as they have looted and sacked small settlements along their route of savagery out of our nation."
     kielak_hussite_events.3.a:0 "Good riddance."
 
+    kielak_hussite_ven_capital:0 "Hussite Refugees in Venezia"
+    kielak_hussite_ven_capital_desc:0 "A large deal of Hussite refugees have made their way to Venice, the capital of our great nation. Their foreign knowledge of glassworking has made our markets more competitive."
+    kielak_hussite_ven_small_hussite_community:0 "A small community of Hussite refugees"
+    kielak_hussite_ven_denied_hussite:0 "Denied Hussite entry into our lands"
+
     send_in_the_cannonfodder:0 "Kraken's Minions"
     send_in_the_cannonfodder_desc:0 ""
 
@@ -683,3 +688,4 @@
 
  lot_golden_fleece:0 "The Order of the Golden Fleece"
  lot_golden_fleece_desc:0 "The order would go on to become one of Europe's foremost orders of chivalry. Being a Knight of the Golden Fleece is a mark of great status and reflects well upon us."
+
