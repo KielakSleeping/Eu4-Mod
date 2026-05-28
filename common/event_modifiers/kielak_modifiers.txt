@@ -676,3 +676,18 @@ kielak_kuzarite_1 = {
 livestock_glh_bonus_prod = {
 	local_production_efficiency = 0.75
 }
+
+kielak_hussite_ven_capital = {
+	trade_goods_size_modifier = 0.10
+	tolerance_heretic = 1
+}
+
+kielak_hussite_ven_small_hussite_community = {
+	local_production_efficiency = 0.05
+	local_unrest = 1
+}
+
+kielak_hussite_ven_denied_hussite = {
+	global_unrest = -1
+	tolerance_heretic = -1
+}
