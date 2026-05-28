@@ -4269,10 +4269,12 @@ we_exiled_few_reform = {
 	icon = "soldiers_4"
 	allow_normal_conversion = yes
 	potential = {
-		culture_group = latin
+		is_or_was_tag = { tag = VEN }
+		has_country_modifier = { ven_hussite_mil }
 	}
 	trigger = {
 		religion = hussite
+		has_country_modifier = { ven_hussite_mil }
 	}
 	modifiers = {
 		land_morale = 1
