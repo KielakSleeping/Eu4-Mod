@@ -681,19 +681,36 @@ age_of_reformation = {
 		ab_persia_development = {
 			allow = {
 				OR = {
-					custom_trigger_tooltip = {
-						tooltip = unlocked_this_ab_tt
-						has_country_flag = enable_persian_age_ability_flag
-					}
 					tag = PER
 					tag = ERS
 				}
+				was_tag = QOM
 			}
 			effect = { 
 				on_age_ability_taken = { age = age_of_reformation }
 			}
 			modifier = {
-				development_cost_in_primary_culture = -0.15
+				development_cost_in_primary_culture = -0.10 # Changed from -15%
+				num_of_age_rewards = 1
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+
+		ab_persia_aq_development = {
+			allow = {
+				OR = {
+					tag = PER
+					tag = ERS
+				}
+				was_tag = AKK
+			}
+			effect = { 
+				on_age_ability_taken = { age = age_of_reformation }
+			}
+			modifier = {
+				development_cost_in_primary_culture = -0.05 # Changed from -15%
 				num_of_age_rewards = 1
 			}
 			ai_will_do = {
