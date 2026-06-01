@@ -2045,34 +2045,34 @@ aq_qoyunlu_fifth = {
 				limit = {
 					has_dlc = "Mandate of Heaven"
 				}
-				OR = {
-					in_golden_age = yes
-					has_had_golden_age = yes
-					has_country_flag = urbanisation_taken
-				}
+				# OR = {
+				# 	in_golden_age = yes
+				# 	has_had_golden_age = yes
+				# 	has_country_flag = urbanisation_taken
+				# }
 			}
 		}
 		
 		effect = {
 			if = {
-				limit = {
-					has_dlc = "Mandate of Heaven"
-				}
-				custom_tooltip = turkoman_if_used_ge_rest_else_30_years_extension_tt 
-				if = {
-					limit = { has_had_golden_age = yes } 
-					reset_golden_age = yes 
-				}
-				else_if = {
-					limit = { in_golden_age = yes } 
-					extend_golden_age = 360
-				}
+				# limit = {
+				# 	has_dlc = "Mandate of Heaven"
+				# }
+				# custom_tooltip = turkoman_if_used_ge_rest_else_30_years_extension_tt 
+				# if = {
+				# 	limit = { has_had_golden_age = yes } 
+				# 	reset_golden_age = yes 
+				# }
+				# else_if = {
+				# 	limit = { in_golden_age = yes } 
+				# 	extend_golden_age = 360
+				# }
 				add_country_modifier = {
 					name = "turkoman_era_of_white_sheep"
 					duration = 18250
 				}
 			}
-			bastard_golden_age_effect = yes
+			# bastard_golden_age_effect = yes
 		}
 	}
 	

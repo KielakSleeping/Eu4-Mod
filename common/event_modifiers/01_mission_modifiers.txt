@@ -10581,7 +10581,7 @@ turkoman_era_of_black_sheep = {
 }
 
 turkoman_era_of_white_sheep = {
-	monthly_splendor = 1
+	monthly_splendor = 3
 	global_unrest = -2
 }
 
