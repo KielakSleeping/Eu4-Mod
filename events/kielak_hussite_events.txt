@@ -11,6 +11,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
+		always = no
 		tag = VEN
 		266 = {
 			NOT = { owned_by = BOH }
@@ -59,6 +60,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
+		always = no
 		tag = VEN
 		has_country_flag = ven_accepted_hussite
 		has_adm_advisor = yes
