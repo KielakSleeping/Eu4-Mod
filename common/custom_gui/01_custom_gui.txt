@@ -173,6 +173,7 @@ custom_button = {
     name = economic_golden_age
 	tooltip = economic_golden_age_title
     potential = {
+		ai = no
 		FROM = {
 			NOT = { has_country_flag = urbanisation_taken }
 			NOT = { has_country_flag = X_POR_economic_golden_age_cflag }
