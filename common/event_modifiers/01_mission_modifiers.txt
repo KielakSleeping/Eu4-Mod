@@ -1923,7 +1923,8 @@ gbr_colonial_australia = {
 }
 
 ave_national_bank = {
-	interest = -2
+	#interest = -2
+	interest = -0.25
 	inflation_reduction = 0.1
 }
 
