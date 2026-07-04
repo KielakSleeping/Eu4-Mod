@@ -1005,8 +1005,7 @@ theocracy_gov_ideas = {
 	}
 	conviction_of_sin = {
 		manpower_in_own_culture_provinces = 0.20
-		# development_cost_in_primary_culture = -0.075
-		development_cost_in_primary_culture = -0.05
+		development_cost_in_primary_culture = -0.075
 	}
 	martyrs = {
 		church_loyalty_modifier = 0.1
