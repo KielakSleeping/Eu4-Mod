@@ -691,3 +691,7 @@ kielak_hussite_ven_denied_hussite = {
 	global_unrest = -1
 	tolerance_heretic = -1
 }
+
+kielak_milan_swiss_guard = {
+	infantry_power = 0.1
+}
