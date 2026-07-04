@@ -3968,7 +3968,8 @@ ave_row_5 = {
 						}
 						NOT = { liberty_desire = 20 }
 					}
-					amount = 5
+					# amount = 5
+					amount = 2
 				}
 			}
 			else = {
