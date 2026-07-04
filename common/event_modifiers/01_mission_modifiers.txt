@@ -2007,7 +2007,8 @@ rule_britannia = {
 	devotion = 1
 	global_ship_recruit_speed = -0.25
 	global_ship_cost = -0.25
-	naval_morale = 0.2
+	#naval_morale = 0.2
+	naval_morale = 0.1
 	heavy_ship_power = 0.1
 }
 
