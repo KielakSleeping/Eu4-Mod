@@ -416,19 +416,15 @@ X_CRI_slot_3 = {
 					}
 				}
 			}
-			custom_trigger_tooltip = {
-				tooltip = X_CRI_mission_8_tt
-				NOT = {
-					any_country = {
-						NOT = { tag = ROOT }
-						num_of_owned_provinces_with = {
-							value = 1
-							any_trade_node_member_province = {
-								province_id = 1322
-							}
-						}
-					}
-				}
+			285 = {
+				is_prosperous = yes
+				development = 30
+				X_has_latest_building_trigger = { production = yes builder = ROOT }
+			}
+			2447 = {
+				is_prosperous = yes
+				development = 30
+				X_has_latest_building_trigger = { production = yes builder = ROOT }
 			}
 		}
 		effect = {
