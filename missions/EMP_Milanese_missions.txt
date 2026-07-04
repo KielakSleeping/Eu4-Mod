@@ -138,9 +138,13 @@ milan_missions_1 = { #Made by Big Boss for Flavor Universalis
 			}
 		}
 		effect = {
-			custom_tooltip = mlo_attract_swiss_elite_merc_tt 
-			hidden_effect = {
-				set_country_flag = mlo_attracted_elite_swiss_merc
+			# custom_tooltip = mlo_attract_swiss_elite_merc_tt 
+			# hidden_effect = {
+			# 	set_country_flag = mlo_attracted_elite_swiss_merc
+			# }
+			add_country_modifier = {
+				name = kielak_milan_swiss_guard
+				duration = 5475
 			}
 			if = {
 				limit = {
