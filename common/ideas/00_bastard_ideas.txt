@@ -1343,7 +1343,9 @@ MUG_ideas = {
 		prestige = 1
 	}
 	fatawa_e_alamgiri = {
-		stability_cost_modifier = -0.25
+		# stability_cost_modifier = -0.25
+		stability_cost_modifier = -0.1
+		production_efficiency = 0.05
 	}
 }
 
