@@ -461,10 +461,12 @@ holy_sites1 = {
                 NOT = {mil_tech = 22}
                 NOT ={has_active_policy = holy_sites }
         }
-         land_morale_constant = 0.5
+        land_morale_constant = 0.25
+        shock_damage = 0.025
+        morale_damage = 0.025
             ai_will_do = { 
                factor = 1 
-       }
+        }
 
 }
 holy_sites2 = {
@@ -481,9 +483,11 @@ holy_sites2 = {
                 NOT = {mil_tech = 32}
                 NOT = { has_active_policy = holy_sites1 }
         }
-           land_morale_constant = 0.75
-           ai_will_do = { 
-               factor = 1 
+        land_morale_constant = 0.25
+        shock_damage = 0.05
+        morale_damage = 0.05
+        ai_will_do = { 
+        factor = 1 
        }
 }
 
