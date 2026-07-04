@@ -329,7 +329,9 @@ conquest_of_london = {
 		owner = {
 				NOT = { tag = ENG }
 				NOT = { tag = GBR }
-				NOT = { 	
+				NOT = { tag = AVE }
+				NOT = { tag = IRE }
+				NOT = {
 					has_global_modifier_value = {
 					which = discipline
 					value = 0.31
