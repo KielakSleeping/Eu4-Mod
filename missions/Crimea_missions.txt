@@ -63,6 +63,13 @@ X_CRI_slot_1 = {
 					add_territorial_core = ROOT
 				}
 			}
+			crimea_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}				
 		}
 	}
 
@@ -138,13 +145,6 @@ X_CRI_slot_1 = {
 					}
 					add_latest_building = { fort = yes builder = ROOT }
 				}
-			}
-			crimea_region = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
 			}
 		}
 	}
