@@ -300,6 +300,28 @@ X_CRI_slot_2 = {
 			}
 		}
 	}
+	K_CRI_mission_kuzarite_3 = {
+        icon = mission_unite_the_princes
+        required_missions = { K_CRI_mission_kuzarite_1 }
+		position = 5
+
+		trigger = {
+			religion = kuzarite
+			2199 = {
+				owned_by = ROOT
+				religion = kuzarite
+				has_building = marketplace
+			}
+		}
+
+		effect = {
+			country_event = { id = K_CRI_events.3 }			
+			add_country_modifier = {
+				name = kielak_cri_irbis_lawgiver_and_creator
+				duration = -1
+			}			
+		}
+	}
 }
 
 X_CRI_slot_3 = {

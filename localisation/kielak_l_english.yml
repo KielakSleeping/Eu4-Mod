@@ -649,6 +649,14 @@
     K_CRI_mission_kuzarite_2_title:0 "The Faith of our Forefathers"
     K_CRI_mission_kuzarite_2_desc:0 "Another elden ring reference"
 
+    K_CRI_mission_kuzarite_3_title:0 "Time and Memory"
+    K_CRI_mission_kuzarite_3_desc:0 "The Khazars of old were wise and strong, and it is our duty as the inheritors of their will to try to be as wise as they were. The founder of the Khaganate is Irbis, and through a conclave of our elders, he was chosen as the first great man to emulate."
+
+    K_CRI_events.3.t:0 "The Founder"
+    K_CRI_events.3.d1:0 "Desc"
+    K_CRI_events.3.a:0 "Balanjar will suit us nicely."
+    K_CRI_events.3.b:0 "We need not look to the past for this."
+
     estate_brahmins_flexible_deities_effect_tooltip:2 "Enables a decision that allows you to change your Personal Deity every §Y10§! years (kuzarite)/ §Y20§! years (hindu) at the cost of §Y25§! legitimacy (or its equivalent for other governments)."
     livestock_glh_bonus_prod:0 "Increased care for our Herds"
     desc_livestock_glh_bonus_prod:0 "With the revival of our old traditions, more people have flocked back to their animals and are taking care of them as our ancestors did.."
@@ -657,7 +665,9 @@
     modern_kuzarite:0 "Modern Kuzarism"
     modern_kuzarite_desc:0 "The resurgence of Kuzarism among our peoples has brought people back many centuries to religious brethren of old, and with it much change has been made from the original interpretations."
 
-    kaffa_slave_market:0 "Kaffa slave market"
+    kaffa_slave_market:0 "Kaffa Slave Market"
+
+    kielak_cri_irbis_lawgiver_and_creator:0 "Irbis, Lawgiver and Creator"
     
     we_exiled_few_reform:0 "We Exiled Few"
     we_exiled_few_reform_desc:0 "We Exiled Few pushed past our rampant persecution in Bohemia and left for fairer lands and a more tolerant people, willing to listen to the truth. The journey was bereft of haste and comfort, yet here we stand upon the ocean in Venice."
@@ -691,6 +701,6 @@
     holy_sites2:0 "Mousa Morale"
     holy_sites2_desc:0 "You have been blessed by mousa exploits"
 
- lot_golden_fleece:0 "The Order of the Golden Fleece"
- lot_golden_fleece_desc:0 "The order would go on to become one of Europe's foremost orders of chivalry. Being a Knight of the Golden Fleece is a mark of great status and reflects well upon us."
+    lot_golden_fleece:0 "The Order of the Golden Fleece"
+    lot_golden_fleece_desc:0 "The order would go on to become one of Europe's foremost orders of chivalry. Being a Knight of the Golden Fleece is a mark of great status and reflects well upon us."
 

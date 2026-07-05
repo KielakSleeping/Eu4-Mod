@@ -87,3 +87,34 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = K_CRI_events.3
+	title = K_CRI_events.3.t
+	desc = K_CRI_events.3.d1
+	picture = FORT_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = K_CRI_events.3.a
+		2199 = {
+			move_capital_effect = yes
+			add_base_tax = 3
+			add_base_production = 4
+			add_base_manpower = 5
+			add_province_modifier = {
+				name = kielak_cri_tarki_capital
+				duration = -1
+			}
+			rename_capital = Balanjar
+		}
+	}
+	option = {
+		name = K_CRI_events.3.b
+		2199 = {
+			add_province_modifier = {
+				name = kielak_cri_balanjar_denied
+				duration = 36500
+			}
+		}
+	}
+}
