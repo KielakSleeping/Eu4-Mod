@@ -703,8 +703,8 @@ kielak_cri_irbis_lawgiver_and_creator = {
 
 kielak_cri_tarki_capital = {
 	local_defender_dice_roll_bonus = 1
-	local_manpower = 1
-	local_tax_modifier = 0.5
+	local_manpower = 500
+	local_tax_modifier = 0.33
 	local_garrison_size = 0.25
 }
 

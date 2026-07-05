@@ -603,6 +603,26 @@ X_CRI_slot_3 = {
 			}
 		}
 	}
+
+	K_CRI_mission_kuzarite_4 = {
+		icon = mission_dethrone_the_rurikovichs
+		required_missions = { X_CRI_mission_11 }
+		position = 5
+		trigger = {
+			has_personal_deity = kuzarite6
+			OR = {
+				cavalry_power = 0.3
+				discipline = 0.15
+			}
+			is_at_war = no
+			
+		}
+
+		effect = {
+
+		}
+
+	}
 }
 
 X_CRI_slot_4 = {
