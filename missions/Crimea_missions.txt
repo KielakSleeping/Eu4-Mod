@@ -611,15 +611,32 @@ X_CRI_slot_3 = {
 		trigger = {
 			has_personal_deity = kuzarite6
 			OR = {
-				cavalry_power = 0.3
-				discipline = 0.15
+				has_global_modifier_value = {
+					which = cavalry_power
+					value = 0.3
+				}
+				has_global_modifier_value = {
+					which = discipline
+					value = 0.1
+				}
 			}
-			is_at_war = no
-			
+			OR = {
+				has_won_war_against = {
+					who = MOS
+				}
+				
+				has_won_war_against = {
+					who = RUS
+				}
+			}			
 		}
 
 		effect = {
-
+			country_event = { id = K_CRI_events.4 }
+			add_country_modifier = {
+				name = kielak_cri_bulan_father_and_beg
+				duration = -1
+			}				
 		}
 
 	}

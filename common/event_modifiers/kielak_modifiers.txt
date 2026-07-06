@@ -713,3 +713,11 @@ kielak_cri_balanjar_denied = {
 	local_tax_modifier = -0.33
 	local_manpower_modifier = -0.33
 }
+
+kielak_cri_bulan_father_and_beg = {
+	legitimacy = 0.5
+	devotion = 0.5
+	horde_unity = 0.5
+	republican_tradition = 0.2
+	manpower_in_true_faith_provinces = 0.1
+}

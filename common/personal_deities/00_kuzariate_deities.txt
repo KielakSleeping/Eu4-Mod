@@ -127,7 +127,37 @@ kuzarite6 = {
 	cavalry_shock = 0.10
 	fire_damage_received = -0.1
 	
-	potential = { religion = kuzarite }
+	potential = { 
+		religion = kuzarite
+		NOT = { has_country_flag = upgraded_kuzarite_6 }
+	}
+	trigger = {}
+	sprite = 5
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_diplomat
+		}		
+	}	
+}
+
+kuzarite7 = { 
+	#(Military - Offensive) 
+	cavalry_shock = 0.15
+	fire_damage_received = -0.1
+	
+	potential = { 
+		religion = kuzarite
+		has_country_flag = upgraded_kuzarite_6
+	}
 	trigger = {}
 	sprite = 5
 	
