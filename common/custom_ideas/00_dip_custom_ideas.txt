@@ -98,7 +98,7 @@ dip_idea_modifiers = {
 		}
 	}	
 	custom_idea_trade_steering = {
-		trade_steering = 0.05
+		trade_steering = 0.25
 		level_cost_2 = 3
 		level_cost_3 = 9
 		level_cost_4 = 18
