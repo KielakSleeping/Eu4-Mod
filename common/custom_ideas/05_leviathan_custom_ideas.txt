@@ -664,9 +664,11 @@ leviathan_idea_mil_modifiers = {
 	}
 
 	custom_infantry_shock = {
-		infantry_shock = 1
-		max_level = 1
+		infantry_shock = 0.25
+		max_level = 3
 		level_cost_1 = 25
+		level_cost_2 = 50
+		level_cost_3 = 75
 		chance = {
 			factor = 0.05
 		}
