@@ -190,9 +190,9 @@ dom_idea_adm_modifiers = {
 #	}
 #}
 #
-#dom_idea_mil_modifiers = {
-#	category = MIL
-#	
+dom_idea_mil_modifiers = {
+	category = MIL
+	
 #	custom_idea_artillery_barrage_cost = {
 #		artillery_barrage_cost = -0.05
 #		level_cost_2 = 3
@@ -315,16 +315,17 @@ dom_idea_adm_modifiers = {
 #		}
 #	}
 #	
-#	custom_idea_garrison_damage = {
-#		garrison_damage = 0.25
-#		level_cost_2 = 3
-#		level_cost_3 = 9
-#		level_cost_4 = 18
-#		default = 1
-#		chance = {
-#			factor = 1
-#		}
-#	}
+	custom_idea_garrison_damage = {
+		garrison_damage = 0.25
+		level_cost_2 = 3
+		level_cost_3 = 9
+		level_cost_4 = 18
+		default = 1
+		chance = {
+			factor = 1
+		}
+	}
+}
 #	
 #	custom_idea_assault_fort_cost_modifier = {
 #		assault_fort_cost_modifier = -0.25
