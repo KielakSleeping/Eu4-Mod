@@ -415,8 +415,9 @@ leviathan_idea_dip_modifiers = {
 
 	custom_country_diplomatic_power = {
 		country_diplomatic_power = 1
-		max_level = 1
+		max_level = 2
 		level_cost_1 = 60
+		level_cost_2 = 90
 		chance = {
 			factor = 0.05
 		}
