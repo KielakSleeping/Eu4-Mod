@@ -89,8 +89,9 @@ leviathan_idea_adm_modifiers = {
 
 	custom_country_admin_power = {
 		country_admin_power = 1
-		max_level = 1
+		max_level = 2
 		level_cost_1 = 60
+		level_cost_2 = 90
 		chance = {
 			factor = 0.05
 		}
