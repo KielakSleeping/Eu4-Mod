@@ -104,17 +104,18 @@ mil_idea_modifiers = {
 			factor = 1
 		}
 	}
-	custom_idea_leader_land_manuever = {
-		leader_land_manuever = 1
-		max_level = 2
-		level_cost_1 = 15
-		level_cost_2 = 50
-		chance = {
-			factor = 1
-		}
-	}	
+	# custom_idea_leader_land_manuever = {
+	# 	leader_land_manuever = 1
+	# 	max_level = 2
+	# 	level_cost_1 = 15
+	# 	level_cost_2 = 50
+	# 	chance = {
+	# 		factor = 1
+	# 	}
+	# }	
 	custom_idea_leader_siege = {
 		leader_siege = 1
+		leader_land_manuever = 1
 		max_level = 2
 		level_cost_1 = 30
 		level_cost_2 = 140
