@@ -18,10 +18,9 @@ origins_idea_adm_modifiers = {
 	}
 
 	custom_monthly_piety_accelerator = {
-		monthly_piety_accelerator = 0.002
-		max_level = 2
+		monthly_piety_accelerator = 0.01
+		max_level = 1
 		level_cost_1 = 5
-		level_cost_2 = 30
 		chance = {
 			factor = 1
 			modifier = {
