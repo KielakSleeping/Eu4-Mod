@@ -562,6 +562,7 @@ newer_idea_dip_modifiers = {
 	}
 	custom_reduced_liberty_desire = {
 		reduced_liberty_desire = 20
+		max_level = 2
 		level_cost_2 = 3
 		chance = {
 			factor = 0.15
