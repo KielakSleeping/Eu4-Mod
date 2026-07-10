@@ -446,7 +446,7 @@ newer_idea_dip_modifiers = {
 		level_cost_2 = 20
 	}
 	custom_monarch_diplomatic_power = {
-		monarch_diplomatic_power = 1
+		monarch_diplomatic_power = 3
 		max_level = 1
 		level_cost_1 = 45
 		chance = {
