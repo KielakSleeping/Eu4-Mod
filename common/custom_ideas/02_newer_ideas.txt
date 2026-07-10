@@ -265,7 +265,7 @@ newer_idea_mil_modifiers = {
 		level_cost_2 = 10
 	}
 	custom_monarch_military_power = {
-		monarch_military_power = 1
+		monarch_military_power = 3
 		max_level = 1
 		level_cost_1 = 45
 		chance = {
