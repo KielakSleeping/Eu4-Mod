@@ -672,7 +672,7 @@ newer_idea_dip_modifiers = {
 		}
 	}
 	custom_global_own_trade_power = {
-		global_own_trade_power = 0.05
+		global_own_trade_power = 0.15
 		level_cost_2 = 3
 		level_cost_3 = 9
 		level_cost_4 = 18
