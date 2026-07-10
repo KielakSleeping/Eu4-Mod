@@ -320,7 +320,8 @@ dip_idea_modifiers = {
 	custom_idea_spy_offence = {
 		spy_offence = 0.2
 		level_cost_2 = 3
-		max_level = 2
+		level_cost_3 = 9
+		level_cost_4 = 18
 		chance = {
 			factor = 0.75
 		}
