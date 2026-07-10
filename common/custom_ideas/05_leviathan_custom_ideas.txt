@@ -715,7 +715,7 @@ leviathan_idea_mil_modifiers = {
 	}
 
 	custom_artillery_shock = {
-		artillery_shock = 1
+		artillery_shock = 0.75
 		max_level = 2
 		level_cost_1 = 15
 		level_cost_2 = 25
