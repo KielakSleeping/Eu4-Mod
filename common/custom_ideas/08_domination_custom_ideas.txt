@@ -1,5 +1,5 @@
-#dom_idea_adm_modifiers = {
-#	category = ADM
+dom_idea_adm_modifiers = {
+	category = ADM
 #	
 #	custom_idea_same_religion_advisor_cost = {
 #		global_tax_modifier = -0.05
@@ -56,18 +56,18 @@
 #		}
 #	}
 #	
-#	custom_idea_all_estate_possible_privileges = {
-#		all_estate_possible_privileges = 1
-#		level_cost_2 = 3
-#		level_cost_3 = 9
-#		level_cost_4 = 18
-#		
-#		chance = {
-#			factor = 0.1
-#		}
-#	}
-#}
-#
+	custom_idea_all_estate_possible_privileges = {
+		all_estate_possible_privileges = 1
+		level_cost_2 = 3
+		level_cost_3 = 9
+		level_cost_4 = 18
+		
+		chance = {
+			factor = 0.1
+		}
+	}
+}
+
 #dom_idea_dip_modifiers = {
 #	category = DIP
 #	
