@@ -663,7 +663,7 @@ newer_idea_dip_modifiers = {
 		}
 	}
 	custom_placed_merchant_power = {
-		placed_merchant_power = 5
+		placed_merchant_power = 20
 		max_level = 2
 		level_cost_2 = 10
 		chance = {
