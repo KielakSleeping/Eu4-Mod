@@ -643,6 +643,7 @@ lotn_idea_mil_modifiers = {
 	
 	custom_force_march_free = {
 		force_march_free = yes
+		enable_forced_march = yes
 		level_cost_1 = 10
 		max_level = 1
 		
