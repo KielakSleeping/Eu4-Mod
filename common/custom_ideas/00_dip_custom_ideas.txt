@@ -2,7 +2,7 @@ dip_idea_modifiers = {
 	category = DIP
 
 	custom_idea_accepted_culture_threshold = {
-		num_accepted_cultures = 1
+		num_accepted_cultures = 2
 		chance = {
 			factor = 0.5
 			modifier = {
