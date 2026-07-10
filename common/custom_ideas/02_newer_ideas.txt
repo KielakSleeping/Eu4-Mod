@@ -58,11 +58,9 @@ newer_idea_adm_modifiers = {
 		}
 	}
 	custom_monarch_admin_power = {
-		monarch_admin_power = 1
-		max_level = 3
+		monarch_admin_power = 3
+		max_level = 1
 		level_cost_1 = 45
-		level_cost_2 = 60
-		level_cost_3 = 75
 		chance = {
 			factor = 0.1
 		}
