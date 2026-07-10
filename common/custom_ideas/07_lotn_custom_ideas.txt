@@ -88,7 +88,8 @@ lotn_idea_adm_modifiers = {
 	}
 	
 	custom_global_trade_goods_size = {
-		global_trade_goods_size = 0.5
+		# global_trade_goods_size = 0.5
+		global_trade_goods_size = 0.2
 		level_cost_1 = 15
 		level_cost_2 = 30
 		level_cost_3 = 45
