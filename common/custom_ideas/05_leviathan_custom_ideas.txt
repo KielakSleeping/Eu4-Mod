@@ -653,9 +653,11 @@ leviathan_idea_mil_modifiers = {
 	}
 
 	custom_infantry_fire = {
-		infantry_fire = 1
-		max_level = 1
+		infantry_fire = 0.25
+		max_level = 3
 		level_cost_1 = 25
+		level_cost_2 = 50
+		level_cost_3 = 75
 		chance = {
 			factor = 0.05
 		}
