@@ -79,7 +79,7 @@ dip_idea_modifiers = {
 		}
 	}		
 	custom_idea_global_prov_trade_power_modifier = {
-		global_prov_trade_power_modifier = 0.05
+		global_prov_trade_power_modifier = 0.15
 		level_cost_2 = 3
 		level_cost_3 = 9
 		level_cost_4 = 18
