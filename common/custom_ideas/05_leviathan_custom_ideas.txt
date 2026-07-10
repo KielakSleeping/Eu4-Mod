@@ -98,7 +98,7 @@ leviathan_idea_adm_modifiers = {
 	}
 
 	custom_monthly_splendor = {
-		monthly_splendor = 2
+		monthly_splendor = 4
 		level_cost_2 = 3
 		level_cost_3 = 9
 		level_cost_4 = 18
