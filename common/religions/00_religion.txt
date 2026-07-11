@@ -354,7 +354,7 @@ christian = {
 			catholic
 		}
 		country = {
-			shock_damage_received = -0.15
+			shock_damage_received = -0.10
 			global_heretic_missionary_strength = 0.02
 		}
 		

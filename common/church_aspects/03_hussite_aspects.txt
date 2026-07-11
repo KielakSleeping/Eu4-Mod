@@ -42,7 +42,6 @@ adamite_services_aspect = {
 	cost = 100
 	modifier = {
 		culture_conversion_cost = -0.15
-		development_cost_in_primary_culture = -0.05
 	}
 }
 
@@ -68,7 +67,7 @@ regular_defenestrations_aspect = {
 taborite_resurgence_aspect = {
 	cost = 100
 	modifier = {
-		global_manpower_modifier = 0.25
+		global_manpower_modifier = 0.20
 	}
 }
 
