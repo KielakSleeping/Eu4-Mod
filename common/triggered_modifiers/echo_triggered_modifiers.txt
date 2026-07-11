@@ -718,7 +718,7 @@ qolu_ai_sieges = {
 		always = yes
 	}
 
-	defensiveness = -0.5
+	#defensiveness = -0.5
 	global_autonomy = -0.1
 	yearly_corruption = -0.1
 	diplomatic_upkeep = -2
