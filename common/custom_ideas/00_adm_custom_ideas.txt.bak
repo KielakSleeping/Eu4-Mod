@@ -5,13 +5,10 @@ adm_idea_modifiers = {
 	category = ADM
 	
 	custom_idea_global_tax_modifier = {
-		global_tax_modifier = 0.10
-		max_level = 5
-		level_cost_1 = 0
-		level_cost_2 = 7.5
-		level_cost_3 = 15
-		level_cost_4 = 22.5
-		level_cost_5 = 30
+		global_tax_modifier = 0.05
+		level_cost_2 = 3
+		level_cost_3 = 9
+		level_cost_4 = 18
 		default = 2
 		chance = {
 			factor = 1
@@ -62,9 +59,6 @@ adm_idea_modifiers = {
 	}	
 	custom_idea_inflation_reduction = {
 		inflation_reduction = 0.05
-		level_cost_2 = 3
-		level_cost_3 = 9
-		level_cost_4 = 18
 		chance = {
 			factor = 1
 		}

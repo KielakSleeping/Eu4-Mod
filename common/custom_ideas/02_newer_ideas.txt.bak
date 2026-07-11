@@ -675,18 +675,10 @@ newer_idea_dip_modifiers = {
 		}
 	}
 	custom_global_own_trade_power = {
-		global_own_trade_power = 0.05
-		max_level = 10
-		level_cost_1 = 0
-		level_cost_2 = 1
-		level_cost_3 = 2
-		level_cost_4 = 4
-		level_cost_5 = 6
-		level_cost_6 = 8
-		level_cost_7 = 11
-		level_cost_8 = 14
-		level_cost_9 = 17
-		level_cost_10 = 20
+		global_own_trade_power = 0.15
+		level_cost_2 = 3
+		level_cost_3 = 9
+		level_cost_4 = 18
 		chance = {
 			factor = 0.75
 		}

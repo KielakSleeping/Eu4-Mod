@@ -147,13 +147,11 @@ origins_idea_mil_modifiers = {
 	category = MIL
 	
 	custom_amount_of_cawa = {
-		can_recruit_cawa = yes 
-		amount_of_cawa = 0.1
-		max_level = 4
-		level_cost_1 = 10
-		level_cost_2 = 20
-		level_cost_3 = 30
-		level_cost_4 = 40
+		amount_of_cawa = 0.15
+		level_cost_2 = 3
+		level_cost_3 = 9
+		level_cost_4 = 18
+		
 		chance = {
 			factor = 0
 		}

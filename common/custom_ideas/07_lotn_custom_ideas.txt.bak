@@ -610,7 +610,7 @@ lotn_idea_mil_modifiers = {
 	}
 	
 	custom_morale_damage_received = {
-		morale_damage_received = -0.1
+		morale_damage_received = -0.05
 		level_cost_1 = 6
 		level_cost_2 = 12
 		level_cost_3 = 18

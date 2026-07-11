@@ -177,9 +177,11 @@ newer_newer_idea_mil_modifiers = {
 		}
 	}
 	custom_garrison_growth = {
-		global_garrison_growth = 0.35
-		max_level = 2
+		global_garrison_growth = 0.175
+		max_level = 4
 		level_cost_2 = 3
+		level_cost_3 = 9
+		level_cost_4 = 18
 		chance = {
 			factor = 1
 		}

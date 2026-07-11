@@ -633,7 +633,7 @@ leviathan_idea_mil_modifiers = {
 	}
 
 	custom_drill_gain_modifier = {
-		drill_gain_modifier = 0.25
+		drill_gain_modifier = 0.125
 		enabled = {
 			has_dlc = "Cradle of Civilization"
 		}

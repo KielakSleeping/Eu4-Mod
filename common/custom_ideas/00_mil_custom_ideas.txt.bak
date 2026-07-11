@@ -264,7 +264,7 @@ mil_idea_modifiers = {
 		level_cost_1 = 0
 		level_cost_2 = 4
 		level_cost_3 = 8
-		level_cost_4 = 15
+		level_cost_4 = 15	
 		chance = {
 			factor = 1
 		}
