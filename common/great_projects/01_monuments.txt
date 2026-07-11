@@ -11529,7 +11529,7 @@ erdene_zuu = {
 	type = monument
 
 	build_trigger = {
-
+	}
 
 	on_built = {
 	}
@@ -11629,8 +11629,6 @@ erdene_zuu = {
 		on_upgraded = {
 		}
 	}
-}
-
 }
 
 etchimiadzin_cathedral = {
