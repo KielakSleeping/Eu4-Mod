@@ -26,7 +26,7 @@ extra_cost = 16
 center_of_trade = 2
 
 add_province_triggered_modifier = religious_center
-add_province_triggered_modifier=conquest_of_prague
+#add_province_triggered_modifier=conquest_of_prague
 
 1419.12.1 = { revolt = { type = heretic_rebels size = 1 } controller = REB } # Hussite Wars, Battle of Nekmir
 1436.7.5 = { revolt = {} controller = BOH } # Peace is signed in Jihlava
