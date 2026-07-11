@@ -707,7 +707,7 @@ kok_persia_mission_origins_slot_ardabil = {
 					unlock_government_reform = {
 						government_reform = legacy_of_the_safavid_reform
 					}
-					add_government_reform = legacy_of_the_safavid_reform
+					#add_government_reform = legacy_of_the_safavid_reform
 				"
 			}
 		}
@@ -809,7 +809,7 @@ kok_persia_mission_origins_slot_timurid = {
 					unlock_government_reform = {
 						government_reform = legacy_of_timur_reform
 					}
-					add_government_reform = legacy_of_timur_reform
+					#add_government_reform = legacy_of_timur_reform
 				"
 			}
 		}
@@ -918,7 +918,7 @@ kok_persia_mission_origins_slot_mazandarani = {
 					unlock_government_reform = {
 						government_reform = legacy_of_eranshahr_reform
 					}
-					add_government_reform = legacy_of_eranshahr_reform
+					#add_government_reform = legacy_of_eranshahr_reform
 					if = {
 						limit = { has_dlc = \"Cradle of Civilization\" }
 						set_trade_power_requirement_of_propogate_religion = { value = 20 }
@@ -938,7 +938,7 @@ kok_persia_mission_origins_slot_mazandarani = {
 					unlock_government_reform = {
 						government_reform = legacy_of_eranshahr_reform
 					}
-					add_government_reform = legacy_of_eranshahr_reform
+					#add_government_reform = legacy_of_eranshahr_reform
 					"
 				}
 			}
@@ -1031,7 +1031,7 @@ kok_persia_mission_origins_slot_qoyunlu = {
 					unlock_government_reform = {
 						government_reform = legacy_of_the_seljuk_reform
 					}
-					add_government_reform = legacy_of_the_seljuk_reform
+					#add_government_reform = legacy_of_the_seljuk_reform
 				"
 			}
 		}
@@ -2388,7 +2388,7 @@ kok_persia_mission_muslim_slot_5 = {
 				id = flavor_per.43
 				effect = "
 					unlock_government_reform = { government_reform = court_of_art_and_culture_reform }
-					add_government_reform = court_of_art_and_culture_reform
+					#add_government_reform = court_of_art_and_culture_reform
 				"
 			}
 		}

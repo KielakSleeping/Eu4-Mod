@@ -532,7 +532,7 @@ aq_qoyunlu_second = {
 				duration = 7300
 			}
 			set_country_flag = turkoman_unlock_ottoman_reform
-			add_government_reform = turkoman_ottoman_institutions
+			#add_government_reform = turkoman_ottoman_institutions
 			hidden_effect = {
 				capital_scope = {
 					janissary_infantry = ROOT

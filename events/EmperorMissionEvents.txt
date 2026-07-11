@@ -282,10 +282,10 @@ country_event = {
 					}
 				}
 			}
-			BRA = {
-				change_government = monarchy
-				add_government_reform = feudalism_reform
-			}
+			#BRA = {
+			#	change_government = monarchy
+			#	add_government_reform = feudalism_reform
+			#}
 		}
 		create_union = BRA
 		BRA = {
@@ -385,10 +385,10 @@ country_event = {
 					}
 				}
 			}
-			SAX = {
-				change_government = monarchy
-				add_government_reform = feudalism_reform
-			}
+			#SAX = {
+			#	change_government = monarchy
+			#	add_government_reform = feudalism_reform
+			#}
 		}
 		create_union = SAX
 		SAX = {

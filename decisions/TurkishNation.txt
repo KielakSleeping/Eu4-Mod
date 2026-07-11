@@ -81,7 +81,7 @@ country_decisions = {
 				}
 				if = {
 					limit = { is_revolutionary = no }
-					add_government_reform = sultanate_of_rum_reform
+					#add_government_reform = sultanate_of_rum_reform
 				}
 			}
 			remove_non_electors_emperors_from_empire_effect = yes

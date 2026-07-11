@@ -150,7 +150,7 @@ country_decisions = {
 					}
 					has_not_locked_first_tier_reform = yes
 				}
-				add_government_reform = english_monarchy 
+				#add_government_reform = english_monarchy 
 			}
 			set_country_flag = formed_england_flag
 			if = {

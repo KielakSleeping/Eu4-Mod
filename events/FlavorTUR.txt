@@ -6350,7 +6350,7 @@ country_event = {
 		unlock_government_reform = {
 			government_reform = expanded_devshirme_system_reform
 		}
-		add_government_reform = expanded_devshirme_system_reform
+		#add_government_reform = expanded_devshirme_system_reform
 		ai_chance = {
 			factor = 1
 		}
@@ -6531,7 +6531,7 @@ country_event = {
 		unlock_government_reform = {
 			government_reform = ottoman_siyasah_tax_reform
 		}
-		add_government_reform = ottoman_siyasah_tax_reform
+		#add_government_reform = ottoman_siyasah_tax_reform
 	}
 	
 	option = { 
@@ -6802,7 +6802,7 @@ country_event = {
 		unlock_government_reform = {
 			government_reform = fiqh_laws_reform
 		}
-		add_government_reform = fiqh_laws_reform
+		#add_government_reform = fiqh_laws_reform
 	}
 	
 	option = { 
@@ -6832,7 +6832,7 @@ country_event = {
 		unlock_government_reform = {
 			government_reform = sufism_decree_reform
 		}
-		add_government_reform = sufism_decree_reform
+		#add_government_reform = sufism_decree_reform
 	}
 	
 	option = { 
@@ -8363,13 +8363,13 @@ country_event = {
 		unlock_government_reform = {
 			government_reform = ottoman_conscription_reform
 		}
-		add_government_reform = ottoman_conscription_reform
+		#add_government_reform = ottoman_conscription_reform
 		if = {
 			limit = { has_unlocked_government_reform = { government_reform = expanded_devshirme_system_reform } }
 			unlock_government_reform = {
 				government_reform = reformed_ottoman_conscription_reform
 			}
-			add_government_reform = reformed_ottoman_conscription_reform
+			#add_government_reform = reformed_ottoman_conscription_reform
 		}
 		add_yearly_manpower = 3
 		ai_chance = {
@@ -8413,7 +8413,7 @@ country_event = {
 		unlock_government_reform = {
 			government_reform = reformed_ottoman_conscription_reform
 		}
-		add_government_reform = reformed_ottoman_conscription_reform
+		#add_government_reform = reformed_ottoman_conscription_reform
 		ai_chance = {
 			factor = 1
 		}
@@ -8453,7 +8453,7 @@ country_event = {
 		unlock_government_reform = {
 			government_reform = mansure_army_reform
 		}
-		add_government_reform = mansure_army_reform
+		#add_government_reform = mansure_army_reform
 		change_technology_group = western 
 		change_unit_type = western 
 	}
@@ -8490,7 +8490,7 @@ country_event = {
 		unlock_government_reform = {
 			government_reform = janissary_military_reform
 		}
-		add_government_reform = janissary_military_reform
+		#add_government_reform = janissary_military_reform
 		add_estate_loyalty = {
 			estate = estate_janissaries
 			loyalty = 100
@@ -8523,7 +8523,7 @@ country_event = {
 		unlock_government_reform = {
 			government_reform = standardized_millets_reform
 		}
-		add_government_reform = standardized_millets_reform
+		#add_government_reform = standardized_millets_reform
 		add_adm_power = 200
 	}
 	

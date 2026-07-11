@@ -3311,7 +3311,7 @@ dom_cas_missions_4_c = {
 				fire = 5
 				manuever = 6
 				siege = 1
-				name = "Hernán Cortés"
+				name = "Hernï¿½n Cortï¿½s"
 			}
 			490 = {
 				add_base_production = 3
@@ -3731,7 +3731,7 @@ dom_cas_missions_5 = {
 			crown_land_share = 50
 		}
 		effect = {
-			add_government_reform = system_of_councils_reform 
+			#add_government_reform = system_of_councils_reform 
 		}
 	}
 }

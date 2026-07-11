@@ -20,18 +20,18 @@ country_event = {
 	immediate = {
 		hidden_effect = {	
 			set_country_flag = had_ambrosian_republic
-			change_government = republic
-			add_government_reform = ambrosian_republic
+			#change_government = republic
+			#add_government_reform = ambrosian_republic
 		}
 	}
 	
 	option = {
 		name = flavor_mlo.1.a
 		ai_chance = { factor = 90 }
-		tooltip = {
-			change_government = republic
-			add_government_reform = ambrosian_republic
-		}
+		#tooltip = {
+		#	change_government = republic
+		#	add_government_reform = ambrosian_republic
+		#}
 		add_republican_tradition = 5
 		add_stability = -2
 		every_neighbor_country  = {

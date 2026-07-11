@@ -1502,7 +1502,7 @@ tur_african_conquest = {
 					unlock_government_reform = {
 						government_reform = expanded_devshirme_system_reform
 					}
-					add_government_reform = expanded_devshirme_system_reform"
+					#add_government_reform = expanded_devshirme_system_reform"
 				}
 			}
 			else = {
@@ -1514,7 +1514,7 @@ tur_african_conquest = {
 					unlock_government_reform = {
 						government_reform = reformed_ottoman_conscription_reform
 					}
-					add_government_reform = reformed_ottoman_conscription_reform"
+					#add_government_reform = reformed_ottoman_conscription_reform"
 				}
 			}
 		}
@@ -2020,7 +2020,7 @@ tur_african_conquest = {
 				unlock_government_reform = {
 					government_reform = ottoman_siyasah_tax_reform
 				}
-				add_government_reform = ottoman_siyasah_tax_reform"
+				#add_government_reform = ottoman_siyasah_tax_reform"
 			}
 		}
 
@@ -3876,7 +3876,7 @@ tur_dummy_missions_path = {
 				unlock_government_reform = {
 					government_reform = fiqh_laws_reform
 				}
-				add_government_reform = fiqh_laws_reform"
+				#add_government_reform = fiqh_laws_reform"
 			}
 			remove_country_modifier = tur_religious_legal_code_level_2
 			add_country_modifier = {
@@ -3892,7 +3892,7 @@ tur_dummy_missions_path = {
 				unlock_government_reform = {
 					government_reform = sufism_decree_reform
 				}
-				add_government_reform = sufism_decree_reform"
+				#add_government_reform = sufism_decree_reform"
 			}
 			remove_country_modifier = tur_spiritual_focus_level_2
 			add_country_modifier = {
@@ -4052,7 +4052,7 @@ tur_legalism_path = {
 				unlock_government_reform = {
 					government_reform = fiqh_laws_reform
 				}
-				add_government_reform = fiqh_laws_reform"
+				#add_government_reform = fiqh_laws_reform"
 			}
 			remove_country_modifier = tur_religious_legal_code_level_2
 			add_country_modifier = {
@@ -4211,7 +4211,7 @@ tur_mysticism_path = {
 				unlock_government_reform = {
 					government_reform = sufism_decree_reform
 				}
-				add_government_reform = sufism_decree_reform"
+				#add_government_reform = sufism_decree_reform"
 			}
 			remove_country_modifier = tur_spiritual_focus_level_2
 			add_country_modifier = {
@@ -5283,7 +5283,7 @@ tur_stagnation_slot_1 = {
 					unlock_government_reform = {
 						government_reform = mansure_army_reform
 					}
-					add_government_reform = mansure_army_reform
+					#add_government_reform = mansure_army_reform
 					change_technology_group = western 
 					change_unit_type = western"
 				}
@@ -5308,7 +5308,7 @@ tur_stagnation_slot_1 = {
 					unlock_government_reform = {
 						government_reform = janissary_military_reform
 					}
-					add_government_reform = janissary_military_reform
+					#add_government_reform = janissary_military_reform
 					add_estate_loyalty = {
 						estate = estate_janissaries
 						loyalty = 100
@@ -5406,10 +5406,10 @@ tur_stagnation_slot_2 = {
 					insight_tooltip = INSIGHT_JUST_TOOLTIP
 					effect_tooltip = "
 					add_piety = 0.25
-					add_government_reform = ottoman_conscription_reform
+					#add_government_reform = ottoman_conscription_reform
 					if = {
 						limit = { has_unlocked_government_reform = { government_reform = expanded_devshirme_system_reform } }
-						add_government_reform = reformed_ottoman_conscription_reform
+						#add_government_reform = reformed_ottoman_conscription_reform
 					}
 					add_yearly_manpower = 3"
 				}
@@ -5671,7 +5671,7 @@ tur_stagnation_slot_4 = {
 				unlock_government_reform = {
 					government_reform = standardized_millets_reform
 				}
-				add_government_reform = standardized_millets_reform
+				#add_government_reform = standardized_millets_reform
 				add_adm_power = 200"
 			}
 		}

@@ -1133,7 +1133,7 @@ restore_old_nation_on_formation_effect = {
 				}
 				event_target:old_tag_target = {
 					change_government = republic
-					add_government_reform = noble_elite_reform
+					#add_government_reform = noble_elite_reform
 					#set_legacy_government = noble_republic
 					define_ruler = {
 						claim = 95
@@ -1147,7 +1147,7 @@ restore_old_nation_on_formation_effect = {
 				event_target:old_tag_target = {
 					change_government = republic
 					#set_legacy_government = peasants_republic_legacy
-					add_government_reform = peasants_republic
+					#add_government_reform = peasants_republic
 					define_ruler = {
 						claim = 95
 					}
@@ -1159,7 +1159,7 @@ restore_old_nation_on_formation_effect = {
 				}
 				event_target:old_tag_target = {
 					change_government = republic
-					add_government_reform = pirate_republic_reform
+					#add_government_reform = pirate_republic_reform
 					#set_legacy_government = pirate_republic
 					define_ruler = {
 						claim = 95
@@ -1172,7 +1172,7 @@ restore_old_nation_on_formation_effect = {
 				}
 				event_target:old_tag_target = {
 					change_government = republic
-					add_government_reform = oligarchy_reform
+					#add_government_reform = oligarchy_reform
 					#set_legacy_government = noble_republic
 					define_ruler = {
 						claim = 95
@@ -1186,7 +1186,7 @@ restore_old_nation_on_formation_effect = {
 				}
 				event_target:old_tag_target = {
 					change_government = theocracy
-					add_government_reform = monastic_order_reform
+					#add_government_reform = monastic_order_reform
 					#set_legacy_government = monastic_order_government
 					define_ruler = {
 						claim = 95
@@ -1199,7 +1199,7 @@ restore_old_nation_on_formation_effect = {
 				}
 				event_target:old_tag_target = {
 					change_government = theocracy
-					add_government_reform = leading_clergy_reform
+					#add_government_reform = leading_clergy_reform
 					#set_legacy_government = theocratic_government
 					define_ruler = {
 						claim = 95
@@ -1213,7 +1213,7 @@ restore_old_nation_on_formation_effect = {
 				}
 				event_target:old_tag_target = {
 					change_government = tribal
-					add_government_reform = steppe_horde
+					#add_government_reform = steppe_horde
 					#set_legacy_government = steppe_horde_legacy
 					define_ruler = {
 						dynasty = ROOT
@@ -1224,7 +1224,7 @@ restore_old_nation_on_formation_effect = {
 			else = {
 				event_target:old_tag_target = {
 					change_government = tribal
-					add_government_reform = tribal_federation
+					#add_government_reform = tribal_federation
 					#set_legacy_government = tribal_democracy_legacy
 				}
 			}

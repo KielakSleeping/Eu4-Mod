@@ -141,11 +141,11 @@ country_decisions = {
 			set_government_rank = 3
 			if = {
 				limit = { is_revolutionary = no NOT = { religion_group = zoroastrian_group } }
-				add_government_reform = persian_government_reform
+				#add_government_reform = persian_government_reform
 			}
 			if = {
 				limit = { is_revolutionary = no religion_group = zoroastrian_group }
-				add_government_reform = zoroastrian_persian_government_reform
+				#add_government_reform = zoroastrian_persian_government_reform
 			}
 			if = {
 				limit = {

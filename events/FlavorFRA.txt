@@ -2408,11 +2408,11 @@ country_event = {
 		}
 		if = { 
 			limit = { has_dlc = "Golden Century" }
-			KNI = { 
-				change_government = republic 
-				add_government_reform = pirate_republic_reform
-				add_historical_friend = ROOT 
-			}
+			#KNI = { 
+			#	change_government = republic 
+			#	add_government_reform = pirate_republic_reform
+			#	add_historical_friend = ROOT 
+			#}
 			add_historical_friend = KNI 
 			create_alliance = KNI 
 		}
@@ -2908,10 +2908,10 @@ country_event = { #The Angevin Government in Genoa
 			limit = { 
 				GEN = { is_subject_of = ROOT } 
 			}
-			GEN = { 
-				change_government = republic
-				add_government_reform = signoria
-			}
+			#GEN = { 
+			#	change_government = republic
+			#	add_government_reform = signoria
+			#}
 		}
 	}
 }	

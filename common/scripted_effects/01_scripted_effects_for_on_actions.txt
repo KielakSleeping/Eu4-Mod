@@ -2114,8 +2114,8 @@ on_religion_change_effect = {
 				religion = inti
 			}
 		}
-		change_government = monarchy
-		add_government_reform = autocracy_reform
+		#change_government = monarchy
+		#add_government_reform = autocracy_reform
 	}
 
 

@@ -287,7 +287,7 @@ country_decisions = {
 				limit = { NOT = { government = republic } }
 				change_government = republic
 			}
-			add_government_reform = cossacks_reform
+			#add_government_reform = cossacks_reform
 		}
 		ai_will_do = {
 			factor = 1

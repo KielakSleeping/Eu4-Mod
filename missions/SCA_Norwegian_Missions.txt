@@ -1609,7 +1609,7 @@ nor_development_mission_slot = {
 				name = nor_norwegian_nobility_established
 				duration = 9125
 			}
-			add_government_reform = norwegian_parliamentary_monarchy
+			#add_government_reform = norwegian_parliamentary_monarchy
 		}
 	}
 	
