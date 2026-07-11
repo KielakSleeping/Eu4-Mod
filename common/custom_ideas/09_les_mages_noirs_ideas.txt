@@ -1,0 +1,444 @@
+les_mages_noirs_ideas_adm_modifiers = {
+	category = ADM
+	custom_idea_same_religion_advisor_cost = {
+		global_tax_modifier = -0.05
+		level_cost_2 = 3
+		level_cost_3 = 9
+		level_cost_4 = 18
+		default = 1
+		chance = {
+			factor = 1
+		}
+	}
+	
+	custom_idea_great_project_upgrade_time = {
+		great_project_upgrade_time = -0.05
+		level_cost_2 = 3
+		level_cost_3 = 9
+		level_cost_4 = 18
+		default = 1
+		chance = {
+			factor = 1
+		}
+	}
+	
+	custom_idea_yearly_innovativeness = {
+		yearly_innovativeness = 0.1
+		level_cost_2 = 3
+		level_cost_3 = 9
+		level_cost_4 = 18
+		default = 1
+		chance = {
+			factor = 1
+		}
+	}
+	
+	custom_idea_loyalty_change_on_revoked = {
+		loyalty_change_on_revoked = -0.05
+		level_cost_2 = 3
+		level_cost_3 = 9
+		level_cost_4 = 18
+		
+		chance = {
+			factor = 0.1
+		}
+	}
+	
+	custom_idea_estate_interaction_cooldown_modifier = {
+		estate_interaction_cooldown_modifier = -0.05
+		level_cost_2 = 3
+		level_cost_3 = 9
+		level_cost_4 = 18
+		
+		chance = {
+			factor = 0.1
+		}
+	}
+	
+	custom_idea_all_estate_possible_privileges = {
+		all_estate_possible_privileges = 1
+		level_cost_2 = 3
+		level_cost_3 = 9
+		level_cost_4 = 18
+		
+		chance = {
+			factor = 0.1
+		}
+	}
+
+
+}
+les_mages_noirs_ideas_dip_modifiers = {
+	category = DIP
+	custom_max_admiral_fire = {
+		max_admiral_fire = 1
+		level_cost_1 = 30
+		level_cost_2 = 60
+		max_level = 2
+		
+		chance = {
+			factor = 0.1
+		}
+	}
+	custom_max_admiral_shock = {
+		max_admiral_shock = 1
+		level_cost_1 = 20
+		level_cost_2 = 40
+		max_level = 2
+		
+		chance = {
+			factor = 0.1
+		}
+	}
+	custom_max_admiral_maneuver = {
+		max_admiral_maneuver = 1
+		level_cost_1 = 30
+		level_cost_2 = 60
+		max_level = 2
+		
+		chance = {
+			factor = 0.1
+		}
+	}
+	custom_max_admiral_siege = {
+		max_admiral_fire = 1
+		level_cost_1 = 20
+		level_cost_2 = 40
+		max_level = 2
+		
+		chance = {
+			factor = 0.1
+		}
+	}
+
+	custom_idea_chance_to_inherit = {
+		chance_to_inherit = 0.05
+		level_cost_2 = 3
+		level_cost_3 = 9
+		level_cost_4 = 18
+		default = 1
+		chance = {
+			factor = 1
+		}
+	}
+	
+	custom_idea_culture_conversion_time = {
+		culture_conversion_time = -0.05
+		level_cost_2 = 3
+		level_cost_3 = 9
+		level_cost_4 = 18
+		default = 1
+		chance = {
+			factor = 1
+		}
+	}
+
+    custom_cannons_for_hunting_pirates_in_fleet = {
+        cannons_for_hunting_pirates_in_fleet = 0.5
+        level_cost_1 = 0
+        chance = {
+            factor = 0
+       }
+  }
+	
+	custom_idea_max_flagships = {
+		max_flagships = 1
+		level_cost_2 = 3
+		level_cost_3 = 9
+		level_cost_4 = 18
+		default = 1
+		chance = {
+			factor = 1
+		}
+	}
+	
+	custom_idea_hull_size_modifier = {
+		hull_size_modifier = 0.05
+		level_cost_2 = 3
+		level_cost_3 = 9
+		level_cost_4 = 18
+		default = 1
+		chance = {
+			factor = 1
+		}
+	}
+	
+	custom_idea_number_of_cannons_modifier = {
+		number_of_cannons_modifier = 0.05
+		level_cost_2 = 3
+		level_cost_3 = 9
+		level_cost_4 = 18
+		default = 1
+		chance = {
+			factor = 1
+		}
+	}
+	
+	custom_idea_vassal_manpower_bonus = {
+		vassal_manpower_bonus = 0.1
+		level_cost_2 = 3
+		level_cost_3 = 9
+		level_cost_4 = 18
+		default = 1
+		chance = {
+			factor = 1
+		}
+	}
+	
+	custom_idea_vassal_sailors_bonus = {
+		vassal_sailors_bonus = 0.25
+		level_cost_2 = 3
+		level_cost_3 = 9
+		level_cost_4 = 18
+		default = 1
+		chance = {
+			factor = 1
+		}
+	}
+	
+	custom_idea_vassal_naval_forcelimit_bonus = {
+		vassal_naval_forcelimit_bonus = 0.25
+		level_cost_2 = 3
+		level_cost_3 = 9
+		level_cost_4 = 18
+		default = 1
+		chance = {
+			factor = 1
+		}
+	}
+	
+	custom_idea_annexation_relations_impact = {
+		annexation_relations_impact = -0.25
+		level_cost_2 = 3
+		level_cost_3 = 9
+		level_cost_4 = 18
+		default = 1
+		chance = {
+			factor = 1
+		}
+	}
+
+
+}
+les_mages_noirs_ideas_mil_modifiers = {
+	category = MIL	
+custom_max_general_fire = {
+		max_general_fire = 1
+		level_cost_1 = 30
+		level_cost_2 = 75
+		max_level = 2
+		
+		chance = {
+			factor = 0.1
+		}
+	}
+
+	custom_max_general_shock = {
+		max_general_shock = 1
+		level_cost_1 = 30
+		level_cost_2 = 75
+		max_level = 2
+		
+		chance = {
+			factor = 0.1
+		}
+	}
+	custom_max_general_siege = {
+		max_general_siege = 1
+		level_cost_1 = 15
+		level_cost_2 = 40
+		max_level = 2
+		
+		chance = {
+			factor = 0.1
+		}
+	}
+	custom_max_general_maneuver = {
+		max_general_maneuver = 1
+		level_cost_1 = 10
+		level_cost_2 = 25
+		max_level = 2
+		
+		chance = {
+			factor = 0.1
+		}
+	}
+	custom_idea_artillery_barrage_cost = {
+		artillery_barrage_cost = -0.05
+		level_cost_2 = 3
+		level_cost_3 = 9
+		level_cost_4 = 18
+		default = 1
+		chance = {
+			factor = 1
+		}
+	}
+	
+	custom_idea_warscore_from_battles_modifier = {
+		warscore_from_battles_modifier = 0.05
+		level_cost_2 = 3
+		level_cost_3 = 9
+		level_cost_4 = 18
+		default = 1
+		chance = {
+			factor = 1
+		}
+	}
+	
+	custom_idea_enable_forced_march = {
+		enable_forced_march = yes
+		max_level = 1
+		level_cost_1 = 25
+		default = 1
+		chance = {
+			factor = 1
+		}
+	}
+	
+	custom_idea_janissary_cost_modifier = {
+		janissary_cost_modifier = -0.25
+		max_level = 2
+		level_cost_1 = 0
+		level_cost_2 = 10
+		default = 1
+		chance = {
+			factor = 1
+		}
+	}
+	custom_idea_can_recruit_samurai = {
+		has_samurai = yes 		
+		allowed_samurai_fraction = 0.1 
+		max_level = 4
+		level_cost_1 = 10
+		level_cost_2 = 20
+		level_cost_3 = 30
+		level_cost_4 = 40
+
+		default = 1
+		chance = {
+			factor = 1
+		}
+	}
+	custom_idea_can_recruit_tercio = {
+		has_tercio = yes  		
+		allowed_tercio_fraction = 0.1  
+		max_level = 4
+		level_cost_1 = 10
+		level_cost_2 = 20
+		level_cost_3 = 30
+		level_cost_4 = 40
+
+		default = 1
+		chance = {
+			factor = 1
+		}
+	}
+	custom_idea_can_recruit_mamluks = {
+		has_mamluks = yes 		
+		allowed_mamluks_fraction = 0.1 
+		max_level = 4
+		level_cost_1 = 10
+		level_cost_2 = 20
+		level_cost_3 = 30
+		level_cost_4 = 40
+
+		default = 1
+		chance = {
+			factor = 1
+		}
+	}
+	custom_idea_can_recruit_musketeers = {
+		has_musketeer = yes  		
+		allowed_musketeer_fraction = 0.10
+		max_level = 4
+		level_cost_1 = 10
+		level_cost_2 = 20
+		level_cost_3 = 30
+		level_cost_4 = 40
+
+		default = 1
+		chance = {
+			factor = 1
+		}
+	}
+	custom_idea_can_recruit_qizibash = {
+		has_qizilbash = yes  		
+		allowed_qizilbash_fraction = 0.1
+		max_level = 4
+		level_cost_1 = 10
+		level_cost_2 = 20
+		level_cost_3 = 30
+		level_cost_4 = 40
+
+		default = 1
+		chance = {
+			factor = 1
+		}
+	}
+
+	custom_idea_can_recruit_cossacks = {
+		can_recruit_cossacks = yes
+		allowed_cossack_fraction = 0.1
+		max_level = 4
+		level_cost_1 = 10
+		level_cost_2 = 20
+		level_cost_3 = 30
+		level_cost_4 = 40
+
+		default = 1
+		chance = {
+			factor = 1
+		}
+	}
+	
+	custom_idea_can_recruit_rajputs = {
+		can_recruit_rajputs = yes
+		allowed_rajput_fraction = 0.1
+		max_level = 4
+		level_cost_1 = 10
+		level_cost_2 = 20
+		level_cost_3 = 30
+		level_cost_4 = 40
+		default = 1
+		chance = {
+			factor = 1
+		}
+	}
+	
+	custom_idea_can_recruit_revolutionary_guards = {
+		can_recruit_revolutionary_guards = yes
+		allowed_rev_guard_fraction = 0.1
+		max_level = 4
+		level_cost_1 = 10
+		level_cost_2 = 20
+		level_cost_3 = 30
+		level_cost_4 = 40
+
+		default = 1
+		chance = {
+			factor = 1
+		}
+	}
+	
+	custom_idea_garrison_damage = {
+		garrison_damage = 0.25
+		level_cost_2 = 3
+		level_cost_3 = 9
+		level_cost_4 = 18
+		default = 1
+		chance = {
+			factor = 1
+		}
+	}
+	
+	custom_idea_assault_fort_cost_modifier = {
+		assault_fort_cost_modifier = -0.25
+		level_cost_2 = 3
+		level_cost_3 = 9
+		level_cost_4 = 18
+		default = 1
+		chance = {
+			factor = 1
+		}
+	}
+}
