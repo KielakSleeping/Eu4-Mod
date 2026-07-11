@@ -10432,7 +10432,7 @@ turkoman_expanding_industry = {
 }
 
 turkoman_advance = {
-	province_warscore_cost = -0.25
+	province_warscore_cost = -0.1
 	manpower_recovery_speed = 0.1
 }
 
@@ -10470,7 +10470,7 @@ turkoman_heal_internal_divisions = {
 
 turkoman_sons_of_conquerors = {
 	#cav_to_inf_ratio = 0.25
-	cavalry_shock = 0.25
+	cavalry_power = 0.025
 }
 
 turkoman_state_modernization = {

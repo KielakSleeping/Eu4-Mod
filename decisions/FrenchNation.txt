@@ -3,7 +3,6 @@ country_decisions = {
 	french_nation = {
 		major = yes
 		potential = {
-			always = no
 			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_france_flag }
@@ -65,6 +64,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			adm_tech = 7
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no			

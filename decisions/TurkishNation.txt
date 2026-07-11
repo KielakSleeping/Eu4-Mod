@@ -23,7 +23,7 @@ country_decisions = {
 			NOT = { tag = PRU }
 			NOT = { tag = ENG }
 			is_emperor_of_china = no
-			tag = AKK
+			primary_culture = turkish
 			
 			is_colonial_nation = no
 			OR = {
@@ -36,7 +36,6 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				province_id = 151		# Constantinople
 				province_id = 316		# Iznik
 				province_id = 323		# Konya
 				province_id = 326		# Ankara
@@ -51,14 +50,13 @@ country_decisions = {
 			}
 		}
 		allow = {
+			adm_tech = 7
 			is_at_war = no
 			is_subject = no #Cannot even be a tributary
 			is_nomad = no
-			religion_group = muslim
 			NOT = { exists = RUM }
 			NOT = { exists = TUR }
 			#NOT = { exists = BYZ }
-			owns_core_province = 151		# Constantinople
 			owns_core_province = 316		# Iznik
 			owns_core_province = 323		# Konya
 			owns_core_province = 326		# Ankara

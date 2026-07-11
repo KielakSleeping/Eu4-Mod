@@ -21,8 +21,7 @@ country_decisions = {
 			NOT = { tag = TUR }
 			NOT = { tag = BYZ }
 			NOT = { exists = GLH }
-			tag = CRI
-			has_reform = steppe_horde
+			culture_group = tatar
 			is_colonial_nation = no
 			OR = {
 				is_former_colonial_nation = no
@@ -56,8 +55,8 @@ country_decisions = {
 			}
 		}
 		allow = {
+			adm_tech = 7
 			NOT = { exists = GLH }
-			has_reform = steppe_horde
 			owns_core_province = 284 #Crimea
 			owns_core_province = 302 #Tambov
 			owns_core_province = 464 #Astrakhan
@@ -70,7 +69,7 @@ country_decisions = {
 			is_at_war = no
 		}
 		effect = {
-			change_tag = GLH
+			change_tag = CRI
 			on_change_tag_effect = yes
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
@@ -78,7 +77,6 @@ country_decisions = {
 				limit = { NOT = { government_rank = 3 } }
 				set_government_rank = 3
 			}
-			change_government_to_monarchy = yes
 			if = {
 				limit = {
 					has_custom_ideas = no

@@ -116,11 +116,7 @@ country_decisions = {
 	adopt_mamluk_government = {
 		major = yes
 		potential = {
-			always = no
-			or = {
-				has_reform = iqta
-				has_reform = barbary_sultanate_reform
-			}
+			primary_culture = al_misr_arabic
 			NOT = { has_country_flag = formed_mamluks }
 			was_never_end_game_tag_trigger = yes
 			NOT = { tag = MAM }
@@ -154,6 +150,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			adm_tech = 7
 			NOT = { exists = MAM } #To Show why it might disappear
 			owns_core_province = 361
 		}

@@ -3,12 +3,6 @@ country_decisions = {
 	italian_nation = {
 		major = yes
 		potential = {
-			OR = {
-				tag = MLO
-				tag = VEN
-				tag = SIC
-				tag = TTS
-				}
 			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_italy_flag }
@@ -69,7 +63,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 10
+			adm_tech = 7
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			owns_core_province = 101	# Genoa

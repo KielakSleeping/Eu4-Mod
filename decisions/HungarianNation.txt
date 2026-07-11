@@ -55,6 +55,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			adm_tech = 7
 			NOT = { exists = HUN }
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
@@ -76,7 +77,7 @@ country_decisions = {
 			restore_country_name = yes
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
-			153 = { #Paris
+			153 = { #Pest
 				move_capital_effect = yes
 			}
 			if = {

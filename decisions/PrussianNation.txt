@@ -73,7 +73,7 @@ country_decisions = {
 				is_playing_custom_nation = no
 			}
 			NOT = { has_reform = celestial_empire } 
-			tag = BRA
+			culture_group = germanic
 			OR = {
 				NOT = { exists = PRU }
 				ai = no
@@ -91,7 +91,7 @@ country_decisions = {
 			}
 		allow = {
 			NOT = { exists = PRU }
-			adm_tech = 10
+			adm_tech = 7
 			east_prussia_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -102,14 +102,6 @@ country_decisions = {
 			silesia_area = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			
-			OR = {
-				religion = protestant
-				religion = reformed
-				religion = hussite
-				religion = anglican
-			}
-			
 			is_at_war = no
 		}
 		effect = {

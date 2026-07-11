@@ -3,7 +3,7 @@ country_decisions = {
 	netherlands_nation = {
 		major = yes
 		potential = {
-			always = no
+			primary_culture = dutch
 			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_netherlands_flag }
@@ -22,7 +22,6 @@ country_decisions = {
 			NOT = { tag = PAP }
 			NOT = { tag = NED }
 			NOT = { tag = HLR }
-			tag = BUR
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -56,7 +55,7 @@ country_decisions = {
 		}
 		allow = {
 			#adm_tech = 10
-			adm_tech = 8
+			adm_tech = 7
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no

@@ -143,27 +143,6 @@ aq_qoyunlu_first = {
 				name = turkoman_army_traditions
 				duration = 5475
 			}
-			if = {
-				limit = {
-					army_tradition = 60
-				}
-				custom_tooltip = turkoman_enhance_army_traditions_tt_yes
-			}
-			else = {
-				custom_tooltip = turkoman_enhance_army_traditions_tt_no
-			}
-			hidden_effect = {
-				if = {
-					limit = {
-						army_tradition = 60
-					}
-					remove_country_modifier = turkoman_army_traditions
-					add_country_modifier = {
-						name = turkoman_army_traditions2
-						duration = 9125
-					}
-				}
-			}
 		}	
 	}
 	

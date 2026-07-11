@@ -384,7 +384,6 @@ country_decisions = {
 			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
 			was_never_german_regional_tag_trigger = yes
-			tag = ROT
 			NOT = { has_country_flag = formed_franconia_flag }
 			OR = {
 				ai = no
@@ -403,7 +402,7 @@ country_decisions = {
 					ai = no
 				}
 			}
-			primary_culture = franconian
+			culture_group = germanic
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -455,7 +454,7 @@ country_decisions = {
 		allow = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			#adm_tech = 10
+			adm_tech = 7
 			OR = { #Wurzburg was the theoretical holder of the title
 				tag = WBG
 				NOT = { exists = WBG }
@@ -826,6 +825,7 @@ country_decisions = {
 	hannoverian_nation = {
 		major = yes
 		potential = {
+			always = no
 			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
 			was_never_german_regional_tag_trigger = yes
@@ -958,7 +958,6 @@ country_decisions = {
 			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
 			was_never_german_regional_tag_trigger = yes
-			tag = HES
 			NOT = { has_country_flag = formed_westphalia_flag }
 			OR = {
 				ai = no
@@ -970,24 +969,8 @@ country_decisions = {
 			}
 			NOT = { exists = WES }
 			NOT = { has_reform = celestial_empire }
-			OR = {
-				primary_culture = hannoverian #Westphalian
-				primary_culture = hessian
-			}
 			is_colonial_nation = no
-			OR = {
-				ai = no
-				AND = {
-					owns_core_province = 82	# Westfalen
-					owns_core_province = 1762	# Kassel
-					OR = {
-						owns_core_province = 85	# Cologne
-						owns_core_province = 80	# Trier
-						owns_core_province = 78	# Mainz
-						owns_core_province = 86	# Munster
-					}
-				}
-			}			
+			culture_group = germanic	
 			OR = {
 				is_former_colonial_nation = no
 				AND = {
@@ -1049,7 +1032,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 10
+			adm_tech = 7
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
