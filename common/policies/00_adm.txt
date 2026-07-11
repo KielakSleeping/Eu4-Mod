@@ -440,7 +440,7 @@ holy_sites = {
        }
 
        #development_cost_in_primary_culture = -0.05
-       land_morale_constant = 0.25
+       land_morale_constant = 0.20
        ai_will_do = { 
                factor = 1 
        }
