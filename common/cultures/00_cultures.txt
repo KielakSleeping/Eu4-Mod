@@ -11,6 +11,10 @@ germanic = {
 	graphical_culture = westerngfx
 
 	male_names = { Gunther Rolf }
+
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
 	
 	pommeranian = {
 		primary = POM
@@ -948,6 +952,8 @@ british	= {
 
 gaelic	= {
 	graphical_culture = westerngfx
+
+	province = { local_has_tercio = yes }
 	
 	irish = {
 		primary = IRE
