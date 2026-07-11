@@ -164,10 +164,10 @@ country_decisions = {
 				}
 				change_government = monarchy
 			}
-			if = {
-				limit = { is_revolutionary = no }
-				add_government_reform = al_andalusia_government
-			}
+			# if = {
+			# 	limit = { is_revolutionary = no }
+			# 	add_government_reform = al_andalusia_government
+			# }
 			lower_andalucia_area = {
 				limit = {
 					NOT = { owned_by = ROOT }

@@ -4195,7 +4195,7 @@ become_rev_empire_reform = {
 				}
 			}
 		}
-		add_government_reform = revolutionary_empire_reform
+		#add_government_reform = revolutionary_empire_reform
 		if = {
 			limit = { has_country_flag = had_states_general_mechanic }
 			country_event = { id = dutch_republic.33 }

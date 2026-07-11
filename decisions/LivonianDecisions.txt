@@ -359,20 +359,20 @@ country_decisions = {
 			NOT = { exists = LVA }
 			NOT = { exists = KUR }
 		}
-		effect = {
-			release = LIV
-			LIV = {
-				change_religion = ROOT
-				change_primary_culture = baltic_german
-				adopt_reform_progress = ROOT
-				change_government = theocracy
-				add_government_reform = monastic_order_reform
-			}
-			create_subject = {
-				subject_type = vassal
-				subject = LIV
-			}
-		}
+		# effect = {
+		# 	release = LIV
+		# 	LIV = {
+		# 		change_religion = ROOT
+		# 		change_primary_culture = baltic_german
+		# 		adopt_reform_progress = ROOT
+		# 		change_government = theocracy
+		# 		add_government_reform = monastic_order_reform
+		# 	}
+		# 	create_subject = {
+		# 		subject_type = vassal
+		# 		subject = LIV
+		# 	}
+		# }
 		ai_will_do = {
 			factor = 0
 		}

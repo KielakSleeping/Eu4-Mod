@@ -869,7 +869,7 @@ tribe_becomes_republic_reform = {
 			limit = {
 				have_had_reform = stateless_society
 			}
-			add_government_reform = peasants_republic
+			#add_government_reform = peasants_republic
 		}
 	}
 	ai = {
@@ -1020,7 +1020,7 @@ tribe_becomes_horde_reform = {
 	}
 	effect = {
 		set_country_flag = populists_in_government
-		add_government_reform = steppe_horde
+		#add_government_reform = steppe_horde
 		change_unit_type = nomad_group
 		change_technology_group = nomad_group
 		custom_tooltip = STEPPE_HORDE_BENEFITS

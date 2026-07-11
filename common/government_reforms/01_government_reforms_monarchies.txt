@@ -634,16 +634,16 @@ kalmar_union = {
 		advisor_pool = 1
 		nobles_influence_modifier = 0.15
 	}
-	removed_effect = {
-		hidden_effect = {
-			if = {
-				limit = {
-					NOT = { has_dlc = "Lions of the North" }
-				}
-				add_government_reform = feudalism_reform
-			}
-		}
-	}
+	# removed_effect = {
+	# 	hidden_effect = {
+	# 		if = {
+	# 			limit = {
+	# 				NOT = { has_dlc = "Lions of the North" }
+	# 			}
+	# 			add_government_reform = feudalism_reform
+	# 		}
+	# 	}
+	# }
 	
 	custom_attributes = {
 		locked_government_type = yes
@@ -6892,7 +6892,7 @@ become_rev_republic_reform = {
 				}
 			}
 		}
-		add_government_reform = revolutionary_republic_reform
+		#add_government_reform = revolutionary_republic_reform
 		if = {
 			limit = { has_country_flag = had_states_general_mechanic }
 			country_event = { id = dutch_republic.33 }

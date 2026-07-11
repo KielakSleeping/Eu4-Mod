@@ -1721,7 +1721,7 @@ on_embrace_revolution = {
 			is_great_power = yes
 		}
 		set_revolution_target = ROOT
-		add_government_reform = revolutionary_republic_reform
+		#add_government_reform = revolutionary_republic_reform
 		if = { 
 			limit = { tag = FRA has_dlc = "Domination" } 
 			swap_non_generic_missions = yes
@@ -1742,7 +1742,7 @@ on_embrace_revolution = {
 		}
 	}
 	else = {
-		add_government_reform = junior_revolutionary_republic_reform
+		#add_government_reform = junior_revolutionary_republic_reform
 	}
 	if = {
 		limit = { has_reform = parliamentary_reform }
@@ -5514,12 +5514,12 @@ on_create_client_state = {
 }
 
 # this = new target, from = previous target (both can be non-existent tag)
-on_change_revolution_target = {
-	if = {
-		limit = { has_reform = junior_revolutionary_republic_reform }
-		add_government_reform = revolutionary_republic_reform
-	}
-}
+# on_change_revolution_target = {
+# 	if = {
+# 		limit = { has_reform = junior_revolutionary_republic_reform }
+# 		add_government_reform = revolutionary_republic_reform
+# 	}
+# }
 
 # this = curia controller (enactor of the bull)
 on_golden_bull_enacted = {

@@ -856,7 +856,7 @@ restore_old_nation_on_formation_effect = {
 				}
 				event_target:old_tag_target = {
 					change_government = monarchy
-					add_government_reform = shogunate
+					#add_government_reform = shogunate
 					#set_legacy_government = shogunate_legacy
 					define_ruler = {
 						dynasty = ROOT
@@ -870,7 +870,7 @@ restore_old_nation_on_formation_effect = {
 				}
 				event_target:old_tag_target = {
 					change_government = monarchy
-					add_government_reform = indep_daimyo
+					#add_government_reform = indep_daimyo
 					#set_legacy_government = indep_daimyo_legacy
 					define_ruler = {
 						dynasty = ROOT
@@ -884,7 +884,7 @@ restore_old_nation_on_formation_effect = {
 				}
 				event_target:old_tag_target = {
 					change_government = monarchy
-					add_government_reform = english_monarchy
+					#add_government_reform = english_monarchy
 					define_ruler = {
 						dynasty = ROOT
 						claim = 95
@@ -897,7 +897,7 @@ restore_old_nation_on_formation_effect = {
 				}
 				event_target:old_tag_target = {
 					change_government = monarchy
-					add_government_reform = elective_monarchy
+					#add_government_reform = elective_monarchy
 					#set_legacy_government = elective_monarchy_legacy
 					define_ruler = {
 						dynasty = ROOT
@@ -911,7 +911,7 @@ restore_old_nation_on_formation_effect = {
 				}
 				event_target:old_tag_target = {
 					change_government = monarchy
-					add_government_reform = ottoman_government
+					#add_government_reform = ottoman_government
 					#set_legacy_government = ottoman_government_legacy
 					define_ruler = {
 						dynasty = ROOT
@@ -925,7 +925,7 @@ restore_old_nation_on_formation_effect = {
 				}
 				event_target:old_tag_target = {
 					change_government = monarchy
-					add_government_reform = indian_sultanate_reform
+					#add_government_reform = indian_sultanate_reform
 					#set_legacy_government = iqta_legacy
 					define_ruler = {
 						dynasty = ROOT
@@ -937,7 +937,7 @@ restore_old_nation_on_formation_effect = {
 						has_reform = mughal_government
 					}
 					event_target:old_tag_target = {
-						add_government_reform = mughal_government
+						#add_government_reform = mughal_government
 					}
 				}
 			}
@@ -947,7 +947,7 @@ restore_old_nation_on_formation_effect = {
 				}
 				event_target:old_tag_target = {
 					change_government = monarchy
-					add_government_reform = mamluk_government
+					#add_government_reform = mamluk_government
 					#set_legacy_government = mamluk_government_legacy
 					define_ruler = {
 						dynasty = ROOT
@@ -961,7 +961,7 @@ restore_old_nation_on_formation_effect = {
 				}
 				event_target:old_tag_target = {
 					change_government = monarchy
-					add_government_reform = iqta
+					#add_government_reform = iqta
 					#set_legacy_government = iqta_legacy
 					define_ruler = {
 						dynasty = ROOT
@@ -975,7 +975,7 @@ restore_old_nation_on_formation_effect = {
 				}
 				event_target:old_tag_target = {
 					change_government = monarchy
-					add_government_reform = prussian_monarchy_base
+					#add_government_reform = prussian_monarchy_base
 					#set_legacy_government = prussian_monarchy_legacy
 					define_ruler = {
 						dynasty = ROOT
@@ -989,7 +989,7 @@ restore_old_nation_on_formation_effect = {
 				}
 				event_target:old_tag_target = {
 					change_government = monarchy
-					add_government_reform = feudalism_reform
+					#add_government_reform = feudalism_reform
 					#set_legacy_government = monarchy
 					define_ruler = {
 						dynasty = ROOT
@@ -1003,7 +1003,7 @@ restore_old_nation_on_formation_effect = {
 				}
 				event_target:old_tag_target = {
 					change_government = republic
-					add_government_reform = venice_merchants_reform
+					#add_government_reform = venice_merchants_reform
 					#set_legacy_government = venetian_merchant_republic
 					define_ruler = {
 						claim = 95
@@ -1016,7 +1016,7 @@ restore_old_nation_on_formation_effect = {
 				}
 				event_target:old_tag_target = {
 					change_government = republic
-					add_government_reform = veche_republic
+					#add_government_reform = veche_republic
 					#set_legacy_government = veche_republic_legacy
 					define_ruler = {
 						claim = 95
@@ -1030,7 +1030,7 @@ restore_old_nation_on_formation_effect = {
 				}
 				event_target:old_tag_target = {
 					change_government = theocracy
-					add_government_reform = united_cantons_reform
+					#add_government_reform = united_cantons_reform
 					define_ruler = {
 						claim = 95
 					}
@@ -1042,7 +1042,7 @@ restore_old_nation_on_formation_effect = {
 				}
 				event_target:old_tag_target = {
 					change_government = republic
-					add_government_reform = united_cantons_reform
+					#add_government_reform = united_cantons_reform
 					#set_legacy_government = united_cantons_legacy
 					define_ruler = {
 						claim = 95
@@ -1055,7 +1055,7 @@ restore_old_nation_on_formation_effect = {
 				}
 				event_target:old_tag_target = {
 					change_government = republic
-					add_government_reform = merchants_reform
+					#add_government_reform = merchants_reform
 					#set_legacy_government = merchant_republic
 					define_ruler = {
 						claim = 95
@@ -1068,7 +1068,7 @@ restore_old_nation_on_formation_effect = {
 				}
 				event_target:old_tag_target = {
 					change_government = republic
-					add_government_reform = prussian_republic_reform
+					#add_government_reform = prussian_republic_reform
 					#set_legacy_government = prussian_republic
 					define_ruler = {
 						claim = 95
@@ -1081,7 +1081,7 @@ restore_old_nation_on_formation_effect = {
 				}
 				event_target:old_tag_target = {
 					change_government = republic
-					add_government_reform = signoria_reform
+					#add_government_reform = signoria_reform
 					#set_legacy_government = signoria
 					define_ruler = {
 						claim = 95
@@ -1094,7 +1094,7 @@ restore_old_nation_on_formation_effect = {
 				}
 				event_target:old_tag_target = {
 					change_government = republic
-					add_government_reform = ambrosian_republic
+					#add_government_reform = ambrosian_republic
 					#set_legacy_government = ambrosian_republic_legacy
 					define_ruler = {
 						claim = 95
@@ -1107,7 +1107,7 @@ restore_old_nation_on_formation_effect = {
 				}
 				event_target:old_tag_target = {
 					change_government = republic
-					add_government_reform = dutch_republic
+					#add_government_reform = dutch_republic
 					#set_legacy_government = dutch_republic_legacy
 					define_ruler = {
 						claim = 95
@@ -1120,7 +1120,7 @@ restore_old_nation_on_formation_effect = {
 				}
 				event_target:old_tag_target = {
 					change_government = republic
-					add_government_reform = cossacks_reform
+					#add_government_reform = cossacks_reform
 					#set_legacy_government = cossacks_legacy_reform
 					define_ruler = {
 						claim = 95

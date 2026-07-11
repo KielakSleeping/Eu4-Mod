@@ -1426,7 +1426,7 @@ hereditary_religious_leadership_reform = {
 				}
 			}
 		}
-		add_government_reform = feudal_theocracy
+		#add_government_reform = feudal_theocracy
 	}
 	ai = {
 		factor = 0

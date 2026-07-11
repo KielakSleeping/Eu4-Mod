@@ -3310,7 +3310,7 @@ woc_hun_fifth_branch = {
 					religion_group = christian
 					government = monarchy
 				}
-				add_government_reform = apostolic_kingdom
+				#add_government_reform = apostolic_kingdom
 			}
 		}
 	}
