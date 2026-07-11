@@ -11631,6 +11631,8 @@ erdene_zuu = {
 	}
 }
 
+}
+
 etchimiadzin_cathedral = {
 	start = 419 #Yerevan
 	date = 301.01.01
