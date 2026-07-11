@@ -3418,7 +3418,7 @@ impressment_offices = {
 
 	manufactory = {
 		all
-	}
+	}	
 
 	# build_trigger = {
 	# 	has_port = yes
@@ -3489,6 +3489,11 @@ state_house = {
 	cost = 500
 	time = 60
 
+	bonus_manufactory = { # Will apply an extra modifier if these goods
+		gems
+		glass
+	}
+
 	build_trigger = {
 		NOT = {
 			area_for_scope_province = {
@@ -3519,18 +3524,19 @@ state_house = {
 	}
 
 	modifier = {
-		local_centralize_state_cost = -0.33
+		local_tax_modifier = 1
+		state_governing_cost_increase = -0.33
+		allowed_num_of_buildings = 1
+		allowed_num_of_manufactories = 1
 	}
-	
+		bonus_modifier = {
+		local_tax_modifier = 1
+		state_governing_cost_increase = -0.33
+	}
+
 	onmap = no
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
 	on_built = {
-		area = {
-			add_province_modifier = {
-				name = kielak_state_house
-				duration = -1
-			}
-		}
 		bastard_dev_cost_add_from_buildings = yes
 		add_development_from_building = {
 			building = state_house
@@ -3539,9 +3545,6 @@ state_house = {
 		}
 	}
 	on_destroyed = {
-		area = {
-			remove_province_modifier = kielak_state_house
-		}
 		bastard_dev_cost_remove_from_buildings = yes
 		remove_development_from_building = {
 			building = state_house
