@@ -1,48 +1,16 @@
 clerical_poverty_aspect = {
 	cost = 100
 	modifier = {
-		church_influence_modifier = -0.1
-		stability_cost_modifier = -0.15
-	}
-	effect = {
-		hidden_effect = { 
-			if = {
-				limit = {
-					has_country_flag = boh_aspect_refund_chance
-				}
-				random_list = { 
-					20 = { 
-						add_church_power = 25
-					}
-					80 = { 
-					}
-				}
-			}
-		}
+		global_tax_modifier = 0.2
+		stability_cost_modifier = -0.2
 	}
 }
 
 punishment_of_sins_aspect = {
 	cost = 100
 	modifier = {
-		discipline = 0.025
+		fort_maintenance_modifier = -0.1
 		yearly_corruption = -0.1
-	}
-	effect = {
-		hidden_effect = { 
-			if = {
-				limit = {
-					has_country_flag = boh_aspect_refund_chance
-				}
-				random_list = { 
-					20 = { 
-						add_church_power = 25
-					}
-					80 = { 
-					}
-				}
-			}
-		}
 	}
 }
 
@@ -50,23 +18,7 @@ orphan_hetmans_aspect = {
 	cost = 100
 	modifier = {
 		army_tradition_decay = -0.01
-		army_tradition = 0.01
-	}
-	effect = {
-		hidden_effect = { 
-			if = {
-				limit = {
-					has_country_flag = boh_aspect_refund_chance
-				}
-				random_list = { 
-					20 = { 
-						add_church_power = 25
-					}
-					80 = { 
-					}
-				}
-			}
-		}
+		navy_tradition_decay = -0.01
 	}
 }
 
@@ -74,23 +26,7 @@ bread_and_wine_aspect = {
 	cost = 100
 	modifier = {
 		tolerance_own = 1
-		global_trade_goods_size = 0.2
-	}
-	effect = {
-		hidden_effect = { 
-			if = {
-				limit = {
-					has_country_flag = boh_aspect_refund_chance
-				}
-				random_list = { 
-					20 = { 
-						add_church_power = 25
-					}
-					80 = { 
-					}
-				}
-			}
-		}
+		global_trade_goods_size_modifier = 0.1
 	}
 }
 
@@ -98,172 +34,48 @@ sola_scriptura_aspect = {
 	cost = 100
 	modifier = {
 		warscore_cost_vs_other_religion = -0.1
-	}
-	effect = {
-		hidden_effect = { 
-			if = {
-				limit = {
-					has_country_flag = boh_aspect_refund_chance
-				}
-				random_list = { 
-					20 = { 
-						add_church_power = 25
-					}
-					80 = { 
-					}
-				}
-			}
-		}
+		ae_impact = -0.1
 	}
 }
 
 adamite_services_aspect = {
 	cost = 100
 	modifier = {
-		culture_conversion_cost = -0.2
-		culture_conversion_time = -0.2
-	}
-	effect = {
-		hidden_effect = { 
-			if = {
-				limit = {
-					has_country_flag = boh_aspect_refund_chance
-				}
-				random_list = { 
-					20 = { 
-						add_church_power = 25
-					}
-					80 = { 
-					}
-				}
-			}
-		}
+		culture_conversion_cost = -0.15
+		development_cost_in_primary_culture = -0.05
 	}
 }
 
 pacifism_aspect = {
 	cost = 100
 	modifier = {
-		diplomatic_annexation_cost = -0.15
-		improve_relation_modifier = 0.3
+		diplomatic_reputation = 2
+		improve_relation_modifier = 0.4
 	}
 	ai_will_do = {
 		factor = 0
-	}
-	effect = {
-		hidden_effect = { 
-			if = {
-				limit = {
-					has_country_flag = boh_aspect_refund_chance
-				}
-				random_list = { 
-					20 = { 
-						add_church_power = 25
-					}
-					80 = { 
-					}
-				}
-			}
-		}
 	}
 }
 
 regular_defenestrations_aspect = {
 	cost = 100
 	modifier = {
-		infantry_shock = 0.1
-	}
-	effect = {
-		hidden_effect = { 
-			if = {
-				limit = {
-					has_country_flag = boh_aspect_refund_chance
-				}
-				random_list = { 
-					20 = { 
-						add_church_power = 25
-					}
-					80 = { 
-					}
-				}
-			}
-		}
+		global_unrest = -2
+		core_creation = -0.1
 	}
 }
 
 taborite_resurgence_aspect = {
 	cost = 100
 	modifier = {
-		global_manpower_modifier = 0.2
-	}
-	effect = {
-		hidden_effect = { 
-			if = {
-				limit = {
-					has_country_flag = boh_aspect_refund_chance
-				}
-				random_list = { 
-					20 = { 
-						add_church_power = 25
-					}
-					80 = { 
-					}
-				}
-			}
-		}
+		global_manpower_modifier = 0.25
 	}
 }
 
 freedom_to_preach_aspect = {
 	cost = 100
 	modifier = {
-		idea_Cost = -0.05
-		tolerance_heretic = 3
-	}
-	effect = {
-		hidden_effect = { 
-			if = {
-				limit = {
-					has_country_flag = boh_aspect_refund_chance
-				}
-				random_list = { 
-					20 = { 
-						add_church_power = 25
-					}
-					80 = { 
-					}
-				}
-			}
-		}
-	}
-}
-
-rekindle_the_hussite_wars_aspect = {
-	cost = 200
-	potential = {
-		has_dlc = "Winds of Change"
-	}
-	trigger = {
-		has_dlc = "Winds of Change"
-		mission_completed = boh_defenestrate_the_heretics
-	}
-	modifier = {
-		cb_on_religious_enemies = yes
-	}
-	effect = {
-		hidden_effect = { 
-			if = {
-				limit = {
-					has_country_flag = boh_aspect_refund_chance
-				}
-				random_list = { 
-					20 = { 
-						add_church_power = 25
-					}
-					80 = { 
-					}
-				}
-			}
-		}
+		innovativeness_gain = 0.5
+		tolerance_heretic = 2
 	}
 }
