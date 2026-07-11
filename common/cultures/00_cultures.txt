@@ -8,6 +8,11 @@
 # second_graphical_culture = muslimgfx (fallback if the first does not exist)
 
 germanic = {
+	
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+		
 	graphical_culture = westerngfx
 
 	male_names = { Gunther Rolf }
@@ -459,6 +464,10 @@ germanic = {
 }
 
 scandinavian = { #Nordic
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+		
 	graphical_culture = westerngfx
 
 	#country = { land_forcelimit_modifier = 0.25}
@@ -711,6 +720,11 @@ scandinavian = { #Nordic
 }
 
 british	= {
+	
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+		
 	graphical_culture = westerngfx
 
 	english = {
@@ -951,9 +965,11 @@ british	= {
 }
 
 gaelic	= {
-	graphical_culture = westerngfx
+	province = { local_has_samurai = yes }
 
 	province = { local_has_tercio = yes }
+		
+	graphical_culture = westerngfx
 	
 	irish = {
 		primary = IRE
@@ -1106,6 +1122,10 @@ gaelic	= {
 }
 	
 latin = {
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+		
 	graphical_culture = westerngfx
 
 	lombard = {
@@ -1267,10 +1287,13 @@ latin = {
 }
 
 iberian	= {
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+		
 	graphical_culture = westerngfx
 	
 	country = { }
-	province = { local_has_tercio = yes }
 	castillian = {
 		country = { } 
 		province = { local_has_caravel = yes local_has_galleon = yes }
@@ -1589,6 +1612,10 @@ iberian	= {
 }
 	
 french	= {
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+		
 	graphical_culture = westerngfx
 	cosmopolitan_french = {
 		
@@ -1786,6 +1813,10 @@ french	= {
 }
 
 finno_ugric = { #Ugric
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+		
 	graphical_culture = westerngfx
 	
 	uralic = {
@@ -1864,6 +1895,10 @@ finno_ugric = { #Ugric
 }
 	
 south_slavic = {
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+		
 	graphical_culture = easterngfx
 
 	croatian = {
@@ -2008,6 +2043,10 @@ south_slavic = {
 }
 	
 west_slavic = {
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+		
 	graphical_culture = westerngfx
 
 	czech = {
@@ -2160,6 +2199,10 @@ west_slavic = {
 }
 
 carpathian = {	
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+		
 	graphical_culture = easterngfx
 	transylvanian = {
 		primary = TRA
@@ -2304,6 +2347,10 @@ carpathian = {
 }
 	
 east_slavic = {
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+		
 	graphical_culture = easterngfx
 	russian = { #Muscovite - Vladimir-Suzdal dialects
 		primary = MOS
@@ -2479,6 +2526,10 @@ east_slavic = {
 }
 
 slavic = {
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+		
 	graphical_culture = easterngfx
 	russian_new = { #Muscovite - Vladimir-Suzdal dialects
 		male_names = {
@@ -2869,6 +2920,10 @@ slavic = {
 }
 
 baltic	= {
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+		
 	graphical_culture = easterngfx
 	
 	estonian = {
@@ -2989,6 +3044,10 @@ baltic	= {
 }
 
 byzantine = {
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+		
 	graphical_culture = easterngfx
 	greek = {
 		primary = GRE
@@ -3535,6 +3594,10 @@ byzantine = {
 }
 
 caucasian = {
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+		
 	graphical_culture = easterngfx
 	georgian = {
 		primary = GEO
@@ -3647,6 +3710,10 @@ caucasian = {
 }
 
 turko_semitic = { #Levantine
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+		
 	graphical_culture = muslimgfx
 	
 	turkish = {
@@ -3912,6 +3979,10 @@ turko_semitic = { #Levantine
 }
 
 maghrebi = {
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+		
 	graphical_culture = muslimgfx
 	moroccan = {
 		primary = MOR
@@ -4007,6 +4078,10 @@ maghrebi = {
 }
 	
 iranian	= {
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+		
 	graphical_culture = muslimgfx
 	persian = {
 		primary = PER
@@ -4378,6 +4453,10 @@ iranian	= {
 }
 
 altaic = {
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+		
 	graphical_culture = muslimgfx
 
 	mongol = {
@@ -4609,6 +4688,10 @@ altaic = {
 }
 	
 central_american = {
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+		
 	graphical_culture = southamericagfx
 
 	aztek = {
@@ -4672,6 +4755,10 @@ central_american = {
 }
 
 aridoamerican = {
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+		
 	graphical_culture = southamericagfx
 	tecos = {
 		primary = CLM
@@ -4784,6 +4871,10 @@ aridoamerican = {
 }
 
 maya = {
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+		
 	graphical_culture = southamericagfx
 
 	yucatec = {
@@ -4889,6 +4980,10 @@ maya = {
 } 
 
 otomanguean = {
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+		
 	graphical_culture = southamericagfx
 	zapotek = {
 		primary = ZAP
@@ -4933,6 +5028,10 @@ otomanguean = {
 }
 
 andean_group = {
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+		
 	graphical_culture = southamericagfx
 	
 	inca = { # Quechua
@@ -5008,6 +5107,10 @@ andean_group = {
 }
 
 je_tupi = { # Tupi
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+		
 	graphical_culture = northamericagfx
 	
 	tupinamba = {
@@ -5039,6 +5142,10 @@ je_tupi = { # Tupi
 }
 
 je = {
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+		
 	graphical_culture = northamericagfx
 	charruan = {
 		primary = CUA
@@ -5067,6 +5174,10 @@ je = {
 }
 
 maranon = {
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+		
 	graphical_culture = southamericagfx
 	jivaro = {
 		male_names = {
@@ -5095,6 +5206,10 @@ maranon = {
 }
 
 chibchan = {
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+		
 	graphical_culture = southamericagfx
 	
 	muisca = {
@@ -5145,6 +5260,10 @@ chibchan = {
 }
 
 mataco = {	#Matacoan
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+		
 	graphical_culture = northamericagfx
 	
 	chacoan = {
@@ -5161,6 +5280,10 @@ mataco = {	#Matacoan
 }
 
 araucanian = {
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+		
 	graphical_culture = northamericagfx
 	
 	mapuche = {
@@ -5214,6 +5337,10 @@ araucanian = {
 }
 
 carribean = {
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+		
 	graphical_culture = northamericagfx
 
 	arawak = { #Taino
@@ -5258,6 +5385,10 @@ carribean = {
 }
 
 eskaleut = {
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+		
 	graphical_culture = inuitgfx
 	second_graphical_culture = northamericagfx
 
@@ -5290,6 +5421,10 @@ eskaleut = {
 }
 
 central_algonquian = {
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+		
 	graphical_culture = northamericagfx
 	
 	shawnee = {
@@ -5460,6 +5595,11 @@ central_algonquian = {
 }
 
 plains_algonquian = {
+	
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+		
 	graphical_culture = northamericagfx
 
 	cheyenne = {
@@ -5567,6 +5707,11 @@ plains_algonquian = {
 }
 
 eastern_algonquian = {
+
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+			
 	graphical_culture = northamericagfx
 	
 	delaware = {
@@ -5708,6 +5853,11 @@ eastern_algonquian = {
 }
 
 iroquoian = {
+	
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+		
 	graphical_culture = northamericagfx
 	
 	iroquois = {
@@ -5851,6 +6001,11 @@ iroquoian = {
 }
 
 siouan = {
+
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+			
 	graphical_culture = northamericagfx
 	
 	dakota = {
@@ -5944,6 +6099,11 @@ siouan = {
 }
 
 caddoan = {
+
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+			
 	graphical_culture = northamericagfx
 
 	wichita = {
@@ -6003,6 +6163,11 @@ caddoan = {
 	
 
 muskogean = {
+
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+			
 	graphical_culture = northamericagfx
 	
 	creek = {
@@ -6183,6 +6348,11 @@ muskogean = {
 }
 
 sonoran = {
+
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+			
 	graphical_culture = northamericagfx
 	
 	pueblo = {
@@ -6245,6 +6415,11 @@ sonoran = {
 }
 
 apachean = {
+
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+			
 	graphical_culture = northamericagfx
 	apache = {
 		primary = APA
@@ -6324,6 +6499,11 @@ apachean = {
 	}
 }
 na_dene = {
+
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+			
 	graphical_culture = northamericagfx
 
 	chipewyan = {
@@ -6372,6 +6552,11 @@ na_dene = {
 }
 
 penutian = {
+
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+			
 	graphical_culture = northamericagfx
 	salish = {
 		primary = SAL
@@ -6429,6 +6614,11 @@ penutian = {
 }
 
 east_asian = {	# Chinese Group
+
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+		
 	graphical_culture = asiangfx
 	vietnamese_new = {
 		#primary = DAI
@@ -6929,6 +7119,11 @@ east_asian = {	# Chinese Group
 }
 
 korean_g = {
+
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+			
 	graphical_culture = asiangfx
 	
 	korean = {
@@ -6964,6 +7159,11 @@ korean_g = {
 }
 
 japanese_g = {
+
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+			
 	graphical_culture = asiangfx
 	country = { has_samurai = yes }
 	province = { local_has_samurai = yes }
@@ -7052,6 +7252,11 @@ japanese_g = {
 
 
 tibetan_group = {
+
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+			
 	graphical_culture = asiangfx
 	tibetan = {
 		primary = UTS
@@ -7120,7 +7325,12 @@ tibetan_group = {
 }
 
 
-malay = { 
+malay = {
+
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+			 
 	graphical_culture = southeastasiangfx
 	second_graphical_culture = asiangfx
 	malayan = {
@@ -7326,6 +7536,11 @@ malay = {
 }
 
 thai_group = {
+
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+			
 	graphical_culture = southeastasiangfx
 	second_graphical_culture = asiangfx
 
@@ -7414,7 +7629,12 @@ thai_group = {
 	}
 }
 
-southeastasian_group = { 
+southeastasian_group = {
+
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+			 
 	graphical_culture = southeastasiangfx
 	second_graphical_culture = asiangfx
 	khmer = {
@@ -7475,6 +7695,11 @@ southeastasian_group = {
 }
 
 burman = {
+
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+			
 	graphical_culture = asiangfx
 
 	burmese = {
@@ -7553,6 +7778,11 @@ burman = {
 }
 
 pacific = {
+
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+			
 	graphical_culture = polynesiangfx
 	second_graphical_culture = northamericagfx
 
@@ -7627,6 +7857,11 @@ pacific = {
 }
 
 aboriginal_australian = {
+	
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+		
 	graphical_culture = aboriginalgfx
 	second_graphical_culture = africangfx
 	
@@ -7871,6 +8106,11 @@ aboriginal_australian = {
 }
 
 eastern_aryan = {
+
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+			
 	graphical_culture = indiangfx
 
 	assamese = {
@@ -8120,6 +8360,11 @@ eastern_aryan = {
 }
 
 hindusthani = {
+
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+			
 	graphical_culture = indiangfx
 
 	avadhi = {
@@ -8257,6 +8502,11 @@ hindusthani = {
 }
 
 western_aryan = {
+
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+			
 	graphical_culture = indiangfx
 
 	gujarati = {
@@ -8546,6 +8796,11 @@ western_aryan = {
 }
 
 dravidian = {
+
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+			
 	graphical_culture = indiangfx
 
 	kannada = {
@@ -8699,6 +8954,11 @@ dravidian = {
 }
 
 central_indic = {
+
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+			
 	graphical_culture = indiangfx
 
 	gondi = {
@@ -8799,6 +9059,11 @@ central_indic = {
 }
 
 mande = {
+
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+			
 	graphical_culture = africangfx
 	mali = {
 		primary = MAL
@@ -8913,6 +9178,11 @@ mande = {
 }
 
 sahelian = {
+
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+			
 	graphical_culture = africangfx
 	
 	hausa = {
@@ -9129,6 +9399,11 @@ sahelian = {
 }
 
 west_african = {
+
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+			
 	graphical_culture = africangfx
 	
 	yorumba = {
@@ -9256,6 +9531,11 @@ west_african = {
 }	
 
 southern_african = {
+
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+
 	graphical_culture = africangfx
 	makua = {
 		primary = MKU
@@ -9341,6 +9621,11 @@ southern_african = {
 }
 
 kongo_group = {
+
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+
 	graphical_culture = africangfx
 	lunda = {
 		primary = LND
@@ -9386,6 +9671,11 @@ kongo_group = {
 }
 
 great_lakes_group = {
+
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+
 	graphical_culture = africangfx
 	rwandan = {
 		primary = RWA
@@ -9435,6 +9725,11 @@ great_lakes_group = {
 }
 
 african = {	#Eastern Bantu Groups
+
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+
 	graphical_culture = africangfx
 	
 	madagasque = {
@@ -9539,6 +9834,11 @@ african = {	#Eastern Bantu Groups
 }
 
 cushitic = {
+
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+
 	graphical_culture = africangfx
 	
 	somali = {
@@ -9688,6 +9988,11 @@ cushitic = {
 }
 
 sudanese = {
+
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+
 	graphical_culture = africangfx
 	
 	acholi = {
@@ -9742,6 +10047,11 @@ sudanese = {
 }
 
 evenks = {
+
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+
 	graphical_culture = inuitgfx
 	second_graphical_culture = asiangfx
 	evenk = {
@@ -9843,6 +10153,11 @@ evenks = {
 
 
 kamchatkan_g = {
+
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+
 	graphical_culture = inuitgfx
 	second_graphical_culture = asiangfx
 	
@@ -9893,6 +10208,11 @@ kamchatkan_g = {
 
 tartar	= {
 	graphical_culture = muslimgfx
+
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+	
 	astrakhani = {
 		primary = AST
 		dynasty_names = {
@@ -10032,6 +10352,11 @@ tartar	= {
 
 #Cultures for use with the nation designer:
 lost_cultures_group = {
+
+	province = { local_has_samurai = yes }
+
+	province = { local_has_tercio = yes }
+
 	atlantean = { #EU Rome
 		dynasty_names = {
 			Alcetid Apollonid Aratid Helladid Omirid Peithid Peneid Philonid Proctid Pytheid Sosiclid Therid Theronid Timolid Xenonid
