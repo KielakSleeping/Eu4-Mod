@@ -5221,7 +5221,7 @@ sav_savoyard_army = {
 #Italian missions
 
 ita_italian_prosperity = {
-	development_cost = -0.1
+	development_cost = -0.025
 	stability_cost_modifier = -0.25
 }
 
@@ -12326,7 +12326,7 @@ ITA_integration_with_southern_france = {
 ITA_unity = {
 	#local_development_cost = -0.1
 	local_prosperity_growth = 0.33
-	trade_goods_size_modifier = 0.10
+	trade_goods_size_modifier = 0.05
 }
 
 ITA_allow_galleasses = {

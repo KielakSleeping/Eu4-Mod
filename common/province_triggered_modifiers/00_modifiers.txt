@@ -1828,7 +1828,7 @@ ITA_flowering_of_renaissance = {
 		controlled_by = owner
 	}
 
-	yearly_innovativeness = 0.25
+	# yearly_innovativeness = 0.25
 	institution_growth = 3
 	global_prosperity_growth = 0.5
 	
