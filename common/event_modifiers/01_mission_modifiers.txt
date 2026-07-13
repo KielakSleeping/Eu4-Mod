@@ -7258,7 +7258,7 @@ zan_kilwan_trade_dominance = {
 
 #Country modifier permanent
 zan_master_of_the_trade = {
-	trade_efficiency = 0.15
+	trade_efficiency = 0.05
 }
 
 #Country modifier

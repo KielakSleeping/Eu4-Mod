@@ -799,7 +799,7 @@ kilwa_asia_trade_missions_slot = {
 					}
 					add_province_modifier = {
 						name = zan_conversion_of_fetishist
-						duration = 9125
+						duration = 3650
 					}
 				}
 				southern_madagascar = {
@@ -808,7 +808,7 @@ kilwa_asia_trade_missions_slot = {
 					}
 					add_province_modifier = {
 						name = zan_conversion_of_fetishist
-						duration = 9125
+						duration = 3650
 					}
 				}
 				sakalava_area = {
@@ -817,7 +817,7 @@ kilwa_asia_trade_missions_slot = {
 					}
 					add_province_modifier = {
 						name = zan_conversion_of_fetishist
-						duration = 9125
+						duration = 3650
 					}
 				}
 				betsimasaraka_area = {
@@ -826,7 +826,7 @@ kilwa_asia_trade_missions_slot = {
 					}
 					add_province_modifier = {
 						name = zan_conversion_of_fetishist
-						duration = 9125
+						duration = 3650
 					}
 				}
 			}
