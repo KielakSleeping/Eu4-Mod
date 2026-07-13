@@ -2845,14 +2845,14 @@ estate_burghers_financial_demand = {
 	benefits = {
 		interest = -0.5
 		build_cost = 2
+		advisor_cost = 2
 		center_of_trade_upgrade_cost = 2
 		great_project_upgrade_cost = 2
-		great_project_upgrade_time = 2
 		#build_time = 1
 		#all_power_cost = 0.05
 		#can_not_declare_war = yes
 	}
-	cooldown_years = 5
+	cooldown_years = 7
 	on_cooldown_expires = {
 		country_event = { id = echo.14 }
 	}

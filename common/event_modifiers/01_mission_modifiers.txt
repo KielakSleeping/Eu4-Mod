@@ -3281,7 +3281,7 @@ tau_elephant_battle = {
 }
 
 tau_expansionism = {
-	governing_capacity_modifier = 0.1
+	governing_capacity_modifier = 0.025
 }
 
 tau_buddhist_defender = {
@@ -6260,7 +6260,7 @@ indonesia_trade_dominance = {
 }
 
 indonesia_spice_must_flow = {
-	global_trade_goods_size_modifier = 0.05
+	global_trade_goods_size_modifier = 0.01
 }
 
 malay_vassal_income = {
@@ -6268,7 +6268,7 @@ malay_vassal_income = {
 }
 
 malay_convert_cost_modifier = {
-	advisor_cost = -0.15
+	advisor_cost = -0.075
 }
 
 malay_tolerance_own = {
@@ -6276,11 +6276,11 @@ malay_tolerance_own = {
 }
 
 malay_united_nusantara = {
-	infantry_power = 0.1
+	infantry_power = 0.01
 }
 
 malay_military_domination = {
-	land_morale = 0.1
+	land_morale = 0.025
 }
 
 # Cham Missions
@@ -6330,8 +6330,7 @@ mlc_trade_modifier = {
 }
 
 mlc_morale = {
-	land_morale = 0.1
-	naval_morale = 0.1
+	land_morale = 0.025
 }
 
 mlc_subjects = {
