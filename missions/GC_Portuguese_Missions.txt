@@ -1657,10 +1657,10 @@ gc_por_5_dom = {
 			2999 = {
 				add_permanent_claim = ROOT
 			}
-			add_country_modifier = {
-				name = prester_john_discovered
-				duration = -1
-			}
+			# add_country_modifier = {
+			# 	name = prester_john_discovered
+			# 	duration = -1
+			# }
 		}
 	}
 }

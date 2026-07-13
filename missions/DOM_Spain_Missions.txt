@@ -185,10 +185,10 @@ dom_cas_missions_1 = {
 			}
 		}
 		effect = {
-			add_country_modifier = {
-				name = "spa_prepared_armada"
-				duration = 7300
-			}
+			# add_country_modifier = {
+			# 	name = "spa_prepared_armada"
+			# 	duration = 7300
+			# }
 			if = {
 				limit = {
 					exists = GBR
@@ -743,10 +743,10 @@ dom_cas_missions_1_c = {
 				name = spa_powerful_trade_ships_modifier
 				duration = 9125 
 			}
-			add_country_modifier = {
-				name = spa_employ_galleon_modifier
-				duration = -1 
-			}
+			# add_country_modifier = {
+			# 	name = spa_employ_galleon_modifier
+			# 	duration = -1 
+			# }
 			add_navy_tradition = 10
 		}
 	}
@@ -1051,8 +1051,8 @@ dom_cas_missions_2 = {
 			NOT = { current_age = age_of_discovery }
 		}
 		effect = {
-			set_country_flag = enable_tercios_reform_flag
-			add_government_reform = tercios_reform
+			# set_country_flag = enable_tercios_reform_flag
+			# add_government_reform = tercios_reform
 			if = {
 				limit = { has_dlc = "Cradle of Civilization" }
 				add_army_professionalism = 0.05
@@ -1073,10 +1073,10 @@ dom_cas_missions_2 = {
 			}
 		}
 		effect = {
-			add_country_modifier = {
-				name = spa_reformed_tercio_modifier
-				duration = -1 
-			}
+			# add_country_modifier = {
+			# 	name = spa_reformed_tercio_modifier
+			# 	duration = -1 
+			# }
 			if = { 
 				limit = { 
 					has_dlc = "Rights of Man" 

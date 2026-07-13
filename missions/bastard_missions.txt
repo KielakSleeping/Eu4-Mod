@@ -123,15 +123,15 @@ X_POR_slot_3 = {
 				estate = estate_nobles
 				desc = X_POR_estate_nobility_mission_2_lmod
 				loyalty = 10
-				duration = 18250
+				duration = 9125
 			}
 			add_country_modifier = {
 				name = X_POR_portugese_renaissance_cmod
-				duration = 18250
+				duration = 9125
 			}
 			add_country_modifier = {
 				name = X_POR_manueline_architecture_cmod
-				duration = 18250
+				duration = 9125
 			}
 		}
 	}

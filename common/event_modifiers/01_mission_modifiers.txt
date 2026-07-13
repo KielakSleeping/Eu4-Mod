@@ -1597,7 +1597,6 @@ por_ivory_gains = {
 
 por_brazil_colonial = {
 	innovativeness_gain = 0.5
-	naval_morale = 0.1
 	navy_tradition = 1 
 }
 
@@ -2045,8 +2044,7 @@ spa_hispaniola_discovered = {
 }
 
 spa_rb_morale = {
-	land_morale = 0.05
-	naval_morale = 0.05
+	land_morale = 0.025
 }
 
 spa_rb_culture_shift = {
@@ -9872,7 +9870,7 @@ spa_long_range_logistics_modifier = {
 }
 
 spa_backed_by_the_army_modifier = {
-	morale_damage = 0.1
+	morale_damage = 0.05
 	navy_tradition_decay = -0.01
 	army_tradition_decay = -0.01
 }
@@ -10048,10 +10046,10 @@ spa_employ_galleon_modifier = {
 }
 
 por_reform_navy_1_modifier = {
-	allowed_caravel_fraction = 0.1
-	allowed_galleon_fraction = 0.1
-	has_caravel = yes 
-	has_galleon = yes
+	# allowed_caravel_fraction = 0.1
+	# allowed_galleon_fraction = 0.1
+	# has_caravel = yes 
+	# has_galleon = yes
 	navy_tradition = 0.5
 }
 
