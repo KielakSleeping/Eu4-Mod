@@ -42,7 +42,7 @@ gc_african_gold_modifier = {
 }
 
 berber_fury = {
-	land_morale = 0.1
+	land_morale = 0.05
 }
 
 gc_mor_italy = {

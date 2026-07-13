@@ -3725,7 +3725,7 @@ conquest_of_benin_mor = {
 }
 
 mor_privateering = {
-	development_cost_in_primary_culture = -0.1
+	development_cost_in_primary_culture = -0.05
 }
 
 mor_el_badi_palace = {
@@ -3735,11 +3735,11 @@ mor_el_badi_palace = {
 }
 
 mor_black_guard = {
-	discipline = 0.025
+	discipline = 0.01
 }
 
 mor_conquest_of_kanem = {
-	land_morale = 0.1
+	land_morale = 0.05
 	movement_speed = 0.1
 }
 
@@ -3752,7 +3752,7 @@ mor_north_sea_corsairs = {
 }
 mor_andalucia = {
 	global_missionary_strength = 0.03
-	land_morale = 0.1
+	land_morale = 0.05
 }
 mor_tunis_conquest = {
 	galley_power = 0.2
