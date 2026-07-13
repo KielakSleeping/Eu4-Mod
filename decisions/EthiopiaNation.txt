@@ -23,7 +23,10 @@ country_decisions = {
 			}
 			NOT = { tag = HLR }
 			NOT = { tag = PAP }
-			culture_group = cushitic
+			OR = { 
+				culture_group = cushitic
+				culture_group = sudanese
+			}
 			is_colonial_nation = no
 			OR = {
 				is_former_colonial_nation = no

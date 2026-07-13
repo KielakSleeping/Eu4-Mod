@@ -6706,7 +6706,7 @@ eth_legacy_of_alexandria = {
 
 #Country modifier
 eth_coptic_offense = {
-	land_morale = 0.1
+	land_morale = 0.05
 }
 
 #Country modifier
@@ -6776,14 +6776,14 @@ eth_merchants_in_europe = {
 
 #Country modifier
 eth_modernized_army = {
-	discipline = 0.05
+	discipline = 0.025
 }
 
 #Permanent Country modifier
 eth_blessed_empire = {
 	tolerance_own = 3
 	stability_cost_modifier = -0.15
-	manpower_in_true_faith_provinces = 0.3
+	manpower_in_true_faith_provinces = 0.05
 }
 
 #Country modifier
