@@ -661,7 +661,7 @@ kielak_ipa_anti_abuse_debuff = {
 }
 
 kielak_bengal_morale_mission = {
-	land_morale = 0.1
+	land_morale = 0.05
 }
 
 kielak_colonial_formable_carribean_may_raid_coasts = {

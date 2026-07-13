@@ -112,7 +112,7 @@ mer_western_expansion = {
 			add_army_tradition = 30
 			add_country_modifier = {
 				name = "united_saurashtra"
-				duration = 10950
+				duration = 3650
 			}
 		}
 		ai_weight = {
@@ -276,11 +276,7 @@ mer_delhi = {
 			}
 		}
 		effect = {
-			create_general = { tradition = 75 }
-			add_country_modifier = {
-				name = "mer_united_rajputana"
-				duration = 7300
-			}
+			add_adm_power = 50
 			sirhind_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -696,7 +692,7 @@ mer_gurjaratra = {
 		effect = {
 			add_country_modifier = {
 				name = "mer_plains_of_punjab"
-				duration = 10950
+				duration = 3650
 			}
 		}
 		ai_weight = {
@@ -1059,7 +1055,7 @@ mer_army_tree = {
 		effect = {
 			add_country_modifier = {
 				name = "mer_marwari_cavalry"
-				duration = 10950
+				duration = 3650
 			}
 		}
 		ai_weight = {
@@ -1074,14 +1070,6 @@ mer_army_tree = {
 		}
 		position = 4
 		trigger = {
-			estate_influence = {
-				estate = estate_rajput
-				influence = 70
-			}
-			estate_loyalty = {
-				estate = estate_rajput
-				loyalty = 60
-			}
 			has_global_modifier_value = {
 				which = discipline
 				value = 0.2
@@ -1089,11 +1077,7 @@ mer_army_tree = {
 			}
 		}
 		effect = {
-			create_general = { tradition = 75 }
-			add_country_modifier = {
-				name = "mer_purbias"
-				duration = 10950
-			}
+			add_mil_power = 50
 		}
 		ai_weight = {
 			factor = 500	#Tall
@@ -1122,10 +1106,9 @@ mer_army_tree = {
 			}
 		}
 		effect = {
-			create_general = { tradition = 75 }
 			add_country_modifier = {
 				name = "mer_rajput_army"
-				duration = 10950
+				duration = 5475
 			}
 		}
 		ai_weight = {

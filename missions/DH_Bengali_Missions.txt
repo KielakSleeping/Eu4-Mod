@@ -30,7 +30,7 @@ bng_slot_1 = {
 		effect = {
 			add_country_modifier = {
 				name = "bng_orissa_conquest"
-				duration = 7300
+				duration = 3650
 			}
 			jharkhand_area = {
 				limit = {
@@ -931,10 +931,7 @@ bng_slot_4 = {
 			}
 		}
 		effect = {
-			add_country_modifier = {
-				name = "bng_defied_china"
-				duration = -1
-			}
+			add_mil_power = 100
 		}
 		ai_weight = {
 			factor = 0	#Bengal should focus more on Indian stuff
@@ -1261,16 +1258,7 @@ bng_slot_5 = {
 			num_of_heavy_ship = 50
 		}
 		effect = {
-			if = {
-				limit = {
-					has_dlc = "Rule Britannia"
-				}
-				add_innovativeness_big_effect = yes
-			}
-			add_country_modifier = {
-				name = "bng_proto_industrial_shipyards"
-				duration = -1
-			}
+			add_dip_power = 100
 		}
 		ai_weight = {
 			factor = 500	#Tall
