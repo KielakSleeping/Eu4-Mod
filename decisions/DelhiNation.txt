@@ -3,16 +3,19 @@ country_decisions = {
 	sultan_of_delhi = {
 		major = yes
 		potential = {
-			always = no
 			normal_or_historical_nations = yes
-			government = monarchy
 			was_never_end_game_tag_trigger = yes
+			NOT = { has_country_flag = formed_bengal }
+			NOT = { has_country_flag = formed_vijayanagar }
+			NOT = { has_country_flag = formed_bahmanis }
+			NOT = { has_country_flag = formed_mewar }
 			NOT = { has_country_flag = formed_delhi }
-			religion_group = muslim
 			OR = {
 				culture_group = hindusthani
 				culture_group = western_aryan
 				culture_group = eastern_aryan
+				culture_group = dravidian
+				culture_group = central_indian
 			}
 			NOT = { tag = DLH }
 		}
@@ -43,6 +46,7 @@ country_decisions = {
 		}
 		allow = {
 			is_free_or_tributary_trigger = yes
+			adm_tech = 7
 			is_nomad = no
 			is_at_war = no
 			is_tribal = no
