@@ -326,7 +326,7 @@ X_CRI_end_of_the_cossacks_cmod = {
 }
 
 X_CRI_ruthenian_dominance_cmod = {
-	governing_capacity_modifier = 0.25
+	governing_capacity_modifier = 0.10
 	vassal_income = 0.2
 }
 

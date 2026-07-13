@@ -2471,7 +2471,7 @@ mos_rus_russian_steppes = {
 				}
 				add_country_modifier = {
 					name = rus_end_of_the_horde
-					duration = 36500
+					duration = 3650
 				}"
 			}
 		}

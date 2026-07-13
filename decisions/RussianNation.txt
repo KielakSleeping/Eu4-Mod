@@ -22,9 +22,9 @@ country_decisions = {
 				ai = no
 			}
 			NOT = { tag = POL }
-			NOT = { tag = RUS }
+			NOT = { tag = MOS }
 			OR = {
-				NOT = { exists = RUS }
+				NOT = { exists = MOS }
 				ai = no
 			}
 			NOT = { tag = PAP }
@@ -81,7 +81,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			NOT = { exists = RUS }
+			NOT = { exists = MOS }
 			adm_tech = 7
 			NOT = { has_reform = states_general_reform }
 			if = {
@@ -122,24 +122,24 @@ country_decisions = {
 					complete_mission = tr_subjugate_novgorod
 				}
 			}
-			change_tag = RUS
+			change_tag = MOS
 			swap_non_generic_missions = yes
 			on_change_tag_effect = yes
 			remove_non_electors_emperors_from_empire_effect = yes
-			if = {
-				limit = { is_revolutionary = no }
-				if = {
-					limit = { government = republic }
-					add_government_reform = great_veche_republic
-				}
-				else = {
-					if = {
-						limit = { NOT = { government = monarchy } }
-						change_government = monarchy
-					}
-					add_government_reform = tsardom
-				}
-			}
+			# if = {
+			# 	limit = { is_revolutionary = no }
+			# 	if = {
+			# 		limit = { government = republic }
+			# 		add_government_reform = great_veche_republic
+			# 	}
+			# 	else = {
+			# 		if = {
+			# 			limit = { NOT = { government = monarchy } }
+			# 			change_government = monarchy
+			# 		}
+			# 		add_government_reform = tsardom
+			# 	}
+			# }
 			RUS = { set_government_rank = 3 }
 			russia_region = {
 				limit = {

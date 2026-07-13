@@ -149,32 +149,32 @@ X_CRI_slot_1 = {
 		}
 	}
 
-	K_CRI_mission_kuzarite_1 = {
-		icon = mission_hunting
-		position = 4
-		trigger = {
-			stability = 1
-		}
-		effect = {
-			country_event = { id = K_CRI_events.1 }
-		}
-	}
+	# K_CRI_mission_kuzarite_1 = {
+	# 	icon = mission_hunting
+	# 	position = 4
+	# 	trigger = {
+	# 		stability = 1
+	# 	}
+	# 	effect = {
+	# 		country_event = { id = K_CRI_events.1 }
+	# 	}
+	# }
 
-	K_CRI_mission_kuzarite_2 = {
-		icon = mission_seize_the_dragon_throne
-		required_missions = { K_CRI_mission_kuzarite_1 }
-		position = 5
-		trigger = {
-			stability = 2
-			astrakhan_area = {
-				type = all
-				country_or_subject_holds = ROOT		
-			}	
-		}
-		effect = {
-			country_event = { id = K_CRI_events.2 }
-		}		
-	}
+	# K_CRI_mission_kuzarite_2 = {
+	# 	icon = mission_seize_the_dragon_throne
+	# 	required_missions = { K_CRI_mission_kuzarite_1 }
+	# 	position = 5
+	# 	trigger = {
+	# 		stability = 2
+	# 		astrakhan_area = {
+	# 			type = all
+	# 			country_or_subject_holds = ROOT		
+	# 		}	
+	# 	}
+	# 	effect = {
+	# 		country_event = { id = K_CRI_events.2 }
+	# 	}		
+	# }
 
 }
 
@@ -300,28 +300,28 @@ X_CRI_slot_2 = {
 			}
 		}
 	}
-	K_CRI_mission_kuzarite_3 = {
-        icon = mission_unite_the_princes
-        required_missions = { K_CRI_mission_kuzarite_1 }
-		position = 5
+	# K_CRI_mission_kuzarite_3 = {
+    #     icon = mission_unite_the_princes
+    #     required_missions = { K_CRI_mission_kuzarite_1 }
+	# 	position = 5
 
-		trigger = {
-			religion = kuzarite
-			2199 = {
-				owned_by = ROOT
-				religion = kuzarite
-				has_building = marketplace
-			}
-		}
+	# 	trigger = {
+	# 		religion = kuzarite
+	# 		2199 = {
+	# 			owned_by = ROOT
+	# 			religion = kuzarite
+	# 			has_building = marketplace
+	# 		}
+	# 	}
 
-		effect = {
-			country_event = { id = K_CRI_events.3 }			
-			add_country_modifier = {
-				name = kielak_cri_irbis_lawgiver_and_creator
-				duration = -1
-			}			
-		}
-	}
+	# 	effect = {
+	# 		country_event = { id = K_CRI_events.3 }			
+	# 		add_country_modifier = {
+	# 			name = kielak_cri_irbis_lawgiver_and_creator
+	# 			duration = -1
+	# 		}			
+	# 	}
+	# }
 }
 
 X_CRI_slot_3 = {
@@ -604,42 +604,42 @@ X_CRI_slot_3 = {
 		}
 	}
 
-	K_CRI_mission_kuzarite_4 = {
-		icon = mission_dethrone_the_rurikovichs
-		required_missions = { X_CRI_mission_11 }
-		position = 5
-		trigger = {
-			has_personal_deity = kuzarite6
-			OR = {
-				has_global_modifier_value = {
-					which = cavalry_power
-					value = 0.3
-				}
-				has_global_modifier_value = {
-					which = discipline
-					value = 0.1
-				}
-			}
-			OR = {
-				has_won_war_against = {
-					who = MOS
-				}
+	# K_CRI_mission_kuzarite_4 = {
+	# 	icon = mission_dethrone_the_rurikovichs
+	# 	required_missions = { X_CRI_mission_11 }
+	# 	position = 5
+	# 	trigger = {
+	# 		has_personal_deity = kuzarite6
+	# 		OR = {
+	# 			has_global_modifier_value = {
+	# 				which = cavalry_power
+	# 				value = 0.3
+	# 			}
+	# 			has_global_modifier_value = {
+	# 				which = discipline
+	# 				value = 0.1
+	# 			}
+	# 		}
+	# 		OR = {
+	# 			has_won_war_against = {
+	# 				who = MOS
+	# 			}
 				
-				has_won_war_against = {
-					who = RUS
-				}
-			}			
-		}
+	# 			has_won_war_against = {
+	# 				who = RUS
+	# 			}
+	# 		}			
+	# 	}
 
-		effect = {
-			country_event = { id = K_CRI_events.4 }
-			add_country_modifier = {
-				name = kielak_cri_bulan_father_and_beg
-				duration = -1
-			}				
-		}
+	# 	effect = {
+	# 		country_event = { id = K_CRI_events.4 }
+	# 		add_country_modifier = {
+	# 			name = kielak_cri_bulan_father_and_beg
+	# 			duration = -1
+	# 		}				
+	# 	}
 
-	}
+	# }
 }
 
 X_CRI_slot_4 = {
@@ -758,10 +758,7 @@ X_CRI_slot_4 = {
 		effect = {
 			add_army_tradition_or_mil_power = { amount = 20 }
 			add_army_professionalism = 0.1
-			add_country_modifier = {
-				name = X_CRI_end_of_the_cossacks_cmod
-				duration = 7300
-			}
+			add_mil_power = 50
 		}
 	}
 }

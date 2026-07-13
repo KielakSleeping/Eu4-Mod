@@ -3250,100 +3250,100 @@ WoC_austria_3_1 = {
 		}
 	}
 
-	hab_multicultural_empire = {
-		icon = multicultural_empire
-		position = 9
-		required_missions = { hab_hungary } 
-		provinces_to_highlight = {
-			OR = {
-				area = erzgebirge_area
-				area = bohemia_area
-				area = moravia_area
-				area = slovakia_area
-				#province_id = 135
-				#province_id = 4240
-				#province_id = 1864
-				area = carinthia_area
-				area = venetia_area
-				area = tirol_area
-				area = inner_austria_area
-				area = austria_proper_area
-				area = transdanubia_area
-			}
-			NOT = {
-				owned_by = ROOT
-			}
-		}
-		trigger = {
-			adm_tech = 10
-			total_development = 1000
-			# OR = {
-			# 	HUN = {
-			# 		NOT = {
-			# 			total_development = 200
-			# 		}
-			# 	}
-			# 	NOT = {
-			# 		exists = HUN
-			# 	}
-			# }
-			custom_trigger_tooltip = {
-				tooltip = gecko_habsburg_empire_requirements_tooltip
-				erzgebirge_area = {
-					type = all
-					owned_by = ROOT
-				}
-				bohemia_area = {
-					type = all 
-					owned_by = ROOT
-				}
-				moravia_area = {
-					type = all 
-					owned_by = ROOT
-				}
-				slovakia_area = {
-					type = all 
-					owned_by = ROOT
-				}
-				# 135 = {
-				# 	owned_by = ROOT
-				# }
-				# 4240 = {
-				# 	owned_by = ROOT
-				# }
-				# 1864 = {
-				# 	owned_by = ROOT
-				# }
-				transdanubia_area = {
-					type = all
-					owned_by = ROOT
-				}
-				carinthia_area = {
-					type = all 
-					owned_by = ROOT
-				}
-				venetia_area = {
-					type = all 
-					owned_by = ROOT
-				}
-				tirol_area = {
-					type = all 
-					owned_by = ROOT
-				}
-				inner_austria_area = {
-					type = all 
-					owned_by = ROOT
-				}
-				austria_proper_area = {
-					type = all 
-					owned_by = ROOT
-				}
-			}
-		}
-		effect = {
-			country_event = { id = flavor_hab.20 }
-		}
-	}
+	# hab_multicultural_empire = {
+	# 	icon = multicultural_empire
+	# 	position = 9
+	# 	required_missions = { hab_hungary } 
+	# 	provinces_to_highlight = {
+	# 		OR = {
+	# 			area = erzgebirge_area
+	# 			area = bohemia_area
+	# 			area = moravia_area
+	# 			area = slovakia_area
+	# 			#province_id = 135
+	# 			#province_id = 4240
+	# 			#province_id = 1864
+	# 			area = carinthia_area
+	# 			area = venetia_area
+	# 			area = tirol_area
+	# 			area = inner_austria_area
+	# 			area = austria_proper_area
+	# 			area = transdanubia_area
+	# 		}
+	# 		NOT = {
+	# 			owned_by = ROOT
+	# 		}
+	# 	}
+	# 	trigger = {
+	# 		adm_tech = 10
+	# 		total_development = 1000
+	# 		# OR = {
+	# 		# 	HUN = {
+	# 		# 		NOT = {
+	# 		# 			total_development = 200
+	# 		# 		}
+	# 		# 	}
+	# 		# 	NOT = {
+	# 		# 		exists = HUN
+	# 		# 	}
+	# 		# }
+	# 		custom_trigger_tooltip = {
+	# 			tooltip = gecko_habsburg_empire_requirements_tooltip
+	# 			erzgebirge_area = {
+	# 				type = all
+	# 				owned_by = ROOT
+	# 			}
+	# 			bohemia_area = {
+	# 				type = all 
+	# 				owned_by = ROOT
+	# 			}
+	# 			moravia_area = {
+	# 				type = all 
+	# 				owned_by = ROOT
+	# 			}
+	# 			slovakia_area = {
+	# 				type = all 
+	# 				owned_by = ROOT
+	# 			}
+	# 			# 135 = {
+	# 			# 	owned_by = ROOT
+	# 			# }
+	# 			# 4240 = {
+	# 			# 	owned_by = ROOT
+	# 			# }
+	# 			# 1864 = {
+	# 			# 	owned_by = ROOT
+	# 			# }
+	# 			transdanubia_area = {
+	# 				type = all
+	# 				owned_by = ROOT
+	# 			}
+	# 			carinthia_area = {
+	# 				type = all 
+	# 				owned_by = ROOT
+	# 			}
+	# 			venetia_area = {
+	# 				type = all 
+	# 				owned_by = ROOT
+	# 			}
+	# 			tirol_area = {
+	# 				type = all 
+	# 				owned_by = ROOT
+	# 			}
+	# 			inner_austria_area = {
+	# 				type = all 
+	# 				owned_by = ROOT
+	# 			}
+	# 			austria_proper_area = {
+	# 				type = all 
+	# 				owned_by = ROOT
+	# 			}
+	# 		}
+	# 	}
+	# 	effect = {
+	# 		country_event = { id = flavor_hab.20 }
+	# 	}
+	# }
 
 	hab_the_last_knights = {
 		icon = league_of_the_public_weal

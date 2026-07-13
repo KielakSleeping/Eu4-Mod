@@ -179,7 +179,7 @@ baltic_ambition_new = {
 }
 
 conquest_of_finland = {
-	land_morale = 0.1
+	land_morale = 0.025
 	land_attrition = -0.2
 }
 
@@ -2557,7 +2557,7 @@ rus_west_slavic_union = {	#Permanent, gets lost when either West Slavic culture 
 }
 
 rus_carpathian_union = {	#Permanent, gets lost when either Carpathian culture gets demoted
-	manpower_in_true_faith_provinces = 0.1
+	manpower_in_true_faith_provinces = 0.025
 	num_accepted_cultures = 3
 }
 
@@ -4823,7 +4823,7 @@ hun_hungary_poland = {
 
 hun_supreme_black_army = {
 	#mercenary_discipline = 0.05
-	province_warscore_cost = -0.125
+	province_warscore_cost = -0.05
 	core_creation = -0.15
 }
 
@@ -5366,8 +5366,8 @@ ned_je_maintiendrai_mod = {
 }
 
 ser_novo_brdo_code = {
-	development_cost = -0.1
-	production_efficiency = 0.1
+	development_cost = -0.05
+	production_efficiency = 0.05
 }
 
 ser_great_school_modifier = {
@@ -5376,8 +5376,8 @@ ser_great_school_modifier = {
 }
 
 ser_moravian_valor = {
-	manpower_recovery_speed = 0.1
-	global_manpower_modifier = 0.1
+	manpower_recovery_speed = 0.05
+	global_manpower_modifier = 0.05
 }
 
 ser_citadel_of_belgrade = {
@@ -13072,15 +13072,15 @@ hun_expanding_the_order = {
 }
 
 hun_black_legion = {
-	infantry_power = 0.025
-	cavalry_power = 0.025
-	land_morale = 0.05
+	infantry_power = 0.01
+	cavalry_power = 0.01
+	land_morale = 0.01
 	#merc_leader_army_tradition = 0.25
 }
 
 estate_burghers_hungarian_royal_city_modifier = {
-	local_development_cost_modifier = -0.1
-	trade_goods_size_modifier = 0.5
+	local_development_cost_modifier = -0.05
+	trade_goods_size_modifier = 0.1
 	allowed_num_of_manufactories = 1
 }
 
