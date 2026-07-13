@@ -14,7 +14,7 @@ country_decisions = {
 				is_free_or_tributary_trigger = yes
 				ai = no
 			}
-			NOT = { exists = SCA }
+			NOT = { exists = SWE }
 			NOT = { tag = PAP }
 			NOT = { tag = HLR }
 			culture_group = scandinavian
@@ -59,7 +59,7 @@ country_decisions = {
 			}
 		}
 		effect = {
-			change_tag = SCA
+			change_tag = SWE
 			on_change_tag_effect = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
@@ -294,7 +294,7 @@ country_decisions = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = SCA
+				add_permanent_claim = SWE
 			}	
 			add_country_modifier = {
 				name = "centralization_modifier"

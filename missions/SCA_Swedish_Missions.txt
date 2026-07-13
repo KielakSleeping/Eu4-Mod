@@ -2012,22 +2012,7 @@ swe_kalmar_union_mission_slot = {
 			}
 		}
 		effect = {
-			if = {
-				limit = {
-					OR = {
-						mil_tech = 19
-						absolutism = 75
-					}
-				}
-				custom_tooltip = swe_the_carolean_units_at
-			}
-			else = {
-				mil_power_cost = 200
-				custom_tooltip = swe_the_carolean_units_bt
-			}
-			country_event = {
-				id = flavor_swe.103
-			}
+			add_mil_power = 50
 		}
 	}
 	
@@ -2037,7 +2022,6 @@ swe_kalmar_union_mission_slot = {
 		required_missions = { swe_the_carolean_units }
 		provinces_to_highlight = {}
 		trigger = {
-			num_of_carolean = 20
 			if = {
 				limit = {
 					has_dlc = "Cradle of Civilization"
@@ -2051,12 +2035,7 @@ swe_kalmar_union_mission_slot = {
 			num_of_generals = 2
 		}
 		effect = {
-			unlock_estate_privilege = {
-				estate_privilege = estate_nobles_carolean_march
-			}
-			unlock_estate_privilege = {
-				estate_privilege = estate_nobles_carolean_charge
-			}
+			add_mil_power = 50
 		}
 	}
 }

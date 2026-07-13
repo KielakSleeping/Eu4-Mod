@@ -761,7 +761,7 @@ swe_local_economical_upswing = {
 }
 
 swe_guns_drums_and_steel = {
-	discipline = 0.05
+	discipline = 0.025
 }
 
 swe_swedish_colonialism = {
@@ -14313,7 +14313,6 @@ hab_aeiou_modifier = {
 }
 
 hab_onwards_for_glory = {
-	cavalry_shock = 0.5
 	cavalry_flanking = 1
 }
 

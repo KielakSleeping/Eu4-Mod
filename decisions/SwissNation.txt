@@ -5,7 +5,11 @@ country_decisions = {
 			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
 			NOT = { tag = SWI }
+			NOT = { has_country_flag = formed_netherlands_flag }
+			NOT = { has_country_flag = formed_westphalia_flag }
+			NOT = { has_country_flag = formed_austria_flag }
 			NOT = { has_country_flag = formed_switzerland_flag }
+			NOT = { has_country_flag = formed_prussia_flag }	
 			OR = {
 				ai = no
 				is_playing_custom_nation = no

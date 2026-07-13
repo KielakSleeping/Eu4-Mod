@@ -15913,7 +15913,7 @@ falun_copper_mine = {
 			factor = 350
 		}
 		province_modifiers = {
-			trade_goods_size = 3.0
+			trade_goods_size = 1.5
 		}
 		area_modifier = {
 			local_build_cost = -0.05
@@ -15933,7 +15933,7 @@ falun_copper_mine = {
 			factor = 750
 		}
 		province_modifiers = {
-			trade_goods_size = 6.0
+			trade_goods_size = 3.0
 		}
 		area_modifier = {
 			local_build_cost = -0.1
@@ -15954,7 +15954,7 @@ falun_copper_mine = {
 			factor = 1500
 		}
 		province_modifiers = {
-			trade_goods_size = 9.0
+			trade_goods_size = 4.5
 		}
 		area_modifier = {
 			local_build_cost = -0.2

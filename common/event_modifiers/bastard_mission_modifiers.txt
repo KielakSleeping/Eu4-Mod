@@ -105,7 +105,7 @@ gc_mug_formation_hope = {
 }
 ####sweden#############
 bastard_hakkapeliita_cavalry = {
-	cavalry_power = 0.1
+	cavalry_power = 0.01
 }
 
 bastard_hakkapeliita_cavalry_2 = {
