@@ -1105,27 +1105,8 @@ NED_2_1 = {
 		} 
 
 		effect = {  
-			complex_dynamic_effect = {
-				first_custom_tooltip = NED_IF_REFORMED
-				first_limit = "
-					religion = reformed
-				"
-				first_effect = "
-					hidden_effect = {
-						set_country_flag = ned_buff_fervor_actions
-						update_fervor_effects = yes
-					}
-					custom_tooltip = NED_BUFF_FERVOR_ACTIONS_BY_50
-				"
-				second_custom_tooltip = NED_IF_NOT_REFORMED
-				second_limit = "
-					NOT = { religion = reformed }
-				"
-				second_effect = "
-					set_country_flag = ned_buff_clerical_studies
-					custom_tooltip = NED_BUFF_CLERICAL_STUDIES_PRIVILEGE
-				"
-			}
+			set_country_flag = ned_buff_clerical_studies
+			custom_tooltip = NED_BUFF_CLERICAL_STUDIES_PRIVILEGE
 		} 
 	}
 
@@ -1595,28 +1576,10 @@ NED_3_1 = {
 		} 
 	
 		effect = {  
-			if = {
-				limit = {
-					OR = {
-						has_dlc = "Rule Britannia"
-						has_dlc = "Golden Century"
-						has_dlc = "Lions of the North"
-						has_dlc = "Domination"
-					}
-				}
-				add_country_modifier = {
-					name = ned_elite_naval_infantry
-					duration = -1
-				}
-				custom_tooltip = NED_UNLOCK_BLACK_DEVILS_PRIVILEGE_FOR_BURGHERS
-				set_country_flag = ned_unlock_black_devils_privilege_flag
-			}
-			else = {
 				capital_scope = {
 					add_or_upgrade_shipyard_building = yes
 					add_or_upgrade_dock_building = yes
 					add_base_production = 3
-				}
 			}
 		}
 	}
@@ -2375,18 +2338,6 @@ NED_4_1 = {
 				}
 				custom_tooltip = NED_MODIFY_STAATSE_LEGER_REFORM
 				set_country_flag = ned_staatse_leger_buff_flag
-				hidden_effect = {
-					if = {
-						limit = {
-							has_reform = staatse_leger_reform
-						}
-						add_country_modifier = {
-							name = ned_empowered_staatse_leger
-							duration = -1
-							hidden = yes
-						}
-					}
-				}
 			}
 			else = {
 				change_mil = 2

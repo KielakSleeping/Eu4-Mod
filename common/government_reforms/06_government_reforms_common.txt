@@ -3156,42 +3156,42 @@ musketeers_reform = {
 	}
 }
 
-gendarmes_reform = {
-	icon = "gendarmes_reform"
-	allow_normal_conversion = yes
-	potential = {
-		has_dlc = "Domination" 
-		culture_group = french 
-	}
-	trigger = {
-		OR = {
-			has_reform = gendarmes_reform 
-			custom_trigger_tooltip = {
-				tooltip = has_unlocked_this_reform_tt
-				has_country_flag = fra_unlock_gendarmes
-			}
-		}
-		if = {
-			limit = { has_modifier_locking_military_tier = yes }
-			OR = {
-				has_reform = gendarmes_reform
-				has_not_modifier_locking_military_tier = yes
-			}
-			OR ={
-				tag = LOT
-			}
-		}
-	}
-	modifiers = {
-		cavalry_power = 0.1 
-		nobles_loyalty_modifier = 0.05
-		morale_damage = 0.1
-		cav_to_inf_ratio = 0.1
-	}
-	ai = {
-		factor = 1
-	}
-}
+# gendarmes_reform = {
+# 	icon = "gendarmes_reform"
+# 	allow_normal_conversion = yes
+# 	potential = {
+# 		has_dlc = "Domination" 
+# 		culture_group = french 
+# 	}
+# 	trigger = {
+# 		OR = {
+# 			has_reform = gendarmes_reform 
+# 			custom_trigger_tooltip = {
+# 				tooltip = has_unlocked_this_reform_tt
+# 				has_country_flag = fra_unlock_gendarmes
+# 			}
+# 		}
+# 		if = {
+# 			limit = { has_modifier_locking_military_tier = yes }
+# 			OR = {
+# 				has_reform = gendarmes_reform
+# 				has_not_modifier_locking_military_tier = yes
+# 			}
+# 			OR ={
+# 				tag = LOT
+# 			}
+# 		}
+# 	}
+# 	modifiers = {
+# 		cavalry_power = 0.1 
+# 		nobles_loyalty_modifier = 0.05
+# 		morale_damage = 0.1
+# 		cav_to_inf_ratio = 0.1
+# 	}
+# 	ai = {
+# 		factor = 1
+# 	}
+# }
 
 #Saxon/Prussian
 general_war_commissariat_reform = {
@@ -5250,6 +5250,7 @@ seven_provinces_reform = {
 	allow_normal_conversion = yes
 
 	potential = {
+		always = no
 		tag = NED
 	}
 

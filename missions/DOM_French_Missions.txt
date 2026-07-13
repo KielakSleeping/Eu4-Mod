@@ -2039,11 +2039,9 @@ french_missions_2_Continuation_b = {
 			}
 		}
 		effect = {
-			custom_tooltip = fra_unlock_gendarmes_reform_tt
-			hidden_effect = { set_country_flag = fra_unlock_gendarmes } 
 			if = { 
 				limit = { has_dlc = "Cradle of Civilization" }
-				add_army_professionalism = 0.1
+				add_army_professionalism = 0.05
 			}
 			else = { add_army_tradition = 20 } 
 		}
@@ -2069,17 +2067,7 @@ french_missions_2_Continuation_b = {
 			crown_land_share = 30 
 		}
 		effect = { 
-			if = {
-				limit = { has_reform = feudal_france_reform }
-				#remove_government_reform = feudal_france_reform 
-				add_government_reform = absolutist_france_reform
-			}
-			else = { change_government_reform_progress = 100 }
-			hidden_effect = {
-				unlock_government_reform = {
-					government_reform = absolutist_france_reform
-				}
-			}
+			change_government_reform_progress = 50
 			#custom_tooltip = fra_5_gov_cap_adm_adv_tt 
 			#set_country_flag = 5_gov_cap_bonus_flag 
 		}
@@ -3289,7 +3277,6 @@ french_missions_3_normal_continued = {
 			army_size = 150
 		}
 		effect = { 
-			custom_tooltip = fra_enable_musketeer_reform_tt
 			add_country_modifier = {
 				name = fra_musketeers_modifier
 				duration = -1 
@@ -3311,10 +3298,10 @@ french_missions_3_normal_continued = {
 			}
 		}
 		effect = {
-			add_country_modifier = {
-					name = bastard_muskeeter_modifier
-					duration = -1 
-				}
+			# add_country_modifier = {
+			# 		name = bastard_muskeeter_modifier
+			# 		duration = -1 
+			# 	}
 			custom_tooltip = fra_reward_after_court_country_tt
 			tooltip = {
 				add_country_modifier = {

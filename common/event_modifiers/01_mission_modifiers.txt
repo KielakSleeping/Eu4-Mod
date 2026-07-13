@@ -9380,8 +9380,7 @@ fra_toulon_dockyards_modifier = {
 }
 
 fra_musketeers_modifier = {
-	has_musketeer = yes 
-	allowed_musketeer_fraction = 0.15
+	discipline = 0.01
 }
 
 fra_catholic_supremacy_modifier = {	
@@ -12785,8 +12784,7 @@ ned_hollander_settlers = {
 }
 
 ned_je_maintiedrai = {
-	discipline = 0.05
-	development_cost = -0.1
+	development_cost = -0.025
 }
 
 ned_devise_glorious_crossing = {
@@ -12825,7 +12823,7 @@ ned_connection_to_the_baltic = {
 
 ned_found_dutch_states_army = {
 	drill_gain_modifier = 0.3
-	land_morale = 0.1
+	land_morale = 0.05
 }
 
 ned_empowered_staatse_leger = {
@@ -12877,7 +12875,7 @@ ned_flemish_urbanization = {
 
 ned_staatse_vloot = {
 	naval_attrition = -0.1
-	naval_morale = 0.1
+	naval_morale = 0.05
 }
 
 ned_elite_naval_infantry = {

@@ -1980,6 +1980,7 @@ dutch_republic = {
 	icon = "dutch_republic"
 	allow_normal_conversion = no
 	potential = {
+		always = no
 		OR = {
 			AND = {
 				OR = {
