@@ -1610,7 +1610,7 @@ ARB_local_madrasa = {
 		}
 	}
 
-	same_culture_advisor_cost = -0.1
+	same_culture_advisor_cost = -0.025
 }
 
 ARB_mosque_of_kairouan = {

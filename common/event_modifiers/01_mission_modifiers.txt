@@ -11146,7 +11146,7 @@ ARB_mahd_adh_dhahab = {
 
 ARB_stewards_of_the_two_cities = {
 	tolerance_own = 2
-	same_religion_advisor_cost = -0.25
+	same_religion_advisor_cost = -0.1
 }
 
 ARB_well_managed = {
@@ -11189,7 +11189,7 @@ ARB_following_teachings_of_old = {
 }
 
 ARB_support_of_local_sheikhs = {
-	reinforce_speed = 0.15
+	reinforce_speed = 0.05
 }
 
 ABR_train_horsemanship_modifier_upgraded = {
@@ -11251,7 +11251,7 @@ ARB_northern_citadel = {
 }
 
 ARB_dhimmi_self_government = {
-	development_cost = -0.1
+	development_cost = -0.025
 }
 
 ARB_claiming_title_of_caliph = {
@@ -14365,7 +14365,7 @@ TIM_india_conquest = {
 
 TIM_caucasia_modifier = {
 	global_heathen_missionary_strength = 0.01
-	land_morale = 0.05
+	land_morale = 0.01
 }
 
 TIM_fresh_blood_modifier = {
@@ -14379,7 +14379,6 @@ TIM_timurid_empire_modifier = {
 }
 
 TIM_uzbek_powerbase = {
-	local_manpower = 0.25
 	local_manpower_modifier = 0.2
 }
 
@@ -14418,7 +14417,7 @@ TIM_recovery_of_treasury_funds = {
 }
 
 TIM_start_of_a_renaissance = { 
-	advisor_cost = -0.15
+	advisor_cost = -0.10
 }
 
 TIM_pearl_of_khorasan = { 

@@ -3,6 +3,7 @@ country_decisions = {
 	egyptian_nation = {
 		major = yes
 		potential = {
+			always = no
 			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_egypt_flag }
@@ -166,14 +167,6 @@ country_decisions = {
 				set_government_rank = 2
 			}
 			MAM = {
-				if = {
-					limit = {
-						NOT = {
-							government = monarchy
-						}
-					}
-					change_government = monarchy
-				}
 				#add_government_reform = mamluk_government
 				add_country_modifier = {
 					name = "centralization_modifier"
@@ -193,14 +186,6 @@ country_decisions = {
 					add_permanent_claim = MAM
 				}
 				set_country_flag = formed_mamluks
-				if = {
-					limit = { has_regency = no }
-					kill_ruler = yes
-				}
-				if = {
-					limit = { has_heir = yes }
-					kill_heir = {}
-				} 
 			}
 		}
 		ai_will_do = {

@@ -335,26 +335,7 @@ mam_missions_1 = {
 			1224 = { country_or_non_sovereign_subject_holds = ROOT }
 		} 
 		effect = {
-			country_event = { id = flavor_mam.106 }
-			custom_tooltip = flavor_mam.106_tt
-			if = {
-				limit = {
-					ETH = {
-						has_opinion = {
-							who = ROOT 
-							value = 100
-						}
-						OR = {
-							is_subject_of = ROOT
-							alliance_with = ROOT 
-						}
-					}
-				}
-				custom_tooltip = mam_eth_friendship_tt
-			}
-			else = {
-				custom_tooltip = mam_eth_no_friendship_tt
-			}
+			add_mil_power = 50
 		}
 	}
 
@@ -363,11 +344,10 @@ mam_missions_1 = {
 		required_missions = {  }
 		position = 8
 		trigger = {
-			mamluks_percentage = 0.1
+			army_size_percentage = 1
 		}
-		effect = {
-			custom_tooltip = mam_access_new_agendas_about_mamluks_tt
-			set_country_flag = mam_access_new_agendas_about_mamluks_flag
+		effect = {	
+			add_mil_power = 50
 			
 			tripolitania_area = {
 				limit = {
@@ -413,9 +393,6 @@ mam_missions_1 = {
 			reform_level = 5
 		}
 		effect = {
-			unlock_government_reform = {
-				government_reform = modernized_furusiyya_reform
-			}
 			change_government_reform_progress = 50
 		}
 	}
@@ -505,8 +482,7 @@ mam_missions_2 = {
 			navy_size = 35
 		}
 		effect = {
-			country_event = { id = flavor_mam.100 } 
-			custom_tooltip = flavor_mam.100_tt		
+			add_dip_power = 50
 		}
 	}
 
@@ -1823,9 +1799,7 @@ mam_missions_4 = {
 			is_at_war = no 
 		}
 		effect = {
-			country_event = { id = flavor_mam.103 }
-
-			custom_tooltip = flavor_mam.103_tt
+			add_adm_power = 100
 		}
 	}
 

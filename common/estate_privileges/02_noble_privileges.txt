@@ -4922,7 +4922,7 @@ estate_nobles_TIM_chagatai_warriors = {
 	}
 	benefits = {
 		cavalry_power = 0.05
-		cav_to_inf_ratio = 0.25
+		cav_to_inf_ratio = 0.1
 	}
 	influence_scaled_conditional_modifier = {
 		trigger = {

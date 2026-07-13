@@ -1934,16 +1934,7 @@ KoK_ARB_hedjaz_najd_bedouin_arb_3 = {
 			}
 		}
 		effect = {
-			country_event_with_effect_insight = {
-				id = flavor_ARB.5
-				effect = "
-					unlock_government_reform = {
-						government_reform = caliphate_reform
-					}
-				"
-			}
-			
-			custom_tooltip = " "
+			change_government_reform_progress = 100
 			
 			give_claims = { region = maghreb_region }
 			
