@@ -10130,7 +10130,7 @@ geo_armenian_union = {
 }
 
 geo_break_legacy_seljuk = {
-	land_morale = 0.1
+	land_morale = 0.05
 	recover_army_morale_speed = 0.05
 }
 
@@ -10143,7 +10143,7 @@ geo_centers_of_trade = {
 }
 
 geo_counter_turkomans = {
-	shock_damage_received = -0.1
+	shock_damage_received = -0.05
 }
 
 geo_wrath_christendom = {
@@ -10156,8 +10156,8 @@ geo_east_mediterranean = {
 }
 
 geo_light_of_the_east = {
-	army_tradition_from_battle = 0.5
-	land_morale = 0.1
+	army_tradition_from_battle = 0.25
+	land_morale = 0.01
 }
 
 geo_narikala_leviathan = {
@@ -10225,19 +10225,19 @@ geo_consecrated_ground = {
 }
 
 geo_beacon1 = {
-	warscore_cost_vs_other_religion = -0.1
+	warscore_cost_vs_other_religion = -0.025
 	reverse_relation_with_same_religion = 20
 }
 
 geo_beacon2 = {
-	warscore_cost_vs_other_religion = -0.1
+	warscore_cost_vs_other_religion = -0.025
 	reverse_relation_with_same_religion = 20
 }
 
 geo_beacon1_empowered = {
-	warscore_cost_vs_other_religion = -0.1
+	warscore_cost_vs_other_religion = -0.025
 	reverse_relation_with_same_religion = 20
-	manpower_in_true_faith_provinces = 0.1
+	manpower_in_true_faith_provinces = 0.025
 }
 
 geo_beacon2_empowered = {
@@ -10275,12 +10275,12 @@ geo_righteous_conquest = {
 }
 
 geo_avenging_manzikert = {
-	discipline = 0.05
+	discipline = 0.01
 	warscore_from_battles_modifier = 0.25
 }
 
 geo_turning_the_tide = {
-	military_tactics = 0.25
+	military_tactics = 0.05
 	siege_ability = 0.2
 }
 
