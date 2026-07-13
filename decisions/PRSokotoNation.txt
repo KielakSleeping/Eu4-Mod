@@ -16,7 +16,7 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
-			NOT = { exists = PR2 }
+			NOT = { exists = SON }
 			OR = {
 				culture_group = sahelian
 				culture_group = mande
@@ -68,7 +68,8 @@ country_decisions = {
 			owns_core_province = 1120 
 		}
 		effect = {
-			change_tag = PR2
+			change_tag = SON
+			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {

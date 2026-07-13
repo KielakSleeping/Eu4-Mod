@@ -38,7 +38,7 @@ norman_resurgence = {
 }
 
 gc_african_gold_modifier = {
-	trade_goods_size_modifier = 0.25
+	trade_goods_size_modifier = 0.10
 }
 
 berber_fury = {

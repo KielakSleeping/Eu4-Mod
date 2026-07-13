@@ -45,15 +45,7 @@ songhai_military_slot = {
 			army_size_percentage = 1
 		}
 		effect = {
-			country_event = {
-				id = flavor_son.8
-			}
-			hidden_effect = {
-				set_variable = {
-					which = son_fight_counter
-					value = 0
-				}
-			}
+			add_mil_power = 100
 		}
 	}
 
@@ -67,43 +59,11 @@ songhai_military_slot = {
 				limit = {
 					mission_completed = son_military_expertise
 				}
-				custom_trigger_tooltip = {
-					tooltip = son_win_battles_ct
-					check_variable = {
-						which = son_fight_counter
-						value = 30
-					}
-				}
-				#any_country = {
-				#	current_war_losses = {
-				#		type = soldiers
-				#		cause = battle
-				#		amount = 1000
-				#	}
-				#}
-			}
-			else = {
-				custom_trigger_tooltip = {
-					tooltip = son_win_battles_bt
-					always = no
-				}
-			}
 		}
 		effect = {
-			custom_tooltip = enables_focus_on_armies_tt
-			hidden_effect = {
-				set_country_flag = enables_focus_on_armies
-			}
-			if = {
-				limit = {
-					has_dlc = "Cradle of Civilization"
-				}
-				add_army_professionalism = 0.05
-			}
-			else = {
-				add_army_tradition = 10
-			}
+			add_mil_power = 100
 		}
+	}
 	}
 
 	#Modernize Army
@@ -156,10 +116,7 @@ songhai_military_slot = {
 			}
 		}
 		effect = {
-			change_technology_group = western
-			change_unit_type = western
 			custom_tooltip = no_more_comet_sighted_event_tt
-			add_mil_power = -200
 			hidden_effect = {
 				set_country_flag = no_more_comet_sighted_event
 			}
@@ -1911,7 +1868,7 @@ songhai_money_maker_slot = {
 					
 				add_province_modifier = {
 						name = "gc_african_gold_modifier"
-						duration = 7300
+						duration = 3650
 					}
 				}	
 			}
@@ -1923,7 +1880,7 @@ songhai_money_maker_slot = {
 					}
 						add_province_modifier = {
 							name = "gc_african_gold_modifier"
-							duration = 7300
+							duration = 3650
 						}
 				}	
 			}
