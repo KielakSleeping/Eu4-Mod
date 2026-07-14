@@ -2250,31 +2250,31 @@ jewish_group = {
 	
 	crusade_name = HOLY_WAR
 	
-	kuzarite = {
-		allow_female_defenders_of_the_faith = yes
-		declare_war_in_regency = yes		
-		icon = 30
-		color = { 83 29 184 }
-		country = {
-			cavalry_power = 0.05
-			same_religion_advisor_cost = -0.1
-		}
+	# kuzarite = {
+	# 	allow_female_defenders_of_the_faith = yes
+	# 	declare_war_in_regency = yes		
+	# 	icon = 30
+	# 	color = { 83 29 184 }
+	# 	country = {
+	# 		cavalry_power = 0.05
+	# 		same_religion_advisor_cost = -0.1
+	# 	}
 
-		personal_deity = yes
+	# 	personal_deity = yes
 
-		on_convert = {
-			change_religion = kuzarite
-			add_prestige = -100
+	# 	on_convert = {
+	# 		change_religion = kuzarite
+	# 		add_prestige = -100
 			
-			add_country_modifier = {
-				name = "conversion_zeal"
-				duration = 3650
-			}
-		}		
+	# 		add_country_modifier = {
+	# 			name = "conversion_zeal"
+	# 			duration = 3650
+	# 		}
+	# 	}		
 
-		heretic = { SAMARITAN }
+	# 	heretic = { SAMARITAN }
 
-	}
+	# }
 
 
 }

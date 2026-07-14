@@ -514,10 +514,6 @@ ikko_ikki_reform = {
 		is_not_blocked_by_estate_privilege = { estate = estate_nobles }
 	}
 	valid_for_nation_designer = yes
-	nation_designer_trigger = {
-		culture_group = japanese_g
-		religion_group = eastern
-	}
 	nation_designer_cost = 20
 	modifiers = {
 		yearly_harmony = 0.25
@@ -557,13 +553,6 @@ tibetan_dual_government_reform = {
 		}
 	}
 	trigger = {
-		religion_group = eastern
-		OR = {
-			primary_culture = tibetan
-			culture_group = tibetan_group
-		}
-	}
-	nation_designer_trigger = {
 		religion_group = eastern
 		OR = {
 			primary_culture = tibetan
@@ -626,9 +615,7 @@ caliphate_theocracy_reform = {
 		religion_group = muslim
 	}
 	lock_level_when_selected = yes
-	nation_designer_trigger = {
-		religion_group = muslim
-	}
+
 	valid_for_nation_designer = yes
 	nation_designer_cost = 50
 	modifiers = {
@@ -737,9 +724,7 @@ orthodox_patriarchate_reform = {
 		religion = orthodox
 	}
 	valid_for_nation_designer = yes
-	nation_designer_trigger = {
-		religion = orthodox
-	}
+
 	nation_designer_cost = 10
 	modifiers = {
 		church_privilege_slots = 1
@@ -833,9 +818,7 @@ zoroastrian_theocracy_reform = {
 		religion_group = zoroastrian_group
 	}
 	valid_for_nation_designer = yes
-	nation_designer_trigger = {
-		religion_group = zoroastrian_group
-	}
+
 	nation_designer_cost = 10
 	modifiers = {
 		church_privilege_slots = 2
@@ -874,10 +857,7 @@ ajuuraan_theocracy_reform = {
 		primary_culture = somali
 	}
 	valid_for_nation_designer = yes
-	nation_designer_trigger = {
-		religion_group = muslim
-		primary_culture = somali
-	}
+
 	nation_designer_cost = 0
 	modifiers = {
 		monarch_diplomatic_power = 1 
@@ -909,9 +889,7 @@ bureaucratic_rule_reform = {
 		religion = confucianism
 	}
 	valid_for_nation_designer = yes
-	nation_designer_trigger = {
-		religion = confucianism
-	}
+
 	nation_designer_cost = 0
 	modifiers = {
 		reform_progress_growth = 0.15
@@ -926,9 +904,7 @@ sisterhood_of_jeanne_darc_reform = {
 	allow_normal_conversion = no
 	icon = "sisterhood"
 	valid_for_nation_designer = yes
-	nation_designer_trigger = {
-		religion_group = christian
-	}
+
 	potential = {
 		always = no
 		# OR = {

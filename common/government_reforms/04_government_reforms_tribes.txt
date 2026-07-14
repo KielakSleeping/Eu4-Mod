@@ -28,9 +28,7 @@ steppe_horde = {
 	#raze_province = yes
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
-	nation_designer_trigger = {
-		technology_group = nomad_group
-	}
+
 
 	lock_level_when_selected = yes
 
@@ -285,10 +283,7 @@ gond_kingdom = {
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
-	nation_designer_trigger = {
-		technology_group = indian
-		primary_culture = gondi
-	}
+
 	legacy_equivalent = tribal_kingdom_legacy
 	modifiers = {
 		defensiveness = 0.2
@@ -314,9 +309,7 @@ sacred_kingdom = {
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 10
-	nation_designer_trigger = {
-		religion_group = pagan
-	}
+
 	legacy_equivalent = sacred_kingdom_legacy
 	maintain_dynasty = yes
 	

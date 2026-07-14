@@ -85,14 +85,6 @@ plutocratic_reform = {
 			technology_group = east_african
 		}
 	}
-	nation_designer_trigger = {
-		OR = {
-			technology_group = indian
-			technology_group = muslim
-			technology_group = chinese
-			technology_group = east_african
-		}
-	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 10
 	modifiers = {
@@ -207,12 +199,6 @@ indian_sultanate_reform = {
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 10
-	nation_designer_trigger = {
-		religion_group = muslim
-		capital_scope = {
-			superregion = india_superregion
-		}
-	}
 	legacy_equivalent = indian_sultanate_legacy
 
 	modifiers = {
@@ -253,12 +239,6 @@ shogunate = {
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 50
-	nation_designer_trigger = {
-		culture_group = japanese_g
-		technology_group = chinese
-		capital_scope = { region = japan_region }
-		owns = 1020
-	}
 	legacy_equivalent = shogunate_legacy
 	fixed_rank = 2
 	maintain_dynasty = yes
@@ -302,11 +282,6 @@ daimyo = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
 	lock_level_when_selected = yes
-	nation_designer_trigger = {
-		culture_group = japanese_g
-		technology_group = chinese
-		capital_scope = { region = japan_region }
-	}
 	modifiers = {
 		land_morale = 0.1
 		infantry_power = 0.1
@@ -406,11 +381,6 @@ absolutist_france_reform = {
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 50
-	nation_designer_trigger = {
-		culture_group = french
-		technology_group = western
-		capital_scope = { region = france_region }
-	}
 	lock_level_when_selected = yes
 
 	modifiers = {
@@ -449,11 +419,6 @@ indep_daimyo = {
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
-	nation_designer_trigger = {
-		culture_group = japanese_g
-		technology_group = chinese
-		capital_scope = { region = japan_region }
-	}
 	legacy_equivalent = indep_daimyo_legacy
 	maintain_dynasty = yes
 
@@ -494,17 +459,6 @@ celestial_empire = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 10
 	lock_level_when_selected = yes
-	nation_designer_trigger = {
-		culture_group = east_asian
-		technology_group = chinese
-		capital_scope = {
-			OR = {
-				region = north_china_region
-				region = xinan_region
-				region = south_china_region
-			}
-		}
-	}
 	factions = {
 		temples
 		enuchs
@@ -563,36 +517,6 @@ chinese_warlord = {
 	allow_force_tributary = no
 	valid_for_nation_designer = yes
 	nation_designer_cost = 10
-	nation_designer_trigger = {
-		OR = {
-			primary_culture = bai
-			primary_culture = miao
-			primary_culture = yi
-			culture_group = east_asian
-		}
-		technology_group = chinese
-		OR = {
-			AND = {
-				OR = {
-					primary_culture = miao
-					primary_culture = yi
-				}
-				religion = animism
-			}
-			AND = {
-				primary_culture = bai
-				religion = buddhism
-			}
-			religion = confucianism
-		}
-		capital_scope = {
-			OR = {
-				region = north_china_region
-				region = xinan_region
-				region = south_china_region
-			}
-		}
-	}
 	#fixed_rank = 2
 
 	modifiers = {
@@ -732,9 +656,6 @@ iqta = {
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 10
-	nation_designer_trigger = {
-		religion_group = muslim
-	}
 
 	legacy_equivalent = iqta_legacy
 	#queen = no
@@ -970,9 +891,6 @@ ottoman_government = {
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 20
-	nation_designer_trigger = {
-		religion_group = muslim
-	}
 	legacy_equivalent = ottoman_government_legacy
 	maintain_dynasty = yes
 	modifiers = {
@@ -1096,9 +1014,6 @@ margraviate_reform = {
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
-	nation_designer_trigger = {
-		is_part_of_hre = yes
-	}
 	modifiers = {
 		fort_maintenance_modifier = -0.2
 		defensiveness = 0.1
@@ -1125,9 +1040,6 @@ serbian_despotate_reform = {
 		else = {
 			primary_culture = serbian
 		}
-	}
-	nation_designer_trigger = {
-		primary_culture = serbian
 	}
 	conditional = {
 		allow = { 
@@ -1171,11 +1083,6 @@ bulgarian_tsardom_reform = {
 			primary_culture = bulgarian
 		}
 	}
-	nation_designer_trigger = {
-		has_dlc = "Domination"
-		religion = orthodox
-		primary_culture = bulgarian
-	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 30
 	modifiers = {
@@ -1193,9 +1100,6 @@ tanistry_reform = {
 	icon = "tanistry"
 	allow_normal_conversion = yes
 	potential = {
-		primary_culture = irish
-	}
-	nation_designer_trigger = {
 		primary_culture = irish
 	}
 	valid_for_nation_designer = yes
@@ -1229,9 +1133,6 @@ irish_highkingdom_reform = {
 		}
 	}
 	trigger = {
-		primary_culture = irish
-	}
-	nation_designer_trigger = {
 		primary_culture = irish
 	}
 	valid_for_nation_designer = yes
@@ -1272,12 +1173,6 @@ scottish_monarchy_reform = {
 			primary_culture = highland_scottish
 		}
 	}
-	nation_designer_trigger = {
-		OR = {
-			primary_culture = scottish
-			primary_culture = highland_scottish
-		}
-	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 10
 	modifiers = {
@@ -1309,10 +1204,6 @@ sharifate_reform = {
 	}
 	trigger = {
 		owns_core_province = 385
-	}
-	nation_designer_trigger = {
-		religion_group = muslim
-		owns = 385
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 15
@@ -1353,9 +1244,6 @@ caliphate_reform = {
 		religion_group = muslim
 	}
 	lock_level_when_selected = yes
-	nation_designer_trigger = {
-		religion_group = muslim
-	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 50
 	modifiers = {
@@ -1387,9 +1275,6 @@ league_of_lezhe_reform = {
 	potential = {
 		primary_culture = albanian
 	}
-	nation_designer_trigger = {
-		primary_culture = albanian
-	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 30
 	modifiers = {
@@ -1415,10 +1300,6 @@ barbary_sultanate_reform = {
 		}
 	}
 	#queen = no
-	nation_designer_trigger = {
-		#religion_group = muslim
-		culture_group = maghrebi
-	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
 	modifiers = {
@@ -1454,9 +1335,6 @@ roman_empire_reform = {
 			tag = BYZ
 			is_playing_custom_nation = yes
 		}
-	}
-	nation_designer_trigger = {
-		primary_culture = roman
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 100
@@ -1559,9 +1437,6 @@ zoroastrian_persian_government_reform = {
 	trigger = {
 		religion_group = zoroastrian_group
 	}
-	nation_designer_trigger = {
-		religion_group = zoroastrian_group
-	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
 	modifiers = {
@@ -1607,9 +1482,6 @@ portuguese_monarchy_reform = {
 	icon = "portuguese_king"
 	allow_normal_conversion = yes
 	potential = {
-		primary_culture = portugese
-	}
-	nation_designer_trigger = {
 		primary_culture = portugese
 	}
 	valid_for_nation_designer = yes
@@ -1661,9 +1533,6 @@ burgundian_state_reform = {
 	potential = {
 		primary_culture = burgundian
 	}
-	nation_designer_trigger = {
-		primary_culture = burgundian
-	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 10
 	modifiers = {
@@ -1687,12 +1556,6 @@ bohemian_elective_kingdom_reform = {
 			primary_culture = czech_new
 		}
 		NOT = { has_country_flag = bohemia_abolished }
-	}
-	nation_designer_trigger = {
-		OR = {
-			primary_culture = czech
-			primary_culture = czech_new
-		}
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 10
@@ -1860,9 +1723,6 @@ admiralty_regime_reform = {
 		}
 	}
 	valid_for_nation_designer = yes
-	nation_designer_trigger = {
-		num_of_ports = 1
-	}
 	nation_designer_cost = 40
 	modifiers = {
 		leader_naval_fire = 1
@@ -1920,9 +1780,6 @@ modernized_ottoman_government = {
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 50
-	nation_designer_trigger = {
-		religion_group = muslim
-	}
 	maintain_dynasty = yes
 	modifiers = {
 		monarch_admin_power = 1 
@@ -1984,9 +1841,6 @@ reorganized_ottoman_government = {
 	}
 	valid_for_nation_designer = no
 	nation_designer_cost = 50
-	nation_designer_trigger = {
-		religion_group = muslim
-	}
 	maintain_dynasty = yes
 	modifiers = {
 		monarch_admin_power = 2
@@ -2037,9 +1891,6 @@ sultanate_of_rum_reform = {
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
-	nation_designer_trigger = {
-		religion_group = muslim
-	}
 	maintain_dynasty = yes
 	modifiers = {
 		core_creation = -0.1
@@ -2192,10 +2043,6 @@ beylik_government = {
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 5
-	nation_designer_trigger = {
-		religion_group = muslim
-		primary_culture = turkish
-	}
 	modifiers = {
 		fabricate_claims_cost = -0.5
 		unjustified_demands = -0.1
@@ -2227,10 +2074,6 @@ al_andalusia_government = {
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 5
-	nation_designer_trigger = {
-		religion_group = muslim
-		primary_culture = andalucian
-	}
 	modifiers = {
 		idea_cost = -0.1
 		tolerance_of_heathens_capacity = 2
@@ -2456,13 +2299,6 @@ principality = {
 	legacy_equivalent = principality_legacy
 	valid_for_nation_designer = yes
 	nation_designer_cost = 5
-	nation_designer_trigger = {
-		OR = {
-			culture_group = east_slavic
-			culture_group = slavic
-		}
-		religion = orthodox
-	}
 	modifiers = {
 		global_unrest = -1
 		global_regiment_cost = -0.05
@@ -2519,15 +2355,6 @@ tsardom = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
 
-	nation_designer_trigger = {
-		OR = {
-			culture_group = east_slavic
-			culture_group = slavic
-		}
-		NOT = { primary_culture = ruthenian }
-		NOT = { primary_culture = byelorussian }
-		religion = orthodox
-	}
 
 	modifiers = {
 		global_manpower_modifier = 0.20
@@ -2583,27 +2410,8 @@ ruthenian_tsardom = {
 		}
 	}
 	fixed_rank = 3
-	nation_designer_trigger = {
-		religion = orthodox
-		OR = {
-			primary_culture = ruthenian
-			primary_culture = byelorussian
-			primary_culture = ruthenian_new
-			primary_culture = byelorussian_new
-		}
-	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
-
-	nation_designer_trigger = {
-		OR = {
-			primary_culture = ruthenian
-			primary_culture = byelorussian
-			primary_culture = ruthenian_new
-			primary_culture = byelorussian_new
-		}
-		religion = orthodox
-	}
 
 	modifiers = {
 		manpower_in_true_faith_provinces = 0.2
@@ -2680,9 +2488,6 @@ mamluk_government = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 60
 
-	nation_designer_trigger = {
-		religion_group = muslim
-	}
 
 	modifiers = {
 		num_accepted_cultures = 3
@@ -2721,9 +2526,6 @@ feudal_theocracy = {
 				have_had_reform = feudal_theocracy
 			}
 		}
-	}
-	nation_designer_trigger = {
-		religion_group = muslim
 	}
 	legacy_equivalent = feudal_theocracy_legacy
 	valid_for_nation_designer = yes
@@ -2893,20 +2695,6 @@ mandala_reform = {
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 10
-	nation_designer_trigger = {
-		NOT = { religion = shinto }
-		NOT = { religion = confucianism }
-		OR = {
-			religion_group = eastern
-			religion_group = dharmic
-			religion_group = muslim
-		}
-		technology_group = chinese
-		OR = {
-			has_dlc = "Leviathan"
-			has_dlc = "Dharma"
-		}
-	}
 	legacy_equivalent = despotic_monarchy
 	modifiers = {
 		diplomatic_upkeep = 1
@@ -2937,21 +2725,6 @@ nayankara_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 10
 	legacy_equivalent = feudal_monarchy
-	nation_designer_trigger = {
-		technology_group = indian
-		OR = {
-			religion_group = dharmic
-			religion = buddhism
-			religion = vajrayana
-			religion = mahayana
-
-		}
-		OR = {
-			culture_group = dravidian
-			primary_culture = oriya
-			primary_culture = sinhala
-		}
-	}
 	modifiers = {
 		vassal_forcelimit_bonus = 1
 		global_manpower_modifier = 0.15
@@ -2967,10 +2740,6 @@ misl_confederacy_reform = {
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 10
-	nation_designer_trigger = {
-		has_dlc = "Dharma"
-		religion = sikhism
-	}
 	legacy_equivalent = feudal_monarchy
 	modifiers = {
 		global_manpower_modifier = 0.1
@@ -2992,15 +2761,6 @@ rajput_kingdom = {
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 10
-	nation_designer_trigger = {
-		has_dlc = "Dharma"
-		OR = {
-			culture_group = western_aryan
-			primary_culture = vindhyan
-		}
-		NOT = { primary_culture = marathi }
-		technology_group = indian
-	}
 	legacy_equivalent = feudal_monarchy
 	modifiers = {
 		army_tradition = 0.25
@@ -3030,13 +2790,7 @@ confucian_bureaucracy = {
 	allow_normal_conversion = yes
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
-	nation_designer_trigger = {
-		OR = {
-			religion = confucianism
-			primary_culture = vietnamese
-			primary_culture = vietnamese_new
-		}
-	}
+
 	potential = {
 		OR = {
 			religion = confucianism
@@ -3058,12 +2812,6 @@ korean_monarchy = {
 	allow_normal_conversion = yes
 	valid_for_nation_designer = yes
 	nation_designer_cost = 20
-	nation_designer_trigger = {
-		OR = {
-			primary_culture = korean
-			primary_culture = korean_new
-		}
-	}
 	potential = {
 		OR = {
 			primary_culture = korean
@@ -3118,13 +2866,7 @@ sakdina_system_reform = {
 	allow_normal_conversion = yes
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
-	nation_designer_trigger = {
-		OR = {
-			primary_culture = central_thai
-			primary_culture = northern_thai
-			culture_group = burman
-		}
-	}
+
 	potential = {
 		OR = {
 			primary_culture = central_thai
@@ -3146,13 +2888,7 @@ uparaja_reform = {
 	allow_normal_conversion = yes
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
-	nation_designer_trigger = {
-		OR = {
-			religion = buddhism
-			culture_group = malay
-		}
-		technology_group = chinese
-	}
+
 	potential = {
 		OR = {
 			religion = buddhism
@@ -3391,12 +3127,7 @@ arabic_plutocracy_reform = {
 			primary_culture = gulf_arabic
 		}
 	}
-	nation_designer_trigger = {
-		OR = {
-			primary_culture = omani_culture
-			primary_culture = gulf_arabic
-		}
-	}
+
 	valid_for_nation_designer = yes
 	nation_designer_cost = 10
 
@@ -3464,9 +3195,7 @@ polish_great_sejm = {
 	lock_level_when_selected = yes
 	valid_for_nation_designer = yes
 	nation_designer_cost = 25
-	nation_designer_trigger = {
-		has_dlc = "Lions of the North"
-	}
+
 	legacy_equivalent = feudal_monarchy
 	modifiers = {
 		nobles_influence_modifier = 0.05
@@ -3503,9 +3232,7 @@ polish_elective_monarchy = {
 	legacy_equivalent = elective_monarchy_legacy
 	valid_for_nation_designer = yes
 	nation_designer_cost = 50
-	nation_designer_trigger = {
-		has_dlc = "Lions of the North"
-	}
+
 	modifiers = {
 		global_unrest = -1
 		max_absolutism = -30
@@ -3555,9 +3282,7 @@ polish_autocratic_monarchy = {
 	legacy_equivalent = despotic_monarchy
 	valid_for_nation_designer = yes
 	nation_designer_cost = 75
-	nation_designer_trigger = {
-		has_dlc = "Lions of the North"
-	}
+
 	modifiers = {
 		administrative_efficiency = 0.05
 		max_absolutism = 10 
@@ -4387,9 +4112,7 @@ merchant_aristocracy_reform = {
 			}
 		}
 	}
-	nation_designer_trigger = {
-		primary_culture = goths
-	}
+
 	valid_for_nation_designer = yes
 	nation_designer_cost = 10
 
@@ -6985,9 +6708,7 @@ absolute_shogunate_reform = {
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 100
-	nation_designer_trigger = {
-		capital_scope = { region = japan_region } 
-	}
+
 	fixed_rank = 3
 	maintain_dynasty = yes
 	modifiers = {
@@ -7039,9 +6760,7 @@ japanese_divine_empire = {
 	#}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 100
-	nation_designer_trigger = {
-		capital_scope = { region = japan_region } 
-	}
+
 	fixed_rank = 3
 	maintain_dynasty = yes
 	modifiers = {
@@ -7079,9 +6798,7 @@ land_christian_sun_reform = {
 	# }
 	valid_for_nation_designer = yes
 	nation_designer_cost = 150
-	nation_designer_trigger = {
-		capital_scope = { region = japan_region } 
-	}
+
 	heir = no
 	fixed_rank = 3
 	modifiers = {
@@ -7215,9 +6932,7 @@ egyptian_government_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 80
 
-	nation_designer_trigger = {
-		religion_group = muslim
-	}
+
 
 	modifiers = {
 		yearly_innovativeness = 0.1
@@ -7245,12 +6960,7 @@ gothic_monarchy_reform = {
 			have_had_reform = gothic_monarchy_reform
 		}
 	} 
-	nation_designer_trigger = {
-		OR = {
-			primary_culture = goths
-			primary_culture = gothic_ger 
-		}
-	}
+
 	valid_for_nation_designer = yes
 	nation_designer_cost = 20
 

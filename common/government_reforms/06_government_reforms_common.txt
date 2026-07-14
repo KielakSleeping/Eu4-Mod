@@ -548,9 +548,7 @@ holy_state_reform = {
 	legacy_equivalent = holy_state_legacy
 	icon = "holy_state_reform"
 	valid_for_nation_designer = yes
-	nation_designer_trigger = {
-		religion = catholic
-	}
+
 	potential = {
 		OR = {
 			AND = {
@@ -5399,10 +5397,7 @@ apostolic_kingdom = {
 	valid_for_nation_designer = no
 	lock_level_when_selected = yes
 
-	nation_designer_trigger = {
-		primary_culture = hungarian
-		religion = catholic
-	}
+
 
 	modifiers = {
 		manpower_in_true_faith_provinces = 0.1
