@@ -20,8 +20,8 @@ country_decisions = {
 			NOT = { tag = PAP }
 			NOT = { tag = TUR }
 			NOT = { tag = BYZ }
-			NOT = { exists = GLH }
-			culture_group = tatar
+			NOT = { exists = CRI }
+			culture_group = tartar
 			is_colonial_nation = no
 			OR = {
 				is_former_colonial_nation = no
@@ -29,10 +29,6 @@ country_decisions = {
 					is_former_colonial_nation = yes
 					ai = no
 				}
-			}
-			OR = {
-				ai = no
-				num_of_cities = 20
 			}
 		}
 		provinces_to_highlight = {
@@ -46,9 +42,7 @@ country_decisions = {
 						province_id = 284 #Crimea
 						province_id = 302 #Tambov
 						province_id = 464 #Astrakhan
-						province_id = 465 #Nogai
 						province_id = 466 #Sarai
-						province_id = 1082 #Kazan
 						province_id = 2411 #Mansur
 					}
 				}
@@ -56,15 +50,12 @@ country_decisions = {
 		}
 		allow = {
 			adm_tech = 7
-			NOT = { exists = GLH }
+			NOT = { exists = CRI }
 			owns_core_province = 284 #Crimea
 			owns_core_province = 302 #Tambov
 			owns_core_province = 464 #Astrakhan
-			owns_core_province = 465 #Nogai
 			owns_core_province = 466 #Sarai
-			owns_core_province = 1082 #Kazan
 			owns_core_province = 2411 #Mansur
-			num_of_cities = 30
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 		}

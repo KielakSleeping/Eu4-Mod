@@ -3525,13 +3525,13 @@ state_house = {
 
 	modifier = {
 		local_tax_modifier = 1
-		state_governing_cost_increase = -0.33
+		statewide_governing_cost = -0.33
 		allowed_num_of_buildings = 1
 		allowed_num_of_manufactories = 1
 	}
 	bonus_modifier = {
 		local_tax_modifier = 1
-		state_governing_cost_increase = -0.33
+		statewide_governing_cost = -0.33
 	}
 
 	onmap = no
