@@ -1768,13 +1768,11 @@ modernized_ottoman_government = {
 	allow_normal_conversion = yes
 	icon = "modernized_ottoman_government"
 	potential = {
-		religion_group = muslim
 		OR = {
 			has_reform = modernized_ottoman_government
 			has_unlocked_government_reform = { government_reform = modernized_ottoman_government }
 			AND = {
 				is_playing_custom_nation = yes
-				have_had_reform = ottoman_government
 			}
 		}
 	}
