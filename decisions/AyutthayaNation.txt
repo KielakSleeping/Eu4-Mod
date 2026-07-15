@@ -6,8 +6,10 @@ country_decisions = {
 			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_siam_flag }
 			NOT = { tag = AYU }
+			OR = {
 			culture_group = thai_group
 			culture_group = southeastasian_group
+			}
 		}
 		provinces_to_highlight = {
 			region = indo_china_region
@@ -34,7 +36,7 @@ country_decisions = {
 		}
 		
 		effect = {
-			change_tag = SIA
+			change_tag = AYU
 			on_change_tag_effect = yes
 			swap_non_generic_missions = yes
 			indo_china_region = {
