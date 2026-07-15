@@ -1,13 +1,13 @@
 country_decisions = {
-	siamese_nation = {
+	ayutthaya_nation = {
 		major = yes
 		potential = {
-			always = no
 			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_siam_flag }
-			NOT = { tag = SIA }
+			NOT = { tag = AYU }
 			culture_group = thai_group
+			culture_group = southeastasian_group
 		}
 		provinces_to_highlight = {
 			region = indo_china_region
@@ -18,8 +18,9 @@ country_decisions = {
 		}
 		
 		allow = {
-			NOT = { exists = SIA }
+			NOT = { exists = AYU }
 			is_at_war = no
+			adm_tech = 7
 			is_free_or_tributary_trigger = yes
 			owns_core_province = 600
 			owns_core_province = 601

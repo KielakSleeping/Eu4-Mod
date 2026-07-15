@@ -721,3 +721,7 @@ kielak_cri_bulan_father_and_beg = {
 	republican_tradition = 0.2
 	manpower_in_true_faith_provinces = 0.1
 }
+
+kielak_ayu_abso = {
+	max_absolutism_effect = 0.1
+}
