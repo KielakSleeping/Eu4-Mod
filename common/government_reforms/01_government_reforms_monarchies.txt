@@ -1797,7 +1797,6 @@ modernized_ottoman_government = {
 		has_janissaries = yes
 		has_harem = yes
 		custom_attributes = {
-			has_harem_events = yes
 			enables_estate_janissaries = yes
 			has_eyalets = yes
 		}
@@ -1810,16 +1809,16 @@ modernized_ottoman_government = {
 		has_pashas = yes
 		has_janissaries = yes
 	}
-	conditional = {
-		allow = {
-			has_dlc = "Rights of Man" 
-			NOT = { has_dlc = "Domination" }
-		}
-		has_harem = yes
-		custom_attributes = {
-			has_harem_events = yes
-		}
-	}
+	# conditional = {
+	# 	allow = {
+	# 		has_dlc = "Rights of Man" 
+	# 		NOT = { has_dlc = "Domination" }
+	# 	}
+	# 	has_harem = yes
+	# 	custom_attributes = {
+	# 		has_harem_events = yes
+	# 	}
+	# }
 }
 
 reorganized_ottoman_government = {
