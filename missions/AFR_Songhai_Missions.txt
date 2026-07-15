@@ -55,15 +55,13 @@ songhai_military_slot = {
 		required_missions = { son_military_expertise }
 		position = 3
 		trigger = {
-			if = {
-				limit = {
-					mission_completed = son_military_expertise
-				}
+			army_tradition = 50
+			army_professionalism = 0.5
+			army_size_percentage = 1
 		}
 		effect = {
 			add_mil_power = 100
 		}
-	}
 	}
 
 	#Modernize Army
