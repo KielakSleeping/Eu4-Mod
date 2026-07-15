@@ -16,7 +16,6 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
-			NOT = { exists = SON }
 			OR = {
 				culture_group = sahelian
 				culture_group = mande
@@ -57,6 +56,7 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
+			NOT = { exists = SON }
 			owns_core_province = 1142 #Dendi
 			owns_core_province = 1160 #Mandara
 			owns_core_province = 1154 #Zazzau
