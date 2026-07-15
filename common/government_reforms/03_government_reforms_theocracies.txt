@@ -196,7 +196,8 @@ prussian_theocratic_reform = {
 		devotion = -0.5
 		max_absolutism = 10
 		manpower_in_true_faith_provinces = 0.15
-		governing_capacity_modifier = -0.3
+		#governing_capacity_modifier = -0.3
+		expand_administration_cost = 0.1
 	}
 	
 	conditional = {
@@ -232,7 +233,8 @@ militarized_crusader_order_reform = {
 		manpower_in_true_faith_provinces = 0.33
 		cb_on_religious_enemies = yes
 		tolerance_own = 2
-		governing_capacity_modifier = -0.5
+		#governing_capacity_modifier = -0.5
+		expand_administration_cost = 0.1
 	}
 	
 	conditional = {
@@ -323,7 +325,8 @@ merchant_theocracy_reform = {
 	icon = "pope"
 	allow_normal_conversion = yes
 	modifiers = {
-		governing_capacity_modifier = -0.25
+		#governing_capacity_modifier = -0.25
+		expand_administration_cost = 0.1
 		merchants = 1
 		papal_influence = 2
 		curia_treasury_contribution = 0.25
@@ -424,7 +427,8 @@ reformer_state_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
 	modifiers = {
-		governing_capacity_modifier = -0.25
+		#governing_capacity_modifier = -0.25
+		expand_administration_cost = 0.1
 		development_cost = -0.05
 		enforce_religion_cost = -0.33
 		advisor_pool = 1
