@@ -794,7 +794,7 @@ angevin_monarchy = {
 		max_absolutism = 10
 		prestige = 1
 		parliament_backing_chance = 0.25
-		land_morale = 0.15
+		land_morale = 0.05
 		#max_possible_parliament_seats = 15
 	}
 	effect = {
