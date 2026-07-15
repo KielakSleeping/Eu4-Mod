@@ -367,19 +367,19 @@ on_war_won = {
 			}
 		}
 	}
-	if = {
-		limit = {
-			ROOT = { 
-				tag = SWE
-				has_country_modifier = swe_vasa_leads_the_rebellion
-				is_subject = no
-			}
-			FROM = { tag = DAN }
-		}
-		country_event = {
-			id = flavor_swe.111
-		}
-	}
+	# if = {
+	# 	limit = {
+	# 		ROOT = { 
+	# 			tag = SWE
+	# 			has_country_modifier = swe_vasa_leads_the_rebellion
+	# 			is_subject = no
+	# 		}
+	# 		FROM = { tag = DAN }
+	# 	}
+	# 	country_event = {
+	# 		id = flavor_swe.111
+	# 	}
+	# }
 	if = {
 		limit = {
 			ROOT = { 
