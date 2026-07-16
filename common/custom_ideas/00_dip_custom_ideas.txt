@@ -161,9 +161,13 @@ dip_idea_modifiers = {
 	}	
 	custom_idea_diplomatic_upkeep = {
 		diplomatic_upkeep = 1
-		max_level = 2
+		max_level = 6
 		level_cost_1 = 5
 		level_cost_2 = 30
+		level_cost_3 = 35
+		level_cost_4 = 40
+		level_cost_5 = 45
+		level_cost_6 = 50
 		chance = {
 			factor = 1
 		}
