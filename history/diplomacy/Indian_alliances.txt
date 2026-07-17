@@ -509,21 +509,21 @@ vassal = {
 }
 
 #Bahlul Lodi's Punjabi Domain
-vassal = {
-	first = DLH
-	second = SRH
-	start_date = 1443.1.1
-	end_date = 1451.4.20
-}
+# vassal = {
+# 	first = DLH
+# 	second = SRH
+# 	start_date = 1443.1.1
+# 	end_date = 1451.4.20
+# }
 
 #Bikaner
 
-vassal = {
-	first = DLH
-	second = JAN
-	start_date = 1414.1.1
-	end_date = 1465.1.1
-}
+# vassal = {
+# 	first = DLH
+# 	second = JAN
+# 	start_date = 1414.1.1
+# 	end_date = 1465.1.1
+# }
 
 vassal = {
 	first = MUG
@@ -717,12 +717,12 @@ vassal = {
 	end_date = 1495.1.1
 }
 
-vassal = {
-	first = DLH
-	second = BGL
-	start_date = 1495.1.1
-	end_date = 1526.1.1
-}
+# vassal = {
+# 	first = DLH
+# 	second = BGL
+# 	start_date = 1495.1.1
+# 	end_date = 1526.1.1
+# }
 
 vassal = {
 	first = MUG
@@ -753,12 +753,12 @@ vassal = {
 	end_date = 1478.1.1
 }
 
-vassal = {
-	first = DLH
-	second = TRT
-	start_date = 1498.1.1
-	end_date = 1513.1.1
-}
+# vassal = {
+# 	first = DLH
+# 	second = TRT
+# 	start_date = 1498.1.1
+# 	end_date = 1513.1.1
+# }
 
 #Gondwana
 
@@ -821,47 +821,47 @@ vassal = {
 
 #Orissa & Garjats
 
-vassal = { #Garjat
-	first = ORI
-	second = GRJ 
-	start_date = 1444.1.1
-	end_date = 1568.1.1
-}
+# vassal = { #Garjat
+# 	first = ORI
+# 	second = GRJ 
+# 	start_date = 1444.1.1
+# 	end_date = 1568.1.1
+# }
 
-vassal = { #Parlakhimidi
-	first = ORI
-	second = PRD
-	start_date = 1444.1.1
-	end_date = 1568.1.1
-}
+# vassal = { #Parlakhimidi
+# 	first = ORI
+# 	second = PRD
+# 	start_date = 1444.1.1
+# 	end_date = 1568.1.1
+# }
 
-vassal = { #Keonhjar
-	first = ORI
-	second = KJH
-	start_date = 1444.1.1
-	end_date = 1568.1.1
-}
+# vassal = { #Keonhjar
+# 	first = ORI
+# 	second = KJH
+# 	start_date = 1444.1.1
+# 	end_date = 1568.1.1
+# }
 
-vassal = { #Jeypore
-	first = ORI
-	second = JPR
-	start_date = 1444.1.1
-	end_date = 1576.1.1
-}
+# vassal = { #Jeypore
+# 	first = ORI
+# 	second = JPR
+# 	start_date = 1444.1.1
+# 	end_date = 1576.1.1
+# }
 
-vassal = {
-	first = BNG
-	second = GRJ
-	start_date = 1568.1.1
-	end_date = 1576.1.1
-}
+# vassal = {
+# 	first = BNG
+# 	second = GRJ
+# 	start_date = 1568.1.1
+# 	end_date = 1576.1.1
+# }
 
-vassal = {
-	first = ORI
-	second = GRJ
-	start_date = 1576.1.1
-	end_date = 1592.1.1
-}
+# vassal = {
+# 	first = ORI
+# 	second = GRJ
+# 	start_date = 1576.1.1
+# 	end_date = 1592.1.1
+# }
 
 vassal = {
 	first = MUG

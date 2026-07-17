@@ -2724,8 +2724,8 @@ woc_hun_fourth_branch = {
 					has_dlc = "Golden Century"
 				}
 				num_of_owned_provinces_with = {
-					holy_order = order_of_the_dragon_order
-					value = 30
+					base_manpower = 10
+					value = 20
 				}
 			}
 			else = {

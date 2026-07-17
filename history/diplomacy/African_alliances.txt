@@ -21,12 +21,12 @@ vassal = {
 }
 
 #Zimbabwe
-vassal = {
-	first = ZIM
-	second = RZW
-	start_date = 1440.1.1
-	end_date = 1650.1.1
-}
+# vassal = {
+# 	first = ZIM
+# 	second = RZW
+# 	start_date = 1440.1.1
+# 	end_date = 1650.1.1
+# }
 
 vassal = {
 	first = POR
@@ -138,12 +138,12 @@ march = {
 
 #Kilwan Vassals
 
-vassal = {
-	first = ZAN
-	second = SFA
-	start_date = 1444.1.1
-	end_date = 1490.1.1
-}
+# vassal = {
+# 	first = ZAN
+# 	second = SFA
+# 	start_date = 1444.1.1
+# 	end_date = 1490.1.1
+# }
 
 vassal = {
 	first = POR
@@ -184,19 +184,19 @@ vassal = {
 	end_date = 1641.1.1
 }
 
-vassal = {
-	first = KON
-	second = NDO
-	start_date = 1444.1.1
-	end_date = 1556.1.1
-}
+# vassal = {
+# 	first = KON
+# 	second = NDO
+# 	start_date = 1444.1.1
+# 	end_date = 1556.1.1
+# }
 
-vassal = {
-	first = KON
-	second = LOA
-	start_date = 1444.1.1
-	end_date = 1564.1.1
-}
+# vassal = {
+# 	first = KON
+# 	second = LOA
+# 	start_date = 1444.1.1
+# 	end_date = 1564.1.1
+# }
 
 vassal = {
 	first = POR

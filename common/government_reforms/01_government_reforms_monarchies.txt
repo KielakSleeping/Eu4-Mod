@@ -776,11 +776,14 @@ british_monarchy = {
 angevin_monarchy = {
 	icon = "queen"
 	allow_normal_conversion = no
-	potential = {
-		OR = {
-			has_reform = angevin_monarchy
-			have_had_reform = angevin_monarchy
-		}
+		potential = {
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = angevin_monarchy
+			}
+	}
+	trigger = {
+		have_had_reform = angevin_monarchy
 	}
 	lock_level_when_selected = yes
 	valid_for_nation_designer = yes
@@ -1124,17 +1127,16 @@ tanistry_reform = {
 irish_highkingdom_reform = {
 	icon = "irish_highkingdom"
 	allow_normal_conversion = yes
-	potential = {
-		has_dlc = "Domination"
-		OR = {
-			has_reform = irish_highkingdom_reform
-			has_unlocked_government_reform = { government_reform = irish_highkingdom_reform }
-			have_had_reform = irish_highkingdom_reform
-		}
+		potential = {
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = irish_highkingdom_reform
+			}
 	}
 	trigger = {
-		primary_culture = irish
+		have_had_reform = irish_highkingdom_reform
 	}
+	lock_level_when_selected = yes
 	valid_for_nation_designer = yes
 	nation_designer_cost = 15
 	modifiers = {
@@ -1272,9 +1274,16 @@ caliphate_reform = {
 league_of_lezhe_reform = {
 	icon = "giga_chad"
 	allow_normal_conversion = yes
-	potential = {
-		primary_culture = albanian
+		potential = {
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = league_of_lezhe_reform
+			}
 	}
+	trigger = {
+		have_had_reform = league_of_lezhe_reform
+	}
+	lock_level_when_selected = yes
 	valid_for_nation_designer = yes
 	nation_designer_cost = 30
 	modifiers = {
@@ -1421,22 +1430,16 @@ zoroastrian_persian_government_reform = {
 	allow_normal_conversion = yes
 	lock_level_when_selected = yes
 	potential = {
-		OR = {
-			tag = PER
-			tag = ERS
 			AND = {
-				OR = {
-					has_reform = zoroastrian_persian_government_reform
-					have_had_reform = zoroastrian_persian_government_reform
-				}
 				is_playing_custom_nation = yes
+				have_had_reform = zoroastrian_persian_government_reform
 			}
-		}
-		religion_group = zoroastrian_group
 	}
 	trigger = {
-		religion_group = zoroastrian_group
+		have_had_reform = zoroastrian_persian_government_reform
 	}
+
+	lock_level_when_selected = yes
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
 	modifiers = {
@@ -1580,26 +1583,16 @@ bohemian_elective_kingdom_reform = {
 stadthalter_monarchy_reform = {
 	icon = "dutch_republic"
 	allow_normal_conversion = no
-	potential = {
-		always = no
-		OR = {
-			AND = {
-				OR = {
-					primary_culture = dutch
-					primary_culture = frisian
-					primary_culture = flemish
-				}
-				NOT = { map_setup = map_setup_random }
-			}
+		potential = {
 			AND = {
 				is_playing_custom_nation = yes
 				have_had_reform = stadthalter_monarchy_reform
 			}
-		}
 	}
 	trigger = {
-		is_lesser_in_union = no
+		have_had_reform = stadthalter_monarchy_reform
 	}
+	lock_level_when_selected = yes
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
 	lock_level_when_selected = yes
@@ -1668,13 +1661,16 @@ stadthalter_monarchy_reform = {
 janissary_autocracy_reform = {
 	icon = "janissary_government"
 	allow_normal_conversion = yes
-	potential = {
-		has_dlc = "Domination"
-		OR = {
-			has_reform = janissary_autocracy_reform
-			have_had_reform = janissary_autocracy_reform
-		}
+		potential = {
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = janissary_autocracy_reform
+			}
 	}
+	trigger = {
+		have_had_reform = janissary_autocracy_reform
+	}
+	lock_level_when_selected = yes
 	valid_for_nation_designer = yes
 	nation_designer_cost = 50
 	modifiers = {
@@ -1768,12 +1764,10 @@ modernized_ottoman_government = {
 	allow_normal_conversion = yes
 	icon = "modernized_ottoman_government"
 	potential = {
-		OR = {
+		AND = {
 			has_reform = modernized_ottoman_government
 			has_unlocked_government_reform = { government_reform = modernized_ottoman_government }
-			AND = {
-				is_playing_custom_nation = yes
-			}
+			is_playing_custom_nation = yes
 		}
 	}
 	valid_for_nation_designer = yes
@@ -2087,37 +2081,16 @@ al_andalusia_government = {
 prussian_monarchy = {
 	icon = "prussian_monarchy"
 	allow_normal_conversion = yes
-	potential = {
-		has_dlc = "Domination"
-		NOT = { has_reform = prussian_monarchy_base }
-		OR = {
+		potential = {
 			AND = {
-				tag = BRA
-				OR = {
-				tag = PRU
+				is_playing_custom_nation = yes
+				have_had_reform = prussian_monarchy 
 			}
-				OR = {
-					has_mission = emp_brapru_army_reforms_2
-					has_mission = emp_brapru_army_reforms_3
-				}
-				NOT = { map_setup = map_setup_random }
-			}
-			has_unlocked_government_reform = { government_reform = prussian_monarchy }
-			has_reform = prussian_monarchy
-			have_had_reform = prussian_monarchy
-		}
 	}
 	trigger = {
-		OR = {
-			religion = protestant
-			religion = reformed
-			religion = hussite
-			religion = anglican
-			has_unlocked_government_reform = { government_reform = prussian_monarchy }
-		}
-		has_reform = prussian_monarchy
 		have_had_reform = prussian_monarchy
 	}
+	lock_level_when_selected = yes
 	legacy_equivalent = prussian_monarchy_legacy
 
 	modifiers = {
@@ -2322,31 +2295,18 @@ principality = {
 tsardom = {
 	icon = "tsardom"
 	allow_normal_conversion = yes
-	potential = {
-		religion = orthodox
-		OR = {
-			culture_group = east_slavic
-			culture_group = slavic
-		}
-		NOT = { primary_culture = ruthenian }
-		NOT = { primary_culture = byelorussian }
-		OR = {
-			AND = {
-				tag = RUS
-				NOT = { map_setup = map_setup_random }
-			}
-			AND = {
-				tag = UKR
-				NOT = { map_setup = map_setup_random }
-			}
+		potential = {
 			AND = {
 				is_playing_custom_nation = yes
 				have_had_reform = tsardom
 			}
-		}
 	}
-	fixed_rank = 3
+	trigger = {
+		have_had_reform = tsardom
+	}
 	lock_level_when_selected = yes
+
+	fixed_rank = 3
 	allow_normal_conversion = no
 	legacy_equivalent = tsardom_legacy
 	valid_for_nation_designer = yes
@@ -2387,25 +2347,16 @@ tsardom = {
 ruthenian_tsardom = {
 	icon = "ruthenia_tsardom"
 	allow_normal_conversion = yes
-	potential = {
-		religion = orthodox
-		OR = {
-			primary_culture = ruthenian
-			primary_culture = byelorussian
-			primary_culture = ruthenian_new
-			primary_culture = byelorussian_new
-		}
-		OR = {
-			AND = {
-				tag = UKR
-				NOT = { map_setup = map_setup_random }
-			}
+		potential = {
 			AND = {
 				is_playing_custom_nation = yes
 				have_had_reform = ruthenian_tsardom
 			}
-		}
 	}
+	trigger = {
+		have_had_reform = ruthenian_tsardom
+	}
+	lock_level_when_selected = yes
 	fixed_rank = 3
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
@@ -2431,16 +2382,16 @@ ruthenian_tsardom = {
 russian_empire_reform = {
 	icon = "russian_queen"
 	allow_normal_conversion = yes
-	potential = {
-		OR = {
-			has_reform = russian_empire_reform
-			have_had_reform = russian_empire_reform
+		potential = {
 			AND = {
 				is_playing_custom_nation = yes
 				have_had_reform = russian_empire_reform
 			}
-		}
 	}
+	trigger = {
+		have_had_reform = russian_empire_reform
+	}
+	lock_level_when_selected = yes
 	fixed_rank = 3
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
@@ -2469,16 +2420,16 @@ russian_empire_reform = {
 mamluk_government = {
 	icon = "mamluk_government"
 	allow_normal_conversion = yes
-	potential = {
-		religion_group = muslim
-		OR = {
+		potential = {
 			AND = {
-				tag = MAM
-				NOT = { map_setup = map_setup_random }
+				is_playing_custom_nation = yes
+				have_had_reform = mamluk_government
 			}
-			have_had_reform = mamluk_government
-		}
 	}
+	trigger = {
+		have_had_reform = mamluk_government
+	}
+	lock_level_when_selected = yes
 	legacy_equivalent = mamluk_government_legacy
 	queen = no
 
@@ -2809,12 +2760,16 @@ korean_monarchy = {
 	allow_normal_conversion = yes
 	valid_for_nation_designer = yes
 	nation_designer_cost = 20
-	potential = {
-		OR = {
-			primary_culture = korean
-			primary_culture = korean_new
-		}
+		potential = {
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = korean_monarchy
+			}
 	}
+	trigger = {
+		have_had_reform = korean_monarchy
+	}
+	lock_level_when_selected = yes
 	modifiers = {
 		development_cost_in_primary_culture = -0.05
 		same_culture_advisor_cost = -0.1
@@ -3343,24 +3298,16 @@ lithuanian_grand_empire = {
 livonian_military_monarchy = {
 	icon = "livonian_monarchy"
 	allow_normal_conversion = no
-	potential = {
-		OR = {
+		potential = {
 			AND = {
 				is_playing_custom_nation = yes
-				have_had_reform = livonian_military_monarchy
+				have_had_reform = livonian_military_monarchy 
 			}
-			has_unlocked_government_reform = { government_reform = livonian_military_monarchy }
-		}
 	}
 	trigger = {
-		OR = {
-			AND = {
-				is_playing_custom_nation = yes
-				have_had_reform = livonian_military_monarchy
-			}
-			has_unlocked_government_reform = { government_reform = livonian_military_monarchy }
-		}
+		have_had_reform = livonian_military_monarchy 
 	}
+	lock_level_when_selected = yes
 	valid_for_nation_designer = yes
 	nation_designer_trigger = {
 		has_dlc = "Lions of the North"
@@ -3387,24 +3334,16 @@ livonian_military_monarchy = {
 livonian_naval_monarchy = {
 	icon = "livonian_monarchy"
 	allow_normal_conversion = no
-	potential = {
-		OR = {
+		potential = {
 			AND = {
 				is_playing_custom_nation = yes
 				have_had_reform = livonian_naval_monarchy
 			}
-			has_unlocked_government_reform = { government_reform = livonian_naval_monarchy }
-		}
 	}
 	trigger = {
-		OR = {
-			AND = {
-				is_playing_custom_nation = yes
-				have_had_reform = livonian_naval_monarchy
-			}
-			has_unlocked_government_reform = { government_reform = livonian_naval_monarchy }
-		}
+		have_had_reform = livonian_naval_monarchy
 	}
+	lock_level_when_selected = yes
 	valid_for_nation_designer = yes
 	nation_designer_trigger = {
 		has_dlc = "Lions of the North"
@@ -3451,23 +3390,16 @@ livonian_trade_monarchy = {
 	icon = "livonian_monarchy"
 	allow_normal_conversion = no
 	potential = {
-		OR = {
 			AND = {
 				is_playing_custom_nation = yes
 				have_had_reform = livonian_trade_monarchy
 			}
-			has_unlocked_government_reform = { government_reform = livonian_trade_monarchy }
-		}
 	}
 	trigger = {
-		OR = {
-			AND = {
-				is_playing_custom_nation = yes
-				have_had_reform = livonian_trade_monarchy
-			}
-			has_unlocked_government_reform = { government_reform = livonian_trade_monarchy }
-		}
+		have_had_reform = livonian_trade_monarchy
 	}
+
+	lock_level_when_selected = yes
 	valid_for_nation_designer = yes
 	nation_designer_trigger = {
 		has_dlc = "Lions of the North"
@@ -3647,24 +3579,16 @@ livonian_monarchy = {
 livonian_mercenary_monarchy = {
 	icon = "livonian_monarchy"
 	allow_normal_conversion = no
-	potential = {
-		OR = {
+		potential = {
 			AND = {
 				is_playing_custom_nation = yes
 				have_had_reform = livonian_mercenary_monarchy
 			}
-			has_unlocked_government_reform = { government_reform = livonian_mercenary_monarchy }
-		}
 	}
 	trigger = {
-		OR = {
-			AND = {
-				is_playing_custom_nation = yes
-				have_had_reform = livonian_mercenary_monarchy
-			}
-			has_unlocked_government_reform = { government_reform = livonian_mercenary_monarchy }
-		}
+		have_had_reform = livonian_mercenary_monarchy
 	}
+	lock_level_when_selected = yes
 	valid_for_nation_designer = yes
 	nation_designer_trigger = {
 		has_dlc = "Lions of the North"
@@ -3831,24 +3755,16 @@ livonian_administrative_monarchy = {
 livonian_admiral_monarchy = {
 	icon = "livonian_monarchy"
 	allow_normal_conversion = no
-	potential = {
-		OR = {
+		potential = {
 			AND = {
 				is_playing_custom_nation = yes
 				have_had_reform = livonian_admiral_monarchy
 			}
-			has_unlocked_government_reform = { government_reform = livonian_admiral_monarchy }
-		}
 	}
 	trigger = {
-		OR = {
-			AND = {
-				is_playing_custom_nation = yes
-				have_had_reform = livonian_admiral_monarchy
-			}
-			has_unlocked_government_reform = { government_reform = livonian_admiral_monarchy }
-		}
+		have_had_reform = livonian_admiral_monarchy
 	}
+	lock_level_when_selected = yes
 	valid_for_nation_designer = yes
 	nation_designer_trigger = {
 		has_dlc = "Lions of the North"
@@ -3995,17 +3911,17 @@ livonian_enlightened_monarchy = {
 	icon = "livonian_monarchy"
 	allow_normal_conversion = no
 	potential = {
-		OR = {
 			AND = {
 				is_playing_custom_nation = yes
 				have_had_reform = livonian_enlightened_monarchy
 			}
-			has_unlocked_government_reform = { government_reform = livonian_enlightened_monarchy }
-		}
 	}
 	trigger = {
-		has_unlocked_government_reform = { government_reform = livonian_enlightened_monarchy }
+		have_had_reform = livonian_enlightened_monarchy
 	}
+
+	lock_level_when_selected = yes
+
 	valid_for_nation_designer = yes
 	nation_designer_trigger = {
 		has_dlc = "Lions of the North"
@@ -6773,26 +6689,16 @@ land_christian_sun_reform = {
 	icon = "land_christian_sun_reform"
 	allow_normal_conversion = no
 	potential = {
-		OR = { 
 			AND = {
-				has_reform = land_christian_sun_reform
 				is_playing_custom_nation = yes
+				have_had_reform = land_christian_sun_reform 
 			}
-			have_had_reform = land_christian_sun_reform
-			mission_completed = jap_spread_the_christian_faith
-			has_reform = land_christian_sun_reform
-		}
 	}
-	# trigger = {
-		# OR = {
-			# have_had_reform = land_christian_sun_reform
-			# mission_completed = jap_spread_the_christian_faith
-			# AND = {
-				# have_had_reform = land_christian_sun_reform
-				# is_playing_custom_nation = yes
-			# }
-		# }
-	# }
+	trigger = {
+		have_had_reform = land_christian_sun_reform
+	}
+
+	lock_level_when_selected = yes
 	valid_for_nation_designer = yes
 	nation_designer_cost = 150
 
@@ -6919,11 +6825,14 @@ cawa_auxiliary_forces = {
 egyptian_government_reform = {
 	icon = "egyptian_government_reform"
 	allow_normal_conversion = yes
-	potential = {
-		OR = {
-			have_had_reform = egyptian_government_reform
-			has_country_flag = egyptian_government_reform_flag
-		}
+		potential = {
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = egyptian_government_reform
+			}
+	}
+	trigger = {
+		have_had_reform = egyptian_government_reform
 	}
 	lock_level_when_selected = yes
 	valid_for_nation_designer = yes

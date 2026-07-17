@@ -123,7 +123,7 @@ les_mages_noirs_ideas_dip_modifiers = {
 	}
 	
 	custom_idea_culture_conversion_time = {
-		culture_conversion_time = -0.05
+		culture_conversion_time = -0.01
 		level_cost_2 = 3
 		level_cost_3 = 9
 		level_cost_4 = 18

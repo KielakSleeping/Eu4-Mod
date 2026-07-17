@@ -147,11 +147,15 @@ parliamentary_republic_reform = {
 	icon = "protectorate_parliament_reform"
 	allow_normal_conversion = no
 	potential = {
-		OR = {
-			has_reform = parliamentary_republic_reform
-			have_had_reform = parliamentary_republic_reform
-		}
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = parliamentary_republic_reform 
+			}
 	}
+	trigger = {
+		have_had_reform = parliamentary_republic_reform
+	}
+
 	lock_level_when_selected = yes
 	valid_for_new_country = no
 	nation_designer_cost = 30
@@ -192,61 +196,16 @@ parliamentary_republic_reform = {
 prussian_republic_reform = {
 	icon = "prussian_monarchy"
 	allow_normal_conversion = yes
-	potential = {
-		OR = {
-			AND = {
-				tag = PRU
-				NOT = { map_setup = map_setup_random }
-			}
-			AND = {
-				tag = GER
-				NOT = { map_setup = map_setup_random }
-				OR = {
-					has_reform = prussian_monarchy
-					have_had_reform = prussian_monarchy
-					have_had_reform = prussian_republic_reform
-					have_had_reform = prussian_theocratic_reform
-					is_hegemon_of_type = military_hegemon
-					development_in_provinces = {
-						value = 500
-						culture = prussian
-					}
-				}
-			}
+		potential = {
 			AND = {
 				is_playing_custom_nation = yes
-				OR = {
-					has_reform = prussian_republic_reform
-					have_had_reform = prussian_monarchy
-					have_had_reform = prussian_monarchy_base
-					have_had_reform = prussian_republic_reform
-					have_had_reform = prussian_theocratic_reform
-				}
+				have_had_reform = prussian_republic_reform
 			}
-			has_unlocked_government_reform = { government_reform = prussian_republic_reform }
-		}
 	}
 	trigger = {
-		OR = {
-			religion = protestant
-			religion = reformed
-			religion = hussite
-			religion = anglican
-			AND = {
-				is_playing_custom_nation = yes
-				OR = {
-					hidden_trigger = {
-						has_reform = prussian_republic_reform
-					}
-					have_had_reform = prussian_monarchy
-					have_had_reform = prussian_monarchy_base
-					have_had_reform = prussian_republic_reform
-					have_had_reform = prussian_theocratic_reform
-				}
-			}
-			has_unlocked_government_reform = { government_reform = prussian_republic_reform }
-		}
+		have_had_reform = prussian_republic_reform
 	}
+	lock_level_when_selected = yes
 	valid_for_nation_designer = yes
 	nation_designer_cost = 100
 	legacy_equivalent = prussian_republic
@@ -618,9 +577,16 @@ military_dictatorship_reform = {
 	lock_level_when_selected = yes
 	icon = "parliament_hall"
 	potential = {
-		always = no
-		has_reform = military_dictatorship_reform
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = military_dictatorship_reform 
+			}
 	}
+	trigger = {
+		have_had_reform = military_dictatorship_reform 
+	}
+
+	lock_level_when_selected = yes
 	valid_for_nation_designer = yes
 	nation_designer_cost = 25
 	legacy_equivalent = military_dictatorship
@@ -1058,11 +1024,16 @@ ambrosian_republic = {
 	icon = "ambrosian_republic"
 	allow_normal_conversion = yes
 	potential = {
-		OR = {
-			has_reform = ambrosian_republic
-			have_had_reform = ambrosian_republic
-		}
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = ambrosian_republic
+			}
 	}
+	trigger = {
+		have_had_reform = ambrosian_republic
+	}
+
+	lock_level_when_selected = yes
 	legacy_equivalent = ambrosian_republic_legacy
 	valid_for_nation_designer = yes
 	nation_designer_cost = 25
@@ -1189,23 +1160,16 @@ veche_republic = {
 great_veche_republic = {
 	icon = "king"
 	allow_normal_conversion = yes
-	potential = {
-		culture_group = east_slavic
-		OR = {
-			AND = {
-				tag = RUS
-				NOT = { map_setup = map_setup_random }
-			}
-			AND = {
-				tag = UKR
-				NOT = { map_setup = map_setup_random }
-			}
+		potential = {
 			AND = {
 				is_playing_custom_nation = yes
 				have_had_reform = great_veche_republic
 			}
-		}
 	}
+	trigger = {
+		have_had_reform = great_veche_republic
+	}
+	lock_level_when_selected = yes
 	fixed_rank = 3
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
@@ -1921,23 +1885,16 @@ calvinist_republic_government = {
 dutch_republic = {
 	icon = "dutch_republic"
 	allow_normal_conversion = no
-	potential = {
-		always = no
-		OR = {
-			AND = {
-				OR = {
-					primary_culture = dutch
-					primary_culture = frisian
-					primary_culture = flemish
-				}
-				NOT = { map_setup = map_setup_random }
-			}
+		potential = {
 			AND = {
 				is_playing_custom_nation = yes
 				have_had_reform = dutch_republic
 			}
-		}
 	}
+	trigger = {
+		have_had_reform = dutch_republic
+	}
+	lock_level_when_selected = yes
 	legacy_equivalent = dutch_republic_legacy
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
@@ -2003,20 +1960,18 @@ cossacks_reform = {
 	icon = "horde_riding"
 	legacy_equivalent = cossacks_legacy_reform
 	allow_normal_conversion = yes
+	
 	potential = {
-		OR = {
 			AND = {
-				tag = ZAZ
-				NOT = { map_setup = map_setup_random }
+				is_playing_custom_nation = yes
+				have_had_reform = cossacks_reform
 			}
-			has_reform = cossacks_reform
-			have_had_reform = cossacks_reform
-		}
 	}
 	trigger = {
-		is_not_blocked_by_estate_privilege = { estate = estate_nobles }
+		have_had_reform = cossacks_reform
 	}
-	
+
+	lock_level_when_selected = yes
 	raze_province = yes
 	government_abilities = {
 		cossacks_mechanic
