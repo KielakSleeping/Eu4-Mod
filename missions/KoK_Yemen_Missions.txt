@@ -879,7 +879,7 @@ KoK_YEM_missions_5 = {
 				has_production_building_trigger = yes
 				development = 20 
 				owned_by = ROOT
-				has_shipyard_building_trigger = yes 
+				has_dock_building_trigger = yes 
 			}
 		}
 		effect = {
