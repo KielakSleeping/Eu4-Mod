@@ -695,7 +695,7 @@ country_event = {
 	}
 	option = {
 		name = flavor_hun.7.b
-		add_stability = -3
+		add_stability = 1
 		random_owned_province = {
 			noble_rebels = 2
 		}
