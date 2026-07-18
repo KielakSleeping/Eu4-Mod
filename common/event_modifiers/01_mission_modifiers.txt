@@ -2977,7 +2977,7 @@ garjat_fealty = {
 }
 
 bng_orissa_conquest = {
-	province_warscore_cost = -0.15
+	province_warscore_cost = -0.10
 }
 
 bng_conquest_burma = {
