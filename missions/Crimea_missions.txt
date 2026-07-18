@@ -632,11 +632,12 @@ X_CRI_slot_3 = {
 		}
 
 		effect = {
-			country_event = { id = K_CRI_events.4 }
+			# country_event = { id = K_CRI_events.4 }
 			add_country_modifier = {
 				name = kielak_cri_bulan_father_and_beg
 				duration = -1
-			}				
+			}
+			add_adm_power = 100	
 		}
 
 	}

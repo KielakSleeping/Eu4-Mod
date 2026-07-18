@@ -128,14 +128,14 @@ country_event = {
 	}
 }
 
-country_event = {
-	id = K_CRI_events.4
-	title = K_CRI_events.4.t
-	desc = K_CRI_events.4.d1
-	picture = HORDE_ON_HORSEBACK_eventPicture
-	is_triggered_only = yes
-	option = {
-		name = K_CRI_events.4.a
-		set_country_flag = upgraded_kuzarite_6
-	}
-}
+# country_event = {
+# 	id = K_CRI_events.4
+# 	title = K_CRI_events.4.t
+# 	desc = K_CRI_events.4.d1
+# 	picture = HORDE_ON_HORSEBACK_eventPicture
+# 	is_triggered_only = yes
+# 	option = {
+# 		name = K_CRI_events.4.a
+# 		set_country_flag = upgraded_kuzarite_6
+# 	}
+# }
