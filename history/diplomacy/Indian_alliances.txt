@@ -678,19 +678,19 @@ vassal = {
 #Bundelkhand
 
 #Bundelkhand overlord
-vassal = {
-	first = MLW
-	second = KLP
-	start_date = 1443.1.1
-	end_date = 1531.1.1
-}
+# vassal = {
+# 	first = MLW
+# 	second = KLP
+# 	start_date = 1443.1.1
+# 	end_date = 1531.1.1
+# }
 
-vassal = {
-	first = MLW
-	second = BND
-	start_date = 1443.1.1
-	end_date = 1531.1.1
-}
+# vassal = {
+# 	first = MLW
+# 	second = BND
+# 	start_date = 1443.1.1
+# 	end_date = 1531.1.1
+# }
 
 #Bundelkhand overlord
 vassal = {
