@@ -2,8 +2,8 @@ country_decisions = {
 
 	restore_byzantine_empire = {
 		major = yes
+		color = { 94 12 156 }
 		potential = {
-			always = no
 			OR = {
 				was_never_end_game_tag_trigger = yes
 				AND = {
@@ -34,6 +34,7 @@ country_decisions = {
 					has_idea = MFA_byzantine_claimants
 					dynasty = "Palaiologos"
 				}
+				tag = HUN
 			}
 			OR = {
 				religion = orthodox
