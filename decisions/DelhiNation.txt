@@ -82,12 +82,6 @@ country_decisions = {
 				name = centralization_modifier
 				duration = 3650
 			}
-			if = {
-				limit = {
-					NOT = { primary_culture = kanauji }
-				}
-				change_primary_culture = kanauji
-			}
 			upper_doab_area = {
 				limit = {
 					NOT = { owned_by = DLH }
