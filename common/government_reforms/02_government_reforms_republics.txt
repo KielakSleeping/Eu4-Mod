@@ -147,10 +147,7 @@ parliamentary_republic_reform = {
 	icon = "protectorate_parliament_reform"
 	allow_normal_conversion = no
 	potential = {
-			AND = {
-				is_playing_custom_nation = yes
-				have_had_reform = parliamentary_republic_reform 
-			}
+		have_had_reform = parliamentary_republic_reform 
 	}
 	trigger = {
 		have_had_reform = parliamentary_republic_reform
@@ -197,10 +194,7 @@ prussian_republic_reform = {
 	icon = "prussian_monarchy"
 	allow_normal_conversion = yes
 		potential = {
-			AND = {
-				is_playing_custom_nation = yes
-				have_had_reform = prussian_republic_reform
-			}
+			have_had_reform = prussian_republic_reform
 	}
 	trigger = {
 		have_had_reform = prussian_republic_reform
@@ -577,10 +571,7 @@ military_dictatorship_reform = {
 	lock_level_when_selected = yes
 	icon = "parliament_hall"
 	potential = {
-			AND = {
-				is_playing_custom_nation = yes
-				have_had_reform = military_dictatorship_reform 
-			}
+		have_had_reform = military_dictatorship_reform
 	}
 	trigger = {
 		have_had_reform = military_dictatorship_reform 
@@ -1024,10 +1015,7 @@ ambrosian_republic = {
 	icon = "ambrosian_republic"
 	allow_normal_conversion = yes
 	potential = {
-			AND = {
-				is_playing_custom_nation = yes
-				have_had_reform = ambrosian_republic
-			}
+		have_had_reform = ambrosian_republic
 	}
 	trigger = {
 		have_had_reform = ambrosian_republic
@@ -1161,10 +1149,7 @@ great_veche_republic = {
 	icon = "king"
 	allow_normal_conversion = yes
 		potential = {
-			AND = {
-				is_playing_custom_nation = yes
-				have_had_reform = great_veche_republic
-			}
+			have_had_reform = great_veche_republic
 	}
 	trigger = {
 		have_had_reform = great_veche_republic
@@ -1223,14 +1208,7 @@ great_russian_republic_reform = {
 	icon = "organized_military_staff"
 	allow_normal_conversion = yes
 	potential = {
-		OR = {
-			has_reform = great_russian_republic_reform
-			have_had_reform = great_russian_republic_reform
-			AND = {
-				is_playing_custom_nation = yes
-				have_had_reform = great_russian_republic_reform
-			}
-		}
+		have_had_reform = great_russian_republic_reform
 	}
 	fixed_rank = 3
 	valid_for_nation_designer = yes
@@ -1886,10 +1864,7 @@ dutch_republic = {
 	icon = "dutch_republic"
 	allow_normal_conversion = no
 		potential = {
-			AND = {
-				is_playing_custom_nation = yes
-				have_had_reform = dutch_republic
-			}
+			have_had_reform = dutch_republic
 	}
 	trigger = {
 		have_had_reform = dutch_republic
@@ -1962,10 +1937,7 @@ cossacks_reform = {
 	allow_normal_conversion = yes
 	
 	potential = {
-			AND = {
-				is_playing_custom_nation = yes
-				have_had_reform = cossacks_reform
-			}
+		have_had_reform = cossacks_reform
 	}
 	trigger = {
 		have_had_reform = cossacks_reform

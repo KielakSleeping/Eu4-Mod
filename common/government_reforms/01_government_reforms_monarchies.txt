@@ -777,10 +777,7 @@ angevin_monarchy = {
 	icon = "queen"
 	allow_normal_conversion = no
 		potential = {
-			AND = {
-				is_playing_custom_nation = yes
-				have_had_reform = angevin_monarchy
-			}
+			have_had_reform = angevin_monarchy
 	}
 	trigger = {
 		have_had_reform = angevin_monarchy
@@ -1128,10 +1125,7 @@ irish_highkingdom_reform = {
 	icon = "irish_highkingdom"
 	allow_normal_conversion = yes
 		potential = {
-			AND = {
-				is_playing_custom_nation = yes
-				have_had_reform = irish_highkingdom_reform
-			}
+			have_had_reform = irish_highkingdom_reform
 	}
 	trigger = {
 		have_had_reform = irish_highkingdom_reform
@@ -1275,10 +1269,7 @@ league_of_lezhe_reform = {
 	icon = "giga_chad"
 	allow_normal_conversion = yes
 		potential = {
-			AND = {
-				is_playing_custom_nation = yes
-				have_had_reform = league_of_lezhe_reform
-			}
+			have_had_reform = league_of_lezhe_reform
 	}
 	trigger = {
 		have_had_reform = league_of_lezhe_reform
@@ -1430,10 +1421,7 @@ zoroastrian_persian_government_reform = {
 	allow_normal_conversion = yes
 	lock_level_when_selected = yes
 	potential = {
-			AND = {
-				is_playing_custom_nation = yes
-				have_had_reform = zoroastrian_persian_government_reform
-			}
+		have_had_reform = zoroastrian_persian_government_reform
 	}
 	trigger = {
 		have_had_reform = zoroastrian_persian_government_reform
@@ -1584,10 +1572,7 @@ stadthalter_monarchy_reform = {
 	icon = "dutch_republic"
 	allow_normal_conversion = no
 		potential = {
-			AND = {
-				is_playing_custom_nation = yes
-				have_had_reform = stadthalter_monarchy_reform
-			}
+			have_had_reform = stadthalter_monarchy_reform
 	}
 	trigger = {
 		have_had_reform = stadthalter_monarchy_reform
@@ -1660,12 +1645,9 @@ stadthalter_monarchy_reform = {
 
 janissary_autocracy_reform = {
 	icon = "janissary_government"
-	allow_normal_conversion = yes
-		potential = {
-			AND = {
-				is_playing_custom_nation = yes
-				have_had_reform = janissary_autocracy_reform
-			}
+	allow_normal_conversion = no
+	potential = {
+			have_had_reform = janissary_autocracy_reform
 	}
 	trigger = {
 		have_had_reform = janissary_autocracy_reform
@@ -1764,11 +1746,10 @@ modernized_ottoman_government = {
 	allow_normal_conversion = yes
 	icon = "modernized_ottoman_government"
 	potential = {
-		AND = {
-			has_reform = modernized_ottoman_government
-			has_unlocked_government_reform = { government_reform = modernized_ottoman_government }
-			is_playing_custom_nation = yes
-		}
+		have_had_reform = modernized_ottoman_government
+	}
+	trigger = {
+		have_had_reform = modernized_ottoman_government
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 50
@@ -2082,10 +2063,7 @@ prussian_monarchy = {
 	icon = "prussian_monarchy"
 	allow_normal_conversion = yes
 		potential = {
-			AND = {
-				is_playing_custom_nation = yes
-				have_had_reform = prussian_monarchy 
-			}
+			have_had_reform = prussian_monarchy
 	}
 	trigger = {
 		have_had_reform = prussian_monarchy
@@ -2299,10 +2277,7 @@ tsardom = {
 	icon = "tsardom"
 	allow_normal_conversion = yes
 		potential = {
-			AND = {
-				is_playing_custom_nation = yes
-				have_had_reform = tsardom
-			}
+			have_had_reform = tsardom
 	}
 	trigger = {
 		have_had_reform = tsardom
@@ -2383,10 +2358,7 @@ russian_empire_reform = {
 	icon = "russian_queen"
 	allow_normal_conversion = yes
 		potential = {
-			AND = {
-				is_playing_custom_nation = yes
-				have_had_reform = russian_empire_reform
-			}
+			have_had_reform = russian_empire_reform
 	}
 	trigger = {
 		have_had_reform = russian_empire_reform
@@ -2421,10 +2393,7 @@ mamluk_government = {
 	icon = "mamluk_government"
 	allow_normal_conversion = yes
 		potential = {
-			AND = {
-				is_playing_custom_nation = yes
-				have_had_reform = mamluk_government
-			}
+			have_had_reform = mamluk_government
 	}
 	trigger = {
 		have_had_reform = mamluk_government
@@ -2761,10 +2730,7 @@ korean_monarchy = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 20
 		potential = {
-			AND = {
-				is_playing_custom_nation = yes
-				have_had_reform = korean_monarchy
-			}
+			have_had_reform = korean_monarchy
 	}
 	trigger = {
 		have_had_reform = korean_monarchy
@@ -3299,10 +3265,7 @@ livonian_military_monarchy = {
 	icon = "livonian_monarchy"
 	allow_normal_conversion = no
 		potential = {
-			AND = {
-				is_playing_custom_nation = yes
-				have_had_reform = livonian_military_monarchy 
-			}
+			have_had_reform = livonian_military_monarchy
 	}
 	trigger = {
 		have_had_reform = livonian_military_monarchy 
@@ -3335,10 +3298,7 @@ livonian_naval_monarchy = {
 	icon = "livonian_monarchy"
 	allow_normal_conversion = no
 		potential = {
-			AND = {
-				is_playing_custom_nation = yes
-				have_had_reform = livonian_naval_monarchy
-			}
+			have_had_reform = livonian_naval_monarchy
 	}
 	trigger = {
 		have_had_reform = livonian_naval_monarchy
@@ -3354,6 +3314,7 @@ livonian_naval_monarchy = {
 		development_cost = -0.1
 		allowed_marine_fraction = 0.5
 		monarch_diplomatic_power = 2
+		global_sailors_modifier = 0.5
 		burghers_loyalty_modifier = 0.1		
 	}
 	
@@ -3390,10 +3351,7 @@ livonian_trade_monarchy = {
 	icon = "livonian_monarchy"
 	allow_normal_conversion = no
 	potential = {
-			AND = {
-				is_playing_custom_nation = yes
-				have_had_reform = livonian_trade_monarchy
-			}
+		have_had_reform = livonian_trade_monarchy
 	}
 	trigger = {
 		have_had_reform = livonian_trade_monarchy
@@ -3580,10 +3538,7 @@ livonian_mercenary_monarchy = {
 	icon = "livonian_monarchy"
 	allow_normal_conversion = no
 		potential = {
-			AND = {
-				is_playing_custom_nation = yes
-				have_had_reform = livonian_mercenary_monarchy
-			}
+			have_had_reform = livonian_mercenary_monarchy
 	}
 	trigger = {
 		have_had_reform = livonian_mercenary_monarchy
@@ -3756,10 +3711,7 @@ livonian_admiral_monarchy = {
 	icon = "livonian_monarchy"
 	allow_normal_conversion = no
 		potential = {
-			AND = {
-				is_playing_custom_nation = yes
-				have_had_reform = livonian_admiral_monarchy
-			}
+			have_had_reform = livonian_admiral_monarchy
 	}
 	trigger = {
 		have_had_reform = livonian_admiral_monarchy
@@ -3911,10 +3863,7 @@ livonian_enlightened_monarchy = {
 	icon = "livonian_monarchy"
 	allow_normal_conversion = no
 	potential = {
-			AND = {
-				is_playing_custom_nation = yes
-				have_had_reform = livonian_enlightened_monarchy
-			}
+		have_had_reform = livonian_enlightened_monarchy
 	}
 	trigger = {
 		have_had_reform = livonian_enlightened_monarchy
@@ -6689,10 +6638,7 @@ land_christian_sun_reform = {
 	icon = "land_christian_sun_reform"
 	allow_normal_conversion = no
 	potential = {
-			AND = {
-				is_playing_custom_nation = yes
-				have_had_reform = land_christian_sun_reform 
-			}
+		have_had_reform = land_christian_sun_reform 
 	}
 	trigger = {
 		have_had_reform = land_christian_sun_reform
@@ -6826,10 +6772,7 @@ egyptian_government_reform = {
 	icon = "egyptian_government_reform"
 	allow_normal_conversion = yes
 		potential = {
-			AND = {
-				is_playing_custom_nation = yes
-				have_had_reform = egyptian_government_reform
-			}
+			have_had_reform = egyptian_government_reform
 	}
 	trigger = {
 		have_had_reform = egyptian_government_reform
