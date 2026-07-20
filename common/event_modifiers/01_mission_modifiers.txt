@@ -1865,7 +1865,7 @@ ave_anglo_french_imperium = {	#Permanent
 
 gbr_end_of_the_villeinage = {
 	global_prosperity_growth = 0.25
-	development_cost = -0.1
+	development_cost = -0.025
 }
 
 gbr_exploration_spirit = {
