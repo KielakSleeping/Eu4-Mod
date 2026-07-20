@@ -34,11 +34,13 @@ newer_newer_idea_adm_modifiers = {
 		}
 	}
 	custom_reform_progress = {
-		reform_progress_growth = 0.15
-		max_level = 4
+		reform_progress_growth = 0.10
+		max_level = 6
 		level_cost_2 = 3
 		level_cost_3 = 9
 		level_cost_4 = 18
+		level_cost_5 = 20
+		level_cost_6 = 25
 		chance = {
 			factor = 0.25
 		}
