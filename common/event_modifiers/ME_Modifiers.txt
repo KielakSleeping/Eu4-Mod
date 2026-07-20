@@ -1201,7 +1201,7 @@ WES_conscription = {
 }
 
 WES_discipline = {
-	land_morale = 0.1
+	land_morale = 0.03
 }
 
 WES_unbreakable_state = {
@@ -1237,7 +1237,7 @@ WES_the_noble_of_westphalia = {
 }
 
 WES_more_property = {
-	development_cost = -0.1
+	development_cost = -0.025
 	state_maintenance_modifier = -0.1
 }
 

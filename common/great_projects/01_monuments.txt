@@ -10685,7 +10685,6 @@ buda_castle = {
 		}
 		country_modifiers = {
 			global_institution_spread = 0.2
-			technology_cost = -0.025
 			idea_cost = -0.025
 		}
 		on_upgraded = {
@@ -10706,7 +10705,6 @@ buda_castle = {
 		}
 		country_modifiers = {
 			global_institution_spread = 0.3
-			technology_cost = -0.05
 			idea_cost = -0.05
 		}
 		on_upgraded = {

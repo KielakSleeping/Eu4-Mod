@@ -1811,7 +1811,7 @@ gbr_unified_british_isles_culture = {	#Permanent until either Irish or Highlande
 
 gbr_isolation_policy = {
 	global_unrest = -2
-	development_cost = -0.05
+	development_cost = -0.01
 }
 
 gbr_recovering_prestige = {
@@ -9829,7 +9829,7 @@ pru_embed_company_modifier = {
 }
 
 pru_expanded_the_western_domains_modifier = {
-	development_cost = -0.1
+	development_cost = -0.025
 }
 
 pru_thunderous_advance_modifier = {
@@ -10033,7 +10033,7 @@ por_center_of_portuguese_trade_modifier = {
 }
 
 por_struggle_for_iberia_modifier = {
-	land_morale = 0.1
+	land_morale = 0.01
 }
 
 spa_employ_galleon_modifier = {
@@ -10421,8 +10421,7 @@ turkoman_maragheh = {
 }
 
 turkoman_expanding_industry = {
-	development_cost = -0.1
-	global_trade_goods_size_modifier = 0.1
+	global_trade_goods_size_modifier = 0.025
 }
 
 turkoman_advance = {
