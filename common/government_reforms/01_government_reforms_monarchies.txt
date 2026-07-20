@@ -2193,7 +2193,7 @@ prussian_monarchy_base = {
 		}
 	}
 	
-	
+
 	legacy_equivalent = prussian_monarchy_legacy
 
 	modifiers = {
@@ -2351,10 +2351,7 @@ ruthenian_tsardom = {
 	icon = "ruthenia_tsardom"
 	allow_normal_conversion = yes
 		potential = {
-			AND = {
-				is_playing_custom_nation = yes
-				have_had_reform = ruthenian_tsardom
-			}
+			have_had_reform = ruthenian_tsardom
 	}
 	trigger = {
 		have_had_reform = ruthenian_tsardom
