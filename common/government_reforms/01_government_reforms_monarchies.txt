@@ -2093,6 +2093,9 @@ prussian_monarchy = {
 	lock_level_when_selected = yes
 	legacy_equivalent = prussian_monarchy_legacy
 
+	valid_for_nation_designer = yes
+	nation_designer_cost = 5
+
 	modifiers = {
 		vassal_income = 0.15
 		war_exhaustion = -0.02
@@ -2189,8 +2192,8 @@ prussian_monarchy_base = {
 			has_unlocked_government_reform = { government_reform = prussian_monarchy_base }
 		}
 	}
-	valid_for_nation_designer = yes
-	nation_designer_cost = 100
+	
+	
 	legacy_equivalent = prussian_monarchy_legacy
 
 	modifiers = {
