@@ -4833,8 +4833,8 @@ hun_strong_economy = {
 }
 
 hun_corviana_library = {
-	technology_cost = -0.05
-	idea_cost = -0.1
+	technology_cost = -0.025
+	idea_cost = -0.05
 }
 
 hun_nagysz_uni_catholic = {
@@ -13106,7 +13106,7 @@ hun_support_of_bohemian_estates = {
 
 hun_integrate_the_cossacks = {
 	cossacks_loyalty_modifier = 0.1
-	cavalry_power = 0.1
+	cavalry_power = 0.05
 }
 
 hun_great_city_buda = {

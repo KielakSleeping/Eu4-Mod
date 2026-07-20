@@ -1155,7 +1155,7 @@ woc_hun_second_branch = {
 				}
 				add_country_modifier = {
 					name = hun_integrate_the_cossacks
-					duration = 9125
+					duration = 3650
 				}
 				set_country_flag = hun_upgrade_cossack_priv
 				custom_tooltip = hun_upgrade_cossack_priv_tt
@@ -1164,7 +1164,7 @@ woc_hun_second_branch = {
 				add_mil_power = 100
 				add_country_modifier = {
 					name = hun_integrate_the_cossacks
-					duration = 9125
+					duration = 3650
 				}
 			}
 			crimea_area = {
@@ -2665,10 +2665,6 @@ woc_hun_fourth_branch = {
 		effect = {
 			set_country_flag = hun_refund_mana_on_tech
 			custom_tooltip = hun_refund_mana_on_tech_tt
-			add_country_modifier = {
-				name = hun_patrons_of_art
-				duration = -1
-			}
 		}
 	}
 	
