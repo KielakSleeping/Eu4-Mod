@@ -96,12 +96,7 @@ country_event = {
 	picture = COURT_eventPicture
 	
 	trigger = {
-		NOT = { religion_group = muslim }
-		OR = {
-			has_reform = iqta
-			has_reform = mamluk_government
-			has_reform = indian_sultanate_reform
-		}
+		always = no
 	}
 	
 	mean_time_to_happen = {
