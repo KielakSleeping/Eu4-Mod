@@ -3670,7 +3670,7 @@ patron_of_arts_personality = {
 	
 	ruler_allow = {
 		allow = {
-			ADM = 4
+			ADM = 1
 		}
 	
 		chance = {
@@ -3683,7 +3683,7 @@ patron_of_arts_personality = {
 
 	heir_allow = {
 		allow = {
-			heir_ADM = 4
+			heir_ADM = 1
 		}
 	
 		chance = {
@@ -3696,7 +3696,7 @@ patron_of_arts_personality = {
 	
 	consort_allow = {
 		allow = {
-			consort_ADM = 4
+			consort_ADM = 1
 		}
 
 		chance = {
