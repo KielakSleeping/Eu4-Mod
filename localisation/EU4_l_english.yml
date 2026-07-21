@@ -320,6 +320,7 @@
  #ab_austria_rep:0 "Austrian Diplomacy"
  ab_free_war_taxes:0 "Improved War Taxes"
  ab_siege_blockades:1 "Floating Batteries"
+ ab_k_leader_bonus:0 "Leader Bonus"
  ab_cavalry_armies:0 "Cavalry Armies"
  ab_warscore_vs_religion:0 "Religious Wars"
  ab_mercenary_discipline:0 "Mercenary Discipline"

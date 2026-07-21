@@ -370,6 +370,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/ages/ab_warscore_vs_religion.dds"
 	}
 
+	spriteType = {
+		name = "GFX_ab_k_leader_bonus"
+		texturefile = "gfx/interface/ages/ab_k_leader_bonus.dds"
+	}
+
 
 	
 	
