@@ -13,6 +13,7 @@ defender_of_faith_1 = {
 		papal_influence = 1
 		church_power_modifier = 0.1
 		monthly_fervor_increase = 1
+		manpower_in_true_faith_provinces = 0.20
     }
 	ai_will_do = {
 		factor = 0.1
@@ -65,6 +66,7 @@ defender_of_faith_2 = {
 		papal_influence = 1
 		church_power_modifier = 0.1
 		monthly_fervor_increase = 1
+		manpower_in_true_faith_provinces = 0.20
     }
 	ai_will_do = {
 		factor = 0.2
@@ -117,7 +119,7 @@ defender_of_faith_3 = {
 		papal_influence = 1
 		church_power_modifier = 0.1
 		monthly_fervor_increase = 1
-		manpower_in_true_faith_provinces = 0.10
+		manpower_in_true_faith_provinces = 0.20
     }
 	ai_will_do = {
 		factor = 0.5
@@ -170,7 +172,7 @@ defender_of_faith_4 = {
 		papal_influence = 1
 		church_power_modifier = 0.1
 		monthly_fervor_increase = 1
-		manpower_in_true_faith_provinces = 0.15
+		manpower_in_true_faith_provinces = 0.20
 		
     }
 	ai_will_do = {
