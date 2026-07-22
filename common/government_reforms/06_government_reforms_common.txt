@@ -2774,10 +2774,10 @@ ahmudan_system_reform = {
 		OR = {
 		culture_group = burman
 		culture_group = thai_group
-		religion = theravada
 		}
 	}
 	trigger = {
+		religion = buddhism
 		if = {
 			limit = { has_modifier_locking_military_tier = yes }
 			OR = {
