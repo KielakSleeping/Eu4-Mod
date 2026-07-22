@@ -3834,6 +3834,7 @@ seize_executive_power_reform = {
 	trigger = {
 		NOT = { has_government_attribute_short_desc = locked_government_type }
 		stability = 2
+		always = no
 	}
 
 	modifiers = {

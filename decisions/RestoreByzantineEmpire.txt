@@ -3,7 +3,6 @@ country_decisions = {
 	restore_byzantine_empire = {
 		major = yes
 		potential = {
-			always = no
 			OR = {
 				was_never_end_game_tag_trigger = yes
 				AND = {
@@ -27,18 +26,7 @@ country_decisions = {
 			NOT = { tag = HLR }
 			NOT = { tag = ROM }
 			NOT = { tag = TUR }
-			OR = {
-				culture_group = byzantine
-				not = { primary_culture = goths }
-				AND = {
-					has_idea = MFA_byzantine_claimants
-					dynasty = "Palaiologos"
-				}
-			}
-			OR = {
-				religion = orthodox
-				has_idea = MFA_byzantine_claimants
-			}
+			culture = greek
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -78,21 +66,12 @@ country_decisions = {
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
+			adm_tech = 7
 		}
 		effect = {
-			151 = {
-				move_capital_effect = yes
-			}
 			change_tag = BYZ
 			on_change_tag_effect = yes
 			restore_country_name = yes
-			if = {
-				limit = {
-					NOT = { culture_group = byzantine }
-					NOT = { accepted_culture = greek }
-				}
-				add_accepted_culture = greek
-			}
 			swap_non_generic_missions = yes
 			every_province = {
 				limit = {

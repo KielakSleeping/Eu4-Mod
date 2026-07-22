@@ -2774,6 +2774,7 @@ ahmudan_system_reform = {
 		OR = {
 		culture_group = burman
 		culture_group = thai_group
+		religion = theravada
 		}
 	}
 	trigger = {

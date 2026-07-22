@@ -6331,6 +6331,7 @@ become_a_republic_reform = {
 		NOT = { tag = BRA }
 		NOT = { tag = PRU }
 		NOT = { tag = GER }
+		always = no
 	}
 	trigger = {
 		NOT = { has_government_attribute_short_desc = locked_government_type }
@@ -6366,6 +6367,7 @@ install_theocratic_government_reform = {
 		NOT = { tag = BRA }
 		NOT = { tag = PRU }
 		NOT = { tag = GER }
+		always = no
 	}
 	trigger = {
 		NOT = { has_government_attribute_short_desc = locked_government_type }
