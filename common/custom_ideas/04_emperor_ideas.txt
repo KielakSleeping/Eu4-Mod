@@ -116,9 +116,12 @@ emperor_idea_dip_modifiers = {
 	}
 	
 	custom_allowed_marine_fraction = {
-		allowed_marine_fraction = 0.25
+		allowed_marine_fraction = 0.10
 		level_cost_2 = 5
-		max_level = 2
+		level_cost_3 = 5
+		level_cost_4 = 5
+		level_cost_5 = 5
+		max_level = 5
 	
 		enabled = {
 			OR = {
