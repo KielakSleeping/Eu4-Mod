@@ -3315,8 +3315,8 @@ theme_system_reform = {
 		has_unlocked_government_reform = { government_reform = theme_system_reform }
 	}
 	modifiers = {
-		manpower_in_own_culture_provinces = 0.25
-		manpower_in_accepted_culture_provinces = 0.25
+		manpower_in_own_culture_provinces = 0.1
+		manpower_in_accepted_culture_provinces = 0.1
 		state_maintenance_modifier = -0.1
 	}
 	custom_attributes = {

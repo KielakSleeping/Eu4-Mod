@@ -241,10 +241,7 @@ MEE_BYZ_conquest_2 = {
 			}
 		}
 		effect = {
-			add_country_modifier = {
-				name = BYZ_dreams_of_restoration
-				duration = 5475
-			}
+			add_mil_power = 50
 			
 			give_claims = { area = hudavendigar_area }
 			give_claims = { area = aydin_area }
@@ -2062,19 +2059,6 @@ MEE_BYZ_economy_1 = {
 				province_event = { id = MEE_Byzantine_Events.23 days = 180 } #the events cannot be fired at the same time
 			}
 			
-			custom_tooltip = " "
-			
-			country_event_with_effect_insight = {
-				id = MEE_Byzantine_Events.26
-				effect = "
-					change_price = {
-						trade_goods = silk
-						key = BYZ_growing_demand
-						value = 0.2
-						duration = -1
-					}
-				"
-			}
 		}
 	}
 }
@@ -3046,37 +3030,25 @@ MEE_BYZ_religion_1 = {
 						limit = {
 							current_icon = icon_pancreator
 						}
-						add_country_modifier = {
-							name = BYZ_icon_pancreator
-							duration = 5475
-						}
+						add_adm_power = 100
 					}
 					else_if = {
 						limit = {
 							current_icon = icon_nicholas
 						}
-						add_country_modifier = {
-							name = BYZ_icon_nicholas
-							duration = 5475
-						}
+						add_adm_power = 100
 					}
 					else_if = {
 						limit = {
 							current_icon = icon_climacus
 						}
-						add_country_modifier = {
-							name = BYZ_icon_climacus
-							duration = 5475
-						}
+						add_adm_power = 100
 					}
 					else_if = {
 						limit = {
 							current_icon = icon_michael
 						}
-						add_country_modifier = {
-							name = BYZ_icon_michael
-							duration = 5475
-						}
+						add_adm_power = 100
 					}
 					else = { }
 				}
@@ -3334,13 +3306,7 @@ MEE_BYZ_religion_2 = {
 					estate = estate_church
 					loyalty = 15
 				}
-			}
-			
-			if = {
-				limit = { has_reform = byzantine_autocracy_reform }
-				custom_tooltip = " "
-				add_government_reform = reformed_byzantine_monarchy_reform
-			}
+			}	
 		}
 	}
 	

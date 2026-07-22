@@ -1021,7 +1021,7 @@ the_staple_port = {
 }
 
 the_theme_system = {
-	global_manpower_modifier = 0.25
+	global_manpower_modifier = 0.01
 }
 
 severe_trade_crisis = {

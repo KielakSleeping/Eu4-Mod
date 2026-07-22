@@ -522,6 +522,7 @@ polynesian_navigation_seas = {
 naval_tactica = {
 	can_select = {
 		is_primitive = no
+		always = no
 		NOT = { has_country_flag = unlock_norwegian_naval_doctrine }
 		OR = {
 			culture_group = byzantine
@@ -531,7 +532,7 @@ naval_tactica = {
 
 	cost = 0.1
 	country_modifier = {
-		disengagement_chance = 0.15
+		disengagement_chance = 0.05
 		galley_power = 0.2
 	}
 	effect = {}

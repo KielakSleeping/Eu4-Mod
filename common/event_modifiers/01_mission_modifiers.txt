@@ -10752,12 +10752,11 @@ BYZ_united_modifier = {
 }
 
 EPI_epirote_forces = {
-	land_morale = 0.05
-	naval_morale = 0.1
+	land_morale = 0.01
 }
 
 BYZ_africa_proconsularis = {
-	galley_power = 0.1
+	galley_power = 0.01
 }
 
 BYZ_roman_vigour = {	#until age of reformation
@@ -10989,7 +10988,7 @@ BYZ_monarch_reigns_in_byzantium = {
 }
 
 BYZ_dominance = {
-	galley_power = 0.15
+	prestige = 1
 }
 
 BYZ_maintaining_relations = {
@@ -11007,7 +11006,7 @@ BYZ_indepenence_from_the_west = {
 }
 
 BYZ_liquid_fire = {
-	galley_power = 0.1
+	transport_power = 0.1
 }
 
 BYZ_dominance_of_the_dromon = {
@@ -11017,12 +11016,12 @@ BYZ_dominance_of_the_dromon = {
 }
 
 BYZ_elite_forces = {
-	morale_damage = 0.1
+	morale_damage = 0.05
 }
 
 BYZ_regional_mercenary_forces = {
 	mercenary_discipline = 0.05
-	mercenary_manpower = 0.5
+	mercenary_manpower = 0.1
 }
 
 BYZ_reliance_on_the_pronoiar = {
