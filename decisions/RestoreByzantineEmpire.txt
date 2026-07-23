@@ -4,6 +4,7 @@ country_decisions = {
 		major = yes
 		color = { 94 12 156 }
 		potential = {
+			always = no
 			OR = {
 				was_never_end_game_tag_trigger = yes
 				AND = {
