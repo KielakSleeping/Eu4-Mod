@@ -89,23 +89,23 @@ can_move_trade_port = {
 	}
 }
 
-can_colonize_province = {
-	condition = {
-		tooltip = "cant_colonize_siberia_tt"
-		potential = {
-		}
+# can_colonize_province = {
+# 	condition = {
+# 		tooltip = "cant_colonize_siberia_tt"
+# 		potential = {
+# 		}
 
-		allow = {
-				NOT = {
-					region = ural_region
-					# OR = {
-					# 	region = east_siberia_region
-					# 	region = west_siberia_region
-					# 	region = ural_region
-					# }
-				}	
-		}
-	}
-}
+# 		allow = {
+# 				NOT = {
+# 					region = ural_region
+# 					# OR = {
+# 					# 	region = east_siberia_region
+# 					# 	region = west_siberia_region
+# 					# 	region = ural_region
+# 					# }
+# 				}	
+# 		}
+# 	}
+# }
 
 
