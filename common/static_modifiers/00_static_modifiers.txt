@@ -2420,7 +2420,7 @@ adur_farnbag_mod = {
 adur_gushnasp_mod = {
 	country_military_power = 1
 	#own_territory_dice_roll_bonus = 1
-	yearly_army_professionalism = 0.2
+	yearly_army_professionalism = 0.002
 	monthly_asha_vahishta = -0.5
 	religion = yes
 }
