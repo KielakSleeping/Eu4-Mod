@@ -582,10 +582,16 @@ dutch_theocracy_reform = {
 	icon = "dutch_republic"
 	allow_normal_conversion = yes
 	potential = {
-		have_had_reform = dutch_theocracy_reform
+		OR = {
+			have_had_reform = dutch_theocracy_reform
+			is_or_was_tag = { tag = TIM }
+		}
 	}
 	trigger = {
-		have_had_reform = dutch_theocracy_reform
+		OR = {
+			have_had_reform = dutch_theocracy_reform
+			is_or_was_tag = { tag = TIM }
+		}
 	}
 
 	lock_level_when_selected = yes
