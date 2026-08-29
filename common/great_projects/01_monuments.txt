@@ -21330,3 +21330,65 @@ citadel_of_aleppo = {
 		on_upgraded = {}
 	}
 }
+
+cothon = {
+	start = 341
+	date = 1100.1.1	#Debatable, 3rd millennium BCE - 12th century CE
+	time = { months = 0 }
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+	starting_tier = 0
+	type = monument
+	build_trigger = {}
+	on_built = {}
+	on_destroyed = {}
+	can_use_modifiers_trigger = {}
+	can_upgrade_trigger = {}
+	keep_trigger = {}
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = {}
+		area_modifier = {}
+		country_modifiers = {}
+		on_upgraded = {}
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 350 }
+		province_modifiers = {}
+		area_modifier = {
+			local_defensiveness = 0.25
+			local_manpower_modifier = 0.25
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 750 }
+		province_modifiers = {}
+		area_modifier = {
+			local_defensiveness = 0.33
+			local_manpower_modifier = 0.33
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {}
+	}
+	tier_3 = {
+		upgrade_time = { months = 360 }
+		cost_to_upgrade = { factor = 1500 }
+		province_modifiers = {}
+		area_modifier = {
+			local_defensiveness = 0.5
+			local_manpower_modifier = 0.5
+			local_defender_dice_roll_bonus = 1 
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {}
+	}
+}

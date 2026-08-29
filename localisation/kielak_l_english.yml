@@ -706,3 +706,10 @@
     lot_golden_fleece:0 "The Order of the Golden Fleece"
     lot_golden_fleece_desc:0 "The order would go on to become one of Europe's foremost orders of chivalry. Being a Knight of the Golden Fleece is a mark of great status and reflects well upon us."
 
+    ### TUNIS ###
+
+    TUN_c_lost_harbour_of_carthage_title:0 "The Lost Harbour of Carthage"
+    TUN_c_lost_harbour_of_carthage_desc:0 "The Lost Harbour of Carthage"
+    TUN_cothon_1:0 "Interest in our History"
+    TUN_c_our_gem_title:0 "Our Gem"
+    TUN_c_our_gem_desc:0 "Our Gem"

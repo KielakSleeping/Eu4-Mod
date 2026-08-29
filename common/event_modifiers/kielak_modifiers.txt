@@ -725,3 +725,8 @@ kielak_cri_bulan_father_and_beg = {
 kielak_yuan_emperors_guard = {
 	cavalry_fire = 0.5
 }
+
+TUN_cothon_1 = {
+	local_sailors = 500
+	trade_goods_size = 0.5
+}

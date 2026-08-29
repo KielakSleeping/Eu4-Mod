@@ -388,6 +388,20 @@ TUN_missions_1 = {
 			}
 		}
 	}
+
+	TUN_c_valenica = {
+		position = 14
+		required_missions = { TUN_raid_christian_shipping }
+		
+		trigger = {
+			tag = TUN
+		}
+		
+		effect = { 
+			add_years_of_income = 4
+		}
+	}	
+
 }
 
 TUN_missions_2 = {
@@ -809,6 +823,45 @@ TUN_missions_2 = {
 			}
 		}
 	}
+
+	TUN_c_revive_our_fleet = {
+		position = 11
+		required_missions = { }
+		
+		trigger = {
+			tag = TUN
+		}
+		
+		effect = { 
+			add_years_of_income = 1
+		}
+	}
+
+	TUN_c_avenge_aegetes = {
+		position = 12
+		required_missions = { TUN_raid_christian_shipping TUN_c_revive_our_fleet }
+		
+		trigger = {
+			tag = TUN
+		}
+		
+		effect = { 
+			add_years_of_income = 2
+		}
+	}
+
+	TUN_c_corsica_and_naples = {
+		position = 13
+		required_missions = { TUN_c_avenge_aegetes }
+		
+		trigger = {
+			tag = TUN
+		}
+		
+		effect = { 
+			add_years_of_income = 3
+		}
+	}	
 }
 
 TUN_missions_3 = {
@@ -1120,6 +1173,56 @@ TUN_missions_3 = {
 			add_prestige_or_monarch_power = { amount = 30 }
 			
 			#upgrae monument?
+		}
+	}
+
+	TUN_c_lost_harbour_of_carthage = {
+		position = 11
+		required_missions = { TUN_kasbah_mosque }
+		
+		trigger = {
+			341 = {
+				owned_by = ROOT
+				has_shipyard_building_trigger = yes
+				has_dock_building_trigger = yes
+			}
+			navy_size_percentage = 1
+		}
+		
+		effect = { 
+			341 = {
+				add_province_modifier = {
+					name = TUN_cothon_1
+					duration = -1
+				}
+			}
+			add_sailors = 10000
+		}
+	}
+
+	TUN_c_our_gem = {
+		position = 12
+		required_missions = { TUN_c_lost_harbour_of_carthage }
+		
+		trigger = {
+			tag = TUN
+		}
+		
+		effect = { 
+			add_years_of_income = 6
+		}
+	}
+
+	TUN_c_roma_delenda_est = {
+		position = 15
+		required_missions = { TUN_c_valenica TUN_c_corsica_and_naples TUN_c_carthago_resplendent TUN_c_greater_cothons }
+		
+		trigger = {
+			tag = TUN
+		}
+		
+		effect = { 
+			add_years_of_income = 10
 		}
 	}
 }
@@ -1591,6 +1694,33 @@ TUN_missions_4 = {
 			}
 		}
 	}
+
+	TUN_c_cothons_of_carthage = {
+		position = 13
+		required_missions = { TUN_c_our_gem TUN_loyal_cities }
+		
+		trigger = {
+			tag = TUN
+		}
+		
+		effect = { 
+			add_years_of_income = 7
+		}
+	}	
+	
+	TUN_c_carthago_resplendent = {
+		position = 14
+		required_missions = { TUN_c_cothons_of_carthage }
+		
+		trigger = {
+			tag = TUN
+		}
+		
+		effect = { 
+			add_years_of_income = 8
+		}
+	}
+	
 }
 
 TUN_missions_5 = {
@@ -1981,4 +2111,18 @@ TUN_missions_5 = {
 			}
 		}		
 	}
+
+	TUN_c_greater_cothons = {
+		position = 14
+		required_missions = { TUN_c_cothons_of_carthage }
+		
+		trigger = {
+			tag = TUN
+		}
+		
+		effect = { 
+			add_years_of_income = 9
+		}
+	}
+
 }
