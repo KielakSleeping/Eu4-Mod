@@ -944,7 +944,6 @@ kashifs = {
             factor = 1.25
 			owner = { adm = 5 } 
         }
-    }
     localization = coordinator_office
 }
 
