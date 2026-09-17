@@ -471,7 +471,7 @@ the_two_sicilies_missions_3 = {
 		}
 		trigger = {
 			stability = 2
-			legitimacy_equivalent = 90
+			legitimacy_equivalent = 70
 			apulia_area = {
 				type = all
 				if = {
