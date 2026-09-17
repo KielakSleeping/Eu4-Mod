@@ -2091,8 +2091,9 @@ RUS_ideas = {
 
 POL_ideas = {
 	start = {
-		cavalry_cost = -0.1
+		#cavalry_cost = -0.1
 		num_accepted_cultures = 1
+		cavalry_power = 0.1
 	}
 	
 	bonus = {
@@ -2116,9 +2117,10 @@ POL_ideas = {
 		infantry_power = 0.1
 	}
 	winged_hussars = {
-		cavalry_power = 0.1
+		#cavalry_power = 0.1
 		can_recruit_hussars = yes
 		special_unit_forcelimit = 0.2
+		cavalry_cost = -0.1
 	}
 	wojsko_komputoe = {
 		global_regiment_cost = -0.10
@@ -2153,6 +2155,7 @@ PLC_ideas = {
 	}
 	plc_tempered_by_neighbors = { #Same for all of them
 		discipline = 0.05
+		global_regiment_cost = -0.10
 	}
 	
 	plc_the_obrona_potoczna = { #Same for all of them
@@ -2165,14 +2168,14 @@ PLC_ideas = {
 		special_unit_forcelimit = 0.2
 	}
 	plc_refine_our_golden_liberty = { #Same for all of them
-		global_manpower_modifier = 0.2
+		global_manpower_modifier = 0.25
 	}
 	pol_jagiellonian_university = {
 		idea_cost = -0.1
 	}
 	pol_royal_guards = {
 		infantry_power = 0.1
-		morale_damage_received = -0.1
+		land_morale = 0.1
 	}
 }
 
@@ -4074,7 +4077,7 @@ ROT_ideas = {
 		horde_unity = 1
 	}
 	ROT_holy_blood = {
-		global_prov_trade_power_modifier = 0.25
+		global_prov_trade_power_modifier = 0.15
 	}
 	ROT_klingentorturm = {
 		garrison_size = 0.25
