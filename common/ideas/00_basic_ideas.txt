@@ -283,7 +283,7 @@ administrative_ideas = {
 	}
 	civil_servants = {
 		#state_governing_cost = -0.15
-		governing_capacity_modifier = 0.2
+		governing_capacity_modifier = 0.35
 	}
 
 	ai_will_do = {
@@ -305,8 +305,8 @@ infrastructure_ideas = {
     	global_monthly_devastation = -0.1
 	}
 	organised_construction = {
-		build_cost = -0.15
-		build_time = -0.20
+		build_cost = -0.1
+		build_time = -0.1
 	}
 	efficient_construction_plans = {
 		great_project_upgrade_cost = -0.25
@@ -342,11 +342,12 @@ humanist_ideas = {
 
 	bonus = {
 		no_religion_penalty = yes
+		reform_progress_growth = 0.2
 	}
 
 	local_traditions = {
 		years_of_nationalism = -15
-  		global_autonomy = -0.15
+  		global_autonomy = -0.2
 	}
 	indirect_rule = {
 		num_accepted_cultures = 5
@@ -354,7 +355,7 @@ humanist_ideas = {
 	}
 	ecumenism = {
 		no_stability_loss_on_monarch_death = yes
-  		monarch_lifespan = 0.75
+  		monarch_lifespan = 1
 		monarch_admin_power = 1
     		monarch_diplomatic_power = 1
     		monarch_military_power = 1
@@ -367,17 +368,17 @@ humanist_ideas = {
     
 	}
 	humanist_tolerance = {
-		heir_chance = 0.5
-		republican_tradition = 0.2
+		heir_chance = 1
+		republican_tradition = 0.25
 		candidate_random_bonus = 2
 	}
 	benevolence = {
-		global_unrest = -2
+		global_unrest = -3
 		possible_policy = 1
 	}
 	tolerance_idea = {
 		manpower_in_accepted_culture_provinces = 0.25
-    	monthly_splendor = 2
+    	monthly_splendor = 4
 	}
 	
 	ai_will_do = {
@@ -718,7 +719,7 @@ aristocracy_ideas = {
 	}
 
 	noble_knights = {
-		cavalry_cost = -0.05
+		cavalry_cost = -0.1
 		movement_speed = 0.2
 	}
 	serfdom = {
@@ -744,7 +745,8 @@ aristocracy_ideas = {
 		nomadic_tribes_loyalty_modifier = 0.1
 	}
 	local_nobility = {
-		warscore_from_battles_modifier = 0.1
+		#warscore_from_battles_modifier = 0.1
+		global_manpower_modifier = 0.1
 	}
 
 	ai_will_do = {
@@ -762,7 +764,7 @@ plutocracy_ideas = {
 	}
 
 	tradition_of_payment  = {
-		infantry_power = 0.15
+		infantry_power = 0.125
 	}
 	abolished_serfdom = {
 		leader_land_fire = 1
@@ -781,7 +783,8 @@ plutocracy_ideas = {
 		regiment_recruit_speed = -0.5
 	}
 	emancipation = {
-		infantry_shock = 0.10
+		#infantry_shock = 0.10
+		manpower_recovery_speed = 0.15
 	}
 
 	ai_will_do = {
@@ -975,7 +978,7 @@ theocracy_gov_ideas = {
 	category = MIL
 
 	bonus = {
-		years_of_nationalism = -15
+		#years_of_nationalism = -15
 		tolerance_own = 3
 	}
 
@@ -989,16 +992,16 @@ theocracy_gov_ideas = {
 		prestige_per_development_from_conversion = 0.3
 	}
 	friends_in_high_places = {
-		manpower_in_true_faith_provinces= 0.2
+		manpower_in_true_faith_provinces= 0.1
 	}
 	flesh_is_weak = {
-		morale_damage = 0.20
-		morale_damage_received = -0.20
+		morale_damage = 0.15
+		morale_damage_received = -0.15
 		
 	}
 	alpha_and_omega = {
-		culture_conversion_cost = -0.5
-		culture_conversion_time = -0.5
+		culture_conversion_cost = -0.25
+		culture_conversion_time = -0.25
 		#warscore_cost_vs_other_religion = -0.075
 	}
 	conviction_of_sin = {

@@ -389,7 +389,7 @@ conquest_of_moscow = {
 	trigger = {
 		owner = {
 				NOT = { tag = MOS }
-				NOT = { tag = RUS }
+				# = { tag = RUS }
 				moscow_area = {
 					type = all
 					country_or_non_sovereign_subject_holds = PREV
@@ -411,9 +411,10 @@ conquest_of_moscow = {
 		has_owner_accepted_culture = yes
 		
 	}	
-	infantry_power = 0.05
-	cavalry_power = 0.05
-	
+	#infantry_power = 0.05
+	#cavalry_power = 0.05
+	merchants = 1
+	may_establish_frontier = yes
 	#Province scope
 	on_activation = {
 	
@@ -474,7 +475,7 @@ conquest_of_nogay = {
 		has_owner_accepted_culture = yes	
 	}	
 	#horde_unity = 0.5
-	#land_morale = 0.025
+	land_morale = 0.025
 	merchants = 1
 	#Province scope
 	on_activation = {
