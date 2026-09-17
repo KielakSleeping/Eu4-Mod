@@ -25,19 +25,19 @@ custom_button = {
     }
     trigger = { 
 		FROM = {
-			is_colonial_nation = no	
+			#is_colonial_nation = no	
 			NOT = { has_country_modifier = trade_hub_created }
 			treasury = 200
 			dip_power = 50
 			#is_at_war = no
 		}	
 		ROOT = {
-			NOT = {
-				continent = north_america
-			}
-			NOT = {
-				continent = south_america
-			}
+			#NOT = {
+			#	continent = north_america
+			#}
+			#NOT = {
+			#	continent = south_america
+			#}
 			is_state_core = FROM
 			development = 30
 			NOT = { 
@@ -196,10 +196,10 @@ custom_button = {
 						is_colonial_nation = no
 					}
 				}	
-				adm_power = 100
-				dip_power = 100
-				mil_power = 100
-				splendor = 200
+				adm_power = 300
+				dip_power = 300
+				mil_power = 300
+				splendor = 400
 				if = {
 					limit = { tag = POR }
 					hidden_trigger = {

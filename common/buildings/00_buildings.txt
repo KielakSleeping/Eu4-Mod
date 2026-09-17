@@ -515,7 +515,7 @@ shipyard = {
 }
 
 fort_15th = {
-	cost = 200
+	cost = 100
 	time = 30
 	build_trigger = {
 		OR = {
@@ -1076,7 +1076,7 @@ regimental_camp = {
 }
 
 fort_16th = {
-	cost = 400
+	cost = 300
 	time = 30
 	build_trigger = {
 		OR = {
@@ -1882,7 +1882,7 @@ training_fields = {
 
 
 fort_17th = {
-	cost = 600
+	cost = 500
 	time = 30
 	build_trigger = {
 		OR = {
@@ -2614,7 +2614,7 @@ conscription_center = {
 
 
 fort_18th = {
-	cost = 800
+	cost = 700
 	time = 30
 
 	build_trigger = {
@@ -3254,7 +3254,7 @@ furnace = {
 }
 
 ramparts = {
-	cost = 500
+	cost = 400
 	time = 24
 	modifier = {
 		local_hostile_attrition = 1
@@ -3413,7 +3413,7 @@ soldier_households = {
 }
 
 impressment_offices = {
-	cost = 400
+	cost = 600
 	time = 12
 
 	manufactory = {
@@ -3518,8 +3518,12 @@ state_house = {
 		}
 	}
 
-	modifier = {
-		local_centralize_state_cost = -0.33
+	modifier = {	
+		area_modifier = { local_development_cost_modifier = -0.25
+		}
+		local_governing_cost = 50
+		#local_centralize_state_cost = -0.33
+		#local_development_cost = -0.25
 	}
 	
 	onmap = no
@@ -3563,7 +3567,7 @@ state_house = {
 }
 
 armory = {
-	cost = 500
+	cost = 600
 	time = 60
 
 	build_trigger = {

@@ -1874,7 +1874,7 @@ bookmarket_of_x = { #Added by prices.36 event
 }
 
 grand_bank_fisheries = {
-	trade_goods_size = 2.0
+	trade_goods_size = 4.0
 }
 
 diamond_district = {
@@ -4395,7 +4395,7 @@ eth_mount_geshen = {
 }
 
 eth_negusa_nagast_issues = {
-	global_autonomy = 0.2
+	global_autonomy = 0.05
 }
 
 #Bahmanis
