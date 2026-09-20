@@ -3486,7 +3486,7 @@ impressment_offices = {
 
 
 state_house = {
-	cost = 500
+	cost = 750
 	time = 60
 
 	build_trigger = {
@@ -3520,9 +3520,8 @@ state_house = {
 	}
 
 	modifier = {	
-		area_modifier = { local_development_cost_modifier = -0.25
-		}
-		local_governing_cost = 50
+		local_development_cost_modifier = -0.25
+		local_governing_cost_increase = 50
 		#local_centralize_state_cost = -0.33
 		#local_development_cost = -0.25
 	}
@@ -3580,7 +3579,7 @@ armory = {
 				has_forcelimit_building_trigger = yes
 				development = 30
 				is_prosperous = yes
-				base_manpower = 10
+				#base_manpower = 10
 			}
 	}
 	
