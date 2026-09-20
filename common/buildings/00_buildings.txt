@@ -3490,6 +3490,7 @@ state_house = {
 	time = 60
 
 	build_trigger = {
+		development = 30
 		NOT = {
 			area_for_scope_province = {
 				owner = {
