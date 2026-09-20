@@ -1292,6 +1292,7 @@ eastern = {
 		icon = 9
 		country = {
 			tolerance_heretic = 2
+			land_morale = 0.05
 			#adm_tech_cost_modifier = -0.1
 			advisor_cost = -0.1
 

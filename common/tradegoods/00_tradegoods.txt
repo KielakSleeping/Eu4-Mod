@@ -184,7 +184,8 @@ wool = {
 		global_ship_cost = -0.05
 	}
 	province = {
-		local_friendly_movement_speed = 0.10
+		#local_friendly_movement_speed = 0.10
+		local_ship_cost = -0.05
 	}
 	chance = {
 		factor = 30
@@ -446,7 +447,7 @@ fur = {
 salt = {
 	color = { 0.999 0.999 0.999 }
 	modifier = {
-		land_maintenance_modifier = -0.05
+		land_maintenance_modifier = -0.1
 	}
 	province = {
 		local_defensiveness = 0.15
@@ -1011,7 +1012,8 @@ tea = {
 		advisor_cost = -0.10
 	}
 	province = {
-		garrison_growth = 0.25
+		#garrison_growth = 0.25
+		garrison_size = 0.25
 	}
 	chance = {
 		factor = 15
@@ -1121,7 +1123,7 @@ chinaware = {
 		legitimacy = 0.25
 		devotion = 0.25
 		horde_unity = 0.25
-		republican_tradition = 0.12
+		republican_tradition = 0.25
 		meritocracy = 0.1
 	}
 	province = {
@@ -1403,7 +1405,7 @@ cotton = {
 sugar = {
 	color = { 0.74 0.95 0.68 }
 	modifier = {
-		war_exhaustion_cost = -0.2
+		war_exhaustion = -0.2
 	}
 	province = {
 		local_unrest = -1
@@ -1552,7 +1554,7 @@ tobacco = {
 cocoa = {
 	color = { 0.45 0.21 0.09 }
 	modifier = {
-		manpower_recovery_speed = 0.05
+		manpower_recovery_speed = 0.1
 	}
 	province = {
 		local_missionary_strength = 0.01
@@ -1740,7 +1742,7 @@ dyes = {
 tropical_wood = {
 	color = { 0.45 0.47 0.09 }
 	modifier = {
-		development_cost = -0.025
+		development_cost = -0.05
 	}
 	province = {
 		local_build_cost = -0.2
@@ -1793,7 +1795,7 @@ livestock = {
 		cavalry_cost = -0.1
 	}
 	province = {
-		supply_limit_modifier = 0.5
+		supply_limit_modifier = 1
 	}
 	chance = {
 		factor = 30
@@ -1893,10 +1895,10 @@ livestock = {
 incense = {
 	color = { 0.89 0.79 0.47 }
 	modifier = {
-		tolerance_own = 0.5
+		tolerance_own = 1
 	}
 	province = {
-		trade_value_modifier = 0.1
+		trade_value_modifier = 0.25
 	}
 	chance = {
 		factor = 25
@@ -1950,7 +1952,8 @@ incense = {
 glass = {
 	color = { 0.0 0.60 0.45 }
 	modifier = {
-		dip_tech_cost_modifier = -0.05
+		#dip_tech_cost_modifier = -0.05
+		production_efficiency = 0.05
 	}
 	province = {
 		local_production_efficiency = 0.1
@@ -1984,7 +1987,9 @@ glass = {
 paper = {
 	color = { 0.9 0.86 0.71 }
 	modifier = {
-		adm_tech_cost_modifier = -0.05
+		#adm_tech_cost_modifier = -0.05
+		advisor_cost = 0.1
+
 	}
 	province = {
 		local_state_maintenance_modifier = -0.1
