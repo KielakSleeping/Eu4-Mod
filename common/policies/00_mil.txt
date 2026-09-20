@@ -848,7 +848,7 @@ naval_artillery_2 = {
 
        artillery_fire = 1
        leader_naval_manuever = 1 
-       max_admiral_maneuver = 1
+       #max_admiral_maneuver = 1
 
        ai_will_do = { 
                factor = 1 
