@@ -739,7 +739,7 @@ sic_military_campaign = {
 sic_calabrian_oil = {
 	province_trade_power_modifier = 0.15
 	local_friendly_movement_speed = 0.10
-	local_trade_goods_size =0  .4
+	local_trade_goods_size = 0.4
 }
 sic_thousand_sigil = {
 	global_trade_goods_size_modifier = 0.10
