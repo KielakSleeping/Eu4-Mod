@@ -708,8 +708,8 @@ deserters_will_be_shot = {
                full_idea_group = influence_ideas 
        }
 
-       infantry_power = 0.05 
-       fire_damage = 0.05 
+       infantry_power = 0.075 
+      # fire_damage = 0.05 
 
        ai_will_do = { 
                factor = 1 
@@ -749,8 +749,8 @@ reckless_assault = {
                full_idea_group = offensive_ideas
                full_idea_group = influence_ideas 
        }
-   leader_siege = 2
-	siege_ability = 0.2
+         leader_siege = 2
+	siege_ability = 0.25
 	
    
 
@@ -934,9 +934,10 @@ guerrilla_tactics = {
        }
 
        #morale_damage_received = -0.15
-       fort_defence = 0.3
+       #fort_defence = 0.35
+       garrison_damage = 0.4
        max_hostile_attrition = 3
-	hostile_attrition = 1.5
+	hostile_attrition = 2
 
        ai_will_do = { 
                factor = 1 

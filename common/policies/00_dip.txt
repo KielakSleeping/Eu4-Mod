@@ -247,7 +247,8 @@ build_a_statue_of_me = {
 
        great_project_upgrade_cost = -0.20 
        move_capital_cost_modifier = -0.2
-       build_time = -0.25
+       #build_time = -0.25
+       build_cost = -0.1        
 
        ai_will_do = { 
                factor = 1 
@@ -290,7 +291,7 @@ whats_yours_is_mine = {
 
        diplomatic_upkeep = 2
       diplomatic_annexation_cost = -0.25
-	core_creation = -0.2
+	core_creation = -0.25
 
        ai_will_do = { 
                factor = 1 

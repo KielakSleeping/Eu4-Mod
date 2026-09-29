@@ -100,11 +100,11 @@ merciful_tyrant = {
                full_idea_group = humanist_ideas 
                full_idea_group = influence_ideas 
        }
-
+       manpower_in_accepted_culture_provinces = 0.1
         free_adm_policy = 1
         diplomatic_upkeep = 2
         reduced_liberty_desire = 10
-       num_accepted_culture = 1
+      # num_accepted_culture = 1
        ai_will_do = { 
                factor = 1 
        }
@@ -192,7 +192,7 @@ mad_scientist = {
                full_idea_group = innovativeness_ideas 
                full_idea_group = influence_ideas 
        }
-
+       
        country_military_power = 1 
        all_power_cost = -0.025 
 
