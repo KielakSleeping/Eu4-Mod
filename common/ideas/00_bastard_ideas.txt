@@ -1399,7 +1399,7 @@ PR2_ideas = {
     }
     bonus = {
         #discipline = 0.05
-		technology_cost = - 0.1
+		technology_cost = -0.1
     }
     trigger = {
         tag = PR2
