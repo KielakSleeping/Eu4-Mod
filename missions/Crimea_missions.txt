@@ -245,13 +245,13 @@ X_CRI_slot_2 = {
 					}
 					AND = {
 						natural_scientist = 3
-						years_of_income = 2.5
+						#years_of_income = 0.5
 					}
 				}
 			}
 			else = {
 				natural_scientist = 3
-				years_of_income = 2.5
+				#years_of_income = 0.5
 			}
 		}
 		effect = {
@@ -292,10 +292,10 @@ X_CRI_slot_2 = {
 							} 
 						}
 					}
-					add_years_of_income = -1.25
+					#add_years_of_income = -1.25
 				}
 				else = {
-					add_years_of_income = -2.5
+					#add_years_of_income = -2.5
 				}
 			}
 		}

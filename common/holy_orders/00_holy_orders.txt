@@ -1035,9 +1035,11 @@ zahediyeh_order = {
 scuola_grande = {
     icon = GFX_holy_order_scuola_grande
     trigger = {
+        OR  = {
 		is_or_was_tag = { tag = VEN }
         is_or_was_tag = { tag = SIC }
         is_or_was_tag = { tag = MLO }
+        }
 
     }
     color = { 173 216 230 }
