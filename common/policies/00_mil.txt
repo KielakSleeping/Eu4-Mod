@@ -73,8 +73,8 @@ horse_armor = {
                full_idea_group = humanist_ideas 
                full_idea_group = aristocracy_ideas 
        }
-
-       fire_damage_received = -0.075 
+       cav_to_inf_ratio = 0.15
+       fire_damage_received = -0.1 
        cavalry_power = 0.05
 
        ai_will_do = { 
@@ -159,8 +159,8 @@ genetically_engineered_horses = {
                full_idea_group = innovativeness_ideas 
                full_idea_group = aristocracy_ideas 
        }
-
-       cavalry_flanking = 0.25
+       cav_to_inf_ratio = 0.15
+       #cavalry_flanking = 0.25
        shock_damage = 0.10
 
        ai_will_do = { 
@@ -396,7 +396,7 @@ city_spanning_stables = {
        }
 
        cavalry_power = 0.10
-       cav_to_inf_ratio = 0.10
+       cav_to_inf_ratio = 0.15
         
 
        ai_will_do = { 
@@ -603,6 +603,7 @@ gods_battle_steed = {
 
        shock_damage = 0.10
        leader_land_shock = 1 
+       cav_to_inf_ratio = 0.15
 
        ai_will_do = { 
                factor = 1 
@@ -687,6 +688,7 @@ whips = {
        max_general_shock = 1 
        #shock_damage = 0.05
        leader_land_shock = 1
+       cavalry_cost = -0.10
 
        ai_will_do = { 
                factor = 1 
@@ -1178,7 +1180,7 @@ gotta_go_fast = {
                full_idea_group = maritime_ideas 
        }
 
-       max_admiral_maneuver = 1
+       #max_admiral_maneuver = 1
        max_general_maneuver = 1
 	shock_damage = 0.15
 	#cavalry_power = 0.05

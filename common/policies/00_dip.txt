@@ -185,6 +185,7 @@ you_own_nothing_and_will_be_happy = {
 
        vassal_income = 0.3 
        global_tax_modifier = 0.25
+       vassal_forcelimit_bonus = 0.5
 
        ai_will_do = { 
                factor = 1 
@@ -519,9 +520,9 @@ send_in_the_cannonfodder = {
                full_idea_group = influence_ideas 
        }
 
-       vassal_forcelimit_bonus = 0.3 
-       vassal_manpower_bonus = 0.3 
-       vassal_naval_forcelimit_bonus = 0.3
+       vassal_forcelimit_bonus = 0.5 
+       vassal_manpower_bonus = 0.5 
+       #vassal_naval_forcelimit_bonus = 0.3
        vassal_sailors_bonus = 1
 
        ai_will_do = { 
