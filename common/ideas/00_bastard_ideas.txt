@@ -1187,7 +1187,8 @@ VEN_ideas = {
 	start = {
 		infantry_power = 0.1
 		#prestige = 1
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1
+		yearly_innovativeness = 0.25
 	}
 	
 	bonus = {
@@ -1206,6 +1207,7 @@ VEN_ideas = {
 	}
 	venetian_arsenal = {
 		navy_tradition = 1
+		global_ship_cost = -0.1
 	}
 	printing_industry = {
 		technology_cost = -0.1
@@ -1214,7 +1216,7 @@ VEN_ideas = {
 		development_cost = -0.1
 	}
 	stato_da_mar = {
-		trade_efficiency = 0.15
+		trade_efficiency = 0.1
 	}
 	state_inquisition = {
 		all_estate_loyalty_equilibrium = 0.1
@@ -1263,7 +1265,7 @@ SIC_ideas = {
 	}
 	sic_greater_sicily = {
 		cavalry_power = 0.1
-		infantry_power = 0.05
+		infantry_power = 0.1
 	}
 }
 
@@ -2147,7 +2149,8 @@ POL_ideas = {
 
 PLC_ideas = {
 	start = {
-		cavalry_cost = -0.1
+		#cavalry_cost = -0.1
+		cavalry_power = 0.1
 		num_accepted_cultures = 2 
 	}
 	
@@ -2175,7 +2178,8 @@ PLC_ideas = {
 		drill_gain_modifier = 0.25
 	}
 	winged_hussars = { 
-		cavalry_power = 0.1
+		#cavalry_power = 0.1
+		cavalry_cost = -0.1
 		can_recruit_hussars = yes
 		special_unit_forcelimit = 0.2
 	}
@@ -3143,7 +3147,7 @@ TUN_improved_ideas = {
 
 colonial_ideas = {
 	start = {
-		development_cost = 0.15
+		development_cost = 0.1
 		#build_cost = 0.15
 		governing_capacity_modifier = -0.25
 		no_religion_penalty = yes
@@ -3159,17 +3163,13 @@ colonial_ideas = {
 	free = yes
 	
 	founding_fathers = {
-		legitimacy = 1
-		devotion = 1
 		republican_tradition = 0.5
-		meritocracy = 1
-		horde_unity = 1
 	}
 	continental_trade = {
 		global_prov_trade_power_modifier = 0.75
 	}
 	manufacturing_center = {
-		#build_cost = -0.1
+		build_cost = -0.1
 		production_efficiency= 0.1
 	}
 	free_thinkers = {
@@ -3190,14 +3190,15 @@ colonial_ideas = {
 
 colonial_ideas_upgraded = {
 	start = {
-		development_cost = 0.15
+		development_cost = 0.1
 		#build_cost = 0.15
-		governing_capacity_modifier = -0.15
+		#governing_capacity_modifier = -0.15
+		yearly_innovativeness = 0.25
 		no_religion_penalty = yes
 	}
 	
 	bonus = {
-		land_morale = -0.10
+		land_morale = 0.1
 	}
 	
 	trigger = {
@@ -3207,19 +3208,16 @@ colonial_ideas_upgraded = {
 	free = yes
 	
 	founding_fathers = {
-		legitimacy = 1
-		devotion = 1
 		republican_tradition = 0.5
-		meritocracy = 1
-		horde_unity = 1
 	}
 	continental_trade_upgraded = {
-		global_prov_trade_power_modifier = 0.75
+		global_prov_trade_power_modifier = 0.25
 		centralize_state_cost = -0.2
 	}
 	manufacturing_center_upgraded = {
-		#build_cost = -0.1
-		production_efficiency= 0.1
+		build_cost = -0.1
+		#production_efficiency= 0.1
+		global_trade_goods_size_modifier = 0.1
 		expand_infrastructure_cost_modifier = -0.2
 	}
 	free_thinkers_upgraded = {
@@ -3232,7 +3230,8 @@ colonial_ideas_upgraded = {
 	}
 	new_frontiers = {
 		auto_explore_adjacent_to_colony = yes
-		global_colonial_growth = 10
+		#global_colonial_growth = 10
+		colonists = 1
 	}
 	liberty_heroes = {
 		global_unrest = -1

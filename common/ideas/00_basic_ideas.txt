@@ -37,6 +37,7 @@ innovativeness_ideas = {
 	}
 	print_culture = {
 		yearly_innovativeness = 0.5
+		innovativeness_gain = 1
 		
 	}
 	optimism = {
@@ -44,6 +45,7 @@ innovativeness_ideas = {
     	monarch_diplomatic_power = 1
     	monarch_military_power = 1
 		reelection_cost = -0.25
+		candidate_random_bonus = 1
 	}
 	expanded_policies = {
 		all_power_cost = -0.025
