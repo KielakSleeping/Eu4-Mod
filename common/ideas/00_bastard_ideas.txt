@@ -3683,12 +3683,15 @@ JAP_ideas = {
 	}
 	jap_land_of_the_rising_sun = {
 		prestige = 1
+		land_morale = 0.1
 	}
 	jap_kaitakudan = {
 		global_colonial_growth = 20
+		development_cost_in_primary_culture = -0.1
 	}
 	jap_great_power_diplomacy = {
 		ae_impact = -0.15
+		reduced_liberty_desire = 25
 	}
 }
 
