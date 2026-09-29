@@ -918,13 +918,18 @@ du_si = {
 kashifs = {
     icon = GFX_holy_order_kashifs
     trigger = {
+         OR = {
+		#primary_culture = Egyption
         is_or_was_tag = { tag = MAM }
 
 		#custom_trigger_tooltip = {
 			#tooltip = mam_has_access_to_kashifs_tt
 			#has_country_flag = mam_enable_kashifs_local_organizations_flag
 		} 
+            NOT = {is_colonial_nation = yes }
+            religion_group = muslim
     }
+
     color = { 240 255 10 }
     cost = 75
     cost_type = mil_power
@@ -945,6 +950,7 @@ kashifs = {
 			owner = { adm = 5 } 
         }
     localization = coordinator_office
+}
 }
 
 #1.36 Orders
