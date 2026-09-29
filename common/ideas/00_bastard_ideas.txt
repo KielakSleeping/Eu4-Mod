@@ -180,7 +180,7 @@ QNG_ideas = {
 	}
 	pigtail_or_death = {
 		#global_unrest = -2
-		amount_of_banners = 0.2
+		amount_of_banners = 0.25
 		culture_conversion_cost = -0.2
 	}
 }
@@ -1410,7 +1410,7 @@ PR2_ideas = {
     PR2_2 = {
        # infantry_power = 0.1
 	   max_general_fire = 2
-	   general_fire = 1
+	 	leader_land_fire = 1
 		years_of_nationalism = -15
     }
     PR2_3 = {
@@ -1420,7 +1420,7 @@ PR2_ideas = {
     PR2_4 = {
        # land_morale = 0.1
 	   max_general_shock = 2
-	   general_shock =1
+		leader_land_shock = 1
     }
     PR2_5 = {
         num_accepted_cultures = 2
@@ -1479,7 +1479,7 @@ FRA_ideas = {
 	}
 	europes_first_standing_army = {
 		discipline = 0.05
-		general_fire = 1
+		fire_damage = 0.1
 	}
 	vauban_fortifications = {
 		defensiveness = 0.25
