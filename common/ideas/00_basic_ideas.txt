@@ -29,7 +29,7 @@ innovativeness_ideas = {
 	}
 	scientific_revolution = {
 		advisor_cost = -0.15
-		female_advisor_chance = 0.01
+		#female_advisor_chance = 0.01
 	}
 	dynamic_court = {
 		technology_cost = -0.1
@@ -42,7 +42,7 @@ innovativeness_ideas = {
 	optimism = {
 		monarch_admin_power = 1
     	monarch_diplomatic_power = 1
-    	#monarch_military_power = 1
+    	monarch_military_power = 1
 		reelection_cost = -0.25
 	}
 	expanded_policies = {
@@ -204,11 +204,11 @@ expansion_ideas = {
 
 	additional_colonists = {
 		core_creation = -0.25
-		unjustified_demands = -0.5
+		unjustified_demands = -0.75
 	}
 	additional_merchants = {
 		manpower_recovery_speed = 0.10
-		manpower_in_accepted_culture_provinces = 0.15
+		manpower_in_accepted_culture_provinces = 0.2
 	}
 	faster_colonists = {
 		overextension_impact_modifier = -0.5
@@ -252,7 +252,7 @@ administrative_ideas = {
 	}
 
 	administrative_council = {
-		adm_tech_cost_modifier = -0.1
+		adm_tech_cost_modifier = -0.15
 		reform_progress_growth = 0.25
 	}
 	local_rule = {
@@ -278,7 +278,7 @@ administrative_ideas = {
 	}
 	centralization = {
 		drill_decay_modifier = -0.10
-		global_supply_limit_modifier = 0.2
+		global_supply_limit_modifier = 0.25
 
 	}
 	civil_servants = {
@@ -296,8 +296,8 @@ infrastructure_ideas = {
 	category = ADM
 
 	bonus = {
-	  	development_cost = -0.1
-		move_capital_cost_modifier = -0.6
+	  	development_cost = -0.075
+		move_capital_cost_modifier = -0.5
 	}
 
 	state_efficiency = {
@@ -306,11 +306,11 @@ infrastructure_ideas = {
 	}
 	organised_construction = {
 		build_cost = -0.1
-		build_time = -0.1
+		build_time = -0.15
 	}
 	efficient_construction_plans = {
-		great_project_upgrade_cost = -0.25
-		great_project_upgrade_time = -0.25
+		great_project_upgrade_cost = -0.30
+		great_project_upgrade_time = -0.30
 	}
 	expanded_infrastructure_network = {
 		expand_infrastructure_cost_modifier = -0.25
@@ -321,7 +321,7 @@ infrastructure_ideas = {
 	}
 	fort_logistics = {
 		state_governing_cost = -0.1
-		center_of_trade_upgrade_cost = -0.1
+		center_of_trade_upgrade_cost = -0.2
 	}
 	regulation_bureau = {
 		free_concentrate_development = yes
@@ -364,7 +364,7 @@ humanist_ideas = {
 		all_estate_loyalty_equilibrium = 0.1
    		#development_cost = -0.05
 		development_cost = -0.1
-		development_cost_in_primary_culture =0.05
+		development_cost_in_primary_culture = 0.05
     
 	}
 	humanist_tolerance = {
@@ -453,9 +453,9 @@ influence_ideas = {
   
 	}
 	postal_service = {
-		vassal_forcelimit_bonus = 0.25
-		vassal_naval_forcelimit_bonus = 0.25
-    	vassal_manpower_bonus = 0.25
+		vassal_forcelimit_bonus = 0.5
+		#vassal_naval_forcelimit_bonus = 0.25
+    	vassal_manpower_bonus = 0.5
     	vassal_sailors_bonus = 0.5
 
 	}
@@ -488,7 +488,7 @@ diplomatic_ideas = {
 	bonus = {
 		all_estate_loyalty_equilibrium = 0.1
     	all_estate_possible_privileges = 1
-    	loyalty_change_on_revoked = 0.05
+    	loyalty_change_on_revoked = 0.1
 	}
 
 	grand_banquets = {
@@ -496,7 +496,7 @@ diplomatic_ideas = {
   		diplomats = 2
 	}
 	foreign_embassies = {
-		national_focus_years = -10
+		national_focus_years = -5
     	ae_impact = -0.25
     	global_manpower_modifier = 0.10
 	}
@@ -544,7 +544,7 @@ maritime_ideas = {
 
 	merchant_traditions = {
 		naval_forcelimit_modifier = 0.25
-		global_ship_recruit_speed = -0.25
+		global_ship_recruit_speed = -0.3
 		#global_ship_trade_power = 0.1
 	}
 	merchant_marine = {
@@ -594,7 +594,7 @@ maritime_ideas = {
 			}
 	}
 	naval_fighting_instruction = {
-		center_of_trade_upgrade_cost = -0.15
+		center_of_trade_upgrade_cost = -0.2
     	admiral_cost = -0.25
 	}
 
@@ -680,6 +680,7 @@ trade_ideas = {
 	merchant_adventures = {
 		center_of_trade_upgrade_cost = -0.25
 		great_project_upgrade_cost = -0.25
+		production_efficiency = 0.1
 	}
 	national_trade_policy = {
 		trade_efficiency = 0.1
@@ -720,7 +721,7 @@ aristocracy_ideas = {
 
 	noble_knights = {
 		cavalry_cost = -0.1
-		movement_speed = 0.2
+		movement_speed = 0.25
 	}
 	serfdom = {
 		cavalry_power = 0.1
@@ -737,16 +738,18 @@ aristocracy_ideas = {
 		shock_damage = 0.1
 	}
 	rightful_conquest = {
+		global_manpower_modifier = 0.1
+	}
+	local_nobility = {
+		#warscore_from_battles_modifier = 0.1
+		#global_manpower_modifier = 0.1
 		nobles_loyalty_modifier = 0.1
 		cossacks_loyalty_modifier = 0.1
 		maratha_loyalty_modifier = 0.1
 		rajput_loyalty_modifier = 0.1
 		qizilbash_loyalty_modifier = 0.1
 		nomadic_tribes_loyalty_modifier = 0.1
-	}
-	local_nobility = {
-		#warscore_from_battles_modifier = 0.1
-		global_manpower_modifier = 0.1
+		free_land_leader_pool = 1
 	}
 
 	ai_will_do = {
@@ -801,7 +804,7 @@ offensive_ideas = {
 
 	bonus = {
 		#max_general_siege = 1
-		morale_damage = 0.15
+		morale_damage = 0.1
 	}
 
 	bayonet_leaders = {
@@ -865,7 +868,7 @@ defensive_ideas = {
 	}
 	supply_trains = {
 		land_morale = 0.075
-		garrison_damage = 0.25
+		garrison_damage = 0.30
 	}
 	improved_foraging = {
 		war_exhaustion = -0.1
@@ -885,7 +888,7 @@ quality_ideas = {
 		#cavalry_power = 0.05
 		artillery_power = 0.05
 		free_land_leader_pool = 1
-		general_cost = -0.1
+		general_cost = -0.2
 	}
 
 	private_to_marshal = {
@@ -905,7 +908,7 @@ quality_ideas = {
 	}
 	escort_ships = {
 		drill_gain_modifier = 0.25
-		drill_decay_modifier = -0.25
+		drill_decay_modifier = -0.20
 		discipline = 0.05
 	}
 	naval_drill = {
@@ -931,19 +934,20 @@ quantity_ideas = {
 	category = MIL
 
 	bonus = {
-		land_forcelimit_modifier = 0.25
-		reinforce_cost_modifier = -0.30
+		land_forcelimit_modifier = 0.35
+		reinforce_cost_modifier = -0.35
 		free_mil_policy = 1
 	}
 
 	mass_army = {
 		global_manpower_modifier = 0.40
 		global_sailors_modifier = 0.30
-
+		allowed_marine_fraction = 0.15
 		free_land_leader_pool = 1
 	}
 	the_young_can_serve = {
-		manpower_recovery_speed = 0.20
+		manpower_recovery_speed = 0.25
+		sailors_recovery_speed = 0.15
 		may_build_supply_depot = yes
 	}
 	enforced_service = {
@@ -953,19 +957,19 @@ quantity_ideas = {
 	}
 	camp_followers = {
 		#regiment_manpower_usage = -0.1
-		global_regiment_recruit_speed = -0.25
+		global_regiment_recruit_speed = -0.5
 	}
 	reinforcement_drafts = {
 		war_taxes_cost_modifier = -1.0
-		reinforce_speed = 0.3
+		reinforce_speed = 0.35
 	}
 	the_old_and_infirm = {
 		#land_forcelimit = 10
 		may_return_manpower_on_disband = yes
 	}
 	expanded_supply_trains = {
-		land_attrition = -0.20
-		global_supply_limit_modifier = 1
+		land_attrition = -0.25
+		global_supply_limit_modifier = 1.5
 	}
 
 	ai_will_do = {
@@ -995,7 +999,7 @@ theocracy_gov_ideas = {
 		manpower_in_true_faith_provinces= 0.1
 	}
 	flesh_is_weak = {
-		morale_damage = 0.15
+		morale_damage = 0.1
 		morale_damage_received = -0.15
 		
 	}
@@ -1006,7 +1010,8 @@ theocracy_gov_ideas = {
 	}
 	conviction_of_sin = {
 		manpower_in_own_culture_provinces = 0.20
-		development_cost_in_primary_culture = -0.075
+		#development_cost_in_primary_culture = -0.075
+		shock_damage = 0.1
 	}
 	martyrs = {
 		church_loyalty_modifier = 0.1

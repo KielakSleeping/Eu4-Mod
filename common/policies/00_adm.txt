@@ -12,7 +12,8 @@ the_more_the_better = {
        }
 
        can_transfer_vassal_wargoal = yes 
-       liberty_desire_from_subject_development = -0.30
+       #liberty_desire_from_subject_development = -0.30
+       vassal_forcelimit_bonus = 1
        diplomatic_upkeep = 1
 
        ai_will_do = { 
@@ -280,8 +281,8 @@ better_hooves = {
                full_idea_group = economic_ideas 
                full_idea_group = aristocracy_ideas 
        }
-
-       cavalry_cost = -0.05
+       cav_to_inf_ratio = 0.15
+       cavalry_cost = -0.1
        #movement_speed = 0.10
        cavalry_power = 0.1
 
@@ -567,7 +568,7 @@ we_got_raizing_at_home = {
                full_idea_group = expansion_ideas 
                full_idea_group = aristocracy_ideas 
        }
-
+       movement_speed = 0.2
        available_province_loot = 3
        #loot_amount = 1
        cav_to_inf_ratio = 0.15
@@ -739,8 +740,9 @@ the_chosen_one = {
                full_idea_group = influence_ideas 
        }
        diplomatic_upkeep = 1
-       reduced_liberty_desire = 30 
+       #reduced_liberty_desire = 30 
        vassal_income = 0.3
+       vassal_manpower_bonus = 0.5
 
        ai_will_do = { 
                factor = 1 
