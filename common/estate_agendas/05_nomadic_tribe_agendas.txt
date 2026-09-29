@@ -1346,8 +1346,8 @@ estate_nomadic_tribes_regain_liberty = {
 			loyalty = 10
 		}
 		create_general = {
-			tradition = 60
-			add_shock = 1
+			tradition = 40
+			#add_shock = 1
 		}
 	}
     failing_effect = {

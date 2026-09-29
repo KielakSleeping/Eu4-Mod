@@ -4127,7 +4127,7 @@ FKN_ideas = {
 	}
 	fkn_free_knights_of_franconia = {
 		build_cost = -0.1
-		land_forcelimit_modifier = 0.15
+		land_forcelimit_modifier = 0.2
 	}
 	fkn_duchy_restored = {
 		legitimacy = 1
@@ -4138,7 +4138,8 @@ FKN_ideas = {
 	}
 	fkn_main_trading = {
 		trade_efficiency = 0.1
-		global_prov_trade_power_modifier = 0.15
+		#global_prov_trade_power_modifier = 0.15
+		global_trade_goods_size_modifier = 0.1
 	}
 	fkn_rugged_land_of_fortresses = {
 		global_manpower_modifier = 0.2
