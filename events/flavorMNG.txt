@@ -479,6 +479,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
+		always = no
 		if = {
 			limit = {
 				event_target:EmperorOfChina = {
