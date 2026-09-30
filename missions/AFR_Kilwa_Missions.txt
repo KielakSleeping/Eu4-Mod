@@ -57,6 +57,10 @@ kilwa_cape_missions_slot = {
 				}
 				add_permanent_claim = ROOT
 			}
+			kenya_area = {
+				cede_province = ZAN
+				add_core = ZAN
+			}			
 		}
 		ai_weight = {
 			factor = 500	#Integrate your vassal
