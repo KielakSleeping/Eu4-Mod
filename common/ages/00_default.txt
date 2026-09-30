@@ -472,9 +472,17 @@ age_of_reformation = {
 		}
 		
 		obj_convert_10_provinces = {
-			custom_trigger_tooltip = {
-				tooltip = obj_convert_10_provinces_tooltip
-				check_variable = { which = num_converted_religion value = 10 }
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = obj_convert_10_provinces_tooltip
+					check_variable = { which = num_converted_religion value = 10 }
+				}
+				has_harmonized_with = shinto
+				has_harmonized_with = vajrayana
+				has_harmonized_with = mahayana
+				has_harmonized_with = buddhism
+				has_harmonized_with = hinduism
+				has_harmonized_with = animism
 			}
 		}
 		
