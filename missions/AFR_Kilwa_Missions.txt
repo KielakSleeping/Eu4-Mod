@@ -59,6 +59,8 @@ kilwa_cape_missions_slot = {
 			}
 			kenya_area = {
 				cede_province = ZAN
+				change_religion = sunni
+				change_culture = swahili
 				add_core = ZAN
 			}			
 		}

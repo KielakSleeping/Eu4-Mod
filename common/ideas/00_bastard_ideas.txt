@@ -547,8 +547,8 @@ ARB_ideas = { #Arabian Empire
 
 GZM_ideas = { #Great Zimbabwe Empire
 	start = {
-		infantry_shock = 0.25
-		infantry_cost = -0.1
+		cavalry_shock = 0.25
+		cavalry_cost = -0.1
 	}
 	
 	bonus = {
@@ -569,10 +569,11 @@ GZM_ideas = { #Great Zimbabwe Empire
 		discipline = 0.05
 	}
 	GZM_empowering_the_rozwi = {
-		fire_damage_received = -0.125
+		fire_damage_received = -0.15
 	}
 	GZM_4 = {
-		infantry_power = 0.1
+		#infantry_power = 0.1
+		cavalry_power = 0.1
 	}
 	GZM_5 = { 
 		global_manpower_modifier = 0.2
@@ -2380,7 +2381,7 @@ ADU_ideas = {
 	free = yes        #will be added at load.
     
 	adu_stand_against_the_reconquista = {
-		fire_damage_received = -0.125
+		fire_damage_received = -0.15
 	}
 	adu_taifa_adminstration = {
 		development_cost = -0.05
@@ -3119,7 +3120,7 @@ TUN_improved_ideas = {
 	tun_catalan_guard_improved = {
 		#mercenary_discipline = 0.05
 		#mercenary_manpower = 0.25
-		infantry_power = 0.125
+		infantry_power = 0.15
 	}
 	dual_diplomacy = {
 		diplomatic_upkeep = 1
