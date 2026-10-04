@@ -2046,7 +2046,7 @@ SCA_ideas = {
 	}
 	sca_finnish_hakkapeliita = {
 		cavalry_cost = -0.1
-		shock_damage = 0.1
+		shock_damage = 0.15
 	}
 	sca_swedish_carolean = {
 		infantry_power = 0.15
