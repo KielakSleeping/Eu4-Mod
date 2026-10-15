@@ -1013,7 +1013,7 @@ tea = {
 	}
 	province = {
 		#garrison_growth = 0.25
-		garrison_size = 0.25
+		local_garrison_size = 0.25
 	}
 	chance = {
 		factor = 15
