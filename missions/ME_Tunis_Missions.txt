@@ -903,6 +903,41 @@ TUN_missions_3 = {
 			}
 		}
 		effect = {
+			calabria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			naples_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			apulia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lazio_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			corsica_sardinia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			aegean_archipelago_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -1014,38 +1049,85 @@ TUN_missions_3 = {
 		position = 7
 		provinces_to_highlight = {
 			OR = {
-				area = aegean_archipelago_area
-				province_id = 163
-				province_id = 321
-				province_id = 4698
-				province_id = 142
+				#area = aegean_archipelago_area
+				#province_id = 163
+				#province_id = 321
+				#province_id = 4698
+				#province_id = 142
+				area = calabria_area
+				area = naples_area
+				area = apulia_area
+				area = lazio_area
+				area = corsica_sardinia_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				OR = {
-					area = aegean_archipelago_area
-					province_id = 163
-					province_id = 321
-					province_id = 4698
-					province_id = 142
+			AND = {
+				calabria_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT 
 				}
-				value = 3
+				naples_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT 
+				}
+				apulia_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT 
+				}
+				lazio_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT 
+				}
+				corsica_sardinia_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT 
+				}
 			}
+			
+			# num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+			# 	OR = {
+			# 		area = aegean_archipelago_area
+			# 		province_id = 163
+			# 		province_id = 321
+			# 		province_id = 4698
+			# 		province_id = 142
+			# 	}
+			# 	value = 3
+			# }
 		}
 		effect = {
-			create_admiral = { tradition = 50 }
+			hidden_effect = {
+				set_country_flag = emirate_of_the_mediteranean
+			}
+
+			country_event = { id = ME_Tunis_Events.9 }
+
+			#create_admiral = { tradition = 50 }
 			
 			custom_tooltip = " "
-			
-			add_years_of_income = 0.5
-			
+
+			swap_non_generic_missions = yes
+
 			custom_tooltip = " "
+
 			
+			#add_years_of_income = 0.5
+
 			add_country_modifier = {
 				name = TUN_east_captured
-				duration = 9125
+				duration = -1
+			}
+
+			custom_tooltip = " "
+
+			italy_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -1584,7 +1666,7 @@ TUN_missions_4 = {
 			}
 		}
 		effect = {
-			country_event = { id = ME_Tunis_Events.9 }
+			#country_event = { id = ME_Tunis_Events.9 }
 			add_country_modifier = {
 				name = TUN_sultanate_of_ifriqiya_modifier
 				duration = -1
@@ -1981,4 +2063,187 @@ TUN_missions_5 = {
 			}
 		}		
 	}
+}
+
+TUN_emirate_missions_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+
+	potential = {
+		has_country_flag = emirate_of_the_mediteranean
+	}
+
+
+	TUN_emirate_mission_3_1 = {
+		icon = new_st_peters_basilica
+		#required_missions = { }
+		position = 13
+
+		trigger = {
+		
+			AND = {
+				owns_core_province = 118
+				118  = {
+					development = 30
+				}
+				lazio_area = {
+					type = all
+					is_prosperous = yes
+				}
+			}
+			
+		}
+		effect = {
+			lazio_area = {
+				change_culture = ROOT
+				change_religion = ROOT
+			}
+		}
+	}
+
+	TUN_emirate_mission_3_2 = {
+		icon = italian_riches
+		required_missions = { TUN_emirate_mission_3_1 }
+		position = 14
+
+		trigger = {
+		
+			AND = {
+				owns_core_province = 2982
+				2982  = {
+					religion = ROOT
+					province_has_center_of_trade_of_level = 4
+					has_trade_building_trigger = yes
+				}
+				owns_core_province = 125
+				125  = {
+					religion = ROOT
+					province_has_center_of_trade_of_level = 4
+					has_trade_building_trigger = yes
+				}
+			}
+			
+		}
+		effect = {
+			sicily_area = {
+				add_province_modifier = {
+					name = emirate_develope_south_italy
+					duration = 9125
+				}
+			}
+			calabria_area = {
+				add_province_modifier = {
+					name = emirate_develope_south_italy
+					duration = 9125
+				}
+			}
+
+			naples_area = {
+				add_province_modifier = {
+					name = emirate_develope_south_italy
+					duration = 9125
+				}
+			}
+
+		}
+	}
+
+}
+
+TUN_emirate_missions_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+
+	potential = {
+		has_country_flag = emirate_of_the_mediteranean
+	}
+
+
+	TUN_emirate_mission_2_1 = {
+		icon = mission_mediterranean_islands
+		required_missions = { TUN_emirate_mission_3_1}
+		position = 14
+
+		provinces_to_highlight = {
+			OR = {
+				area = corsica_sardinia_area
+			}
+		}
+		trigger = {
+
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 4
+				area = corsica_sardinia_area
+				religion = ROOT
+			}
+
+			2986 = {
+				has_production_building_trigger = yes
+				development = 15
+			}
+			
+		}
+		effect = {
+			corsica_sardinia_area = {
+				change_culture = ROOT
+			}
+			2986 = {
+				add_or_upgrade_production_building = yes
+				add_permanent_province_modifier = {
+					name = sardinian_copper
+					duration = -1
+				}
+			}
+		}
+	}
+
+	TUN_emirate_mission_2_2 = {
+		icon = fortify_malta
+		required_missions = { TUN_emirate_mission_2_1 }
+		position = 15
+
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = "No other Nation with their capital in Italy has a larger navy than us"
+				hidden_trigger = {
+					NOT = {
+						any_country = {
+							capital_scope = {
+								region = italy_region
+							}
+							navy_size = PREV
+						}
+					}
+
+				}
+			}
+
+			
+	
+			AND = {
+				owns_core_province = 1247
+				1247  = {
+					has_fort_building_trigger = yes
+					has_shipyard_building_trigger = yes
+				}
+			}
+			
+		}
+		effect = {
+
+			1247 = {
+				add_permanent_province_modifier = {
+					name = corsica_fortress
+					duration = -1
+				}
+			}
+
+
+		}
+	}
+
 }

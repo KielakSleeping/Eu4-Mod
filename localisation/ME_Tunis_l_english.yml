@@ -199,9 +199,9 @@
  ME_Tunis_Events.8.d: "As peace has finally been secured in the Maghreb and our sovereignty recognised, we must look to re-establish a stronger presence of Islam in the Iberian peninsula. The original Islamic ruler of Iberia, Al-Andalus, has only recently been relegated to history, its final vestiges vanishing with the collapse of the Emirate of Granada. By re-establishing the Kingdom of Al-Andalus in Quturba, we can easily legitimise our claims in the region against the Christian kingdoms. On the other hand, we could take the lands for ourselves and leave our own mark!"
  ME_Tunis_Events.8.b: "Iberia is ours!"
  
- ME_Tunis_Events.9.t: "Sultanate of Ifriqiya"
+ ME_Tunis_Events.9.t: "Emirate of the Mediterranean"
  ME_Tunis_Events.9.d: "The first establishment of the province of Ifriqiya was in 703 upon the Umayyad seizure of Africa from the Byzantine Empire. Until now, our hold on the region has been tenuous at best. Now however, as our dominance over the Maghreb has been recognised, streching from the Moroccan coast to the Fezzan corridors, we can once again claim the name of Ifriqiya for ourselves!"
- ME_Tunis_Events.9.a: "Yes, we are Ifriqiyans."
+ ME_Tunis_Events.9.a: "Yes, we are the Emirate of the Mediterranean."
  ME_Tunis_Events.9.b: "No, we would rather be known as [Root.GetName]."
  
  ME_Tunis_Events.11.t: "Conquest of Andalusia"
@@ -253,8 +253,8 @@
  
  TUN_hafsid_caliphate: "Hafsid Caliphate"
  TUN_hafsid_caliphate_ADJ: "Hafsid"
- TUN_ifriqiya: "Ifriqiya"
- TUN_ifriqiya_ADJ: "Ifriqiyan"
+ TUN_ifriqiya: "Emirate of the Mediterranean"
+ TUN_ifriqiya_ADJ: "Emirate of the Mediterraneans"
  
  #Maghreb Stuff
  TUN_anti_european_edict_title: "@[Root.GetTag] Anti-European Edict"
@@ -299,3 +299,14 @@
  TUN_all_maghreb_provinces: "All provinces in §YMaghreb§! Region and not in §YMacaronesia§! Area."
  TUN_expulsion_of_europeans_warname: "$ORDER$ $FIRST$ Expulsion of the Europeans"
  
+TUN_emirate_mission_2_1_title: "Sardinian Copper"
+TUN_emirate_mission_2_1_desc: " "
+TUN_emirate_mission_2_2_title: "Impassable Strait"
+TUN_emirate_mission_2_2_desc: " "
+TUN_emirate_mission_3_1_title: "Saint Peters's Basilica"
+TUN_emirate_mission_3_1_desc: " "
+TUN_emirate_mission_3_2_title: "Develop South Italy"
+TUN_emirate_mission_3_2_desc: " "
+emirate_develope_south_italy: "Develop South Italy"
+sardinian_copper: "Sardinian Copper"
+corsica_fortress: "Impassable Strait"
