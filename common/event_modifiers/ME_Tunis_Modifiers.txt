@@ -209,3 +209,38 @@ corsica_fortress = {
 	local_garrison_size = 0.5
 	own_coast_naval_combat_bonus = 1
 }
+
+tunis_italian_siege_engineer = {
+	artillery_power = 0.1
+	siege_ability = 0.1
+}
+
+tunis_italian_merchants = {
+	merchants = 1
+	trade_efficiency = 0.1
+}
+
+tunis_holds_genoa = {
+	province_trade_power_modifier = 0.25
+}
+
+tunis_venetian_trade = {
+	province_trade_power_modifier = 1
+}
+
+tunis_venetian_fleet = {
+	global_ship_trade_power = 0.15
+	merchants = 1
+}
+
+italyia = {
+	fire_damage = 0.20
+}
+
+tunis_large_grain_reserves = {
+	manpower_recovery_speed = 0.20
+}
+
+tunis_wine_exports = {
+	local_production_efficiency = 0.25
+}

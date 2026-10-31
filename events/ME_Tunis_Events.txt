@@ -802,3 +802,33 @@ country_event = {
 		add_prestige_or_monarch_power = { amount = 15 }
 	}
 }
+
+country_event = { # Italyia
+	id = ME_Tunis_Events.23
+	title = ME_Tunis_Events.23.t
+	desc = ME_Tunis_Events.23.d
+	picture = muslimgfx_RAMADAN_eventPicture
+      
+	is_triggered_only = yes
+
+	option = {
+		name = ME_Tunis_Events.23.a
+
+		ai_chance = { factor = 1 }
+		
+		override_country_name = TUN_italyia
+		change_country_color = {
+			color = {
+				125 171 84
+			}
+		}
+	}
+	
+	option = {
+		name = ME_Tunis_Events.23.b
+		
+		ai_chance = { factor = 1 }
+		
+		
+	}
+}

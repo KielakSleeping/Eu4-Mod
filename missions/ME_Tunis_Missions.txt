@@ -2130,22 +2130,111 @@ TUN_emirate_missions_3 = {
 			sicily_area = {
 				add_province_modifier = {
 					name = emirate_develope_south_italy
-					duration = 9125
+					duration = 3650
 				}
 			}
 			calabria_area = {
 				add_province_modifier = {
 					name = emirate_develope_south_italy
-					duration = 9125
+					duration = 3650
 				}
 			}
 
 			naples_area = {
 				add_province_modifier = {
 					name = emirate_develope_south_italy
-					duration = 9125
+					duration = 3650
 				}
 			}
+
+		}
+	}
+
+	TUN_emirate_mission_3_3 = {
+		icon = mission_pol_breadbasket_europe
+		required_missions = { TUN_emirate_mission_3_2 }
+		position = 15
+
+		trigger = {
+			
+			custom_trigger_tooltip = {
+				tooltip = "We own at least 10 Grain Provinces that we did a Provincial Investment on"
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 10
+					has_province_modifier = echo_production_hub_grain_pmod
+				}
+			}
+
+			trade_goods_produced_amount = {
+				trade_goods = grain
+				amount = 30
+			}
+			
+
+			
+		}
+		effect = {
+			add_yearly_manpower = 0.5
+
+			custom_tooltip = " "
+
+			add_country_modifier = {
+				name = tunis_large_grain_reserves
+				duration = 3650
+			}
+
+		}
+	}
+
+	TUN_emirate_mission_3_4 = {
+		icon = mission_wine_monopolies
+		required_missions = { TUN_emirate_mission_4_2 }
+		position = 16
+
+		provinces_to_highlight = {
+			OR = {
+				area = provence_area
+				area = languedoc_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		trigger = {
+			
+
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 4
+				area = provence_area
+				religion = ROOT
+			}
+
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 5
+				area = languedoc_area
+				religion = ROOT
+			}
+
+			
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 10
+				trade_goods = wine
+			}
+			
+
+			
+		}
+		effect = {
+
+			every_owned_province = {
+				limit = {
+					trade_goods = wine
+				}
+				add_province_modifier = {
+					name = tunis_wine_exports
+					duration = -1
+				}
+			}
+
 
 		}
 	}
@@ -2245,5 +2334,318 @@ TUN_emirate_missions_2 = {
 
 		}
 	}
+
+}
+
+
+TUN_emirate_missions_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+
+	potential = {
+		has_country_flag = emirate_of_the_mediteranean
+	}
+
+
+	TUN_emirate_mission_4_1 = {
+		icon = mission_islamic_golden_age
+		required_missions = { TUN_emirate_mission_3_1}
+		position = 14
+
+		provinces_to_highlight = {
+			OR = {
+				area = tuscany_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 5
+				area = tuscany_area
+				religion = ROOT
+			}
+
+			
+		}
+		effect = {
+			tuscany_area = {
+				change_culture = ROOT
+			}
+			add_country_modifier = {
+				name = tunis_italian_siege_engineer
+				duration = -1
+			}
+		}
+	}
+
+	TUN_emirate_mission_4_2 = {
+		icon = mission_dominate_the_mediterranean
+		required_missions = { TUN_emirate_mission_4_1 }
+		position = 15
+
+		provinces_to_highlight = {
+			OR = {
+				area = liguria_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		trigger = {
+			
+
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 3
+				area = liguria_area
+				religion = ROOT
+			}
+
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 7
+				region = italy_region
+				province_has_center_of_trade_of_level = 4
+			}
+
+			1298 = {
+				has_most_province_trade_power = ROOT
+			}
+	
+			
+		}
+		effect = {
+
+			provence_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+
+			savoy_dauphine_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+
+			languedoc_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+
+			add_country_modifier = {
+				name = tunis_italian_merchants
+				duration = -1
+			}
+
+			101 = {
+				add_permanent_province_modifier = {
+					name = tunis_holds_genoa
+					duration = -1
+				}
+			}
+
+
+
+		}
+	}
+
+
+	TUN_emirate_mission_4_3 = {
+		icon = the_italian_league
+		required_missions = { TUN_emirate_mission_5_2 TUN_emirate_mission_4_2 }
+		position = 17
+
+		provinces_to_highlight = {
+			OR = {
+				region = italy_region
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		trigger = {
+			
+			italy_region = {
+				type = all
+				is_core = ROOT
+			}
+	
+		}
+		effect = {
+
+			hidden_effect = {
+				set_country_flag = tunis_italyia
+			}
+
+			country_event = {
+				id = ME_Tunis_Events.23
+			}
+
+			custom_tooltip = " "
+
+			add_country_modifier = {
+				name = italyia
+				duration = -1
+			}
+		}
+	}
+}
+
+TUN_emirate_missions_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+
+	potential = {
+		has_country_flag = emirate_of_the_mediteranean
+	}
+
+
+	TUN_emirate_mission_5_1 = {
+		icon = mission_mnd_maj_cloves
+		required_missions = { TUN_emirate_mission_4_1}
+		position = 15
+
+		provinces_to_highlight = {
+			OR = {
+				area = central_italy_area
+				area = emilia_romagna_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+
+
+
+			central_italy_area = {
+				type = all
+				is_core = ROOT		
+			}
+
+			emilia_romagna_area = {
+				type = all
+				is_core = ROOT	
+			}
+
+
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 35
+				region = italy_region
+				religion = ROOT
+				culture = ROOT
+			}
+
+
+			122 = {
+				is_core = ROOT
+				religion = ROOT
+				culture = ROOT
+			}
+			
+		}
+		effect = {
+
+			122 = {
+				change_trade_goods = cloves
+				add_or_upgrade_trade_building = yes
+				if = {
+					limit = {
+						province_has_center_of_trade_of_level = 1
+					}
+
+					add_permanent_province_modifier = {
+						name = tunis_venetian_trade
+						duration = -1
+					}
+
+					else = {
+						add_center_of_trade_level = 1
+						add_permanent_province_modifier = {
+							name = tunis_venetian_trade
+							duration = -1
+						}
+					}
+				}
+			}
+
+		}
+	}
+
+	TUN_emirate_mission_5_2 = {
+		icon = mission_dominate_the_mediterranean
+		required_missions = { TUN_emirate_mission_5_1 }
+		position = 16
+
+		provinces_to_highlight = {
+			OR = {
+				area = venetia_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		trigger = {
+			
+
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 5
+				area = venetia_area
+				religion = ROOT
+			}
+
+			1308 = {
+				has_most_province_trade_power = ROOT
+			}
+	
+			
+		}
+		effect = {
+
+			venetia_area = {
+				change_culture = ROOT
+			}
+
+			carolinas_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+
+			croatia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+
+			east_adriatic_coast_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+
+			add_country_modifier = {
+				name = tunis_venetian_fleet
+				duration = -1
+			}
+
+
+
+		}
+	}
+
+	
 
 }
