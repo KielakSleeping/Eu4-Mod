@@ -3486,7 +3486,7 @@ impressment_offices = {
 
 
 state_house = {
-	cost = 750
+	cost = 500
 	time = 60
 
 	build_trigger = {
@@ -3520,8 +3520,8 @@ state_house = {
 	}
 
 	modifier = {	
-		local_development_cost_modifier = -0.25
-		local_governing_cost_increase = 50
+		#local_development_cost_modifier = -0.25
+		#local_governing_cost_increase = 50
 		#local_centralize_state_cost = -0.33
 		#local_development_cost = -0.25
 	}

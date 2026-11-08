@@ -103,6 +103,7 @@ kielak_roth_early_buff = {
 
 kielak_state_house = {
 	allowed_num_of_manufactories = 1
+	local_centralize_state_cost = -0.33
 }
 
 kielak_milan_tuscany_buff = {
