@@ -197,7 +197,7 @@ TUN_emirate_of_siicly = {
 }
 
 emirate_develope_south_italy = {
-	development_cost = -0.1
+	local_development_cost = -0.1
 }
 
 sardinian_copper = {
@@ -207,7 +207,7 @@ sardinian_copper = {
 corsica_fortress = {
 	local_defensiveness = 0.25
 	local_garrison_size = 0.5
-	own_coast_naval_combat_bonus = 1
+	local_own_coast_naval_combat_bonus = 1
 }
 
 tunis_italian_siege_engineer = {
