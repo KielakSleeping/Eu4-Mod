@@ -1427,7 +1427,7 @@ estate_church_for_the_faith = {
 			has_dlc = "Emperor"
 			has_dlc = "Lions of the North"
 		}
-		NOT = { religion = confucianism }
+		#NOT = { religion = confucianism }
 		OR = {
 			has_country_flag = improved_expansionist_zealotry
 			any_known_country = {
