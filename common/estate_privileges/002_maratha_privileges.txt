@@ -196,26 +196,45 @@ estate_maratha_land_rights = {
 
 estate_maratha_military = {
 	icon = privilege_military_power
-	land_share = 10
+	#land_share = 10
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
-	loyalty = -0.05
+	#loyalty = -0.05
+	influence = 0.1
 	is_valid = {
-		always = no
+		#always = no
+		is_or_was_tag = { tag = VIJ }
 	}
 	can_select = {
 		ai=no
-		can_select_monarch_power_privilege = {
-			estate = estate_maratha
-			type = mil
-		}
-	}
-	on_granted = {
+		NOT = { has_estate_privilege = estate_nobles_right_of_counsel }
+		# can_select_monarch_power_privilege = {
+		# 	estate = estate_maratha
+		# 	type = mil
+		# }
 	}
 	penalties = {
+		cavalry_cost = 0.1
 	}
 	benefits = {
-		country_military_power = 1
+		#country_military_power = 1
+		cav_to_inf_ratio = 0.15
+		cavalry_power = 0.05
+	}
+	on_granted = {
+		enable_estate_action = {
+			estate_action = RAISE_HOST_NOMADIC_TRIBES
+		}
+	}
+	on_revoked = {
+		disable_estate_action = {
+			estate_action = RAISE_HOST_NOMADIC_TRIBES
+		}
+	}
+	on_invalid = {
+		disable_estate_action = {
+			estate_action = RAISE_HOST_NOMADIC_TRIBES
+		}
 	}
 	ai_will_do = {
 		factor = 100

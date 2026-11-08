@@ -540,6 +540,7 @@ estate_nobles_right_of_counsel = {
 	}
 	can_select = {
 		ai=no
+		NOT = { has_estate_privilege = estate_maratha_military }
 	}
 	benefits = {
 		cav_to_inf_ratio = 0.15
